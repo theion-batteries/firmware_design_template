@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_enable_motor_cmd" kind="class" language="C++" prot="public">
+    <compoundname>EnableMotorCmd</compoundname>
+    <basecompoundref refid="class_i_command" prot="public" virt="non-virtual">ICommand</basecompoundref>
+    <includes refid="_cmd_pattern_classes_8h" local="no">CmdPatternClasses.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_enable_motor_cmd_1a41e17c56ef1a28266e60a7fe1c27ffee" prot="private" static="no" mutable="no">
+        <type><ref refid="class_nema8" kindref="compound">Nema8</ref> &amp;</type>
+        <definition>Nema8&amp; EnableMotorCmd::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <qualifiedname>EnableMotorCmd::M</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="86" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_enable_motor_cmd_1ab34ba73041a4dd993cd8fc0639d20f27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EnableMotorCmd::EnableMotorCmd</definition>
+        <argsstring>(Nema8 &amp;motor)</argsstring>
+        <name>EnableMotorCmd</name>
+        <qualifiedname>EnableMotorCmd::EnableMotorCmd</qualifiedname>
+        <param>
+          <type><ref refid="class_nema8" kindref="compound">Nema8</ref> &amp;</type>
+          <declname>motor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="88" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enable_motor_cmd_1aed19db21a151de3b0c39524160323457" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void EnableMotorCmd::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>EnableMotorCmd::execute</qualifiedname>
+        <reimplements refid="class_i_command_1ace81beb0beea968f876f292446bf1120">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="89" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="89" bodyend="92"/>
+        <references refid="classa4988_1ad61ff3ecdea7afe55a30edf31f1e0323" compoundref="_driver_a4988_8cpp" startline="69" endline="72">a4988::enable</references>
+        <references refid="_configs_8h_1a42cc7dae7a40abcb545fc41730fa1476" compoundref="_configs_8h" startline="105">on</references>
+      </memberdef>
+      <memberdef kind="function" id="class_enable_motor_cmd_1a201febf8a6073d830b912550f33feb4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void EnableMotorCmd::undo</definition>
+        <argsstring>()</argsstring>
+        <name>undo</name>
+        <qualifiedname>EnableMotorCmd::undo</qualifiedname>
+        <reimplements refid="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78">undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="93" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="93" bodyend="96"/>
+        <references refid="classa4988_1ad61ff3ecdea7afe55a30edf31f1e0323" compoundref="_driver_a4988_8cpp" startline="69" endline="72">a4988::enable</references>
+        <references refid="_configs_8h_1aa8df4166084b06f1e80d3510e5dcf7e1" compoundref="_configs_8h" startline="106">off</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>EnableMotorCmd</label>
+        <link refid="class_enable_motor_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>EnableMotorCmd</label>
+        <link refid="class_enable_motor_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="84" column="2" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="84" bodyend="97"/>
+    <listofallmembers>
+      <member refid="class_enable_motor_cmd_1ab34ba73041a4dd993cd8fc0639d20f27" prot="public" virt="non-virtual"><scope>EnableMotorCmd</scope><name>EnableMotorCmd</name></member>
+      <member refid="class_enable_motor_cmd_1aed19db21a151de3b0c39524160323457" prot="public" virt="virtual"><scope>EnableMotorCmd</scope><name>execute</name></member>
+      <member refid="class_enable_motor_cmd_1a41e17c56ef1a28266e60a7fe1c27ffee" prot="private" virt="non-virtual"><scope>EnableMotorCmd</scope><name>M</name></member>
+      <member refid="class_enable_motor_cmd_1a201febf8a6073d830b912550f33feb4d" prot="public" virt="virtual"><scope>EnableMotorCmd</scope><name>undo</name></member>
+      <member refid="class_i_command_1a0e0226af93b945e84b58405e9d5343b1" prot="public" virt="virtual"><scope>EnableMotorCmd</scope><name>~ICommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

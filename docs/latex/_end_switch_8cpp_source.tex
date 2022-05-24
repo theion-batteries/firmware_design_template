@@ -1,0 +1,53 @@
+\hypertarget{_end_switch_8cpp_source}{}\doxysection{End\+Switch.\+cpp}
+\label{_end_switch_8cpp_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/src/EndSwitch.cpp@{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/src/EndSwitch.cpp}}
+\mbox{\hyperlink{_end_switch_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_end_switch_8hpp}{EndSwitch.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00017}\mbox{\hyperlink{classend_switch_a8c5f25ad4315e1cb4666131d5cdc1897}{00017}} \mbox{\hyperlink{classend_switch_a7790627e38691079eda7e8c41b13ef96}{endSwitch::endSwitch}}(\textcolor{keywordtype}{int} Pin, \textcolor{keywordtype}{bool} PressedState)\{}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00018}00018     this-\/>PressedState=\mbox{\hyperlink{classend_switch_add742dd51c36b16fecc6421341bf1949}{PressedState}};}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00019}00019     this-\/>Pin=\mbox{\hyperlink{classend_switch_a63796161305c364c1783bb936d661dea}{Pin}};}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00020}00020     pinMode(\mbox{\hyperlink{classend_switch_a63796161305c364c1783bb936d661dea}{Pin}}, INPUT\_PULLUP); \textcolor{comment}{//the button pin}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00021}00021   \}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00028}\mbox{\hyperlink{classend_switch_ae1f7e6d7200feb02820c02708bca01c0}{00028}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classend_switch_ae1f7e6d7200feb02820c02708bca01c0}{endSwitch::get\_current\_state}}(\textcolor{keywordtype}{bool} debounceButton=\textcolor{keyword}{false})\{}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00029}00029     \textcolor{keywordflow}{if} (debounceButton==\textcolor{keyword}{true})\{}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00030}00030       \mbox{\hyperlink{classend_switch_af068acae07251502871783ad8b31c88c}{current\_state}}=\mbox{\hyperlink{classend_switch_ac38e43effb237b61a1f4b09092b5ac53}{debounce}}();}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00031}00031        \textcolor{keywordflow}{return} \mbox{\hyperlink{classend_switch_af068acae07251502871783ad8b31c88c}{current\_state}};}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00033}00033     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00034}00034       \mbox{\hyperlink{classend_switch_af068acae07251502871783ad8b31c88c}{current\_state}}=digitalRead(\mbox{\hyperlink{classend_switch_a63796161305c364c1783bb936d661dea}{Pin}});}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00035}00035       \textcolor{keywordflow}{return} \mbox{\hyperlink{classend_switch_af068acae07251502871783ad8b31c88c}{current\_state}};}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00036}00036   \}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00037}00037 \}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00042}\mbox{\hyperlink{classend_switch_ac38e43effb237b61a1f4b09092b5ac53}{00042}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classend_switch_ac38e43effb237b61a1f4b09092b5ac53}{endSwitch::debounce}}()\{}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00043}00043     \textcolor{keywordtype}{int} buttonState;       \textcolor{comment}{// the current reading from the input pin}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00044}00044     \textcolor{keyword}{static} \textcolor{keywordtype}{int} lastButtonState = HIGH;   \textcolor{comment}{// the previous reading from the input pin}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00045}00045 \textcolor{comment}{// the following variables are unsigned longs because the time, measured in}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00046}00046 \textcolor{comment}{// milliseconds, will quickly become a bigger number than can be stored in an int.}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00047}00047     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} lastDebounceTime = 0;  \textcolor{comment}{// the last time the output pin was toggled}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00048}00048     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} debounceDelay = 10;    \textcolor{comment}{// the debounce time; increase if the output flickers}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00049}00049   }
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00050}00050   \textcolor{comment}{// read the state of the switch into a local variable:}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00051}00051   \textcolor{keywordtype}{int} reading = digitalRead(\mbox{\hyperlink{classend_switch_a63796161305c364c1783bb936d661dea}{Pin}});}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00052}00052   \textcolor{comment}{// check to see if you just pressed the button}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00053}00053   \textcolor{comment}{// (i.e. the input went from LOW to HIGH), and you've waited long enough}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00054}00054   \textcolor{comment}{// since the last press to ignore any noise:}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00055}00055   \textcolor{comment}{// If the switch changed, due to noise or pressing:}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00056}00056   \textcolor{keywordflow}{if} (reading != lastButtonState) \{}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00057}00057     \textcolor{comment}{// reset the debouncing timer}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00058}00058     lastDebounceTime = millis();}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00059}00059   \}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00060}00060   \textcolor{keywordflow}{if} ((millis() -\/ lastDebounceTime) > debounceDelay) \{}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00061}00061     \textcolor{comment}{// whatever the reading is at, it's been there for longer than the debounce}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00062}00062     \textcolor{comment}{// delay, so take it as the actual current state:}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00063}00063     \textcolor{comment}{// if the button state has changed:}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00064}00064     \textcolor{keywordflow}{if} (reading != buttonState) \{}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00065}00065       buttonState = reading;}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00066}00066       \}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00067}00067     \}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00068}00068   \textcolor{comment}{// save the reading. Next time through the loop, it'll be the lastButtonState:}}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00069}00069   lastButtonState = reading;}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00070}00070   \textcolor{keywordflow}{return} lastButtonState;}
+\DoxyCodeLine{\Hypertarget{_end_switch_8cpp_source_l00071}00071   \}}
+
+\end{DoxyCode}

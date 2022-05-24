@@ -1,0 +1,37 @@
+\hypertarget{_sleep_8h_source}{}\doxysection{Sleep.\+h}
+\label{_sleep_8h_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/Sleep.h@{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/Sleep.h}}
+\mbox{\hyperlink{_sleep_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00011}00011 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <avr/sleep.h>}\textcolor{comment}{//this AVR library contains the methods that controls the sleep modes}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <Arduino.h>}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00014}\mbox{\hyperlink{class_sleep_hardware}{00014}} \textcolor{keyword}{class }\mbox{\hyperlink{class_sleep_hardware}{SleepHardware}}\{}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00015}00015  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00016}00016  \textcolor{keywordtype}{int} interruptPin;}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00017}00017  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00018}\mbox{\hyperlink{class_sleep_hardware_adf757e861fcb9019a98e391e255c1377}{00018}}     \mbox{\hyperlink{class_sleep_hardware_adf757e861fcb9019a98e391e255c1377}{SleepHardware}}(\textcolor{keywordtype}{int} interruptPin)}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00019}00019     \{}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00020}00020     pinMode(LED\_BUILTIN,OUTPUT);\textcolor{comment}{//We use the led on pin 13 to indecate when Arduino is A sleep}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00021}00021     pinMode(interruptPin,INPUT\_PULLUP);\textcolor{comment}{//Set pin d2 to input using the buildin pullup resistor}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00022}00022     digitalWrite(LED\_BUILTIN,HIGH);\textcolor{comment}{//turning LED on}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00023}00023     \}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00024}\mbox{\hyperlink{class_sleep_hardware_abc1f56b9c599fefc8e738b9bcae930df}{00024}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sleep_hardware_abc1f56b9c599fefc8e738b9bcae930df}{Sleep}}()\{}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00025}00025     sleep\_enable();\textcolor{comment}{//Enabling sleep mode}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00026}00026     attachInterrupt(0, \mbox{\hyperlink{class_sleep_hardware_a89f4ae7f8c68ab0d30a5dcf8c16a6f44}{SleepHardware::wakeUp}}, LOW);\textcolor{comment}{//attaching a interrupt to pin d2}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00027}00027     set\_sleep\_mode(SLEEP\_MODE\_PWR\_DOWN);\textcolor{comment}{//Setting the sleep mode, in our case full sleep}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00028}00028     digitalWrite(LED\_BUILTIN,LOW);\textcolor{comment}{//turning LED off}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00029}00029     delay(1000); \textcolor{comment}{//wait a second to allow the led to be turned off before going to sleep}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00030}00030     sleep\_cpu();\textcolor{comment}{//activating sleep mode}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00031}00031     Serial.println(\textcolor{stringliteral}{"{}just woke up!"{}});\textcolor{comment}{//next line of code executed after the interrupt }}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00032}00032     digitalWrite(LED\_BUILTIN,HIGH);\textcolor{comment}{//turning LED on}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00033}00033   \}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00035}\mbox{\hyperlink{class_sleep_hardware_a89f4ae7f8c68ab0d30a5dcf8c16a6f44}{00035}} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sleep_hardware_a89f4ae7f8c68ab0d30a5dcf8c16a6f44}{wakeUp}}()\{}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00036}00036   Serial.println(\textcolor{stringliteral}{"{}Interrrupt Fired"{}});\textcolor{comment}{//Print message to serial monitor}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00037}00037    sleep\_disable();\textcolor{comment}{//Disable sleep mode}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00038}00038   detachInterrupt(0); \textcolor{comment}{//Removes the interrupt from pin 2;}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00039}00039 \}}
+\DoxyCodeLine{\Hypertarget{_sleep_8h_source_l00040}00040 \};}
+
+\end{DoxyCode}

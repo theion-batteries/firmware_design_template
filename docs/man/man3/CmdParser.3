@@ -1,0 +1,265 @@
+.TH "CmdParser" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CmdParser
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CmdParser\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCmdParser\fP ()"
+.br
+.ti -1c
+.RI "uint16_t \fBparseCmd\fP (uint8_t *buffer, size_t bufferSize)"
+.br
+.ti -1c
+.RI "uint16_t \fBparseCmd\fP (\fBCmdBufferObject\fP *cmdBuffer)"
+.br
+.ti -1c
+.RI "uint16_t \fBparseCmd\fP (char *cmdStr)"
+.br
+.ti -1c
+.RI "char * \fBgetCommand\fP ()"
+.br
+.ti -1c
+.RI "char * \fBgetCmdParam\fP (uint16_t idx)"
+.br
+.ti -1c
+.RI "uint16_t \fBgetParamCount\fP ()"
+.br
+.ti -1c
+.RI "char * \fBgetValueFromKey\fP (\fBCmdParserString\fP key)"
+.br
+.ti -1c
+.RI "bool \fBequalCmdParam\fP (uint16_t idx, \fBCmdParserString\fP value)"
+.br
+.ti -1c
+.RI "bool \fBequalCommand\fP (\fBCmdParserString\fP value)"
+.br
+.ti -1c
+.RI "bool \fBequalValueFromKey\fP (\fBCmdParserString\fP key, \fBCmdParserString\fP value)"
+.br
+.ti -1c
+.RI "bool \fBcmdParamExists\fP (\fBCmdParserString\fP value)"
+.br
+.ti -1c
+.RI "void \fBsetOptIgnoreQuote\fP (bool onOff=true)"
+.br
+.ti -1c
+.RI "void \fBsetOptKeyValue\fP (bool onOff=false)"
+.br
+.ti -1c
+.RI "void \fBsetOptSeperator\fP (char seperator)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB34\fP of file \fBCmdParser\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CmdParser::CmdParser ()"
+Set member to default values\&. 
+.PP
+Definition at line \fB9\fP of file \fBCmdParser\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool CmdParser::cmdParamExists (\fBCmdParserString\fP value)\fC [inline]\fP"
+Checks if a parameter/flag exists among all other passed command parameters\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP String to look for among the parameters 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+TRUE if found 
+.RE
+.PP
+
+.PP
+Definition at line \fB167\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "bool CmdParser::equalCmdParam (uint16_t idx, \fBCmdParserString\fP value)\fC [inline]\fP"
+Check if param equal with value case sensitive\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIidx\fP Number of param to get 
+.br
+\fIvalue\fP String to compare 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+TRUE if equal 
+.RE
+.PP
+
+.PP
+Definition at line \fB106\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "bool CmdParser::equalCommand (\fBCmdParserString\fP value)\fC [inline]\fP"
+Check if command equal with value case sensitive\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIvalue\fP String to compare 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+TRUE if equal 
+.RE
+.PP
+
+.PP
+Definition at line \fB130\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "bool CmdParser::equalValueFromKey (\fBCmdParserString\fP key, \fBCmdParserString\fP value)\fC [inline]\fP"
+Check if value equal from key case sensitive\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP Key store in SRAM for search in cmd 
+.br
+\fIvalue\fP String to compare in PROGMEM 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+TRUE if equal 
+.RE
+.PP
+
+.PP
+Definition at line \fB142\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "char * CmdParser::getCmdParam (uint16_t idx)"
+Get the param IDX from command line\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIidx\fP Number of param to get 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String with param or NULL if not exists 
+.RE
+.PP
+
+.PP
+Definition at line \fB69\fP of file \fBCmdParser\&.cpp\fP\&.
+.SS "char * CmdParser::getCommand ()\fC [inline]\fP"
+Get the initial command line word\&.
+.PP
+\fBReturns\fP
+.RS 4
+String with cmd word or NULL if not exists 
+.RE
+.PP
+
+.PP
+Definition at line \fB70\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "uint16_t CmdParser::getParamCount ()\fC [inline]\fP"
+Return the counter of parameter from cmd\&.
+.PP
+\fBReturns\fP
+.RS 4
+Return the param counter of command 
+.RE
+.PP
+
+.PP
+Definition at line \fB85\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "char * CmdParser::getValueFromKey (\fBCmdParserString\fP key)\fC [inline]\fP"
+If KeyValue option is set, search the value from a key pair\&. KEY=Value i\&.e\&. KEY is upper case 
+.PP
+\fBSee also\fP
+.RS 4
+setOptCmdUpper\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIkey\fP Key for search in cmd 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+String with value or NULL if not exists 
+.RE
+.PP
+
+.PP
+Definition at line \fB94\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "uint16_t CmdParser::parseCmd (char * cmdStr)\fC [inline]\fP"
+
+.PP
+Definition at line \fB59\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "uint16_t CmdParser::parseCmd (\fBCmdBufferObject\fP * cmdBuffer)\fC [inline]\fP"
+
+.PP
+Definition at line \fB53\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "uint16_t CmdParser::parseCmd (uint8_t * buffer, size_t bufferSize)"
+Parse a buffer with commands\&. 
+.PP
+\fBWarning\fP
+.RS 4
+This function change the buffer and only this object can handle the new buffer!
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIbuffer\fP Buffer with cmd string 
+.br
+\fIbufferSize\fP Size of buffer 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Number of params or CMDPARSER_ERROR 
+.RE
+.PP
+
+.PP
+Definition at line \fB19\fP of file \fBCmdParser\&.cpp\fP\&.
+.SS "void CmdParser::setOptIgnoreQuote (bool onOff = \fCtrue\fP)\fC [inline]\fP"
+Set parser option to ignore " quote for string\&. Default is off
+.PP
+\fBParameters\fP
+.RS 4
+\fIonOff\fP Set option TRUE (on) or FALSE (off) 
+.RE
+.PP
+
+.PP
+Definition at line \fB246\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "void CmdParser::setOptKeyValue (bool onOff = \fCfalse\fP)\fC [inline]\fP"
+Set parser option for handling KEY=Value parameter\&. Default is off
+.PP
+\fBParameters\fP
+.RS 4
+\fIonOff\fP Set option TRUE (on) or FALSE (off) 
+.RE
+.PP
+
+.PP
+Definition at line \fB254\fP of file \fBCmdParser\&.hpp\fP\&.
+.SS "void CmdParser::setOptSeperator (char seperator)\fC [inline]\fP"
+Set parser option for cmd seperator\&. Default is ' ' or CMDPARSER_CHAR_SP
+.PP
+\fBParameters\fP
+.RS 4
+\fIseperator\fP Set character for seperator cmd 
+.RE
+.PP
+
+.PP
+Definition at line \fB262\fP of file \fBCmdParser\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

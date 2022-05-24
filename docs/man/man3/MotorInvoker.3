@@ -1,0 +1,188 @@
+.TH "MotorInvoker" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MotorInvoker
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CmdPatternClasses\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fB~MotorInvoker\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetOnStart\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnFinish\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnMoveUp\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnRotateClk\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnMoveDown\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnRotateCclk\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnGetSpeed\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnSetSpeed\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnGetDelay\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnSetDelay\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnGetDirection\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBSetOnSetDirection\fP (\fBICommand\fP *command)"
+.br
+.ti -1c
+.RI "void \fBmoveUp\fP ()"
+.br
+.ti -1c
+.RI "void \fBmoveDown\fP ()"
+.br
+.ti -1c
+.RI "void \fBrotateClk\fP ()"
+.br
+.ti -1c
+.RI "void \fBrotateCclk\fP ()"
+.br
+.ti -1c
+.RI "void \fBgetSpeed\fP ()"
+.br
+.ti -1c
+.RI "void \fBgetDelay\fP ()"
+.br
+.ti -1c
+.RI "void \fBgetDirection\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetSpeed\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetDelay\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetDirection\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The \fBInvoker\fP is associated with one or several commands\&. It sends a request to the command\&. 
+.PP
+Definition at line \fB453\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MotorInvoker::~MotorInvoker ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB468\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void MotorInvoker::getDelay ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB572\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::getDirection ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB577\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::getSpeed ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB567\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::moveDown ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB534\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::moveUp ()\fC [inline]\fP"
+The \fBInvoker\fP does not depend on concrete command or receiver classes\&. The \fBInvoker\fP passes a request to a receiver indirectly, by executing a command\&. 
+.PP
+Definition at line \fB523\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::rotateCclk ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB556\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::rotateClk ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB545\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::setDelay ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB587\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::setDirection ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB592\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnFinish (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB486\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnGetDelay (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB507\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnGetDirection (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB513\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnGetSpeed (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB501\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnMoveDown (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB495\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnMoveUp (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB489\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnRotateCclk (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB498\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnRotateClk (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB492\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnSetDelay (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB510\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnSetDirection (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB516\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnSetSpeed (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB504\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::SetOnStart (\fBICommand\fP * command)\fC [inline]\fP"
+
+.PP
+Definition at line \fB483\fP of file \fBCmdPatternClasses\&.h\fP\&.
+.SS "void MotorInvoker::setSpeed ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB582\fP of file \fBCmdPatternClasses\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

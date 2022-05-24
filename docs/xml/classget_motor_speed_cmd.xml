@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classget_motor_speed_cmd" kind="class" language="C++" prot="public">
+    <compoundname>getMotorSpeedCmd</compoundname>
+    <basecompoundref refid="class_i_command" prot="public" virt="non-virtual">ICommand</basecompoundref>
+    <includes refid="_cmd_pattern_classes_8h" local="no">CmdPatternClasses.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classget_motor_speed_cmd_1a85cd2a0f5754e6f34bed1229aa3d2a96" prot="private" static="no" mutable="no">
+        <type><ref refid="class_nema8" kindref="compound">Nema8</ref> &amp;</type>
+        <definition>Nema8&amp; getMotorSpeedCmd::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <qualifiedname>getMotorSpeedCmd::M</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="118" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classget_motor_speed_cmd_1a8ab57f2724e0e4cc6f8b82ce49f645a2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int getMotorSpeedCmd::oldVal</definition>
+        <argsstring></argsstring>
+        <name>oldVal</name>
+        <qualifiedname>getMotorSpeedCmd::oldVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="119" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classget_motor_speed_cmd_1a7c8babebf6a93f0d814a04741f038100" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>getMotorSpeedCmd::getMotorSpeedCmd</definition>
+        <argsstring>(Nema8 &amp;motor)</argsstring>
+        <name>getMotorSpeedCmd</name>
+        <qualifiedname>getMotorSpeedCmd::getMotorSpeedCmd</qualifiedname>
+        <param>
+          <type><ref refid="class_nema8" kindref="compound">Nema8</ref> &amp;</type>
+          <declname>motor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="121" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classget_motor_speed_cmd_1a417c6ed5782be14aee4e2d97560f8af0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getMotorSpeedCmd::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>getMotorSpeedCmd::execute</qualifiedname>
+        <reimplements refid="class_i_command_1ace81beb0beea968f876f292446bf1120">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="122" column="17" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="122" bodyend="125"/>
+        <references refid="classa4988_1a0b7c5f9fb44b05f6642b517abc9b4a07" compoundref="_driver_a4988_8cpp" startline="162" endline="165">a4988::getSpeed</references>
+      </memberdef>
+      <memberdef kind="function" id="classget_motor_speed_cmd_1ad8c0f4617704991b15ca2f9d0dcfc9eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getMotorSpeedCmd::undo</definition>
+        <argsstring>()</argsstring>
+        <name>undo</name>
+        <qualifiedname>getMotorSpeedCmd::undo</qualifiedname>
+        <reimplements refid="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78">undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="126" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="126" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>getMotorSpeedCmd</label>
+        <link refid="classget_motor_speed_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>getMotorSpeedCmd</label>
+        <link refid="classget_motor_speed_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="116" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="116" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classget_motor_speed_cmd_1a417c6ed5782be14aee4e2d97560f8af0" prot="public" virt="virtual"><scope>getMotorSpeedCmd</scope><name>execute</name></member>
+      <member refid="classget_motor_speed_cmd_1a7c8babebf6a93f0d814a04741f038100" prot="public" virt="non-virtual"><scope>getMotorSpeedCmd</scope><name>getMotorSpeedCmd</name></member>
+      <member refid="classget_motor_speed_cmd_1a85cd2a0f5754e6f34bed1229aa3d2a96" prot="private" virt="non-virtual"><scope>getMotorSpeedCmd</scope><name>M</name></member>
+      <member refid="classget_motor_speed_cmd_1a8ab57f2724e0e4cc6f8b82ce49f645a2" prot="private" virt="non-virtual"><scope>getMotorSpeedCmd</scope><name>oldVal</name></member>
+      <member refid="classget_motor_speed_cmd_1ad8c0f4617704991b15ca2f9d0dcfc9eb" prot="public" virt="virtual"><scope>getMotorSpeedCmd</scope><name>undo</name></member>
+      <member refid="class_i_command_1a0e0226af93b945e84b58405e9d5343b1" prot="public" virt="virtual"><scope>getMotorSpeedCmd</scope><name>~ICommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

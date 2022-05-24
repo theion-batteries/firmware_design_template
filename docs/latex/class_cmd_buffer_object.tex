@@ -1,0 +1,276 @@
+\hypertarget{class_cmd_buffer_object}{}\doxysection{Cmd\+Buffer\+Object Class Reference}
+\label{class_cmd_buffer_object}\index{CmdBufferObject@{CmdBufferObject}}
+
+
+{\ttfamily \#include $<$Cmd\+Buffer.\+hpp$>$}
+
+
+
+Inheritance diagram for Cmd\+Buffer\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_cmd_buffer_object__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cmd_buffer_object_a0e62c008ea9f9f927e989d5324adb46b}{Cmd\+Buffer\+Object}} ()
+\item 
+bool \mbox{\hyperlink{class_cmd_buffer_object_aba18a34d82f1b11527cda2d504432923}{read\+From\+Serial}} (Stream $\ast$serial, uint32\+\_\+t time\+Out=0)
+\item 
+bool \mbox{\hyperlink{class_cmd_buffer_object_a8106cb49ce594259a50e49f43b727a9a}{read\+Serial\+Char}} (Stream $\ast$serial)
+\item 
+void \mbox{\hyperlink{class_cmd_buffer_object_a08b5dde801557e604b9e0875988a15cc}{set\+End\+Char}} (uint8\+\_\+t end)
+\item 
+void \mbox{\hyperlink{class_cmd_buffer_object_a221a93905e9545cc63552b964503c334}{set\+Back\+Char}} (uint8\+\_\+t backspace)
+\item 
+void \mbox{\hyperlink{class_cmd_buffer_object_ad7c2ae01008297a876b9d7ed56a37c1e}{set\+Echo}} (bool echo)
+\item 
+char $\ast$ \mbox{\hyperlink{class_cmd_buffer_object_a5d786badb41aacddc60653b266f8d329}{get\+String\+From\+Buffer}} ()
+\item 
+virtual void \mbox{\hyperlink{class_cmd_buffer_object_a9482f941c79ec204712a381b8fc55ac2}{clear}} ()=0
+\item 
+virtual uint8\+\_\+t $\ast$ \mbox{\hyperlink{class_cmd_buffer_object_a6513ed8d2466fd0560a692de7a79e0a9}{get\+Buffer}} ()=0
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_cmd_buffer_object_a6925a16fab8b9b13fb4372e5f0a88b7e}{get\+Buffer\+Size}} ()=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cmd_buffer_object_a0e62c008ea9f9f927e989d5324adb46b}\label{class_cmd_buffer_object_a0e62c008ea9f9f927e989d5324adb46b}} 
+\index{CmdBufferObject@{CmdBufferObject}!CmdBufferObject@{CmdBufferObject}}
+\index{CmdBufferObject@{CmdBufferObject}!CmdBufferObject@{CmdBufferObject}}
+\doxysubsubsection{\texorpdfstring{CmdBufferObject()}{CmdBufferObject()}}
+{\footnotesize\ttfamily Cmd\+Buffer\+Object\+::\+Cmd\+Buffer\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clear buffer and set defaults. 
+
+Definition at line \mbox{\hyperlink{_cmd_buffer_8hpp_source_l00029}{29}} of file \mbox{\hyperlink{_cmd_buffer_8hpp_source}{Cmd\+Buffer.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cmd_buffer_object_a9482f941c79ec204712a381b8fc55ac2}\label{class_cmd_buffer_object_a9482f941c79ec204712a381b8fc55ac2}} 
+\index{CmdBufferObject@{CmdBufferObject}!clear@{clear}}
+\index{clear@{clear}!CmdBufferObject@{CmdBufferObject}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily virtual void Cmd\+Buffer\+Object\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Clear buffer with 0x00 
+
+Implemented in \mbox{\hyperlink{class_cmd_buffer_a57932bf7ec725e389a51d61f0d8c715c}{Cmd\+Buffer$<$ BUFFERSIZE $>$}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_cmd_buffer_object_a9482f941c79ec204712a381b8fc55ac2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_buffer_object_a6513ed8d2466fd0560a692de7a79e0a9}\label{class_cmd_buffer_object_a6513ed8d2466fd0560a692de7a79e0a9}} 
+\index{CmdBufferObject@{CmdBufferObject}!getBuffer@{getBuffer}}
+\index{getBuffer@{getBuffer}!CmdBufferObject@{CmdBufferObject}}
+\doxysubsubsection{\texorpdfstring{getBuffer()}{getBuffer()}}
+{\footnotesize\ttfamily virtual uint8\+\_\+t $\ast$ Cmd\+Buffer\+Object\+::get\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Return a null-\/terminated (\textquotesingle{}\textbackslash{}0\textquotesingle{}) string
+
+\begin{DoxyReturn}{Returns}
+String from Buffer 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_cmd_buffer_a70a4eb39e350110c1454b0eb1d8b46b1}{Cmd\+Buffer$<$ BUFFERSIZE $>$}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_buffer_object_a6513ed8d2466fd0560a692de7a79e0a9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_buffer_object_a6925a16fab8b9b13fb4372e5f0a88b7e}\label{class_cmd_buffer_object_a6925a16fab8b9b13fb4372e5f0a88b7e}} 
+\index{CmdBufferObject@{CmdBufferObject}!getBufferSize@{getBufferSize}}
+\index{getBufferSize@{getBufferSize}!CmdBufferObject@{CmdBufferObject}}
+\doxysubsubsection{\texorpdfstring{getBufferSize()}{getBufferSize()}}
+{\footnotesize\ttfamily virtual size\+\_\+t Cmd\+Buffer\+Object\+::get\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Get size of buffer
+
+\begin{DoxyReturn}{Returns}
+Size of buffer 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_cmd_buffer_a402e04e513fe976ce73d5f3f1290421b}{Cmd\+Buffer$<$ BUFFERSIZE $>$}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_buffer_object_a6925a16fab8b9b13fb4372e5f0a88b7e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_buffer_object_a5d786badb41aacddc60653b266f8d329}\label{class_cmd_buffer_object_a5d786badb41aacddc60653b266f8d329}} 
+\index{CmdBufferObject@{CmdBufferObject}!getStringFromBuffer@{getStringFromBuffer}}
+\index{getStringFromBuffer@{getStringFromBuffer}!CmdBufferObject@{CmdBufferObject}}
+\doxysubsubsection{\texorpdfstring{getStringFromBuffer()}{getStringFromBuffer()}}
+{\footnotesize\ttfamily char $\ast$ Cmd\+Buffer\+Object\+::get\+String\+From\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Cast Buffer to c string.
+
+\begin{DoxyReturn}{Returns}
+Buffer as cstring 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_buffer_8hpp_source_l00096}{96}} of file \mbox{\hyperlink{_cmd_buffer_8hpp_source}{Cmd\+Buffer.\+hpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_buffer_object_a5d786badb41aacddc60653b266f8d329_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_buffer_object_aba18a34d82f1b11527cda2d504432923}\label{class_cmd_buffer_object_aba18a34d82f1b11527cda2d504432923}} 
+\index{CmdBufferObject@{CmdBufferObject}!readFromSerial@{readFromSerial}}
+\index{readFromSerial@{readFromSerial}!CmdBufferObject@{CmdBufferObject}}
+\doxysubsubsection{\texorpdfstring{readFromSerial()}{readFromSerial()}}
+{\footnotesize\ttfamily bool Cmd\+Buffer\+Object\+::read\+From\+Serial (\begin{DoxyParamCaption}\item[{Stream $\ast$}]{serial,  }\item[{uint32\+\_\+t}]{time\+Out = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Read data from serial communication to buffer. It read only printable ASCII character from serial. All other will ignore for buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em serial} & Arduino Serial object from read commands \\
+\hline
+{\em time\+Out} & Set a time out in millisec or 0 for none \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if data readed until end character or FALSE is a timeout receive or buffer is full. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_buffer_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_cmd_buffer_8cpp_source}{Cmd\+Buffer.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_buffer_object_aba18a34d82f1b11527cda2d504432923_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_buffer_object_aba18a34d82f1b11527cda2d504432923_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_buffer_object_a8106cb49ce594259a50e49f43b727a9a}\label{class_cmd_buffer_object_a8106cb49ce594259a50e49f43b727a9a}} 
+\index{CmdBufferObject@{CmdBufferObject}!readSerialChar@{readSerialChar}}
+\index{readSerialChar@{readSerialChar}!CmdBufferObject@{CmdBufferObject}}
+\doxysubsubsection{\texorpdfstring{readSerialChar()}{readSerialChar()}}
+{\footnotesize\ttfamily bool Cmd\+Buffer\+Object\+::read\+Serial\+Char (\begin{DoxyParamCaption}\item[{Stream $\ast$}]{serial }\end{DoxyParamCaption})}
+
+Read one char from serial communication to buffer if available. It read only printable ASCII character from serial. All other will ignore for buffer. This function only ready currently available data and doesn\textquotesingle{}t wait for a full command (= end character)
+
+
+\begin{DoxyParams}{Parameters}
+{\em serial} & Arduino Serial object from read commands \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if data readed until end character or FALSE if not. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_buffer_8cpp_source_l00066}{66}} of file \mbox{\hyperlink{_cmd_buffer_8cpp_source}{Cmd\+Buffer.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_buffer_object_a8106cb49ce594259a50e49f43b727a9a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_buffer_object_a8106cb49ce594259a50e49f43b727a9a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_buffer_object_a221a93905e9545cc63552b964503c334}\label{class_cmd_buffer_object_a221a93905e9545cc63552b964503c334}} 
+\index{CmdBufferObject@{CmdBufferObject}!setBackChar@{setBackChar}}
+\index{setBackChar@{setBackChar}!CmdBufferObject@{CmdBufferObject}}
+\doxysubsubsection{\texorpdfstring{setBackChar()}{setBackChar()}}
+{\footnotesize\ttfamily void Cmd\+Buffer\+Object\+::set\+Back\+Char (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{backspace }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set a ASCII character for serial cmd backspace. Default value is BS.
+
+Macros for helping are\+:
+\begin{DoxyItemize}
+\item CMDBUFFER\+\_\+\+CHAR\+\_\+\+BS
+\item CMDBUFFER\+\_\+\+CHAR\+\_\+\+DEL
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em backspace} & ASCII character \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_cmd_buffer_8hpp_source_l00082}{82}} of file \mbox{\hyperlink{_cmd_buffer_8hpp_source}{Cmd\+Buffer.\+hpp}}.
+
+\mbox{\Hypertarget{class_cmd_buffer_object_ad7c2ae01008297a876b9d7ed56a37c1e}\label{class_cmd_buffer_object_ad7c2ae01008297a876b9d7ed56a37c1e}} 
+\index{CmdBufferObject@{CmdBufferObject}!setEcho@{setEcho}}
+\index{setEcho@{setEcho}!CmdBufferObject@{CmdBufferObject}}
+\doxysubsubsection{\texorpdfstring{setEcho()}{setEcho()}}
+{\footnotesize\ttfamily void Cmd\+Buffer\+Object\+::set\+Echo (\begin{DoxyParamCaption}\item[{bool}]{echo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set echo serial on (true) or off (false)
+
+
+\begin{DoxyParams}{Parameters}
+{\em echo} & bool \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_cmd_buffer_8hpp_source_l00089}{89}} of file \mbox{\hyperlink{_cmd_buffer_8hpp_source}{Cmd\+Buffer.\+hpp}}.
+
+\mbox{\Hypertarget{class_cmd_buffer_object_a08b5dde801557e604b9e0875988a15cc}\label{class_cmd_buffer_object_a08b5dde801557e604b9e0875988a15cc}} 
+\index{CmdBufferObject@{CmdBufferObject}!setEndChar@{setEndChar}}
+\index{setEndChar@{setEndChar}!CmdBufferObject@{CmdBufferObject}}
+\doxysubsubsection{\texorpdfstring{setEndChar()}{setEndChar()}}
+{\footnotesize\ttfamily void Cmd\+Buffer\+Object\+::set\+End\+Char (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set a ASCII character for serial cmd end. Default value is LF.
+
+Macros for helping are\+:
+\begin{DoxyItemize}
+\item CMDBUFFER\+\_\+\+CHAR\+\_\+\+LF
+\item CMDBUFFER\+\_\+\+CHAR\+\_\+\+CR
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em end} & ASCII character \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_cmd_buffer_8hpp_source_l00070}{70}} of file \mbox{\hyperlink{_cmd_buffer_8hpp_source}{Cmd\+Buffer.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/include/\mbox{\hyperlink{_cmd_buffer_8hpp}{Cmd\+Buffer.\+hpp}}\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/src/\mbox{\hyperlink{_cmd_buffer_8cpp}{Cmd\+Buffer.\+cpp}}\end{DoxyCompactItemize}

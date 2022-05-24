@@ -1,0 +1,78 @@
+\label{index_md_C__Users_SamiDhiab_Theion_Repos_firm_Alignment_PrintHead_README}%
+\Hypertarget{index_md_C__Users_SamiDhiab_Theion_Repos_firm_Alignment_PrintHead_README}%
+An object oriented firmware design Template in c++ used for embedded systems. Currently support arduinos (Uno, Mega, Due...). The Concept can be ported for Esp family and other mcu that supports c++ and the standard library implementation.\hypertarget{index_autotoc_md1}{}\doxysection{Contributon and Policy}\label{index_autotoc_md1}
+
+\begin{DoxyItemize}
+\item {\bfseries{First Rule}}\+: Do not touch the main branch unless you are the author ~\newline
+
+\item {\bfseries{Second Rule}}\+: if you wish to contribute, create a derived branch from dev with your feature and name\+: dev\+\_\+feature\+\_\+name
+\item {\bfseries{Third Rule}}\+: understand the graph below\+:
+\end{DoxyItemize}
+
+
+
+
+\begin{DoxyItemize}
+\item {\bfseries{Author}}\+: sami dhiab ~\newline
+ Contact\+: \href{mailto:sami@theion.de}{\texttt{ sami@theion.\+de}}
+\end{DoxyItemize}\hypertarget{index_autotoc_md2}{}\doxysection{API docs}\label{index_autotoc_md2}
+This docs is auto generated with doxygen. please note that images rendering from markdown file is not yet supported by doxygen, therefore click \href{https://theionsami.github.io/firm_Alignment/}{\texttt{ main}} to open main page with rendered images. If not already on docs page, click \href{https://theionsami.github.io/firm_Alignment/docs/html/index.html}{\texttt{ docs}}, then Under Classes and Files you find the full API. If you make a fork from this repo, dont forget to run doxygen from inside docs/ after any changes made to src/ inc/ or.\+md files and push! \hypertarget{index_autotoc_md3}{}\doxysection{Configuration File}\label{index_autotoc_md3}
+In the configuration \href{include/Configs.h}{\texttt{ file}} you need to define all required parameters\+:
+
+
+\begin{DoxyItemize}
+\item PINS\+: pinout related to respective mcu
+\item MACROS\+: DEBUG, VIRTUAL ,RELEASE or TEST
+\item ENUMERATION\+: return values
+\end{DoxyItemize}\hypertarget{index_autotoc_md4}{}\doxysection{Simulation \& Virtualization}\label{index_autotoc_md4}
+To develop the firmware and test it in complete isolation from the hardware, a virtualisation platform is used called \href{https://wokwi.com/}{\texttt{ wokwi}}. This provide a way to simulate a logic, algorithm or even some of the supported hardware (leds, sonar sensors, buttons, motors ...). Here is an example with arduino mega and connection with hardware. \hypertarget{index_autotoc_md5}{}\doxysection{Command Design Pattern}\label{index_autotoc_md5}
+The Device or the mcu (SLave or listener) will wait for commands to parse from the server or master side. unless there are some background functions that run independantly from coming commands, the main task is to parse the commands. To be able to parse commands in a proper way, these commands must be defined inside classes, the receivers of commands are objects (sensors, actuators) that receive commands, invokers are entity that make indirect request via command to a receiver (internal controller ). The client is the app running. If we siimplify with an light switch example here\+:
+\begin{DoxyItemize}
+\item Receiver\+: Light
+\item Command\+: turn\+On, Turn\+Off
+\item \mbox{\hyperlink{class_invoker}{Invoker}}\+: light Switch  
+\end{DoxyItemize}\hypertarget{index_autotoc_md6}{}\doxysection{Communication protocol\+: Definiton of messages and return values}\label{index_autotoc_md6}
+In many cases the master sending commands via Stream has to know the return of these Commands (if succes or fail) to process with next commands. Example of Commands and their return Value\+: ret\+Val represents an enumeration that has ok=0 or err=1 which corresponds respectvly to succes and failure of that command.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ message   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ action   }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ return value   }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ return type    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ message   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ action   }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ return value   }&\PBS\raggedleft \cellcolor{\tableheadbgcolor}\textbf{ return type    }\\\cline{1-4}
+\endhead
+get uuid   &\PBS\centering get device uuid   &\PBS\raggedleft uuid   &\PBS\raggedleft String    \\\cline{1-4}
+get motor x direction   &\PBS\centering return motor x direction   &\PBS\raggedleft direction   &\PBS\raggedleft String    \\\cline{1-4}
+set motor y delay \texorpdfstring{$<$}{<}value\texorpdfstring{$>$}{>}   &\PBS\centering set motor y delay value to   &\PBS\raggedleft null   &\PBS\raggedleft ret\+Val    \\\cline{1-4}
+move z up \texorpdfstring{$<$}{<}value\texorpdfstring{$>$}{>}   &\PBS\centering move up z to value   &\PBS\raggedleft null   &\PBS\raggedleft ret\+Val    \\\cline{1-4}
+undo   &\PBS\centering execute last cmd   &\PBS\raggedleft depends on last cmd   &\PBS\raggedleft depends on last cmd    \\\cline{1-4}
+reset   &\PBS\centering reset device   &\PBS\raggedleft null   &\PBS\raggedleft void    \\\cline{1-4}
+sleep   &\PBS\centering sleep device   &\PBS\raggedleft null   &\PBS\raggedleft void   \\\cline{1-4}
+\end{longtabu}
+
+
+It is up to to specify if \texorpdfstring{$<$}{<}value\texorpdfstring{$>$}{>} can int, float, double or any type ..\hypertarget{index_autotoc_md7}{}\doxysection{Demonstrartion Video}\label{index_autotoc_md7}
+A demo value is coming soon.. \hypertarget{index_autotoc_md8}{}\doxysection{UML Class Diagramm}\label{index_autotoc_md8}
+Under \href{docs/uml/}{\texttt{ UML}} folder are previous uml Diagrams. \hypertarget{index_autotoc_md9}{}\doxysection{UML state Diagram}\label{index_autotoc_md9}
+Deprecated. see \href{docs/uml/}{\texttt{ UML}} folder for previous uml Diagrams. \hypertarget{index_autotoc_md10}{}\doxysection{UML Sequence Diagram}\label{index_autotoc_md10}
+see \href{docs/uml/}{\texttt{ UML}} folder for previous uml Diagrams. \hypertarget{index_autotoc_md11}{}\doxysection{Test}\label{index_autotoc_md11}
+please refer to test folder readme for tests and definitions.\hypertarget{index_autotoc_md12}{}\doxysection{V3 Features}\label{index_autotoc_md12}
+
+\begin{DoxyItemize}
+\item implementing cmd design pattern
+\item implementing threading/scheduling tasks
+\item generating docsumentation fully with doxygen 
+\end{DoxyItemize}\hypertarget{index_autotoc_md13}{}\doxysection{Change Log}\label{index_autotoc_md13}
+
+\begin{DoxyItemize}
+\item 19.\+05.\+2022\+: see older branch (master branch for change log)
+\end{DoxyItemize}\hypertarget{index_autotoc_md14}{}\doxysection{ROS Concept \& Integration}\label{index_autotoc_md14}
+For upcoming version, ros will be fully supported. \hypertarget{index_autotoc_md15}{}\doxysection{TODO}\label{index_autotoc_md15}
+
+\begin{DoxyItemize}
+\item finish implementing scheduler
+\item finish docs for all files 
+\end{DoxyItemize}

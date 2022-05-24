@@ -1,0 +1,452 @@
+\hypertarget{classa4988}{}\doxysection{a4988 Class Reference}
+\label{classa4988}\index{a4988@{a4988}}
+
+
+{\ttfamily \#include $<$Driver\+A4988.\+hpp$>$}
+
+
+
+Inheritance diagram for a4988\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=127pt]{classa4988__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classa4988_a5abced6499ec6a9c4023db3aacf80c1a}{a4988}} (int \mbox{\hyperlink{classa4988_ad6372b76bfc23c771d7e6555a106e292}{motor\+\_\+steps}}, int \mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{ms1\+\_\+pin}}, int \mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{ms2\+\_\+pin}}, int \mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{ms3\+\_\+pin}}, int \mbox{\hyperlink{classa4988_a897f9e23b473274f3d27e9380d145be4}{dir\+\_\+pin}}, int \mbox{\hyperlink{classa4988_a8e401b32d17b578cd1e4d06779ba5b61}{enable\+\_\+pin}}, int \mbox{\hyperlink{classa4988_a1f7e3717033bd9204414c1408b58eaa5}{step\+\_\+pin}}, bool \mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}})
+\item 
+void \mbox{\hyperlink{classa4988_ad61ff3ecdea7afe55a30edf31f1e0323}{enable}} (int enable)
+\item 
+void \mbox{\hyperlink{classa4988_ad66dadbb79c22bc3f507fe6d624c9fec}{step}} (unsigned long \mbox{\hyperlink{classa4988_a1eb89487e1d4fc4cb068d581a6278003}{num\+\_\+steps}})
+\item 
+void \mbox{\hyperlink{classa4988_a2074f2e3fe7cd79e402f53a14ba68c89}{step\+Once}} (void)
+\item 
+void \mbox{\hyperlink{classa4988_af3c159ccf4f2fa8d26d03683181b1fac}{step\+Motor}} (int this\+\_\+step)
+\item 
+void \mbox{\hyperlink{classa4988_ad11ebef929f054194109e909f2646880}{reverse\+Direction}} ()
+\item 
+float \mbox{\hyperlink{classa4988_a0b7c5f9fb44b05f6642b517abc9b4a07}{get\+Speed}} ()
+\item 
+float \mbox{\hyperlink{classa4988_a4e8bd4e45fe5a4fa30fafc877713978c}{get\+Delay}} ()
+\item 
+int \mbox{\hyperlink{classa4988_aa86021ee00cae65c6c963553f30e22b3}{get\+Step\+Counter}} ()
+\item 
+bool \mbox{\hyperlink{classa4988_a01be380db105cfc684c55dc42b81f76d}{get\+Direction}} ()
+\item 
+void \mbox{\hyperlink{classa4988_af905ad2bb5a9e5465e83f081067a139c}{set\+Delay}} (unsigned long delay)
+\item 
+void \mbox{\hyperlink{classa4988_ae59dc905051ebfdcfac1d48f172d523f}{set\+Speed}} (int speed)
+\item 
+void \mbox{\hyperlink{classa4988_a6a37cf937b1f7a1f229904cdb9191b89}{set\+Direction}} (int \mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}})
+\item 
+void \mbox{\hyperlink{classa4988_a150215b9cd4e4841befd2dc9d4b4a3be}{set\+Step\+Mode}} (int step\+Mode)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}}
+\item 
+int \mbox{\hyperlink{classa4988_ad6372b76bfc23c771d7e6555a106e292}{motor\+\_\+steps}}
+\item 
+unsigned long \mbox{\hyperlink{classa4988_a1965dbc601b23711ab178ae9067133c3}{step\+\_\+delay}}
+\item 
+int \mbox{\hyperlink{classa4988_a1eb89487e1d4fc4cb068d581a6278003}{num\+\_\+steps}}
+\item 
+int \mbox{\hyperlink{classa4988_add7441f68064b3dd6e06d5bcb30cb159}{step\+\_\+number}}
+\item 
+int \mbox{\hyperlink{classa4988_a45956ebaed9f19834bc9094dd59f551a}{step\+\_\+mode}}
+\item 
+int \mbox{\hyperlink{classa4988_a1f7e3717033bd9204414c1408b58eaa5}{step\+\_\+pin}}
+\item 
+int \mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{ms1\+\_\+pin}}
+\item 
+int \mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{ms2\+\_\+pin}}
+\item 
+int \mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{ms3\+\_\+pin}}
+\item 
+int \mbox{\hyperlink{classa4988_a897f9e23b473274f3d27e9380d145be4}{dir\+\_\+pin}}
+\item 
+int \mbox{\hyperlink{classa4988_a8e401b32d17b578cd1e4d06779ba5b61}{enable\+\_\+pin}}
+\item 
+int \mbox{\hyperlink{classa4988_a58dce61bc6613bc5e7bd5cb77a3abaf8}{Step\+Counter}} = 0
+\item 
+int \mbox{\hyperlink{classa4988_a3b6a16a6b8162c6a3ba164fedeef0fb7}{Total\+Step\+Counted}} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00036}{36}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classa4988_a5abced6499ec6a9c4023db3aacf80c1a}\label{classa4988_a5abced6499ec6a9c4023db3aacf80c1a}} 
+\index{a4988@{a4988}!a4988@{a4988}}
+\index{a4988@{a4988}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{a4988()}{a4988()}}
+{\footnotesize\ttfamily a4988\+::a4988 (\begin{DoxyParamCaption}\item[{int}]{motor\+\_\+steps,  }\item[{int}]{ms1\+\_\+pin,  }\item[{int}]{ms2\+\_\+pin,  }\item[{int}]{ms3\+\_\+pin,  }\item[{int}]{dir\+\_\+pin,  }\item[{int}]{enable\+\_\+pin,  }\item[{int}]{step\+\_\+pin,  }\item[{bool}]{direction }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classa4988_ad61ff3ecdea7afe55a30edf31f1e0323}\label{classa4988_ad61ff3ecdea7afe55a30edf31f1e0323}} 
+\index{a4988@{a4988}!enable@{enable}}
+\index{enable@{enable}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily void a4988\+::enable (\begin{DoxyParamCaption}\item[{int}]{enable }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classa4988_ad61ff3ecdea7afe55a30edf31f1e0323_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classa4988_a4e8bd4e45fe5a4fa30fafc877713978c}\label{classa4988_a4e8bd4e45fe5a4fa30fafc877713978c}} 
+\index{a4988@{a4988}!getDelay@{getDelay}}
+\index{getDelay@{getDelay}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{getDelay()}{getDelay()}}
+{\footnotesize\ttfamily float a4988\+::get\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00166}{166}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classa4988_a4e8bd4e45fe5a4fa30fafc877713978c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classa4988_a01be380db105cfc684c55dc42b81f76d}\label{classa4988_a01be380db105cfc684c55dc42b81f76d}} 
+\index{a4988@{a4988}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily bool a4988\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classa4988_a01be380db105cfc684c55dc42b81f76d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classa4988_a0b7c5f9fb44b05f6642b517abc9b4a07}\label{classa4988_a0b7c5f9fb44b05f6642b517abc9b4a07}} 
+\index{a4988@{a4988}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily float a4988\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00162}{162}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classa4988_a0b7c5f9fb44b05f6642b517abc9b4a07_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classa4988_aa86021ee00cae65c6c963553f30e22b3}\label{classa4988_aa86021ee00cae65c6c963553f30e22b3}} 
+\index{a4988@{a4988}!getStepCounter@{getStepCounter}}
+\index{getStepCounter@{getStepCounter}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{getStepCounter()}{getStepCounter()}}
+{\footnotesize\ttfamily int a4988\+::get\+Step\+Counter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00170}{170}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+\mbox{\Hypertarget{classa4988_ad11ebef929f054194109e909f2646880}\label{classa4988_ad11ebef929f054194109e909f2646880}} 
+\index{a4988@{a4988}!reverseDirection@{reverseDirection}}
+\index{reverseDirection@{reverseDirection}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{reverseDirection()}{reverseDirection()}}
+{\footnotesize\ttfamily void a4988\+::reverse\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00082}{82}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classa4988_ad11ebef929f054194109e909f2646880_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classa4988_af905ad2bb5a9e5465e83f081067a139c}\label{classa4988_af905ad2bb5a9e5465e83f081067a139c}} 
+\index{a4988@{a4988}!setDelay@{setDelay}}
+\index{setDelay@{setDelay}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{setDelay()}{setDelay()}}
+{\footnotesize\ttfamily void a4988\+::set\+Delay (\begin{DoxyParamCaption}\item[{unsigned long}]{delay }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classa4988_af905ad2bb5a9e5465e83f081067a139c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classa4988_a6a37cf937b1f7a1f229904cdb9191b89}\label{classa4988_a6a37cf937b1f7a1f229904cdb9191b89}} 
+\index{a4988@{a4988}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void a4988\+::set\+Direction (\begin{DoxyParamCaption}\item[{int}]{direction }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00091}{91}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classa4988_a6a37cf937b1f7a1f229904cdb9191b89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classa4988_ae59dc905051ebfdcfac1d48f172d523f}\label{classa4988_ae59dc905051ebfdcfac1d48f172d523f}} 
+\index{a4988@{a4988}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void a4988\+::set\+Speed (\begin{DoxyParamCaption}\item[{int}]{speed }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00174}{174}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classa4988_ae59dc905051ebfdcfac1d48f172d523f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classa4988_a150215b9cd4e4841befd2dc9d4b4a3be}\label{classa4988_a150215b9cd4e4841befd2dc9d4b4a3be}} 
+\index{a4988@{a4988}!setStepMode@{setStepMode}}
+\index{setStepMode@{setStepMode}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{setStepMode()}{setStepMode()}}
+{\footnotesize\ttfamily void a4988\+::set\+Step\+Mode (\begin{DoxyParamCaption}\item[{int}]{step\+Mode }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00128}{128}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+\mbox{\Hypertarget{classa4988_ad66dadbb79c22bc3f507fe6d624c9fec}\label{classa4988_ad66dadbb79c22bc3f507fe6d624c9fec}} 
+\index{a4988@{a4988}!step@{step}}
+\index{step@{step}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void a4988\+::step (\begin{DoxyParamCaption}\item[{unsigned long}]{num\+\_\+steps }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00117}{117}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{classa4988_ad66dadbb79c22bc3f507fe6d624c9fec_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classa4988_ad66dadbb79c22bc3f507fe6d624c9fec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classa4988_af3c159ccf4f2fa8d26d03683181b1fac}\label{classa4988_af3c159ccf4f2fa8d26d03683181b1fac}} 
+\index{a4988@{a4988}!stepMotor@{stepMotor}}
+\index{stepMotor@{stepMotor}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{stepMotor()}{stepMotor()}}
+{\footnotesize\ttfamily void a4988\+::step\+Motor (\begin{DoxyParamCaption}\item[{int}]{this\+\_\+step }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classa4988_a2074f2e3fe7cd79e402f53a14ba68c89}\label{classa4988_a2074f2e3fe7cd79e402f53a14ba68c89}} 
+\index{a4988@{a4988}!stepOnce@{stepOnce}}
+\index{stepOnce@{stepOnce}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{stepOnce()}{stepOnce()}}
+{\footnotesize\ttfamily void a4988\+::step\+Once (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8cpp_source_l00106}{106}} of file \mbox{\hyperlink{_driver_a4988_8cpp_source}{Driver\+A4988.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classa4988_a2074f2e3fe7cd79e402f53a14ba68c89_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classa4988_a897f9e23b473274f3d27e9380d145be4}\label{classa4988_a897f9e23b473274f3d27e9380d145be4}} 
+\index{a4988@{a4988}!dir\_pin@{dir\_pin}}
+\index{dir\_pin@{dir\_pin}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{dir\_pin}{dir\_pin}}
+{\footnotesize\ttfamily int a4988\+::dir\+\_\+pin}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00071}{71}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}\label{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}} 
+\index{a4988@{a4988}!direction@{direction}}
+\index{direction@{direction}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily int a4988\+::direction}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00059}{59}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_a8e401b32d17b578cd1e4d06779ba5b61}\label{classa4988_a8e401b32d17b578cd1e4d06779ba5b61}} 
+\index{a4988@{a4988}!enable\_pin@{enable\_pin}}
+\index{enable\_pin@{enable\_pin}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{enable\_pin}{enable\_pin}}
+{\footnotesize\ttfamily int a4988\+::enable\+\_\+pin}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00072}{72}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_ad6372b76bfc23c771d7e6555a106e292}\label{classa4988_ad6372b76bfc23c771d7e6555a106e292}} 
+\index{a4988@{a4988}!motor\_steps@{motor\_steps}}
+\index{motor\_steps@{motor\_steps}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{motor\_steps}{motor\_steps}}
+{\footnotesize\ttfamily int a4988\+::motor\+\_\+steps}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00060}{60}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_a2be691a68489baf9924cc7c69b16f7c0}\label{classa4988_a2be691a68489baf9924cc7c69b16f7c0}} 
+\index{a4988@{a4988}!ms1\_pin@{ms1\_pin}}
+\index{ms1\_pin@{ms1\_pin}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{ms1\_pin}{ms1\_pin}}
+{\footnotesize\ttfamily int a4988\+::ms1\+\_\+pin}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00068}{68}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}\label{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}} 
+\index{a4988@{a4988}!ms2\_pin@{ms2\_pin}}
+\index{ms2\_pin@{ms2\_pin}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{ms2\_pin}{ms2\_pin}}
+{\footnotesize\ttfamily int a4988\+::ms2\+\_\+pin}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00069}{69}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}\label{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}} 
+\index{a4988@{a4988}!ms3\_pin@{ms3\_pin}}
+\index{ms3\_pin@{ms3\_pin}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{ms3\_pin}{ms3\_pin}}
+{\footnotesize\ttfamily int a4988\+::ms3\+\_\+pin}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00070}{70}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_a1eb89487e1d4fc4cb068d581a6278003}\label{classa4988_a1eb89487e1d4fc4cb068d581a6278003}} 
+\index{a4988@{a4988}!num\_steps@{num\_steps}}
+\index{num\_steps@{num\_steps}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{num\_steps}{num\_steps}}
+{\footnotesize\ttfamily int a4988\+::num\+\_\+steps}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00062}{62}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_a1965dbc601b23711ab178ae9067133c3}\label{classa4988_a1965dbc601b23711ab178ae9067133c3}} 
+\index{a4988@{a4988}!step\_delay@{step\_delay}}
+\index{step\_delay@{step\_delay}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{step\_delay}{step\_delay}}
+{\footnotesize\ttfamily unsigned long a4988\+::step\+\_\+delay}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00061}{61}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_a45956ebaed9f19834bc9094dd59f551a}\label{classa4988_a45956ebaed9f19834bc9094dd59f551a}} 
+\index{a4988@{a4988}!step\_mode@{step\_mode}}
+\index{step\_mode@{step\_mode}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{step\_mode}{step\_mode}}
+{\footnotesize\ttfamily int a4988\+::step\+\_\+mode}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00064}{64}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_add7441f68064b3dd6e06d5bcb30cb159}\label{classa4988_add7441f68064b3dd6e06d5bcb30cb159}} 
+\index{a4988@{a4988}!step\_number@{step\_number}}
+\index{step\_number@{step\_number}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{step\_number}{step\_number}}
+{\footnotesize\ttfamily int a4988\+::step\+\_\+number}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00063}{63}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_a1f7e3717033bd9204414c1408b58eaa5}\label{classa4988_a1f7e3717033bd9204414c1408b58eaa5}} 
+\index{a4988@{a4988}!step\_pin@{step\_pin}}
+\index{step\_pin@{step\_pin}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{step\_pin}{step\_pin}}
+{\footnotesize\ttfamily int a4988\+::step\+\_\+pin}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00065}{65}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_a58dce61bc6613bc5e7bd5cb77a3abaf8}\label{classa4988_a58dce61bc6613bc5e7bd5cb77a3abaf8}} 
+\index{a4988@{a4988}!StepCounter@{StepCounter}}
+\index{StepCounter@{StepCounter}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{StepCounter}{StepCounter}}
+{\footnotesize\ttfamily int a4988\+::\+Step\+Counter = 0}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00074}{74}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+\mbox{\Hypertarget{classa4988_a3b6a16a6b8162c6a3ba164fedeef0fb7}\label{classa4988_a3b6a16a6b8162c6a3ba164fedeef0fb7}} 
+\index{a4988@{a4988}!TotalStepCounted@{TotalStepCounted}}
+\index{TotalStepCounted@{TotalStepCounted}!a4988@{a4988}}
+\doxysubsubsection{\texorpdfstring{TotalStepCounted}{TotalStepCounted}}
+{\footnotesize\ttfamily int a4988\+::\+Total\+Step\+Counted =0}
+
+
+
+Definition at line \mbox{\hyperlink{_driver_a4988_8hpp_source_l00076}{76}} of file \mbox{\hyperlink{_driver_a4988_8hpp_source}{Driver\+A4988.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/include/\mbox{\hyperlink{_driver_a4988_8hpp}{Driver\+A4988.\+hpp}}\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/src/\mbox{\hyperlink{_driver_a4988_8cpp}{Driver\+A4988.\+cpp}}\end{DoxyCompactItemize}

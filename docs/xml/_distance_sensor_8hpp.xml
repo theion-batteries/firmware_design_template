@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_distance_sensor_8hpp" kind="file" language="C++">
+    <compoundname>DistanceSensor.hpp</compoundname>
+    <includes refid="_configs_8h" local="yes">Configs.h</includes>
+    <includes refid="_keyence___a_p_i_8h" local="yes">Keyence_API.h</includes>
+    <includedby refid="_alignment_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Alignment.hpp</includedby>
+    <includedby refid="_distance_sensor_8cpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DistanceSensor.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>ArduinoSTL.h</label>
+      </node>
+      <node id="2">
+        <label>Configs.h</label>
+        <link refid="_configs_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp</label>
+        <link refid="_distance_sensor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Keyence_API.h</label>
+        <link refid="_keyence___a_p_i_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Alignment.hpp</label>
+        <link refid="_alignment_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <link refid="_cmd_pattern_callbacks_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</label>
+        <link refid="_cmd_pattern_classes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <link refid="_com_handler_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp</label>
+        <link refid="_distance_sensor_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <link refid="_globals_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Alignment.cpp</label>
+        <link refid="_alignment_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <link refid="_cmd_pattern_callbacks_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <link refid="_com_handler_8cpp"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DistanceSensor.cpp</label>
+        <link refid="_distance_sensor_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <link refid="_globals_8cpp"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_distance_sensor" prot="public">DistanceSensor</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sami dhiab (<ulink url="mailto:sami@theion.de">sami@theion.de</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2022-02-08</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_configs_8h" kindref="compound">Configs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_keyence___a_p_i_8h" kindref="compound">Keyence_API.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_distance_sensor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="class_distance_sensor_1a797bd792642b88a357dcf9aecdf7271c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1a797bd792642b88a357dcf9aecdf7271c" kindref="member">Pin</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_distance_sensor_1a8f00655b3965c91c1dd97758711844ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1a8f00655b3965c91c1dd97758711844ba" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_distance_sensor_1a7277aa0cf628731f0db9329874a3b525" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1a7277aa0cf628731f0db9329874a3b525" kindref="member">currentDistance</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>hc_sr04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>EchoPin;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TrigPin;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_distance_sensor_1a34b043ed931b955731c0951d1cb625d2" kindref="member">DistanceSensor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>EchoPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TrigPin);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>keyence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_distance_sensor_1ac97d894ab1bbd43fd3e22c1fb7aa6585" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_keyence__rs232__interface" kindref="compound">Keyence_rs232_interface</ref>*<sp/><ref refid="class_distance_sensor_1ac97d894ab1bbd43fd3e22c1fb7aa6585" kindref="member">IkeyenceRS232</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_keyence__rs232__interface" kindref="compound">Keyence_rs232_interface</ref>(<ref refid="_configs_8h_1a005a72831297d00f495e084eb64a5bed" kindref="member">KEYENCE_SERIAL_HANDLER</ref>,<ref refid="_configs_8h_1ac5512a940a57198b0d9b9f2e366c7ee8" kindref="member">KEYENCE_SERIAL_BAUDRATE</ref>);</highlight></codeline>
+<codeline lineno="27" refid="class_distance_sensor_1a534437583b197ba595bf54e31ff58b64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1a534437583b197ba595bf54e31ff58b64" kindref="member">HeadNum</ref>;</highlight></codeline>
+<codeline lineno="28" refid="class_distance_sensor_1a686c8877763936f2e841f5e8d1688ed3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_keyence__base" kindref="compound">Keyence_base</ref>*<sp/><ref refid="class_distance_sensor_1a686c8877763936f2e841f5e8d1688ed3" kindref="member">Kbase</ref>;</highlight></codeline>
+<codeline lineno="29" refid="class_distance_sensor_1a34b043ed931b955731c0951d1cb625d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_distance_sensor_1a34b043ed931b955731c0951d1cb625d2" kindref="member">DistanceSensor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OutputHeadNumber);</highlight></codeline>
+<codeline lineno="30" refid="class_distance_sensor_1afd9021692a991103c20e928977bdec69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1afd9021692a991103c20e928977bdec69" kindref="member">setKeyenceCom</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//generic<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1a1b5434dd7b12183ded0962f6e42a8f8d" kindref="member">getCurrentDistance</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1a023ee399031eac2a1495d15e796a7fdc" kindref="member">printDistance</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp"/>
+  </compounddef>
+</doxygen>

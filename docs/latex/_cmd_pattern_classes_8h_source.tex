@@ -1,0 +1,587 @@
+\hypertarget{_cmd_pattern_classes_8h_source}{}\doxysection{Cmd\+Pattern\+Classes.\+h}
+\label{_cmd_pattern_classes_8h_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/CmdPatternClasses.h@{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/CmdPatternClasses.h}}
+\mbox{\hyperlink{_cmd_pattern_classes_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00011}00011 \textcolor{preprocessor}{\#ifndef \_CMDPATTERNCLASSES\_}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00012}00012 \textcolor{preprocessor}{\#define \_CMDPATTERNCLASSES\_}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00013}00013 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_alignment_8hpp}{Alignment.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00014}00014 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_reset_8h}{Reset.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00015}00015 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_sleep_8h}{Sleep.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00016}00016 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_u_u_i_d_8hpp}{UUID.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00017}00017 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_state_manager_8hpp}{StateManager.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00019}00019 \textcolor{comment}{// command pattern Base}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00020}\mbox{\hyperlink{class_i_command}{00020}} \textcolor{keyword}{class }\mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00021}00021  \textcolor{comment}{// private: implement a receiver reference}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00022}00022  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00023}\mbox{\hyperlink{class_i_command_a0e0226af93b945e84b58405e9d5343b1}{00023}}     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_i_command_a0e0226af93b945e84b58405e9d5343b1}{\string~ICommand}}()\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00024}\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{00024}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}() = 0;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00025}\mbox{\hyperlink{class_i_command_a86e1942e4564840b6c5e09c3a7cdba78}{00025}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_command_a86e1942e4564840b6c5e09c3a7cdba78}{undo}}() = 0;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00026}00026 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00027}00027 \textcolor{comment}{/********* Internal Commnands ***********/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00028}00028 \textcolor{comment}{// template command get uuid}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00029}\mbox{\hyperlink{classget_u_u_i_d}{00029}}  \textcolor{keyword}{class }\mbox{\hyperlink{classget_u_u_i_d}{getUUID}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00030}00030  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00031}00031   \mbox{\hyperlink{class_u_u_i_d___m_a_n_a_g_e_r}{UUID\_MANAGER}}\& idObj;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00032}00032   String UUID\_;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00033}00033  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00034}\mbox{\hyperlink{classget_u_u_i_d_a666c98e46272390ca9285149c15eef70}{00034}}   \mbox{\hyperlink{classget_u_u_i_d_a666c98e46272390ca9285149c15eef70}{getUUID}}(\mbox{\hyperlink{class_u_u_i_d___m_a_n_a_g_e_r}{UUID\_MANAGER}}\& idObj):idObj(idObj)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00035}\mbox{\hyperlink{classget_u_u_i_d_a936e4f57c5e32cc1a00cbb6e87f5dd87}{00035}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_u_u_i_d_a936e4f57c5e32cc1a00cbb6e87f5dd87}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00036}00036   Serial.println( \textcolor{stringliteral}{"{}execute get uuid"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00037}00037     UUID\_=idObj.\mbox{\hyperlink{class_u_u_i_d___m_a_n_a_g_e_r_af23ca44819380f784eeaf2dee80469cb}{get\_UUID\_EEPROM}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00038}00038     Serial.println(UUID\_); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00039}\mbox{\hyperlink{classget_u_u_i_d_a69c01b37186855ef1c6843447af7d5fb}{00039}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_u_u_i_d_a69c01b37186855ef1c6843447af7d5fb}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00040}00040     Serial.println(UUID\_);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00041}00041   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00042}00042 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00043}00043 \textcolor{comment}{// template command set uuid}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00044}\mbox{\hyperlink{classset_u_u_i_d}{00044}}  \textcolor{keyword}{class }\mbox{\hyperlink{classset_u_u_i_d}{setUUID}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00045}00045  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00046}00046   \mbox{\hyperlink{class_u_u_i_d___m_a_n_a_g_e_r}{UUID\_MANAGER}}\& idObj;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00047}00047   String old\_UUID\_;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00048}00048   String new\_UUID\_;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00049}00049  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00050}\mbox{\hyperlink{classset_u_u_i_d_a3a16702ba69b14872f12015595ed25de}{00050}}   \mbox{\hyperlink{classset_u_u_i_d_a3a16702ba69b14872f12015595ed25de}{setUUID}}(\mbox{\hyperlink{class_u_u_i_d___m_a_n_a_g_e_r}{UUID\_MANAGER}}\& idObj, String uuid):idObj(idObj), new\_UUID\_(uuid)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00051}\mbox{\hyperlink{classset_u_u_i_d_a91a69117ee9a224e831fd77315ce2b21}{00051}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_u_u_i_d_a91a69117ee9a224e831fd77315ce2b21}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00052}00052   Serial.println( \textcolor{stringliteral}{"{}execute set uuid"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00053}00053     old\_UUID\_=idObj.\mbox{\hyperlink{class_u_u_i_d___m_a_n_a_g_e_r_af23ca44819380f784eeaf2dee80469cb}{get\_UUID\_EEPROM}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00054}00054     idObj.\mbox{\hyperlink{class_u_u_i_d___m_a_n_a_g_e_r_a0c5cd5ccc23f6c7eb99950a651f91713}{set\_UUID\_EEPROM}}(new\_UUID\_);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00055}00055     Serial.println(new\_UUID\_); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00056}\mbox{\hyperlink{classset_u_u_i_d_ab191fc5edb68601bbefc8d90fafb6ea5}{00056}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_u_u_i_d_ab191fc5edb68601bbefc8d90fafb6ea5}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00057}00057     idObj.\mbox{\hyperlink{class_u_u_i_d___m_a_n_a_g_e_r_a0c5cd5ccc23f6c7eb99950a651f91713}{set\_UUID\_EEPROM}}(new\_UUID\_);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00058}00058     Serial.println(old\_UUID\_);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00059}00059   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00060}00060 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00061}00061 \textcolor{comment}{// reset hardware}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00062}\mbox{\hyperlink{class_reset_device}{00062}}  \textcolor{keyword}{class }\mbox{\hyperlink{class_reset_device}{ResetDevice}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00063}00063  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00064}00064   \mbox{\hyperlink{class_reset_hardware}{ResetHardware}}\& reset;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00065}00065  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00066}\mbox{\hyperlink{class_reset_device_a1b6be1e9f1e96fb1756a8fa750a19bd2}{00066}}   \mbox{\hyperlink{class_reset_device_a1b6be1e9f1e96fb1756a8fa750a19bd2}{ResetDevice}}(\mbox{\hyperlink{class_reset_hardware}{ResetHardware}}\& reset):reset(reset)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00067}\mbox{\hyperlink{class_reset_device_a4fea167917ec9599f0f23bed5ef1b1a1}{00067}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_reset_device_a4fea167917ec9599f0f23bed5ef1b1a1}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00068}00068   \textcolor{comment}{//Serial.println( "{}execute reset"{}); }}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00069}00069   reset.\mbox{\hyperlink{class_reset_hardware_a2f521d08146215d48b3945b5e1fb4332}{soft\_reset}}(); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00070}\mbox{\hyperlink{class_reset_device_a2b7e4b073016b3be5214f0d96a8ab47e}{00070}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_reset_device_a2b7e4b073016b3be5214f0d96a8ab47e}{undo}}() \{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00071}00071 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00072}00072 \textcolor{comment}{// sleep hardware}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00073}\mbox{\hyperlink{class_sleep_device}{00073}}  \textcolor{keyword}{class }\mbox{\hyperlink{class_sleep_device}{SleepDevice}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00074}00074  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00075}00075   \mbox{\hyperlink{class_sleep_hardware}{SleepHardware}}\& sleep;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00076}00076  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00077}\mbox{\hyperlink{class_sleep_device_a0268753edbceeed9a3613ebb7f104377}{00077}}   \mbox{\hyperlink{class_sleep_device_a0268753edbceeed9a3613ebb7f104377}{SleepDevice}}(\mbox{\hyperlink{class_sleep_hardware}{SleepHardware}}\& sleep):sleep(sleep)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00078}\mbox{\hyperlink{class_sleep_device_a2af8e3cf7616dca7986a3f3673084404}{00078}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sleep_device_a2af8e3cf7616dca7986a3f3673084404}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00079}00079   \textcolor{comment}{//Serial.println( "{}execute sleep"{}); }}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00080}00080   sleep.\mbox{\hyperlink{class_sleep_hardware_abc1f56b9c599fefc8e738b9bcae930df}{Sleep}}(); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00081}\mbox{\hyperlink{class_sleep_device_af10137c53565bf2f2ea6ddc3ce68519f}{00081}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_sleep_device_af10137c53565bf2f2ea6ddc3ce68519f}{undo}}() \{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00082}00082 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00083}00083 \textcolor{comment}{/********** Motor enable/disable*********/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00084}\mbox{\hyperlink{class_enable_motor_cmd}{00084}}  \textcolor{keyword}{class }\mbox{\hyperlink{class_enable_motor_cmd}{EnableMotorCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00085}00085  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00086}00086  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00087}00087  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00088}\mbox{\hyperlink{class_enable_motor_cmd_ab34ba73041a4dd993cd8fc0639d20f27}{00088}}   \mbox{\hyperlink{class_enable_motor_cmd_ab34ba73041a4dd993cd8fc0639d20f27}{EnableMotorCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor) :M(motor)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00089}\mbox{\hyperlink{class_enable_motor_cmd_aed19db21a151de3b0c39524160323457}{00089}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_enable_motor_cmd_aed19db21a151de3b0c39524160323457}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00090}00090   Serial.println( \textcolor{stringliteral}{"{}execute enable motor"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00091}00091   M.\mbox{\hyperlink{classa4988_ad61ff3ecdea7afe55a30edf31f1e0323}{enable}}(\mbox{\hyperlink{_configs_8h_a42cc7dae7a40abcb545fc41730fa1476}{on}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00092}00092   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00093}\mbox{\hyperlink{class_enable_motor_cmd_a201febf8a6073d830b912550f33feb4d}{00093}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_enable_motor_cmd_a201febf8a6073d830b912550f33feb4d}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00094}00094     Serial.println( \textcolor{stringliteral}{"{}execute disable motor"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00095}00095     M.\mbox{\hyperlink{classa4988_ad61ff3ecdea7afe55a30edf31f1e0323}{enable}}(\mbox{\hyperlink{_configs_8h_aa8df4166084b06f1e80d3510e5dcf7e1}{off}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00096}00096   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00097}00097 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00099}00099 \textcolor{comment}{/**************** GET ******************/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00100}00100 \textcolor{comment}{// template command get motor}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00101}\mbox{\hyperlink{classget_motor_cmd}{00101}}  \textcolor{keyword}{class }\mbox{\hyperlink{classget_motor_cmd}{getMotorCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00102}00102  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00103}00103  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00104}00104  \textcolor{keywordtype}{int} oldVal;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00105}00105  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00106}\mbox{\hyperlink{classget_motor_cmd_ae80625e668ad183bb6fd327bcfc4d46d}{00106}}   \mbox{\hyperlink{classget_motor_cmd_ae80625e668ad183bb6fd327bcfc4d46d}{getMotorCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor) :M(motor)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00107}\mbox{\hyperlink{classget_motor_cmd_a7a78cdf82598364bd0db596ec5c4c4c7}{00107}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_motor_cmd_a7a78cdf82598364bd0db596ec5c4c4c7}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00108}00108   Serial.println( \textcolor{stringliteral}{"{}execute get"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00109}00109   \textcolor{comment}{// here oldVal=M.get();}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00110}00110   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00111}\mbox{\hyperlink{classget_motor_cmd_a86da8086b2128f2d84be683cd8e9c781}{00111}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_motor_cmd_a86da8086b2128f2d84be683cd8e9c781}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00112}00112     Serial.println(oldVal);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00113}00113   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00114}00114 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00115}00115 \textcolor{comment}{// concrete command class get speed}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00116}\mbox{\hyperlink{classget_motor_speed_cmd}{00116}} \textcolor{keyword}{class }\mbox{\hyperlink{classget_motor_speed_cmd}{getMotorSpeedCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00117}00117  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00118}00118  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00119}00119  \textcolor{keywordtype}{int} oldVal;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00120}00120  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00121}\mbox{\hyperlink{classget_motor_speed_cmd_a7c8babebf6a93f0d814a04741f038100}{00121}}   \mbox{\hyperlink{classget_motor_speed_cmd_a7c8babebf6a93f0d814a04741f038100}{getMotorSpeedCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor):M(motor)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00122}\mbox{\hyperlink{classget_motor_speed_cmd_a417c6ed5782be14aee4e2d97560f8af0}{00122}}    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_motor_speed_cmd_a417c6ed5782be14aee4e2d97560f8af0}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00123}00123     Serial.println( \textcolor{stringliteral}{"{}execute get speed"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00124}00124     oldVal=M.\mbox{\hyperlink{classa4988_a0b7c5f9fb44b05f6642b517abc9b4a07}{getSpeed}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00125}00125     Serial.println(oldVal); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00126}\mbox{\hyperlink{classget_motor_speed_cmd_ad8c0f4617704991b15ca2f9d0dcfc9eb}{00126}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_motor_speed_cmd_ad8c0f4617704991b15ca2f9d0dcfc9eb}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00127}00127     Serial.println(oldVal);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00128}00128   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00129}00129 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00130}\mbox{\hyperlink{classget_motor_direction_cmd}{00130}} \textcolor{keyword}{class }\mbox{\hyperlink{classget_motor_direction_cmd}{getMotorDirectionCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00131}00131  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00132}00132  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00133}00133  \textcolor{keywordtype}{int} oldVal;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00134}00134  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00135}\mbox{\hyperlink{classget_motor_direction_cmd_a28c0e06c8668d53aedf7553f3d9d643e}{00135}}   \mbox{\hyperlink{classget_motor_direction_cmd_a28c0e06c8668d53aedf7553f3d9d643e}{getMotorDirectionCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor):M(motor)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00136}\mbox{\hyperlink{classget_motor_direction_cmd_a3fd8f5b9573e1b5ed69c8e4db0eaa8af}{00136}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_motor_direction_cmd_a3fd8f5b9573e1b5ed69c8e4db0eaa8af}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00137}00137     Serial.println( \textcolor{stringliteral}{"{}execute get direction"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00138}00138     oldVal=M.\mbox{\hyperlink{classa4988_a01be380db105cfc684c55dc42b81f76d}{getDirection}}(); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00139}\mbox{\hyperlink{classget_motor_direction_cmd_a44211f83994687c08c62335a4e16f3ca}{00139}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_motor_direction_cmd_a44211f83994687c08c62335a4e16f3ca}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00140}00140     Serial.println(oldVal);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00141}00141   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00142}00142 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00143}\mbox{\hyperlink{classget_motor_delay_cmd}{00143}} \textcolor{keyword}{class }\mbox{\hyperlink{classget_motor_delay_cmd}{getMotorDelayCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00144}00144  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00145}00145  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00146}00146  \textcolor{keywordtype}{int} oldVal;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00147}00147  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00148}\mbox{\hyperlink{classget_motor_delay_cmd_a81b4de1217f6891c211a72e1145d669f}{00148}}   \mbox{\hyperlink{classget_motor_delay_cmd_a81b4de1217f6891c211a72e1145d669f}{getMotorDelayCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor):M(motor)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00149}\mbox{\hyperlink{classget_motor_delay_cmd_a8f303a80a131389a92056d56e063760a}{00149}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_motor_delay_cmd_a8f303a80a131389a92056d56e063760a}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00150}00150     Serial.println( \textcolor{stringliteral}{"{}execute get delay"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00151}00151     oldVal=M.\mbox{\hyperlink{classa4988_a4e8bd4e45fe5a4fa30fafc877713978c}{getDelay}}(); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00152}\mbox{\hyperlink{classget_motor_delay_cmd_af2a4d2b9c86a959ad72d9503cd853554}{00152}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_motor_delay_cmd_af2a4d2b9c86a959ad72d9503cd853554}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00153}00153     Serial.println(oldVal);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00154}00154   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00155}00155 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00158}00158 \textcolor{comment}{/*********************** SET *************************/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00159}00159 \textcolor{comment}{// template command motor set}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00160}\mbox{\hyperlink{classset_motor_cmd}{00160}} \textcolor{keyword}{class }\mbox{\hyperlink{classset_motor_cmd}{setMotorCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00161}00161  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00162}00162  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00163}00163  \textcolor{keywordtype}{int} val;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00164}00164  \textcolor{keywordtype}{int} old=0;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00165}00165  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00166}\mbox{\hyperlink{classset_motor_cmd_a80d8210fa6c14fb95fc43303758bbd98}{00166}}   \mbox{\hyperlink{classset_motor_cmd_a80d8210fa6c14fb95fc43303758bbd98}{setMotorCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \textcolor{keywordtype}{int} val) :M(motor), val(val)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00167}\mbox{\hyperlink{classset_motor_cmd_ac22462c9566d74d1893c8c7a353fd205}{00167}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_motor_cmd_ac22462c9566d74d1893c8c7a353fd205}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00168}00168     Serial.println( \textcolor{stringliteral}{"{}execute set"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00169}00169     \textcolor{comment}{// old=get();}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00170}00170     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00171}\mbox{\hyperlink{classset_motor_cmd_ac5b2adee44c84ea723910d9ea4d6f6e5}{00171}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_motor_cmd_ac5b2adee44c84ea723910d9ea4d6f6e5}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00172}00172     \textcolor{comment}{//  set(old);}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00173}00173   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00174}00174 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00175}00175 \textcolor{comment}{// concrete command class set speed}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00176}\mbox{\hyperlink{classset_motor_speed_cmd}{00176}} \textcolor{keyword}{class }\mbox{\hyperlink{classset_motor_speed_cmd}{setMotorSpeedCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00177}00177  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00178}00178  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00179}00179  \textcolor{keywordtype}{int} val;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00180}00180  \textcolor{keywordtype}{int} old=0;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00181}00181  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00182}\mbox{\hyperlink{classset_motor_speed_cmd_a8a82572cb37d2bec324b93550f848213}{00182}}   \mbox{\hyperlink{classset_motor_speed_cmd_a8a82572cb37d2bec324b93550f848213}{setMotorSpeedCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \textcolor{keywordtype}{int} val):M(motor), val(val)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00183}\mbox{\hyperlink{classset_motor_speed_cmd_aed6577e323683bf21b1f0331cad4d5ca}{00183}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_motor_speed_cmd_aed6577e323683bf21b1f0331cad4d5ca}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00184}00184     Serial.println( \textcolor{stringliteral}{"{}execute set speed"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00185}00185     old=M.\mbox{\hyperlink{classa4988_a0b7c5f9fb44b05f6642b517abc9b4a07}{getSpeed}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00186}00186     M.\mbox{\hyperlink{classa4988_ae59dc905051ebfdcfac1d48f172d523f}{setSpeed}}(val); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00187}\mbox{\hyperlink{classset_motor_speed_cmd_a6686959fbc4d63c561776dab937205c5}{00187}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_motor_speed_cmd_a6686959fbc4d63c561776dab937205c5}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00188}00188     M.\mbox{\hyperlink{classa4988_ae59dc905051ebfdcfac1d48f172d523f}{setSpeed}}(old);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00189}00189   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00190}00190 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00191}\mbox{\hyperlink{classset_motor_direction_cmd}{00191}} \textcolor{keyword}{class }\mbox{\hyperlink{classset_motor_direction_cmd}{setMotorDirectionCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00192}00192  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00193}00193  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00194}00194  \textcolor{keywordtype}{int} val;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00195}00195  \textcolor{keywordtype}{int} old=0;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00196}00196  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00197}\mbox{\hyperlink{classset_motor_direction_cmd_aa950ff7b2528848d878e77eade404425}{00197}}   \mbox{\hyperlink{classset_motor_direction_cmd_aa950ff7b2528848d878e77eade404425}{setMotorDirectionCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \textcolor{keywordtype}{int} val):M(motor), val(val)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00198}\mbox{\hyperlink{classset_motor_direction_cmd_ab7e1ec07b1cabf7293b57e6c8adee418}{00198}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_motor_direction_cmd_ab7e1ec07b1cabf7293b57e6c8adee418}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00199}00199     Serial.println( \textcolor{stringliteral}{"{}execute set direction"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00200}00200     old=M.\mbox{\hyperlink{classa4988_a01be380db105cfc684c55dc42b81f76d}{getDirection}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00201}00201     M.\mbox{\hyperlink{classa4988_a6a37cf937b1f7a1f229904cdb9191b89}{setDirection}}(val); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00202}\mbox{\hyperlink{classset_motor_direction_cmd_a3b1204715fd821801515d8d4cd40faba}{00202}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_motor_direction_cmd_a3b1204715fd821801515d8d4cd40faba}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00203}00203     M.\mbox{\hyperlink{classa4988_a6a37cf937b1f7a1f229904cdb9191b89}{setDirection}}(old);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00204}00204   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00205}00205 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00206}\mbox{\hyperlink{classset_motor_delay_cmd}{00206}} \textcolor{keyword}{class }\mbox{\hyperlink{classset_motor_delay_cmd}{setMotorDelayCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00207}00207  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00208}00208  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00209}00209  \textcolor{keywordtype}{int} val;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00210}00210  \textcolor{keywordtype}{int} old=0;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00211}00211  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00212}\mbox{\hyperlink{classset_motor_delay_cmd_a5fab5f543a4344cc3b2d383829f2f5b2}{00212}}   \mbox{\hyperlink{classset_motor_delay_cmd_a5fab5f543a4344cc3b2d383829f2f5b2}{setMotorDelayCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \textcolor{keywordtype}{int} val):M(motor),val(val)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00213}\mbox{\hyperlink{classset_motor_delay_cmd_ab8397cfaed1d858b7517e658632099b6}{00213}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_motor_delay_cmd_ab8397cfaed1d858b7517e658632099b6}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00214}00214     Serial.println( \textcolor{stringliteral}{"{}execute set delay"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00215}00215     old=M.\mbox{\hyperlink{classa4988_a4e8bd4e45fe5a4fa30fafc877713978c}{getDelay}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00216}00216     M.\mbox{\hyperlink{classa4988_af905ad2bb5a9e5465e83f081067a139c}{setDelay}}(val); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00217}\mbox{\hyperlink{classset_motor_delay_cmd_a7971ab68b7b37c58b128901f74076f6d}{00217}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classset_motor_delay_cmd_a7971ab68b7b37c58b128901f74076f6d}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00218}00218     M.\mbox{\hyperlink{classa4988_af905ad2bb5a9e5465e83f081067a139c}{setDelay}}(old);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00219}00219   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00220}00220 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00221}00221 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00222}00222 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00223}00223 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00224}00224 \textcolor{comment}{/**************************** MOVE ******************************/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00225}00225 \textcolor{comment}{// Template move}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00226}\mbox{\hyperlink{class_move_motor_cmd}{00226}} \textcolor{keyword}{class }\mbox{\hyperlink{class_move_motor_cmd}{MoveMotorCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00227}00227  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00228}00228  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00229}00229  \textcolor{keywordtype}{int} val;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00230}00230  \textcolor{keywordtype}{int} old=0;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00231}00231  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00232}\mbox{\hyperlink{class_move_motor_cmd_ac5df7df07c177de08c224ccf226818f5}{00232}}   \mbox{\hyperlink{class_move_motor_cmd_ac5df7df07c177de08c224ccf226818f5}{MoveMotorCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \textcolor{keywordtype}{int} val) :M(motor), val(val)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00233}\mbox{\hyperlink{class_move_motor_cmd_a2862a99dc68be06d7dbd6a05e0ac5239}{00233}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_move_motor_cmd_a2862a99dc68be06d7dbd6a05e0ac5239}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00234}00234     Serial.println( \textcolor{stringliteral}{"{}execute set"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00235}00235     \textcolor{comment}{// old=get();}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00236}00236     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00237}\mbox{\hyperlink{class_move_motor_cmd_a94becc0779e3f1b3e36eba0044cc7cf0}{00237}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_move_motor_cmd_a94becc0779e3f1b3e36eba0044cc7cf0}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00238}00238     \textcolor{comment}{//  set(old);}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00239}00239   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00240}00240 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00241}00241 \textcolor{comment}{// concrete implementation move up}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00242}\mbox{\hyperlink{class_move_motor_up_cmd}{00242}} \textcolor{keyword}{class }\mbox{\hyperlink{class_move_motor_up_cmd}{MoveMotorUpCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00243}00243  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00244}00244  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00245}00245  \mbox{\hyperlink{class_alignment}{Alignment}}\& Al;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00246}00246  \textcolor{keywordtype}{float} val;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00247}00247  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00248}\mbox{\hyperlink{class_move_motor_up_cmd_addb4d2ca78ee434a014f1fb99e560bc0}{00248}}   \mbox{\hyperlink{class_move_motor_up_cmd_addb4d2ca78ee434a014f1fb99e560bc0}{MoveMotorUpCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \mbox{\hyperlink{class_alignment}{Alignment}}\& AL, \textcolor{keywordtype}{float} val) :M(motor), Al(AL), val(val)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00249}\mbox{\hyperlink{class_move_motor_up_cmd_abe4d84e2c2bd89bf875820aa96f7acb0}{00249}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_move_motor_up_cmd_abe4d84e2c2bd89bf875820aa96f7acb0}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00250}00250     Serial.println( \textcolor{stringliteral}{"{}execute move up"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00251}00251     Al.\mbox{\hyperlink{class_alignment_ab7e9da9ded962b937b7df23e116f3b0e}{MoveDistanceMSafe}}(\&M, \mbox{\hyperlink{_configs_8h_a0337592b74197133c4203f6dce657a76}{up}}, val);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00252}00252     \textcolor{comment}{// move down by same distance is the undo cmd}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00253}00253     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00254}\mbox{\hyperlink{class_move_motor_up_cmd_a592fda0f55d367d5be29244036034b6b}{00254}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_move_motor_up_cmd_a592fda0f55d367d5be29244036034b6b}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00255}00255     Serial.println( \textcolor{stringliteral}{"{}execute move down"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00256}00256     Al.\mbox{\hyperlink{class_alignment_ab7e9da9ded962b937b7df23e116f3b0e}{MoveDistanceMSafe}}(\&M, \mbox{\hyperlink{_configs_8h_a249d857dfa044493c7f29844b7b0baae}{down}}, val);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00257}00257   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00258}00258 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00259}\mbox{\hyperlink{class_move_motor_down_cmd}{00259}} \textcolor{keyword}{class }\mbox{\hyperlink{class_move_motor_down_cmd}{MoveMotorDownCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00260}00260  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00261}00261  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00262}00262  \mbox{\hyperlink{class_alignment}{Alignment}}\& Al;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00263}00263  \textcolor{keywordtype}{float} val;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00264}00264  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00265}\mbox{\hyperlink{class_move_motor_down_cmd_ad312945f6bd48431d6b75e2a948f6068}{00265}}   \mbox{\hyperlink{class_move_motor_down_cmd_ad312945f6bd48431d6b75e2a948f6068}{MoveMotorDownCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \mbox{\hyperlink{class_alignment}{Alignment}}\& AL, \textcolor{keywordtype}{float} val) :M(motor), Al(AL), val(val)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00266}\mbox{\hyperlink{class_move_motor_down_cmd_ac319973b67f7df5f252f2849aae38f40}{00266}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_move_motor_down_cmd_ac319973b67f7df5f252f2849aae38f40}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00267}00267     Serial.println( \textcolor{stringliteral}{"{}execute move down"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00268}00268     Al.\mbox{\hyperlink{class_alignment_ab7e9da9ded962b937b7df23e116f3b0e}{MoveDistanceMSafe}}(\&M, \mbox{\hyperlink{_configs_8h_a249d857dfa044493c7f29844b7b0baae}{down}}, val);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00269}00269     \textcolor{comment}{// move down by same distance is the undo cmd}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00270}00270     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00271}\mbox{\hyperlink{class_move_motor_down_cmd_ac2931312dd7e4a46455b6c11a551b700}{00271}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_move_motor_down_cmd_ac2931312dd7e4a46455b6c11a551b700}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00272}00272     Serial.println( \textcolor{stringliteral}{"{}execute up down"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00273}00273     Al.\mbox{\hyperlink{class_alignment_ab7e9da9ded962b937b7df23e116f3b0e}{MoveDistanceMSafe}}(\&M, \mbox{\hyperlink{_configs_8h_a0337592b74197133c4203f6dce657a76}{up}}, val);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00274}00274   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00275}00275 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00276}00276 \textcolor{comment}{/**************************** ROTATE ******************************/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00277}00277 \textcolor{comment}{// Template rotate}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00278}\mbox{\hyperlink{class_rotate_motor_cmd}{00278}} \textcolor{keyword}{class }\mbox{\hyperlink{class_rotate_motor_cmd}{RotateMotorCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00279}00279  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00280}00280  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00281}00281  \textcolor{keywordtype}{int} val;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00282}00282  \textcolor{keywordtype}{int} old=0;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00283}00283  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00284}\mbox{\hyperlink{class_rotate_motor_cmd_aabeebc796dc99dc20250973cdc734024}{00284}}   \mbox{\hyperlink{class_rotate_motor_cmd_aabeebc796dc99dc20250973cdc734024}{RotateMotorCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \textcolor{keywordtype}{int} val) :M(motor), val(val)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00285}\mbox{\hyperlink{class_rotate_motor_cmd_ad1a8d99fff4d37ff888597633f40ad3b}{00285}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rotate_motor_cmd_ad1a8d99fff4d37ff888597633f40ad3b}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00286}00286     Serial.println( \textcolor{stringliteral}{"{}execute set"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00287}00287     \textcolor{comment}{// old=get();}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00288}00288     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00289}\mbox{\hyperlink{class_rotate_motor_cmd_a4d570e6a3699f2e31f4724a35b266529}{00289}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rotate_motor_cmd_a4d570e6a3699f2e31f4724a35b266529}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00290}00290     \textcolor{comment}{//  set(old);}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00291}00291   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00292}00292 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00293}\mbox{\hyperlink{class_rotate_motor_clk_cmd}{00293}} \textcolor{keyword}{class }\mbox{\hyperlink{class_rotate_motor_clk_cmd}{RotateMotorClkCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00294}00294  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00295}00295  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00296}00296  \mbox{\hyperlink{class_alignment}{Alignment}}\& Al;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00297}00297  \textcolor{keywordtype}{float} val;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00298}00298  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00299}\mbox{\hyperlink{class_rotate_motor_clk_cmd_a2a77cdcd475122df223882da4abf53cb}{00299}}   \mbox{\hyperlink{class_rotate_motor_clk_cmd_a2a77cdcd475122df223882da4abf53cb}{RotateMotorClkCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \mbox{\hyperlink{class_alignment}{Alignment}}\& AL, \textcolor{keywordtype}{float} val) :M(motor), Al(AL), val(val)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00300}\mbox{\hyperlink{class_rotate_motor_clk_cmd_a56a9f5b4304d8ead3ef66175f0134dc6}{00300}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rotate_motor_clk_cmd_a56a9f5b4304d8ead3ef66175f0134dc6}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00301}00301     Serial.println( \textcolor{stringliteral}{"{}execute rotate clk"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00302}00302     Al.\mbox{\hyperlink{class_alignment_a42ca106fc6688ad6f4e17685f9c07589}{RotateAnglePHloop}}(\&M, \mbox{\hyperlink{_configs_8h_ae4a6a5757fdb3dd50355cea42bab342c}{clk}}, val);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00303}00303     \textcolor{comment}{// move down by same distance is the undo cmd}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00304}00304     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00305}\mbox{\hyperlink{class_rotate_motor_clk_cmd_a58d79afd386f2f2329bc4e9bb72d3ed5}{00305}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rotate_motor_clk_cmd_a58d79afd386f2f2329bc4e9bb72d3ed5}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00306}00306     Serial.println( \textcolor{stringliteral}{"{}execute rotate cclk"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00307}00307     Al.\mbox{\hyperlink{class_alignment_a42ca106fc6688ad6f4e17685f9c07589}{RotateAnglePHloop}}(\&M, \mbox{\hyperlink{_configs_8h_ac15bd348b546cfa8e7c9330b517bc217}{cclk}}, val);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00308}00308   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00309}00309 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00310}\mbox{\hyperlink{class_rotate_motor_cclk_cmd}{00310}} \textcolor{keyword}{class }\mbox{\hyperlink{class_rotate_motor_cclk_cmd}{RotateMotorCclkCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00311}00311  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00312}00312  \mbox{\hyperlink{class_nema8}{Nema8}}\& M;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00313}00313  \mbox{\hyperlink{class_alignment}{Alignment}}\& Al;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00314}00314  \textcolor{keywordtype}{float} val;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00315}00315  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00316}\mbox{\hyperlink{class_rotate_motor_cclk_cmd_a6cd1ea2db4660f40dff01669f9ba641f}{00316}}   \mbox{\hyperlink{class_rotate_motor_cclk_cmd_a6cd1ea2db4660f40dff01669f9ba641f}{RotateMotorCclkCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \mbox{\hyperlink{class_alignment}{Alignment}}\& AL, \textcolor{keywordtype}{float} val) :M(motor), Al(AL), val(val)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00317}\mbox{\hyperlink{class_rotate_motor_cclk_cmd_a9cd0bf2d88fd1cf6dc55eb09d13df733}{00317}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rotate_motor_cclk_cmd_a9cd0bf2d88fd1cf6dc55eb09d13df733}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00318}00318     Serial.println( \textcolor{stringliteral}{"{}execute rotate cclk"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00319}00319     Al.\mbox{\hyperlink{class_alignment_a42ca106fc6688ad6f4e17685f9c07589}{RotateAnglePHloop}}(\&M, \mbox{\hyperlink{_configs_8h_ac15bd348b546cfa8e7c9330b517bc217}{cclk}}, val);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00320}00320     \textcolor{comment}{// move down by same distance is the undo cmd}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00321}00321     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00322}\mbox{\hyperlink{class_rotate_motor_cclk_cmd_a3f8d23a9165ff286158bec7c962edff5}{00322}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rotate_motor_cclk_cmd_a3f8d23a9165ff286158bec7c962edff5}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00323}00323     Serial.println( \textcolor{stringliteral}{"{}execute rotate clk"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00324}00324     Al.\mbox{\hyperlink{class_alignment_a42ca106fc6688ad6f4e17685f9c07589}{RotateAnglePHloop}}(\&M, \mbox{\hyperlink{_configs_8h_ae4a6a5757fdb3dd50355cea42bab342c}{clk}}, val);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00325}00325   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00326}00326 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00327}00327 \textcolor{comment}{/***************** Sensor Commands **********/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00328}00328 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00329}00329 \textcolor{comment}{/**************** GET ******************/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00330}00330 \textcolor{comment}{// template command get sensor}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00331}\mbox{\hyperlink{classget_sensor_cmd}{00331}}  \textcolor{keyword}{class }\mbox{\hyperlink{classget_sensor_cmd}{getSensorCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00332}00332  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00333}00333  \mbox{\hyperlink{class_distance_sensor}{DistanceSensor}}\& S;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00334}00334  \textcolor{keywordtype}{int} oldVal;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00335}00335  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00336}\mbox{\hyperlink{classget_sensor_cmd_a702f6d6eb4243cd42024f60bc2a092ad}{00336}}   \mbox{\hyperlink{classget_sensor_cmd_a702f6d6eb4243cd42024f60bc2a092ad}{getSensorCmd}}(\mbox{\hyperlink{class_distance_sensor}{DistanceSensor}}\& Sensor) :S(Sensor)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00337}\mbox{\hyperlink{classget_sensor_cmd_aae194bcae6d0de695a7ceb6b3d245084}{00337}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_sensor_cmd_aae194bcae6d0de695a7ceb6b3d245084}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00338}00338   Serial.println( \textcolor{stringliteral}{"{}execute get"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00339}00339   \textcolor{comment}{// here oldVal=M.get();}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00340}00340   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00341}\mbox{\hyperlink{classget_sensor_cmd_a4a2b5f269e575483f5decd130f9f8a99}{00341}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_sensor_cmd_a4a2b5f269e575483f5decd130f9f8a99}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00342}00342     Serial.println(oldVal);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00343}00343   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00344}00344 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00345}00345 \textcolor{comment}{// concrete command class get speed}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00346}\mbox{\hyperlink{classget_sensor_value_cmd}{00346}} \textcolor{keyword}{class }\mbox{\hyperlink{classget_sensor_value_cmd}{getSensorValueCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00347}00347  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00348}00348  \mbox{\hyperlink{class_distance_sensor}{DistanceSensor}}\& S;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00349}00349  \textcolor{keywordtype}{double} oldVal;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00350}00350  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00351}\mbox{\hyperlink{classget_sensor_value_cmd_aadd8f21590d3b1b3f5175c84906387f5}{00351}}   \mbox{\hyperlink{classget_sensor_value_cmd_aadd8f21590d3b1b3f5175c84906387f5}{getSensorValueCmd}}(\mbox{\hyperlink{class_distance_sensor}{DistanceSensor}}\& Sensor):S(Sensor)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00352}\mbox{\hyperlink{classget_sensor_value_cmd_a56dd54d09b57a0901d731a9cc5c54676}{00352}}    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_sensor_value_cmd_a56dd54d09b57a0901d731a9cc5c54676}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00353}00353     Serial.println( \textcolor{stringliteral}{"{}execute get Value"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00354}00354     oldVal=S.\mbox{\hyperlink{class_distance_sensor_a1b5434dd7b12183ded0962f6e42a8f8d}{getCurrentDistance}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00355}00355     Serial.println(oldVal); \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00356}\mbox{\hyperlink{classget_sensor_value_cmd_a686b0c587e070f35000b5e86c88e2431}{00356}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classget_sensor_value_cmd_a686b0c587e070f35000b5e86c88e2431}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00357}00357     Serial.println(oldVal);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00358}00358   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00359}00359 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00360}00360 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00361}00361 \textcolor{comment}{/********** Unit aka Firmware Commands ************/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00362}00362 \textcolor{comment}{// as a convention, to control the firmware with given commands,}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00363}00363 \textcolor{comment}{// these commands must be defined via classes, then Unit aka }}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00364}00364 \textcolor{comment}{// firmware invoker is responsible for requesting cmds.}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00365}00365 \textcolor{comment}{// Why do we need unit class? simply because it is easier to control}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00366}00366 \textcolor{comment}{// a complete unit of receivers with simple cmd. Motors, Sensors, endstops, }}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00367}00367 \textcolor{comment}{// lightbarriers \{x,y,z\} make the unit aka firmware alignment. }}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00368}00368 \textcolor{comment}{// the invoker FirmwareUnit can indirectly make requests to all of these receivers.}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00369}00369 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00370}\mbox{\hyperlink{class_firmware_unit}{00370}} \textcolor{keyword}{class }\mbox{\hyperlink{class_firmware_unit}{FirmwareUnit}}: \textcolor{keyword}{public} \mbox{\hyperlink{class_alignment}{Alignment}}\{\};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00371}00371 \textcolor{comment}{/**************** GET ******************/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00372}00372 \textcolor{comment}{// template command get sensor}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00373}\mbox{\hyperlink{class_calibrate_cmd}{00373}}  \textcolor{keyword}{class }\mbox{\hyperlink{class_calibrate_cmd}{CalibrateCmd}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_i_command}{ICommand}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00374}00374  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00375}00375  \mbox{\hyperlink{class_alignment}{Alignment}}\& FU;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00376}00376  \textcolor{keywordtype}{float} target;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00377}00377  \textcolor{keywordtype}{int} oldVal;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00378}00378  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00379}\mbox{\hyperlink{class_calibrate_cmd_ab5a4b8e96311f8fa109eed350cac04df}{00379}}   \mbox{\hyperlink{class_calibrate_cmd_ab5a4b8e96311f8fa109eed350cac04df}{CalibrateCmd}}(\mbox{\hyperlink{class_alignment}{Alignment}}\& Funit, \textcolor{keywordtype}{float} target): FU(Funit), target(target)\{\}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00380}\mbox{\hyperlink{class_calibrate_cmd_a9c979e62ff060e9218efe359812de2ea}{00380}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_calibrate_cmd_a9c979e62ff060e9218efe359812de2ea}{execute}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00381}00381   Serial.println( \textcolor{stringliteral}{"{}execute calibrate"{}}); }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00382}00382   FU.\mbox{\hyperlink{class_alignment_a9f3eee5f60bc1591e1895d7c4cd7c410}{setTargetDistancePHToML}}(target);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00383}00383   FU.\mbox{\hyperlink{class_alignment_aa10c40160fe39fa263b12f0e07d4f67c}{calibratePrintHead}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00384}00384   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00385}\mbox{\hyperlink{class_calibrate_cmd_a8c8127c109b0b9056f1d1cf4f5947753}{00385}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_calibrate_cmd_a8c8127c109b0b9056f1d1cf4f5947753}{undo}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00386}00386     Serial.println(\textcolor{stringliteral}{"{}no undo cmd here"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00387}00387   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00388}00388 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00389}00389 \textcolor{comment}{/******* Base class invoker template *********/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00390}\mbox{\hyperlink{class_invoker}{00390}} \textcolor{keyword}{class }\mbox{\hyperlink{class_invoker}{Invoker}}\{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00391}00391   \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00392}00392     \textcolor{comment}{// template commands to add}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00393}00393     \mbox{\hyperlink{class_i_command}{ICommand}} *on\_start\_cmd;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00394}00394     \mbox{\hyperlink{class_i_command}{ICommand}} *on\_finish\_cmd;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00395}00395  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00396}00396  \textcolor{comment}{//clean up}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00397}\mbox{\hyperlink{class_invoker_a60ff29f342fd47ad1d362a689bcbfd63}{00397}}   \mbox{\hyperlink{class_invoker_a60ff29f342fd47ad1d362a689bcbfd63}{\string~Invoker}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00398}00398   \textcolor{keyword}{delete}  on\_finish\_cmd;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00399}00399   \textcolor{keyword}{delete} on\_start\_cmd;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00400}00400   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00401}\mbox{\hyperlink{class_invoker_a9191daa329fafcecc996ff4a6cf8b02e}{00401}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_invoker_a9191daa329fafcecc996ff4a6cf8b02e}{SetOnStart}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command)\{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00402}00402     this-\/>on\_start\_cmd=command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00403}00403   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00404}\mbox{\hyperlink{class_invoker_ace85c70f471ce7fca542203f0c2fdff3}{00404}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_invoker_ace85c70f471ce7fca542203f0c2fdff3}{start}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00405}00405     Serial.println(\textcolor{stringliteral}{"{}starting.."{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00406}00406     \textcolor{keywordflow}{if} (this-\/>on\_start\_cmd) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00407}00407       this-\/>on\_start\_cmd-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00408}00408     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00409}00409   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00410}\mbox{\hyperlink{class_invoker_a2af0ecdacf369418e76a89745c0259b7}{00410}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_invoker_a2af0ecdacf369418e76a89745c0259b7}{SetOnfinish}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command)\{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00411}00411     this-\/>on\_finish\_cmd=command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00412}00412   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00413}\mbox{\hyperlink{class_invoker_ab9c02720cd689b846f1ce35f81558d65}{00413}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_invoker_ab9c02720cd689b846f1ce35f81558d65}{finish}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00414}00414     Serial.println(\textcolor{stringliteral}{"{}finishing.."{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00415}00415     \textcolor{keywordflow}{if} (this-\/>on\_finish\_cmd) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00416}00416       this-\/>on\_finish\_cmd-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00417}00417     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00418}00418   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00419}00419 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00420}00420 \textcolor{comment}{/********** Unit/Firmware invoker *************/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00421}00421 \textcolor{comment}{// see motor invoker for template}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00422}\mbox{\hyperlink{class_firm_invoker}{00422}} \textcolor{keyword}{class }\mbox{\hyperlink{class_firm_invoker}{FirmInvoker}}\{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00423}00423 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00424}00424   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_calibrate;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00425}00425  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00426}\mbox{\hyperlink{class_firm_invoker_a1c385553197f1ceee192a7ee59986320}{00426}}   \mbox{\hyperlink{class_firm_invoker_a1c385553197f1ceee192a7ee59986320}{\string~FirmInvoker}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00427}00427   \textcolor{keyword}{delete} on\_calibrate;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00428}00428   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00429}00429 \textcolor{comment}{// On set function assign command}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00430}\mbox{\hyperlink{class_firm_invoker_a32ee0681b841f54012256169e127ef5b}{00430}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_firm_invoker_a32ee0681b841f54012256169e127ef5b}{SetOnCalibrate}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command)\{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00431}00431     this-\/>on\_calibrate=command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00432}00432   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00433}\mbox{\hyperlink{class_firm_invoker_a8e7480af731d63b3de35b63ccd4c4017}{00433}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_firm_invoker_a8e7480af731d63b3de35b63ccd4c4017}{calibrate}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00434}00434     Serial.println(\textcolor{stringliteral}{"{}calibrating.."{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00435}00435     \textcolor{keywordflow}{if} (this-\/>on\_calibrate) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00436}00436       this-\/>on\_calibrate-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00437}00437     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00438}00438   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00439}00439 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00440}00440 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00441}00441 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00442}00442 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00443}00443 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00444}00444 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00445}00445 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00446}00446 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00447}00447 }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00448}00448 \textcolor{comment}{/**************** Invoker****************/}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00453}\mbox{\hyperlink{class_motor_invoker}{00453}} \textcolor{keyword}{class }\mbox{\hyperlink{class_motor_invoker}{MotorInvoker}} \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00454}00454  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00455}00455   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_start\_;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00456}00456   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_finish\_;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00457}00457   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_move\_up;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00458}00458   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_move\_down;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00459}00459   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_rotate\_clk;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00460}00460   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_rotate\_Cclk;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00461}00461   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_get\_speed;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00462}00462   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_get\_delay;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00463}00463   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_get\_direction;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00464}00464   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_set\_speed;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00465}00465   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_set\_delay;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00466}00466   \mbox{\hyperlink{class_i_command}{ICommand}} *on\_set\_direction;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00467}00467  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00468}\mbox{\hyperlink{class_motor_invoker_ad926c9015f88d68d41c20b25eb30a9a4}{00468}}   \mbox{\hyperlink{class_motor_invoker_ad926c9015f88d68d41c20b25eb30a9a4}{\string~MotorInvoker}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00469}00469   \textcolor{keyword}{delete} on\_start\_;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00470}00470   \textcolor{keyword}{delete} on\_finish\_;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00471}00471   \textcolor{keyword}{delete} on\_move\_up;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00472}00472   \textcolor{keyword}{delete} on\_move\_down;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00473}00473   \textcolor{keyword}{delete} on\_rotate\_clk;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00474}00474   \textcolor{keyword}{delete} on\_rotate\_Cclk;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00475}00475   \textcolor{keyword}{delete} on\_get\_speed;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00476}00476   \textcolor{keyword}{delete} on\_get\_delay;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00477}00477   \textcolor{keyword}{delete} on\_get\_direction;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00478}00478   \textcolor{keyword}{delete} on\_set\_speed;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00479}00479   \textcolor{keyword}{delete} on\_set\_delay;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00480}00480   \textcolor{keyword}{delete} on\_set\_direction;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00481}00481   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00482}00482 \textcolor{comment}{// On set function assign command}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00483}\mbox{\hyperlink{class_motor_invoker_af1f9455657c59d914dbbdd580d059f79}{00483}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_af1f9455657c59d914dbbdd580d059f79}{SetOnStart}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command)\{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00484}00484     this-\/>on\_start\_=command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00485}00485   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00486}\mbox{\hyperlink{class_motor_invoker_aa0a05a6ed39a6374c63bd68583ce5f8c}{00486}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_aa0a05a6ed39a6374c63bd68583ce5f8c}{SetOnFinish}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command)\{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00487}00487     this-\/>on\_finish\_ = command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00488}00488   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00489}\mbox{\hyperlink{class_motor_invoker_a2b622976bfc117252d8156d2f84ada96}{00489}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a2b622976bfc117252d8156d2f84ada96}{SetOnMoveUp}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00490}00490     this-\/>on\_move\_up = command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00491}00491   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00492}\mbox{\hyperlink{class_motor_invoker_ac2470936caa221e3bf83bce3e7a4eef8}{00492}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_ac2470936caa221e3bf83bce3e7a4eef8}{SetOnRotateClk}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00493}00493     this-\/>on\_rotate\_clk = command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00494}00494   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00495}\mbox{\hyperlink{class_motor_invoker_a480c0a22af65cb789cf7f76cb395756e}{00495}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a480c0a22af65cb789cf7f76cb395756e}{SetOnMoveDown}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00496}00496     this-\/>on\_move\_down = command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00497}00497   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00498}\mbox{\hyperlink{class_motor_invoker_a5d4611b73c2a70e13b867aef7c6b0257}{00498}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a5d4611b73c2a70e13b867aef7c6b0257}{SetOnRotateCclk}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00499}00499     this-\/>on\_rotate\_clk = command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00500}00500   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00501}\mbox{\hyperlink{class_motor_invoker_ae6c9a7e8bddde55534f1eaec34c81fca}{00501}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_ae6c9a7e8bddde55534f1eaec34c81fca}{SetOnGetSpeed}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00502}00502     this-\/>on\_get\_speed = command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00503}00503   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00504}\mbox{\hyperlink{class_motor_invoker_aaf9b70130e623597c8c71a4629437766}{00504}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_aaf9b70130e623597c8c71a4629437766}{SetOnSetSpeed}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00505}00505     this-\/>on\_set\_speed= command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00506}00506   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00507}\mbox{\hyperlink{class_motor_invoker_a9480a94b7511c955dc44d4e7d356879a}{00507}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a9480a94b7511c955dc44d4e7d356879a}{SetOnGetDelay}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00508}00508     this-\/>on\_get\_delay = command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00509}00509   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00510}\mbox{\hyperlink{class_motor_invoker_a9914bcb507992503615a9c9b46227b43}{00510}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a9914bcb507992503615a9c9b46227b43}{SetOnSetDelay}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00511}00511     this-\/>on\_set\_delay= command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00512}00512   \}  }
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00513}\mbox{\hyperlink{class_motor_invoker_a075d03cdc34ce41371efecd3f111a233}{00513}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a075d03cdc34ce41371efecd3f111a233}{SetOnGetDirection}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00514}00514     this-\/>on\_get\_direction = command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00515}00515   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00516}\mbox{\hyperlink{class_motor_invoker_ab4cce12ec9477b92d00403043c16c8f8}{00516}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_ab4cce12ec9477b92d00403043c16c8f8}{SetOnSetDirection}}(\mbox{\hyperlink{class_i_command}{ICommand}} *command) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00517}00517     this-\/>on\_set\_direction= command;}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00518}00518   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00523}\mbox{\hyperlink{class_motor_invoker_a5a337c1b070c332cb8636895ba75d321}{00523}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a5a337c1b070c332cb8636895ba75d321}{moveUp}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00524}00524     Serial.println(\textcolor{stringliteral}{"{}turn on motor on move"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00525}00525     \textcolor{keywordflow}{if} (this-\/>on\_move\_up) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00526}00526       this-\/>on\_start\_-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00527}00527       this-\/>on\_move\_up-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00528}00528     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00529}00529     Serial.println( \textcolor{stringliteral}{"{}turn off motor when finish"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00530}00530     \textcolor{keywordflow}{if} (this-\/>on\_finish\_) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00531}00531       this-\/>on\_finish\_-\/>\mbox{\hyperlink{class_i_command_a86e1942e4564840b6c5e09c3a7cdba78}{undo}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00532}00532     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00533}00533   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00534}\mbox{\hyperlink{class_motor_invoker_a1f732269172a2bb248deb930bddfe86b}{00534}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a1f732269172a2bb248deb930bddfe86b}{moveDown}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00535}00535     Serial.println(\textcolor{stringliteral}{"{}turn on motor on move"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00536}00536     \textcolor{keywordflow}{if} (this-\/>on\_move\_down) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00537}00537       this-\/>on\_start\_-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00538}00538       this-\/>on\_move\_down-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00539}00539     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00540}00540     Serial.println( \textcolor{stringliteral}{"{}turn off motor when finish"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00541}00541     \textcolor{keywordflow}{if} (this-\/>on\_finish\_) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00542}00542       this-\/>on\_finish\_-\/>\mbox{\hyperlink{class_i_command_a86e1942e4564840b6c5e09c3a7cdba78}{undo}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00543}00543     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00544}00544   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00545}\mbox{\hyperlink{class_motor_invoker_a86c42b047d8450b0f810efd0f10e0162}{00545}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a86c42b047d8450b0f810efd0f10e0162}{rotateClk}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00546}00546     Serial.println(\textcolor{stringliteral}{"{}turn on motor on move"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00547}00547     \textcolor{keywordflow}{if} (this-\/>on\_rotate\_clk) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00548}00548       this-\/>on\_start\_-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00549}00549       this-\/>on\_rotate\_clk-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00550}00550     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00551}00551     Serial.println( \textcolor{stringliteral}{"{}turn off motor when finish"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00552}00552     \textcolor{keywordflow}{if} (this-\/>on\_finish\_) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00553}00553       this-\/>on\_finish\_-\/>\mbox{\hyperlink{class_i_command_a86e1942e4564840b6c5e09c3a7cdba78}{undo}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00554}00554     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00555}00555   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00556}\mbox{\hyperlink{class_motor_invoker_a08cae71a6828cbe76bc2a7acfc13a9a2}{00556}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a08cae71a6828cbe76bc2a7acfc13a9a2}{rotateCclk}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00557}00557     Serial.println(\textcolor{stringliteral}{"{}turn on motor on move"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00558}00558     \textcolor{keywordflow}{if} (this-\/>on\_rotate\_Cclk) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00559}00559       this-\/>on\_start\_-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00560}00560       this-\/>on\_rotate\_Cclk-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00561}00561     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00562}00562     Serial.println( \textcolor{stringliteral}{"{}turn off motor when finish"{}});}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00563}00563     \textcolor{keywordflow}{if} (this-\/>on\_finish\_) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00564}00564       this-\/>on\_finish\_-\/>\mbox{\hyperlink{class_i_command_a86e1942e4564840b6c5e09c3a7cdba78}{undo}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00565}00565     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00566}00566   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00567}\mbox{\hyperlink{class_motor_invoker_a48b4456aa0306afd3761594e533632c4}{00567}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a48b4456aa0306afd3761594e533632c4}{getSpeed}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00568}00568     \textcolor{keywordflow}{if} (this-\/>on\_get\_speed) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00569}00569       this-\/>on\_get\_speed-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00570}00570     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00571}00571   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00572}\mbox{\hyperlink{class_motor_invoker_ade50a014a21d612e50372b78eea3dd1f}{00572}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_ade50a014a21d612e50372b78eea3dd1f}{getDelay}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00573}00573     \textcolor{keywordflow}{if} (this-\/>on\_get\_delay) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00574}00574       this-\/>on\_get\_delay-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00575}00575     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00576}00576   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00577}\mbox{\hyperlink{class_motor_invoker_a785a3daa5b43d306eb8461cf23fb428d}{00577}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a785a3daa5b43d306eb8461cf23fb428d}{getDirection}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00578}00578     \textcolor{keywordflow}{if} (this-\/>on\_get\_direction) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00579}00579       this-\/>on\_get\_direction-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00580}00580     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00581}00581   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00582}\mbox{\hyperlink{class_motor_invoker_a1d54d51f475e95e30de0f551f8d8cddd}{00582}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a1d54d51f475e95e30de0f551f8d8cddd}{setSpeed}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00583}00583     \textcolor{keywordflow}{if} (this-\/>on\_set\_speed) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00584}00584       this-\/>on\_set\_speed-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00585}00585     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00586}00586   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00587}\mbox{\hyperlink{class_motor_invoker_a84fd04a42677c3e72fbdf0638ee7e96d}{00587}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_a84fd04a42677c3e72fbdf0638ee7e96d}{setDelay}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00588}00588     \textcolor{keywordflow}{if} (this-\/>on\_set\_delay) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00589}00589       this-\/>on\_set\_delay-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00590}00590     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00591}00591   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00592}\mbox{\hyperlink{class_motor_invoker_ad014d8e45f90e64b43b642a6e656f644}{00592}}   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_motor_invoker_ad014d8e45f90e64b43b642a6e656f644}{setDirection}}() \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00593}00593     \textcolor{keywordflow}{if} (this-\/>on\_set\_direction) \{}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00594}00594       this-\/>on\_set\_direction-\/>\mbox{\hyperlink{class_i_command_ace81beb0beea968f876f292446bf1120}{execute}}();}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00595}00595     \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00596}00596   \}}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00597}00597 \};}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00598}00598 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

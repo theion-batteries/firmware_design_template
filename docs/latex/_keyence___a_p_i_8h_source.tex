@@ -1,0 +1,172 @@
+\hypertarget{_keyence___a_p_i_8h_source}{}\doxysection{Keyence\+\_\+\+API.\+h}
+\label{_keyence___a_p_i_8h_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/Keyence\_API.h@{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/Keyence\_API.h}}
+\mbox{\hyperlink{_keyence___a_p_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00011}00011 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <ArduinoSTL.h>}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00014}00014 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_configs_8h}{Configs.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00015}00015 \textcolor{comment}{/*** layout pins ***/}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00016}00016 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00017}00017 \textcolor{comment}{5V  -\/-\/-\/-\/-\/-\/> VCC}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00018}00018 \textcolor{comment}{GND -\/-\/-\/-\/-\/-\/> GND}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00019}00019 \textcolor{comment}{RX3 -\/-\/-\/-\/-\/-\/> RxOut}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00020}00020 \textcolor{comment}{TX3 -\/-\/-\/-\/-\/-\/> TxIn }}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00021}00021 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00022}\mbox{\hyperlink{_keyence___a_p_i_8h_a876ce77f3c672c7162658151e648389e}{00022}} \textcolor{preprocessor}{\#define CR "{}\(\backslash\)r"{}} \textcolor{comment}{//assume carriage return is \(\backslash\)r otherwise + \(\backslash\)n, \(\backslash\)0}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00023}\mbox{\hyperlink{_keyence___a_p_i_8h_a350c9d6cb81908d59427ee96844d1a9c}{00023}} \textcolor{preprocessor}{\#define LF '\(\backslash\)n' }\textcolor{comment}{//assume next line or Line Feed used}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00025}00025 \textcolor{comment}{/***** rs232 basic device commands ****/}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00026}00026 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00027}00027 \textcolor{comment}{* the commands must be sent to the device using CR as delimeter, }}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00028}00028 \textcolor{comment}{* and the response must be received also with CR.}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00029}00029 \textcolor{comment}{* the controller (arduino) must send one command and wait for}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00030}00030 \textcolor{comment}{* the response to send next one.}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00031}00031 \textcolor{comment}{* General Mode: During measurement The measurement control commands are accepted.}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00032}00032 \textcolor{comment}{Commands such as writing/reading setting values are not accepted}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00033}00033 \textcolor{comment}{* Communication Mode: • When the command "{}Q"{} "{}0"{} "{}CR"{} is received, the mode changes to}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00034}00034 \textcolor{comment}{the communication mode, and the setting values are written/read.}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00035}00035 \textcolor{comment}{• The measurement stops during the communication mode.}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00036}00036 \textcolor{comment}{* command | description | Mode | response | ERROR}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00037}00037 \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00038}00038 \textcolor{comment}{* Q0 CR | Changing to the communication mode  | communication |  same as command  | Err-\/51}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00039}00039 \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00040}00040 \textcolor{comment}{* R0 CR | Changing to the general mode | general | same as command  | ERROR}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00041}00041 \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00042}00042 \textcolor{comment}{* MS,01 CR | Measured value output (single) 01-\/12 | General | MS,OUT01,value CR | ERROR}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00043}00043 \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00044}00044 \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00045}00045 \textcolor{comment}{* MM,010010000000 CR | Measured value output (multiple) 01-\/12 ex here out2 and out5| General | MM,010010000000,value[,value,value] CR | ERROR}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00046}00046 \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00047}00047 \textcolor{comment}{* MA CR | Measured value output (all) 01-\/12| General | MA,value[,value,value] CR | ERROR}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00048}00048 \textcolor{comment}{-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00049}00049 \textcolor{comment}{* Timing Diagrams}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00050}00050 \textcolor{comment}{* t: time between receiving command and responding: process time}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00051}00051 \textcolor{comment}{* Mesrument/control PW: 100ms + number of heads x 100ms : if one head: 200ms if 3 heads 100ms +3*100=400ms}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00052}00052 \textcolor{comment}{* Mode Change to General: 600 ms + Number of head expansion units x 750 ms = 600+3*750 = 2850 ms}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00053}00053 \textcolor{comment}{* Error Code}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00054}00054 \textcolor{comment}{• 50: Command error}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00055}00055 \textcolor{comment}{• 51: Status error}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00056}00056 \textcolor{comment}{• 60: Command length error}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00057}00057 \textcolor{comment}{• 61: Parameter count error}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00058}00058 \textcolor{comment}{• 62: Parameter range error}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00059}00059 \textcolor{comment}{• 88: Timeout error}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00060}00060 \textcolor{comment}{• 99: Other error}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00061}00061 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00062}00062 \textcolor{comment}{// Note: not all commands were included, only basic cmds to get mesured values}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00063}00063 \textcolor{comment}{//abstract class keyence base: interface}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00064}\mbox{\hyperlink{class_keyence__base}{00064}} \textcolor{keyword}{class }\mbox{\hyperlink{class_keyence__base}{Keyence\_base}}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00065}00065 \{}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00066}00066 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00067}00067 \textcolor{comment}{// Array of Raw Commands}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00068}\mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{00068}} String \mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{RawCommands}}[9] = \{\textcolor{stringliteral}{"{}Q0"{}},\textcolor{stringliteral}{"{}R0"{}},\textcolor{stringliteral}{"{}MS,"{}},\textcolor{stringliteral}{"{}MS,01"{}},\textcolor{stringliteral}{"{}MS,02"{}},\textcolor{stringliteral}{"{}MS,03"{}},\textcolor{stringliteral}{"{}MM,1110000000000"{}},\textcolor{stringliteral}{"{}MM,"{}},\textcolor{stringliteral}{"{}MA"{}}\};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00069}00069 \textcolor{comment}{// map of command Strings to raw commands +CR}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00070}\mbox{\hyperlink{class_keyence__base_a2862ac325dae8e5793df2764637f8cd4}{00070}} std::map<String, String> \mbox{\hyperlink{class_keyence__base_a2862ac325dae8e5793df2764637f8cd4}{commands}}\{}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00071}00071 \{\textcolor{stringliteral}{"{}set\_communication\_mode"{}},\mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{RawCommands}}[0]\},}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00072}00072 \{\textcolor{stringliteral}{"{}set\_general\_mode"{}},\mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{RawCommands}}[1]\},}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00073}00073 \{\textcolor{stringliteral}{"{}mesure\_value\_outputN"{}},\mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{RawCommands}}[2]\},}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00074}00074 \{\textcolor{stringliteral}{"{}mesure\_value\_output1"{}},\mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{RawCommands}}[3]\},}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00075}00075 \{\textcolor{stringliteral}{"{}mesure\_value\_output2"{}},\mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{RawCommands}}[4]\},}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00076}00076 \{\textcolor{stringliteral}{"{}mesure\_value\_output3"{}},\mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{RawCommands}}[5]\},}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00077}00077 \{\textcolor{stringliteral}{"{}mesure\_value\_multiple123"{}},\mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{RawCommands}}[6]\},}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00078}00078 \{\textcolor{stringliteral}{"{}mesure\_value\_multipleN"{}},\mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{RawCommands}}[7]\},}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00079}00079 \{\textcolor{stringliteral}{"{}mesure\_value\_All"{}},\mbox{\hyperlink{class_keyence__base_a19ed4faa2383e1e7b73c25310082d47e}{RawCommands}}[8]\},}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00080}00080 \};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00082}00082 \textcolor{comment}{// storing number of heads for n number of heads}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00083}\mbox{\hyperlink{class_keyence__base_a0ff7239d111d179849002ddcf45269f7}{00083}} \textcolor{keyword}{static} std::vector<int> \mbox{\hyperlink{class_keyence__base_a0ff7239d111d179849002ddcf45269f7}{NumUsedHeads}};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00084}00084 \textcolor{comment}{// this counter get incremented by instance: every instance is new head}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00085}\mbox{\hyperlink{class_keyence__base_afe8c07a4197b77ad65d4b53292ff6cf4}{00085}} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_keyence__base_afe8c07a4197b77ad65d4b53292ff6cf4}{HeadsCount}};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00086}00086 \textcolor{comment}{// test array}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00087}\mbox{\hyperlink{class_keyence__base_af588a8387643ec05ca11f2a825b6c56d}{00087}} \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_keyence__base_af588a8387643ec05ca11f2a825b6c56d}{HeadsArray}}[12];}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00088}00088 \textcolor{comment}{// Values Array}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00089}\mbox{\hyperlink{class_keyence__base_a3b9220df65b8fcc3acdb16dca31272a5}{00089}} \textcolor{keyword}{static} \textcolor{keywordtype}{double}* \mbox{\hyperlink{class_keyence__base_a3b9220df65b8fcc3acdb16dca31272a5}{LookUpValues}};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00091}00091 \textcolor{comment}{// helper func to debug commands}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00092}00092 String \mbox{\hyperlink{class_keyence__base_ac134c2f746ca3fd888e8f6528aa1c786}{findCommand}}(String\& command, std::map<String, String>\& CommandMap);}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00093}00093 \textcolor{comment}{// list heads availble}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00094}00094 \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__base_a054bc92a833cb7d11ee3144e587ec672}{listHeads}}();}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00096}00096 \textcolor{comment}{// pure virtual methods: must be defined in sub classes}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00097}00097 \textcolor{comment}{//get a output value of single head}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00098}\mbox{\hyperlink{class_keyence__base_ae6f70fc4642ba44346a6914bce5e317d}{00098}} \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_keyence__base_ae6f70fc4642ba44346a6914bce5e317d}{getValueSingleOutputHead}}(\textcolor{keywordtype}{int} output\_head\_Nr)=0;}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00099}00099 \textcolor{comment}{//get output multiple heads}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00100}\mbox{\hyperlink{class_keyence__base_a6a99db9e73c0697f09be9a6a39e3e515}{00100}} \textcolor{keyword}{virtual} \textcolor{keywordtype}{double}* \mbox{\hyperlink{class_keyence__base_a6a99db9e73c0697f09be9a6a39e3e515}{getValueMultipleOutputHead}}(String \mbox{\hyperlink{class_keyence__base_af588a8387643ec05ca11f2a825b6c56d}{HeadsArray}})=0;}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00101}00101 \textcolor{comment}{// get output all}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00102}\mbox{\hyperlink{class_keyence__base_acb7f8b41341c1e71e89c81c4481212fc}{00102}} \textcolor{keyword}{virtual} \textcolor{keywordtype}{double}* \mbox{\hyperlink{class_keyence__base_acb7f8b41341c1e71e89c81c4481212fc}{getValueOutputHeadAll}}()=0;}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00103}00103 \textcolor{comment}{// set general mode}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00104}\mbox{\hyperlink{class_keyence__base_a7c87aeaf6d28c3444d6358de03028544}{00104}} \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__base_a7c87aeaf6d28c3444d6358de03028544}{setGeneralMode}}()=0;}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00105}00105 \textcolor{comment}{// set communication mode}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00106}\mbox{\hyperlink{class_keyence__base_aac01671d8d411cd6c9974cbb9830afe1}{00106}} \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__base_aac01671d8d411cd6c9974cbb9830afe1}{setCommunicationMode}}()=0;}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00108}00108 \textcolor{comment}{//usefull template fucntions}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00109}00109     \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00110}\mbox{\hyperlink{class_keyence__base_a5c6d3ef94fb9ee56e6fd42574ab0f9f7}{00110}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__base_a5c6d3ef94fb9ee56e6fd42574ab0f9f7}{printVectorElements}}(std::vector<T> \&vec)}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00111}00111     \{}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00112}00112         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} i = 0; i < vec.size(); ++i)}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00113}00113     \{}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00114}00114             Serial.println(vec.at(i)) ;}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00115}00115         \}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00116}00116     \}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00117}00117     \textcolor{keyword}{template}<\textcolor{keyword}{typename} A>}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00118}\mbox{\hyperlink{class_keyence__base_a220804a6baf3d85f09da6ec3e1acb84e}{00118}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__base_a220804a6baf3d85f09da6ec3e1acb84e}{printArrayElements}}(A\& array)}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00119}00119     \{}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00120}00120         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& element: array)}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00121}00121     \{}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00122}00122         Serial.println(\textcolor{stringliteral}{"{}listing heads in array"{}});}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00123}00123         Serial.println(element) ;}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00124}00124         \}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00125}00125     \}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00126}00126     \textcolor{keyword}{template}<\textcolor{keyword}{typename} A, \textcolor{keyword}{typename} V>}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00127}\mbox{\hyperlink{class_keyence__base_a5b9de50cb4430de65267b5aacdb1bda5}{00127}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__base_a5b9de50cb4430de65267b5aacdb1bda5}{transformArrayToVector}}(A\& array, std::vector<V>\& vector )}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00128}00128     \{}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00129}00129         \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto}\& element: array)}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00130}00130     \{}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00131}00131             vector.push\_back(element);}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00132}00132         \}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00133}00133     \}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00134}00134 \};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00135}00135 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00136}00136 \textcolor{comment}{// inherited class for rs232 interface: Arduino Framework}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00137}\mbox{\hyperlink{class_keyence__rs232__interface}{00137}} \textcolor{keyword}{class }\mbox{\hyperlink{class_keyence__rs232__interface}{Keyence\_rs232\_interface}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_keyence__base}{Keyence\_base}}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00138}00138 \{}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00139}00139 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00140}\mbox{\hyperlink{class_keyence__rs232__interface_afd7e56526e455ebdfae7fbe0aecd6a75}{00140}}  HardwareSerial* \mbox{\hyperlink{class_keyence__rs232__interface_afd7e56526e455ebdfae7fbe0aecd6a75}{serialHandler}};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00141}\mbox{\hyperlink{class_keyence__rs232__interface_a64dd14bd7eb46191aeda572d048b2b49}{00141}}  \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \mbox{\hyperlink{class_keyence__rs232__interface_a64dd14bd7eb46191aeda572d048b2b49}{baudrate}};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00142}00142 \mbox{\hyperlink{class_keyence__rs232__interface_a7c4e926bb32658c80ca277032f2b6ab3}{Keyence\_rs232\_interface}}(HardwareSerial\& serHandler, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} baud);}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00143}00143 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__rs232__interface_ad32645333a71b52bad892dfd45b8d930}{setSerialHandler}}(HardwareSerial\& serHandler); }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00144}00144 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__rs232__interface_a5e4e89b0e72492942b3dbfe59d1c4a8d}{setSerialBaudrate}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} baud); }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00145}00145 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__rs232__interface_a3171bb643c8988df2f3195bb67a1392e}{initKeyenceCom}}();}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00146}00146 \textcolor{comment}{//get a output value of single head: return double}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00147}00147 \textcolor{keywordtype}{double} \mbox{\hyperlink{class_keyence__rs232__interface_a94a9b8b38fc656ff6edc2fd7043ce243}{getValueSingleOutputHead}}(\textcolor{keywordtype}{int} output\_head\_Nr) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00148}00148 \textcolor{comment}{//get output multiple heads: return array of doubles}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00149}00149 \textcolor{keywordtype}{double}* \mbox{\hyperlink{class_keyence__rs232__interface_a67984df4c8e54eff602f0cb174069e3d}{getValueMultipleOutputHead}}(String \mbox{\hyperlink{class_keyence__base_af588a8387643ec05ca11f2a825b6c56d}{HeadsArray}}) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00150}00150 \textcolor{comment}{// get output all: return array of doubles}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00151}00151 \textcolor{keywordtype}{double}* \mbox{\hyperlink{class_keyence__rs232__interface_ad2606a20f587944928d8cadef8505af3}{getValueOutputHeadAll}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00152}00152 \textcolor{comment}{// set general mode}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00153}00153 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__rs232__interface_a2b0d0b535e0fb2c9f11ab1fe755f108f}{setGeneralMode}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00154}00154 \textcolor{comment}{// set communication mode}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00155}00155 \textcolor{keywordtype}{void} \mbox{\hyperlink{class_keyence__rs232__interface_a366c821905c00f922a1a7ff86891d68b}{setCommunicationMode}}() \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00156}00156 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00157}00157 \};}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00158}00158 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00159}00159 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00160}00160 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00161}00161 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00162}00162 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00163}00163 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00164}00164 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00165}00165 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00166}00166 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00168}00168 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00169}00169 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00170}00170 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00171}00171 \textcolor{comment}{// inherited class for ethernet interface: this probably via SPI}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00172}\mbox{\hyperlink{class_keyence__ethernet__interface}{00172}} \textcolor{keyword}{class }\mbox{\hyperlink{class_keyence__ethernet__interface}{Keyence\_ethernet\_interface}}:\textcolor{keyword}{public} \mbox{\hyperlink{class_keyence__base}{Keyence\_base}}}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00173}00173 \{}
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00174}00174 }
+\DoxyCodeLine{\Hypertarget{_keyence___a_p_i_8h_source_l00175}00175 \};}
+
+\end{DoxyCode}

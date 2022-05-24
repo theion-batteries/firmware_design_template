@@ -1,0 +1,282 @@
+\hypertarget{class_cmd_callback_object}{}\doxysection{Cmd\+Callback\+Object Class Reference}
+\label{class_cmd_callback_object}\index{CmdCallbackObject@{CmdCallbackObject}}
+
+
+{\ttfamily \#include $<$Cmd\+Callback.\+hpp$>$}
+
+
+
+Inheritance diagram for Cmd\+Callback\+Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_callback_object__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cmd_callback_object_ac8aa1ceb9d593be1c562acd8a77b0994}{loop\+Cmd\+Processing}} (\mbox{\hyperlink{class_cmd_parser}{Cmd\+Parser}} $\ast$cmd\+Parser, \mbox{\hyperlink{class_cmd_buffer_object}{Cmd\+Buffer\+Object}} $\ast$cmd\+Buffer, Stream $\ast$serial)
+\item 
+virtual bool \mbox{\hyperlink{class_cmd_callback_object_a57346a915823fd83800bfbd754fbe131}{process\+Cmd}} (\mbox{\hyperlink{class_cmd_parser}{Cmd\+Parser}} $\ast$cmd\+Parser)
+\item 
+bool \mbox{\hyperlink{class_cmd_callback_object_a3a5e1c1dfcc4fc828bb24c97574a15ae}{run\+Cmd}} (char $\ast$cmd\+Str, \mbox{\hyperlink{class_cmd_parser}{Cmd\+Parser}} $\ast$cmd\+Parser)
+\item 
+void \mbox{\hyperlink{class_cmd_callback_object_a6793737c5d0ecf1fb9e3a9dd48a38d41}{update\+Cmd\+Processing}} (\mbox{\hyperlink{class_cmd_parser}{Cmd\+Parser}} $\ast$cmd\+Parser, \mbox{\hyperlink{class_cmd_buffer_object}{Cmd\+Buffer\+Object}} $\ast$cmd\+Buffer, Stream $\ast$serial)
+\item 
+virtual bool \mbox{\hyperlink{class_cmd_callback_object_ac7a318cd6dcb9c1047b78c741975c701}{has\+Cmd}} (char $\ast$cmd\+Str)
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{class_cmd_callback_object_a587cc6682c2f330f6c363d783d902d2a}{get\+Store\+Size}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_cmd_callback_object_a09c721e9352b605208317f8163d373b1}{check\+Store\+Pos}} (size\+\_\+t idx)=0
+\item 
+virtual bool \mbox{\hyperlink{class_cmd_callback_object_a5410a5765b358895449a7e0918cd3a4e}{equal\+Store\+Cmd}} (size\+\_\+t idx, char $\ast$cmd\+Str)=0
+\item 
+virtual bool \mbox{\hyperlink{class_cmd_callback_object_a57d216fe712755cbcdcb1459c41f70dc}{call\+Store\+Funct}} (size\+\_\+t idx, \mbox{\hyperlink{class_cmd_parser}{Cmd\+Parser}} $\ast$cmd\+Parser)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_cmd_callback_8hpp_source_l00028}{28}} of file \mbox{\hyperlink{_cmd_callback_8hpp_source}{Cmd\+Callback.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cmd_callback_object_a57d216fe712755cbcdcb1459c41f70dc}\label{class_cmd_callback_object_a57d216fe712755cbcdcb1459c41f70dc}} 
+\index{CmdCallbackObject@{CmdCallbackObject}!callStoreFunct@{callStoreFunct}}
+\index{callStoreFunct@{callStoreFunct}!CmdCallbackObject@{CmdCallbackObject}}
+\doxysubsubsection{\texorpdfstring{callStoreFunct()}{callStoreFunct()}}
+{\footnotesize\ttfamily virtual bool Cmd\+Callback\+Object\+::call\+Store\+Funct (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx,  }\item[{\mbox{\hyperlink{class_cmd_parser}{Cmd\+Parser}} $\ast$}]{cmd\+Parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Call function from store. Please check idx with \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_cmd_callback_object_a09c721e9352b605208317f8163d373b1}{check\+Store\+Pos}} befor you use this funct!
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Store number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if function is valid and calling 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class___cmd_callback_a304e5954891af47175a6d90043dda8f8}{\+\_\+\+Cmd\+Callback$<$ STORESIZE, T $>$}}, and \mbox{\hyperlink{class___cmd_callback_a304e5954891af47175a6d90043dda8f8}{\+\_\+\+Cmd\+Callback$<$ STORESIZE, Cmd\+Parser\+String $>$}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_callback_object_a57d216fe712755cbcdcb1459c41f70dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_callback_object_a09c721e9352b605208317f8163d373b1}\label{class_cmd_callback_object_a09c721e9352b605208317f8163d373b1}} 
+\index{CmdCallbackObject@{CmdCallbackObject}!checkStorePos@{checkStorePos}}
+\index{checkStorePos@{checkStorePos}!CmdCallbackObject@{CmdCallbackObject}}
+\doxysubsubsection{\texorpdfstring{checkStorePos()}{checkStorePos()}}
+{\footnotesize\ttfamily virtual bool Cmd\+Callback\+Object\+::check\+Store\+Pos (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Check is on store idx a valide cmd string and function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Store number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if valid or FALSE 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class___cmd_callback_a6afbbcbf9da656b0972ad108616ffe45}{\+\_\+\+Cmd\+Callback$<$ STORESIZE, T $>$}}, and \mbox{\hyperlink{class___cmd_callback_a6afbbcbf9da656b0972ad108616ffe45}{\+\_\+\+Cmd\+Callback$<$ STORESIZE, Cmd\+Parser\+String $>$}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_callback_object_a09c721e9352b605208317f8163d373b1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_callback_object_a5410a5765b358895449a7e0918cd3a4e}\label{class_cmd_callback_object_a5410a5765b358895449a7e0918cd3a4e}} 
+\index{CmdCallbackObject@{CmdCallbackObject}!equalStoreCmd@{equalStoreCmd}}
+\index{equalStoreCmd@{equalStoreCmd}!CmdCallbackObject@{CmdCallbackObject}}
+\doxysubsubsection{\texorpdfstring{equalStoreCmd()}{equalStoreCmd()}}
+{\footnotesize\ttfamily virtual bool Cmd\+Callback\+Object\+::equal\+Store\+Cmd (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx,  }\item[{char $\ast$}]{cmd\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Check if the cmd string equal to cmd in store. Please check idx with \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{class_cmd_callback_object_a09c721e9352b605208317f8163d373b1}{check\+Store\+Pos}} befor you use this funct!
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Store number \\
+\hline
+{\em cmd\+Str} & Cmd string to search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE is equal 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_callback_object_a5410a5765b358895449a7e0918cd3a4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_callback_object_a587cc6682c2f330f6c363d783d902d2a}\label{class_cmd_callback_object_a587cc6682c2f330f6c363d783d902d2a}} 
+\index{CmdCallbackObject@{CmdCallbackObject}!getStoreSize@{getStoreSize}}
+\index{getStoreSize@{getStoreSize}!CmdCallbackObject@{CmdCallbackObject}}
+\doxysubsubsection{\texorpdfstring{getStoreSize()}{getStoreSize()}}
+{\footnotesize\ttfamily virtual size\+\_\+t Cmd\+Callback\+Object\+::get\+Store\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Give the size of callback store.
+
+\begin{DoxyReturn}{Returns}
+Size of callback Store 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class___cmd_callback_a8aadc0bdfd685a87483b149a0240c6e5}{\+\_\+\+Cmd\+Callback$<$ STORESIZE, T $>$}}, and \mbox{\hyperlink{class___cmd_callback_a8aadc0bdfd685a87483b149a0240c6e5}{\+\_\+\+Cmd\+Callback$<$ STORESIZE, Cmd\+Parser\+String $>$}}.
+
+\mbox{\Hypertarget{class_cmd_callback_object_ac7a318cd6dcb9c1047b78c741975c701}\label{class_cmd_callback_object_ac7a318cd6dcb9c1047b78c741975c701}} 
+\index{CmdCallbackObject@{CmdCallbackObject}!hasCmd@{hasCmd}}
+\index{hasCmd@{hasCmd}!CmdCallbackObject@{CmdCallbackObject}}
+\doxysubsubsection{\texorpdfstring{hasCmd()}{hasCmd()}}
+{\footnotesize\ttfamily bool Cmd\+Callback\+Object\+::has\+Cmd (\begin{DoxyParamCaption}\item[{char $\ast$}]{cmd\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Search command in the buffer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+Str} & Cmd string to search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if found the command in the buffer 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_callback_8cpp_source_l00082}{82}} of file \mbox{\hyperlink{_cmd_callback_8cpp_source}{Cmd\+Callback.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_cmd_callback_object_ac7a318cd6dcb9c1047b78c741975c701_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_callback_object_ac8aa1ceb9d593be1c562acd8a77b0994}\label{class_cmd_callback_object_ac8aa1ceb9d593be1c562acd8a77b0994}} 
+\index{CmdCallbackObject@{CmdCallbackObject}!loopCmdProcessing@{loopCmdProcessing}}
+\index{loopCmdProcessing@{loopCmdProcessing}!CmdCallbackObject@{CmdCallbackObject}}
+\doxysubsubsection{\texorpdfstring{loopCmdProcessing()}{loopCmdProcessing()}}
+{\footnotesize\ttfamily void Cmd\+Callback\+Object\+::loop\+Cmd\+Processing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cmd_parser}{Cmd\+Parser}} $\ast$}]{cmd\+Parser,  }\item[{\mbox{\hyperlink{class_cmd_buffer_object}{Cmd\+Buffer\+Object}} $\ast$}]{cmd\+Buffer,  }\item[{Stream $\ast$}]{serial }\end{DoxyParamCaption})}
+
+Endless loop for process incoming data from serial.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+Parser} & Parser object with options set \\
+\hline
+{\em cmd\+Buffer} & Buffer object for data handling \\
+\hline
+{\em serial} & Arduino serial interface from comming data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_cmd_callback_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_cmd_callback_8cpp_source}{Cmd\+Callback.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_callback_object_ac8aa1ceb9d593be1c562acd8a77b0994_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_callback_object_a57346a915823fd83800bfbd754fbe131}\label{class_cmd_callback_object_a57346a915823fd83800bfbd754fbe131}} 
+\index{CmdCallbackObject@{CmdCallbackObject}!processCmd@{processCmd}}
+\index{processCmd@{processCmd}!CmdCallbackObject@{CmdCallbackObject}}
+\doxysubsubsection{\texorpdfstring{processCmd()}{processCmd()}}
+{\footnotesize\ttfamily bool Cmd\+Callback\+Object\+::process\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cmd_parser}{Cmd\+Parser}} $\ast$}]{cmd\+Parser }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Search command in the buffer and execute the callback function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+Str} & Cmd string to search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if found the command in the buffer 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_callback_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{_cmd_callback_8cpp_source}{Cmd\+Callback.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_callback_object_a57346a915823fd83800bfbd754fbe131_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_cmd_callback_object_a57346a915823fd83800bfbd754fbe131_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_callback_object_a3a5e1c1dfcc4fc828bb24c97574a15ae}\label{class_cmd_callback_object_a3a5e1c1dfcc4fc828bb24c97574a15ae}} 
+\index{CmdCallbackObject@{CmdCallbackObject}!runCmd@{runCmd}}
+\index{runCmd@{runCmd}!CmdCallbackObject@{CmdCallbackObject}}
+\doxysubsubsection{\texorpdfstring{runCmd()}{runCmd()}}
+{\footnotesize\ttfamily bool Cmd\+Callback\+Object\+::run\+Cmd (\begin{DoxyParamCaption}\item[{char $\ast$}]{cmd\+Str,  }\item[{\mbox{\hyperlink{class_cmd_parser}{Cmd\+Parser}} $\ast$}]{cmd\+Parser }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_cmd_callback_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_cmd_callback_8cpp_source}{Cmd\+Callback.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_cmd_callback_object_a3a5e1c1dfcc4fc828bb24c97574a15ae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_callback_object_a6793737c5d0ecf1fb9e3a9dd48a38d41}\label{class_cmd_callback_object_a6793737c5d0ecf1fb9e3a9dd48a38d41}} 
+\index{CmdCallbackObject@{CmdCallbackObject}!updateCmdProcessing@{updateCmdProcessing}}
+\index{updateCmdProcessing@{updateCmdProcessing}!CmdCallbackObject@{CmdCallbackObject}}
+\doxysubsubsection{\texorpdfstring{updateCmdProcessing()}{updateCmdProcessing()}}
+{\footnotesize\ttfamily void Cmd\+Callback\+Object\+::update\+Cmd\+Processing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cmd_parser}{Cmd\+Parser}} $\ast$}]{cmd\+Parser,  }\item[{\mbox{\hyperlink{class_cmd_buffer_object}{Cmd\+Buffer\+Object}} $\ast$}]{cmd\+Buffer,  }\item[{Stream $\ast$}]{serial }\end{DoxyParamCaption})}
+
+Check for single new char on serial and if it was the end\+Char
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+Parser} & Parser object with options set \\
+\hline
+{\em cmd\+Buffer} & Buffer object for data handling \\
+\hline
+{\em serial} & Arduino serial interface from comming data \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_cmd_callback_8cpp_source_l00066}{66}} of file \mbox{\hyperlink{_cmd_callback_8cpp_source}{Cmd\+Callback.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_callback_object_a6793737c5d0ecf1fb9e3a9dd48a38d41_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/include/\mbox{\hyperlink{_cmd_callback_8hpp}{Cmd\+Callback.\+hpp}}\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/src/\mbox{\hyperlink{_cmd_callback_8cpp}{Cmd\+Callback.\+cpp}}\end{DoxyCompactItemize}

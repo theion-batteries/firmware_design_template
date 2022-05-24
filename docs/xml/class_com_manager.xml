@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_com_manager" kind="class" language="C++" prot="public">
+    <compoundname>ComManager</compoundname>
+    <includes refid="_com_handler_8hpp" local="no">ComHandler.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_com_manager_1ad6e049efeb10c5cc4801673f437fccb4" prot="private" static="no" mutable="no">
+        <type>Stream *</type>
+        <definition>Stream* ComManager::ComHandler</definition>
+        <argsstring></argsstring>
+        <name>ComHandler</name>
+        <qualifiedname>ComManager::ComHandler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp" line="22" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_com_manager_1ae27b81aca4e2b98138ba79c58bd3bfe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ComManager::initCom</definition>
+        <argsstring>(unsigned long baudrate)</argsstring>
+        <name>initCom</name>
+        <qualifiedname>ComManager::initCom</qualifiedname>
+        <param>
+          <type>unsigned long</type>
+          <declname>baudrate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp" line="36" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp" bodystart="13" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>this class is the interface of communication layer </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp" line="20" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp" bodystart="20" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_com_manager_1ad6e049efeb10c5cc4801673f437fccb4" prot="private" virt="non-virtual"><scope>ComManager</scope><name>ComHandler</name></member>
+      <member refid="class_com_manager_1ae27b81aca4e2b98138ba79c58bd3bfe4" prot="public" virt="non-virtual"><scope>ComManager</scope><name>initCom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_invoker" kind="class" language="C++" prot="public">
+    <compoundname>Invoker</compoundname>
+    <includes refid="_cmd_pattern_classes_8h" local="no">CmdPatternClasses.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_invoker_1a1fcafa90164900d8ec1bf659e643a9a7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_i_command" kindref="compound">ICommand</ref> *</type>
+        <definition>ICommand* Invoker::on_start_cmd</definition>
+        <argsstring></argsstring>
+        <name>on_start_cmd</name>
+        <qualifiedname>Invoker::on_start_cmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="393" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_invoker_1abe7600852e68545995e13b0007aabc94" prot="private" static="no" mutable="no">
+        <type><ref refid="class_i_command" kindref="compound">ICommand</ref> *</type>
+        <definition>ICommand* Invoker::on_finish_cmd</definition>
+        <argsstring></argsstring>
+        <name>on_finish_cmd</name>
+        <qualifiedname>Invoker::on_finish_cmd</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="394" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_invoker_1a60ff29f342fd47ad1d362a689bcbfd63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Invoker::~Invoker</definition>
+        <argsstring>()</argsstring>
+        <name>~Invoker</name>
+        <qualifiedname>Invoker::~Invoker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="397" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="397" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="class_invoker_1a9191daa329fafcecc996ff4a6cf8b02e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Invoker::SetOnStart</definition>
+        <argsstring>(ICommand *command)</argsstring>
+        <name>SetOnStart</name>
+        <qualifiedname>Invoker::SetOnStart</qualifiedname>
+        <param>
+          <type><ref refid="class_i_command" kindref="compound">ICommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="401" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="401" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="class_invoker_1ace85c70f471ce7fca542203f0c2fdff3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Invoker::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <qualifiedname>Invoker::start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="404" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="404" bodyend="409"/>
+        <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
+      </memberdef>
+      <memberdef kind="function" id="class_invoker_1a2af0ecdacf369418e76a89745c0259b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Invoker::SetOnfinish</definition>
+        <argsstring>(ICommand *command)</argsstring>
+        <name>SetOnfinish</name>
+        <qualifiedname>Invoker::SetOnfinish</qualifiedname>
+        <param>
+          <type><ref refid="class_i_command" kindref="compound">ICommand</ref> *</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="410" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="410" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="class_invoker_1ab9c02720cd689b846f1ce35f81558d65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Invoker::finish</definition>
+        <argsstring>()</argsstring>
+        <name>finish</name>
+        <qualifiedname>Invoker::finish</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="413" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="413" bodyend="418"/>
+        <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="390" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="390" bodyend="419"/>
+    <listofallmembers>
+      <member refid="class_invoker_1ab9c02720cd689b846f1ce35f81558d65" prot="public" virt="non-virtual"><scope>Invoker</scope><name>finish</name></member>
+      <member refid="class_invoker_1abe7600852e68545995e13b0007aabc94" prot="private" virt="non-virtual"><scope>Invoker</scope><name>on_finish_cmd</name></member>
+      <member refid="class_invoker_1a1fcafa90164900d8ec1bf659e643a9a7" prot="private" virt="non-virtual"><scope>Invoker</scope><name>on_start_cmd</name></member>
+      <member refid="class_invoker_1a2af0ecdacf369418e76a89745c0259b7" prot="public" virt="non-virtual"><scope>Invoker</scope><name>SetOnfinish</name></member>
+      <member refid="class_invoker_1a9191daa329fafcecc996ff4a6cf8b02e" prot="public" virt="non-virtual"><scope>Invoker</scope><name>SetOnStart</name></member>
+      <member refid="class_invoker_1ace85c70f471ce7fca542203f0c2fdff3" prot="public" virt="non-virtual"><scope>Invoker</scope><name>start</name></member>
+      <member refid="class_invoker_1a60ff29f342fd47ad1d362a689bcbfd63" prot="public" virt="non-virtual"><scope>Invoker</scope><name>~Invoker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

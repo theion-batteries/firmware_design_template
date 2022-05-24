@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class___cmd_callback" kind="class" language="C++" prot="public">
+    <compoundname>_CmdCallback</compoundname>
+    <basecompoundref refid="class_cmd_callback_object" prot="public" virt="non-virtual">CmdCallbackObject</basecompoundref>
+    <includes refid="_cmd_callback_8hpp" local="no">CmdCallback.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>size_t</type>
+        <declname>STORESIZE</declname>
+        <defname>STORESIZE</defname>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class___cmd_callback_1ae4348652c3b261516da11dd7111319bf" prot="protected" static="no" mutable="no">
+        <type>T</type>
+        <definition>T _CmdCallback&lt; STORESIZE, T &gt;::m_cmdList[STORESIZE]</definition>
+        <argsstring>[STORESIZE]</argsstring>
+        <name>m_cmdList</name>
+        <qualifiedname>_CmdCallback::m_cmdList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Array with list of commands </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" line="174" column="7" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" bodystart="174" bodyend="-1"/>
+        <referencedby refid="class___cmd_callback_1a2413e8c1511d1c1d20a890173d6eaae5" compoundref="_cmd_callback_8hpp" startline="113" endline="117">_CmdCallback&lt; STORESIZE, T &gt;::_CmdCallback</referencedby>
+        <referencedby refid="class___cmd_callback_1a44954aabc478853625e1d0634db60395" compoundref="_cmd_callback_8hpp" startline="126" endline="139">_CmdCallback&lt; STORESIZE, T &gt;::addCmd</referencedby>
+        <referencedby refid="class___cmd_callback_1a6afbbcbf9da656b0972ad108616ffe45" compoundref="_cmd_callback_8hpp" startline="149" endline="156">_CmdCallback&lt; STORESIZE, T &gt;::checkStorePos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class___cmd_callback_1afb05318faf24ccfbb379ff142e4cdc0d" prot="protected" static="no" mutable="no">
+        <type><ref refid="_cmd_callback_8hpp_1af311870fc30f3981ec08da54c54dc9f1" kindref="member">CmdCallFunct</ref></type>
+        <definition>CmdCallFunct _CmdCallback&lt; STORESIZE, T &gt;::m_functList[STORESIZE]</definition>
+        <argsstring>[STORESIZE]</argsstring>
+        <name>m_functList</name>
+        <qualifiedname>_CmdCallback::m_functList</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of function <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" line="177" column="18" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" bodystart="177" bodyend="-1"/>
+        <referencedby refid="class___cmd_callback_1a2413e8c1511d1c1d20a890173d6eaae5" compoundref="_cmd_callback_8hpp" startline="113" endline="117">_CmdCallback&lt; STORESIZE, T &gt;::_CmdCallback</referencedby>
+        <referencedby refid="class___cmd_callback_1a44954aabc478853625e1d0634db60395" compoundref="_cmd_callback_8hpp" startline="126" endline="139">_CmdCallback&lt; STORESIZE, T &gt;::addCmd</referencedby>
+        <referencedby refid="class___cmd_callback_1a304e5954891af47175a6d90043dda8f8" compoundref="_cmd_callback_8hpp" startline="161" endline="170">_CmdCallback&lt; STORESIZE, T &gt;::callStoreFunct</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class___cmd_callback_1a903e55f5cdb2331129e59745d4ffeeb6" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _CmdCallback&lt; STORESIZE, T &gt;::m_nextElement</definition>
+        <argsstring></argsstring>
+        <name>m_nextElement</name>
+        <qualifiedname>_CmdCallback::m_nextElement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer tof next element in array <simplesect kind="see"><para><ref refid="class___cmd_callback_1a44954aabc478853625e1d0634db60395" kindref="member">addCmd</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" line="180" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" bodystart="180" bodyend="-1"/>
+        <referencedby refid="class___cmd_callback_1a44954aabc478853625e1d0634db60395" compoundref="_cmd_callback_8hpp" startline="126" endline="139">_CmdCallback&lt; STORESIZE, T &gt;::addCmd</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class___cmd_callback_1a2413e8c1511d1c1d20a890173d6eaae5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>_CmdCallback&lt; STORESIZE, T &gt;::_CmdCallback</definition>
+        <argsstring>()</argsstring>
+        <name>_CmdCallback</name>
+        <qualifiedname>_CmdCallback::_CmdCallback</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cleanup member data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" line="113" column="5" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" bodystart="113" bodyend="117"/>
+        <references refid="class___cmd_callback_1ae4348652c3b261516da11dd7111319bf" compoundref="_cmd_callback_8hpp" startline="174">_CmdCallback&lt; STORESIZE, T &gt;::m_cmdList</references>
+        <references refid="class___cmd_callback_1afb05318faf24ccfbb379ff142e4cdc0d" compoundref="_cmd_callback_8hpp" startline="177">_CmdCallback&lt; STORESIZE, T &gt;::m_functList</references>
+      </memberdef>
+      <memberdef kind="function" id="class___cmd_callback_1a44954aabc478853625e1d0634db60395" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool _CmdCallback&lt; STORESIZE, T &gt;::addCmd</definition>
+        <argsstring>(T cmdStr, CmdCallFunct cbFunct)</argsstring>
+        <name>addCmd</name>
+        <qualifiedname>_CmdCallback::addCmd</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>cmdStr</declname>
+        </param>
+        <param>
+          <type><ref refid="_cmd_callback_8hpp_1af311870fc30f3981ec08da54c54dc9f1" kindref="member">CmdCallFunct</ref></type>
+          <declname>cbFunct</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Link a callback function to command.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cmdStr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A cmd string in progmem </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cbFunct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback function to process your things </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if you have space in buffer of object </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" line="126" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" bodystart="126" bodyend="139"/>
+        <references refid="class___cmd_callback_1ae4348652c3b261516da11dd7111319bf" compoundref="_cmd_callback_8hpp" startline="174">_CmdCallback&lt; STORESIZE, T &gt;::m_cmdList</references>
+        <references refid="class___cmd_callback_1afb05318faf24ccfbb379ff142e4cdc0d" compoundref="_cmd_callback_8hpp" startline="177">_CmdCallback&lt; STORESIZE, T &gt;::m_functList</references>
+        <references refid="class___cmd_callback_1a903e55f5cdb2331129e59745d4ffeeb6" compoundref="_cmd_callback_8hpp" startline="180">_CmdCallback&lt; STORESIZE, T &gt;::m_nextElement</references>
+      </memberdef>
+      <memberdef kind="function" id="class___cmd_callback_1a8aadc0bdfd685a87483b149a0240c6e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t _CmdCallback&lt; STORESIZE, T &gt;::getStoreSize</definition>
+        <argsstring>()</argsstring>
+        <name>getStoreSize</name>
+        <qualifiedname>_CmdCallback::getStoreSize</qualifiedname>
+        <reimplements refid="class_cmd_callback_object_1a587cc6682c2f330f6c363d783d902d2a">getStoreSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@implement <ref refid="class_cmd_callback_object" kindref="compound">CmdCallbackObject</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" line="144" column="20" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class___cmd_callback_1a6afbbcbf9da656b0972ad108616ffe45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool _CmdCallback&lt; STORESIZE, T &gt;::checkStorePos</definition>
+        <argsstring>(size_t idx)</argsstring>
+        <name>checkStorePos</name>
+        <qualifiedname>_CmdCallback::checkStorePos</qualifiedname>
+        <reimplements refid="class_cmd_callback_object_1a09c721e9352b605208317f8163d373b1">checkStorePos</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@implement <ref refid="class_cmd_callback_object" kindref="compound">CmdCallbackObject</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" line="149" column="18" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" bodystart="149" bodyend="156"/>
+        <references refid="class___cmd_callback_1ae4348652c3b261516da11dd7111319bf" compoundref="_cmd_callback_8hpp" startline="174">_CmdCallback&lt; STORESIZE, T &gt;::m_cmdList</references>
+      </memberdef>
+      <memberdef kind="function" id="class___cmd_callback_1a304e5954891af47175a6d90043dda8f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool _CmdCallback&lt; STORESIZE, T &gt;::callStoreFunct</definition>
+        <argsstring>(size_t idx, CmdParser *cmdParser)</argsstring>
+        <name>callStoreFunct</name>
+        <qualifiedname>_CmdCallback::callStoreFunct</qualifiedname>
+        <reimplements refid="class_cmd_callback_object_1a57d216fe712755cbcdcb1459c41f70dc">callStoreFunct</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref> *</type>
+          <declname>cmdParser</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>@implement <ref refid="class_cmd_callback_object" kindref="compound">CmdCallbackObject</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" line="161" column="18" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" bodystart="161" bodyend="170"/>
+        <references refid="class___cmd_callback_1afb05318faf24ccfbb379ff142e4cdc0d" compoundref="_cmd_callback_8hpp" startline="177">_CmdCallback&lt; STORESIZE, T &gt;::m_functList</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CmdCallbackObject</label>
+        <link refid="class_cmd_callback_object"/>
+      </node>
+      <node id="1">
+        <label>_CmdCallback&lt; STORESIZE, T &gt;</label>
+        <link refid="class___cmd_callback"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>CmdCallbackObject</label>
+        <link refid="class_cmd_callback_object"/>
+      </node>
+      <node id="3">
+        <label>CmdParser</label>
+        <link refid="class_cmd_parser"/>
+      </node>
+      <node id="1">
+        <label>_CmdCallback&lt; STORESIZE, T &gt;</label>
+        <link refid="class___cmd_callback"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_functList</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" line="107" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" bodystart="108" bodyend="181"/>
+    <listofallmembers>
+      <member refid="class___cmd_callback_1a2413e8c1511d1c1d20a890173d6eaae5" prot="public" virt="non-virtual"><scope>_CmdCallback</scope><name>_CmdCallback</name></member>
+      <member refid="class___cmd_callback_1a44954aabc478853625e1d0634db60395" prot="public" virt="non-virtual"><scope>_CmdCallback</scope><name>addCmd</name></member>
+      <member refid="class___cmd_callback_1a304e5954891af47175a6d90043dda8f8" prot="public" virt="virtual"><scope>_CmdCallback</scope><name>callStoreFunct</name></member>
+      <member refid="class___cmd_callback_1a6afbbcbf9da656b0972ad108616ffe45" prot="public" virt="virtual"><scope>_CmdCallback</scope><name>checkStorePos</name></member>
+      <member refid="class_cmd_callback_object_1a5410a5765b358895449a7e0918cd3a4e" prot="public" virt="pure-virtual"><scope>_CmdCallback</scope><name>equalStoreCmd</name></member>
+      <member refid="class___cmd_callback_1a8aadc0bdfd685a87483b149a0240c6e5" prot="public" virt="virtual"><scope>_CmdCallback</scope><name>getStoreSize</name></member>
+      <member refid="class_cmd_callback_object_1ac7a318cd6dcb9c1047b78c741975c701" prot="public" virt="virtual"><scope>_CmdCallback</scope><name>hasCmd</name></member>
+      <member refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" prot="public" virt="non-virtual"><scope>_CmdCallback</scope><name>loopCmdProcessing</name></member>
+      <member refid="class___cmd_callback_1ae4348652c3b261516da11dd7111319bf" prot="protected" virt="non-virtual"><scope>_CmdCallback</scope><name>m_cmdList</name></member>
+      <member refid="class___cmd_callback_1afb05318faf24ccfbb379ff142e4cdc0d" prot="protected" virt="non-virtual"><scope>_CmdCallback</scope><name>m_functList</name></member>
+      <member refid="class___cmd_callback_1a903e55f5cdb2331129e59745d4ffeeb6" prot="protected" virt="non-virtual"><scope>_CmdCallback</scope><name>m_nextElement</name></member>
+      <member refid="class_cmd_callback_object_1a57346a915823fd83800bfbd754fbe131" prot="public" virt="virtual"><scope>_CmdCallback</scope><name>processCmd</name></member>
+      <member refid="class_cmd_callback_object_1a3a5e1c1dfcc4fc828bb24c97574a15ae" prot="public" virt="non-virtual"><scope>_CmdCallback</scope><name>runCmd</name></member>
+      <member refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" prot="public" virt="non-virtual"><scope>_CmdCallback</scope><name>updateCmdProcessing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

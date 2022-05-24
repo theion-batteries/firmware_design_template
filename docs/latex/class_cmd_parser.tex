@@ -1,0 +1,408 @@
+\hypertarget{class_cmd_parser}{}\doxysection{Cmd\+Parser Class Reference}
+\label{class_cmd_parser}\index{CmdParser@{CmdParser}}
+
+
+{\ttfamily \#include $<$Cmd\+Parser.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cmd_parser_a2ea6dfe5c12c9effc1419764e46e076e}{Cmd\+Parser}} ()
+\item 
+uint16\+\_\+t \mbox{\hyperlink{class_cmd_parser_a5df6c3bc15c7d508ec449992f83b3bb0}{parse\+Cmd}} (uint8\+\_\+t $\ast$buffer, size\+\_\+t buffer\+Size)
+\item 
+uint16\+\_\+t \mbox{\hyperlink{class_cmd_parser_a1ae4ac725a5b549a7c3679a72d7d26e9}{parse\+Cmd}} (\mbox{\hyperlink{class_cmd_buffer_object}{Cmd\+Buffer\+Object}} $\ast$cmd\+Buffer)
+\item 
+uint16\+\_\+t \mbox{\hyperlink{class_cmd_parser_ae95693cfd4aeff4b246f986f7aef55c3}{parse\+Cmd}} (char $\ast$cmd\+Str)
+\item 
+char $\ast$ \mbox{\hyperlink{class_cmd_parser_ab4d34a57e1917264f954f93f751f76ea}{get\+Command}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{class_cmd_parser_a49170df1a0052fa1fdb28235a488e7c6}{get\+Cmd\+Param}} (uint16\+\_\+t idx)
+\item 
+uint16\+\_\+t \mbox{\hyperlink{class_cmd_parser_a54becb4ba1ef11de3e51c98b449d0c87}{get\+Param\+Count}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{class_cmd_parser_a83141b1acb2583532801b2cddce225a5}{get\+Value\+From\+Key}} (\mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}} key)
+\item 
+bool \mbox{\hyperlink{class_cmd_parser_a41408f0cf3162798275b5c3afddf1924}{equal\+Cmd\+Param}} (uint16\+\_\+t idx, \mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}} value)
+\item 
+bool \mbox{\hyperlink{class_cmd_parser_ae111b4908ad9a8092488fffaf897ad6f}{equal\+Command}} (\mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}} value)
+\item 
+bool \mbox{\hyperlink{class_cmd_parser_aa8d0e9342798672f251b695c8629d347}{equal\+Value\+From\+Key}} (\mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}} key, \mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}} value)
+\item 
+bool \mbox{\hyperlink{class_cmd_parser_a20afcca43b5a5231eb1d63ab0f564f91}{cmd\+Param\+Exists}} (\mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}} value)
+\item 
+void \mbox{\hyperlink{class_cmd_parser_a3d1088255605de22783562edc0672474}{set\+Opt\+Ignore\+Quote}} (bool on\+Off=true)
+\item 
+void \mbox{\hyperlink{class_cmd_parser_aee137cf60aa0c94f0a662ced8c4e0aae}{set\+Opt\+Key\+Value}} (bool on\+Off=false)
+\item 
+void \mbox{\hyperlink{class_cmd_parser_a1ebf11340588db861d4b5383a67b1d04}{set\+Opt\+Seperator}} (char seperator)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00034}{34}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cmd_parser_a2ea6dfe5c12c9effc1419764e46e076e}\label{class_cmd_parser_a2ea6dfe5c12c9effc1419764e46e076e}} 
+\index{CmdParser@{CmdParser}!CmdParser@{CmdParser}}
+\index{CmdParser@{CmdParser}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{CmdParser()}{CmdParser()}}
+{\footnotesize\ttfamily Cmd\+Parser\+::\+Cmd\+Parser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set member to default values. 
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_cmd_parser_8cpp_source}{Cmd\+Parser.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cmd_parser_a20afcca43b5a5231eb1d63ab0f564f91}\label{class_cmd_parser_a20afcca43b5a5231eb1d63ab0f564f91}} 
+\index{CmdParser@{CmdParser}!cmdParamExists@{cmdParamExists}}
+\index{cmdParamExists@{cmdParamExists}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{cmdParamExists()}{cmdParamExists()}}
+{\footnotesize\ttfamily bool Cmd\+Parser\+::cmd\+Param\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if a parameter/flag exists among all other passed command parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & String to look for among the parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if found 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00167}{167}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_parser_a20afcca43b5a5231eb1d63ab0f564f91_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_parser_a41408f0cf3162798275b5c3afddf1924}\label{class_cmd_parser_a41408f0cf3162798275b5c3afddf1924}} 
+\index{CmdParser@{CmdParser}!equalCmdParam@{equalCmdParam}}
+\index{equalCmdParam@{equalCmdParam}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{equalCmdParam()}{equalCmdParam()}}
+{\footnotesize\ttfamily bool Cmd\+Parser\+::equal\+Cmd\+Param (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{idx,  }\item[{\mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if param equal with value case sensitive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Number of param to get \\
+\hline
+{\em value} & String to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if equal 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00106}{106}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_parser_a41408f0cf3162798275b5c3afddf1924_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_parser_a41408f0cf3162798275b5c3afddf1924_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_parser_ae111b4908ad9a8092488fffaf897ad6f}\label{class_cmd_parser_ae111b4908ad9a8092488fffaf897ad6f}} 
+\index{CmdParser@{CmdParser}!equalCommand@{equalCommand}}
+\index{equalCommand@{equalCommand}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{equalCommand()}{equalCommand()}}
+{\footnotesize\ttfamily bool Cmd\+Parser\+::equal\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if command equal with value case sensitive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & String to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if equal 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00130}{130}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_parser_ae111b4908ad9a8092488fffaf897ad6f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_parser_aa8d0e9342798672f251b695c8629d347}\label{class_cmd_parser_aa8d0e9342798672f251b695c8629d347}} 
+\index{CmdParser@{CmdParser}!equalValueFromKey@{equalValueFromKey}}
+\index{equalValueFromKey@{equalValueFromKey}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{equalValueFromKey()}{equalValueFromKey()}}
+{\footnotesize\ttfamily bool Cmd\+Parser\+::equal\+Value\+From\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}}}]{key,  }\item[{\mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check if value equal from key case sensitive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key store in SRAM for search in cmd \\
+\hline
+{\em value} & String to compare in PROGMEM \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRUE if equal 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00142}{142}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_parser_aa8d0e9342798672f251b695c8629d347_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_parser_a49170df1a0052fa1fdb28235a488e7c6}\label{class_cmd_parser_a49170df1a0052fa1fdb28235a488e7c6}} 
+\index{CmdParser@{CmdParser}!getCmdParam@{getCmdParam}}
+\index{getCmdParam@{getCmdParam}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{getCmdParam()}{getCmdParam()}}
+{\footnotesize\ttfamily char $\ast$ Cmd\+Parser\+::get\+Cmd\+Param (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{idx }\end{DoxyParamCaption})}
+
+Get the param IDX from command line.
+
+
+\begin{DoxyParams}{Parameters}
+{\em idx} & Number of param to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String with param or NULL if not exists 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{_cmd_parser_8cpp_source}{Cmd\+Parser.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_parser_a49170df1a0052fa1fdb28235a488e7c6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_parser_ab4d34a57e1917264f954f93f751f76ea}\label{class_cmd_parser_ab4d34a57e1917264f954f93f751f76ea}} 
+\index{CmdParser@{CmdParser}!getCommand@{getCommand}}
+\index{getCommand@{getCommand}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{getCommand()}{getCommand()}}
+{\footnotesize\ttfamily char $\ast$ Cmd\+Parser\+::get\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the initial command line word.
+
+\begin{DoxyReturn}{Returns}
+String with cmd word or NULL if not exists 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00070}{70}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_parser_ab4d34a57e1917264f954f93f751f76ea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_parser_ab4d34a57e1917264f954f93f751f76ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_parser_a54becb4ba1ef11de3e51c98b449d0c87}\label{class_cmd_parser_a54becb4ba1ef11de3e51c98b449d0c87}} 
+\index{CmdParser@{CmdParser}!getParamCount@{getParamCount}}
+\index{getParamCount@{getParamCount}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{getParamCount()}{getParamCount()}}
+{\footnotesize\ttfamily uint16\+\_\+t Cmd\+Parser\+::get\+Param\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the counter of parameter from cmd.
+
+\begin{DoxyReturn}{Returns}
+Return the param counter of command 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00085}{85}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+\mbox{\Hypertarget{class_cmd_parser_a83141b1acb2583532801b2cddce225a5}\label{class_cmd_parser_a83141b1acb2583532801b2cddce225a5}} 
+\index{CmdParser@{CmdParser}!getValueFromKey@{getValueFromKey}}
+\index{getValueFromKey@{getValueFromKey}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{getValueFromKey()}{getValueFromKey()}}
+{\footnotesize\ttfamily char $\ast$ Cmd\+Parser\+::get\+Value\+From\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_cmd_parser_8hpp_a8b6cbada9e913ae4dbc8e00aacdba391}{Cmd\+Parser\+String}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+If Key\+Value option is set, search the value from a key pair. KEY=Value i.\+e. KEY is upper case \begin{DoxySeeAlso}{See also}
+set\+Opt\+Cmd\+Upper.
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key for search in cmd \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String with value or NULL if not exists 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00094}{94}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_cmd_parser_a83141b1acb2583532801b2cddce225a5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_parser_a83141b1acb2583532801b2cddce225a5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_parser_ae95693cfd4aeff4b246f986f7aef55c3}\label{class_cmd_parser_ae95693cfd4aeff4b246f986f7aef55c3}} 
+\index{CmdParser@{CmdParser}!parseCmd@{parseCmd}}
+\index{parseCmd@{parseCmd}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{parseCmd()}{parseCmd()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily uint16\+\_\+t Cmd\+Parser\+::parse\+Cmd (\begin{DoxyParamCaption}\item[{char $\ast$}]{cmd\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00059}{59}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_cmd_parser_ae95693cfd4aeff4b246f986f7aef55c3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_parser_a1ae4ac725a5b549a7c3679a72d7d26e9}\label{class_cmd_parser_a1ae4ac725a5b549a7c3679a72d7d26e9}} 
+\index{CmdParser@{CmdParser}!parseCmd@{parseCmd}}
+\index{parseCmd@{parseCmd}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{parseCmd()}{parseCmd()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily uint16\+\_\+t Cmd\+Parser\+::parse\+Cmd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cmd_buffer_object}{Cmd\+Buffer\+Object}} $\ast$}]{cmd\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00053}{53}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cmd_parser_a1ae4ac725a5b549a7c3679a72d7d26e9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_parser_a5df6c3bc15c7d508ec449992f83b3bb0}\label{class_cmd_parser_a5df6c3bc15c7d508ec449992f83b3bb0}} 
+\index{CmdParser@{CmdParser}!parseCmd@{parseCmd}}
+\index{parseCmd@{parseCmd}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{parseCmd()}{parseCmd()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily uint16\+\_\+t Cmd\+Parser\+::parse\+Cmd (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{buffer,  }\item[{size\+\_\+t}]{buffer\+Size }\end{DoxyParamCaption})}
+
+Parse a buffer with commands. \begin{DoxyWarning}{Warning}
+This function change the buffer and only this object can handle the new buffer!
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Buffer with cmd string \\
+\hline
+{\em buffer\+Size} & Size of buffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of params or CMDPARSER\+\_\+\+ERROR 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{_cmd_parser_8cpp_source}{Cmd\+Parser.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_cmd_parser_a5df6c3bc15c7d508ec449992f83b3bb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cmd_parser_a3d1088255605de22783562edc0672474}\label{class_cmd_parser_a3d1088255605de22783562edc0672474}} 
+\index{CmdParser@{CmdParser}!setOptIgnoreQuote@{setOptIgnoreQuote}}
+\index{setOptIgnoreQuote@{setOptIgnoreQuote}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{setOptIgnoreQuote()}{setOptIgnoreQuote()}}
+{\footnotesize\ttfamily void Cmd\+Parser\+::set\+Opt\+Ignore\+Quote (\begin{DoxyParamCaption}\item[{bool}]{on\+Off = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set parser option to ignore "{} quote for string. Default is off
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Off} & Set option TRUE (on) or FALSE (off) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00246}{246}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+\mbox{\Hypertarget{class_cmd_parser_aee137cf60aa0c94f0a662ced8c4e0aae}\label{class_cmd_parser_aee137cf60aa0c94f0a662ced8c4e0aae}} 
+\index{CmdParser@{CmdParser}!setOptKeyValue@{setOptKeyValue}}
+\index{setOptKeyValue@{setOptKeyValue}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{setOptKeyValue()}{setOptKeyValue()}}
+{\footnotesize\ttfamily void Cmd\+Parser\+::set\+Opt\+Key\+Value (\begin{DoxyParamCaption}\item[{bool}]{on\+Off = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set parser option for handling KEY=Value parameter. Default is off
+
+
+\begin{DoxyParams}{Parameters}
+{\em on\+Off} & Set option TRUE (on) or FALSE (off) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00254}{254}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+\mbox{\Hypertarget{class_cmd_parser_a1ebf11340588db861d4b5383a67b1d04}\label{class_cmd_parser_a1ebf11340588db861d4b5383a67b1d04}} 
+\index{CmdParser@{CmdParser}!setOptSeperator@{setOptSeperator}}
+\index{setOptSeperator@{setOptSeperator}!CmdParser@{CmdParser}}
+\doxysubsubsection{\texorpdfstring{setOptSeperator()}{setOptSeperator()}}
+{\footnotesize\ttfamily void Cmd\+Parser\+::set\+Opt\+Seperator (\begin{DoxyParamCaption}\item[{char}]{seperator }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set parser option for cmd seperator. Default is \textquotesingle{} \textquotesingle{} or CMDPARSER\+\_\+\+CHAR\+\_\+\+SP
+
+
+\begin{DoxyParams}{Parameters}
+{\em seperator} & Set character for seperator cmd \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_cmd_parser_8hpp_source_l00262}{262}} of file \mbox{\hyperlink{_cmd_parser_8hpp_source}{Cmd\+Parser.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/include/\mbox{\hyperlink{_cmd_parser_8hpp}{Cmd\+Parser.\+hpp}}\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/src/\mbox{\hyperlink{_cmd_parser_8cpp}{Cmd\+Parser.\+cpp}}\end{DoxyCompactItemize}

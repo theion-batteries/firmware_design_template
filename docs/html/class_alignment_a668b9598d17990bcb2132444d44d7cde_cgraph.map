@@ -1,0 +1,9 @@
+<map id="Alignment::CheckBoundaryX" name="Alignment::CheckBoundaryX">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,192,98"/>
+<area shape="rect" id="node2" href="$class_alignment.html#ac8aa65bdcfb551bb996ac59ee8d8db3d" title="convert distance in mm or µm to step or microstep" alt="" coords="240,5,423,47"/>
+<area shape="rect" id="node3" href="$class_alignment.html#a4ce0756a95f2b8cbf5511c6ff5b3d095" title=" " alt="" coords="242,71,421,98"/>
+<area shape="rect" id="node6" href="$classa4988.html#ad66dadbb79c22bc3f507fe6d624c9fec" title=" " alt="" coords="286,123,377,150"/>
+<area shape="rect" id="node4" href="$class_distance_sensor.html#a1b5434dd7b12183ded0962f6e42a8f8d" title=" " alt="" coords="471,61,653,103"/>
+<area shape="rect" id="node5" href="$class_keyence__rs232__interface.html#ad2606a20f587944928d8cadef8505af3" title=" " alt="" coords="701,61,869,103"/>
+<area shape="rect" id="node7" href="$classa4988.html#a2074f2e3fe7cd79e402f53a14ba68c89" title=" " alt="" coords="501,127,623,154"/>
+</map>

@@ -1,0 +1,117 @@
+.TH "endSwitch" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+endSwitch
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <EndSwitch\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBendSwitch\fP ()"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP (int \fBPin\fP, bool \fBPressedState\fP)"
+.br
+.RI "Construct a new end Switch::end Switch object\&. "
+.ti -1c
+.RI "bool \fBget_current_state\fP (bool debounceButton=false)"
+.br
+.RI "get current state "
+.ti -1c
+.RI "bool \fBdebounce\fP ()"
+.br
+.RI "debounce a button "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcurrent_state\fP"
+.br
+.ti -1c
+.RI "bool \fBlast_state\fP"
+.br
+.ti -1c
+.RI "bool \fBIspressed\fP =false"
+.br
+.ti -1c
+.RI "int \fBPin\fP"
+.br
+.ti -1c
+.RI "bool \fBPressedState\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB15\fP of file \fBEndSwitch\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "endSwitch::endSwitch ()"
+
+.SS "endSwitch::endSwitch (int Pin, bool PressedState)"
+
+.PP
+Construct a new end Switch::end Switch object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIPin\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB17\fP of file \fBEndSwitch\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool endSwitch::debounce ()"
+
+.PP
+debounce a button 
+.PP
+Definition at line \fB42\fP of file \fBEndSwitch\&.cpp\fP\&.
+.SS "bool endSwitch::get_current_state (bool debounceButton = \fCfalse\fP)"
+
+.PP
+get current state 
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.PP
+Definition at line \fB28\fP of file \fBEndSwitch\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool endSwitch::current_state"
+
+.PP
+Definition at line \fB17\fP of file \fBEndSwitch\&.hpp\fP\&.
+.SS "bool endSwitch::Ispressed =false"
+
+.PP
+Definition at line \fB19\fP of file \fBEndSwitch\&.hpp\fP\&.
+.SS "bool endSwitch::last_state"
+
+.PP
+Definition at line \fB18\fP of file \fBEndSwitch\&.hpp\fP\&.
+.SS "int endSwitch::Pin"
+
+.PP
+Definition at line \fB20\fP of file \fBEndSwitch\&.hpp\fP\&.
+.SS "bool endSwitch::PressedState"
+
+.PP
+Definition at line \fB21\fP of file \fBEndSwitch\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

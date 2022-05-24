@@ -1,0 +1,227 @@
+.TH "a4988" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+a4988
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DriverA4988\&.hpp>\fP
+.PP
+Inherited by \fBNema8\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBa4988\fP (int \fBmotor_steps\fP, int \fBms1_pin\fP, int \fBms2_pin\fP, int \fBms3_pin\fP, int \fBdir_pin\fP, int \fBenable_pin\fP, int \fBstep_pin\fP, bool \fBdirection\fP)"
+.br
+.ti -1c
+.RI "void \fBenable\fP (int enable)"
+.br
+.ti -1c
+.RI "void \fBstep\fP (unsigned long \fBnum_steps\fP)"
+.br
+.ti -1c
+.RI "void \fBstepOnce\fP (void)"
+.br
+.ti -1c
+.RI "void \fBstepMotor\fP (int this_step)"
+.br
+.ti -1c
+.RI "void \fBreverseDirection\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetSpeed\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetDelay\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetStepCounter\fP ()"
+.br
+.ti -1c
+.RI "bool \fBgetDirection\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetDelay\fP (unsigned long delay)"
+.br
+.ti -1c
+.RI "void \fBsetSpeed\fP (int speed)"
+.br
+.ti -1c
+.RI "void \fBsetDirection\fP (int \fBdirection\fP)"
+.br
+.ti -1c
+.RI "void \fBsetStepMode\fP (int stepMode)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBdirection\fP"
+.br
+.ti -1c
+.RI "int \fBmotor_steps\fP"
+.br
+.ti -1c
+.RI "unsigned long \fBstep_delay\fP"
+.br
+.ti -1c
+.RI "int \fBnum_steps\fP"
+.br
+.ti -1c
+.RI "int \fBstep_number\fP"
+.br
+.ti -1c
+.RI "int \fBstep_mode\fP"
+.br
+.ti -1c
+.RI "int \fBstep_pin\fP"
+.br
+.ti -1c
+.RI "int \fBms1_pin\fP"
+.br
+.ti -1c
+.RI "int \fBms2_pin\fP"
+.br
+.ti -1c
+.RI "int \fBms3_pin\fP"
+.br
+.ti -1c
+.RI "int \fBdir_pin\fP"
+.br
+.ti -1c
+.RI "int \fBenable_pin\fP"
+.br
+.ti -1c
+.RI "int \fBStepCounter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBTotalStepCounted\fP =0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB36\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "a4988::a4988 (int motor_steps, int ms1_pin, int ms2_pin, int ms3_pin, int dir_pin, int enable_pin, int step_pin, bool direction)"
+
+.PP
+Definition at line \fB38\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void a4988::enable (int enable)"
+
+.PP
+Definition at line \fB69\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "float a4988::getDelay ()"
+
+.PP
+Definition at line \fB166\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "bool a4988::getDirection ()"
+
+.PP
+Definition at line \fB79\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "float a4988::getSpeed ()"
+
+.PP
+Definition at line \fB162\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "int a4988::getStepCounter ()"
+
+.PP
+Definition at line \fB170\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "void a4988::reverseDirection ()"
+
+.PP
+Definition at line \fB82\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "void a4988::setDelay (unsigned long delay)"
+
+.PP
+Definition at line \fB75\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "void a4988::setDirection (int direction)"
+
+.PP
+Definition at line \fB91\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "void a4988::setSpeed (int speed)"
+
+.PP
+Definition at line \fB174\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "void a4988::setStepMode (int stepMode)"
+
+.PP
+Definition at line \fB128\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "void a4988::step (unsigned long num_steps)"
+
+.PP
+Definition at line \fB117\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SS "void a4988::stepMotor (int this_step)"
+
+.SS "void a4988::stepOnce (void)"
+
+.PP
+Definition at line \fB106\fP of file \fBDriverA4988\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int a4988::dir_pin"
+
+.PP
+Definition at line \fB71\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::direction"
+
+.PP
+Definition at line \fB59\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::enable_pin"
+
+.PP
+Definition at line \fB72\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::motor_steps"
+
+.PP
+Definition at line \fB60\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::ms1_pin"
+
+.PP
+Definition at line \fB68\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::ms2_pin"
+
+.PP
+Definition at line \fB69\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::ms3_pin"
+
+.PP
+Definition at line \fB70\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::num_steps"
+
+.PP
+Definition at line \fB62\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "unsigned long a4988::step_delay"
+
+.PP
+Definition at line \fB61\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::step_mode"
+
+.PP
+Definition at line \fB64\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::step_number"
+
+.PP
+Definition at line \fB63\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::step_pin"
+
+.PP
+Definition at line \fB65\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::StepCounter = 0"
+
+.PP
+Definition at line \fB74\fP of file \fBDriverA4988\&.hpp\fP\&.
+.SS "int a4988::TotalStepCounted =0"
+
+.PP
+Definition at line \fB76\fP of file \fBDriverA4988\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

@@ -1,0 +1,17 @@
+\hypertarget{light__barrier_8cpp_source}{}\doxysection{light\+\_\+barrier.\+cpp}
+\label{light__barrier_8cpp_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/src/light\_barrier.cpp@{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/src/light\_barrier.cpp}}
+\mbox{\hyperlink{light__barrier_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{light__barrier_8hpp}{light\_barrier.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00017}\mbox{\hyperlink{classlight_barrier_a89cd452d9687398612660afcf5ed186b}{00017}} \mbox{\hyperlink{classlight_barrier_abe3b51968b52630bda53cebcb6f74b69}{lightBarrier::lightBarrier}}(\textcolor{keywordtype}{int} Pin, \textcolor{keywordtype}{bool} TraversedState)\{}
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00018}00018     this-\/>TraversedState=\mbox{\hyperlink{classlight_barrier_a74c6017b8039066c582d5541df43dbd9}{TraversedState}};}
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00019}00019     this-\/>Pin=\mbox{\hyperlink{classlight_barrier_aa575efa3d00382a47849d323fba08637}{Pin}};}
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00020}00020     pinMode(\mbox{\hyperlink{classlight_barrier_aa575efa3d00382a47849d323fba08637}{Pin}}, INPUT\_PULLUP); \textcolor{comment}{//the input pin to mcu}}
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00021}00021   \}}
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00028}\mbox{\hyperlink{classlight_barrier_a9f75c7d7640cf9aab7f67f1b16e27077}{00028}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classlight_barrier_a9f75c7d7640cf9aab7f67f1b16e27077}{lightBarrier::get\_current\_state}}()}
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00029}00029 \{}
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00030}00030       \textcolor{keywordflow}{return} digitalRead(\mbox{\hyperlink{classlight_barrier_aa575efa3d00382a47849d323fba08637}{Pin}});}
+\DoxyCodeLine{\Hypertarget{light__barrier_8cpp_source_l00031}00031 \}}
+
+\end{DoxyCode}

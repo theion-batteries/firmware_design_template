@@ -1,0 +1,250 @@
+.TH "C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Globals\&.h'\fP
+.br
+
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBCmdCallback\fP< 64 > \fBcmdCallback\fP"
+.br
+.RI "define global variables: need to be encapsulated later "
+.ti -1c
+.RI "\fBCmdBuffer\fP< 64 > \fBmyBuffer\fP"
+.br
+.ti -1c
+.RI "\fBCmdParser\fP \fBmyParser\fP"
+.br
+.ti -1c
+.RI "\fBNema8\fP \fBM_X\fP (0, \fBXMs1_pin\fP, \fBXMs2_pin\fP, \fBXMs3_pin\fP, \fBXDir_pin\fP, \fBXEnable_pin\fP, \fBXStep_pin\fP, \fBdown\fP)"
+.br
+.ti -1c
+.RI "\fBNema8\fP \fBM_Y\fP (0, \fBYMs1_pin\fP, \fBYMs2_pin\fP, \fBYMs3_pin\fP, \fBYDir_pin\fP, \fBYEnable_pin\fP, \fBYStep_pin\fP, \fBdown\fP)"
+.br
+.ti -1c
+.RI "\fBNema8\fP \fBM_Z\fP (0, \fBZMs1_pin\fP, \fBZMs2_pin\fP, \fBZMs3_pin\fP, \fBZDir_pin\fP, \fBZEnable_pin\fP, \fBZStep_pin\fP, \fBdown\fP)"
+.br
+.ti -1c
+.RI "\fBNema8\fP \fBM_PH\fP (0, \fBPHMs1_pin\fP, \fBPHMs2_pin\fP, \fBPHMs3_pin\fP, \fBPHDir_pin\fP, \fBPHEnable_pin\fP, \fBPHStep_pin\fP, \fBcclk\fP)"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP \fBES_x\fP (\fBE_X\fP, LOW)"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP \fBES_y\fP (\fBE_Y\fP, LOW)"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP \fBES_z\fP (\fBE_Z\fP, LOW)"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP \fBES_Stop\fP (\fBE_Emergency\fP, LOW)"
+.br
+.ti -1c
+.RI "\fBDistanceSensor\fP \fBDS_x\fP (\fBXSensorHead\fP)"
+.br
+.ti -1c
+.RI "\fBDistanceSensor\fP \fBDS_y\fP (\fBYSensorHead\fP)"
+.br
+.ti -1c
+.RI "\fBDistanceSensor\fP \fBDS_z\fP (\fBZSensorHead\fP)"
+.br
+.ti -1c
+.RI "\fBlightBarrier\fP \fBLB_x\fP (\fBLB_X\fP, LOW)"
+.br
+.ti -1c
+.RI "\fBlightBarrier\fP \fBLB_y\fP (\fBLB_Y\fP, LOW)"
+.br
+.ti -1c
+.RI "\fBlightBarrier\fP \fBLB_z\fP (\fBLB_Z\fP, LOW)"
+.br
+.ti -1c
+.RI "\fBUUID_MANAGER\fP \fBAlignId\fP ('align')"
+.br
+.ti -1c
+.RI "\fBResetHardware\fP \fBresetObj\fP (\fBPIN_OUTPUT_RESET\fP)"
+.br
+.ti -1c
+.RI "\fBSleepHardware\fP \fBsleepObj\fP (\fBInterruptSleepPin\fP)"
+.br
+.ti -1c
+.RI "char \fBStart\fP [] = 'start'"
+.br
+.ti -1c
+.RI "char \fBQuit\fP [] = 'quit'"
+.br
+.ti -1c
+.RI "char \fBSet\fP [] = 'set'"
+.br
+.ti -1c
+.RI "char \fBGet\fP [] = 'get'"
+.br
+.ti -1c
+.RI "char \fBUndo\fP [] = 'undo'"
+.br
+.ti -1c
+.RI "char \fBMove\fP [] = 'move'"
+.br
+.ti -1c
+.RI "char \fBReset\fP [] = 'reset'"
+.br
+.ti -1c
+.RI "char \fBStop\fP [] = 'stop'"
+.br
+.ti -1c
+.RI "char \fBSleep\fP [] = 'sleep'"
+.br
+.ti -1c
+.RI "char \fBHelp\fP [] = 'help'"
+.br
+.ti -1c
+.RI "char \fBCalibrate\fP [] = 'calibrate'"
+.br
+.ti -1c
+.RI "char \fBRotate\fP [] = 'rotate'"
+.br
+.ti -1c
+.RI "char \fBTest1\fP [] = 'test1'"
+.br
+.ti -1c
+.RI "char \fBTest2\fP [] = 'test2'"
+.br
+.ti -1c
+.RI "std::stack< \fBICommand\fP * > \fBCmdStack\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBICommand\fP * > \fBCmdDeleter\fP"
+.br
+.ti -1c
+.RI "std::stack< \fBInvoker\fP > \fBInvokerStack\fP"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "\fBUUID_MANAGER\fP AlignId('align') ('align')"
+
+.SS "char Calibrate[] = 'calibrate'"
+
+.PP
+Definition at line \fB50\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBCmdCallback\fP<64> cmdCallback"
+
+.PP
+define global variables: need to be encapsulated later 
+.PP
+Definition at line \fB13\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "std::vector<\fBICommand\fP*> CmdDeleter"
+
+.PP
+Definition at line \fB56\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "std::stack<\fBICommand\fP*> CmdStack"
+
+.PP
+Definition at line \fB55\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBDistanceSensor\fP DS_x(\fBXSensorHead\fP) (\fBXSensorHead\fP)"
+
+.SS "\fBDistanceSensor\fP DS_y(\fBYSensorHead\fP) (\fBYSensorHead\fP)"
+
+.SS "\fBDistanceSensor\fP DS_z(\fBZSensorHead\fP) (\fBZSensorHead\fP)"
+
+.SS "\fBendSwitch\fP ES_Stop(\fBE_Emergency\fP, LOW) (\fBE_Emergency\fP, LOW)"
+
+.SS "\fBendSwitch\fP ES_x(\fBE_X\fP, LOW) (\fBE_X\fP, LOW)"
+
+.SS "\fBendSwitch\fP ES_y(\fBE_Y\fP, LOW) (\fBE_Y\fP, LOW)"
+
+.SS "\fBendSwitch\fP ES_z(\fBE_Z\fP, LOW) (\fBE_Z\fP, LOW)"
+
+.SS "char Get[] = 'get'"
+
+.PP
+Definition at line \fB43\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Help[] = 'help'"
+
+.PP
+Definition at line \fB49\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "std::stack<\fBInvoker\fP> InvokerStack"
+
+.PP
+Definition at line \fB57\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBlightBarrier\fP LB_x(\fBLB_X\fP, LOW) (\fBLB_X\fP, LOW)"
+
+.SS "\fBlightBarrier\fP LB_y(\fBLB_Y\fP, LOW) (\fBLB_Y\fP, LOW)"
+
+.SS "\fBlightBarrier\fP LB_z(\fBLB_Z\fP, LOW) (\fBLB_Z\fP, LOW)"
+
+.SS "\fBNema8\fP M_PH(0, \fBPHMs1_pin\fP, \fBPHMs2_pin\fP, \fBPHMs3_pin\fP, \fBPHDir_pin\fP, \fBPHEnable_pin\fP, \fBPHStep_pin\fP, \fBcclk\fP) (0, \fBPHMs1_pin\fP, \fBPHMs2_pin\fP, \fBPHMs3_pin\fP, \fBPHDir_pin\fP, \fBPHEnable_pin\fP, \fBPHStep_pin\fP, \fBcclk\fP)"
+
+.SS "\fBAlignment\fP \fBAlignObj\fP& M_X (0, \fBXMs1_pin\fP, \fBXMs2_pin\fP, \fBXMs3_pin\fP, \fBXDir_pin\fP, \fBXEnable_pin\fP, \fBXStep_pin\fP, \fBdown\fP)"
+
+.PP
+Definition at line \fB36\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBNema8\fP M_Y(0, \fBYMs1_pin\fP, \fBYMs2_pin\fP, \fBYMs3_pin\fP, \fBYDir_pin\fP, \fBYEnable_pin\fP, \fBYStep_pin\fP, \fBdown\fP) (0, \fBYMs1_pin\fP, \fBYMs2_pin\fP, \fBYMs3_pin\fP, \fBYDir_pin\fP, \fBYEnable_pin\fP, \fBYStep_pin\fP, \fBdown\fP)"
+
+.SS "\fBNema8\fP M_Z(0, \fBZMs1_pin\fP, \fBZMs2_pin\fP, \fBZMs3_pin\fP, \fBZDir_pin\fP, \fBZEnable_pin\fP, \fBZStep_pin\fP, \fBdown\fP) (0, \fBZMs1_pin\fP, \fBZMs2_pin\fP, \fBZMs3_pin\fP, \fBZDir_pin\fP, \fBZEnable_pin\fP, \fBZStep_pin\fP, \fBdown\fP)"
+
+.SS "char Move[] = 'move'"
+
+.PP
+Definition at line \fB45\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBCmdBuffer\fP<64> myBuffer"
+
+.PP
+Definition at line \fB14\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBCmdParser\fP myParser"
+
+.PP
+Definition at line \fB15\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Quit[] = 'quit'"
+
+.PP
+Definition at line \fB41\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Reset[] = 'reset'"
+
+.PP
+Definition at line \fB46\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBResetHardware\fP resetObj(\fBPIN_OUTPUT_RESET\fP) (\fBPIN_OUTPUT_RESET\fP)"
+
+.SS "char Rotate[] = 'rotate'"
+
+.PP
+Definition at line \fB51\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Set[] = 'set'"
+
+.PP
+Definition at line \fB42\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Sleep[] = 'sleep'"
+
+.PP
+Definition at line \fB48\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBSleepHardware\fP sleepObj(\fBInterruptSleepPin\fP) (\fBInterruptSleepPin\fP)"
+
+.SS "char Start[] = 'start'"
+
+.PP
+Definition at line \fB40\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Stop[] = 'stop'"
+
+.PP
+Definition at line \fB47\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Test1[] = 'test1'"
+
+.PP
+Definition at line \fB52\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Test2[] = 'test2'"
+
+.PP
+Definition at line \fB53\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Undo[] = 'undo'"
+
+.PP
+Definition at line \fB44\fP of file \fBGlobals\&.cpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

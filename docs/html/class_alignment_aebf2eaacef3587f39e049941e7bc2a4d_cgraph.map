@@ -1,0 +1,7 @@
+<map id="Alignment::MoveHomeAll" name="Alignment::MoveHomeAll">
+<area shape="rect" id="node1" title="Move all motors home @algorithm: check if every motor endswitch is not pressed, then move Nema8 up." alt="" coords="5,71,172,98"/>
+<area shape="rect" id="node2" href="$classend_switch.html#ae1f7e6d7200feb02820c02708bca01c0" title="get current state" alt="" coords="220,5,375,47"/>
+<area shape="rect" id="node4" href="$classa4988.html#a6a37cf937b1f7a1f229904cdb9191b89" title=" " alt="" coords="230,71,365,98"/>
+<area shape="rect" id="node5" href="$classa4988.html#a2074f2e3fe7cd79e402f53a14ba68c89" title=" " alt="" coords="237,122,358,149"/>
+<area shape="rect" id="node3" href="$classend_switch.html#ac38e43effb237b61a1f4b09092b5ac53" title="debounce a button" alt="" coords="423,13,569,39"/>
+</map>

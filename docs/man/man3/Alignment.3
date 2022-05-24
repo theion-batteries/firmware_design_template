@@ -1,0 +1,1084 @@
+.TH "Alignment" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Alignment
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Alignment\&.hpp>\fP
+.PP
+Inherited by \fBFirmwareUnit\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAlignment\fP (\fBNema8\fP *\fBMotor_x\fP, \fBNema8\fP *\fBMotor_y\fP, \fBNema8\fP *\fBMotor_z\fP, \fBDistanceSensor\fP *\fBDistanceM_x\fP, \fBDistanceSensor\fP *\fBDistanceM_y\fP, \fBDistanceSensor\fP *\fBDistanceM_z\fP, \fBendSwitch\fP *\fBendSwitch_x\fP, \fBendSwitch\fP *\fBendSwitch_y\fP, \fBendSwitch\fP *\fBendSwitch_z\fP)"
+.br
+.ti -1c
+.RI "\fBAlignment\fP (\fBNema8\fP *\fBMotor_x\fP, \fBNema8\fP *\fBMotor_y\fP, \fBNema8\fP *\fBMotor_z\fP, \fBDistanceSensor\fP *\fBDistanceM_x\fP, \fBDistanceSensor\fP *\fBDistanceM_y\fP, \fBDistanceSensor\fP *\fBDistanceM_z\fP, \fBendSwitch\fP *\fBendSwitch_x\fP, \fBendSwitch\fP *\fBendSwitch_y\fP, \fBendSwitch\fP *\fBendSwitch_z\fP, \fBendSwitch\fP *\fBendSwitch_stop\fP, \fBlightBarrier\fP *\fBlightBarrier_x\fP, \fBlightBarrier\fP *\fBlightBarrier_y\fP, \fBlightBarrier\fP *\fBlightBarrier_z\fP)"
+.br
+.ti -1c
+.RI "\fBAlignment\fP (\fBNema8\fP *\fBMotor_x\fP, \fBNema8\fP *\fBMotor_y\fP, \fBNema8\fP *\fBMotor_z\fP, \fBNema8\fP *\fBMotor_PrintHead\fP, \fBDistanceSensor\fP *\fBDistanceM_x\fP, \fBDistanceSensor\fP *\fBDistanceM_y\fP, \fBDistanceSensor\fP *\fBDistanceM_z\fP, \fBendSwitch\fP *\fBendSwitch_x\fP, \fBendSwitch\fP *\fBendSwitch_y\fP, \fBendSwitch\fP *\fBendSwitch_z\fP, \fBendSwitch\fP *\fBendSwitch_stop\fP, \fBlightBarrier\fP *\fBlightBarrier_x\fP, \fBlightBarrier\fP *\fBlightBarrier_y\fP, \fBlightBarrier\fP *\fBlightBarrier_z\fP)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceMSafe\fP (\fBNema8\fP *Mref, int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceXloop\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceYloop\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceZloop\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBRotateAnglePHloop\fP (\fBNema8\fP *Mref, int direction, float angle)"
+.br
+.ti -1c
+.RI "bool \fBisStopButtonPressed\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitFirmwareUnit\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBStepOnceX\fP (int direction)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBStepOnceY\fP (int direction)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBStepOnceZ\fP (int direction)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceX\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceY\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceZ\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceAll\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveAngleX\fP (int direction, float angle)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveAngleY\fP (int direction, float angle)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveAngleZ\fP (int direction, float angle)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveAngleAll\fP (int direction, float angle)"
+.br
+.ti -1c
+.RI "double \fBgetValueSensorX\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetValueSensorY\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetValueSensorZ\fP ()"
+.br
+.ti -1c
+.RI "bool \fBgetReadingEndstopX\fP ()"
+.br
+.ti -1c
+.RI "bool \fBgetReadingEndstopY\fP ()"
+.br
+.ti -1c
+.RI "bool \fBgetReadingEndstopZ\fP ()"
+.br
+.ti -1c
+.RI "bool \fBgetReadingLightBarrierX\fP ()"
+.br
+.ti -1c
+.RI "bool \fBgetReadingLightBarrierY\fP ()"
+.br
+.ti -1c
+.RI "bool \fBgetReadingLightBarrierZ\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBGoToReferenceDown\fP ()"
+.br
+.ti -1c
+.RI "int \fBconvertDistanceToStepMicros\fP (float distance)"
+.br
+.ti -1c
+.RI "int \fBconvertAngleToStep\fP (float angle)"
+.br
+.ti -1c
+.RI "float \fBgetDistancePrintHeadToMl\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetDistancePrintHeadToMlX\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetDistancePrintHeadToMlY\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetDistancePrintHeadToMlZ\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetDistancePlatformToMlX\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetDistancePlatformToMlY\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetDistancePlatformToMlZ\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetDistancePlatformToMlXYZ\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBGoToReferenceUp\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBcalibratePrintHead\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcheckLimitUpX\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcheckLimitUpY\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcheckLimitUpZ\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcheckLimitUpXYZ\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcheckLimitDownX\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcheckLimitDownY\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcheckLimitDownZ\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcheckLimitDownXYZ\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBStepDownXMax\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBStepDownYMax\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBStepDownZMax\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBStepUpXMax\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBStepUpYMax\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBStepUpZMax\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceXSafe\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceYSafe\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceZSafe\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDistanceAllSafe\fP (int direction, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveAngleXSafe\fP (int direction, float Angle)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveAngleYSafe\fP (int direction, float Angle)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveAngleZSafe\fP (int direction, float Angle)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveAngleAllSafe\fP (int direction, float Angle)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBStepOncePH\fP (int direction)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBrotateFullRevPH\fP (int direction)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBrotateAnglePH\fP (int direction, float Angle)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBoscillateSys\fP (float desired_angle, int num_revolutions, bool default_sens=\fBclk\fP, bool reverse_sense=true)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBmovePhToRefX\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBinitSensors\fP ()"
+.br
+.ti -1c
+.RI "void \fBincrementTotalStepCounted\fP ()"
+.br
+.ti -1c
+.RI "void \fBresetStepCounter\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetCurrentPosX\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetCurrentPosY\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetCurrentPosZ\fP ()"
+.br
+.ti -1c
+.RI "float \fBCheckBoundaryX\fP (float targetDistance, int direction)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBInitAlign\fP (bool enable=\fBon\fP)"
+.br
+.RI "setup stuff to initialise enable, direction and so on "
+.ti -1c
+.RI "\fBretVal\fP \fBEnableAll\fP (bool enable=\fBon\fP)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBDisableAll\fP (bool enable=\fBoff\fP)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveHomeAll\fP ()"
+.br
+.RI "Move all motors home @algorithm: check if every motor endswitch is not pressed, then move \fBNema8\fP up\&. "
+.ti -1c
+.RI "\fBretVal\fP \fBAlignLoop\fP ()"
+.br
+.RI "This is the main function to keep track of alignment during process @algorithm: compare value of distance sensor for each motor with target and calibrate\&. "
+.ti -1c
+.RI "float \fBgetRemainingDistanceX\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetRemainingDistanceY\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetRemainingDistanceZ\fP ()"
+.br
+.RI "get the real distance based on mechanical construction in this setup "
+.ti -1c
+.RI "float \fBgetMinX\fP ()"
+.br
+.RI "get mesured values minus thickness of sensor: equal to 0 position "
+.ti -1c
+.RI "float \fBgetMinY\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetMinZ\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetMaxX\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetMaxY\fP ()"
+.br
+.ti -1c
+.RI "float \fBgetMaxZ\fP ()"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveUp\fP (bool x, bool y, bool z, bool checkLimit)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDown\fP (bool x, bool y, bool z, bool checkLimit)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveUpTo\fP (bool x, bool y, bool z, bool checkLimit, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBMoveDownTo\fP (bool x, bool y, bool z, bool checkLimit, float distance)"
+.br
+.ti -1c
+.RI "\fBretVal\fP \fBsetTargetDistancePHToML\fP (float distance)"
+.br
+.RI "set new target distance to ML "
+.ti -1c
+.RI "\fBretVal\fP \fBsetTargetDistanceSensorToML\fP (float distance)"
+.br
+.ti -1c
+.RI "int \fBConvertDistanceToStep\fP (float distance)"
+.br
+.RI "convert distance in mm or µm to step or microstep "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBNema8\fP * \fBMotor_x\fP"
+.br
+.ti -1c
+.RI "\fBNema8\fP * \fBMotor_y\fP"
+.br
+.ti -1c
+.RI "\fBNema8\fP * \fBMotor_z\fP"
+.br
+.ti -1c
+.RI "\fBNema8\fP * \fBMotor_PrintHead\fP"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP * \fBendSwitch_x\fP"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP * \fBendSwitch_y\fP"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP * \fBendSwitch_z\fP"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP * \fBendSwitch_stop\fP"
+.br
+.ti -1c
+.RI "\fBlightBarrier\fP * \fBlightBarrier_x\fP"
+.br
+.ti -1c
+.RI "\fBlightBarrier\fP * \fBlightBarrier_y\fP"
+.br
+.ti -1c
+.RI "\fBlightBarrier\fP * \fBlightBarrier_z\fP"
+.br
+.ti -1c
+.RI "\fBDistanceSensor\fP * \fBDistanceM_x\fP"
+.br
+.ti -1c
+.RI "\fBDistanceSensor\fP * \fBDistanceM_y\fP"
+.br
+.ti -1c
+.RI "\fBDistanceSensor\fP * \fBDistanceM_z\fP"
+.br
+.ti -1c
+.RI "const float \fBMinDistanceToML\fP = 10"
+.br
+.ti -1c
+.RI "const float \fBMaxDistanceToMl\fP = 60"
+.br
+.ti -1c
+.RI "float \fBTargetDistancePHToMl\fP =70"
+.br
+.ti -1c
+.RI "float \fBTargetDistanceSensorToMl\fP =165"
+.br
+.ti -1c
+.RI "int \fBNumOfCycles\fP =0"
+.br
+.ti -1c
+.RI "bool \fBhomed\fP = false"
+.br
+.ti -1c
+.RI "bool \fBaligned\fP = false"
+.br
+.ti -1c
+.RI "bool \fBallDownMax\fP = false"
+.br
+.ti -1c
+.RI "bool \fBxDownMax\fP = false"
+.br
+.ti -1c
+.RI "bool \fByDownMax\fP = false"
+.br
+.ti -1c
+.RI "bool \fBzDownMax\fP = false"
+.br
+.ti -1c
+.RI "bool \fBallUpMax\fP = false"
+.br
+.ti -1c
+.RI "bool \fBxUpMax\fP = false"
+.br
+.ti -1c
+.RI "bool \fByUpMax\fP = false"
+.br
+.ti -1c
+.RI "bool \fBzUpMax\fP = false"
+.br
+.ti -1c
+.RI "bool \fBxUpDistanceArrived\fP = false"
+.br
+.ti -1c
+.RI "bool \fByUpDistanceArrived\fP = false"
+.br
+.ti -1c
+.RI "bool \fBzUpDistanceArrived\fP = false"
+.br
+.ti -1c
+.RI "bool \fBallUpDistanceArrived\fP = false"
+.br
+.ti -1c
+.RI "bool \fBxDownDistanceArrived\fP = false"
+.br
+.ti -1c
+.RI "bool \fByDownDistanceArrived\fP = false"
+.br
+.ti -1c
+.RI "bool \fBzDownDistanceArrived\fP = false"
+.br
+.ti -1c
+.RI "bool \fBallDownDistanceArrived\fP = false"
+.br
+.ti -1c
+.RI "bool \fBXAligned\fP = false"
+.br
+.ti -1c
+.RI "bool \fBYAligned\fP = false"
+.br
+.ti -1c
+.RI "bool \fBZAligned\fP = false"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB19\fP of file \fBAlignment\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Alignment::Alignment (\fBNema8\fP * Motor_x, \fBNema8\fP * Motor_y, \fBNema8\fP * Motor_z, \fBDistanceSensor\fP * DistanceM_x, \fBDistanceSensor\fP * DistanceM_y, \fBDistanceSensor\fP * DistanceM_z, \fBendSwitch\fP * endSwitch_x, \fBendSwitch\fP * endSwitch_y, \fBendSwitch\fP * endSwitch_z)"
+
+.PP
+Definition at line \fB13\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "Alignment::Alignment (\fBNema8\fP * Motor_x, \fBNema8\fP * Motor_y, \fBNema8\fP * Motor_z, \fBDistanceSensor\fP * DistanceM_x, \fBDistanceSensor\fP * DistanceM_y, \fBDistanceSensor\fP * DistanceM_z, \fBendSwitch\fP * endSwitch_x, \fBendSwitch\fP * endSwitch_y, \fBendSwitch\fP * endSwitch_z, \fBendSwitch\fP * endSwitch_stop, \fBlightBarrier\fP * lightBarrier_x, \fBlightBarrier\fP * lightBarrier_y, \fBlightBarrier\fP * lightBarrier_z)"
+
+.PP
+Definition at line \fB27\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "Alignment::Alignment (\fBNema8\fP * Motor_x, \fBNema8\fP * Motor_y, \fBNema8\fP * Motor_z, \fBNema8\fP * Motor_PrintHead, \fBDistanceSensor\fP * DistanceM_x, \fBDistanceSensor\fP * DistanceM_y, \fBDistanceSensor\fP * DistanceM_z, \fBendSwitch\fP * endSwitch_x, \fBendSwitch\fP * endSwitch_y, \fBendSwitch\fP * endSwitch_z, \fBendSwitch\fP * endSwitch_stop, \fBlightBarrier\fP * lightBarrier_x, \fBlightBarrier\fP * lightBarrier_y, \fBlightBarrier\fP * lightBarrier_z)"
+
+.PP
+Definition at line \fB44\fP of file \fBAlignment\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBretVal\fP Alignment::AlignLoop ()"
+
+.PP
+This is the main function to keep track of alignment during process @algorithm: compare value of distance sensor for each motor with target and calibrate\&. 
+.PP
+\fBReturns\fP
+.RS 4
+retVal 
+.RE
+.PP
+TODO_:Better for loop for each Motor
+.PP
+Definition at line \fB1278\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::calibratePrintHead ()"
+calibrate Print Head based on target distance @algorithm: get distance to ML on every Axis (X,Y,Z), move axis in respect to target distance to printhead ( deduced from another fucntion) until target distance is same on all axis 
+.PP
+\fBReturns\fP
+.RS 4
+retVal
+.RE
+.PP
+
+.PP
+Definition at line \fB558\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::CheckBoundaryX (float targetDistance, int direction)"
+
+.PP
+Definition at line \fB1782\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::checkLimitDownX ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB380\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::checkLimitDownXYZ ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB395\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::checkLimitDownY ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB385\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::checkLimitDownZ ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB390\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::checkLimitUpX ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB359\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::checkLimitUpXYZ ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB374\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::checkLimitUpY ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB364\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::checkLimitUpZ ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB369\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "int Alignment::convertAngleToStep (float angle)"
+
+.PP
+Definition at line \fB410\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "int Alignment::ConvertDistanceToStep (float distance)"
+
+.PP
+convert distance in mm or µm to step or microstep 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdistance\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.PP
+Definition at line \fB1813\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "int Alignment::convertDistanceToStepMicros (float distance)"
+
+.PP
+Definition at line \fB406\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::DisableAll (bool enable = \fC\fBoff\fP\fP)"
+
+.PP
+Definition at line \fB1192\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::EnableAll (bool enable = \fC\fBon\fP\fP)"
+
+.PP
+Definition at line \fB1185\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getCurrentPosX ()"
+
+.PP
+Definition at line \fB1766\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getCurrentPosY ()"
+
+.PP
+Definition at line \fB1771\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getCurrentPosZ ()"
+
+.PP
+Definition at line \fB1776\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getDistancePlatformToMlX ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB453\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getDistancePlatformToMlXYZ ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB465\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getDistancePlatformToMlY ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB457\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getDistancePlatformToMlZ ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB461\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getDistancePrintHeadToMl ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB415\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getDistancePrintHeadToMlX ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB425\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getDistancePrintHeadToMlY ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB434\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getDistancePrintHeadToMlZ ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB443\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getMaxX ()"
+
+.PP
+Definition at line \fB1746\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getMaxY ()"
+
+.PP
+Definition at line \fB1752\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getMaxZ ()"
+
+.PP
+Definition at line \fB1758\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getMinX ()"
+
+.PP
+get mesured values minus thickness of sensor: equal to 0 position 
+.PP
+\fBReturns\fP
+.RS 4
+float 
+.RE
+.PP
+
+.PP
+Definition at line \fB1725\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getMinY ()"
+
+.PP
+Definition at line \fB1732\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getMinZ ()"
+
+.PP
+Definition at line \fB1739\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::getReadingEndstopX ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB332\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::getReadingEndstopY ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB336\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::getReadingEndstopZ ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB340\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::getReadingLightBarrierX ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB345\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::getReadingLightBarrierY ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB349\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "bool Alignment::getReadingLightBarrierZ ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB353\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getRemainingDistanceX ()"
+
+.PP
+Definition at line \fB1713\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getRemainingDistanceY ()"
+
+.PP
+Definition at line \fB1706\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "float Alignment::getRemainingDistanceZ ()"
+
+.PP
+get the real distance based on mechanical construction in this setup 
+.PP
+\fBReturns\fP
+.RS 4
+float 
+.RE
+.PP
+
+.PP
+Definition at line \fB1698\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "double Alignment::getValueSensorX ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB319\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "double Alignment::getValueSensorY ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB323\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "double Alignment::getValueSensorZ ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB327\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::GoToReferenceDown ()"
+
+.PP
+Definition at line \fB402\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::GoToReferenceUp ()"
+go to ref up
+.PP
+Definition at line \fB469\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "void Alignment::incrementTotalStepCounted ()"
+
+.PP
+Definition at line \fB542\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::InitAlign (bool enable = \fC\fBon\fP\fP)"
+
+.PP
+setup stuff to initialise enable, direction and so on 
+.PP
+\fBReturns\fP
+.RS 4
+retVal 
+.RE
+.PP
+
+.PP
+Definition at line \fB1178\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "void Alignment::initFirmwareUnit ()"
+
+.PP
+Definition at line \fB142\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::initSensors ()"
+
+.SS "bool Alignment::isStopButtonPressed ()"
+
+.PP
+Definition at line \fB136\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveAngleAll (int direction, float angle)"
+
+.PP
+Definition at line \fB310\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveAngleAllSafe (int direction, float Angle)"
+
+.PP
+Definition at line \fB879\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveAngleX (int direction, float angle)"
+
+.PP
+Definition at line \fB262\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveAngleXSafe (int direction, float Angle)"
+
+.PP
+Definition at line \fB804\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveAngleY (int direction, float angle)"
+
+.PP
+Definition at line \fB278\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveAngleYSafe (int direction, float Angle)"
+
+.PP
+Definition at line \fB829\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveAngleZ (int direction, float angle)"
+
+.PP
+Definition at line \fB294\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveAngleZSafe (int direction, float Angle)"
+
+.PP
+Definition at line \fB854\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceAll (int direction, float distance)"
+
+.PP
+Definition at line \fB253\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceAllSafe (int direction, float distance)"
+
+.PP
+Definition at line \fB774\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceMSafe (\fBNema8\fP * Mref, int direction, float distance)"
+
+.PP
+Definition at line \fB72\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceX (int direction, float distance)\fC [inline]\fP"
+
+.PP
+Definition at line \fB177\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceXloop (int direction, float distance)"
+
+.PP
+Definition at line \fB79\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceXSafe (int direction, float distance)"
+
+.PP
+Definition at line \fB701\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceY (int direction, float distance)"
+
+.PP
+Definition at line \fB203\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceYloop (int direction, float distance)"
+
+.PP
+Definition at line \fB93\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceYSafe (int direction, float distance)"
+
+.PP
+Definition at line \fB724\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceZ (int direction, float distance)"
+
+.PP
+Definition at line \fB228\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceZloop (int direction, float distance)"
+
+.PP
+Definition at line \fB107\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDistanceZSafe (int direction, float distance)"
+
+.PP
+Definition at line \fB749\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDown (bool x = \fCtrue\fP, bool y = \fCtrue\fP, bool z = \fCtrue\fP, bool checkLimit = \fCfalse\fP)"
+
+.PP
+Definition at line \fB1457\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveDownTo (bool x = \fCtrue\fP, bool y = \fCtrue\fP, bool z = \fCtrue\fP, bool checkLimit = \fCfalse\fP, float distance = \fC0\fP)"
+
+.PP
+Definition at line \fB1615\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveHomeAll ()"
+
+.PP
+Move all motors home @algorithm: check if every motor endswitch is not pressed, then move \fBNema8\fP up\&. 
+.PP
+\fBReturns\fP
+.RS 4
+retVal 
+.RE
+.PP
+: move all motor down to ref
+.PP
+Definition at line \fB1204\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::movePhToRefX ()"
+
+.PP
+Definition at line \fB945\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveUp (bool x = \fCtrue\fP, bool y = \fCtrue\fP, bool z = \fCtrue\fP, bool checkLimit = \fCfalse\fP)"
+
+.PP
+Definition at line \fB1380\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::MoveUpTo (bool x = \fCtrue\fP, bool y = \fCtrue\fP, bool z = \fCtrue\fP, bool checkLimit = \fCfalse\fP, float distance = \fC0\fP)"
+
+.PP
+Definition at line \fB1538\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::oscillateSys (float desired_angle, int num_revolutions, bool default_sens = \fC\fBclk\fP\fP, bool reverse_sense = \fCtrue\fP)"
+
+.PP
+Definition at line \fB967\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "void Alignment::resetStepCounter ()"
+
+.PP
+Definition at line \fB550\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::rotateAnglePH (int direction, float Angle)"
+
+.PP
+Definition at line \fB920\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::RotateAnglePHloop (\fBNema8\fP * Mref, int direction, float angle)"
+
+.PP
+Definition at line \fB121\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::rotateFullRevPH (int direction)"
+
+.PP
+Definition at line \fB916\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::setTargetDistancePHToML (float distance)"
+
+.PP
+set new target distance to ML 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdistance\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+retVal 
+.RE
+.PP
+
+.PP
+Definition at line \fB1821\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::setTargetDistanceSensorToML (float distance)"
+
+.PP
+Definition at line \fB1829\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::StepDownXMax ()"
+
+.PP
+Definition at line \fB658\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::StepDownYMax ()"
+
+.PP
+Definition at line \fB665\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::StepDownZMax ()"
+
+.PP
+Definition at line \fB672\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::StepOncePH (int direction)"
+
+.PP
+Definition at line \fB910\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::StepOnceX (int direction)\fC [inline]\fP"
+
+.PP
+Definition at line \fB159\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::StepOnceY (int direction)\fC [inline]\fP"
+
+.PP
+Definition at line \fB165\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::StepOnceZ (int direction)\fC [inline]\fP"
+
+.PP
+Definition at line \fB171\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::StepUpXMax ()"
+
+.PP
+Definition at line \fB679\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::StepUpYMax ()"
+
+.PP
+Definition at line \fB686\fP of file \fBAlignment\&.cpp\fP\&.
+.SS "\fBretVal\fP Alignment::StepUpZMax ()"
+
+.PP
+Definition at line \fB693\fP of file \fBAlignment\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Alignment::aligned = false"
+
+.PP
+Definition at line \fB45\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::allDownDistanceArrived = false"
+
+.PP
+Definition at line \fB61\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::allDownMax = false"
+
+.PP
+Definition at line \fB46\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::allUpDistanceArrived = false"
+
+.PP
+Definition at line \fB57\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::allUpMax = false"
+
+.PP
+Definition at line \fB50\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBDistanceSensor\fP* Alignment::DistanceM_x"
+
+.PP
+Definition at line \fB32\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBDistanceSensor\fP* Alignment::DistanceM_y"
+
+.PP
+Definition at line \fB33\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBDistanceSensor\fP* Alignment::DistanceM_z"
+
+.PP
+Definition at line \fB34\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBendSwitch\fP* Alignment::endSwitch_stop"
+
+.PP
+Definition at line \fB28\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBendSwitch\fP* Alignment::endSwitch_x"
+
+.PP
+Definition at line \fB25\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBendSwitch\fP* Alignment::endSwitch_y"
+
+.PP
+Definition at line \fB26\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBendSwitch\fP* Alignment::endSwitch_z"
+
+.PP
+Definition at line \fB27\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::homed = false"
+
+.PP
+Definition at line \fB44\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBlightBarrier\fP* Alignment::lightBarrier_x"
+
+.PP
+Definition at line \fB29\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBlightBarrier\fP* Alignment::lightBarrier_y"
+
+.PP
+Definition at line \fB30\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBlightBarrier\fP* Alignment::lightBarrier_z"
+
+.PP
+Definition at line \fB31\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "const float Alignment::MaxDistanceToMl = 60"
+
+.PP
+Definition at line \fB37\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "const float Alignment::MinDistanceToML = 10"
+
+.PP
+Definition at line \fB36\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBNema8\fP* Alignment::Motor_PrintHead"
+
+.PP
+Definition at line \fB24\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBNema8\fP* Alignment::Motor_x"
+
+.PP
+Definition at line \fB21\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBNema8\fP* Alignment::Motor_y"
+
+.PP
+Definition at line \fB22\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "\fBNema8\fP* Alignment::Motor_z"
+
+.PP
+Definition at line \fB23\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "int Alignment::NumOfCycles =0"
+
+.PP
+Definition at line \fB41\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "float Alignment::TargetDistancePHToMl =70"
+
+.PP
+Definition at line \fB38\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "float Alignment::TargetDistanceSensorToMl =165"
+
+.PP
+Definition at line \fB39\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::XAligned = false"
+
+.PP
+Definition at line \fB63\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::xDownDistanceArrived = false"
+
+.PP
+Definition at line \fB58\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::xDownMax = false"
+
+.PP
+Definition at line \fB47\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::xUpDistanceArrived = false"
+
+.PP
+Definition at line \fB54\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::xUpMax = false"
+
+.PP
+Definition at line \fB51\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::YAligned = false"
+
+.PP
+Definition at line \fB63\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::yDownDistanceArrived = false"
+
+.PP
+Definition at line \fB59\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::yDownMax = false"
+
+.PP
+Definition at line \fB48\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::yUpDistanceArrived = false"
+
+.PP
+Definition at line \fB55\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::yUpMax = false"
+
+.PP
+Definition at line \fB52\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::ZAligned = false"
+
+.PP
+Definition at line \fB63\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::zDownDistanceArrived = false"
+
+.PP
+Definition at line \fB60\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::zDownMax = false"
+
+.PP
+Definition at line \fB49\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::zUpDistanceArrived = false"
+
+.PP
+Definition at line \fB56\fP of file \fBAlignment\&.hpp\fP\&.
+.SS "bool Alignment::zUpMax = false"
+
+.PP
+Definition at line \fB53\fP of file \fBAlignment\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

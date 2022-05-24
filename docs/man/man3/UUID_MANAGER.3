@@ -1,0 +1,105 @@
+.TH "UUID_MANAGER" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UUID_MANAGER \- Class for managing UUID, construct a new uuid manager object by passing the name to constructor to automaticly point to the specific id\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <UUID\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUUID_MANAGER\fP (String WhichId)"
+.br
+.RI "Construct a new uuid manager object example: pass 'align' to constructor to automaticly to align id\&. "
+.ti -1c
+.RI "String \fBget_UUID_EEPROM\fP ()"
+.br
+.RI "wrapper function to get internal stored id "
+.ti -1c
+.RI "void \fBset_UUID_EEPROM\fP (const String new_uuid)"
+.br
+.RI "wrapper function to set new internal id "
+.ti -1c
+.RI "void \fB_checkIfUUIDisWritten\fP ()"
+.br
+.RI "write id at boot, don't overwrite if exists "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class for managing UUID, construct a new uuid manager object by passing the name to constructor to automaticly point to the specific id\&. 
+
+IDS = ['align', 'sf6', 'print', 'cnt', 'temp', "default] 
+.PP
+\fBParameters\fP
+.RS 4
+\fIWhichId\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB28\fP of file \fBUUID\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "UUID_MANAGER::UUID_MANAGER (String WhichId)\fC [inline]\fP"
+
+.PP
+Construct a new uuid manager object example: pass 'align' to constructor to automaticly to align id\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIWhichId\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB48\fP of file \fBUUID\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void UUID_MANAGER::_checkIfUUIDisWritten ()\fC [inline]\fP"
+
+.PP
+write id at boot, don't overwrite if exists 
+.PP
+\fBSee also\fP
+.RS 4
+private method write to eeprom to get the idea 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.PP
+Definition at line \fB99\fP of file \fBUUID\&.hpp\fP\&.
+.SS "String UUID_MANAGER::get_UUID_EEPROM ()\fC [inline]\fP"
+
+.PP
+wrapper function to get internal stored id 
+.PP
+\fBReturns\fP
+.RS 4
+String 
+.RE
+.PP
+
+.PP
+Definition at line \fB81\fP of file \fBUUID\&.hpp\fP\&.
+.SS "void UUID_MANAGER::set_UUID_EEPROM (const String new_uuid)\fC [inline]\fP"
+
+.PP
+wrapper function to set new internal id 
+.PP
+Definition at line \fB89\fP of file \fBUUID\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

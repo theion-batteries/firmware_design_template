@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classget_motor_direction_cmd" kind="class" language="C++" prot="public">
+    <compoundname>getMotorDirectionCmd</compoundname>
+    <basecompoundref refid="class_i_command" prot="public" virt="non-virtual">ICommand</basecompoundref>
+    <includes refid="_cmd_pattern_classes_8h" local="no">CmdPatternClasses.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classget_motor_direction_cmd_1afce16072b26a07c7fca93993c9302feb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_nema8" kindref="compound">Nema8</ref> &amp;</type>
+        <definition>Nema8&amp; getMotorDirectionCmd::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <qualifiedname>getMotorDirectionCmd::M</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="132" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classget_motor_direction_cmd_1a6c35313725c73f7b5c9d1782514be916" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int getMotorDirectionCmd::oldVal</definition>
+        <argsstring></argsstring>
+        <name>oldVal</name>
+        <qualifiedname>getMotorDirectionCmd::oldVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="133" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classget_motor_direction_cmd_1a28c0e06c8668d53aedf7553f3d9d643e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>getMotorDirectionCmd::getMotorDirectionCmd</definition>
+        <argsstring>(Nema8 &amp;motor)</argsstring>
+        <name>getMotorDirectionCmd</name>
+        <qualifiedname>getMotorDirectionCmd::getMotorDirectionCmd</qualifiedname>
+        <param>
+          <type><ref refid="class_nema8" kindref="compound">Nema8</ref> &amp;</type>
+          <declname>motor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="135" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="135" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classget_motor_direction_cmd_1a3fd8f5b9573e1b5ed69c8e4db0eaa8af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getMotorDirectionCmd::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>getMotorDirectionCmd::execute</qualifiedname>
+        <reimplements refid="class_i_command_1ace81beb0beea968f876f292446bf1120">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="136" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="136" bodyend="138"/>
+        <references refid="classa4988_1a01be380db105cfc684c55dc42b81f76d" compoundref="_driver_a4988_8cpp" startline="79" endline="81">a4988::getDirection</references>
+      </memberdef>
+      <memberdef kind="function" id="classget_motor_direction_cmd_1a44211f83994687c08c62335a4e16f3ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getMotorDirectionCmd::undo</definition>
+        <argsstring>()</argsstring>
+        <name>undo</name>
+        <qualifiedname>getMotorDirectionCmd::undo</qualifiedname>
+        <reimplements refid="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78">undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="139" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="139" bodyend="141"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>getMotorDirectionCmd</label>
+        <link refid="classget_motor_direction_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>getMotorDirectionCmd</label>
+        <link refid="classget_motor_direction_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="130" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="130" bodyend="142"/>
+    <listofallmembers>
+      <member refid="classget_motor_direction_cmd_1a3fd8f5b9573e1b5ed69c8e4db0eaa8af" prot="public" virt="virtual"><scope>getMotorDirectionCmd</scope><name>execute</name></member>
+      <member refid="classget_motor_direction_cmd_1a28c0e06c8668d53aedf7553f3d9d643e" prot="public" virt="non-virtual"><scope>getMotorDirectionCmd</scope><name>getMotorDirectionCmd</name></member>
+      <member refid="classget_motor_direction_cmd_1afce16072b26a07c7fca93993c9302feb" prot="private" virt="non-virtual"><scope>getMotorDirectionCmd</scope><name>M</name></member>
+      <member refid="classget_motor_direction_cmd_1a6c35313725c73f7b5c9d1782514be916" prot="private" virt="non-virtual"><scope>getMotorDirectionCmd</scope><name>oldVal</name></member>
+      <member refid="classget_motor_direction_cmd_1a44211f83994687c08c62335a4e16f3ca" prot="public" virt="virtual"><scope>getMotorDirectionCmd</scope><name>undo</name></member>
+      <member refid="class_i_command_1a0e0226af93b945e84b58405e9d5343b1" prot="public" virt="virtual"><scope>getMotorDirectionCmd</scope><name>~ICommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

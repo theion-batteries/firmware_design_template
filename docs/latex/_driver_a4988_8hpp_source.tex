@@ -1,0 +1,84 @@
+\hypertarget{_driver_a4988_8hpp_source}{}\doxysection{Driver\+A4988.\+hpp}
+\label{_driver_a4988_8hpp_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/DriverA4988.hpp@{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/DriverA4988.hpp}}
+\mbox{\hyperlink{_driver_a4988_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00002}00002 \textcolor{comment}{  a4988.cpp -\/ -\/ Arduino library for using the a4988 stepper driver}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00003}00003 \textcolor{comment}{  William Smith, 2014}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00004}00004 \textcolor{comment}{  }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00005}00005 \textcolor{comment}{  The A4988 stepper driver is for Pololu stepper driver boards}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00006}00006 \textcolor{comment}{  and compatible clones. These boards use the Allegro a4988}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00007}00007 \textcolor{comment}{  stepper motor driver IC. (see Allegro website for datasheet)}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00008}00008 \textcolor{comment}{  This library diverges from others that are around, in that it}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00009}00009 \textcolor{comment}{  assumes that the MS1, MS2, and MS3 pins are connected to gpio}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00010}00010 \textcolor{comment}{  pins on the Arduino, allowing control over the microstepping}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00011}00011 \textcolor{comment}{  modes.}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00012}00012 \textcolor{comment}{  }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00013}00013 \textcolor{comment}{  The A4988 is capable of microstepping down to 1/16 of a step,}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00014}00014 \textcolor{comment}{  enabling fine control over the stepper motor. This fine control}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00015}00015 \textcolor{comment}{  can be used in, among other things, 3D printers.}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00016}00016 \textcolor{comment}{  This library provides an interface for setting the different}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00017}00017 \textcolor{comment}{  step modes, going from full step down to 1/16 step, using a}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00018}00018 \textcolor{comment}{  simple setter function, where the argument is 1,2,4,8, or 16.}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00019}00019 \textcolor{comment}{  }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00020}00020 \textcolor{comment}{     MS1   MS2   MS3}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00021}00021 \textcolor{comment}{    -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00022}00022 \textcolor{comment}{     low   low   low   Full step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00023}00023 \textcolor{comment}{     high  low   low   Half step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00024}00024 \textcolor{comment}{     low   high  low   1/4 step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00025}00025 \textcolor{comment}{     high  high  low   1/8 step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00026}00026 \textcolor{comment}{     high  high  high  1/16 step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00027}00027 \textcolor{comment}{  Note:}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00028}00028 \textcolor{comment}{  Lower delay values can be used in the microstepping mode.}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00029}00029 \textcolor{comment}{  Values as low as 25 usec can be used in the 1/16 mode}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00030}00030 \textcolor{comment}{  with some motors. }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00031}00031 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00032}00032 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00033}00033 \textcolor{preprocessor}{\#include <ArduinoSTL.h>}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00034}00034 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_configs_8h}{Configs.h}}"{}} \textcolor{comment}{// debug or release there}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00036}\mbox{\hyperlink{classa4988}{00036}} \textcolor{keyword}{class }\mbox{\hyperlink{classa4988}{a4988}} \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00037}00037   \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00038}00038     \textcolor{comment}{// constructors:}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00039}00039     \mbox{\hyperlink{classa4988_a5abced6499ec6a9c4023db3aacf80c1a}{a4988}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_ad6372b76bfc23c771d7e6555a106e292}{motor\_steps}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{ms1\_pin}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{ms2\_pin}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{ms3\_pin}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a897f9e23b473274f3d27e9380d145be4}{dir\_pin}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a8e401b32d17b578cd1e4d06779ba5b61}{enable\_pin}}, \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a1f7e3717033bd9204414c1408b58eaa5}{step\_pin}}, \textcolor{keywordtype}{bool} \mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}});}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00041}00041     \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_ad61ff3ecdea7afe55a30edf31f1e0323}{enable}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_ad61ff3ecdea7afe55a30edf31f1e0323}{enable}});}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00042}00042     \textcolor{comment}{// mover method:}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00043}00043     \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_ad66dadbb79c22bc3f507fe6d624c9fec}{step}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \mbox{\hyperlink{classa4988_a1eb89487e1d4fc4cb068d581a6278003}{num\_steps}});   \textcolor{comment}{// step a given number of steps}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00044}00044     \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_a2074f2e3fe7cd79e402f53a14ba68c89}{stepOnce}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00045}\mbox{\hyperlink{classa4988_af3c159ccf4f2fa8d26d03683181b1fac}{00045}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_af3c159ccf4f2fa8d26d03683181b1fac}{stepMotor}}(\textcolor{keywordtype}{int} this\_step);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00046}00046     \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_ad11ebef929f054194109e909f2646880}{reverseDirection}}();}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00047}00047     \textcolor{comment}{// getter }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00048}00048     \textcolor{keywordtype}{float} \mbox{\hyperlink{classa4988_a0b7c5f9fb44b05f6642b517abc9b4a07}{getSpeed}}();}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00049}00049     \textcolor{keywordtype}{float} \mbox{\hyperlink{classa4988_a4e8bd4e45fe5a4fa30fafc877713978c}{getDelay}}();}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00050}00050     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_aa86021ee00cae65c6c963553f30e22b3}{getStepCounter}}();}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00051}00051     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classa4988_a01be380db105cfc684c55dc42b81f76d}{getDirection}}();}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00053}00053     \textcolor{comment}{// setter}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00054}00054     \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_af905ad2bb5a9e5465e83f081067a139c}{setDelay}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} delay);   \textcolor{comment}{// in microseconds}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00055}00055     \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_ae59dc905051ebfdcfac1d48f172d523f}{setSpeed}}(\textcolor{keywordtype}{int} speed);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00056}00056     \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_a6a37cf937b1f7a1f229904cdb9191b89}{setDirection}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}});     \textcolor{comment}{// 0 forward, 1 backward}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00057}00057     \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_a150215b9cd4e4841befd2dc9d4b4a3be}{setStepMode}}(\textcolor{keywordtype}{int} stepMode);       \textcolor{comment}{// (1 /) 1, 2, 4, 8, or 16 }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00059}\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{00059}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}};               \textcolor{comment}{// Direction of rotation}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00060}\mbox{\hyperlink{classa4988_ad6372b76bfc23c771d7e6555a106e292}{00060}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_ad6372b76bfc23c771d7e6555a106e292}{motor\_steps}};             \textcolor{comment}{// number of steps motor has per revolution}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00061}\mbox{\hyperlink{classa4988_a1965dbc601b23711ab178ae9067133c3}{00061}}     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} \mbox{\hyperlink{classa4988_a1965dbc601b23711ab178ae9067133c3}{step\_delay}};    \textcolor{comment}{// delay between steps, in us}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00062}\mbox{\hyperlink{classa4988_a1eb89487e1d4fc4cb068d581a6278003}{00062}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a1eb89487e1d4fc4cb068d581a6278003}{num\_steps}};               \textcolor{comment}{// total number of steps to step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00063}\mbox{\hyperlink{classa4988_add7441f68064b3dd6e06d5bcb30cb159}{00063}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_add7441f68064b3dd6e06d5bcb30cb159}{step\_number}};             \textcolor{comment}{// which step the motor is on}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00064}\mbox{\hyperlink{classa4988_a45956ebaed9f19834bc9094dd59f551a}{00064}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a45956ebaed9f19834bc9094dd59f551a}{step\_mode}};               \textcolor{comment}{// which mode 1 / 1, 2, 4, 8, or 16}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00065}\mbox{\hyperlink{classa4988_a1f7e3717033bd9204414c1408b58eaa5}{00065}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a1f7e3717033bd9204414c1408b58eaa5}{step\_pin}};                \textcolor{comment}{// pin which controls stepping}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00067}00067     \textcolor{comment}{// control pin numbers:}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00068}\mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{00068}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{ms1\_pin}};                 \textcolor{comment}{// for setting different microstepping modes}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00069}\mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{00069}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{ms2\_pin}};                 \textcolor{comment}{// for setting different microstepping modes}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00070}\mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{00070}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{ms3\_pin}};                 \textcolor{comment}{// for setting different microstepping modes}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00071}\mbox{\hyperlink{classa4988_a897f9e23b473274f3d27e9380d145be4}{00071}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a897f9e23b473274f3d27e9380d145be4}{dir\_pin}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00072}\mbox{\hyperlink{classa4988_a8e401b32d17b578cd1e4d06779ba5b61}{00072}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a8e401b32d17b578cd1e4d06779ba5b61}{enable\_pin}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00073}00073         \textcolor{comment}{// step counting inside function calls (reset to zero after func is canceled or finished)}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00074}\mbox{\hyperlink{classa4988_a58dce61bc6613bc5e7bd5cb77a3abaf8}{00074}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a58dce61bc6613bc5e7bd5cb77a3abaf8}{StepCounter}} = 0;}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00075}00075     \textcolor{comment}{// count global steps since the start of programm: usefull when limit are checked }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00076}\mbox{\hyperlink{classa4988_a3b6a16a6b8162c6a3ba164fedeef0fb7}{00076}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_a3b6a16a6b8162c6a3ba164fedeef0fb7}{TotalStepCounted}}=0;}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00077}00077 \};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8hpp_source_l00078}00078 }
+
+\end{DoxyCode}

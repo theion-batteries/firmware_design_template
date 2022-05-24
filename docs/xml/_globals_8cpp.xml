@@ -1,0 +1,772 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_globals_8cpp" kind="file" language="C++">
+    <compoundname>Globals.cpp</compoundname>
+    <includes refid="_globals_8h" local="yes">Globals.h</includes>
+    <incdepgraph>
+      <node id="20">
+        <label>Arduino.h</label>
+      </node>
+      <node id="6">
+        <label>ArduinoSTL.h</label>
+      </node>
+      <node id="10">
+        <label>Alignment.hpp</label>
+        <link refid="_alignment_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>CmdBuffer.hpp</label>
+        <link refid="_cmd_buffer_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>CmdCallback.hpp</label>
+        <link refid="_cmd_callback_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>CmdParser.hpp</label>
+        <link refid="_cmd_parser_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>CmdPatternClasses.h</label>
+        <link refid="_cmd_pattern_classes_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Configs.h</label>
+        <link refid="_configs_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>DistanceSensor.hpp</label>
+        <link refid="_distance_sensor_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>DriverA4988.hpp</label>
+        <link refid="_driver_a4988_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>EndSwitch.hpp</label>
+        <link refid="_end_switch_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Globals.h</label>
+        <link refid="_globals_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Keyence_API.h</label>
+        <link refid="_keyence___a_p_i_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Nema_8.hpp</label>
+        <link refid="_nema__8_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Reset.h</label>
+        <link refid="_reset_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Sleep.h</label>
+        <link refid="_sleep_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>StateManager.hpp</label>
+        <link refid="_state_manager_8hpp"/>
+      </node>
+      <node id="23">
+        <label>UUID.hpp</label>
+        <link refid="_u_u_i_d_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>light_barrier.hpp</label>
+        <link refid="light__barrier_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <link refid="_globals_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>EEPROM.h</label>
+      </node>
+      <node id="22">
+        <label>avr/sleep.h</label>
+      </node>
+      <node id="4">
+        <label>ctype.h</label>
+      </node>
+      <node id="18">
+        <label>map</label>
+      </node>
+      <node id="28">
+        <label>memory</label>
+      </node>
+      <node id="27">
+        <label>stack</label>
+      </node>
+      <node id="7">
+        <label>stdint.h</label>
+      </node>
+      <node id="8">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_globals_8cpp_1aa040d89e504cf8fdf7f7d28e87142e6b" prot="public" static="no" mutable="no">
+        <type><ref refid="class_cmd_callback" kindref="compound">CmdCallback</ref>&lt; 64 &gt;</type>
+        <definition>CmdCallback&lt;64&gt; cmdCallback</definition>
+        <argsstring></argsstring>
+        <name>cmdCallback</name>
+        <briefdescription>
+<para>define global variables: need to be encapsulated later </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="13" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1aac8303014ae2b31fdb57b7b595d00d5f" prot="public" static="no" mutable="no">
+        <type><ref refid="class_cmd_buffer" kindref="compound">CmdBuffer</ref>&lt; 64 &gt;</type>
+        <definition>CmdBuffer&lt;64&gt; myBuffer</definition>
+        <argsstring></argsstring>
+        <name>myBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="14" column="11" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a95e82af5b2e6420fd830e68a86600c76" prot="public" static="no" mutable="no">
+        <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref></type>
+        <definition>CmdParser myParser</definition>
+        <argsstring></argsstring>
+        <name>myParser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="15" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="15" bodyend="-1"/>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1a905f26acafc5d817d3d4f2dc88bceb2a" compoundref="_cmd_pattern_callbacks_8cpp" startline="318" endline="325">calibrate_cmd</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ac82a0068988fe425288370e121b04f00" compoundref="_cmd_pattern_callbacks_8cpp" startline="242" endline="291">move_cmd</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" compoundref="_cmd_pattern_callbacks_8cpp" startline="293" endline="312">rotate_cmd</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1adcae3b60a9fcfef183dd0b91967e2ad6" compoundref="_cmd_pattern_callbacks_8cpp" startline="173" endline="240">set_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a2a14f03d4f1e9564f8f2b6c82ec44919" prot="public" static="no" mutable="no">
+        <type><ref refid="class_nema8" kindref="compound">Nema8</ref></type>
+        <definition>Alignment AlignObj&amp; M_X</definition>
+        <argsstring>(0, XMs1_pin, XMs2_pin, XMs3_pin, XDir_pin, XEnable_pin, XStep_pin, down)</argsstring>
+        <name>M_X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="18" column="7" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a9bded9c2128b444acd327931d28faed0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_nema8" kindref="compound">Nema8</ref></type>
+        <definition>Nema8 M_Y(0, YMs1_pin, YMs2_pin, YMs3_pin, YDir_pin, YEnable_pin, YStep_pin, down)</definition>
+        <argsstring>(0, YMs1_pin, YMs2_pin, YMs3_pin, YDir_pin, YEnable_pin, YStep_pin, down)</argsstring>
+        <name>M_Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="19" column="7"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a24274455d568dacd4e0c48f52ef577c4" prot="public" static="no" mutable="no">
+        <type><ref refid="class_nema8" kindref="compound">Nema8</ref></type>
+        <definition>Nema8 M_Z(0, ZMs1_pin, ZMs2_pin, ZMs3_pin, ZDir_pin, ZEnable_pin, ZStep_pin, down)</definition>
+        <argsstring>(0, ZMs1_pin, ZMs2_pin, ZMs3_pin, ZDir_pin, ZEnable_pin, ZStep_pin, down)</argsstring>
+        <name>M_Z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="20" column="7"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1ae10efcb7e64b6d403c6b8ffa8281afea" prot="public" static="no" mutable="no">
+        <type><ref refid="class_nema8" kindref="compound">Nema8</ref></type>
+        <definition>Nema8 M_PH(0, PHMs1_pin, PHMs2_pin, PHMs3_pin, PHDir_pin, PHEnable_pin, PHStep_pin, cclk)</definition>
+        <argsstring>(0, PHMs1_pin, PHMs2_pin, PHMs3_pin, PHDir_pin, PHEnable_pin, PHStep_pin, cclk)</argsstring>
+        <name>M_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="21" column="7"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1aa7270da352c9167f5904c79d6122d20c" prot="public" static="no" mutable="no">
+        <type><ref refid="classend_switch" kindref="compound">endSwitch</ref></type>
+        <definition>endSwitch ES_x(E_X, LOW)</definition>
+        <argsstring>(E_X, LOW)</argsstring>
+        <name>ES_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="23" column="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a8875dc3ddd5a088effb00fdcfce3ff88" prot="public" static="no" mutable="no">
+        <type><ref refid="classend_switch" kindref="compound">endSwitch</ref></type>
+        <definition>endSwitch ES_y(E_Y, LOW)</definition>
+        <argsstring>(E_Y, LOW)</argsstring>
+        <name>ES_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="24" column="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a98cb283eabec707db7701d270ccb7267" prot="public" static="no" mutable="no">
+        <type><ref refid="classend_switch" kindref="compound">endSwitch</ref></type>
+        <definition>endSwitch ES_z(E_Z, LOW)</definition>
+        <argsstring>(E_Z, LOW)</argsstring>
+        <name>ES_z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="25" column="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1ae6ee3a3124bc6770597ac4f98a6a57ee" prot="public" static="no" mutable="no">
+        <type><ref refid="classend_switch" kindref="compound">endSwitch</ref></type>
+        <definition>endSwitch ES_Stop(E_Emergency, LOW)</definition>
+        <argsstring>(E_Emergency, LOW)</argsstring>
+        <name>ES_Stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="26" column="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a35a0d81cbba22edfb570da4c3e605c53" prot="public" static="no" mutable="no">
+        <type><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref></type>
+        <definition>DistanceSensor DS_x(XSensorHead)</definition>
+        <argsstring>(XSensorHead)</argsstring>
+        <name>DS_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="28" column="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1af1e07c1937409f64f0812acebe87a9bd" prot="public" static="no" mutable="no">
+        <type><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref></type>
+        <definition>DistanceSensor DS_y(YSensorHead)</definition>
+        <argsstring>(YSensorHead)</argsstring>
+        <name>DS_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="29" column="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1adee09d8b046950a472d74e36d88d68cb" prot="public" static="no" mutable="no">
+        <type><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref></type>
+        <definition>DistanceSensor DS_z(ZSensorHead)</definition>
+        <argsstring>(ZSensorHead)</argsstring>
+        <name>DS_z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="30" column="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a1b6f8b9d43382b50a2aac3668a2b99b5" prot="public" static="no" mutable="no">
+        <type><ref refid="classlight_barrier" kindref="compound">lightBarrier</ref></type>
+        <definition>lightBarrier LB_x(LB_X, LOW)</definition>
+        <argsstring>(LB_X, LOW)</argsstring>
+        <name>LB_x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="32" column="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1aa22e0be90ceec1f4994931c4ad1c2b72" prot="public" static="no" mutable="no">
+        <type><ref refid="classlight_barrier" kindref="compound">lightBarrier</ref></type>
+        <definition>lightBarrier LB_y(LB_Y, LOW)</definition>
+        <argsstring>(LB_Y, LOW)</argsstring>
+        <name>LB_y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="33" column="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a1c729c2b81704f0e7a9cb7c3cc8a11f9" prot="public" static="no" mutable="no">
+        <type><ref refid="classlight_barrier" kindref="compound">lightBarrier</ref></type>
+        <definition>lightBarrier LB_z(LB_Z, LOW)</definition>
+        <argsstring>(LB_Z, LOW)</argsstring>
+        <name>LB_z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="34" column="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a793a8906611d9619fa53fb7ef1effd9a" prot="public" static="no" mutable="no">
+        <type><ref refid="class_u_u_i_d___m_a_n_a_g_e_r" kindref="compound">UUID_MANAGER</ref></type>
+        <definition>UUID_MANAGER AlignId(&quot;align&quot;)</definition>
+        <argsstring>(&quot;align&quot;)</argsstring>
+        <name>AlignId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="37" column="14"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a0e927747fba268bfb9b67cf26b331750" prot="public" static="no" mutable="no">
+        <type><ref refid="class_reset_hardware" kindref="compound">ResetHardware</ref></type>
+        <definition>ResetHardware resetObj(PIN_OUTPUT_RESET)</definition>
+        <argsstring>(PIN_OUTPUT_RESET)</argsstring>
+        <name>resetObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="38" column="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a2e9d4b6f4b754190a7b832329d69b280" prot="public" static="no" mutable="no">
+        <type><ref refid="class_sleep_hardware" kindref="compound">SleepHardware</ref></type>
+        <definition>SleepHardware sleepObj(InterruptSleepPin)</definition>
+        <argsstring>(InterruptSleepPin)</argsstring>
+        <name>sleepObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="39" column="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a59e3d13db97e637ea4e40e8c7960e91b" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Start[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Start</name>
+        <initializer>= &quot;start&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="40" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1abe2a2ebccbcded085483a9da46be3fc3" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Quit[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Quit</name>
+        <initializer>= &quot;quit&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="41" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a0739be677979fb20f78aae33aa824256" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Set[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Set</name>
+        <initializer>= &quot;set&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="42" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a2d1a4a31b3c4a7c397f048716fb5b29d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Get[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Get</name>
+        <initializer>= &quot;get&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="43" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a7473a2f9a35754038470dde2b8afa988" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Undo[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Undo</name>
+        <initializer>= &quot;undo&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="44" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a7082f0f5fdb86b353e44e84e1a4bb337" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Move[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Move</name>
+        <initializer>= &quot;move&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="45" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a6257ab6d377137fc36df2f662887fd97" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Reset[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Reset</name>
+        <initializer>= &quot;reset&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="46" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1af012309b520eb65471272ee8f877317a" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Stop[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Stop</name>
+        <initializer>= &quot;stop&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="47" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a2f70ddafa2efd35367abff6a616f8374" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Sleep[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Sleep</name>
+        <initializer>= &quot;sleep&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="48" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1ad6a6fe63b09f7d018ebc6b96d44cdbb8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Help[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Help</name>
+        <initializer>= &quot;help&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="49" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a0fd0ced2811b8e7b87f5b472d8f48cb8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Calibrate[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Calibrate</name>
+        <initializer>= &quot;calibrate&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="50" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a6f4520176c3d804eaa8ad6812f3a7fab" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Rotate[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Rotate</name>
+        <initializer>= &quot;rotate&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="51" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="51" bodyend="-1"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1affb2a6c9bd814df29ef6eda222c594cc" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Test1[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Test1</name>
+        <initializer>= &quot;test1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="52" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a692f4e4a4c4768f815890ce0010c4847" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Test2[]</definition>
+        <argsstring>[]</argsstring>
+        <name>Test2</name>
+        <initializer>= &quot;test2&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="53" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a7b69cdbd45d008e8f6a1ad47890d6942" prot="public" static="no" mutable="no">
+        <type>std::stack&lt; <ref refid="class_i_command" kindref="compound">ICommand</ref> * &gt;</type>
+        <definition>std::stack&lt;ICommand*&gt; CmdStack</definition>
+        <argsstring></argsstring>
+        <name>CmdStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="55" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ac82a0068988fe425288370e121b04f00" compoundref="_cmd_pattern_callbacks_8cpp" startline="242" endline="291">move_cmd</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" compoundref="_cmd_pattern_callbacks_8cpp" startline="293" endline="312">rotate_cmd</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1adcae3b60a9fcfef183dd0b91967e2ad6" compoundref="_cmd_pattern_callbacks_8cpp" startline="173" endline="240">set_cmd</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ad3e176b252ce56823333747b267ae544" compoundref="_cmd_pattern_callbacks_8cpp" startline="351" endline="363">undo_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1a14328e108fe32a87ed5cbb50639e2951" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="class_i_command" kindref="compound">ICommand</ref> * &gt;</type>
+        <definition>std::vector&lt;ICommand*&gt; CmdDeleter</definition>
+        <argsstring></argsstring>
+        <name>CmdDeleter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="56" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_globals_8cpp_1afc093e48e1f3a3425c7db9d6bfb13f36" prot="public" static="no" mutable="no">
+        <type>std::stack&lt; <ref refid="class_invoker" kindref="compound">Invoker</ref> &gt;</type>
+        <definition>std::stack&lt;Invoker&gt; InvokerStack</definition>
+        <argsstring></argsstring>
+        <name>InvokerStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" line="57" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_globals_8h" kindref="compound">Globals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_globals_8h_1aa040d89e504cf8fdf7f7d28e87142e6b" refkind="member"><highlight class="normal"><ref refid="class_cmd_callback" kindref="compound">CmdCallback&lt;64&gt;</ref><sp/><ref refid="_globals_8cpp_1aa040d89e504cf8fdf7f7d28e87142e6b" kindref="member">cmdCallback</ref>;</highlight></codeline>
+<codeline lineno="14" refid="_globals_8h_1aac8303014ae2b31fdb57b7b595d00d5f" refkind="member"><highlight class="normal"><ref refid="class_cmd_buffer" kindref="compound">CmdBuffer&lt;64&gt;</ref><sp/><ref refid="_globals_8cpp_1aac8303014ae2b31fdb57b7b595d00d5f" kindref="member">myBuffer</ref>;</highlight></codeline>
+<codeline lineno="15" refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" refkind="member"><highlight class="normal"><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref><sp/><sp/><sp/><sp/><ref refid="_globals_8cpp_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//Create<sp/>Objects<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Setup<sp/>Motors<sp/>Objects:<sp/>Note:<sp/>PIN<sp/>must<sp/>be<sp/>defined<sp/>in<sp/>config<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="class_nema8" kindref="compound">Nema8</ref><sp/><ref refid="_globals_8cpp_1a2a14f03d4f1e9564f8f2b6c82ec44919" kindref="member">M_X</ref>(0,<sp/><ref refid="_configs_8h_1a16d19f9973597e509ca03083a903bdca" kindref="member">XMs1_pin</ref>,<sp/><ref refid="_configs_8h_1ad45f7208b60a2058e55c313155db6627" kindref="member">XMs2_pin</ref>,<sp/><ref refid="_configs_8h_1a643f067cf73dfcad5aea267a5df29604" kindref="member">XMs3_pin</ref>,<sp/><ref refid="_configs_8h_1a38a45e7b57d3a08225c7863e6942c4fe" kindref="member">XDir_pin</ref>,<sp/><ref refid="_configs_8h_1ab7bda72a2fd4c0b32433adc397983a8e" kindref="member">XEnable_pin</ref>,<sp/><ref refid="_configs_8h_1af7e1aa9def8f8c214a5696b89a49678b" kindref="member">XStep_pin</ref>,<sp/><ref refid="_configs_8h_1a249d857dfa044493c7f29844b7b0baae" kindref="member">down</ref>);</highlight></codeline>
+<codeline lineno="19" refid="_globals_8cpp_1a9bded9c2128b444acd327931d28faed0" refkind="member"><highlight class="normal"><ref refid="class_nema8" kindref="compound">Nema8</ref><sp/><ref refid="_globals_8cpp_1a9bded9c2128b444acd327931d28faed0" kindref="member">M_Y</ref>(0,<sp/><ref refid="_configs_8h_1a0851a0a6cae91ef6c638c72478a339ce" kindref="member">YMs1_pin</ref>,<sp/><ref refid="_configs_8h_1af66dff6efe20de77864bd29be300d769" kindref="member">YMs2_pin</ref>,<sp/><ref refid="_configs_8h_1a7420486125e023653ca601891db9a094" kindref="member">YMs3_pin</ref>,<sp/><ref refid="_configs_8h_1a2a9126f198bc14e47fbb65de79975044" kindref="member">YDir_pin</ref>,<sp/><ref refid="_configs_8h_1a064b80ec11d23b70dd972fa875f1d35e" kindref="member">YEnable_pin</ref>,<sp/><ref refid="_configs_8h_1a31451fba5dcf1434bc5fa4a44d30f97c" kindref="member">YStep_pin</ref>,<sp/><ref refid="_configs_8h_1a249d857dfa044493c7f29844b7b0baae" kindref="member">down</ref>);</highlight></codeline>
+<codeline lineno="20" refid="_globals_8cpp_1a24274455d568dacd4e0c48f52ef577c4" refkind="member"><highlight class="normal"><ref refid="class_nema8" kindref="compound">Nema8</ref><sp/><ref refid="_globals_8cpp_1a24274455d568dacd4e0c48f52ef577c4" kindref="member">M_Z</ref>(0,<sp/><ref refid="_configs_8h_1ad165ab43b65609873bf5816edf36cb7d" kindref="member">ZMs1_pin</ref>,<sp/><ref refid="_configs_8h_1a251895b4f005b4a7d6bb959049d1bad6" kindref="member">ZMs2_pin</ref>,<sp/><ref refid="_configs_8h_1a3883585b22d80509f9cfa5acc33162fe" kindref="member">ZMs3_pin</ref>,<sp/><ref refid="_configs_8h_1ab2b6a8fe000de081d443d14a30d1a59b" kindref="member">ZDir_pin</ref>,<sp/><ref refid="_configs_8h_1a3377917886312e17ef544cce539e95c1" kindref="member">ZEnable_pin</ref>,<sp/><ref refid="_configs_8h_1aeca72fc4f3d9177b339f5edaecb52533" kindref="member">ZStep_pin</ref>,<sp/><ref refid="_configs_8h_1a249d857dfa044493c7f29844b7b0baae" kindref="member">down</ref>);</highlight></codeline>
+<codeline lineno="21" refid="_globals_8cpp_1ae10efcb7e64b6d403c6b8ffa8281afea" refkind="member"><highlight class="normal"><ref refid="class_nema8" kindref="compound">Nema8</ref><sp/><ref refid="_globals_8cpp_1ae10efcb7e64b6d403c6b8ffa8281afea" kindref="member">M_PH</ref>(0,<sp/><ref refid="_configs_8h_1afcd34f66fc54030b4f1cb9ecbe812995" kindref="member">PHMs1_pin</ref>,<sp/><ref refid="_configs_8h_1a5d05bc153f028c05a7ae4d8ab0ebf463" kindref="member">PHMs2_pin</ref>,<sp/><ref refid="_configs_8h_1aaef1483942ef515e6cc21e26687e3727" kindref="member">PHMs3_pin</ref>,<sp/><ref refid="_configs_8h_1a5b26bc3369dd5c5f50249670c59f2e44" kindref="member">PHDir_pin</ref>,<sp/><ref refid="_configs_8h_1a7f9ad1e541207f7075a6eb7d38cdc78c" kindref="member">PHEnable_pin</ref>,<sp/><ref refid="_configs_8h_1a8036fedfb80d91989544626f54cdb059" kindref="member">PHStep_pin</ref>,<sp/><ref refid="_configs_8h_1ac15bd348b546cfa8e7c9330b517bc217" kindref="member">cclk</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Setup<sp/>EndStops<sp/>Objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_globals_8cpp_1aa7270da352c9167f5904c79d6122d20c" refkind="member"><highlight class="normal"><ref refid="classend_switch" kindref="compound">endSwitch</ref><sp/><ref refid="_globals_8cpp_1aa7270da352c9167f5904c79d6122d20c" kindref="member">ES_x</ref>(<ref refid="_configs_8h_1a01b71ffd37c0d18ecf0cb23fc7bdc472" kindref="member">E_X</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="24" refid="_globals_8cpp_1a8875dc3ddd5a088effb00fdcfce3ff88" refkind="member"><highlight class="normal"><ref refid="classend_switch" kindref="compound">endSwitch</ref><sp/><ref refid="_globals_8cpp_1a8875dc3ddd5a088effb00fdcfce3ff88" kindref="member">ES_y</ref>(<ref refid="_configs_8h_1aa48f091c7b81c29accbf4b3b90a7470f" kindref="member">E_Y</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="25" refid="_globals_8cpp_1a98cb283eabec707db7701d270ccb7267" refkind="member"><highlight class="normal"><ref refid="classend_switch" kindref="compound">endSwitch</ref><sp/><ref refid="_globals_8cpp_1a98cb283eabec707db7701d270ccb7267" kindref="member">ES_z</ref>(<ref refid="_configs_8h_1a3f49133f9da38f2f955f94a95ebdf701" kindref="member">E_Z</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="26" refid="_globals_8cpp_1ae6ee3a3124bc6770597ac4f98a6a57ee" refkind="member"><highlight class="normal"><ref refid="classend_switch" kindref="compound">endSwitch</ref><sp/><ref refid="_globals_8cpp_1ae6ee3a3124bc6770597ac4f98a6a57ee" kindref="member">ES_Stop</ref>(<ref refid="_configs_8h_1a3e950a2dd308ffc36e9f2e60d42584cc" kindref="member">E_Emergency</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Setup<sp/>Distance<sp/>Sensors<sp/>Objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="_globals_8cpp_1a35a0d81cbba22edfb570da4c3e605c53" refkind="member"><highlight class="normal"><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref><sp/><ref refid="_globals_8cpp_1a35a0d81cbba22edfb570da4c3e605c53" kindref="member">DS_x</ref>(<ref refid="_configs_8h_1a0efb601477b8d550c2277c465335247c" kindref="member">XSensorHead</ref>);</highlight></codeline>
+<codeline lineno="29" refid="_globals_8cpp_1af1e07c1937409f64f0812acebe87a9bd" refkind="member"><highlight class="normal"><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref><sp/><ref refid="_globals_8cpp_1af1e07c1937409f64f0812acebe87a9bd" kindref="member">DS_y</ref>(<ref refid="_configs_8h_1a3c24b1a2ecd89cb57e7a9bb0578b9b28" kindref="member">YSensorHead</ref>);</highlight></codeline>
+<codeline lineno="30" refid="_globals_8cpp_1adee09d8b046950a472d74e36d88d68cb" refkind="member"><highlight class="normal"><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref><sp/><ref refid="_globals_8cpp_1adee09d8b046950a472d74e36d88d68cb" kindref="member">DS_z</ref>(<ref refid="_configs_8h_1a7fd2c0ec1db12b8a9dad7ed6adc911b7" kindref="member">ZSensorHead</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Setup<sp/>Light<sp/>barrier<sp/>Objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_globals_8cpp_1a1b6f8b9d43382b50a2aac3668a2b99b5" refkind="member"><highlight class="normal"><ref refid="classlight_barrier" kindref="compound">lightBarrier</ref><sp/><ref refid="_globals_8cpp_1a1b6f8b9d43382b50a2aac3668a2b99b5" kindref="member">LB_x</ref>(<ref refid="_configs_8h_1a53b1c7044eb862919d8d625dd062e25d" kindref="member">LB_X</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="33" refid="_globals_8cpp_1aa22e0be90ceec1f4994931c4ad1c2b72" refkind="member"><highlight class="normal"><ref refid="classlight_barrier" kindref="compound">lightBarrier</ref><sp/><ref refid="_globals_8cpp_1aa22e0be90ceec1f4994931c4ad1c2b72" kindref="member">LB_y</ref>(<ref refid="_configs_8h_1ab55c1995d16cc9016e47a49624fabeae" kindref="member">LB_Y</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="34" refid="_globals_8cpp_1a1c729c2b81704f0e7a9cb7c3cc8a11f9" refkind="member"><highlight class="normal"><ref refid="classlight_barrier" kindref="compound">lightBarrier</ref><sp/><ref refid="_globals_8cpp_1a1c729c2b81704f0e7a9cb7c3cc8a11f9" kindref="member">LB_z</ref>(<ref refid="_configs_8h_1a49af3e8f5e138787c67b9ff6a763cdab" kindref="member">LB_Z</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Setup<sp/>Alignment<sp/>Object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" refkind="member"><highlight class="normal"><ref refid="class_alignment" kindref="compound">Alignment</ref><sp/><ref refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" kindref="member">AlignObj</ref>(&amp;<ref refid="_globals_8cpp_1a2a14f03d4f1e9564f8f2b6c82ec44919" kindref="member">M_X</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1a9bded9c2128b444acd327931d28faed0" kindref="member">M_Y</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1a24274455d568dacd4e0c48f52ef577c4" kindref="member">M_Z</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1ae10efcb7e64b6d403c6b8ffa8281afea" kindref="member">M_PH</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1a35a0d81cbba22edfb570da4c3e605c53" kindref="member">DS_x</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1af1e07c1937409f64f0812acebe87a9bd" kindref="member">DS_y</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1adee09d8b046950a472d74e36d88d68cb" kindref="member">DS_z</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1aa7270da352c9167f5904c79d6122d20c" kindref="member">ES_x</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1a8875dc3ddd5a088effb00fdcfce3ff88" kindref="member">ES_y</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1a98cb283eabec707db7701d270ccb7267" kindref="member">ES_z</ref>,&amp;<ref refid="_globals_8cpp_1ae6ee3a3124bc6770597ac4f98a6a57ee" kindref="member">ES_Stop</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1a1b6f8b9d43382b50a2aac3668a2b99b5" kindref="member">LB_x</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1aa22e0be90ceec1f4994931c4ad1c2b72" kindref="member">LB_y</ref>,<sp/>&amp;<ref refid="_globals_8cpp_1a1c729c2b81704f0e7a9cb7c3cc8a11f9" kindref="member">LB_z</ref>);</highlight></codeline>
+<codeline lineno="37" refid="_globals_8cpp_1a793a8906611d9619fa53fb7ef1effd9a" refkind="member"><highlight class="normal"><ref refid="class_u_u_i_d___m_a_n_a_g_e_r" kindref="compound">UUID_MANAGER</ref><sp/><ref refid="_globals_8cpp_1a793a8906611d9619fa53fb7ef1effd9a" kindref="member">AlignId</ref>(</highlight><highlight class="stringliteral">&quot;align&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38" refid="_globals_8cpp_1a0e927747fba268bfb9b67cf26b331750" refkind="member"><highlight class="normal"><ref refid="class_reset_hardware" kindref="compound">ResetHardware</ref><sp/><ref refid="_globals_8cpp_1a0e927747fba268bfb9b67cf26b331750" kindref="member">resetObj</ref>(<ref refid="_configs_8h_1a92648765ae263ba695679f247cb69847" kindref="member">PIN_OUTPUT_RESET</ref>);</highlight></codeline>
+<codeline lineno="39" refid="_globals_8cpp_1a2e9d4b6f4b754190a7b832329d69b280" refkind="member"><highlight class="normal"><ref refid="class_sleep_hardware" kindref="compound">SleepHardware</ref><sp/><ref refid="_globals_8cpp_1a2e9d4b6f4b754190a7b832329d69b280" kindref="member">sleepObj</ref>(<ref refid="_configs_8h_1a8f12fe76e37331bd20099a59b429d28f" kindref="member">InterruptSleepPin</ref>);</highlight></codeline>
+<codeline lineno="40" refid="_globals_8h_1a59e3d13db97e637ea4e40e8c7960e91b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1a59e3d13db97e637ea4e40e8c7960e91b" kindref="member">Start</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;start&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41" refid="_globals_8h_1abe2a2ebccbcded085483a9da46be3fc3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1abe2a2ebccbcded085483a9da46be3fc3" kindref="member">Quit</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;quit&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42" refid="_globals_8h_1a0739be677979fb20f78aae33aa824256" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1a0739be677979fb20f78aae33aa824256" kindref="member">Set</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;set&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43" refid="_globals_8h_1a2d1a4a31b3c4a7c397f048716fb5b29d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1a2d1a4a31b3c4a7c397f048716fb5b29d" kindref="member">Get</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;get&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44" refid="_globals_8h_1a7473a2f9a35754038470dde2b8afa988" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1a7473a2f9a35754038470dde2b8afa988" kindref="member">Undo</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;undo&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45" refid="_globals_8h_1a7082f0f5fdb86b353e44e84e1a4bb337" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1a7082f0f5fdb86b353e44e84e1a4bb337" kindref="member">Move</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;move&quot;</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="46" refid="_globals_8h_1a6257ab6d377137fc36df2f662887fd97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1a6257ab6d377137fc36df2f662887fd97" kindref="member">Reset</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;reset&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47" refid="_globals_8h_1af012309b520eb65471272ee8f877317a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1af012309b520eb65471272ee8f877317a" kindref="member">Stop</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;stop&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48" refid="_globals_8h_1a2f70ddafa2efd35367abff6a616f8374" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1a2f70ddafa2efd35367abff6a616f8374" kindref="member">Sleep</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;sleep&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49" refid="_globals_8h_1ad6a6fe63b09f7d018ebc6b96d44cdbb8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1ad6a6fe63b09f7d018ebc6b96d44cdbb8" kindref="member">Help</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;help&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50" refid="_globals_8h_1a0fd0ced2811b8e7b87f5b472d8f48cb8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1a0fd0ced2811b8e7b87f5b472d8f48cb8" kindref="member">Calibrate</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;calibrate&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51" refid="_globals_8h_1a6f4520176c3d804eaa8ad6812f3a7fab" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1a6f4520176c3d804eaa8ad6812f3a7fab" kindref="member">Rotate</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;rotate&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52" refid="_globals_8h_1affb2a6c9bd814df29ef6eda222c594cc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1affb2a6c9bd814df29ef6eda222c594cc" kindref="member">Test1</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;test1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53" refid="_globals_8h_1a692f4e4a4c4768f815890ce0010c4847" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_globals_8cpp_1a692f4e4a4c4768f815890ce0010c4847" kindref="member">Test2</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;test2&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>define<sp/>command<sp/>Stack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" refkind="member"><highlight class="normal">std::stack&lt;ICommand*&gt;<sp/><ref refid="_globals_8cpp_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>;</highlight></codeline>
+<codeline lineno="56" refid="_globals_8h_1a14328e108fe32a87ed5cbb50639e2951" refkind="member"><highlight class="normal">std::vector&lt;ICommand*&gt;<sp/><ref refid="_globals_8cpp_1a14328e108fe32a87ed5cbb50639e2951" kindref="member">CmdDeleter</ref>;</highlight></codeline>
+<codeline lineno="57" refid="_globals_8h_1afc093e48e1f3a3425c7db9d6bfb13f36" refkind="member"><highlight class="normal">std::stack&lt;Invoker&gt;<sp/><ref refid="_globals_8cpp_1afc093e48e1f3a3425c7db9d6bfb13f36" kindref="member">InvokerStack</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp"/>
+  </compounddef>
+</doxygen>

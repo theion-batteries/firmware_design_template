@@ -1,0 +1,14 @@
+<map id="Alignment::MoveDistanceXloop" name="Alignment::MoveDistanceXloop">
+<area shape="rect" id="node1" title=" " alt="" coords="5,78,205,105"/>
+<area shape="rect" id="node2" href="$class_alignment.html#a2440f9acebf113fad04bb77d2c0b9e6e" title=" " alt="" coords="271,21,446,47"/>
+<area shape="rect" id="node5" href="$class_alignment.html#adcc6aceb95f7f9c40463009ea686b25e" title=" " alt="" coords="253,78,464,105"/>
+<area shape="rect" id="node8" href="$class_alignment.html#a9a308ec9c53310e89e79b84c5274fa6c" title=" " alt="" coords="271,143,447,170"/>
+<area shape="rect" id="node3" href="$class_alignment.html#ad66e261f955a7ff82655ad9dc40511d4" title=" " alt="" coords="513,5,694,47"/>
+<area shape="rect" id="node4" href="$classlight_barrier.html#a9f75c7d7640cf9aab7f67f1b16e27077" title="get current state" alt="" coords="743,5,900,47"/>
+<area shape="rect" id="node6" href="$classend_switch.html#ae1f7e6d7200feb02820c02708bca01c0" title="get current state" alt="" coords="526,71,681,112"/>
+<area shape="rect" id="node7" href="$classend_switch.html#ac38e43effb237b61a1f4b09092b5ac53" title="debounce a button" alt="" coords="748,78,895,105"/>
+<area shape="rect" id="node9" href="$class_alignment.html#ac8aa65bdcfb551bb996ac59ee8d8db3d" title="convert distance in mm or µm to step or microstep" alt="" coords="512,136,695,177"/>
+<area shape="rect" id="node10" href="$class_alignment.html#ac82e5ad8712ea3408ec29899202cae65" title=" " alt="" coords="527,202,680,229"/>
+<area shape="rect" id="node11" href="$classa4988.html#a6a37cf937b1f7a1f229904cdb9191b89" title=" " alt="" coords="754,177,889,203"/>
+<area shape="rect" id="node12" href="$classa4988.html#a2074f2e3fe7cd79e402f53a14ba68c89" title=" " alt="" coords="761,227,882,254"/>
+</map>

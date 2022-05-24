@@ -1,0 +1,172 @@
+\hypertarget{class_distance_sensor}{}\doxysection{Distance\+Sensor Class Reference}
+\label{class_distance_sensor}\index{DistanceSensor@{DistanceSensor}}
+
+
+{\ttfamily \#include $<$Distance\+Sensor.\+hpp$>$}
+
+
+
+Collaboration diagram for Distance\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{class_distance_sensor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_distance_sensor_a34b043ed931b955731c0951d1cb625d2}{Distance\+Sensor}} (int Output\+Head\+Number)
+\item 
+void \mbox{\hyperlink{class_distance_sensor_afd9021692a991103c20e928977bdec69}{set\+Keyence\+Com}} ()
+\item 
+double \mbox{\hyperlink{class_distance_sensor_a1b5434dd7b12183ded0962f6e42a8f8d}{get\+Current\+Distance}} ()
+\item 
+void \mbox{\hyperlink{class_distance_sensor_a023ee399031eac2a1495d15e796a7fdc}{print\+Distance}} (float val)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_distance_sensor_a797bd792642b88a357dcf9aecdf7271c}{Pin}}
+\item 
+bool \mbox{\hyperlink{class_distance_sensor_a8f00655b3965c91c1dd97758711844ba}{state}}
+\item 
+double \mbox{\hyperlink{class_distance_sensor_a7277aa0cf628731f0db9329874a3b525}{current\+Distance}}
+\item 
+\mbox{\hyperlink{class_keyence__rs232__interface}{Keyence\+\_\+rs232\+\_\+interface}} $\ast$ \mbox{\hyperlink{class_distance_sensor_ac97d894ab1bbd43fd3e22c1fb7aa6585}{Ikeyence\+RS232}} = new \mbox{\hyperlink{class_keyence__rs232__interface}{Keyence\+\_\+rs232\+\_\+interface}}(\mbox{\hyperlink{_configs_8h_a005a72831297d00f495e084eb64a5bed}{KEYENCE\+\_\+\+SERIAL\+\_\+\+HANDLER}},\mbox{\hyperlink{_configs_8h_ac5512a940a57198b0d9b9f2e366c7ee8}{KEYENCE\+\_\+\+SERIAL\+\_\+\+BAUDRATE}})
+\item 
+int \mbox{\hyperlink{class_distance_sensor_a534437583b197ba595bf54e31ff58b64}{Head\+Num}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_keyence__base}{Keyence\+\_\+base}} $\ast$ \mbox{\hyperlink{class_distance_sensor_a686c8877763936f2e841f5e8d1688ed3}{Kbase}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_distance_sensor_8hpp_source_l00014}{14}} of file \mbox{\hyperlink{_distance_sensor_8hpp_source}{Distance\+Sensor.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_distance_sensor_a34b043ed931b955731c0951d1cb625d2}\label{class_distance_sensor_a34b043ed931b955731c0951d1cb625d2}} 
+\index{DistanceSensor@{DistanceSensor}!DistanceSensor@{DistanceSensor}}
+\index{DistanceSensor@{DistanceSensor}!DistanceSensor@{DistanceSensor}}
+\doxysubsubsection{\texorpdfstring{DistanceSensor()}{DistanceSensor()}}
+{\footnotesize\ttfamily Distance\+Sensor\+::\+Distance\+Sensor (\begin{DoxyParamCaption}\item[{int}]{Output\+Head\+Number }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_distance_sensor_a1b5434dd7b12183ded0962f6e42a8f8d}\label{class_distance_sensor_a1b5434dd7b12183ded0962f6e42a8f8d}} 
+\index{DistanceSensor@{DistanceSensor}!getCurrentDistance@{getCurrentDistance}}
+\index{getCurrentDistance@{getCurrentDistance}!DistanceSensor@{DistanceSensor}}
+\doxysubsubsection{\texorpdfstring{getCurrentDistance()}{getCurrentDistance()}}
+{\footnotesize\ttfamily double Distance\+Sensor\+::get\+Current\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_distance_sensor_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{_distance_sensor_8cpp_source}{Distance\+Sensor.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_distance_sensor_a1b5434dd7b12183ded0962f6e42a8f8d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_distance_sensor_a1b5434dd7b12183ded0962f6e42a8f8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_distance_sensor_a023ee399031eac2a1495d15e796a7fdc}\label{class_distance_sensor_a023ee399031eac2a1495d15e796a7fdc}} 
+\index{DistanceSensor@{DistanceSensor}!printDistance@{printDistance}}
+\index{printDistance@{printDistance}!DistanceSensor@{DistanceSensor}}
+\doxysubsubsection{\texorpdfstring{printDistance()}{printDistance()}}
+{\footnotesize\ttfamily void Distance\+Sensor\+::print\+Distance (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_distance_sensor_8cpp_source_l00070}{70}} of file \mbox{\hyperlink{_distance_sensor_8cpp_source}{Distance\+Sensor.\+cpp}}.
+
+\mbox{\Hypertarget{class_distance_sensor_afd9021692a991103c20e928977bdec69}\label{class_distance_sensor_afd9021692a991103c20e928977bdec69}} 
+\index{DistanceSensor@{DistanceSensor}!setKeyenceCom@{setKeyenceCom}}
+\index{setKeyenceCom@{setKeyenceCom}!DistanceSensor@{DistanceSensor}}
+\doxysubsubsection{\texorpdfstring{setKeyenceCom()}{setKeyenceCom()}}
+{\footnotesize\ttfamily void Distance\+Sensor\+::set\+Keyence\+Com (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_distance_sensor_a7277aa0cf628731f0db9329874a3b525}\label{class_distance_sensor_a7277aa0cf628731f0db9329874a3b525}} 
+\index{DistanceSensor@{DistanceSensor}!currentDistance@{currentDistance}}
+\index{currentDistance@{currentDistance}!DistanceSensor@{DistanceSensor}}
+\doxysubsubsection{\texorpdfstring{currentDistance}{currentDistance}}
+{\footnotesize\ttfamily double Distance\+Sensor\+::current\+Distance}
+
+
+
+Definition at line \mbox{\hyperlink{_distance_sensor_8hpp_source_l00019}{19}} of file \mbox{\hyperlink{_distance_sensor_8hpp_source}{Distance\+Sensor.\+hpp}}.
+
+\mbox{\Hypertarget{class_distance_sensor_a534437583b197ba595bf54e31ff58b64}\label{class_distance_sensor_a534437583b197ba595bf54e31ff58b64}} 
+\index{DistanceSensor@{DistanceSensor}!HeadNum@{HeadNum}}
+\index{HeadNum@{HeadNum}!DistanceSensor@{DistanceSensor}}
+\doxysubsubsection{\texorpdfstring{HeadNum}{HeadNum}}
+{\footnotesize\ttfamily int Distance\+Sensor\+::\+Head\+Num}
+
+
+
+Definition at line \mbox{\hyperlink{_distance_sensor_8hpp_source_l00027}{27}} of file \mbox{\hyperlink{_distance_sensor_8hpp_source}{Distance\+Sensor.\+hpp}}.
+
+\mbox{\Hypertarget{class_distance_sensor_ac97d894ab1bbd43fd3e22c1fb7aa6585}\label{class_distance_sensor_ac97d894ab1bbd43fd3e22c1fb7aa6585}} 
+\index{DistanceSensor@{DistanceSensor}!IkeyenceRS232@{IkeyenceRS232}}
+\index{IkeyenceRS232@{IkeyenceRS232}!DistanceSensor@{DistanceSensor}}
+\doxysubsubsection{\texorpdfstring{IkeyenceRS232}{IkeyenceRS232}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_keyence__rs232__interface}{Keyence\+\_\+rs232\+\_\+interface}}$\ast$ Distance\+Sensor\+::\+Ikeyence\+RS232 = new \mbox{\hyperlink{class_keyence__rs232__interface}{Keyence\+\_\+rs232\+\_\+interface}}(\mbox{\hyperlink{_configs_8h_a005a72831297d00f495e084eb64a5bed}{KEYENCE\+\_\+\+SERIAL\+\_\+\+HANDLER}},\mbox{\hyperlink{_configs_8h_ac5512a940a57198b0d9b9f2e366c7ee8}{KEYENCE\+\_\+\+SERIAL\+\_\+\+BAUDRATE}})}
+
+
+
+Definition at line \mbox{\hyperlink{_distance_sensor_8hpp_source_l00026}{26}} of file \mbox{\hyperlink{_distance_sensor_8hpp_source}{Distance\+Sensor.\+hpp}}.
+
+\mbox{\Hypertarget{class_distance_sensor_a686c8877763936f2e841f5e8d1688ed3}\label{class_distance_sensor_a686c8877763936f2e841f5e8d1688ed3}} 
+\index{DistanceSensor@{DistanceSensor}!Kbase@{Kbase}}
+\index{Kbase@{Kbase}!DistanceSensor@{DistanceSensor}}
+\doxysubsubsection{\texorpdfstring{Kbase}{Kbase}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_keyence__base}{Keyence\+\_\+base}}$\ast$ Distance\+Sensor\+::\+Kbase\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{_distance_sensor_8hpp_source_l00028}{28}} of file \mbox{\hyperlink{_distance_sensor_8hpp_source}{Distance\+Sensor.\+hpp}}.
+
+\mbox{\Hypertarget{class_distance_sensor_a797bd792642b88a357dcf9aecdf7271c}\label{class_distance_sensor_a797bd792642b88a357dcf9aecdf7271c}} 
+\index{DistanceSensor@{DistanceSensor}!Pin@{Pin}}
+\index{Pin@{Pin}!DistanceSensor@{DistanceSensor}}
+\doxysubsubsection{\texorpdfstring{Pin}{Pin}}
+{\footnotesize\ttfamily int Distance\+Sensor\+::\+Pin}
+
+
+
+Definition at line \mbox{\hyperlink{_distance_sensor_8hpp_source_l00017}{17}} of file \mbox{\hyperlink{_distance_sensor_8hpp_source}{Distance\+Sensor.\+hpp}}.
+
+\mbox{\Hypertarget{class_distance_sensor_a8f00655b3965c91c1dd97758711844ba}\label{class_distance_sensor_a8f00655b3965c91c1dd97758711844ba}} 
+\index{DistanceSensor@{DistanceSensor}!state@{state}}
+\index{state@{state}!DistanceSensor@{DistanceSensor}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily bool Distance\+Sensor\+::state}
+
+
+
+Definition at line \mbox{\hyperlink{_distance_sensor_8hpp_source_l00018}{18}} of file \mbox{\hyperlink{_distance_sensor_8hpp_source}{Distance\+Sensor.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/include/\mbox{\hyperlink{_distance_sensor_8hpp}{Distance\+Sensor.\+hpp}}\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/src/\mbox{\hyperlink{_distance_sensor_8cpp}{Distance\+Sensor.\+cpp}}\end{DoxyCompactItemize}

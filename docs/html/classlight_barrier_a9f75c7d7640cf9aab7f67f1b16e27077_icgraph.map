@@ -1,0 +1,33 @@
+<map id="lightBarrier::get_current_state" name="lightBarrier::get_current_state">
+<area shape="rect" id="node1" title="get current state" alt="" coords="1216,353,1373,394"/>
+<area shape="rect" id="node2" href="$class_alignment.html#ad66e261f955a7ff82655ad9dc40511d4" title=" " alt="" coords="987,486,1168,527"/>
+<area shape="rect" id="node20" href="$class_alignment.html#aac7394937e1dc058fb929abca3465dd1" title=" " alt="" coords="987,353,1168,394"/>
+<area shape="rect" id="node26" href="$class_alignment.html#ad8475ba7636ed61ab7b3a70f54d5a26f" title=" " alt="" coords="987,231,1168,273"/>
+<area shape="rect" id="node3" href="$class_alignment.html#a2440f9acebf113fad04bb77d2c0b9e6e" title=" " alt="" coords="763,528,938,555"/>
+<area shape="rect" id="node4" href="$class_alignment.html#aa10c40160fe39fa263b12f0e07d4f67c" title=" " alt="" coords="515,360,710,387"/>
+<area shape="rect" id="node6" href="$class_alignment.html#ab41a2d0326f4644e98d055badbe19d5d" title=" " alt="" coords="517,157,708,184"/>
+<area shape="rect" id="node9" href="$class_alignment.html#a624dd240b0142db6b9c4e10ca1475246" title=" " alt="" coords="516,259,709,285"/>
+<area shape="rect" id="node10" href="$class_alignment.html#ab8c075766ec6ff9b8f66ade49139879d" title=" " alt="" coords="521,613,705,640"/>
+<area shape="rect" id="node11" href="$class_alignment.html#aea699b9dbfd70c662031b7c5e60acd7f" title=" " alt="" coords="513,664,713,691"/>
+<area shape="rect" id="node12" href="$class_alignment.html#a01a1103e23dd986877681907d20cc1f8" title=" " alt="" coords="511,563,714,589"/>
+<area shape="rect" id="node19" href="$class_alignment.html#af9dd2a0d59543d4418ed13e90cd54277" title=" " alt="" coords="531,715,694,741"/>
+<area shape="rect" id="node5" href="$class_calibrate_cmd.html#a9c979e62ff060e9218efe359812de2ea" title=" " alt="" coords="280,360,435,387"/>
+<area shape="rect" id="node7" href="$class_alignment.html#a97f0c9cbacf45c6a73e4535db0c55d43" title=" " alt="" coords="261,183,453,209"/>
+<area shape="rect" id="node8" href="$class_alignment.html#a4cacf6c33dbaec2e424f752f678aeaa9" title=" " alt="" coords="252,132,463,159"/>
+<area shape="rect" id="node13" href="$class_alignment.html#ab7e9da9ded962b937b7df23e116f3b0e" title=" " alt="" coords="254,537,461,564"/>
+<area shape="rect" id="node18" href="$class_alignment.html#a579959f28393df8251df1bd2b8137984" title=" " alt="" coords="278,487,437,513"/>
+<area shape="rect" id="node14" href="$class_move_motor_up_cmd.html#abe4d84e2c2bd89bf875820aa96f7acb0" title=" " alt="" coords="13,461,196,488"/>
+<area shape="rect" id="node15" href="$class_move_motor_down_cmd.html#ac319973b67f7df5f252f2849aae38f40" title=" " alt="" coords="5,512,204,539"/>
+<area shape="rect" id="node16" href="$class_move_motor_up_cmd.html#a592fda0f55d367d5be29244036034b6b" title=" " alt="" coords="23,563,187,589"/>
+<area shape="rect" id="node17" href="$class_move_motor_down_cmd.html#ac2931312dd7e4a46455b6c11a551b700" title=" " alt="" coords="15,613,195,640"/>
+<area shape="rect" id="node21" href="$class_alignment.html#a29a09538dce5388b0873b131ea2f66a7" title=" " alt="" coords="763,360,939,387"/>
+<area shape="rect" id="node22" href="$class_alignment.html#a050f3ae23879c74437bfe3a82bc3a432" title=" " alt="" coords="519,461,706,488"/>
+<area shape="rect" id="node23" href="$class_alignment.html#a4b02693ded07e1e0975e21fcae48b22b" title=" " alt="" coords="511,309,714,336"/>
+<area shape="rect" id="node24" href="$class_alignment.html#abbd45543d5f6dcdaf88633fcade036bf" title=" " alt="" coords="511,512,715,539"/>
+<area shape="rect" id="node25" href="$class_alignment.html#a1e97f98b33329f49c6c1976d38964101" title=" " alt="" coords="530,411,695,437"/>
+<area shape="rect" id="node27" href="$class_alignment.html#aee871f24d8dc408d22c9e9b139e02daa" title=" " alt="" coords="763,183,938,209"/>
+<area shape="rect" id="node28" href="$class_alignment.html#ace1287639428d2c45606677eb6287bc2" title=" " alt="" coords="521,5,705,32"/>
+<area shape="rect" id="node29" href="$class_alignment.html#a934a3a3bb589ce0bf137f4d7230d5f9c" title=" " alt="" coords="513,56,713,83"/>
+<area shape="rect" id="node30" href="$class_alignment.html#ade2162aba2ca25114a6edefcbbb0ea94" title=" " alt="" coords="511,208,714,235"/>
+<area shape="rect" id="node31" href="$class_alignment.html#a9e8ccedc0f07184904e6878dfb991e65" title=" " alt="" coords="531,107,694,133"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Alignment::checkLimitDownY" name="Alignment::checkLimitDownY">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,197,39"/>
+<area shape="rect" id="node2" href="$class_alignment.html#a3fd39f62a10172bfd8c63e7cbf5983bd" title=" " alt="" coords="245,13,456,39"/>
+<area shape="rect" id="node3" href="$classend_switch.html#ae1f7e6d7200feb02820c02708bca01c0" title="get current state" alt="" coords="504,5,659,47"/>
+<area shape="rect" id="node4" href="$classend_switch.html#ac38e43effb237b61a1f4b09092b5ac53" title="debounce a button" alt="" coords="707,13,853,39"/>
+</map>

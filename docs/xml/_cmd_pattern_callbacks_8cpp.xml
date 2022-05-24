@@ -1,0 +1,1023 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_cmd_pattern_callbacks_8cpp" kind="file" language="C++">
+    <compoundname>CmdPatternCallbacks.cpp</compoundname>
+    <includes refid="_cmd_pattern_callbacks_8h" local="yes">CmdPatternCallbacks.h</includes>
+    <incdepgraph>
+      <node id="21">
+        <label>Arduino.h</label>
+      </node>
+      <node id="7">
+        <label>ArduinoSTL.h</label>
+      </node>
+      <node id="11">
+        <label>Alignment.hpp</label>
+        <link refid="_alignment_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CmdBuffer.hpp</label>
+        <link refid="_cmd_buffer_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>CmdCallback.hpp</label>
+        <link refid="_cmd_callback_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>CmdParser.hpp</label>
+        <link refid="_cmd_parser_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CmdPatternCallbacks.h</label>
+        <link refid="_cmd_pattern_callbacks_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>CmdPatternClasses.h</label>
+        <link refid="_cmd_pattern_classes_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>Configs.h</label>
+        <link refid="_configs_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>DistanceSensor.hpp</label>
+        <link refid="_distance_sensor_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>DriverA4988.hpp</label>
+        <link refid="_driver_a4988_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>EndSwitch.hpp</label>
+        <link refid="_end_switch_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Globals.h</label>
+        <link refid="_globals_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Keyence_API.h</label>
+        <link refid="_keyence___a_p_i_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Nema_8.hpp</label>
+        <link refid="_nema__8_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Reset.h</label>
+        <link refid="_reset_8h"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Sleep.h</label>
+        <link refid="_sleep_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>StateManager.hpp</label>
+        <link refid="_state_manager_8hpp"/>
+      </node>
+      <node id="24">
+        <label>UUID.hpp</label>
+        <link refid="_u_u_i_d_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>light_barrier.hpp</label>
+        <link refid="light__barrier_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <link refid="_cmd_pattern_callbacks_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>EEPROM.h</label>
+      </node>
+      <node id="23">
+        <label>avr/sleep.h</label>
+      </node>
+      <node id="5">
+        <label>ctype.h</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="29">
+        <label>memory</label>
+      </node>
+      <node id="28">
+        <label>stack</label>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+      </node>
+      <node id="9">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a8f0b63bf650a5ceefc36d7e3bcb02f63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_help</definition>
+        <argsstring>()</argsstring>
+        <name>display_help</name>
+        <briefdescription>
+<para>display help </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="16" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="16" bodyend="23"/>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a0fa0bac0fc88513dfcaf50196a39a343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_help_get</definition>
+        <argsstring>()</argsstring>
+        <name>display_help_get</name>
+        <briefdescription>
+<para>display help </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="24" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="24" bodyend="35"/>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1aa909d685f344dc2e637fb84957bc58ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_help_set</definition>
+        <argsstring>()</argsstring>
+        <name>display_help_set</name>
+        <briefdescription>
+<para>display help </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="36" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="36" bodyend="46"/>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a725ae5b5ae06426a9f27138daa783636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_help_move</definition>
+        <argsstring>()</argsstring>
+        <name>display_help_move</name>
+        <briefdescription>
+<para>display help </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="47" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="47" bodyend="56"/>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" compoundref="_cmd_pattern_callbacks_8cpp" startline="293" endline="312">rotate_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a427d067ebe73ddf2cb51ba4fd05d3375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_help_undo</definition>
+        <argsstring>()</argsstring>
+        <name>display_help_undo</name>
+        <briefdescription>
+<para>display help </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="57" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="57" bodyend="62"/>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a9a90720f58d890625079877d0d339317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_help_reset</definition>
+        <argsstring>()</argsstring>
+        <name>display_help_reset</name>
+        <briefdescription>
+<para>display help </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="63" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="63" bodyend="68"/>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a4b7748cf9cf0108de662b41851d97878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void display_help_sleep</definition>
+        <argsstring>()</argsstring>
+        <name>display_help_sleep</name>
+        <briefdescription>
+<para>display help </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="69" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="69" bodyend="74"/>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1ad2b16cf5e3d9d45db6380d3731c3211f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void get_help</definition>
+        <argsstring>(CmdParser *myParser)</argsstring>
+        <name>get_help</name>
+        <param>
+          <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref> *</type>
+          <declname>myParser</declname>
+        </param>
+        <briefdescription>
+<para>display help </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="76" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="76" bodyend="97"/>
+        <references refid="_cmd_pattern_callbacks_8cpp_1a8f0b63bf650a5ceefc36d7e3bcb02f63" compoundref="_cmd_pattern_callbacks_8cpp" startline="16" endline="23">display_help</references>
+        <references refid="_cmd_pattern_callbacks_8cpp_1a0fa0bac0fc88513dfcaf50196a39a343" compoundref="_cmd_pattern_callbacks_8cpp" startline="24" endline="35">display_help_get</references>
+        <references refid="_cmd_pattern_callbacks_8cpp_1a725ae5b5ae06426a9f27138daa783636" compoundref="_cmd_pattern_callbacks_8cpp" startline="47" endline="56">display_help_move</references>
+        <references refid="_cmd_pattern_callbacks_8cpp_1a9a90720f58d890625079877d0d339317" compoundref="_cmd_pattern_callbacks_8cpp" startline="63" endline="68">display_help_reset</references>
+        <references refid="_cmd_pattern_callbacks_8cpp_1aa909d685f344dc2e637fb84957bc58ec" compoundref="_cmd_pattern_callbacks_8cpp" startline="36" endline="46">display_help_set</references>
+        <references refid="_cmd_pattern_callbacks_8cpp_1a4b7748cf9cf0108de662b41851d97878" compoundref="_cmd_pattern_callbacks_8cpp" startline="69" endline="74">display_help_sleep</references>
+        <references refid="_cmd_pattern_callbacks_8cpp_1a427d067ebe73ddf2cb51ba4fd05d3375" compoundref="_cmd_pattern_callbacks_8cpp" startline="57" endline="62">display_help_undo</references>
+        <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">CmdParser::equalCmdParam</references>
+        <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1aa0a1bd035c01b447c32e0a9e128c7611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void get_cmd</definition>
+        <argsstring>(CmdParser *myParser)</argsstring>
+        <name>get_cmd</name>
+        <param>
+          <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref> *</type>
+          <declname>myParser</declname>
+        </param>
+        <briefdescription>
+<para>callback cmd </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cmdParser </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="98" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="98" bodyend="170"/>
+        <references refid="_globals_8h_1a5171186bb4896bb433ed9c928af0d072">AlignId</references>
+        <references refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" compoundref="_globals_8cpp" startline="55">CmdStack</references>
+        <references refid="_globals_8h_1abda64f008e3b9989dfd5e7b50018feb0">DS_x</references>
+        <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">CmdParser::equalCmdParam</references>
+        <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
+        <references refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" compoundref="_globals_8cpp" startline="36">M_X</references>
+        <references refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f">M_Y</references>
+        <references refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b">M_Z</references>
+        <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1adcae3b60a9fcfef183dd0b91967e2ad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_cmd</definition>
+        <argsstring>(CmdParser *myParser)</argsstring>
+        <name>set_cmd</name>
+        <param>
+          <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref> *</type>
+          <declname>myParser</declname>
+        </param>
+        <briefdescription>
+<para>callback cmd </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cmdParser </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="173" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="173" bodyend="240"/>
+        <references refid="_globals_8h_1a5171186bb4896bb433ed9c928af0d072">AlignId</references>
+        <references refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" compoundref="_globals_8cpp" startline="55">CmdStack</references>
+        <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">CmdParser::equalCmdParam</references>
+        <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
+        <references refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" compoundref="_cmd_parser_8cpp" startline="69" endline="93">CmdParser::getCmdParam</references>
+        <references refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" compoundref="_globals_8cpp" startline="36">M_X</references>
+        <references refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f">M_Y</references>
+        <references refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b">M_Z</references>
+        <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1ac82a0068988fe425288370e121b04f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void move_cmd</definition>
+        <argsstring>(CmdParser *myParser)</argsstring>
+        <name>move_cmd</name>
+        <param>
+          <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref> *</type>
+          <declname>myParser</declname>
+        </param>
+        <briefdescription>
+<para>callback cmd </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cmdParser </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="242" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="242" bodyend="291"/>
+        <references refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091">AlignObj</references>
+        <references refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" compoundref="_globals_8cpp" startline="55">CmdStack</references>
+        <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">CmdParser::equalCmdParam</references>
+        <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
+        <references refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" compoundref="_cmd_parser_8cpp" startline="69" endline="93">CmdParser::getCmdParam</references>
+        <references refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" compoundref="_globals_8cpp" startline="36">M_X</references>
+        <references refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f">M_Y</references>
+        <references refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b">M_Z</references>
+        <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rotate_cmd</definition>
+        <argsstring>(CmdParser *myParser)</argsstring>
+        <name>rotate_cmd</name>
+        <param>
+          <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref> *</type>
+          <declname>myParser</declname>
+        </param>
+        <briefdescription>
+<para>callback cmd </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>my</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cmdParser </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="293" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="293" bodyend="312"/>
+        <references refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091">AlignObj</references>
+        <references refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" compoundref="_globals_8cpp" startline="55">CmdStack</references>
+        <references refid="_cmd_pattern_callbacks_8cpp_1a725ae5b5ae06426a9f27138daa783636" compoundref="_cmd_pattern_callbacks_8cpp" startline="47" endline="56">display_help_move</references>
+        <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">CmdParser::equalCmdParam</references>
+        <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
+        <references refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" compoundref="_cmd_parser_8cpp" startline="69" endline="93">CmdParser::getCmdParam</references>
+        <references refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" compoundref="_globals_8cpp" startline="36">M_X</references>
+        <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a905f26acafc5d817d3d4f2dc88bceb2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void calibrate_cmd</definition>
+        <argsstring>(CmdParser *myParser)</argsstring>
+        <name>calibrate_cmd</name>
+        <param>
+          <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref> *</type>
+          <declname>myParser</declname>
+        </param>
+        <briefdescription>
+<para>calibrate cmd using invoker </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>myParser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="318" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="318" bodyend="325"/>
+        <references refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091">AlignObj</references>
+        <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">CmdParser::equalCmdParam</references>
+        <references refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" compoundref="_cmd_parser_8cpp" startline="69" endline="93">CmdParser::getCmdParam</references>
+        <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
+        <references refid="class_firm_invoker_1a32ee0681b841f54012256169e127ef5b" compoundref="_cmd_pattern_classes_8h" startline="430" endline="432">FirmInvoker::SetOnCalibrate</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1ae3feb7f7fca30ce0a0c8dcc76eb01ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void reset_cmd</definition>
+        <argsstring>(CmdParser *myParser)</argsstring>
+        <name>reset_cmd</name>
+        <param>
+          <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref> *</type>
+          <declname>myParser</declname>
+        </param>
+        <briefdescription>
+<para>reset device </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>myParser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="331" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="331" bodyend="335"/>
+        <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
+        <references refid="_globals_8h_1a86a5e7c9ac2b0aa38a9617ba9cdbe5c6">resetObj</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a95dfb636156bd75ec75576b2f153c6c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sleep_cmd</definition>
+        <argsstring>(CmdParser *myParser)</argsstring>
+        <name>sleep_cmd</name>
+        <param>
+          <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref> *</type>
+          <declname>myParser</declname>
+        </param>
+        <briefdescription>
+<para>reset device </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>myParser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="341" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="341" bodyend="345"/>
+        <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
+        <references refid="_globals_8h_1af942883b344d04a36595840bcdb6ac75">sleepObj</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1ad3e176b252ce56823333747b267ae544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void undo_cmd</definition>
+        <argsstring>(CmdParser *myParser)</argsstring>
+        <name>undo_cmd</name>
+        <param>
+          <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref> *</type>
+          <declname>myParser</declname>
+        </param>
+        <briefdescription>
+<para>undo last command by calling undo(), then remove it from stack </para>
+        </briefdescription>
+        <detaileddescription>
+<para>undo last command by calling undo();, then remove it from stack</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>myParser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="351" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="351" bodyend="363"/>
+        <references refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" compoundref="_globals_8cpp" startline="55">CmdStack</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_cmd_pattern_callbacks_8h" kindref="compound">CmdPatternCallbacks.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/**************<sp/>Help<sp/>commands<sp/>section<sp/>***********/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>help<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="_cmd_pattern_callbacks_8h_1a8f0b63bf650a5ceefc36d7e3bcb02f63" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a8f0b63bf650a5ceefc36d7e3bcb02f63" kindref="member">display_help</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Welcome<sp/>!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Syntax:<sp/>help<sp/>COMMAND&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;List<sp/>information<sp/>about<sp/>the<sp/>internal<sp/>commands<sp/>and<sp/>options&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;COMMANDS[get,<sp/>set,<sp/>move,<sp/>rotate,<sp/>reset,<sp/>sleep,<sp/>undo]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>help<sp/>get<sp/><sp/><sp/><sp/><sp/><sp/>dispaly<sp/>get<sp/>command<sp/>usage<sp/>information&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24" refid="_cmd_pattern_callbacks_8h_1a0fa0bac0fc88513dfcaf50196a39a343" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a0fa0bac0fc88513dfcaf50196a39a343" kindref="member">display_help_get</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Syntax:<sp/>get<sp/>OPTIONS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;COMMAND:<sp/><sp/><sp/><sp/><sp/>get<sp/>[options]<sp/><sp/><sp/><sp/>get<sp/>object<sp/>specific<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;OPTIONS:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;opt1:<sp/><sp/>[uuid,<sp/>motor,<sp/>sensor]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;opt2:<sp/><sp/>[x,y,z,ph,value]<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;opt3:<sp/><sp/>[speed,delay,direction]<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>get<sp/>uuid<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>uuid&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>get<sp/>motor<sp/>x<sp/>speed<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>motor<sp/>x<sp/>speed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>get<sp/>sensor<sp/>x<sp/>value<sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>sensor<sp/>x<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36" refid="_cmd_pattern_callbacks_8h_1aa909d685f344dc2e637fb84957bc58ec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1aa909d685f344dc2e637fb84957bc58ec" kindref="member">display_help_set</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Syntax:<sp/>set<sp/>OPTIONS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;COMMAND:<sp/><sp/><sp/><sp/><sp/>set<sp/>[options]<sp/><sp/><sp/><sp/>set<sp/>object<sp/>specific<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;OPTIONS:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;opt1:<sp/><sp/>[uuid,<sp/>motor]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;opt2:<sp/><sp/>[x,y,z,ph]<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;opt3:<sp/><sp/>[speed,delay,direction]<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>set<sp/>uuid<sp/>value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set<sp/>uuid&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>set<sp/>motor<sp/>x<sp/>speed<sp/>value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set<sp/>motor<sp/>x<sp/>speed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47" refid="_cmd_pattern_callbacks_8h_1a725ae5b5ae06426a9f27138daa783636" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a725ae5b5ae06426a9f27138daa783636" kindref="member">display_help_move</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Syntax:<sp/>move<sp/>OPTIONS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;COMMAND:<sp/><sp/><sp/><sp/><sp/>move<sp/>or<sp/>rotate<sp/>[options]<sp/><sp/><sp/><sp/>move<sp/>object<sp/>specific<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;OPTIONS:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;opt1:<sp/><sp/>[x,y,z][ph]<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;opt2:<sp/><sp/>[up,down][clk,cclk]<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>move<sp/>x<sp/>up<sp/>value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>move<sp/>motor<sp/>x<sp/>up<sp/>value<sp/><sp/>[in<sp/>mm]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Usage:<sp/>rotate<sp/>ph<sp/>clk<sp/>angle<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rotate<sp/>motor<sp/>ph<sp/>clk<sp/>angle<sp/><sp/>[in<sp/>degree]&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57" refid="_cmd_pattern_callbacks_8h_1a427d067ebe73ddf2cb51ba4fd05d3375" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a427d067ebe73ddf2cb51ba4fd05d3375" kindref="member">display_help_undo</ref>()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Syntax:<sp/>undo<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;COMMAND:<sp/><sp/><sp/><sp/><sp/>undo<sp/><sp/><sp/>undo<sp/>last<sp/>command:<sp/>execute<sp/>last<sp/>in<sp/>command<sp/>in<sp/>stack&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63" refid="_cmd_pattern_callbacks_8h_1a9a90720f58d890625079877d0d339317" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a9a90720f58d890625079877d0d339317" kindref="member">display_help_reset</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Syntax:<sp/>reset<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;COMMAND:<sp/><sp/><sp/><sp/><sp/>reset<sp/><sp/><sp/>reset<sp/>device&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69" refid="_cmd_pattern_callbacks_8h_1a4b7748cf9cf0108de662b41851d97878" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a4b7748cf9cf0108de662b41851d97878" kindref="member">display_help_sleep</ref>()</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;Syntax:<sp/>sleep<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;COMMAND:<sp/><sp/><sp/><sp/><sp/>sleep<sp/><sp/><sp/>enter<sp/>sleep<sp/>mode<sp/>device&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>command<sp/>callback<sp/>templates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1ad2b16cf5e3d9d45db6380d3731c3211f" kindref="member">get_help</ref>(<ref refid="class_cmd_parser" kindref="compound">CmdParser</ref>*<sp/><ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;get&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a0fa0bac0fc88513dfcaf50196a39a343" kindref="member">display_help_get</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;set&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1aa909d685f344dc2e637fb84957bc58ec" kindref="member">display_help_set</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;move&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a725ae5b5ae06426a9f27138daa783636" kindref="member">display_help_move</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;reset&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a9a90720f58d890625079877d0d339317" kindref="member">display_help_reset</ref>();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;sleep&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a4b7748cf9cf0108de662b41851d97878" kindref="member">display_help_sleep</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;undo&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a427d067ebe73ddf2cb51ba4fd05d3375" kindref="member">display_help_undo</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a8f0b63bf650a5ceefc36d7e3bcb02f63" kindref="member">display_help</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98" refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1aa0a1bd035c01b447c32e0a9e128c7611" kindref="member">get_cmd</ref>(<ref refid="class_cmd_parser" kindref="compound">CmdParser</ref>*<sp/><ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;uuid&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>get_uuid<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_u_u_i_d" kindref="compound">getUUID</ref>(<ref refid="_globals_8h_1a5171186bb4896bb433ed9c928af0d072" kindref="member">AlignId</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>get_uuid-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(get_uuid);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;sensor&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;value&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>get_sensor_val<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_sensor_value_cmd" kindref="compound">getSensorValueCmd</ref>(<ref refid="_globals_8h_1abda64f008e3b9989dfd5e7b50018feb0" kindref="member">DS_x</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>get_sensor_val-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(get_sensor_val);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;motor&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;speed&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>getMotorXspeed<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_motor_speed_cmd" kindref="compound">getMotorSpeedCmd</ref>(<ref refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" kindref="member">M_X</ref>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getMotorXspeed-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(getMotorXspeed);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;direction&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>getMotorXDirection<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_motor_direction_cmd" kindref="compound">getMotorDirectionCmd</ref>(<ref refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" kindref="member">M_X</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getMotorXDirection-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(getMotorXDirection);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;delay&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>getMotorXDelay<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_motor_delay_cmd" kindref="compound">getMotorDelayCmd</ref>(<ref refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" kindref="member">M_X</ref>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getMotorXDelay-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(getMotorXDelay);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;speed&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>getMotorYspeed<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_motor_speed_cmd" kindref="compound">getMotorSpeedCmd</ref>(<ref refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f" kindref="member">M_Y</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getMotorYspeed-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(getMotorYspeed);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;direction&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>getMotorYDirection<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_motor_direction_cmd" kindref="compound">getMotorDirectionCmd</ref>(<ref refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f" kindref="member">M_Y</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getMotorYDirection-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(getMotorYDirection);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;delay&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>getMotorYDelay<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_motor_delay_cmd" kindref="compound">getMotorDelayCmd</ref>(<ref refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f" kindref="member">M_Y</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getMotorYDelay-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(getMotorYDelay);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;z&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;speed&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>getMotorZspeed<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_motor_speed_cmd" kindref="compound">getMotorSpeedCmd</ref>(<ref refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b" kindref="member">M_Z</ref>);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getMotorZspeed-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(getMotorZspeed);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;direction&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>getMotorZDirection<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_motor_direction_cmd" kindref="compound">getMotorDirectionCmd</ref>(<ref refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b" kindref="member">M_Z</ref>);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getMotorZDirection-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(getMotorZDirection);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;delay&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>getMotorZDelay<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classget_motor_delay_cmd" kindref="compound">getMotorDelayCmd</ref>(<ref refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b" kindref="member">M_Z</ref>);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getMotorZDelay-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(getMotorZDelay);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Command<sp/>Unknwon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;command<sp/>unkown&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">//<sp/>command<sp/>callback<sp/>templates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="_cmd_pattern_callbacks_8h_1adcae3b60a9fcfef183dd0b91967e2ad6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1adcae3b60a9fcfef183dd0b91967e2ad6" kindref="member">set_cmd</ref>(<ref refid="class_cmd_parser" kindref="compound">CmdParser</ref>*<sp/><ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>create<sp/>a<sp/>new<sp/>command<sp/>pointer<sp/>to<sp/>hold<sp/>reference<sp/>to<sp/>motor<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>setVal<sp/>=<sp/>String(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" kindref="member">getCmdParam</ref>(4)).toInt();</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>new_uuid<sp/>=<sp/><ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" kindref="member">getCmdParam</ref>(2);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;uuid&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>set_uuid<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classset_u_u_i_d" kindref="compound">setUUID</ref>(<ref refid="_globals_8h_1a5171186bb4896bb433ed9c928af0d072" kindref="member">AlignId</ref>,<sp/>new_uuid);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_uuid-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(set_uuid);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;motor&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;speed&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>setMotorXspeed<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classset_motor_speed_cmd" kindref="compound">setMotorSpeedCmd</ref>(<ref refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" kindref="member">M_X</ref>,<sp/>setVal);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMotorXspeed-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(setMotorXspeed);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;direction&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>setMotorXDirection<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classset_motor_direction_cmd" kindref="compound">setMotorDirectionCmd</ref>(<ref refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" kindref="member">M_X</ref>,<sp/>setVal);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMotorXDirection-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(setMotorXDirection);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;delay&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>setMotorXDelay<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classset_motor_delay_cmd" kindref="compound">setMotorDelayCmd</ref>(<ref refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" kindref="member">M_X</ref>,<sp/>setVal);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMotorXDelay-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(setMotorXDelay);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;speed&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>setMotorYspeed<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classset_motor_speed_cmd" kindref="compound">setMotorSpeedCmd</ref>(<ref refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f" kindref="member">M_Y</ref>,<sp/>setVal);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMotorYspeed-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(setMotorYspeed);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;direction&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>setMotorYDirection<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classset_motor_direction_cmd" kindref="compound">setMotorDirectionCmd</ref>(<ref refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f" kindref="member">M_Y</ref>,<sp/>setVal);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMotorYDirection-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(setMotorYDirection);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;delay&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>setMotorYDelay<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classset_motor_delay_cmd" kindref="compound">setMotorDelayCmd</ref>(<ref refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f" kindref="member">M_Y</ref>,<sp/>setVal);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMotorYDelay-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(setMotorYDelay);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;z&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;speed&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>setMotorZspeed<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classset_motor_speed_cmd" kindref="compound">setMotorSpeedCmd</ref>(<ref refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b" kindref="member">M_Z</ref>,<sp/>setVal);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMotorZspeed-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(setMotorZspeed);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;direction&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>setMotorZDirection<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classset_motor_direction_cmd" kindref="compound">setMotorDirectionCmd</ref>(<ref refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b" kindref="member">M_Z</ref>,<sp/>setVal);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMotorZDirection-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(setMotorZDirection);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(3,<sp/></highlight><highlight class="stringliteral">&quot;delay&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>setMotorZDelay<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classset_motor_delay_cmd" kindref="compound">setMotorDelayCmd</ref>(<ref refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b" kindref="member">M_Z</ref>,<sp/>setVal);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMotorZDelay-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(setMotorZDelay);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Command<sp/>Unknwon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;command<sp/>unkown&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="comment">//<sp/>format:<sp/>move<sp/>x<sp/>up<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="_cmd_pattern_callbacks_8h_1ac82a0068988fe425288370e121b04f00" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1ac82a0068988fe425288370e121b04f00" kindref="member">move_cmd</ref>(<ref refid="class_cmd_parser" kindref="compound">CmdParser</ref>*<sp/><ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>create<sp/>a<sp/>new<sp/>command<sp/>pointer<sp/>to<sp/>hold<sp/>reference<sp/>to<sp/>motor<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>moveVal<sp/>=<sp/>String(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" kindref="member">getCmdParam</ref>(3)).toInt();</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;x&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;up&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref><sp/>*moveMotorXUp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_move_motor_up_cmd" kindref="compound">MoveMotorUpCmd</ref>(<ref refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" kindref="member">M_X</ref>,<sp/><ref refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" kindref="member">AlignObj</ref>,<sp/>moveVal);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moveMotorXUp-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(moveMotorXUp);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>example<sp/>using<sp/>invoker<sp/>object*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//MotorInvoker*<sp/>Mhandler<sp/>=<sp/>new<sp/>MotorInvoker();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Mhandler-&gt;SetOnStart(new<sp/>EnableMotorCmd(M_X));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Mhandler-&gt;SetOnMoveUp(new<sp/>MoveMotorUpCmd(M_X,<sp/>AlignObj,<sp/>moveVal));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Mhandler-&gt;SetOnFinish(new<sp/>EnableMotorCmd(M_X));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//delete<sp/>Mhandler;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;down&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>moveMotorXDown<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_move_motor_down_cmd" kindref="compound">MoveMotorDownCmd</ref>(<ref refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" kindref="member">M_X</ref>,<sp/><ref refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" kindref="member">AlignObj</ref>,<sp/>moveVal);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moveMotorXDown-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(moveMotorXDown);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;up&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>moveMotorYUp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_move_motor_up_cmd" kindref="compound">MoveMotorUpCmd</ref>(<ref refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f" kindref="member">M_Y</ref>,<sp/><ref refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" kindref="member">AlignObj</ref>,<sp/>moveVal);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moveMotorYUp-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(moveMotorYUp);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;down&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>moveMotorYDown<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_move_motor_down_cmd" kindref="compound">MoveMotorDownCmd</ref>(<ref refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f" kindref="member">M_Y</ref>,<sp/><ref refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" kindref="member">AlignObj</ref>,<sp/>moveVal);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moveMotorYDown-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(moveMotorYDown);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;z&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;up&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>moveMotorZUp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_move_motor_up_cmd" kindref="compound">MoveMotorUpCmd</ref>(<ref refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b" kindref="member">M_Z</ref>,<sp/><ref refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" kindref="member">AlignObj</ref>,<sp/>moveVal);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moveMotorZUp-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(moveMotorZUp);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;down&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>moveMotorZDown<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_move_motor_down_cmd" kindref="compound">MoveMotorDownCmd</ref>(<ref refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b" kindref="member">M_Z</ref>,<sp/><ref refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" kindref="member">AlignObj</ref>,<sp/>moveVal);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>moveMotorZDown-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(moveMotorZDown);</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Command<sp/>Unknwon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;command<sp/>unkown&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="comment">//<sp/>format:<sp/>move<sp/>x<sp/>up<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="_cmd_pattern_callbacks_8h_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" kindref="member">rotate_cmd</ref>(<ref refid="class_cmd_parser" kindref="compound">CmdParser</ref>*<sp/><ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>we<sp/>create<sp/>a<sp/>new<sp/>command<sp/>pointer<sp/>to<sp/>hold<sp/>reference<sp/>to<sp/>motor<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>moveVal<sp/>=<sp/>String(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" kindref="member">getCmdParam</ref>(3)).toInt();</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;ph&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;clk&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref><sp/>*rotateClk<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rotate_motor_clk_cmd" kindref="compound">RotateMotorClkCmd</ref>(<ref refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" kindref="member">M_X</ref>,<sp/><ref refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" kindref="member">AlignObj</ref>,<sp/>moveVal);</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rotateClk-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(rotateClk);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(2,<sp/></highlight><highlight class="stringliteral">&quot;cclk&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>rotateCclk<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rotate_motor_cclk_cmd" kindref="compound">RotateMotorCclkCmd</ref>(<ref refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" kindref="member">M_X</ref>,<sp/><ref refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" kindref="member">AlignObj</ref>,<sp/>moveVal);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rotateCclk-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.push(rotateCclk);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;command<sp/>unkown,<sp/>use<sp/>following<sp/>syntax&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a725ae5b5ae06426a9f27138daa783636" kindref="member">display_help_move</ref>();</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="318" refid="_cmd_pattern_callbacks_8h_1a905f26acafc5d817d3d4f2dc88bceb2a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a905f26acafc5d817d3d4f2dc88bceb2a" kindref="member">calibrate_cmd</ref>(<ref refid="class_cmd_parser" kindref="compound">CmdParser</ref>*<sp/><ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>target<sp/>=<sp/>String(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" kindref="member">getCmdParam</ref>(2)).toFloat();</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>-&gt;<ref refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" kindref="member">equalCmdParam</ref>(1,<sp/></highlight><highlight class="stringliteral">&quot;target&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_firm_invoker" kindref="compound">FirmInvoker</ref>*<sp/>FirmU<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_firm_invoker" kindref="compound">FirmInvoker</ref>();</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FirmU-&gt;<ref refid="class_firm_invoker_1a32ee0681b841f54012256169e127ef5b" kindref="member">SetOnCalibrate</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_calibrate_cmd" kindref="compound">CalibrateCmd</ref>(<ref refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" kindref="member">AlignObj</ref>,<sp/>target));</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>FirmU;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="331" refid="_cmd_pattern_callbacks_8h_1ae3feb7f7fca30ce0a0c8dcc76eb01ff9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1ae3feb7f7fca30ce0a0c8dcc76eb01ff9" kindref="member">reset_cmd</ref>(<ref refid="class_cmd_parser" kindref="compound">CmdParser</ref>*<sp/><ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>reset<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_reset_device" kindref="compound">ResetDevice</ref>(<ref refid="_globals_8h_1a86a5e7c9ac2b0aa38a9617ba9cdbe5c6" kindref="member">resetObj</ref>);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>reset-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>reset;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="341" refid="_cmd_pattern_callbacks_8h_1a95dfb636156bd75ec75576b2f153c6c6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1a95dfb636156bd75ec75576b2f153c6c6" kindref="member">sleep_cmd</ref>(<ref refid="class_cmd_parser" kindref="compound">CmdParser</ref>*<sp/><ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_i_command" kindref="compound">ICommand</ref>*<sp/>sleep<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_sleep_device" kindref="compound">SleepDevice</ref>(<ref refid="_globals_8h_1af942883b344d04a36595840bcdb6ac75" kindref="member">sleepObj</ref>);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>sleep-&gt;<ref refid="class_i_command_1ace81beb0beea968f876f292446bf1120" kindref="member">execute</ref>();</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>sleep;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="351" refid="_cmd_pattern_callbacks_8h_1ad3e176b252ce56823333747b267ae544" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_cmd_pattern_callbacks_8cpp_1ad3e176b252ce56823333747b267ae544" kindref="member">undo_cmd</ref>(<ref refid="class_cmd_parser" kindref="compound">CmdParser</ref>*<sp/><ref refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" kindref="member">myParser</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.empty())</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//debug<sp/>stack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;undo<sp/>last<sp/>command&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.top()-&gt;undo();</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.top();</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>.pop();</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;No<sp/>command<sp/>in<sp/>Stack&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp"/>
+  </compounddef>
+</doxygen>

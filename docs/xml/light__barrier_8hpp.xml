@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="light__barrier_8hpp" kind="file" language="C++">
+    <compoundname>light_barrier.hpp</compoundname>
+    <includes local="no">ArduinoSTL.h</includes>
+    <includedby refid="_alignment_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Alignment.hpp</includedby>
+    <includedby refid="light__barrier_8cpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/light_barrier.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>ArduinoSTL.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp</label>
+        <link refid="light__barrier_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Alignment.hpp</label>
+        <link refid="_alignment_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <link refid="_cmd_pattern_callbacks_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</label>
+        <link refid="_cmd_pattern_classes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <link refid="_com_handler_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <link refid="_globals_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp</label>
+        <link refid="light__barrier_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Alignment.cpp</label>
+        <link refid="_alignment_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <link refid="_cmd_pattern_callbacks_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <link refid="_com_handler_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <link refid="_globals_8cpp"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/light_barrier.cpp</label>
+        <link refid="light__barrier_8cpp"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classlight_barrier" prot="public">lightBarrier</innerclass>
+    <briefdescription>
+<para>endswitch class </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sami dhiab (<ulink url="mailto:sami@theion.de">sami@theion.de</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2022-02-11</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ArduinoSTL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classlight_barrier" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlight_barrier" kindref="compound">lightBarrier</ref>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16" refid="classlight_barrier_1a65bb91b9f53929fa861b2b5fec7744bc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlight_barrier_1a65bb91b9f53929fa861b2b5fec7744bc" kindref="member">current_state</ref>;</highlight></codeline>
+<codeline lineno="17" refid="classlight_barrier_1ae20e2d254eac0c184bfdd9b9821a2f21" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlight_barrier_1ae20e2d254eac0c184bfdd9b9821a2f21" kindref="member">last_state</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classlight_barrier_1a8c66abe8395b93c58d4d0e6876667835" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlight_barrier_1a8c66abe8395b93c58d4d0e6876667835" kindref="member">IsTraversed</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19" refid="classlight_barrier_1aa575efa3d00382a47849d323fba08637" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classlight_barrier_1aa575efa3d00382a47849d323fba08637" kindref="member">Pin</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classlight_barrier_1a74c6017b8039066c582d5541df43dbd9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlight_barrier_1a74c6017b8039066c582d5541df43dbd9" kindref="member">TraversedState</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classlight_barrier_1abe3b51968b52630bda53cebcb6f74b69" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classlight_barrier_1abe3b51968b52630bda53cebcb6f74b69" kindref="member">lightBarrier</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="classlight_barrier_1abe3b51968b52630bda53cebcb6f74b69" kindref="member">lightBarrier</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classlight_barrier_1aa575efa3d00382a47849d323fba08637" kindref="member">Pin</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlight_barrier_1a74c6017b8039066c582d5541df43dbd9" kindref="member">TraversedState</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classlight_barrier_1a9f75c7d7640cf9aab7f67f1b16e27077" kindref="member">get_current_state</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp"/>
+  </compounddef>
+</doxygen>

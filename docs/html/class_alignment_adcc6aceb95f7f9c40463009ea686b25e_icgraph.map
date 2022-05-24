@@ -1,0 +1,11 @@
+<map id="Alignment::isStopButtonPressed" name="Alignment::isStopButtonPressed">
+<area shape="rect" id="node1" title=" " alt="" coords="479,81,689,108"/>
+<area shape="rect" id="node2" href="$class_alignment.html#aea699b9dbfd70c662031b7c5e60acd7f" title=" " alt="" coords="229,5,429,32"/>
+<area shape="rect" id="node3" href="$class_alignment.html#a4b02693ded07e1e0975e21fcae48b22b" title=" " alt="" coords="228,56,431,83"/>
+<area shape="rect" id="node4" href="$class_alignment.html#a934a3a3bb589ce0bf137f4d7230d5f9c" title=" " alt="" coords="229,107,429,133"/>
+<area shape="rect" id="node5" href="$class_alignment.html#a42ca106fc6688ad6f4e17685f9c07589" title=" " alt="" coords="229,157,430,184"/>
+<area shape="rect" id="node6" href="$class_rotate_motor_clk_cmd.html#a56a9f5b4304d8ead3ef66175f0134dc6" title=" " alt="" coords="19,55,166,97"/>
+<area shape="rect" id="node7" href="$class_rotate_motor_cclk_cmd.html#a9cd0bf2d88fd1cf6dc55eb09d13df733" title=" " alt="" coords="19,121,166,162"/>
+<area shape="rect" id="node8" href="$class_rotate_motor_clk_cmd.html#a58d79afd386f2f2329bc4e9bb72d3ed5" title=" " alt="" coords="5,187,180,213"/>
+<area shape="rect" id="node9" href="$class_rotate_motor_cclk_cmd.html#a3f8d23a9165ff286158bec7c962edff5" title=" " alt="" coords="19,238,166,279"/>
+</map>

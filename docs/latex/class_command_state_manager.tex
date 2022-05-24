@@ -1,0 +1,277 @@
+\hypertarget{class_command_state_manager}{}\doxysection{Command\+State\+Manager Class Reference}
+\label{class_command_state_manager}\index{CommandStateManager@{CommandStateManager}}
+
+
+{\ttfamily \#include $<$State\+Manager.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_command_state_manager_a51b2da7cd984728d0eb59bb600b097fb}{set\+CPUready}} ()
+\item 
+String \mbox{\hyperlink{class_command_state_manager_a2bd09f20c9b527ac7e475d7904524b65}{get\+Command\+State}} ()
+\item 
+bool \mbox{\hyperlink{class_command_state_manager_aa6050fe61d2180635639e828455d9e53}{command\+With\+Args}} ()
+\item 
+void \mbox{\hyperlink{class_command_state_manager_a339a392c33acac8438ab79734189a948}{set\+Command}} (String com)
+\item 
+void \mbox{\hyperlink{class_command_state_manager_a9f161d32cdc12e446924853dc003c1e3}{set\+State}} (String st)
+\item 
+void \mbox{\hyperlink{class_command_state_manager_a25465c15ca4081ddd1a6c29fe1dc2cfb}{update\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{class_command_state_manager_a7b57ac4036ba33539a5c6ade05362396}{First\+Args}} \mbox{[}5\mbox{]} = \{\char`\"{}printhead\char`\"{}, \char`\"{}x\char`\"{}, \char`\"{}y\char`\"{}, \char`\"{}z\char`\"{}, \char`\"{}all\char`\"{}\}
+\item 
+String \mbox{\hyperlink{class_command_state_manager_af472e4beb070eae15cda56ae12a1fc01}{Second\+Args}} \mbox{[}4\mbox{]} = \{\char`\"{}up\char`\"{}, \char`\"{}\mbox{\hyperlink{_configs_8h_a249d857dfa044493c7f29844b7b0baae}{down}}\char`\"{}, \char`\"{}\mbox{\hyperlink{_configs_8h_ae4a6a5757fdb3dd50355cea42bab342c}{clk}}\char`\"{}, \char`\"{}\mbox{\hyperlink{_configs_8h_ac15bd348b546cfa8e7c9330b517bc217}{cclk}}\char`\"{}\}
+\item 
+String \mbox{\hyperlink{class_command_state_manager_a2bc5fb51d153ba3009834ebfa70227b9}{Third\+Args}} \mbox{[}3\mbox{]} = \{\char`\"{}value\char`\"{}, \char`\"{}max\char`\"{}, \char`\"{}min\char`\"{}\}
+\item 
+String \mbox{\hyperlink{class_command_state_manager_a1ebba75c5dd81e4376ed22f3fd807edf}{command}}
+\item 
+String \mbox{\hyperlink{class_command_state_manager_a4f343e0f699ef266b40f12d9d86700fe}{state}}
+\item 
+String \mbox{\hyperlink{class_command_state_manager_a579209d5786030fcc4a666c1555cdf8c}{CPUstate}}
+\item 
+String \mbox{\hyperlink{class_command_state_manager_ae4ada5a26023e81608f544189d1ead41}{CPUaction}}
+\item 
+const int \mbox{\hyperlink{class_command_state_manager_a375619ca72c43bdae53a54aeb0499337}{States\+List\+Length}} = 11
+\item 
+const int \mbox{\hyperlink{class_command_state_manager_aff78fae9bba420bfdf995b115a01d219}{Commands\+List\+Length}} = 21
+\item 
+String $\ast$ \mbox{\hyperlink{class_command_state_manager_abfbda4417fe80c38d31aedcbdc0b922f}{States}}
+\item 
+String $\ast$ \mbox{\hyperlink{class_command_state_manager_a2d0f773aa9ecbcf359ca6ed759c1a66f}{Commands}}
+\item 
+const int \mbox{\hyperlink{class_command_state_manager_a716b8303474fa9c452f096d42d2d583b}{CPUStates\+List\+Length}} = 11
+\item 
+const int \mbox{\hyperlink{class_command_state_manager_a6bd424c0b40ff853c1fa879878453054}{CPUActions\+Length}} = 20
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00012}{12}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_command_state_manager_aa6050fe61d2180635639e828455d9e53}\label{class_command_state_manager_aa6050fe61d2180635639e828455d9e53}} 
+\index{CommandStateManager@{CommandStateManager}!commandWithArgs@{commandWithArgs}}
+\index{commandWithArgs@{commandWithArgs}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{commandWithArgs()}{commandWithArgs()}}
+{\footnotesize\ttfamily bool Command\+State\+Manager\+::command\+With\+Args (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00099}{99}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a2bd09f20c9b527ac7e475d7904524b65}\label{class_command_state_manager_a2bd09f20c9b527ac7e475d7904524b65}} 
+\index{CommandStateManager@{CommandStateManager}!getCommandState@{getCommandState}}
+\index{getCommandState@{getCommandState}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{getCommandState()}{getCommandState()}}
+{\footnotesize\ttfamily String Command\+State\+Manager\+::get\+Command\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00068}{68}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a339a392c33acac8438ab79734189a948}\label{class_command_state_manager_a339a392c33acac8438ab79734189a948}} 
+\index{CommandStateManager@{CommandStateManager}!setCommand@{setCommand}}
+\index{setCommand@{setCommand}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{setCommand()}{setCommand()}}
+{\footnotesize\ttfamily void Command\+State\+Manager\+::set\+Command (\begin{DoxyParamCaption}\item[{String}]{com }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00112}{112}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a51b2da7cd984728d0eb59bb600b097fb}\label{class_command_state_manager_a51b2da7cd984728d0eb59bb600b097fb}} 
+\index{CommandStateManager@{CommandStateManager}!setCPUready@{setCPUready}}
+\index{setCPUready@{setCPUready}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{setCPUready()}{setCPUready()}}
+{\footnotesize\ttfamily void Command\+State\+Manager\+::set\+CPUready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00063}{63}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a9f161d32cdc12e446924853dc003c1e3}\label{class_command_state_manager_a9f161d32cdc12e446924853dc003c1e3}} 
+\index{CommandStateManager@{CommandStateManager}!setState@{setState}}
+\index{setState@{setState}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Command\+State\+Manager\+::set\+State (\begin{DoxyParamCaption}\item[{String}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00115}{115}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a25465c15ca4081ddd1a6c29fe1dc2cfb}\label{class_command_state_manager_a25465c15ca4081ddd1a6c29fe1dc2cfb}} 
+\index{CommandStateManager@{CommandStateManager}!updateState@{updateState}}
+\index{updateState@{updateState}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{updateState()}{updateState()}}
+{\footnotesize\ttfamily void Command\+State\+Manager\+::update\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00118}{118}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_command_state_manager_a1ebba75c5dd81e4376ed22f3fd807edf}\label{class_command_state_manager_a1ebba75c5dd81e4376ed22f3fd807edf}} 
+\index{CommandStateManager@{CommandStateManager}!command@{command}}
+\index{command@{command}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{command}{command}}
+{\footnotesize\ttfamily String Command\+State\+Manager\+::command}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00037}{37}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a2d0f773aa9ecbcf359ca6ed759c1a66f}\label{class_command_state_manager_a2d0f773aa9ecbcf359ca6ed759c1a66f}} 
+\index{CommandStateManager@{CommandStateManager}!Commands@{Commands}}
+\index{Commands@{Commands}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{Commands}{Commands}}
+{\footnotesize\ttfamily String$\ast$ Command\+State\+Manager\+::\+Commands}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} String[\mbox{\hyperlink{class_command_state_manager_aff78fae9bba420bfdf995b115a01d219}{CommandsListLength}}]\{\textcolor{stringliteral}{"{}get\_id"{}},\textcolor{stringliteral}{"{}homeUp"{}}, \textcolor{stringliteral}{"{}homeDown"{}},\textcolor{stringliteral}{"{}oscillate"{}},\textcolor{stringliteral}{"{}rotateCW"{}},}
+\DoxyCodeLine{         \textcolor{stringliteral}{"{}rotateCCW"{}},\textcolor{stringliteral}{"{}calibrate"{}},\textcolor{stringliteral}{"{}align"{}}, \textcolor{stringliteral}{"{}down"{}}, \textcolor{stringliteral}{"{}up"{}}, \textcolor{stringliteral}{"{}downAllMax"{}}, \textcolor{stringliteral}{"{}downXMax"{}},\textcolor{stringliteral}{"{}downYMax"{}}, }
+\DoxyCodeLine{         \textcolor{stringliteral}{"{}downZMax"{}}, \textcolor{stringliteral}{"{}upAllMax"{}}, \textcolor{stringliteral}{"{}setTargetDistancePhMl"{}}, \textcolor{stringliteral}{"{}upXMax"{}},\textcolor{stringliteral}{"{}upYMax"{}},\textcolor{stringliteral}{"{}upZMax"{}}                         \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00047}{47}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_aff78fae9bba420bfdf995b115a01d219}\label{class_command_state_manager_aff78fae9bba420bfdf995b115a01d219}} 
+\index{CommandStateManager@{CommandStateManager}!CommandsListLength@{CommandsListLength}}
+\index{CommandsListLength@{CommandsListLength}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{CommandsListLength}{CommandsListLength}}
+{\footnotesize\ttfamily const int Command\+State\+Manager\+::\+Commands\+List\+Length = 21}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00044}{44}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_ae4ada5a26023e81608f544189d1ead41}\label{class_command_state_manager_ae4ada5a26023e81608f544189d1ead41}} 
+\index{CommandStateManager@{CommandStateManager}!CPUaction@{CPUaction}}
+\index{CPUaction@{CPUaction}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{CPUaction}{CPUaction}}
+{\footnotesize\ttfamily String Command\+State\+Manager\+::\+CPUaction}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00041}{41}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a6bd424c0b40ff853c1fa879878453054}\label{class_command_state_manager_a6bd424c0b40ff853c1fa879878453054}} 
+\index{CommandStateManager@{CommandStateManager}!CPUActionsLength@{CPUActionsLength}}
+\index{CPUActionsLength@{CPUActionsLength}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{CPUActionsLength}{CPUActionsLength}}
+{\footnotesize\ttfamily const int Command\+State\+Manager\+::\+CPUActions\+Length = 20}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00060}{60}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a579209d5786030fcc4a666c1555cdf8c}\label{class_command_state_manager_a579209d5786030fcc4a666c1555cdf8c}} 
+\index{CommandStateManager@{CommandStateManager}!CPUstate@{CPUstate}}
+\index{CPUstate@{CPUstate}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{CPUstate}{CPUstate}}
+{\footnotesize\ttfamily String Command\+State\+Manager\+::\+CPUstate}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00040}{40}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a716b8303474fa9c452f096d42d2d583b}\label{class_command_state_manager_a716b8303474fa9c452f096d42d2d583b}} 
+\index{CommandStateManager@{CommandStateManager}!CPUStatesListLength@{CPUStatesListLength}}
+\index{CPUStatesListLength@{CPUStatesListLength}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{CPUStatesListLength}{CPUStatesListLength}}
+{\footnotesize\ttfamily const int Command\+State\+Manager\+::\+CPUStates\+List\+Length = 11}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00059}{59}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a7b57ac4036ba33539a5c6ade05362396}\label{class_command_state_manager_a7b57ac4036ba33539a5c6ade05362396}} 
+\index{CommandStateManager@{CommandStateManager}!FirstArgs@{FirstArgs}}
+\index{FirstArgs@{FirstArgs}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{FirstArgs}{FirstArgs}}
+{\footnotesize\ttfamily String Command\+State\+Manager\+::\+First\+Args\mbox{[}5\mbox{]} = \{\char`\"{}printhead\char`\"{}, \char`\"{}x\char`\"{}, \char`\"{}y\char`\"{}, \char`\"{}z\char`\"{}, \char`\"{}all\char`\"{}\}}
+
+we have 2 categorie and subcategorie to manage\+: A-\/ serial or external
+\begin{DoxyItemize}
+\item commands\+: coming from serial monitor ending with LF or new line ending
+\item states\+: every command running has it own state B -\/ CPU or internal
+\item actions\+: high priority than commands
+\item states\+: when action is run, change immediately to its state 
+\end{DoxyItemize}
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00023}{23}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_af472e4beb070eae15cda56ae12a1fc01}\label{class_command_state_manager_af472e4beb070eae15cda56ae12a1fc01}} 
+\index{CommandStateManager@{CommandStateManager}!SecondArgs@{SecondArgs}}
+\index{SecondArgs@{SecondArgs}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{SecondArgs}{SecondArgs}}
+{\footnotesize\ttfamily String Command\+State\+Manager\+::\+Second\+Args\mbox{[}4\mbox{]} = \{\char`\"{}up\char`\"{}, \char`\"{}\mbox{\hyperlink{_configs_8h_a249d857dfa044493c7f29844b7b0baae}{down}}\char`\"{}, \char`\"{}\mbox{\hyperlink{_configs_8h_ae4a6a5757fdb3dd50355cea42bab342c}{clk}}\char`\"{}, \char`\"{}\mbox{\hyperlink{_configs_8h_ac15bd348b546cfa8e7c9330b517bc217}{cclk}}\char`\"{}\}}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00024}{24}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a4f343e0f699ef266b40f12d9d86700fe}\label{class_command_state_manager_a4f343e0f699ef266b40f12d9d86700fe}} 
+\index{CommandStateManager@{CommandStateManager}!state@{state}}
+\index{state@{state}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily String Command\+State\+Manager\+::state}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00038}{38}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_abfbda4417fe80c38d31aedcbdc0b922f}\label{class_command_state_manager_abfbda4417fe80c38d31aedcbdc0b922f}} 
+\index{CommandStateManager@{CommandStateManager}!States@{States}}
+\index{States@{States}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{States}{States}}
+{\footnotesize\ttfamily String$\ast$ Command\+State\+Manager\+::\+States}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} String[\mbox{\hyperlink{class_command_state_manager_a375619ca72c43bdae53a54aeb0499337}{StatesListLength}}]\{\textcolor{stringliteral}{"{}ready"{}},\textcolor{stringliteral}{"{}homing Up"{}}, \textcolor{stringliteral}{"{}homing Down"{}}, \textcolor{stringliteral}{"{}oscillating"{}}, \textcolor{stringliteral}{"{}rotating Clockwise"{}}, }
+\DoxyCodeLine{        \textcolor{stringliteral}{"{}rotating Counter Clockwise"{}}, \textcolor{stringliteral}{"{}calibrating"{}}, \textcolor{stringliteral}{"{}aligning"{}}, \textcolor{stringliteral}{"{}moving Down"{}}, \textcolor{stringliteral}{"{}moving Up"{}},\textcolor{stringliteral}{"{}setting Target Distance Printhead to Mother liquid"{}}         \}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00045}{45}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a375619ca72c43bdae53a54aeb0499337}\label{class_command_state_manager_a375619ca72c43bdae53a54aeb0499337}} 
+\index{CommandStateManager@{CommandStateManager}!StatesListLength@{StatesListLength}}
+\index{StatesListLength@{StatesListLength}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{StatesListLength}{StatesListLength}}
+{\footnotesize\ttfamily const int Command\+State\+Manager\+::\+States\+List\+Length = 11}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00043}{43}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+\mbox{\Hypertarget{class_command_state_manager_a2bc5fb51d153ba3009834ebfa70227b9}\label{class_command_state_manager_a2bc5fb51d153ba3009834ebfa70227b9}} 
+\index{CommandStateManager@{CommandStateManager}!ThirdArgs@{ThirdArgs}}
+\index{ThirdArgs@{ThirdArgs}!CommandStateManager@{CommandStateManager}}
+\doxysubsubsection{\texorpdfstring{ThirdArgs}{ThirdArgs}}
+{\footnotesize\ttfamily String Command\+State\+Manager\+::\+Third\+Args\mbox{[}3\mbox{]} = \{\char`\"{}value\char`\"{}, \char`\"{}max\char`\"{}, \char`\"{}min\char`\"{}\}}
+
+
+
+Definition at line \mbox{\hyperlink{_state_manager_8hpp_source_l00026}{26}} of file \mbox{\hyperlink{_state_manager_8hpp_source}{State\+Manager.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/include/\mbox{\hyperlink{_state_manager_8hpp}{State\+Manager.\+hpp}}\end{DoxyCompactItemize}

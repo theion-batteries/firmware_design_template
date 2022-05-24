@@ -1,0 +1,183 @@
+.TH "CommandStateManager" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CommandStateManager
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <StateManager\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBsetCPUready\fP ()"
+.br
+.ti -1c
+.RI "String \fBgetCommandState\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcommandWithArgs\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCommand\fP (String com)"
+.br
+.ti -1c
+.RI "void \fBsetState\fP (String st)"
+.br
+.ti -1c
+.RI "void \fBupdateState\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "String \fBFirstArgs\fP [5] = {'printhead', 'x', 'y', 'z', 'all'}"
+.br
+.ti -1c
+.RI "String \fBSecondArgs\fP [4] = {'up', '\fBdown\fP', '\fBclk\fP', '\fBcclk\fP'}"
+.br
+.ti -1c
+.RI "String \fBThirdArgs\fP [3] = {'value', 'max', 'min'}"
+.br
+.ti -1c
+.RI "String \fBcommand\fP"
+.br
+.ti -1c
+.RI "String \fBstate\fP"
+.br
+.ti -1c
+.RI "String \fBCPUstate\fP"
+.br
+.ti -1c
+.RI "String \fBCPUaction\fP"
+.br
+.ti -1c
+.RI "const int \fBStatesListLength\fP = 11"
+.br
+.ti -1c
+.RI "const int \fBCommandsListLength\fP = 21"
+.br
+.ti -1c
+.RI "String * \fBStates\fP"
+.br
+.ti -1c
+.RI "String * \fBCommands\fP"
+.br
+.ti -1c
+.RI "const int \fBCPUStatesListLength\fP = 11"
+.br
+.ti -1c
+.RI "const int \fBCPUActionsLength\fP = 20"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB12\fP of file \fBStateManager\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool CommandStateManager::commandWithArgs ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB99\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "String CommandStateManager::getCommandState ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB68\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "void CommandStateManager::setCommand (String com)\fC [inline]\fP"
+
+.PP
+Definition at line \fB112\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "void CommandStateManager::setCPUready ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB63\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "void CommandStateManager::setState (String st)\fC [inline]\fP"
+
+.PP
+Definition at line \fB115\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "void CommandStateManager::updateState ()\fC [inline]\fP"
+
+.PP
+Definition at line \fB118\fP of file \fBStateManager\&.hpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "String CommandStateManager::command"
+
+.PP
+Definition at line \fB37\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "String* CommandStateManager::Commands"
+\fBInitial value:\fP
+.PP
+.nf
+= new String[CommandsListLength]{"get_id","homeUp", "homeDown","oscillate","rotateCW",
+         "rotateCCW","calibrate","align", "down", "up", "downAllMax", "downXMax","downYMax", 
+         "downZMax", "upAllMax", "setTargetDistancePhMl", "upXMax","upYMax","upZMax"                         }
+.fi
+.PP
+Definition at line \fB47\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "const int CommandStateManager::CommandsListLength = 21"
+
+.PP
+Definition at line \fB44\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "String CommandStateManager::CPUaction"
+
+.PP
+Definition at line \fB41\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "const int CommandStateManager::CPUActionsLength = 20"
+
+.PP
+Definition at line \fB60\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "String CommandStateManager::CPUstate"
+
+.PP
+Definition at line \fB40\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "const int CommandStateManager::CPUStatesListLength = 11"
+
+.PP
+Definition at line \fB59\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "String CommandStateManager::FirstArgs[5] = {'printhead', 'x', 'y', 'z', 'all'}"
+we have 2 categorie and subcategorie to manage: A- serial or external
+.IP "\(bu" 2
+commands: coming from serial monitor ending with LF or new line ending
+.IP "\(bu" 2
+states: every command running has it own state B - CPU or internal
+.IP "\(bu" 2
+actions: high priority than commands
+.IP "\(bu" 2
+states: when action is run, change immediately to its state 
+.PP
+
+.PP
+Definition at line \fB23\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "String CommandStateManager::SecondArgs[4] = {'up', '\fBdown\fP', '\fBclk\fP', '\fBcclk\fP'}"
+
+.PP
+Definition at line \fB24\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "String CommandStateManager::state"
+
+.PP
+Definition at line \fB38\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "String* CommandStateManager::States"
+\fBInitial value:\fP
+.PP
+.nf
+= new String[StatesListLength]{"ready","homing Up", "homing Down", "oscillating", "rotating Clockwise", 
+        "rotating Counter Clockwise", "calibrating", "aligning", "moving Down", "moving Up","setting Target Distance Printhead to Mother liquid"         }
+.fi
+.PP
+Definition at line \fB45\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "const int CommandStateManager::StatesListLength = 11"
+
+.PP
+Definition at line \fB43\fP of file \fBStateManager\&.hpp\fP\&.
+.SS "String CommandStateManager::ThirdArgs[3] = {'value', 'max', 'min'}"
+
+.PP
+Definition at line \fB26\fP of file \fBStateManager\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

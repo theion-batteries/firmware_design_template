@@ -1,0 +1,240 @@
+\hypertarget{class_keyence__rs232__interface}{}\doxysection{Keyence\+\_\+rs232\+\_\+interface Class Reference}
+\label{class_keyence__rs232__interface}\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+
+
+{\ttfamily \#include $<$Keyence\+\_\+\+API.\+h$>$}
+
+
+
+Inheritance diagram for Keyence\+\_\+rs232\+\_\+interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_keyence__rs232__interface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Keyence\+\_\+rs232\+\_\+interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{class_keyence__rs232__interface__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_keyence__rs232__interface_a7c4e926bb32658c80ca277032f2b6ab3}{Keyence\+\_\+rs232\+\_\+interface}} (Hardware\+Serial \&ser\+Handler, unsigned long baud)
+\item 
+void \mbox{\hyperlink{class_keyence__rs232__interface_ad32645333a71b52bad892dfd45b8d930}{set\+Serial\+Handler}} (Hardware\+Serial \&ser\+Handler)
+\item 
+void \mbox{\hyperlink{class_keyence__rs232__interface_a5e4e89b0e72492942b3dbfe59d1c4a8d}{set\+Serial\+Baudrate}} (unsigned long baud)
+\item 
+void \mbox{\hyperlink{class_keyence__rs232__interface_a3171bb643c8988df2f3195bb67a1392e}{init\+Keyence\+Com}} ()
+\item 
+double \mbox{\hyperlink{class_keyence__rs232__interface_a94a9b8b38fc656ff6edc2fd7043ce243}{get\+Value\+Single\+Output\+Head}} (int output\+\_\+head\+\_\+\+Nr) override
+\item 
+double $\ast$ \mbox{\hyperlink{class_keyence__rs232__interface_a67984df4c8e54eff602f0cb174069e3d}{get\+Value\+Multiple\+Output\+Head}} (String \mbox{\hyperlink{class_keyence__base_af588a8387643ec05ca11f2a825b6c56d}{Heads\+Array}}) override
+\item 
+double $\ast$ \mbox{\hyperlink{class_keyence__rs232__interface_ad2606a20f587944928d8cadef8505af3}{get\+Value\+Output\+Head\+All}} () override
+\item 
+void \mbox{\hyperlink{class_keyence__rs232__interface_a2b0d0b535e0fb2c9f11ab1fe755f108f}{set\+General\+Mode}} () override
+\item 
+void \mbox{\hyperlink{class_keyence__rs232__interface_a366c821905c00f922a1a7ff86891d68b}{set\+Communication\+Mode}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Hardware\+Serial $\ast$ \mbox{\hyperlink{class_keyence__rs232__interface_afd7e56526e455ebdfae7fbe0aecd6a75}{serial\+Handler}}
+\item 
+unsigned long \mbox{\hyperlink{class_keyence__rs232__interface_a64dd14bd7eb46191aeda572d048b2b49}{baudrate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8h_source_l00137}{137}} of file \mbox{\hyperlink{_keyence___a_p_i_8h_source}{Keyence\+\_\+\+API.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_keyence__rs232__interface_a7c4e926bb32658c80ca277032f2b6ab3}\label{class_keyence__rs232__interface_a7c4e926bb32658c80ca277032f2b6ab3}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{Keyence\_rs232\_interface()}{Keyence\_rs232\_interface()}}
+{\footnotesize\ttfamily Keyence\+\_\+rs232\+\_\+interface\+::\+Keyence\+\_\+rs232\+\_\+interface (\begin{DoxyParamCaption}\item[{Hardware\+Serial \&}]{ser\+Handler = {\ttfamily \mbox{\hyperlink{_configs_8h_a005a72831297d00f495e084eb64a5bed}{KEYENCE\+\_\+\+SERIAL\+\_\+\+HANDLER}}},  }\item[{unsigned long}]{baud = {\ttfamily \mbox{\hyperlink{_configs_8h_ac5512a940a57198b0d9b9f2e366c7ee8}{KEYENCE\+\_\+\+SERIAL\+\_\+\+BAUDRATE}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{_keyence___a_p_i_8cpp_source}{Keyence\+\_\+\+API.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_keyence__rs232__interface_a67984df4c8e54eff602f0cb174069e3d}\label{class_keyence__rs232__interface_a67984df4c8e54eff602f0cb174069e3d}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!getValueMultipleOutputHead@{getValueMultipleOutputHead}}
+\index{getValueMultipleOutputHead@{getValueMultipleOutputHead}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{getValueMultipleOutputHead()}{getValueMultipleOutputHead()}}
+{\footnotesize\ttfamily double $\ast$ Keyence\+\_\+rs232\+\_\+interface\+::get\+Value\+Multiple\+Output\+Head (\begin{DoxyParamCaption}\item[{String}]{Heads\+Array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_keyence__base_a6a99db9e73c0697f09be9a6a39e3e515}{Keyence\+\_\+base}}.
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8cpp_source_l00139}{139}} of file \mbox{\hyperlink{_keyence___a_p_i_8cpp_source}{Keyence\+\_\+\+API.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_keyence__rs232__interface_a67984df4c8e54eff602f0cb174069e3d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_keyence__rs232__interface_ad2606a20f587944928d8cadef8505af3}\label{class_keyence__rs232__interface_ad2606a20f587944928d8cadef8505af3}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!getValueOutputHeadAll@{getValueOutputHeadAll}}
+\index{getValueOutputHeadAll@{getValueOutputHeadAll}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{getValueOutputHeadAll()}{getValueOutputHeadAll()}}
+{\footnotesize\ttfamily double $\ast$ Keyence\+\_\+rs232\+\_\+interface\+::get\+Value\+Output\+Head\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_keyence__base_acb7f8b41341c1e71e89c81c4481212fc}{Keyence\+\_\+base}}.
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8cpp_source_l00202}{202}} of file \mbox{\hyperlink{_keyence___a_p_i_8cpp_source}{Keyence\+\_\+\+API.\+cpp}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_keyence__rs232__interface_ad2606a20f587944928d8cadef8505af3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_keyence__rs232__interface_a94a9b8b38fc656ff6edc2fd7043ce243}\label{class_keyence__rs232__interface_a94a9b8b38fc656ff6edc2fd7043ce243}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!getValueSingleOutputHead@{getValueSingleOutputHead}}
+\index{getValueSingleOutputHead@{getValueSingleOutputHead}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{getValueSingleOutputHead()}{getValueSingleOutputHead()}}
+{\footnotesize\ttfamily double Keyence\+\_\+rs232\+\_\+interface\+::get\+Value\+Single\+Output\+Head (\begin{DoxyParamCaption}\item[{int}]{output\+\_\+head\+\_\+\+Nr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_keyence__base_ae6f70fc4642ba44346a6914bce5e317d}{Keyence\+\_\+base}}.
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8cpp_source_l00080}{80}} of file \mbox{\hyperlink{_keyence___a_p_i_8cpp_source}{Keyence\+\_\+\+API.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_keyence__rs232__interface_a94a9b8b38fc656ff6edc2fd7043ce243_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_keyence__rs232__interface_a3171bb643c8988df2f3195bb67a1392e}\label{class_keyence__rs232__interface_a3171bb643c8988df2f3195bb67a1392e}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!initKeyenceCom@{initKeyenceCom}}
+\index{initKeyenceCom@{initKeyenceCom}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{initKeyenceCom()}{initKeyenceCom()}}
+{\footnotesize\ttfamily void Keyence\+\_\+rs232\+\_\+interface\+::init\+Keyence\+Com (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8cpp_source_l00074}{74}} of file \mbox{\hyperlink{_keyence___a_p_i_8cpp_source}{Keyence\+\_\+\+API.\+cpp}}.
+
+\mbox{\Hypertarget{class_keyence__rs232__interface_a366c821905c00f922a1a7ff86891d68b}\label{class_keyence__rs232__interface_a366c821905c00f922a1a7ff86891d68b}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!setCommunicationMode@{setCommunicationMode}}
+\index{setCommunicationMode@{setCommunicationMode}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{setCommunicationMode()}{setCommunicationMode()}}
+{\footnotesize\ttfamily void Keyence\+\_\+rs232\+\_\+interface\+::set\+Communication\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_keyence__base_aac01671d8d411cd6c9974cbb9830afe1}{Keyence\+\_\+base}}.
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8cpp_source_l00280}{280}} of file \mbox{\hyperlink{_keyence___a_p_i_8cpp_source}{Keyence\+\_\+\+API.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_keyence__rs232__interface_a366c821905c00f922a1a7ff86891d68b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_keyence__rs232__interface_a2b0d0b535e0fb2c9f11ab1fe755f108f}\label{class_keyence__rs232__interface_a2b0d0b535e0fb2c9f11ab1fe755f108f}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!setGeneralMode@{setGeneralMode}}
+\index{setGeneralMode@{setGeneralMode}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{setGeneralMode()}{setGeneralMode()}}
+{\footnotesize\ttfamily void Keyence\+\_\+rs232\+\_\+interface\+::set\+General\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_keyence__base_a7c87aeaf6d28c3444d6358de03028544}{Keyence\+\_\+base}}.
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8cpp_source_l00262}{262}} of file \mbox{\hyperlink{_keyence___a_p_i_8cpp_source}{Keyence\+\_\+\+API.\+cpp}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_keyence__rs232__interface_a2b0d0b535e0fb2c9f11ab1fe755f108f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_keyence__rs232__interface_a5e4e89b0e72492942b3dbfe59d1c4a8d}\label{class_keyence__rs232__interface_a5e4e89b0e72492942b3dbfe59d1c4a8d}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!setSerialBaudrate@{setSerialBaudrate}}
+\index{setSerialBaudrate@{setSerialBaudrate}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{setSerialBaudrate()}{setSerialBaudrate()}}
+{\footnotesize\ttfamily void Keyence\+\_\+rs232\+\_\+interface\+::set\+Serial\+Baudrate (\begin{DoxyParamCaption}\item[{unsigned long}]{baud }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8cpp_source_l00068}{68}} of file \mbox{\hyperlink{_keyence___a_p_i_8cpp_source}{Keyence\+\_\+\+API.\+cpp}}.
+
+\mbox{\Hypertarget{class_keyence__rs232__interface_ad32645333a71b52bad892dfd45b8d930}\label{class_keyence__rs232__interface_ad32645333a71b52bad892dfd45b8d930}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!setSerialHandler@{setSerialHandler}}
+\index{setSerialHandler@{setSerialHandler}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{setSerialHandler()}{setSerialHandler()}}
+{\footnotesize\ttfamily void Keyence\+\_\+rs232\+\_\+interface\+::set\+Serial\+Handler (\begin{DoxyParamCaption}\item[{Hardware\+Serial \&}]{ser\+Handler }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8cpp_source_l00063}{63}} of file \mbox{\hyperlink{_keyence___a_p_i_8cpp_source}{Keyence\+\_\+\+API.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_keyence__rs232__interface_a64dd14bd7eb46191aeda572d048b2b49}\label{class_keyence__rs232__interface_a64dd14bd7eb46191aeda572d048b2b49}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!baudrate@{baudrate}}
+\index{baudrate@{baudrate}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{baudrate}{baudrate}}
+{\footnotesize\ttfamily unsigned long Keyence\+\_\+rs232\+\_\+interface\+::baudrate}
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8h_source_l00141}{141}} of file \mbox{\hyperlink{_keyence___a_p_i_8h_source}{Keyence\+\_\+\+API.\+h}}.
+
+\mbox{\Hypertarget{class_keyence__rs232__interface_afd7e56526e455ebdfae7fbe0aecd6a75}\label{class_keyence__rs232__interface_afd7e56526e455ebdfae7fbe0aecd6a75}} 
+\index{Keyence\_rs232\_interface@{Keyence\_rs232\_interface}!serialHandler@{serialHandler}}
+\index{serialHandler@{serialHandler}!Keyence\_rs232\_interface@{Keyence\_rs232\_interface}}
+\doxysubsubsection{\texorpdfstring{serialHandler}{serialHandler}}
+{\footnotesize\ttfamily Hardware\+Serial$\ast$ Keyence\+\_\+rs232\+\_\+interface\+::serial\+Handler}
+
+
+
+Definition at line \mbox{\hyperlink{_keyence___a_p_i_8h_source_l00140}{140}} of file \mbox{\hyperlink{_keyence___a_p_i_8h_source}{Keyence\+\_\+\+API.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/include/\mbox{\hyperlink{_keyence___a_p_i_8h}{Keyence\+\_\+\+API.\+h}}\item 
+C\+:/\+Users/\+Sami\+Dhiab/\+Theion\+\_\+\+Repos/firm\+\_\+\+Alignment\+\_\+\+Print\+Head/src/\mbox{\hyperlink{_keyence___a_p_i_8cpp}{Keyence\+\_\+\+API.\+cpp}}\end{DoxyCompactItemize}

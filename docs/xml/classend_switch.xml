@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classend_switch" kind="class" language="C++" prot="public">
+    <compoundname>endSwitch</compoundname>
+    <includes refid="_end_switch_8hpp" local="no">EndSwitch.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classend_switch_1af068acae07251502871783ad8b31c88c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool endSwitch::current_state</definition>
+        <argsstring></argsstring>
+        <name>current_state</name>
+        <qualifiedname>endSwitch::current_state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" line="17" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classend_switch_1ae1f7e6d7200feb02820c02708bca01c0" compoundref="_end_switch_8cpp" startline="28" endline="37">get_current_state</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classend_switch_1a4243f95e88d87a8c5d41bdc7b8862fec" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool endSwitch::last_state</definition>
+        <argsstring></argsstring>
+        <name>last_state</name>
+        <qualifiedname>endSwitch::last_state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" line="18" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classend_switch_1a0f7fef40aacacc061e2ef40a86c798c8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool endSwitch::Ispressed</definition>
+        <argsstring></argsstring>
+        <name>Ispressed</name>
+        <qualifiedname>endSwitch::Ispressed</qualifiedname>
+        <initializer>=false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" line="19" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_alignment_1aebf2eaacef3587f39e049941e7bc2a4d" compoundref="_alignment_8cpp" startline="1204" endline="1272">Alignment::MoveHomeAll</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classend_switch_1a63796161305c364c1783bb936d661dea" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int endSwitch::Pin</definition>
+        <argsstring></argsstring>
+        <name>Pin</name>
+        <qualifiedname>endSwitch::Pin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" line="20" column="7" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="classend_switch_1ac38e43effb237b61a1f4b09092b5ac53" compoundref="_end_switch_8cpp" startline="42" endline="71">debounce</referencedby>
+        <referencedby refid="classend_switch_1a8c5f25ad4315e1cb4666131d5cdc1897" compoundref="_end_switch_8cpp" startline="17" endline="21">endSwitch</referencedby>
+        <referencedby refid="classend_switch_1ae1f7e6d7200feb02820c02708bca01c0" compoundref="_end_switch_8cpp" startline="28" endline="37">get_current_state</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classend_switch_1add742dd51c36b16fecc6421341bf1949" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool endSwitch::PressedState</definition>
+        <argsstring></argsstring>
+        <name>PressedState</name>
+        <qualifiedname>endSwitch::PressedState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" line="21" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_alignment_1a5aab206d9d1e56c22b43e42f95014062" compoundref="_alignment_8cpp" startline="380" endline="384">Alignment::checkLimitDownX</referencedby>
+        <referencedby refid="class_alignment_1a9ed6e9c6e5387111a33d892e9406a4f7" compoundref="_alignment_8cpp" startline="385" endline="389">Alignment::checkLimitDownY</referencedby>
+        <referencedby refid="class_alignment_1af0794341994b69753b31b5665ab56c34" compoundref="_alignment_8cpp" startline="390" endline="394">Alignment::checkLimitDownZ</referencedby>
+        <referencedby refid="classend_switch_1a8c5f25ad4315e1cb4666131d5cdc1897" compoundref="_end_switch_8cpp" startline="17" endline="21">endSwitch</referencedby>
+        <referencedby refid="class_alignment_1aebf2eaacef3587f39e049941e7bc2a4d" compoundref="_alignment_8cpp" startline="1204" endline="1272">Alignment::MoveHomeAll</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classend_switch_1a7790627e38691079eda7e8c41b13ef96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>endSwitch::endSwitch</definition>
+        <argsstring>()</argsstring>
+        <name>endSwitch</name>
+        <qualifiedname>endSwitch::endSwitch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" line="22" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classend_switch_1a8c5f25ad4315e1cb4666131d5cdc1897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>endSwitch::endSwitch</definition>
+        <argsstring>(int Pin, bool PressedState)</argsstring>
+        <name>endSwitch</name>
+        <qualifiedname>endSwitch::endSwitch</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>Pin</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>PressedState</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new end Switch::end Switch object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" line="23" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/EndSwitch.cpp" bodystart="17" bodyend="21"/>
+        <references refid="classend_switch_1a63796161305c364c1783bb936d661dea" compoundref="_end_switch_8hpp" startline="20">Pin</references>
+        <references refid="classend_switch_1add742dd51c36b16fecc6421341bf1949" compoundref="_end_switch_8hpp" startline="21">PressedState</references>
+      </memberdef>
+      <memberdef kind="function" id="classend_switch_1ae1f7e6d7200feb02820c02708bca01c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool endSwitch::get_current_state</definition>
+        <argsstring>(bool debounceButton=false)</argsstring>
+        <name>get_current_state</name>
+        <qualifiedname>endSwitch::get_current_state</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>debounceButton</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>get current state </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" line="24" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/EndSwitch.cpp" bodystart="28" bodyend="37"/>
+        <references refid="classend_switch_1af068acae07251502871783ad8b31c88c" compoundref="_end_switch_8hpp" startline="17">current_state</references>
+        <references refid="classend_switch_1ac38e43effb237b61a1f4b09092b5ac53" compoundref="_end_switch_8cpp" startline="42" endline="71">debounce</references>
+        <references refid="classend_switch_1a63796161305c364c1783bb936d661dea" compoundref="_end_switch_8hpp" startline="20">Pin</references>
+        <referencedby refid="class_alignment_1a0973326d2762dd758eb1d7f6740b69f5" compoundref="_alignment_8cpp" startline="332" endline="335">Alignment::getReadingEndstopX</referencedby>
+        <referencedby refid="class_alignment_1a3fd39f62a10172bfd8c63e7cbf5983bd" compoundref="_alignment_8cpp" startline="336" endline="339">Alignment::getReadingEndstopY</referencedby>
+        <referencedby refid="class_alignment_1a54ac0ddea519c9c51c185a03174f643d" compoundref="_alignment_8cpp" startline="340" endline="343">Alignment::getReadingEndstopZ</referencedby>
+        <referencedby refid="class_alignment_1adcc6aceb95f7f9c40463009ea686b25e" compoundref="_alignment_8cpp" startline="136" endline="140">Alignment::isStopButtonPressed</referencedby>
+        <referencedby refid="class_alignment_1aebf2eaacef3587f39e049941e7bc2a4d" compoundref="_alignment_8cpp" startline="1204" endline="1272">Alignment::MoveHomeAll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classend_switch_1ac38e43effb237b61a1f4b09092b5ac53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool endSwitch::debounce</definition>
+        <argsstring>()</argsstring>
+        <name>debounce</name>
+        <qualifiedname>endSwitch::debounce</qualifiedname>
+        <briefdescription>
+<para>debounce a button </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" line="25" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/EndSwitch.cpp" bodystart="42" bodyend="71"/>
+        <references refid="classend_switch_1a63796161305c364c1783bb936d661dea" compoundref="_end_switch_8hpp" startline="20">Pin</references>
+        <referencedby refid="classend_switch_1ae1f7e6d7200feb02820c02708bca01c0" compoundref="_end_switch_8cpp" startline="28" endline="37">get_current_state</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" line="15" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/EndSwitch.hpp" bodystart="15" bodyend="27"/>
+    <listofallmembers>
+      <member refid="classend_switch_1af068acae07251502871783ad8b31c88c" prot="public" virt="non-virtual"><scope>endSwitch</scope><name>current_state</name></member>
+      <member refid="classend_switch_1ac38e43effb237b61a1f4b09092b5ac53" prot="public" virt="non-virtual"><scope>endSwitch</scope><name>debounce</name></member>
+      <member refid="classend_switch_1a7790627e38691079eda7e8c41b13ef96" prot="public" virt="non-virtual"><scope>endSwitch</scope><name>endSwitch</name></member>
+      <member refid="classend_switch_1a8c5f25ad4315e1cb4666131d5cdc1897" prot="public" virt="non-virtual"><scope>endSwitch</scope><name>endSwitch</name></member>
+      <member refid="classend_switch_1ae1f7e6d7200feb02820c02708bca01c0" prot="public" virt="non-virtual"><scope>endSwitch</scope><name>get_current_state</name></member>
+      <member refid="classend_switch_1a0f7fef40aacacc061e2ef40a86c798c8" prot="public" virt="non-virtual"><scope>endSwitch</scope><name>Ispressed</name></member>
+      <member refid="classend_switch_1a4243f95e88d87a8c5d41bdc7b8862fec" prot="public" virt="non-virtual"><scope>endSwitch</scope><name>last_state</name></member>
+      <member refid="classend_switch_1a63796161305c364c1783bb936d661dea" prot="public" virt="non-virtual"><scope>endSwitch</scope><name>Pin</name></member>
+      <member refid="classend_switch_1add742dd51c36b16fecc6421341bf1949" prot="public" virt="non-virtual"><scope>endSwitch</scope><name>PressedState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

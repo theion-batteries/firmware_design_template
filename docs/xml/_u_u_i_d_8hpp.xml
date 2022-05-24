@@ -1,0 +1,293 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_u_u_i_d_8hpp" kind="file" language="C++">
+    <compoundname>UUID.hpp</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes local="no">EEPROM.h</includes>
+    <includedby refid="_cmd_pattern_classes_8h" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/UUID.hpp</label>
+        <link refid="_u_u_i_d_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EEPROM.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <link refid="_cmd_pattern_callbacks_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</label>
+        <link refid="_cmd_pattern_classes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <link refid="_com_handler_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <link refid="_globals_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/UUID.hpp</label>
+        <link refid="_u_u_i_d_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <link refid="_cmd_pattern_callbacks_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <link refid="_com_handler_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <link refid="_globals_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_u_u_i_d___m_a_n_a_g_e_r" prot="public">UUID_MANAGER</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_u_u_i_d_8hpp_1a6b7a4c8904c6ad58c22c650a72229024" prot="public" static="no">
+        <name>using_serial_stream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/UUID.hpp" line="13" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/UUID.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>using_iostream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_u_u_i_d_8hpp_1a6b7a4c8904c6ad58c22c650a72229024" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>using_iostream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>use<sp/>to<sp/>test<sp/>on<sp/>pc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>test<sp/>direct<sp/>with<sp/>serial.print</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#include<sp/>&lt;EEPROM.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_u_u_i_d___m_a_n_a_g_e_r" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_u_u_i_d___m_a_n_a_g_e_r" kindref="compound">UUID_MANAGER</ref><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>a<sp/>pointer<sp/>to<sp/>which<sp/>id<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">String*<sp/>ObjUUID;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>id<sp/>format:<sp/>firmware_version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/>String<sp/>default_id=</highlight><highlight class="stringliteral">&quot;def_v0.1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/>String<sp/>temp_id=</highlight><highlight class="stringliteral">&quot;temp_v0.1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/>String<sp/>sf6_id<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;sf6_v0.1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/>String<sp/>align_id<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;align_v0.1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/>String<sp/>print_id=<sp/></highlight><highlight class="stringliteral">&quot;print_v0.1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/>String<sp/>cnt_id=<sp/></highlight><highlight class="stringliteral">&quot;cnt_v0.1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/>String<sp/>delta_id<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;delta_v0.1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="class_u_u_i_d___m_a_n_a_g_e_r_1acb4079edb67f5dc2a322ac20a66a6e92" refkind="member"><highlight class="normal"><ref refid="class_u_u_i_d___m_a_n_a_g_e_r_1acb4079edb67f5dc2a322ac20a66a6e92" kindref="member">UUID_MANAGER</ref>(String<sp/>WhichId)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(WhichId==</highlight><highlight class="stringliteral">&quot;align&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ObjUUID=&amp;align_id;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(WhichId==</highlight><highlight class="stringliteral">&quot;sf6&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ObjUUID=&amp;sf6_id;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(WhichId==</highlight><highlight class="stringliteral">&quot;print&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ObjUUID=&amp;print_id;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(WhichId==</highlight><highlight class="stringliteral">&quot;cnt&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ObjUUID=&amp;cnt_id;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(WhichId==</highlight><highlight class="stringliteral">&quot;temp&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ObjUUID=&amp;temp_id;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(WhichId==</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ObjUUID=&amp;default_id;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/>this-&gt;<ref refid="class_u_u_i_d___m_a_n_a_g_e_r_1a00e362282bf1d2abf326d79caaa451ad" kindref="member">_checkIfUUIDisWritten</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81" refid="class_u_u_i_d___m_a_n_a_g_e_r_1af23ca44819380f784eeaf2dee80469cb" refkind="member"><highlight class="normal">String<sp/><ref refid="class_u_u_i_d___m_a_n_a_g_e_r_1af23ca44819380f784eeaf2dee80469cb" kindref="member">get_UUID_EEPROM</ref>(){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*ObjUUID=_readStringFromEEPROM(0);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*ObjUUID;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89" refid="class_u_u_i_d___m_a_n_a_g_e_r_1a0c5cd5ccc23f6c7eb99950a651f91713" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_u_i_d___m_a_n_a_g_e_r_1a0c5cd5ccc23f6c7eb99950a651f91713" kindref="member">set_UUID_EEPROM</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/>new_uuid){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/>*ObjUUID=new_uuid;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/>_writeStringToEEPROM(0,<sp/>new_uuid);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99" refid="class_u_u_i_d___m_a_n_a_g_e_r_1a00e362282bf1d2abf326d79caaa451ad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_u_i_d___m_a_n_a_g_e_r_1a00e362282bf1d2abf326d79caaa451ad" kindref="member">_checkIfUUIDisWritten</ref>(){</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*ObjUUID==_readStringFromEEPROM(0))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>_writeStringToEEPROM(0,*ObjUUID);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_writeStringToEEPROM(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addrOffset,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/>&amp;strToWrite)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>strToWrite.length();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>EEPROM.write(addrOffset,<sp/>len);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>len;<sp/>i++)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>EEPROM.write(addrOffset<sp/>+<sp/>1<sp/>+<sp/>i,<sp/>strToWrite[i]);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">String<sp/>_readStringFromEEPROM(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addrOffset)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newStrLen<sp/>=<sp/>EEPROM.read(addrOffset);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data[newStrLen<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>newStrLen;<sp/>i++)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>data[i]<sp/>=<sp/>EEPROM.read(addrOffset<sp/>+<sp/>1<sp/>+<sp/>i);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>data[newStrLen]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>!!!<sp/>NOTE<sp/>!!!<sp/>Remove<sp/>the<sp/>space<sp/>between<sp/>the<sp/>slash<sp/>&quot;/&quot;<sp/>and<sp/>&quot;0&quot;<sp/>(I&apos;ve<sp/>added<sp/>a<sp/>space<sp/>because<sp/>otherwise<sp/>there<sp/>is<sp/>a<sp/>display<sp/>bug)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>String(data);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="comment">//<sp/>getter<sp/>methods<sp/>to<sp/>return<sp/>private<sp/>attributes</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">String<sp/>_get_default_id(){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>get_temp_id(){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;getting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(default_id);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>default_id;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">String<sp/>_get_temp_id(){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>get_temp_id(){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;getting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(temp_id);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>temp_id;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">String<sp/>_get_align_id(){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>get_temp_id(){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;getting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(align_id);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>align_id;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">String<sp/>_get_sf6_id(){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>get_temp_id(){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;getting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(sf6_id);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sf6_id;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">String<sp/>_get_delta_id(){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>get_temp_id(){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;getting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(delta_id);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>delta_id;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">String<sp/>_get_cnt_id(){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>get_temp_id(){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;getting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(cnt_id);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cnt_id;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">String<sp/>_get_print_id(){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>get_temp_id(){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;getting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(print_id);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>print_id;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="comment">//<sp/>setter<sp/>methods<sp/>to<sp/>set<sp/>private<sp/>attributes</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_set_default_id(String<sp/>new_id){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>set_temp_id(){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;setting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(default_id);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/>default_id=new_id;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_set_temp_id(String<sp/>new_id){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>set_temp_id(String<sp/>new_id){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;setting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(temp_id);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/>temp_id=new_id;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_set_align_id(String<sp/>new_id){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>set_temp_id(String<sp/>new_id){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;setting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(align_id);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/>align_id=new_id;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_set_sf6_id(String<sp/>new_id){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>set_temp_id(String<sp/>new_id){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;setting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(sf6_id);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/>sf6_id=new_id;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_set_delta_id(String<sp/>new_id){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>set_temp_id(String<sp/>new_id){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;setting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(delta_id);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/>delta_id=new_id;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_set_cnt_id(String<sp/>new_id){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>set_temp_id(String<sp/>new_id){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;setting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(cnt_id);</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/>cnt_id=new_id;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_set_print_id(String<sp/>new_id){<sp/></highlight><highlight class="comment">//<sp/>use<sp/>auto<sp/>if<sp/>confused<sp/>:<sp/>auto<sp/>set_temp_id(String<sp/>new_id){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#ifdef<sp/>using_serial_stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;setting<sp/>UUID&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println(print_id);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/>#endif<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/>print_id=new_id;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/UUID.hpp"/>
+  </compounddef>
+</doxygen>

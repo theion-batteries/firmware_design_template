@@ -1,0 +1,121 @@
+.TH "Keyence_rs232_interface" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Keyence_rs232_interface
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Keyence_API\&.h>\fP
+.PP
+Inherits \fBKeyence_base\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBKeyence_rs232_interface\fP (HardwareSerial &serHandler, unsigned long baud)"
+.br
+.ti -1c
+.RI "void \fBsetSerialHandler\fP (HardwareSerial &serHandler)"
+.br
+.ti -1c
+.RI "void \fBsetSerialBaudrate\fP (unsigned long baud)"
+.br
+.ti -1c
+.RI "void \fBinitKeyenceCom\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetValueSingleOutputHead\fP (int output_head_Nr) override"
+.br
+.ti -1c
+.RI "double * \fBgetValueMultipleOutputHead\fP (String \fBHeadsArray\fP) override"
+.br
+.ti -1c
+.RI "double * \fBgetValueOutputHeadAll\fP () override"
+.br
+.ti -1c
+.RI "void \fBsetGeneralMode\fP () override"
+.br
+.ti -1c
+.RI "void \fBsetCommunicationMode\fP () override"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "HardwareSerial * \fBserialHandler\fP"
+.br
+.ti -1c
+.RI "unsigned long \fBbaudrate\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Definition at line \fB137\fP of file \fBKeyence_API\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Keyence_rs232_interface::Keyence_rs232_interface (HardwareSerial & serHandler = \fC\fBKEYENCE_SERIAL_HANDLER\fP\fP, unsigned long baud = \fC\fBKEYENCE_SERIAL_BAUDRATE\fP\fP)"
+
+.PP
+Definition at line \fB56\fP of file \fBKeyence_API\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "double * Keyence_rs232_interface::getValueMultipleOutputHead (String HeadsArray)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBKeyence_base\fP\&.
+.PP
+Definition at line \fB139\fP of file \fBKeyence_API\&.cpp\fP\&.
+.SS "double * Keyence_rs232_interface::getValueOutputHeadAll ()\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBKeyence_base\fP\&.
+.PP
+Definition at line \fB202\fP of file \fBKeyence_API\&.cpp\fP\&.
+.SS "double Keyence_rs232_interface::getValueSingleOutputHead (int output_head_Nr)\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBKeyence_base\fP\&.
+.PP
+Definition at line \fB80\fP of file \fBKeyence_API\&.cpp\fP\&.
+.SS "void Keyence_rs232_interface::initKeyenceCom ()"
+
+.PP
+Definition at line \fB74\fP of file \fBKeyence_API\&.cpp\fP\&.
+.SS "void Keyence_rs232_interface::setCommunicationMode ()\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBKeyence_base\fP\&.
+.PP
+Definition at line \fB280\fP of file \fBKeyence_API\&.cpp\fP\&.
+.SS "void Keyence_rs232_interface::setGeneralMode ()\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBKeyence_base\fP\&.
+.PP
+Definition at line \fB262\fP of file \fBKeyence_API\&.cpp\fP\&.
+.SS "void Keyence_rs232_interface::setSerialBaudrate (unsigned long baud)"
+
+.PP
+Definition at line \fB68\fP of file \fBKeyence_API\&.cpp\fP\&.
+.SS "void Keyence_rs232_interface::setSerialHandler (HardwareSerial & serHandler)"
+
+.PP
+Definition at line \fB63\fP of file \fBKeyence_API\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "unsigned long Keyence_rs232_interface::baudrate"
+
+.PP
+Definition at line \fB141\fP of file \fBKeyence_API\&.h\fP\&.
+.SS "HardwareSerial* Keyence_rs232_interface::serialHandler"
+
+.PP
+Definition at line \fB140\fP of file \fBKeyence_API\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

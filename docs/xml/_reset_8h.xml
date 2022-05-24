@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_reset_8h" kind="file" language="C++">
+    <compoundname>Reset.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includes refid="_end_switch_8hpp" local="yes">EndSwitch.hpp</includes>
+    <includedby refid="_cmd_pattern_classes_8h" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="4">
+        <label>ArduinoSTL.h</label>
+      </node>
+      <node id="3">
+        <label>EndSwitch.hpp</label>
+        <link refid="_end_switch_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Reset.h</label>
+        <link refid="_reset_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <link refid="_cmd_pattern_callbacks_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</label>
+        <link refid="_cmd_pattern_classes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <link refid="_com_handler_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <link refid="_globals_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Reset.h</label>
+        <link refid="_reset_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <link refid="_cmd_pattern_callbacks_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <link refid="_com_handler_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <link refid="_globals_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_reset_hardware" prot="public">ResetHardware</innerclass>
+    <briefdescription>
+<para>class reset for hardware/software reset </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>sami dhiab (<ulink url="mailto:you@domain.com">you@domain.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2022-05-16</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2022 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_end_switch_8hpp" kindref="compound">EndSwitch.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_reset_hardware" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_reset_hardware" kindref="compound">ResetHardware</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resetOutPin;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">void<sp/>(*resetFunc)<sp/>(void)<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//declare<sp/>reset<sp/>function<sp/>@<sp/>address<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="class_reset_hardware_1a6379411079fffb3c6c8d39d627ab41dd" refkind="member"><highlight class="normal"><ref refid="class_reset_hardware_1a6379411079fffb3c6c8d39d627ab41dd" kindref="member">ResetHardware</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>resetOutPin):resetOutPin(resetOutPin){}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_reset_hardware_1ab17c15af60ec444ac675d81a76574ea8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_reset_hardware_1ab17c15af60ec444ac675d81a76574ea8" kindref="member">hard_reset</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(resetOutPin,OUTPUT);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32" refid="class_reset_hardware_1a2f521d08146215d48b3945b5e1fb4332" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_reset_hardware_1a2f521d08146215d48b3945b5e1fb4332" kindref="member">soft_reset</ref>()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">resetFunc();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Reset.h"/>
+  </compounddef>
+</doxygen>

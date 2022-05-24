@@ -1,0 +1,101 @@
+.TH "DistanceSensor" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+DistanceSensor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <DistanceSensor\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBDistanceSensor\fP (int OutputHeadNumber)"
+.br
+.ti -1c
+.RI "void \fBsetKeyenceCom\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetCurrentDistance\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintDistance\fP (float val)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBPin\fP"
+.br
+.ti -1c
+.RI "bool \fBstate\fP"
+.br
+.ti -1c
+.RI "double \fBcurrentDistance\fP"
+.br
+.ti -1c
+.RI "\fBKeyence_rs232_interface\fP * \fBIkeyenceRS232\fP = new \fBKeyence_rs232_interface\fP(\fBKEYENCE_SERIAL_HANDLER\fP,\fBKEYENCE_SERIAL_BAUDRATE\fP)"
+.br
+.ti -1c
+.RI "int \fBHeadNum\fP"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static \fBKeyence_base\fP * \fBKbase\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB14\fP of file \fBDistanceSensor\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "DistanceSensor::DistanceSensor (int OutputHeadNumber)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "double DistanceSensor::getCurrentDistance ()"
+
+.PP
+Definition at line \fB44\fP of file \fBDistanceSensor\&.cpp\fP\&.
+.SS "void DistanceSensor::printDistance (float val)"
+
+.PP
+Definition at line \fB70\fP of file \fBDistanceSensor\&.cpp\fP\&.
+.SS "void DistanceSensor::setKeyenceCom ()"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "double DistanceSensor::currentDistance"
+
+.PP
+Definition at line \fB19\fP of file \fBDistanceSensor\&.hpp\fP\&.
+.SS "int DistanceSensor::HeadNum"
+
+.PP
+Definition at line \fB27\fP of file \fBDistanceSensor\&.hpp\fP\&.
+.SS "\fBKeyence_rs232_interface\fP* DistanceSensor::IkeyenceRS232 = new \fBKeyence_rs232_interface\fP(\fBKEYENCE_SERIAL_HANDLER\fP,\fBKEYENCE_SERIAL_BAUDRATE\fP)"
+
+.PP
+Definition at line \fB26\fP of file \fBDistanceSensor\&.hpp\fP\&.
+.SS "\fBKeyence_base\fP* DistanceSensor::Kbase\fC [static]\fP"
+
+.PP
+Definition at line \fB28\fP of file \fBDistanceSensor\&.hpp\fP\&.
+.SS "int DistanceSensor::Pin"
+
+.PP
+Definition at line \fB17\fP of file \fBDistanceSensor\&.hpp\fP\&.
+.SS "bool DistanceSensor::state"
+
+.PP
+Definition at line \fB18\fP of file \fBDistanceSensor\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

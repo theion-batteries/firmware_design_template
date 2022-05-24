@@ -1,0 +1,302 @@
+.TH "C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h \- include declarations for commands classes  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'CmdParser\&.hpp'\fP
+.br
+\fC#include 'CmdPatternClasses\&.h'\fP
+.br
+\fC#include 'CmdBuffer\&.hpp'\fP
+.br
+\fC#include 'CmdCallback\&.hpp'\fP
+.br
+\fC#include 'stack'\fP
+.br
+\fC#include <memory>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBMotorGetCmdHandler\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBCmdCallback\fP< 64 > \fBcmdCallback\fP"
+.br
+.RI "define global variables: need to be encapsulated later "
+.ti -1c
+.RI "\fBCmdBuffer\fP< 64 > \fBmyBuffer\fP"
+.br
+.ti -1c
+.RI "\fBCmdParser\fP \fBmyParser\fP"
+.br
+.ti -1c
+.RI "\fBNema8\fP \fBM_X\fP"
+.br
+.ti -1c
+.RI "\fBNema8\fP \fBM_Y\fP"
+.br
+.ti -1c
+.RI "\fBNema8\fP \fBM_Z\fP"
+.br
+.ti -1c
+.RI "\fBNema8\fP \fBM_PH\fP"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP \fBES_x\fP"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP \fBES_y\fP"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP \fBES_z\fP"
+.br
+.ti -1c
+.RI "\fBendSwitch\fP \fBES_Stop\fP"
+.br
+.ti -1c
+.RI "\fBDistanceSensor\fP \fBDS_x\fP"
+.br
+.ti -1c
+.RI "\fBDistanceSensor\fP \fBDS_y\fP"
+.br
+.ti -1c
+.RI "\fBDistanceSensor\fP \fBDS_z\fP"
+.br
+.ti -1c
+.RI "\fBlightBarrier\fP \fBLB_x\fP"
+.br
+.ti -1c
+.RI "\fBlightBarrier\fP \fBLB_y\fP"
+.br
+.ti -1c
+.RI "\fBlightBarrier\fP \fBLB_z\fP"
+.br
+.ti -1c
+.RI "\fBAlignment\fP \fBAlignObj\fP"
+.br
+.ti -1c
+.RI "\fBUUID_MANAGER\fP \fBAlignId\fP"
+.br
+.ti -1c
+.RI "\fBResetHardware\fP \fBresetObj\fP"
+.br
+.ti -1c
+.RI "\fBSleepHardware\fP \fBsleepObj\fP"
+.br
+.ti -1c
+.RI "char \fBStart\fP []"
+.br
+.ti -1c
+.RI "char \fBQuit\fP []"
+.br
+.ti -1c
+.RI "char \fBSet\fP []"
+.br
+.ti -1c
+.RI "char \fBGet\fP []"
+.br
+.ti -1c
+.RI "char \fBUndo\fP []"
+.br
+.ti -1c
+.RI "char \fBMove\fP []"
+.br
+.ti -1c
+.RI "char \fBReset\fP []"
+.br
+.ti -1c
+.RI "char \fBStop\fP []"
+.br
+.ti -1c
+.RI "char \fBSleep\fP []"
+.br
+.ti -1c
+.RI "char \fBHelp\fP []"
+.br
+.ti -1c
+.RI "char \fBCalibrate\fP []"
+.br
+.ti -1c
+.RI "char \fBRotate\fP []"
+.br
+.ti -1c
+.RI "char \fBTest1\fP []"
+.br
+.ti -1c
+.RI "char \fBTest2\fP []"
+.br
+.ti -1c
+.RI "std::stack< \fBICommand\fP * > \fBCmdStack\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBICommand\fP * > \fBCmdDeleter\fP"
+.br
+.ti -1c
+.RI "std::stack< \fBInvoker\fP > \fBInvokerStack\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+include declarations for commands classes 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+your name (you@domain.com) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2022-05-18
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2022 
+.RE
+.PP
+
+.PP
+Definition in file \fBGlobals\&.h\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBUUID_MANAGER\fP AlignId\fC [extern]\fP"
+
+.SS "\fBAlignment\fP AlignObj\fC [extern]\fP"
+
+.SS "char Calibrate[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB50\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBCmdCallback\fP<64> cmdCallback\fC [extern]\fP"
+
+.PP
+define global variables: need to be encapsulated later 
+.PP
+Definition at line \fB13\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "std::vector<\fBICommand\fP*> CmdDeleter\fC [extern]\fP"
+
+.PP
+Definition at line \fB56\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "std::stack<\fBICommand\fP*> CmdStack\fC [extern]\fP"
+
+.PP
+Definition at line \fB55\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBDistanceSensor\fP DS_x\fC [extern]\fP"
+
+.SS "\fBDistanceSensor\fP DS_y\fC [extern]\fP"
+
+.SS "\fBDistanceSensor\fP DS_z\fC [extern]\fP"
+
+.SS "\fBendSwitch\fP ES_Stop\fC [extern]\fP"
+
+.SS "\fBendSwitch\fP ES_x\fC [extern]\fP"
+
+.SS "\fBendSwitch\fP ES_y\fC [extern]\fP"
+
+.SS "\fBendSwitch\fP ES_z\fC [extern]\fP"
+
+.SS "char Get[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB43\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Help[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB49\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "std::stack<\fBInvoker\fP> InvokerStack\fC [extern]\fP"
+
+.PP
+Definition at line \fB57\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBlightBarrier\fP LB_x\fC [extern]\fP"
+
+.SS "\fBlightBarrier\fP LB_y\fC [extern]\fP"
+
+.SS "\fBlightBarrier\fP LB_z\fC [extern]\fP"
+
+.SS "\fBNema8\fP M_PH\fC [extern]\fP"
+
+.SS "\fBAlignment\fP \fBAlignObj\fP & M_X\fC [extern]\fP"
+
+.PP
+Definition at line \fB36\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBNema8\fP M_Y\fC [extern]\fP"
+
+.SS "\fBNema8\fP M_Z\fC [extern]\fP"
+
+.SS "char Move[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB45\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBCmdBuffer\fP<64> myBuffer\fC [extern]\fP"
+
+.PP
+Definition at line \fB14\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBCmdParser\fP myParser\fC [extern]\fP"
+
+.PP
+Definition at line \fB15\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Quit[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB41\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Reset[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB46\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBResetHardware\fP resetObj\fC [extern]\fP"
+
+.SS "char Rotate[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB51\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Set[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB42\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Sleep[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB48\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "\fBSleepHardware\fP sleepObj\fC [extern]\fP"
+
+.SS "char Start[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB40\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Stop[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB47\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Test1[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB52\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Test2[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB53\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "char Undo[]\fC [extern]\fP"
+
+.PP
+Definition at line \fB44\fP of file \fBGlobals\&.cpp\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

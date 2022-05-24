@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classget_sensor_value_cmd" kind="class" language="C++" prot="public">
+    <compoundname>getSensorValueCmd</compoundname>
+    <basecompoundref refid="class_i_command" prot="public" virt="non-virtual">ICommand</basecompoundref>
+    <includes refid="_cmd_pattern_classes_8h" local="no">CmdPatternClasses.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classget_sensor_value_cmd_1a225a0f402c7084b189a98546239e09d1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref> &amp;</type>
+        <definition>DistanceSensor&amp; getSensorValueCmd::S</definition>
+        <argsstring></argsstring>
+        <name>S</name>
+        <qualifiedname>getSensorValueCmd::S</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="348" column="17" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classget_sensor_value_cmd_1a050c1b8cdba8867c664850fed792082e" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double getSensorValueCmd::oldVal</definition>
+        <argsstring></argsstring>
+        <name>oldVal</name>
+        <qualifiedname>getSensorValueCmd::oldVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="349" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classget_sensor_value_cmd_1aadd8f21590d3b1b3f5175c84906387f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>getSensorValueCmd::getSensorValueCmd</definition>
+        <argsstring>(DistanceSensor &amp;Sensor)</argsstring>
+        <name>getSensorValueCmd</name>
+        <qualifiedname>getSensorValueCmd::getSensorValueCmd</qualifiedname>
+        <param>
+          <type><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref> &amp;</type>
+          <declname>Sensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="351" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="351" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="classget_sensor_value_cmd_1a56dd54d09b57a0901d731a9cc5c54676" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getSensorValueCmd::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>getSensorValueCmd::execute</qualifiedname>
+        <reimplements refid="class_i_command_1ace81beb0beea968f876f292446bf1120">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="352" column="17" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="352" bodyend="355"/>
+        <references refid="class_distance_sensor_1a1b5434dd7b12183ded0962f6e42a8f8d" compoundref="_distance_sensor_8cpp" startline="44" endline="69">DistanceSensor::getCurrentDistance</references>
+      </memberdef>
+      <memberdef kind="function" id="classget_sensor_value_cmd_1a686b0c587e070f35000b5e86c88e2431" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void getSensorValueCmd::undo</definition>
+        <argsstring>()</argsstring>
+        <name>undo</name>
+        <qualifiedname>getSensorValueCmd::undo</qualifiedname>
+        <reimplements refid="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78">undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="356" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="356" bodyend="358"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>getSensorValueCmd</label>
+        <link refid="classget_sensor_value_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>getSensorValueCmd</label>
+        <link refid="classget_sensor_value_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="346" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="346" bodyend="359"/>
+    <listofallmembers>
+      <member refid="classget_sensor_value_cmd_1a56dd54d09b57a0901d731a9cc5c54676" prot="public" virt="virtual"><scope>getSensorValueCmd</scope><name>execute</name></member>
+      <member refid="classget_sensor_value_cmd_1aadd8f21590d3b1b3f5175c84906387f5" prot="public" virt="non-virtual"><scope>getSensorValueCmd</scope><name>getSensorValueCmd</name></member>
+      <member refid="classget_sensor_value_cmd_1a050c1b8cdba8867c664850fed792082e" prot="private" virt="non-virtual"><scope>getSensorValueCmd</scope><name>oldVal</name></member>
+      <member refid="classget_sensor_value_cmd_1a225a0f402c7084b189a98546239e09d1" prot="private" virt="non-virtual"><scope>getSensorValueCmd</scope><name>S</name></member>
+      <member refid="classget_sensor_value_cmd_1a686b0c587e070f35000b5e86c88e2431" prot="public" virt="virtual"><scope>getSensorValueCmd</scope><name>undo</name></member>
+      <member refid="class_i_command_1a0e0226af93b945e84b58405e9d5343b1" prot="public" virt="virtual"><scope>getSensorValueCmd</scope><name>~ICommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

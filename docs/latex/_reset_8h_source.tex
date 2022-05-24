@@ -1,0 +1,29 @@
+\hypertarget{_reset_8h_source}{}\doxysection{Reset.\+h}
+\label{_reset_8h_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/Reset.h@{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/Reset.h}}
+\mbox{\hyperlink{_reset_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00011}00011 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00012}00012 \textcolor{preprocessor}{\#include "{}Arduino.h"{}}}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00013}00013 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_end_switch_8hpp}{EndSwitch.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00019}\mbox{\hyperlink{class_reset_hardware}{00019}} \textcolor{keyword}{class }\mbox{\hyperlink{class_reset_hardware}{ResetHardware}}}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00020}00020 \{}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00021}00021 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00022}00022 \textcolor{keywordtype}{int} resetOutPin;}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00023}00023 void (*resetFunc) (void) = 0; \textcolor{comment}{//declare reset function @ address 0}}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00025}00025 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00026}\mbox{\hyperlink{class_reset_hardware_a6379411079fffb3c6c8d39d627ab41dd}{00026}} \mbox{\hyperlink{class_reset_hardware_a6379411079fffb3c6c8d39d627ab41dd}{ResetHardware}}(\textcolor{keywordtype}{int} resetOutPin):resetOutPin(resetOutPin)\{\}}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00028}\mbox{\hyperlink{class_reset_hardware_ab17c15af60ec444ac675d81a76574ea8}{00028}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_reset_hardware_ab17c15af60ec444ac675d81a76574ea8}{hard\_reset}}()}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00029}00029 \{}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00030}00030     pinMode(resetOutPin,OUTPUT);}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00032}\mbox{\hyperlink{class_reset_hardware_a2f521d08146215d48b3945b5e1fb4332}{00032}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_reset_hardware_a2f521d08146215d48b3945b5e1fb4332}{soft\_reset}}()}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00033}00033 \{}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00034}00034 resetFunc();}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_reset_8h_source_l00037}00037 \};}
+
+\end{DoxyCode}

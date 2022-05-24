@@ -1,0 +1,107 @@
+.TH "lightBarrier" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lightBarrier
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <light_barrier\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBlightBarrier\fP ()"
+.br
+.ti -1c
+.RI "\fBlightBarrier\fP (int \fBPin\fP, bool \fBTraversedState\fP)"
+.br
+.RI "Construct a new \fBlightBarrier::lightBarrier\fP object\&. "
+.ti -1c
+.RI "bool \fBget_current_state\fP ()"
+.br
+.RI "get current state "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcurrent_state\fP"
+.br
+.ti -1c
+.RI "bool \fBlast_state\fP"
+.br
+.ti -1c
+.RI "bool \fBIsTraversed\fP =false"
+.br
+.ti -1c
+.RI "int \fBPin\fP"
+.br
+.ti -1c
+.RI "bool \fBTraversedState\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB14\fP of file \fBlight_barrier\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "lightBarrier::lightBarrier ()"
+
+.SS "lightBarrier::lightBarrier (int Pin, bool TraversedState)"
+
+.PP
+Construct a new \fBlightBarrier::lightBarrier\fP object\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIPin\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB17\fP of file \fBlight_barrier\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "bool lightBarrier::get_current_state ()"
+
+.PP
+get current state 
+.PP
+\fBReturns\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.PP
+Definition at line \fB28\fP of file \fBlight_barrier\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool lightBarrier::current_state"
+
+.PP
+Definition at line \fB16\fP of file \fBlight_barrier\&.hpp\fP\&.
+.SS "bool lightBarrier::IsTraversed =false"
+
+.PP
+Definition at line \fB18\fP of file \fBlight_barrier\&.hpp\fP\&.
+.SS "bool lightBarrier::last_state"
+
+.PP
+Definition at line \fB17\fP of file \fBlight_barrier\&.hpp\fP\&.
+.SS "int lightBarrier::Pin"
+
+.PP
+Definition at line \fB19\fP of file \fBlight_barrier\&.hpp\fP\&.
+.SS "bool lightBarrier::TraversedState"
+
+.PP
+Definition at line \fB20\fP of file \fBlight_barrier\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Firmware Design Template from the source code\&.

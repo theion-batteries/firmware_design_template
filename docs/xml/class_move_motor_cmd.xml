@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_move_motor_cmd" kind="class" language="C++" prot="public">
+    <compoundname>MoveMotorCmd</compoundname>
+    <basecompoundref refid="class_i_command" prot="public" virt="non-virtual">ICommand</basecompoundref>
+    <includes refid="_cmd_pattern_classes_8h" local="no">CmdPatternClasses.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_move_motor_cmd_1adf973aaa7105ac7fe66999875c5ddc06" prot="private" static="no" mutable="no">
+        <type><ref refid="class_nema8" kindref="compound">Nema8</ref> &amp;</type>
+        <definition>Nema8&amp; MoveMotorCmd::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <qualifiedname>MoveMotorCmd::M</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="228" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_move_motor_cmd_1ab083368737c39086e2d65a2957f7fdfd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MoveMotorCmd::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <qualifiedname>MoveMotorCmd::val</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="229" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_move_motor_cmd_1a8d573f786fee151d401bdbd0080bc2d3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MoveMotorCmd::old</definition>
+        <argsstring></argsstring>
+        <name>old</name>
+        <qualifiedname>MoveMotorCmd::old</qualifiedname>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="230" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_move_motor_cmd_1ac5df7df07c177de08c224ccf226818f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MoveMotorCmd::MoveMotorCmd</definition>
+        <argsstring>(Nema8 &amp;motor, int val)</argsstring>
+        <name>MoveMotorCmd</name>
+        <qualifiedname>MoveMotorCmd::MoveMotorCmd</qualifiedname>
+        <param>
+          <type><ref refid="class_nema8" kindref="compound">Nema8</ref> &amp;</type>
+          <declname>motor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="232" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="232" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_move_motor_cmd_1a2862a99dc68be06d7dbd6a05e0ac5239" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MoveMotorCmd::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>MoveMotorCmd::execute</qualifiedname>
+        <reimplements refid="class_i_command_1ace81beb0beea968f876f292446bf1120">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="233" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_move_motor_cmd_1a94becc0779e3f1b3e36eba0044cc7cf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MoveMotorCmd::undo</definition>
+        <argsstring>()</argsstring>
+        <name>undo</name>
+        <qualifiedname>MoveMotorCmd::undo</qualifiedname>
+        <reimplements refid="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78">undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="237" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="237" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>MoveMotorCmd</label>
+        <link refid="class_move_motor_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>MoveMotorCmd</label>
+        <link refid="class_move_motor_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="226" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="226" bodyend="240"/>
+    <listofallmembers>
+      <member refid="class_move_motor_cmd_1a2862a99dc68be06d7dbd6a05e0ac5239" prot="public" virt="virtual"><scope>MoveMotorCmd</scope><name>execute</name></member>
+      <member refid="class_move_motor_cmd_1adf973aaa7105ac7fe66999875c5ddc06" prot="private" virt="non-virtual"><scope>MoveMotorCmd</scope><name>M</name></member>
+      <member refid="class_move_motor_cmd_1ac5df7df07c177de08c224ccf226818f5" prot="public" virt="non-virtual"><scope>MoveMotorCmd</scope><name>MoveMotorCmd</name></member>
+      <member refid="class_move_motor_cmd_1a8d573f786fee151d401bdbd0080bc2d3" prot="private" virt="non-virtual"><scope>MoveMotorCmd</scope><name>old</name></member>
+      <member refid="class_move_motor_cmd_1a94becc0779e3f1b3e36eba0044cc7cf0" prot="public" virt="virtual"><scope>MoveMotorCmd</scope><name>undo</name></member>
+      <member refid="class_move_motor_cmd_1ab083368737c39086e2d65a2957f7fdfd" prot="private" virt="non-virtual"><scope>MoveMotorCmd</scope><name>val</name></member>
+      <member refid="class_i_command_1a0e0226af93b945e84b58405e9d5343b1" prot="public" virt="virtual"><scope>MoveMotorCmd</scope><name>~ICommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

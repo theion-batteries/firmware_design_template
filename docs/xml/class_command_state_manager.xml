@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_command_state_manager" kind="class" language="C++" prot="public">
+    <compoundname>CommandStateManager</compoundname>
+    <includes refid="_state_manager_8hpp" local="no">StateManager.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_command_state_manager_1a7b57ac4036ba33539a5c6ade05362396" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CommandStateManager::FirstArgs[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>FirstArgs</name>
+        <qualifiedname>CommandStateManager::FirstArgs</qualifiedname>
+        <initializer>= {&quot;printhead&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;all&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>we have 2 categorie and subcategorie to manage: A- serial or external<itemizedlist>
+<listitem><para>commands: coming from serial monitor ending with LF or new line ending</para>
+</listitem><listitem><para>states: every command running has it own state B - CPU or internal</para>
+</listitem><listitem><para>actions: high priority than commands</para>
+</listitem><listitem><para>states: when action is run, change immediately to its state </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="23" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1af472e4beb070eae15cda56ae12a1fc01" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CommandStateManager::SecondArgs[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>SecondArgs</name>
+        <qualifiedname>CommandStateManager::SecondArgs</qualifiedname>
+        <initializer>= {&quot;up&quot;, &quot;<ref refid="_configs_8h_1a249d857dfa044493c7f29844b7b0baae" kindref="member">down</ref>&quot;, &quot;<ref refid="_configs_8h_1ae4a6a5757fdb3dd50355cea42bab342c" kindref="member">clk</ref>&quot;, &quot;<ref refid="_configs_8h_1ac15bd348b546cfa8e7c9330b517bc217" kindref="member">cclk</ref>&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="24" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1a2bc5fb51d153ba3009834ebfa70227b9" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CommandStateManager::ThirdArgs[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>ThirdArgs</name>
+        <qualifiedname>CommandStateManager::ThirdArgs</qualifiedname>
+        <initializer>= {&quot;value&quot;, &quot;max&quot;, &quot;min&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="26" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1a1ebba75c5dd81e4376ed22f3fd807edf" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CommandStateManager::command</definition>
+        <argsstring></argsstring>
+        <name>command</name>
+        <qualifiedname>CommandStateManager::command</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="37" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_command_state_manager_1aa6050fe61d2180635639e828455d9e53" compoundref="_state_manager_8hpp" startline="99" endline="111">commandWithArgs</referencedby>
+        <referencedby refid="class_command_state_manager_1a2bd09f20c9b527ac7e475d7904524b65" compoundref="_state_manager_8hpp" startline="68" endline="98">getCommandState</referencedby>
+        <referencedby refid="class_command_state_manager_1a339a392c33acac8438ab79734189a948" compoundref="_state_manager_8hpp" startline="112" endline="114">setCommand</referencedby>
+        <referencedby refid="class_command_state_manager_1a25465c15ca4081ddd1a6c29fe1dc2cfb" compoundref="_state_manager_8hpp" startline="118" endline="131">updateState</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1a4f343e0f699ef266b40f12d9d86700fe" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CommandStateManager::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <qualifiedname>CommandStateManager::state</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="38" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_command_state_manager_1a9f161d32cdc12e446924853dc003c1e3" compoundref="_state_manager_8hpp" startline="115" endline="117">setState</referencedby>
+        <referencedby refid="class_command_state_manager_1a25465c15ca4081ddd1a6c29fe1dc2cfb" compoundref="_state_manager_8hpp" startline="118" endline="131">updateState</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1a579209d5786030fcc4a666c1555cdf8c" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CommandStateManager::CPUstate</definition>
+        <argsstring></argsstring>
+        <name>CPUstate</name>
+        <qualifiedname>CommandStateManager::CPUstate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="40" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_command_state_manager_1a51b2da7cd984728d0eb59bb600b097fb" compoundref="_state_manager_8hpp" startline="63" endline="65">setCPUready</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1ae4ada5a26023e81608f544189d1ead41" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String CommandStateManager::CPUaction</definition>
+        <argsstring></argsstring>
+        <name>CPUaction</name>
+        <qualifiedname>CommandStateManager::CPUaction</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="41" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1a375619ca72c43bdae53a54aeb0499337" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CommandStateManager::StatesListLength</definition>
+        <argsstring></argsstring>
+        <name>StatesListLength</name>
+        <qualifiedname>CommandStateManager::StatesListLength</qualifiedname>
+        <initializer>= 11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="43" column="19" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1aff78fae9bba420bfdf995b115a01d219" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CommandStateManager::CommandsListLength</definition>
+        <argsstring></argsstring>
+        <name>CommandsListLength</name>
+        <qualifiedname>CommandStateManager::CommandsListLength</qualifiedname>
+        <initializer>= 21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="44" column="19" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1abfbda4417fe80c38d31aedcbdc0b922f" prot="public" static="no" mutable="no">
+        <type>String *</type>
+        <definition>String* CommandStateManager::States</definition>
+        <argsstring></argsstring>
+        <name>States</name>
+        <qualifiedname>CommandStateManager::States</qualifiedname>
+        <initializer>= new String[<ref refid="class_command_state_manager_1a375619ca72c43bdae53a54aeb0499337" kindref="member">StatesListLength</ref>]{&quot;ready&quot;,&quot;homing Up&quot;, &quot;homing Down&quot;, &quot;oscillating&quot;, &quot;rotating Clockwise&quot;, 
+        &quot;rotating Counter Clockwise&quot;, &quot;calibrating&quot;, &quot;aligning&quot;, &quot;moving Down&quot;, &quot;moving Up&quot;,&quot;setting Target Distance Printhead to Mother liquid&quot;         }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="45" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1a2d0f773aa9ecbcf359ca6ed759c1a66f" prot="public" static="no" mutable="no">
+        <type>String *</type>
+        <definition>String* CommandStateManager::Commands</definition>
+        <argsstring></argsstring>
+        <name>Commands</name>
+        <qualifiedname>CommandStateManager::Commands</qualifiedname>
+        <initializer>= new String[<ref refid="class_command_state_manager_1aff78fae9bba420bfdf995b115a01d219" kindref="member">CommandsListLength</ref>]{&quot;get_id&quot;,&quot;homeUp&quot;, &quot;homeDown&quot;,&quot;oscillate&quot;,&quot;rotateCW&quot;,
+         &quot;rotateCCW&quot;,&quot;calibrate&quot;,&quot;align&quot;, &quot;<ref refid="_configs_8h_1a249d857dfa044493c7f29844b7b0baae" kindref="member">down</ref>&quot;, &quot;<ref refid="_configs_8h_1a0337592b74197133c4203f6dce657a76" kindref="member">up</ref>&quot;, &quot;downAllMax&quot;, &quot;downXMax&quot;,&quot;downYMax&quot;, 
+         &quot;downZMax&quot;, &quot;upAllMax&quot;, &quot;setTargetDistancePhMl&quot;, &quot;upXMax&quot;,&quot;upYMax&quot;,&quot;upZMax&quot;                         }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="47" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1a716b8303474fa9c452f096d42d2d583b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CommandStateManager::CPUStatesListLength</definition>
+        <argsstring></argsstring>
+        <name>CPUStatesListLength</name>
+        <qualifiedname>CommandStateManager::CPUStatesListLength</qualifiedname>
+        <initializer>= 11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="59" column="19" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_command_state_manager_1a6bd424c0b40ff853c1fa879878453054" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CommandStateManager::CPUActionsLength</definition>
+        <argsstring></argsstring>
+        <name>CPUActionsLength</name>
+        <qualifiedname>CommandStateManager::CPUActionsLength</qualifiedname>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="60" column="19" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_command_state_manager_1a51b2da7cd984728d0eb59bb600b097fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CommandStateManager::setCPUready</definition>
+        <argsstring>()</argsstring>
+        <name>setCPUready</name>
+        <qualifiedname>CommandStateManager::setCPUready</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="63" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="63" bodyend="65"/>
+        <references refid="class_command_state_manager_1a579209d5786030fcc4a666c1555cdf8c" compoundref="_state_manager_8hpp" startline="40">CPUstate</references>
+      </memberdef>
+      <memberdef kind="function" id="class_command_state_manager_1a2bd09f20c9b527ac7e475d7904524b65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String CommandStateManager::getCommandState</definition>
+        <argsstring>()</argsstring>
+        <name>getCommandState</name>
+        <qualifiedname>CommandStateManager::getCommandState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="68" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="68" bodyend="98"/>
+        <references refid="class_command_state_manager_1a1ebba75c5dd81e4376ed22f3fd807edf" compoundref="_state_manager_8hpp" startline="37">command</references>
+      </memberdef>
+      <memberdef kind="function" id="class_command_state_manager_1aa6050fe61d2180635639e828455d9e53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CommandStateManager::commandWithArgs</definition>
+        <argsstring>()</argsstring>
+        <name>commandWithArgs</name>
+        <qualifiedname>CommandStateManager::commandWithArgs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="99" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="99" bodyend="111"/>
+        <references refid="class_command_state_manager_1a1ebba75c5dd81e4376ed22f3fd807edf" compoundref="_state_manager_8hpp" startline="37">command</references>
+      </memberdef>
+      <memberdef kind="function" id="class_command_state_manager_1a339a392c33acac8438ab79734189a948" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CommandStateManager::setCommand</definition>
+        <argsstring>(String com)</argsstring>
+        <name>setCommand</name>
+        <qualifiedname>CommandStateManager::setCommand</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>com</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="112" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="112" bodyend="114"/>
+        <references refid="class_command_state_manager_1a1ebba75c5dd81e4376ed22f3fd807edf" compoundref="_state_manager_8hpp" startline="37">command</references>
+      </memberdef>
+      <memberdef kind="function" id="class_command_state_manager_1a9f161d32cdc12e446924853dc003c1e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CommandStateManager::setState</definition>
+        <argsstring>(String st)</argsstring>
+        <name>setState</name>
+        <qualifiedname>CommandStateManager::setState</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="115" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="115" bodyend="117"/>
+        <references refid="class_command_state_manager_1a4f343e0f699ef266b40f12d9d86700fe" compoundref="_state_manager_8hpp" startline="38">state</references>
+      </memberdef>
+      <memberdef kind="function" id="class_command_state_manager_1a25465c15ca4081ddd1a6c29fe1dc2cfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CommandStateManager::updateState</definition>
+        <argsstring>()</argsstring>
+        <name>updateState</name>
+        <qualifiedname>CommandStateManager::updateState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="118" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="118" bodyend="131"/>
+        <references refid="class_command_state_manager_1a1ebba75c5dd81e4376ed22f3fd807edf" compoundref="_state_manager_8hpp" startline="37">command</references>
+        <references refid="class_command_state_manager_1a4f343e0f699ef266b40f12d9d86700fe" compoundref="_state_manager_8hpp" startline="38">state</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" line="12" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" bodystart="12" bodyend="134"/>
+    <listofallmembers>
+      <member refid="class_command_state_manager_1a1ebba75c5dd81e4376ed22f3fd807edf" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>command</name></member>
+      <member refid="class_command_state_manager_1a2d0f773aa9ecbcf359ca6ed759c1a66f" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>Commands</name></member>
+      <member refid="class_command_state_manager_1aff78fae9bba420bfdf995b115a01d219" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>CommandsListLength</name></member>
+      <member refid="class_command_state_manager_1aa6050fe61d2180635639e828455d9e53" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>commandWithArgs</name></member>
+      <member refid="class_command_state_manager_1ae4ada5a26023e81608f544189d1ead41" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>CPUaction</name></member>
+      <member refid="class_command_state_manager_1a6bd424c0b40ff853c1fa879878453054" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>CPUActionsLength</name></member>
+      <member refid="class_command_state_manager_1a579209d5786030fcc4a666c1555cdf8c" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>CPUstate</name></member>
+      <member refid="class_command_state_manager_1a716b8303474fa9c452f096d42d2d583b" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>CPUStatesListLength</name></member>
+      <member refid="class_command_state_manager_1a7b57ac4036ba33539a5c6ade05362396" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>FirstArgs</name></member>
+      <member refid="class_command_state_manager_1a2bd09f20c9b527ac7e475d7904524b65" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>getCommandState</name></member>
+      <member refid="class_command_state_manager_1af472e4beb070eae15cda56ae12a1fc01" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>SecondArgs</name></member>
+      <member refid="class_command_state_manager_1a339a392c33acac8438ab79734189a948" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>setCommand</name></member>
+      <member refid="class_command_state_manager_1a51b2da7cd984728d0eb59bb600b097fb" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>setCPUready</name></member>
+      <member refid="class_command_state_manager_1a9f161d32cdc12e446924853dc003c1e3" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>setState</name></member>
+      <member refid="class_command_state_manager_1a4f343e0f699ef266b40f12d9d86700fe" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>state</name></member>
+      <member refid="class_command_state_manager_1abfbda4417fe80c38d31aedcbdc0b922f" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>States</name></member>
+      <member refid="class_command_state_manager_1a375619ca72c43bdae53a54aeb0499337" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>StatesListLength</name></member>
+      <member refid="class_command_state_manager_1a2bc5fb51d153ba3009834ebfa70227b9" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>ThirdArgs</name></member>
+      <member refid="class_command_state_manager_1a25465c15ca4081ddd1a6c29fe1dc2cfb" prot="public" virt="non-virtual"><scope>CommandStateManager</scope><name>updateState</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

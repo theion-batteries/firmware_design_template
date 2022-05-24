@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_cmd_buffer_object" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>CmdBufferObject</compoundname>
+    <derivedcompoundref refid="class_cmd_buffer" prot="public" virt="non-virtual">CmdBuffer&lt; BUFFERSIZE &gt;</derivedcompoundref>
+    <includes refid="_cmd_buffer_8hpp" local="no">CmdBuffer.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_cmd_buffer_object_1ad400b6aa6a5f45f8b69f7aca786f8dac" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CmdBufferObject::m_endChar</definition>
+        <argsstring></argsstring>
+        <name>m_endChar</name>
+        <qualifiedname>CmdBufferObject::m_endChar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Character for handling the end of serial data communication </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="122" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cmd_buffer_object_1a7b10ca3e68472435a7c1d83e11b7bfea" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t CmdBufferObject::m_bsChar</definition>
+        <argsstring></argsstring>
+        <name>m_bsChar</name>
+        <qualifiedname>CmdBufferObject::m_bsChar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="123" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cmd_buffer_object_1aa6ecf34326031ece416dbaddc9009315" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t CmdBufferObject::m_dataOffset</definition>
+        <argsstring></argsstring>
+        <name>m_dataOffset</name>
+        <qualifiedname>CmdBufferObject::m_dataOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="124" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_cmd_buffer_object_1afcd801b37ca74d63ea6a11cfd1343b0c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool CmdBufferObject::m_echo</definition>
+        <argsstring></argsstring>
+        <name>m_echo</name>
+        <qualifiedname>CmdBufferObject::m_echo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="125" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_cmd_buffer_object_1a0e62c008ea9f9f927e989d5324adb46b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CmdBufferObject::CmdBufferObject</definition>
+        <argsstring>()</argsstring>
+        <name>CmdBufferObject</name>
+        <qualifiedname>CmdBufferObject::CmdBufferObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear buffer and set defaults. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="29" column="5" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cmd_buffer_object_1aba18a34d82f1b11527cda2d504432923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CmdBufferObject::readFromSerial</definition>
+        <argsstring>(Stream *serial, uint32_t timeOut=0)</argsstring>
+        <name>readFromSerial</name>
+        <qualifiedname>CmdBufferObject::readFromSerial</qualifiedname>
+        <param>
+          <type>Stream *</type>
+          <declname>serial</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeOut</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read data from serial communication to buffer. It read only printable ASCII character from serial. All other will ignore for buffer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arduino Serial object from read commands </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeOut</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set a time out in millisec or 0 for none </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if data readed until end character or FALSE is a timeout receive or buffer is full. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="46" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdBuffer.cpp" bodystart="9" bodyend="64"/>
+        <references refid="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" compoundref="_cmd_buffer_8cpp" startline="66" endline="114">readSerialChar</references>
+        <referencedby refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" compoundref="_cmd_callback_8cpp" startline="9" endline="24">CmdCallbackObject::loopCmdProcessing</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CmdBufferObject::readSerialChar</definition>
+        <argsstring>(Stream *serial)</argsstring>
+        <name>readSerialChar</name>
+        <qualifiedname>CmdBufferObject::readSerialChar</qualifiedname>
+        <param>
+          <type>Stream *</type>
+          <declname>serial</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read one char from serial communication to buffer if available. It read only printable ASCII character from serial. All other will ignore for buffer. This function only ready currently available data and doesn&apos;t wait for a full command (= end character)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arduino Serial object from read commands </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if data readed until end character or FALSE if not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="58" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdBuffer.cpp" bodystart="66" bodyend="114"/>
+        <references refid="_cmd_buffer_8hpp_1aa92744ebcb1216976a63d5a19dbcfb4a" compoundref="_cmd_buffer_8hpp" startline="13">CMDBUFFER_CHAR_PRINTABLE</references>
+        <references refid="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9">getBuffer</references>
+        <references refid="class_cmd_buffer_object_1a6925a16fab8b9b13fb4372e5f0a88b7e">getBufferSize</references>
+        <referencedby refid="class_cmd_buffer_object_1aba18a34d82f1b11527cda2d504432923" compoundref="_cmd_buffer_8cpp" startline="9" endline="64">readFromSerial</referencedby>
+        <referencedby refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" compoundref="_cmd_callback_8cpp" startline="66" endline="80">CmdCallbackObject::updateCmdProcessing</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cmd_buffer_object_1a08b5dde801557e604b9e0875988a15cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CmdBufferObject::setEndChar</definition>
+        <argsstring>(uint8_t end)</argsstring>
+        <name>setEndChar</name>
+        <qualifiedname>CmdBufferObject::setEndChar</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a ASCII character for serial cmd end. Default value is LF.</para>
+<para>Macros for helping are:<itemizedlist>
+<listitem><para>CMDBUFFER_CHAR_LF</para>
+</listitem><listitem><para>CMDBUFFER_CHAR_CR</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ASCII character </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="70" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cmd_buffer_object_1a221a93905e9545cc63552b964503c334" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CmdBufferObject::setBackChar</definition>
+        <argsstring>(uint8_t backspace)</argsstring>
+        <name>setBackChar</name>
+        <qualifiedname>CmdBufferObject::setBackChar</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>backspace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set a ASCII character for serial cmd backspace. Default value is BS.</para>
+<para>Macros for helping are:<itemizedlist>
+<listitem><para>CMDBUFFER_CHAR_BS</para>
+</listitem><listitem><para>CMDBUFFER_CHAR_DEL</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>backspace</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ASCII character </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="82" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cmd_buffer_object_1ad7c2ae01008297a876b9d7ed56a37c1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CmdBufferObject::setEcho</definition>
+        <argsstring>(bool echo)</argsstring>
+        <name>setEcho</name>
+        <qualifiedname>CmdBufferObject::setEcho</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>echo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set echo serial on (true) or off (false)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>echo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="89" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cmd_buffer_object_1a5d786badb41aacddc60653b266f8d329" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * CmdBufferObject::getStringFromBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getStringFromBuffer</name>
+        <qualifiedname>CmdBufferObject::getStringFromBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Cast Buffer to c string.</para>
+<para><simplesect kind="return"><para>Buffer as cstring </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="96" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="96" bodyend="99"/>
+        <references refid="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9">getBuffer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_cmd_buffer_object_1a9482f941c79ec204712a381b8fc55ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void CmdBufferObject::clear</definition>
+        <argsstring>()=0</argsstring>
+        <name>clear</name>
+        <qualifiedname>CmdBufferObject::clear</qualifiedname>
+        <reimplementedby refid="class_cmd_buffer_1a57932bf7ec725e389a51d61f0d8c715c">clear</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear buffer with 0x00 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="104" column="18"/>
+        <referencedby refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" compoundref="_cmd_callback_8cpp" startline="9" endline="24">CmdCallbackObject::loopCmdProcessing</referencedby>
+        <referencedby refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" compoundref="_cmd_callback_8cpp" startline="66" endline="80">CmdCallbackObject::updateCmdProcessing</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint8_t *</type>
+        <definition>virtual uint8_t * CmdBufferObject::getBuffer</definition>
+        <argsstring>()=0</argsstring>
+        <name>getBuffer</name>
+        <qualifiedname>CmdBufferObject::getBuffer</qualifiedname>
+        <reimplementedby refid="class_cmd_buffer_1a70a4eb39e350110c1454b0eb1d8b46b1">getBuffer</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a null-terminated (&apos;\0&apos;) string</para>
+<para><simplesect kind="return"><para>String from Buffer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="111" column="21"/>
+        <referencedby refid="class_cmd_buffer_object_1a5d786badb41aacddc60653b266f8d329" compoundref="_cmd_buffer_8hpp" startline="96" endline="99">getStringFromBuffer</referencedby>
+        <referencedby refid="class_cmd_parser_1a1ae4ac725a5b549a7c3679a72d7d26e9" compoundref="_cmd_parser_8hpp" startline="53" endline="57">CmdParser::parseCmd</referencedby>
+        <referencedby refid="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" compoundref="_cmd_buffer_8cpp" startline="66" endline="114">readSerialChar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_cmd_buffer_object_1a6925a16fab8b9b13fb4372e5f0a88b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t CmdBufferObject::getBufferSize</definition>
+        <argsstring>()=0</argsstring>
+        <name>getBufferSize</name>
+        <qualifiedname>CmdBufferObject::getBufferSize</qualifiedname>
+        <reimplementedby refid="class_cmd_buffer_1a402e04e513fe976ce73d5f3f1290421b">getBufferSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get size of buffer</para>
+<para><simplesect kind="return"><para>Size of buffer </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="118" column="20"/>
+        <referencedby refid="class_cmd_parser_1a1ae4ac725a5b549a7c3679a72d7d26e9" compoundref="_cmd_parser_8hpp" startline="53" endline="57">CmdParser::parseCmd</referencedby>
+        <referencedby refid="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" compoundref="_cmd_buffer_8cpp" startline="66" endline="114">readSerialChar</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CmdBuffer&lt; BUFFERSIZE &gt;</label>
+        <link refid="class_cmd_buffer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>CmdBufferObject</label>
+        <link refid="class_cmd_buffer_object"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="23" column="1"/>
+    <listofallmembers>
+      <member refid="class_cmd_buffer_object_1a9482f941c79ec204712a381b8fc55ac2" prot="public" virt="pure-virtual"><scope>CmdBufferObject</scope><name>clear</name></member>
+      <member refid="class_cmd_buffer_object_1a0e62c008ea9f9f927e989d5324adb46b" prot="public" virt="non-virtual"><scope>CmdBufferObject</scope><name>CmdBufferObject</name></member>
+      <member refid="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9" prot="public" virt="pure-virtual"><scope>CmdBufferObject</scope><name>getBuffer</name></member>
+      <member refid="class_cmd_buffer_object_1a6925a16fab8b9b13fb4372e5f0a88b7e" prot="public" virt="pure-virtual"><scope>CmdBufferObject</scope><name>getBufferSize</name></member>
+      <member refid="class_cmd_buffer_object_1a5d786badb41aacddc60653b266f8d329" prot="public" virt="non-virtual"><scope>CmdBufferObject</scope><name>getStringFromBuffer</name></member>
+      <member refid="class_cmd_buffer_object_1a7b10ca3e68472435a7c1d83e11b7bfea" prot="private" virt="non-virtual"><scope>CmdBufferObject</scope><name>m_bsChar</name></member>
+      <member refid="class_cmd_buffer_object_1aa6ecf34326031ece416dbaddc9009315" prot="private" virt="non-virtual"><scope>CmdBufferObject</scope><name>m_dataOffset</name></member>
+      <member refid="class_cmd_buffer_object_1afcd801b37ca74d63ea6a11cfd1343b0c" prot="private" virt="non-virtual"><scope>CmdBufferObject</scope><name>m_echo</name></member>
+      <member refid="class_cmd_buffer_object_1ad400b6aa6a5f45f8b69f7aca786f8dac" prot="private" virt="non-virtual"><scope>CmdBufferObject</scope><name>m_endChar</name></member>
+      <member refid="class_cmd_buffer_object_1aba18a34d82f1b11527cda2d504432923" prot="public" virt="non-virtual"><scope>CmdBufferObject</scope><name>readFromSerial</name></member>
+      <member refid="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" prot="public" virt="non-virtual"><scope>CmdBufferObject</scope><name>readSerialChar</name></member>
+      <member refid="class_cmd_buffer_object_1a221a93905e9545cc63552b964503c334" prot="public" virt="non-virtual"><scope>CmdBufferObject</scope><name>setBackChar</name></member>
+      <member refid="class_cmd_buffer_object_1ad7c2ae01008297a876b9d7ed56a37c1e" prot="public" virt="non-virtual"><scope>CmdBufferObject</scope><name>setEcho</name></member>
+      <member refid="class_cmd_buffer_object_1a08b5dde801557e604b9e0875988a15cc" prot="public" virt="non-virtual"><scope>CmdBufferObject</scope><name>setEndChar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

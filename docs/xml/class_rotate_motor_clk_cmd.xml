@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_rotate_motor_clk_cmd" kind="class" language="C++" prot="public">
+    <compoundname>RotateMotorClkCmd</compoundname>
+    <basecompoundref refid="class_i_command" prot="public" virt="non-virtual">ICommand</basecompoundref>
+    <includes refid="_cmd_pattern_classes_8h" local="no">CmdPatternClasses.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_rotate_motor_clk_cmd_1a06f4795f43b9c99e46f5d29071744c46" prot="private" static="no" mutable="no">
+        <type><ref refid="class_nema8" kindref="compound">Nema8</ref> &amp;</type>
+        <definition>Nema8&amp; RotateMotorClkCmd::M</definition>
+        <argsstring></argsstring>
+        <name>M</name>
+        <qualifiedname>RotateMotorClkCmd::M</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="295" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rotate_motor_clk_cmd_1a56eea3372931f56b52fae10498eb257b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_alignment" kindref="compound">Alignment</ref> &amp;</type>
+        <definition>Alignment&amp; RotateMotorClkCmd::Al</definition>
+        <argsstring></argsstring>
+        <name>Al</name>
+        <qualifiedname>RotateMotorClkCmd::Al</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="296" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rotate_motor_clk_cmd_1a45aa51886f890e07a4ad5c5bdc694ef1" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RotateMotorClkCmd::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <qualifiedname>RotateMotorClkCmd::val</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="297" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_rotate_motor_clk_cmd_1a2a77cdcd475122df223882da4abf53cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RotateMotorClkCmd::RotateMotorClkCmd</definition>
+        <argsstring>(Nema8 &amp;motor, Alignment &amp;AL, float val)</argsstring>
+        <name>RotateMotorClkCmd</name>
+        <qualifiedname>RotateMotorClkCmd::RotateMotorClkCmd</qualifiedname>
+        <param>
+          <type><ref refid="class_nema8" kindref="compound">Nema8</ref> &amp;</type>
+          <declname>motor</declname>
+        </param>
+        <param>
+          <type><ref refid="class_alignment" kindref="compound">Alignment</ref> &amp;</type>
+          <declname>AL</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="299" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="299" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rotate_motor_clk_cmd_1a56a9f5b4304d8ead3ef66175f0134dc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RotateMotorClkCmd::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>RotateMotorClkCmd::execute</qualifiedname>
+        <reimplements refid="class_i_command_1ace81beb0beea968f876f292446bf1120">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="300" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="300" bodyend="304"/>
+        <references refid="_configs_8h_1ae4a6a5757fdb3dd50355cea42bab342c" compoundref="_configs_8h" startline="107">clk</references>
+        <references refid="class_alignment_1a42ca106fc6688ad6f4e17685f9c07589" compoundref="_alignment_8cpp" startline="121" endline="133">Alignment::RotateAnglePHloop</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rotate_motor_clk_cmd_1a58d79afd386f2f2329bc4e9bb72d3ed5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void RotateMotorClkCmd::undo</definition>
+        <argsstring>()</argsstring>
+        <name>undo</name>
+        <qualifiedname>RotateMotorClkCmd::undo</qualifiedname>
+        <reimplements refid="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78">undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="305" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="305" bodyend="308"/>
+        <references refid="_configs_8h_1ac15bd348b546cfa8e7c9330b517bc217" compoundref="_configs_8h" startline="108">cclk</references>
+        <references refid="class_alignment_1a42ca106fc6688ad6f4e17685f9c07589" compoundref="_alignment_8cpp" startline="121" endline="133">Alignment::RotateAnglePHloop</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>RotateMotorClkCmd</label>
+        <link refid="class_rotate_motor_clk_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>RotateMotorClkCmd</label>
+        <link refid="class_rotate_motor_clk_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="293" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="293" bodyend="309"/>
+    <listofallmembers>
+      <member refid="class_rotate_motor_clk_cmd_1a56eea3372931f56b52fae10498eb257b" prot="private" virt="non-virtual"><scope>RotateMotorClkCmd</scope><name>Al</name></member>
+      <member refid="class_rotate_motor_clk_cmd_1a56a9f5b4304d8ead3ef66175f0134dc6" prot="public" virt="virtual"><scope>RotateMotorClkCmd</scope><name>execute</name></member>
+      <member refid="class_rotate_motor_clk_cmd_1a06f4795f43b9c99e46f5d29071744c46" prot="private" virt="non-virtual"><scope>RotateMotorClkCmd</scope><name>M</name></member>
+      <member refid="class_rotate_motor_clk_cmd_1a2a77cdcd475122df223882da4abf53cb" prot="public" virt="non-virtual"><scope>RotateMotorClkCmd</scope><name>RotateMotorClkCmd</name></member>
+      <member refid="class_rotate_motor_clk_cmd_1a58d79afd386f2f2329bc4e9bb72d3ed5" prot="public" virt="virtual"><scope>RotateMotorClkCmd</scope><name>undo</name></member>
+      <member refid="class_rotate_motor_clk_cmd_1a45aa51886f890e07a4ad5c5bdc694ef1" prot="private" virt="non-virtual"><scope>RotateMotorClkCmd</scope><name>val</name></member>
+      <member refid="class_i_command_1a0e0226af93b945e84b58405e9d5343b1" prot="public" virt="virtual"><scope>RotateMotorClkCmd</scope><name>~ICommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

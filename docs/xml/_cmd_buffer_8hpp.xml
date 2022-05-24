@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_cmd_buffer_8hpp" kind="file" language="C++">
+    <compoundname>CmdBuffer.hpp</compoundname>
+    <includes local="yes">ArduinoSTL.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">string.h</includes>
+    <includedby refid="_cmd_callback_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp</includedby>
+    <includedby refid="_cmd_parser_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp</includedby>
+    <includedby refid="_globals_8h" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</includedby>
+    <includedby refid="_cmd_buffer_8cpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdBuffer.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>ArduinoSTL.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp</label>
+        <link refid="_cmd_buffer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="4">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp</label>
+        <link refid="_cmd_buffer_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp</label>
+        <link refid="_cmd_callback_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp</label>
+        <link refid="_cmd_parser_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <link refid="_cmd_pattern_callbacks_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <link refid="_com_handler_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <link refid="_globals_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdBuffer.cpp</label>
+        <link refid="_cmd_buffer_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdCallback.cpp</label>
+        <link refid="_cmd_callback_8cpp"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdParser.cpp</label>
+        <link refid="_cmd_parser_8cpp"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <link refid="_cmd_pattern_callbacks_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <link refid="_com_handler_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <link refid="_globals_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_cmd_buffer_object" prot="public">CmdBufferObject</innerclass>
+    <innerclass refid="class_cmd_buffer" prot="public">CmdBuffer</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_cmd_buffer_8hpp_1aa92744ebcb1216976a63d5a19dbcfb4a" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CMDBUFFER_CHAR_PRINTABLE</definition>
+        <argsstring></argsstring>
+        <name>CMDBUFFER_CHAR_PRINTABLE</name>
+        <initializer>= 0x1F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="13" column="15" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" compoundref="_cmd_buffer_8cpp" startline="66" endline="114">CmdBufferObject::readSerialChar</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_cmd_buffer_8hpp_1a35db9b96b77ff5fcc5cfc5bb6c16a5a7" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CMDBUFFER_CHAR_LF</definition>
+        <argsstring></argsstring>
+        <name>CMDBUFFER_CHAR_LF</name>
+        <initializer>= 0x0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="14" column="15" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_cmd_buffer_8hpp_1a92066383444cf86ec4e23d86a8960ec7" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CMDBUFFER_CHAR_CR</definition>
+        <argsstring></argsstring>
+        <name>CMDBUFFER_CHAR_CR</name>
+        <initializer>= 0x0D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="15" column="15" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_cmd_buffer_8hpp_1a14ff876854bf06c1003064f5b9e072f0" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CMDBUFFER_CHAR_BS</definition>
+        <argsstring></argsstring>
+        <name>CMDBUFFER_CHAR_BS</name>
+        <initializer>= 0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="16" column="15" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_cmd_buffer_8hpp_1acc8aee73870eab730e5723c0e91182cd" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t CMDBUFFER_CHAR_DEL</definition>
+        <argsstring></argsstring>
+        <name>CMDBUFFER_CHAR_DEL</name>
+        <initializer>= 0x7F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="17" column="15" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2016<sp/>Pascal<sp/>Vizeli<sp/>&lt;pvizeli@syshack.ch&gt;</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>BSD<sp/>License</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>https://github.com/pvizeli/CmdParser</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_CMDBUFFER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_CMDBUFFER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ArduinoSTL.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_cmd_buffer_8hpp_1aa92744ebcb1216976a63d5a19dbcfb4a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_cmd_buffer_8hpp_1aa92744ebcb1216976a63d5a19dbcfb4a" kindref="member">CMDBUFFER_CHAR_PRINTABLE</ref><sp/>=<sp/>0x1F;</highlight></codeline>
+<codeline lineno="14" refid="_cmd_buffer_8hpp_1a35db9b96b77ff5fcc5cfc5bb6c16a5a7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_cmd_buffer_8hpp_1a35db9b96b77ff5fcc5cfc5bb6c16a5a7" kindref="member">CMDBUFFER_CHAR_LF</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0A;</highlight></codeline>
+<codeline lineno="15" refid="_cmd_buffer_8hpp_1a92066383444cf86ec4e23d86a8960ec7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_cmd_buffer_8hpp_1a92066383444cf86ec4e23d86a8960ec7" kindref="member">CMDBUFFER_CHAR_CR</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0D;</highlight></codeline>
+<codeline lineno="16" refid="_cmd_buffer_8hpp_1a14ff876854bf06c1003064f5b9e072f0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_cmd_buffer_8hpp_1a14ff876854bf06c1003064f5b9e072f0" kindref="member">CMDBUFFER_CHAR_BS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x08;</highlight></codeline>
+<codeline lineno="17" refid="_cmd_buffer_8hpp_1acc8aee73870eab730e5723c0e91182cd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_cmd_buffer_8hpp_1acc8aee73870eab730e5723c0e91182cd" kindref="member">CMDBUFFER_CHAR_DEL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x7F;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cmd_buffer_object" kindref="compound">CmdBufferObject</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29" refid="class_cmd_buffer_object_1a0e62c008ea9f9f927e989d5324adb46b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cmd_buffer_object_1a0e62c008ea9f9f927e989d5324adb46b" kindref="member">CmdBufferObject</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>m_endChar(<ref refid="_cmd_buffer_8hpp_1a35db9b96b77ff5fcc5cfc5bb6c16a5a7" kindref="member">CMDBUFFER_CHAR_LF</ref>),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_bsChar(<ref refid="_cmd_buffer_8hpp_1a14ff876854bf06c1003064f5b9e072f0" kindref="member">CMDBUFFER_CHAR_BS</ref>),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_dataOffset(0),</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_echo(false)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_cmd_buffer_object_1aba18a34d82f1b11527cda2d504432923" kindref="member">readFromSerial</ref>(Stream<sp/>*serial,<sp/>uint32_t<sp/>timeOut<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" kindref="member">readSerialChar</ref>(Stream<sp/>*serial);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_cmd_buffer_object_1a08b5dde801557e604b9e0875988a15cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cmd_buffer_object_1a08b5dde801557e604b9e0875988a15cc" kindref="member">setEndChar</ref>(uint8_t<sp/>end)<sp/>{<sp/>m_endChar<sp/>=<sp/>end;<sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="class_cmd_buffer_object_1a221a93905e9545cc63552b964503c334" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cmd_buffer_object_1a221a93905e9545cc63552b964503c334" kindref="member">setBackChar</ref>(uint8_t<sp/>backspace)<sp/>{<sp/>m_bsChar<sp/>=<sp/>backspace;<sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="class_cmd_buffer_object_1ad7c2ae01008297a876b9d7ed56a37c1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cmd_buffer_object_1ad7c2ae01008297a876b9d7ed56a37c1e" kindref="member">setEcho</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>echo)<sp/>{<sp/>m_echo<sp/>=<sp/>echo;<sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="class_cmd_buffer_object_1a5d786badb41aacddc60653b266f8d329" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="class_cmd_buffer_object_1a5d786badb41aacddc60653b266f8d329" kindref="member">getStringFromBuffer</ref>()</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(this-&gt;<ref refid="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9" kindref="member">getBuffer</ref>());</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="class_cmd_buffer_object_1a9482f941c79ec204712a381b8fc55ac2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cmd_buffer_object_1a9482f941c79ec204712a381b8fc55ac2" kindref="member">clear</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9" kindref="member">getBuffer</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="class_cmd_buffer_object_1a6925a16fab8b9b13fb4372e5f0a88b7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_cmd_buffer_object_1a6925a16fab8b9b13fb4372e5f0a88b7e" kindref="member">getBufferSize</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>m_endChar;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>m_bsChar;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><sp/>m_dataOffset;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>m_echo;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>BUFFERSIZE&gt;</highlight></codeline>
+<codeline lineno="133" refid="class_cmd_buffer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_cmd_buffer" kindref="compound">CmdBuffer</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_cmd_buffer_object" kindref="compound">CmdBufferObject</ref></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="139" refid="class_cmd_buffer_1acbeae6c39044ecab74a6d902cfe35891" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_cmd_buffer_1acbeae6c39044ecab74a6d902cfe35891" kindref="member">CmdBuffer</ref>()<sp/>{<sp/>this-&gt;<ref refid="class_cmd_buffer_1a57932bf7ec725e389a51d61f0d8c715c" kindref="member">clear</ref>();<sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="class_cmd_buffer_1a57932bf7ec725e389a51d61f0d8c715c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_cmd_buffer_1a57932bf7ec725e389a51d61f0d8c715c" kindref="member">clear</ref>()<sp/>{<sp/>memset(m_buffer,<sp/>0x00,<sp/>BUFFERSIZE<sp/>+<sp/>1);<sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="class_cmd_buffer_1a70a4eb39e350110c1454b0eb1d8b46b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>uint8_t<sp/>*<ref refid="class_cmd_buffer_1a70a4eb39e350110c1454b0eb1d8b46b1" kindref="member">getBuffer</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_buffer;<sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="class_cmd_buffer_1a402e04e513fe976ce73d5f3f1290421b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_cmd_buffer_1a402e04e513fe976ce73d5f3f1290421b" kindref="member">getBufferSize</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>BUFFERSIZE;<sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>m_buffer[BUFFERSIZE<sp/>+<sp/>1];</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp"/>
+  </compounddef>
+</doxygen>

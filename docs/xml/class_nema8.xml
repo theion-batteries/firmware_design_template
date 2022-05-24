@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_nema8" kind="class" language="C++" prot="public">
+    <compoundname>Nema8</compoundname>
+    <basecompoundref refid="classa4988" prot="public" virt="non-virtual">a4988</basecompoundref>
+    <includes refid="_nema__8_8hpp" local="no">Nema_8.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_nema8_1a8512c67335677a5adeb7d3c2b29bca3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Nema8::Nema8</definition>
+        <argsstring>(int motor_steps, int ms1_pin, int ms2_pin, int ms3_pin, int dir_pin, int enable_pin, int step_pin, bool direction)</argsstring>
+        <name>Nema8</name>
+        <qualifiedname>Nema8::Nema8</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>motor_steps</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ms1_pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ms2_pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ms3_pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dir_pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>enable_pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>step_pin</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp" line="21" column="4" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp" bodystart="21" bodyend="48"/>
+        <references refid="classa4988_1a897f9e23b473274f3d27e9380d145be4" compoundref="_driver_a4988_8hpp" startline="71">a4988::dir_pin</references>
+        <references refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" compoundref="_driver_a4988_8hpp" startline="59">a4988::direction</references>
+        <references refid="classa4988_1a8e401b32d17b578cd1e4d06779ba5b61" compoundref="_driver_a4988_8hpp" startline="72">a4988::enable_pin</references>
+        <references refid="classa4988_1ad6372b76bfc23c771d7e6555a106e292" compoundref="_driver_a4988_8hpp" startline="60">a4988::motor_steps</references>
+        <references refid="classa4988_1a2be691a68489baf9924cc7c69b16f7c0" compoundref="_driver_a4988_8hpp" startline="68">a4988::ms1_pin</references>
+        <references refid="classa4988_1af6dd6e9adf74830b1ce8b37717cd3ff1" compoundref="_driver_a4988_8hpp" startline="69">a4988::ms2_pin</references>
+        <references refid="classa4988_1ad791d1b4e66527168deb1aa96a6cc11f" compoundref="_driver_a4988_8hpp" startline="70">a4988::ms3_pin</references>
+        <references refid="_configs_8h_1adc7e59eed8e42ab586f1f71dab7d882d" compoundref="_configs_8h" startline="31">STEP_DELAY</references>
+        <references refid="classa4988_1a1965dbc601b23711ab178ae9067133c3" compoundref="_driver_a4988_8hpp" startline="61">a4988::step_delay</references>
+        <references refid="classa4988_1a1f7e3717033bd9204414c1408b58eaa5" compoundref="_driver_a4988_8hpp" startline="65">a4988::step_pin</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>child class nema8 from parent class stepper driver <ref refid="classa4988" kindref="compound">a4988</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Nema8</label>
+        <link refid="class_nema8"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>a4988</label>
+        <link refid="classa4988"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Nema8</label>
+        <link refid="class_nema8"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>a4988</label>
+        <link refid="classa4988"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp" line="19" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp" bodystart="19" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" prot="public" virt="non-virtual"><scope>Nema8</scope><name>a4988</name></member>
+      <member refid="classa4988_1a897f9e23b473274f3d27e9380d145be4" prot="public" virt="non-virtual"><scope>Nema8</scope><name>dir_pin</name></member>
+      <member refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" prot="public" virt="non-virtual"><scope>Nema8</scope><name>direction</name></member>
+      <member refid="classa4988_1ad61ff3ecdea7afe55a30edf31f1e0323" prot="public" virt="non-virtual"><scope>Nema8</scope><name>enable</name></member>
+      <member refid="classa4988_1a8e401b32d17b578cd1e4d06779ba5b61" prot="public" virt="non-virtual"><scope>Nema8</scope><name>enable_pin</name></member>
+      <member refid="classa4988_1a4e8bd4e45fe5a4fa30fafc877713978c" prot="public" virt="non-virtual"><scope>Nema8</scope><name>getDelay</name></member>
+      <member refid="classa4988_1a01be380db105cfc684c55dc42b81f76d" prot="public" virt="non-virtual"><scope>Nema8</scope><name>getDirection</name></member>
+      <member refid="classa4988_1a0b7c5f9fb44b05f6642b517abc9b4a07" prot="public" virt="non-virtual"><scope>Nema8</scope><name>getSpeed</name></member>
+      <member refid="classa4988_1aa86021ee00cae65c6c963553f30e22b3" prot="public" virt="non-virtual"><scope>Nema8</scope><name>getStepCounter</name></member>
+      <member refid="classa4988_1ad6372b76bfc23c771d7e6555a106e292" prot="public" virt="non-virtual"><scope>Nema8</scope><name>motor_steps</name></member>
+      <member refid="classa4988_1a2be691a68489baf9924cc7c69b16f7c0" prot="public" virt="non-virtual"><scope>Nema8</scope><name>ms1_pin</name></member>
+      <member refid="classa4988_1af6dd6e9adf74830b1ce8b37717cd3ff1" prot="public" virt="non-virtual"><scope>Nema8</scope><name>ms2_pin</name></member>
+      <member refid="classa4988_1ad791d1b4e66527168deb1aa96a6cc11f" prot="public" virt="non-virtual"><scope>Nema8</scope><name>ms3_pin</name></member>
+      <member refid="class_nema8_1a8512c67335677a5adeb7d3c2b29bca3b" prot="public" virt="non-virtual"><scope>Nema8</scope><name>Nema8</name></member>
+      <member refid="classa4988_1a1eb89487e1d4fc4cb068d581a6278003" prot="public" virt="non-virtual"><scope>Nema8</scope><name>num_steps</name></member>
+      <member refid="classa4988_1ad11ebef929f054194109e909f2646880" prot="public" virt="non-virtual"><scope>Nema8</scope><name>reverseDirection</name></member>
+      <member refid="classa4988_1af905ad2bb5a9e5465e83f081067a139c" prot="public" virt="non-virtual"><scope>Nema8</scope><name>setDelay</name></member>
+      <member refid="classa4988_1a6a37cf937b1f7a1f229904cdb9191b89" prot="public" virt="non-virtual"><scope>Nema8</scope><name>setDirection</name></member>
+      <member refid="classa4988_1ae59dc905051ebfdcfac1d48f172d523f" prot="public" virt="non-virtual"><scope>Nema8</scope><name>setSpeed</name></member>
+      <member refid="classa4988_1a150215b9cd4e4841befd2dc9d4b4a3be" prot="public" virt="non-virtual"><scope>Nema8</scope><name>setStepMode</name></member>
+      <member refid="classa4988_1ad66dadbb79c22bc3f507fe6d624c9fec" prot="public" virt="non-virtual"><scope>Nema8</scope><name>step</name></member>
+      <member refid="classa4988_1a1965dbc601b23711ab178ae9067133c3" prot="public" virt="non-virtual"><scope>Nema8</scope><name>step_delay</name></member>
+      <member refid="classa4988_1a45956ebaed9f19834bc9094dd59f551a" prot="public" virt="non-virtual"><scope>Nema8</scope><name>step_mode</name></member>
+      <member refid="classa4988_1add7441f68064b3dd6e06d5bcb30cb159" prot="public" virt="non-virtual"><scope>Nema8</scope><name>step_number</name></member>
+      <member refid="classa4988_1a1f7e3717033bd9204414c1408b58eaa5" prot="public" virt="non-virtual"><scope>Nema8</scope><name>step_pin</name></member>
+      <member refid="classa4988_1a58dce61bc6613bc5e7bd5cb77a3abaf8" prot="public" virt="non-virtual"><scope>Nema8</scope><name>StepCounter</name></member>
+      <member refid="classa4988_1af3c159ccf4f2fa8d26d03683181b1fac" prot="public" virt="non-virtual"><scope>Nema8</scope><name>stepMotor</name></member>
+      <member refid="classa4988_1a2074f2e3fe7cd79e402f53a14ba68c89" prot="public" virt="non-virtual"><scope>Nema8</scope><name>stepOnce</name></member>
+      <member refid="classa4988_1a3b6a16a6b8162c6a3ba164fedeef0fb7" prot="public" virt="non-virtual"><scope>Nema8</scope><name>TotalStepCounted</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

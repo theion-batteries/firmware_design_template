@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_reset_device" kind="class" language="C++" prot="public">
+    <compoundname>ResetDevice</compoundname>
+    <basecompoundref refid="class_i_command" prot="public" virt="non-virtual">ICommand</basecompoundref>
+    <includes refid="_cmd_pattern_classes_8h" local="no">CmdPatternClasses.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_reset_device_1a8cb36c6264519b980381666d87cb9087" prot="private" static="no" mutable="no">
+        <type><ref refid="class_reset_hardware" kindref="compound">ResetHardware</ref> &amp;</type>
+        <definition>ResetHardware&amp; ResetDevice::reset</definition>
+        <argsstring></argsstring>
+        <name>reset</name>
+        <qualifiedname>ResetDevice::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="64" column="17" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_reset_device_1a1b6be1e9f1e96fb1756a8fa750a19bd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ResetDevice::ResetDevice</definition>
+        <argsstring>(ResetHardware &amp;reset)</argsstring>
+        <name>ResetDevice</name>
+        <qualifiedname>ResetDevice::ResetDevice</qualifiedname>
+        <param>
+          <type><ref refid="class_reset_hardware" kindref="compound">ResetHardware</ref> &amp;</type>
+          <declname>reset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="66" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reset_device_1a4fea167917ec9599f0f23bed5ef1b1a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void ResetDevice::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>ResetDevice::execute</qualifiedname>
+        <reimplements refid="class_i_command_1ace81beb0beea968f876f292446bf1120">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="67" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="67" bodyend="69"/>
+        <references refid="class_reset_hardware_1a2f521d08146215d48b3945b5e1fb4332" compoundref="_reset_8h" startline="32" endline="35">ResetHardware::soft_reset</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reset_device_1a2b7e4b073016b3be5214f0d96a8ab47e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void ResetDevice::undo</definition>
+        <argsstring>()</argsstring>
+        <name>undo</name>
+        <qualifiedname>ResetDevice::undo</qualifiedname>
+        <reimplements refid="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78">undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="70" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>ResetDevice</label>
+        <link refid="class_reset_device"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="1">
+        <label>ResetDevice</label>
+        <link refid="class_reset_device"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="62" column="2" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="62" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_reset_device_1a4fea167917ec9599f0f23bed5ef1b1a1" prot="public" virt="virtual"><scope>ResetDevice</scope><name>execute</name></member>
+      <member refid="class_reset_device_1a8cb36c6264519b980381666d87cb9087" prot="private" virt="non-virtual"><scope>ResetDevice</scope><name>reset</name></member>
+      <member refid="class_reset_device_1a1b6be1e9f1e96fb1756a8fa750a19bd2" prot="public" virt="non-virtual"><scope>ResetDevice</scope><name>ResetDevice</name></member>
+      <member refid="class_reset_device_1a2b7e4b073016b3be5214f0d96a8ab47e" prot="public" virt="virtual"><scope>ResetDevice</scope><name>undo</name></member>
+      <member refid="class_i_command_1a0e0226af93b945e84b58405e9d5343b1" prot="public" virt="virtual"><scope>ResetDevice</scope><name>~ICommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

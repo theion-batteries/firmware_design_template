@@ -1,0 +1,183 @@
+\hypertarget{_driver_a4988_8cpp_source}{}\doxysection{Driver\+A4988.\+cpp}
+\label{_driver_a4988_8cpp_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/src/DriverA4988.cpp@{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/src/DriverA4988.cpp}}
+\mbox{\hyperlink{_driver_a4988_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00001}00001  }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00002}00002 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00003}00003 \textcolor{comment}{  a4988.cpp -\/ -\/ Arduino library for using the a4988 stepper driver}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00004}00004 \textcolor{comment}{  William Smith, 2014}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00005}00005 \textcolor{comment}{  }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00006}00006 \textcolor{comment}{  The A4988 stepper driver is for Pololu stepper driver boards}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00007}00007 \textcolor{comment}{  and compatible clones. These boards use the Allegro a4988}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00008}00008 \textcolor{comment}{  stepper motor driver IC. (see Allegro website for datasheet)}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00009}00009 \textcolor{comment}{  This library diverges from others that are around, in that it}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00010}00010 \textcolor{comment}{  assumes that the MS1, MS2, and MS3 pins are connected to gpio}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00011}00011 \textcolor{comment}{  pins on the Arduino, allowing control over the microstepping}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00012}00012 \textcolor{comment}{  modes.}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00013}00013 \textcolor{comment}{  }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00014}00014 \textcolor{comment}{  The A4988 is capable of microstepping down to 1/16 of a step,}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00015}00015 \textcolor{comment}{  enabling fine control over the stepper motor. This fine control}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00016}00016 \textcolor{comment}{  can be used in, among other things, 3D printers.}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00017}00017 \textcolor{comment}{  This library provides an interface for setting the different}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00018}00018 \textcolor{comment}{  step modes, going from full step down to 1/16 step, using a}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00019}00019 \textcolor{comment}{  simple setter function, where the argument is 1,2,4,8, or 16.}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00020}00020 \textcolor{comment}{  }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00021}00021 \textcolor{comment}{     MS1   MS2   MS3}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00022}00022 \textcolor{comment}{    -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00023}00023 \textcolor{comment}{     low   low   low   Full step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00024}00024 \textcolor{comment}{     high  low   low   Half step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00025}00025 \textcolor{comment}{     low   high  low   1/4 step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00026}00026 \textcolor{comment}{     high  high  low   1/8 step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00027}00027 \textcolor{comment}{     }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00028}00028 \textcolor{comment}{     high  high  high  1/16 }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00029}00029 \textcolor{comment}{  Note:}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00030}00030 \textcolor{comment}{  Lower delay values can be used in the microstepping mode.}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00031}00031 \textcolor{comment}{  Values as low as 25 usec can be used in the 1/16 mode}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00032}00032 \textcolor{comment}{  with some motors. }}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00033}00033 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00034}00034 \textcolor{comment}{//\#define DEBUG //use this for debugging}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00035}00035 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_driver_a4988_8hpp}{DriverA4988.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00037}00037 \textcolor{comment}{// constructor to set up pins and initialize data}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00038}\mbox{\hyperlink{classa4988_a5abced6499ec6a9c4023db3aacf80c1a}{00038}} \mbox{\hyperlink{classa4988_a5abced6499ec6a9c4023db3aacf80c1a}{a4988::a4988}}(\textcolor{keywordtype}{int} motor\_steps, \textcolor{keywordtype}{int} ms1\_pin, \textcolor{keywordtype}{int} ms2\_pin, \textcolor{keywordtype}{int} ms3\_pin, \textcolor{keywordtype}{int} dir\_pin, \textcolor{keywordtype}{int} enable\_pin, \textcolor{keywordtype}{int} step\_pin, \textcolor{keywordtype}{bool} direction)}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00039}00039 \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00040}00040    this-\/>enable\_pin = \mbox{\hyperlink{classa4988_a8e401b32d17b578cd1e4d06779ba5b61}{enable\_pin}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00041}00041    this-\/>dir\_pin = \mbox{\hyperlink{classa4988_a897f9e23b473274f3d27e9380d145be4}{dir\_pin}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00042}00042    this-\/>ms1\_pin = \mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{ms1\_pin}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00043}00043    this-\/>ms2\_pin = \mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{ms2\_pin}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00044}00044    this-\/>ms3\_pin = \mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{ms3\_pin}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00045}00045    this-\/>step\_pin = \mbox{\hyperlink{classa4988_a1f7e3717033bd9204414c1408b58eaa5}{step\_pin}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00046}00046    this-\/>direction=\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00047}00047    \textcolor{comment}{// setup the pins on the microcontroller:}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00048}00048    pinMode(this-\/>ms1\_pin, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00049}00049    pinMode(this-\/>ms2\_pin, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00050}00050    pinMode(this-\/>ms3\_pin, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00051}00051    pinMode(this-\/>dir\_pin, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00052}00052    pinMode(this-\/>enable\_pin, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00053}00053    pinMode(this-\/>step\_pin, OUTPUT);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00055}00055    \textcolor{keywordflow}{if}(\mbox{\hyperlink{classa4988_ad6372b76bfc23c771d7e6555a106e292}{motor\_steps}} != 0)}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00056}00056    \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00057}00057       this-\/>motor\_steps = \mbox{\hyperlink{classa4988_ad6372b76bfc23c771d7e6555a106e292}{motor\_steps}}; }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00058}00058    \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00059}00059    \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00060}00060    \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00061}00061       this-\/>motor\_steps = 200;       \textcolor{comment}{// a common value for steppers}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00062}00062    \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00064}00064    \textcolor{comment}{// use setDelay to change before stepping, otherwise default}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00065}00065    this-\/>\mbox{\hyperlink{classa4988_a1965dbc601b23711ab178ae9067133c3}{step\_delay}} = \mbox{\hyperlink{_configs_8h_adc7e59eed8e42ab586f1f71dab7d882d}{STEP\_DELAY}};         \textcolor{comment}{// 20000 us (20 ms) as a default}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00066}00066                      }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00067}00067 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00069}\mbox{\hyperlink{classa4988_ad61ff3ecdea7afe55a30edf31f1e0323}{00069}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_ad61ff3ecdea7afe55a30edf31f1e0323}{a4988::enable}}(\textcolor{keywordtype}{int} enable)}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00070}00070 \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00071}00071    digitalWrite(this-\/>\mbox{\hyperlink{classa4988_a8e401b32d17b578cd1e4d06779ba5b61}{enable\_pin}},enable);  \textcolor{comment}{// set enable pin on/off}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00072}00072 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00074}00074 \textcolor{comment}{// set delay in microseconds, set before starting to step}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00075}\mbox{\hyperlink{classa4988_af905ad2bb5a9e5465e83f081067a139c}{00075}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_af905ad2bb5a9e5465e83f081067a139c}{a4988::setDelay}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} delay)}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00076}00076 \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00077}00077    this-\/>\mbox{\hyperlink{classa4988_a1965dbc601b23711ab178ae9067133c3}{step\_delay}} = delay;}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00078}00078 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00079}\mbox{\hyperlink{classa4988_a01be380db105cfc684c55dc42b81f76d}{00079}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classa4988_a01be380db105cfc684c55dc42b81f76d}{a4988::getDirection}}()\{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00080}00080    \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00081}00081 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00082}\mbox{\hyperlink{classa4988_ad11ebef929f054194109e909f2646880}{00082}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_ad11ebef929f054194109e909f2646880}{a4988::reverseDirection}}()\{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00083}00083    \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}}==\mbox{\hyperlink{_configs_8h_a0337592b74197133c4203f6dce657a76}{up}})\{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00084}00084       \mbox{\hyperlink{classa4988_a6a37cf937b1f7a1f229904cdb9191b89}{setDirection}}(\mbox{\hyperlink{_configs_8h_a249d857dfa044493c7f29844b7b0baae}{down}});}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00085}00085    \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00086}00086    \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00087}00087       \mbox{\hyperlink{classa4988_a6a37cf937b1f7a1f229904cdb9191b89}{setDirection}}(\mbox{\hyperlink{_configs_8h_a0337592b74197133c4203f6dce657a76}{up}});}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00088}00088    \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00089}00089 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00090}00090 \textcolor{comment}{// set direction: 0 or 1}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00091}\mbox{\hyperlink{classa4988_a6a37cf937b1f7a1f229904cdb9191b89}{00091}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_a6a37cf937b1f7a1f229904cdb9191b89}{a4988::setDirection}}(\textcolor{keywordtype}{int} direction)}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00092}00092 \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00093}00093    \textcolor{keywordflow}{if}(\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}} == \mbox{\hyperlink{_configs_8h_a249d857dfa044493c7f29844b7b0baae}{down}})\textcolor{comment}{// equal to zero}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00094}00094    \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00095}00095       digitalWrite(\mbox{\hyperlink{classa4988_a897f9e23b473274f3d27e9380d145be4}{dir\_pin}},HIGH); }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00096}00096       this-\/>direction=\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00097}00097    \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00098}00098    \textcolor{keywordflow}{else} }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00099}00099    \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00100}00100       digitalWrite(\mbox{\hyperlink{classa4988_a897f9e23b473274f3d27e9380d145be4}{dir\_pin}},LOW);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00101}00101       this-\/>direction=\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00102}00102    \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00103}00103 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00105}00105 \textcolor{comment}{// step only once}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00106}\mbox{\hyperlink{classa4988_a2074f2e3fe7cd79e402f53a14ba68c89}{00106}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_a2074f2e3fe7cd79e402f53a14ba68c89}{a4988::stepOnce}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00107}00107 \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00108}00108     digitalWrite(\mbox{\hyperlink{classa4988_a1f7e3717033bd9204414c1408b58eaa5}{step\_pin}}, HIGH);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00109}00109     delayMicroseconds(this-\/>\mbox{\hyperlink{classa4988_a1965dbc601b23711ab178ae9067133c3}{step\_delay}});}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00110}00110     digitalWrite(\mbox{\hyperlink{classa4988_a1f7e3717033bd9204414c1408b58eaa5}{step\_pin}}, LOW);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00111}00111     delayMicroseconds(this-\/>\mbox{\hyperlink{classa4988_a1965dbc601b23711ab178ae9067133c3}{step\_delay}});}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00112}00112    \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}}==\mbox{\hyperlink{_configs_8h_a0337592b74197133c4203f6dce657a76}{up}} || this-\/>\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}}==\mbox{\hyperlink{_configs_8h_ae4a6a5757fdb3dd50355cea42bab342c}{clk}}) \mbox{\hyperlink{classa4988_a3b6a16a6b8162c6a3ba164fedeef0fb7}{TotalStepCounted}}++;}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00113}00113    \textcolor{keywordflow}{if}(this-\/>\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}}==\mbox{\hyperlink{_configs_8h_a249d857dfa044493c7f29844b7b0baae}{down}} || this-\/>\mbox{\hyperlink{classa4988_a5acf890c4f8a6998d24b0693dd10cd9a}{direction}}==\mbox{\hyperlink{_configs_8h_ac15bd348b546cfa8e7c9330b517bc217}{cclk}}) \mbox{\hyperlink{classa4988_a3b6a16a6b8162c6a3ba164fedeef0fb7}{TotalStepCounted}}-\/-\/;   }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00114}00114 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00115}00115 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00116}00116 \textcolor{comment}{// step given number of times}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00117}\mbox{\hyperlink{classa4988_ad66dadbb79c22bc3f507fe6d624c9fec}{00117}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_ad66dadbb79c22bc3f507fe6d624c9fec}{a4988::step}}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} num\_steps)}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00118}00118 \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00119}00119    \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{long} x;}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00120}00120    \textcolor{keywordflow}{for}(x = 0; x < \mbox{\hyperlink{classa4988_a1eb89487e1d4fc4cb068d581a6278003}{num\_steps}}; x++)}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00121}00121    \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00122}00122       this-\/>\mbox{\hyperlink{classa4988_a2074f2e3fe7cd79e402f53a14ba68c89}{stepOnce}}();}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00123}00123    \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00124}00124 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00126}00126 \textcolor{comment}{// set microstepping mode}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00127}00127 \textcolor{comment}{// (1 /) 1, 2, 4, 8, or 16}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00128}\mbox{\hyperlink{classa4988_a150215b9cd4e4841befd2dc9d4b4a3be}{00128}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_a150215b9cd4e4841befd2dc9d4b4a3be}{a4988::setStepMode}}(\textcolor{keywordtype}{int} stepMode)}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00129}00129 \{   }
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00130}00130     this-\/>\mbox{\hyperlink{classa4988_a45956ebaed9f19834bc9094dd59f551a}{step\_mode}} = stepMode;}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00131}00131     \textcolor{keywordflow}{switch} (stepMode)}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00132}00132     \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00133}00133                   \textcolor{comment}{// MS1   MS2   MS3}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00134}00134       \textcolor{keywordflow}{case} 16:    \textcolor{comment}{// high  high  high}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00135}00135       digitalWrite(\mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{ms1\_pin}}, HIGH);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00136}00136       digitalWrite(\mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{ms2\_pin}}, HIGH);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00137}00137       digitalWrite(\mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{ms3\_pin}}, HIGH);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00138}00138       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00139}00139       \textcolor{keywordflow}{case} 8:    \textcolor{comment}{// high  high  low}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00140}00140       digitalWrite(\mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{ms1\_pin}}, HIGH);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00141}00141       digitalWrite(\mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{ms2\_pin}}, HIGH);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00142}00142       digitalWrite(\mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{ms3\_pin}}, LOW);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00143}00143       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00144}00144       \textcolor{keywordflow}{case} 4:    \textcolor{comment}{// low   high  low}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00145}00145       digitalWrite(\mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{ms1\_pin}}, LOW);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00146}00146       digitalWrite(\mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{ms2\_pin}}, HIGH);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00147}00147       digitalWrite(\mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{ms3\_pin}}, LOW);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00148}00148       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00149}00149       \textcolor{keywordflow}{case} 2:    \textcolor{comment}{// high  low   low}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00150}00150       digitalWrite(\mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{ms1\_pin}}, HIGH);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00151}00151       digitalWrite(\mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{ms2\_pin}}, LOW);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00152}00152       digitalWrite(\mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{ms3\_pin}}, LOW);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00153}00153       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00154}00154       \textcolor{keywordflow}{case} 1:    \textcolor{comment}{// low   low   low}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00155}00155       digitalWrite(\mbox{\hyperlink{classa4988_a2be691a68489baf9924cc7c69b16f7c0}{ms1\_pin}}, LOW);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00156}00156       digitalWrite(\mbox{\hyperlink{classa4988_af6dd6e9adf74830b1ce8b37717cd3ff1}{ms2\_pin}}, LOW);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00157}00157       digitalWrite(\mbox{\hyperlink{classa4988_ad791d1b4e66527168deb1aa96a6cc11f}{ms3\_pin}}, LOW);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00158}00158       \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00159}00159     \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00160}00160 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00161}00161 \textcolor{comment}{// rpm}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00162}\mbox{\hyperlink{classa4988_a0b7c5f9fb44b05f6642b517abc9b4a07}{00162}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classa4988_a0b7c5f9fb44b05f6642b517abc9b4a07}{a4988::getSpeed}}()}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00163}00163 \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00164}00164    \textcolor{keywordflow}{return} \mbox{\hyperlink{classa4988_ad6372b76bfc23c771d7e6555a106e292}{motor\_steps}}*(\mbox{\hyperlink{classa4988_a1965dbc601b23711ab178ae9067133c3}{step\_delay}}*2)/360; \textcolor{comment}{//to rpm}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00165}00165 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00166}\mbox{\hyperlink{classa4988_a4e8bd4e45fe5a4fa30fafc877713978c}{00166}} \textcolor{keywordtype}{float} \mbox{\hyperlink{classa4988_a4e8bd4e45fe5a4fa30fafc877713978c}{a4988::getDelay}}()}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00167}00167 \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00168}00168    \textcolor{keywordflow}{return} \mbox{\hyperlink{classa4988_a1965dbc601b23711ab178ae9067133c3}{step\_delay}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00169}00169 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00170}\mbox{\hyperlink{classa4988_aa86021ee00cae65c6c963553f30e22b3}{00170}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classa4988_aa86021ee00cae65c6c963553f30e22b3}{a4988::getStepCounter}}()}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00171}00171 \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00172}00172    \textcolor{keywordflow}{return} \mbox{\hyperlink{classa4988_a3b6a16a6b8162c6a3ba164fedeef0fb7}{TotalStepCounted}};}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00173}00173 \}}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00174}\mbox{\hyperlink{classa4988_ae59dc905051ebfdcfac1d48f172d523f}{00174}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classa4988_ae59dc905051ebfdcfac1d48f172d523f}{a4988::setSpeed}}(\textcolor{keywordtype}{int} speed)}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00175}00175 \{}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00176}00176    Serial.println(speed);}
+\DoxyCodeLine{\Hypertarget{_driver_a4988_8cpp_source_l00177}00177 \}}
+
+\end{DoxyCode}

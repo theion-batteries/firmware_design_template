@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_driver_a4988_8hpp" kind="file" language="C++">
+    <compoundname>DriverA4988.hpp</compoundname>
+    <includes local="no">ArduinoSTL.h</includes>
+    <includes refid="_configs_8h" local="yes">Configs.h</includes>
+    <includedby refid="_nema__8_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp</includedby>
+    <includedby refid="_driver_a4988_8cpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>ArduinoSTL.h</label>
+      </node>
+      <node id="3">
+        <label>Configs.h</label>
+        <link refid="_configs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp</label>
+        <link refid="_driver_a4988_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Alignment.hpp</label>
+        <link refid="_alignment_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <link refid="_cmd_pattern_callbacks_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</label>
+        <link refid="_cmd_pattern_classes_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <link refid="_com_handler_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp</label>
+        <link refid="_driver_a4988_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <link refid="_globals_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp</label>
+        <link refid="_nema__8_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Alignment.cpp</label>
+        <link refid="_alignment_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <link refid="_cmd_pattern_callbacks_8cpp"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <link refid="_com_handler_8cpp"/>
+      </node>
+      <node id="13">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp</label>
+        <link refid="_driver_a4988_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <link refid="_globals_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classa4988" prot="public">a4988</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>a4988.cpp<sp/>-<sp/>-<sp/>Arduino<sp/>library<sp/>for<sp/>using<sp/>the<sp/>a4988<sp/>stepper<sp/>driver</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>William<sp/>Smith,<sp/>2014</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>The<sp/>A4988<sp/>stepper<sp/>driver<sp/>is<sp/>for<sp/>Pololu<sp/>stepper<sp/>driver<sp/>boards</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>and<sp/>compatible<sp/>clones.<sp/>These<sp/>boards<sp/>use<sp/>the<sp/>Allegro<sp/>a4988</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>stepper<sp/>motor<sp/>driver<sp/>IC.<sp/>(see<sp/>Allegro<sp/>website<sp/>for<sp/>datasheet)</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>diverges<sp/>from<sp/>others<sp/>that<sp/>are<sp/>around,<sp/>in<sp/>that<sp/>it</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>assumes<sp/>that<sp/>the<sp/>MS1,<sp/>MS2,<sp/>and<sp/>MS3<sp/>pins<sp/>are<sp/>connected<sp/>to<sp/>gpio</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>pins<sp/>on<sp/>the<sp/>Arduino,<sp/>allowing<sp/>control<sp/>over<sp/>the<sp/>microstepping</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>modes.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>The<sp/>A4988<sp/>is<sp/>capable<sp/>of<sp/>microstepping<sp/>down<sp/>to<sp/>1/16<sp/>of<sp/>a<sp/>step,</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>enabling<sp/>fine<sp/>control<sp/>over<sp/>the<sp/>stepper<sp/>motor.<sp/>This<sp/>fine<sp/>control</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>can<sp/>be<sp/>used<sp/>in,<sp/>among<sp/>other<sp/>things,<sp/>3D<sp/>printers.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>provides<sp/>an<sp/>interface<sp/>for<sp/>setting<sp/>the<sp/>different</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>step<sp/>modes,<sp/>going<sp/>from<sp/>full<sp/>step<sp/>down<sp/>to<sp/>1/16<sp/>step,<sp/>using<sp/>a</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>simple<sp/>setter<sp/>function,<sp/>where<sp/>the<sp/>argument<sp/>is<sp/>1,2,4,8,<sp/>or<sp/>16.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>MS1<sp/><sp/><sp/>MS2<sp/><sp/><sp/>MS3</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>-----------------</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>low<sp/><sp/><sp/>low<sp/><sp/><sp/>low<sp/><sp/><sp/>Full<sp/>step</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>high<sp/><sp/>low<sp/><sp/><sp/>low<sp/><sp/><sp/>Half<sp/>step</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>low<sp/><sp/><sp/>high<sp/><sp/>low<sp/><sp/><sp/>1/4<sp/>step</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>high<sp/><sp/>high<sp/><sp/>low<sp/><sp/><sp/>1/8<sp/>step</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>high<sp/><sp/>high<sp/><sp/>high<sp/><sp/>1/16<sp/>step</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>Note:</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/>Lower<sp/>delay<sp/>values<sp/>can<sp/>be<sp/>used<sp/>in<sp/>the<sp/>microstepping<sp/>mode.</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/>Values<sp/>as<sp/>low<sp/>as<sp/>25<sp/>usec<sp/>can<sp/>be<sp/>used<sp/>in<sp/>the<sp/>1/16<sp/>mode</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>with<sp/>some<sp/>motors.<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ArduinoSTL.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_configs_8h" kindref="compound">Configs.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>debug<sp/>or<sp/>release<sp/>there</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classa4988" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classa4988" kindref="compound">a4988</ref><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>constructors:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" kindref="member">a4988</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1ad6372b76bfc23c771d7e6555a106e292" kindref="member">motor_steps</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a2be691a68489baf9924cc7c69b16f7c0" kindref="member">ms1_pin</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1af6dd6e9adf74830b1ce8b37717cd3ff1" kindref="member">ms2_pin</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1ad791d1b4e66527168deb1aa96a6cc11f" kindref="member">ms3_pin</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a897f9e23b473274f3d27e9380d145be4" kindref="member">dir_pin</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a8e401b32d17b578cd1e4d06779ba5b61" kindref="member">enable_pin</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a1f7e3717033bd9204414c1408b58eaa5" kindref="member">step_pin</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" kindref="member">direction</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classa4988_1ad61ff3ecdea7afe55a30edf31f1e0323" kindref="member">enable</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1ad61ff3ecdea7afe55a30edf31f1e0323" kindref="member">enable</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>mover<sp/>method:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classa4988_1ad66dadbb79c22bc3f507fe6d624c9fec" kindref="member">step</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a1eb89487e1d4fc4cb068d581a6278003" kindref="member">num_steps</ref>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>step<sp/>a<sp/>given<sp/>number<sp/>of<sp/>steps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a2074f2e3fe7cd79e402f53a14ba68c89" kindref="member">stepOnce</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45" refid="classa4988_1af3c159ccf4f2fa8d26d03683181b1fac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classa4988_1af3c159ccf4f2fa8d26d03683181b1fac" kindref="member">stepMotor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>this_step);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classa4988_1ad11ebef929f054194109e909f2646880" kindref="member">reverseDirection</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>getter<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a0b7c5f9fb44b05f6642b517abc9b4a07" kindref="member">getSpeed</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a4e8bd4e45fe5a4fa30fafc877713978c" kindref="member">getDelay</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1aa86021ee00cae65c6c963553f30e22b3" kindref="member">getStepCounter</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a01be380db105cfc684c55dc42b81f76d" kindref="member">getDirection</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classa4988_1af905ad2bb5a9e5465e83f081067a139c" kindref="member">setDelay</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>delay);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>microseconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classa4988_1ae59dc905051ebfdcfac1d48f172d523f" kindref="member">setSpeed</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>speed);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a6a37cf937b1f7a1f229904cdb9191b89" kindref="member">setDirection</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" kindref="member">direction</ref>);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0<sp/>forward,<sp/>1<sp/>backward</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a150215b9cd4e4841befd2dc9d4b4a3be" kindref="member">setStepMode</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stepMode);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(1<sp/>/)<sp/>1,<sp/>2,<sp/>4,<sp/>8,<sp/>or<sp/>16<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" kindref="member">direction</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Direction<sp/>of<sp/>rotation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classa4988_1ad6372b76bfc23c771d7e6555a106e292" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1ad6372b76bfc23c771d7e6555a106e292" kindref="member">motor_steps</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>steps<sp/>motor<sp/>has<sp/>per<sp/>revolution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classa4988_1a1965dbc601b23711ab178ae9067133c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a1965dbc601b23711ab178ae9067133c3" kindref="member">step_delay</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>delay<sp/>between<sp/>steps,<sp/>in<sp/>us</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classa4988_1a1eb89487e1d4fc4cb068d581a6278003" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a1eb89487e1d4fc4cb068d581a6278003" kindref="member">num_steps</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>total<sp/>number<sp/>of<sp/>steps<sp/>to<sp/>step</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classa4988_1add7441f68064b3dd6e06d5bcb30cb159" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1add7441f68064b3dd6e06d5bcb30cb159" kindref="member">step_number</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>which<sp/>step<sp/>the<sp/>motor<sp/>is<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classa4988_1a45956ebaed9f19834bc9094dd59f551a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a45956ebaed9f19834bc9094dd59f551a" kindref="member">step_mode</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>which<sp/>mode<sp/>1<sp/>/<sp/>1,<sp/>2,<sp/>4,<sp/>8,<sp/>or<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classa4988_1a1f7e3717033bd9204414c1408b58eaa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a1f7e3717033bd9204414c1408b58eaa5" kindref="member">step_pin</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pin<sp/>which<sp/>controls<sp/>stepping</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>control<sp/>pin<sp/>numbers:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classa4988_1a2be691a68489baf9924cc7c69b16f7c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a2be691a68489baf9924cc7c69b16f7c0" kindref="member">ms1_pin</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>setting<sp/>different<sp/>microstepping<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classa4988_1af6dd6e9adf74830b1ce8b37717cd3ff1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1af6dd6e9adf74830b1ce8b37717cd3ff1" kindref="member">ms2_pin</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>setting<sp/>different<sp/>microstepping<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classa4988_1ad791d1b4e66527168deb1aa96a6cc11f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1ad791d1b4e66527168deb1aa96a6cc11f" kindref="member">ms3_pin</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>setting<sp/>different<sp/>microstepping<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classa4988_1a897f9e23b473274f3d27e9380d145be4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a897f9e23b473274f3d27e9380d145be4" kindref="member">dir_pin</ref>;</highlight></codeline>
+<codeline lineno="72" refid="classa4988_1a8e401b32d17b578cd1e4d06779ba5b61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a8e401b32d17b578cd1e4d06779ba5b61" kindref="member">enable_pin</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>step<sp/>counting<sp/>inside<sp/>function<sp/>calls<sp/>(reset<sp/>to<sp/>zero<sp/>after<sp/>func<sp/>is<sp/>canceled<sp/>or<sp/>finished)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classa4988_1a58dce61bc6613bc5e7bd5cb77a3abaf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a58dce61bc6613bc5e7bd5cb77a3abaf8" kindref="member">StepCounter</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>count<sp/>global<sp/>steps<sp/>since<sp/>the<sp/>start<sp/>of<sp/>programm:<sp/>usefull<sp/>when<sp/>limit<sp/>are<sp/>checked<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classa4988_1a3b6a16a6b8162c6a3ba164fedeef0fb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classa4988_1a3b6a16a6b8162c6a3ba164fedeef0fb7" kindref="member">TotalStepCounted</ref>=0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp"/>
+  </compounddef>
+</doxygen>

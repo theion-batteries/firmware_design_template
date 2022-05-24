@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_calibrate_cmd" kind="class" language="C++" prot="public">
+    <compoundname>CalibrateCmd</compoundname>
+    <basecompoundref refid="class_i_command" prot="public" virt="non-virtual">ICommand</basecompoundref>
+    <includes refid="_cmd_pattern_classes_8h" local="no">CmdPatternClasses.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_calibrate_cmd_1a9323d4fff347e72ea68ec85d2db6e8af" prot="private" static="no" mutable="no">
+        <type><ref refid="class_alignment" kindref="compound">Alignment</ref> &amp;</type>
+        <definition>Alignment&amp; CalibrateCmd::FU</definition>
+        <argsstring></argsstring>
+        <name>FU</name>
+        <qualifiedname>CalibrateCmd::FU</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="375" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_calibrate_cmd_1aeaeebbd1c19effa3c01429fce9aa66a0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CalibrateCmd::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <qualifiedname>CalibrateCmd::target</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="376" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_calibrate_cmd_1a56508be09b60ed6b6d85d53f77083d15" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CalibrateCmd::oldVal</definition>
+        <argsstring></argsstring>
+        <name>oldVal</name>
+        <qualifiedname>CalibrateCmd::oldVal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="377" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_calibrate_cmd_1ab5a4b8e96311f8fa109eed350cac04df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CalibrateCmd::CalibrateCmd</definition>
+        <argsstring>(Alignment &amp;Funit, float target)</argsstring>
+        <name>CalibrateCmd</name>
+        <qualifiedname>CalibrateCmd::CalibrateCmd</qualifiedname>
+        <param>
+          <type><ref refid="class_alignment" kindref="compound">Alignment</ref> &amp;</type>
+          <declname>Funit</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="379" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="379" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calibrate_cmd_1a9c979e62ff060e9218efe359812de2ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CalibrateCmd::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>CalibrateCmd::execute</qualifiedname>
+        <reimplements refid="class_i_command_1ace81beb0beea968f876f292446bf1120">execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="380" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="380" bodyend="384"/>
+        <references refid="class_alignment_1aa10c40160fe39fa263b12f0e07d4f67c" compoundref="_alignment_8cpp" startline="558" endline="655">Alignment::calibratePrintHead</references>
+        <references refid="class_alignment_1a9f3eee5f60bc1591e1895d7c4cd7c410" compoundref="_alignment_8cpp" startline="1821" endline="1828">Alignment::setTargetDistancePHToML</references>
+      </memberdef>
+      <memberdef kind="function" id="class_calibrate_cmd_1a8c8127c109b0b9056f1d1cf4f5947753" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void CalibrateCmd::undo</definition>
+        <argsstring>()</argsstring>
+        <name>undo</name>
+        <qualifiedname>CalibrateCmd::undo</qualifiedname>
+        <reimplements refid="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78">undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="385" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="385" bodyend="387"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CalibrateCmd</label>
+        <link refid="class_calibrate_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CalibrateCmd</label>
+        <link refid="class_calibrate_cmd"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="373" column="2" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="373" bodyend="388"/>
+    <listofallmembers>
+      <member refid="class_calibrate_cmd_1ab5a4b8e96311f8fa109eed350cac04df" prot="public" virt="non-virtual"><scope>CalibrateCmd</scope><name>CalibrateCmd</name></member>
+      <member refid="class_calibrate_cmd_1a9c979e62ff060e9218efe359812de2ea" prot="public" virt="virtual"><scope>CalibrateCmd</scope><name>execute</name></member>
+      <member refid="class_calibrate_cmd_1a9323d4fff347e72ea68ec85d2db6e8af" prot="private" virt="non-virtual"><scope>CalibrateCmd</scope><name>FU</name></member>
+      <member refid="class_calibrate_cmd_1a56508be09b60ed6b6d85d53f77083d15" prot="private" virt="non-virtual"><scope>CalibrateCmd</scope><name>oldVal</name></member>
+      <member refid="class_calibrate_cmd_1aeaeebbd1c19effa3c01429fce9aa66a0" prot="private" virt="non-virtual"><scope>CalibrateCmd</scope><name>target</name></member>
+      <member refid="class_calibrate_cmd_1a8c8127c109b0b9056f1d1cf4f5947753" prot="public" virt="virtual"><scope>CalibrateCmd</scope><name>undo</name></member>
+      <member refid="class_i_command_1a0e0226af93b945e84b58405e9d5343b1" prot="public" virt="virtual"><scope>CalibrateCmd</scope><name>~ICommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

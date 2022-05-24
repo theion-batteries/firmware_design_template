@@ -1,0 +1,31 @@
+<map id="Alignment::oscillateSys" name="Alignment::oscillateSys">
+<area shape="rect" id="node1" title=" " alt="" coords="5,269,164,296"/>
+<area shape="rect" id="node2" href="$class_alignment.html#a01a1103e23dd986877681907d20cc1f8" title=" " alt="" coords="213,187,415,213"/>
+<area shape="rect" id="node15" href="$class_alignment.html#abbd45543d5f6dcdaf88633fcade036bf" title=" " alt="" coords="212,244,416,271"/>
+<area shape="rect" id="node22" href="$class_alignment.html#ade2162aba2ca25114a6edefcbbb0ea94" title=" " alt="" coords="213,295,415,321"/>
+<area shape="rect" id="node29" href="$class_alignment.html#a7a971878b2e1c3234429fce2d8baa454" title=" " alt="" coords="727,573,891,600"/>
+<area shape="rect" id="node3" href="$class_alignment.html#a5aab206d9d1e56c22b43e42f95014062" title=" " alt="" coords="465,7,655,33"/>
+<area shape="rect" id="node7" href="$class_alignment.html#a2440f9acebf113fad04bb77d2c0b9e6e" title=" " alt="" coords="473,185,647,212"/>
+<area shape="rect" id="node10" href="$class_alignment.html#a9a308ec9c53310e89e79b84c5274fa6c" title=" " alt="" coords="472,355,648,381"/>
+<area shape="rect" id="node4" href="$class_alignment.html#a0973326d2762dd758eb1d7f6740b69f5" title=" " alt="" coords="705,5,913,32"/>
+<area shape="rect" id="node5" href="$classend_switch.html#ae1f7e6d7200feb02820c02708bca01c0" title="get current state" alt="" coords="964,49,1119,90"/>
+<area shape="rect" id="node6" href="$classend_switch.html#ac38e43effb237b61a1f4b09092b5ac53" title="debounce a button" alt="" coords="1168,56,1315,83"/>
+<area shape="rect" id="node8" href="$class_alignment.html#ad66e261f955a7ff82655ad9dc40511d4" title=" " alt="" coords="719,158,900,199"/>
+<area shape="rect" id="node9" href="$classlight_barrier.html#a9f75c7d7640cf9aab7f67f1b16e27077" title="get current state" alt="" coords="963,223,1120,265"/>
+<area shape="rect" id="node11" href="$class_alignment.html#ac8aa65bdcfb551bb996ac59ee8d8db3d" title="convert distance in mm or µm to step or microstep" alt="" coords="718,406,901,447"/>
+<area shape="rect" id="node12" href="$class_alignment.html#ac82e5ad8712ea3408ec29899202cae65" title=" " alt="" coords="733,355,886,381"/>
+<area shape="rect" id="node13" href="$classa4988.html#a6a37cf937b1f7a1f229904cdb9191b89" title=" " alt="" coords="974,472,1109,499"/>
+<area shape="rect" id="node14" href="$classa4988.html#a2074f2e3fe7cd79e402f53a14ba68c89" title=" " alt="" coords="981,523,1102,549"/>
+<area shape="rect" id="node16" href="$class_alignment.html#a9ed6e9c6e5387111a33d892e9406a4f7" title=" " alt="" coords="464,61,656,88"/>
+<area shape="rect" id="node18" href="$class_alignment.html#a29a09538dce5388b0873b131ea2f66a7" title=" " alt="" coords="472,239,648,265"/>
+<area shape="rect" id="node20" href="$class_alignment.html#a04e9899bf752e59d8f69ba2df62dbf62" title=" " alt="" coords="471,409,649,436"/>
+<area shape="rect" id="node17" href="$class_alignment.html#a3fd39f62a10172bfd8c63e7cbf5983bd" title=" " alt="" coords="704,56,915,83"/>
+<area shape="rect" id="node19" href="$class_alignment.html#aac7394937e1dc058fb929abca3465dd1" title=" " alt="" coords="719,223,900,265"/>
+<area shape="rect" id="node21" href="$class_alignment.html#a8aa856f47fad52fd553f0d933edcb23b" title=" " alt="" coords="732,472,887,499"/>
+<area shape="rect" id="node23" href="$class_alignment.html#af0794341994b69753b31b5665ab56c34" title=" " alt="" coords="465,120,655,147"/>
+<area shape="rect" id="node25" href="$class_alignment.html#aee871f24d8dc408d22c9e9b139e02daa" title=" " alt="" coords="473,295,647,321"/>
+<area shape="rect" id="node27" href="$class_alignment.html#a24e83e729b3b6b9d5c9fee02a42e26cb" title=" " alt="" coords="472,460,648,487"/>
+<area shape="rect" id="node24" href="$class_alignment.html#a54ac0ddea519c9c51c185a03174f643d" title=" " alt="" coords="705,107,913,133"/>
+<area shape="rect" id="node26" href="$class_alignment.html#ad8475ba7636ed61ab7b3a70f54d5a26f" title=" " alt="" coords="719,289,900,330"/>
+<area shape="rect" id="node28" href="$class_alignment.html#a4011b1521cc136081115518c677a455d" title=" " alt="" coords="733,523,886,549"/>
+</map>

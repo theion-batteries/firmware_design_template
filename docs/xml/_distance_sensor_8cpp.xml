@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_distance_sensor_8cpp" kind="file" language="C++">
+    <compoundname>DistanceSensor.cpp</compoundname>
+    <includes refid="_distance_sensor_8hpp" local="yes">DistanceSensor.hpp</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>ArduinoSTL.h</label>
+      </node>
+      <node id="3">
+        <label>Configs.h</label>
+        <link refid="_configs_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>DistanceSensor.hpp</label>
+        <link refid="_distance_sensor_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Keyence_API.h</label>
+        <link refid="_keyence___a_p_i_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DistanceSensor.cpp</label>
+        <link refid="_distance_sensor_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_distance_sensor_8hpp" kindref="compound">DistanceSensor.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>hc_sr04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="class_distance_sensor_1a34b043ed931b955731c0951d1cb625d2" kindref="member">DistanceSensor::DistanceSensor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>EchoPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TrigPin){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;EchoPin=EchoPin;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;TrigPin=TrigPin;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(EchoPin,<sp/>INPUT);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(TrigPin,OUTPUT);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(TrigPin,<sp/>LOW);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>keyence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>conctructor<sp/>distance<sp/>sensor<sp/>generic<sp/>keyence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="class_distance_sensor_1a34b043ed931b955731c0951d1cb625d2" kindref="member">DistanceSensor::DistanceSensor</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OutputHeadNumber)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">this-&gt;<ref refid="class_distance_sensor_1a534437583b197ba595bf54e31ff58b64" kindref="member">HeadNum</ref>=OutputHeadNumber;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//Keyence_base::NumUsedHeads.insert(Keyence_base::NumUsedHeads.begin()+Keyence_base::HeadsCount,OutputHeadNumber);<sp/><sp/><sp/>//insert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="class_keyence__base_1af588a8387643ec05ca11f2a825b6c56d" kindref="member">Keyence_base::HeadsArray</ref>[<ref refid="class_keyence__base_1afe8c07a4197b77ad65d4b53292ff6cf4" kindref="member">Keyence_base::HeadsCount</ref>]=OutputHeadNumber;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="class_keyence__base_1afe8c07a4197b77ad65d4b53292ff6cf4" kindref="member">Keyence_base::HeadsCount</ref>++;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1afd9021692a991103c20e928977bdec69" kindref="member">DistanceSensor::setKeyenceCom</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_distance_sensor_1ac97d894ab1bbd43fd3e22c1fb7aa6585" kindref="member">IkeyenceRS232</ref>-&gt;<ref refid="class_keyence__rs232__interface_1a3171bb643c8988df2f3195bb67a1392e" kindref="member">initKeyenceCom</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_distance_sensor_1ac97d894ab1bbd43fd3e22c1fb7aa6585" kindref="member">IkeyenceRS232</ref>-&gt;<ref refid="class_keyence__rs232__interface_1a2b0d0b535e0fb2c9f11ab1fe755f108f" kindref="member">setGeneralMode</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Serial.println(&quot;Keyence<sp/>general<sp/>mode<sp/>set<sp/>succefully&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Serial.flush();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>generic<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_distance_sensor_1a1b5434dd7b12183ded0962f6e42a8f8d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1a1b5434dd7b12183ded0962f6e42a8f8d" kindref="member">DistanceSensor::getCurrentDistance</ref>()</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>hc_sr04<sp/></highlight><highlight class="comment">//how<sp/>to<sp/>read<sp/>with<sp/>hc_sr04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>t2;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>pulse_width;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cm;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(TrigPin,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delayMicroseconds(10);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(TrigPin,<sp/>LOW);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<sp/>digitalRead(EchoPin)<sp/>==<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t1<sp/>=<sp/>micros();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<sp/>digitalRead(EchoPin)<sp/>==<sp/>1);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t2<sp/>=<sp/>micros();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pulse_width<sp/>=<sp/>t2<sp/>-<sp/>t1;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cm<sp/>=<sp/>pulse_width<sp/>/<sp/>58.0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>mm<sp/>=<sp/>cm*10;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_distance_sensor_1a7277aa0cf628731f0db9329874a3b525" kindref="member">currentDistance</ref>=mm;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1a7277aa0cf628731f0db9329874a3b525" kindref="member">currentDistance</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/*******<sp/>get<sp/>values<sp/>from<sp/>keyence<sp/>*********/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>keyence<sp/></highlight><highlight class="comment">//how<sp/>to<sp/>read<sp/>with<sp/>keyence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_distance_sensor_1ac97d894ab1bbd43fd3e22c1fb7aa6585" kindref="member">IkeyenceRS232</ref>-&gt;<ref refid="class_keyence__rs232__interface_1ad2606a20f587944928d8cadef8505af3" kindref="member">getValueOutputHeadAll</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_keyence__base_1a3b9220df65b8fcc3acdb16dca31272a5" kindref="member">Keyence_base::LookUpValues</ref>[this-&gt;<ref refid="class_distance_sensor_1a534437583b197ba595bf54e31ff58b64" kindref="member">HeadNum</ref>-1];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70" refid="class_distance_sensor_1a023ee399031eac2a1495d15e796a7fdc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_distance_sensor_1a023ee399031eac2a1495d15e796a7fdc" kindref="member">DistanceSensor::printDistance</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>timer_print_serial=0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>period<sp/>=<sp/>500;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/></highlight><highlight class="comment">//if(millis()-timer_print_serial&gt;period)<sp/>//timer<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>timer_print_serial=millis();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;current<sp/>distance<sp/>head<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(this-&gt;<ref refid="class_distance_sensor_1a534437583b197ba595bf54e31ff58b64" kindref="member">HeadNum</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;<sp/>equal<sp/>to<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(val);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DistanceSensor.cpp"/>
+  </compounddef>
+</doxygen>

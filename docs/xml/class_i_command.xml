@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_i_command" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>ICommand</compoundname>
+    <derivedcompoundref refid="class_calibrate_cmd" prot="public" virt="non-virtual">CalibrateCmd</derivedcompoundref>
+    <derivedcompoundref refid="class_enable_motor_cmd" prot="public" virt="non-virtual">EnableMotorCmd</derivedcompoundref>
+    <derivedcompoundref refid="class_move_motor_cmd" prot="public" virt="non-virtual">MoveMotorCmd</derivedcompoundref>
+    <derivedcompoundref refid="class_move_motor_down_cmd" prot="public" virt="non-virtual">MoveMotorDownCmd</derivedcompoundref>
+    <derivedcompoundref refid="class_move_motor_up_cmd" prot="public" virt="non-virtual">MoveMotorUpCmd</derivedcompoundref>
+    <derivedcompoundref refid="class_reset_device" prot="public" virt="non-virtual">ResetDevice</derivedcompoundref>
+    <derivedcompoundref refid="class_rotate_motor_cclk_cmd" prot="public" virt="non-virtual">RotateMotorCclkCmd</derivedcompoundref>
+    <derivedcompoundref refid="class_rotate_motor_clk_cmd" prot="public" virt="non-virtual">RotateMotorClkCmd</derivedcompoundref>
+    <derivedcompoundref refid="class_rotate_motor_cmd" prot="public" virt="non-virtual">RotateMotorCmd</derivedcompoundref>
+    <derivedcompoundref refid="class_sleep_device" prot="public" virt="non-virtual">SleepDevice</derivedcompoundref>
+    <derivedcompoundref refid="classget_motor_cmd" prot="public" virt="non-virtual">getMotorCmd</derivedcompoundref>
+    <derivedcompoundref refid="classget_motor_delay_cmd" prot="public" virt="non-virtual">getMotorDelayCmd</derivedcompoundref>
+    <derivedcompoundref refid="classget_motor_direction_cmd" prot="public" virt="non-virtual">getMotorDirectionCmd</derivedcompoundref>
+    <derivedcompoundref refid="classget_motor_speed_cmd" prot="public" virt="non-virtual">getMotorSpeedCmd</derivedcompoundref>
+    <derivedcompoundref refid="classget_sensor_cmd" prot="public" virt="non-virtual">getSensorCmd</derivedcompoundref>
+    <derivedcompoundref refid="classget_sensor_value_cmd" prot="public" virt="non-virtual">getSensorValueCmd</derivedcompoundref>
+    <derivedcompoundref refid="classget_u_u_i_d" prot="public" virt="non-virtual">getUUID</derivedcompoundref>
+    <derivedcompoundref refid="classset_motor_cmd" prot="public" virt="non-virtual">setMotorCmd</derivedcompoundref>
+    <derivedcompoundref refid="classset_motor_delay_cmd" prot="public" virt="non-virtual">setMotorDelayCmd</derivedcompoundref>
+    <derivedcompoundref refid="classset_motor_direction_cmd" prot="public" virt="non-virtual">setMotorDirectionCmd</derivedcompoundref>
+    <derivedcompoundref refid="classset_motor_speed_cmd" prot="public" virt="non-virtual">setMotorSpeedCmd</derivedcompoundref>
+    <derivedcompoundref refid="classset_u_u_i_d" prot="public" virt="non-virtual">setUUID</derivedcompoundref>
+    <includes refid="_cmd_pattern_classes_8h" local="no">CmdPatternClasses.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_i_command_1a0e0226af93b945e84b58405e9d5343b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual ICommand::~ICommand</definition>
+        <argsstring>()</argsstring>
+        <name>~ICommand</name>
+        <qualifiedname>ICommand::~ICommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="23" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_i_command_1ace81beb0beea968f876f292446bf1120" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ICommand::execute</definition>
+        <argsstring>()=0</argsstring>
+        <name>execute</name>
+        <qualifiedname>ICommand::execute</qualifiedname>
+        <reimplementedby refid="classget_u_u_i_d_1a936e4f57c5e32cc1a00cbb6e87f5dd87">execute</reimplementedby>
+        <reimplementedby refid="classset_u_u_i_d_1a91a69117ee9a224e831fd77315ce2b21">execute</reimplementedby>
+        <reimplementedby refid="class_reset_device_1a4fea167917ec9599f0f23bed5ef1b1a1">execute</reimplementedby>
+        <reimplementedby refid="class_sleep_device_1a2af8e3cf7616dca7986a3f3673084404">execute</reimplementedby>
+        <reimplementedby refid="class_enable_motor_cmd_1aed19db21a151de3b0c39524160323457">execute</reimplementedby>
+        <reimplementedby refid="classget_motor_cmd_1a7a78cdf82598364bd0db596ec5c4c4c7">execute</reimplementedby>
+        <reimplementedby refid="classget_motor_speed_cmd_1a417c6ed5782be14aee4e2d97560f8af0">execute</reimplementedby>
+        <reimplementedby refid="classget_motor_direction_cmd_1a3fd8f5b9573e1b5ed69c8e4db0eaa8af">execute</reimplementedby>
+        <reimplementedby refid="classget_motor_delay_cmd_1a8f303a80a131389a92056d56e063760a">execute</reimplementedby>
+        <reimplementedby refid="classset_motor_cmd_1ac22462c9566d74d1893c8c7a353fd205">execute</reimplementedby>
+        <reimplementedby refid="classset_motor_speed_cmd_1aed6577e323683bf21b1f0331cad4d5ca">execute</reimplementedby>
+        <reimplementedby refid="classset_motor_direction_cmd_1ab7e1ec07b1cabf7293b57e6c8adee418">execute</reimplementedby>
+        <reimplementedby refid="classset_motor_delay_cmd_1ab8397cfaed1d858b7517e658632099b6">execute</reimplementedby>
+        <reimplementedby refid="class_move_motor_cmd_1a2862a99dc68be06d7dbd6a05e0ac5239">execute</reimplementedby>
+        <reimplementedby refid="class_move_motor_up_cmd_1abe4d84e2c2bd89bf875820aa96f7acb0">execute</reimplementedby>
+        <reimplementedby refid="class_move_motor_down_cmd_1ac319973b67f7df5f252f2849aae38f40">execute</reimplementedby>
+        <reimplementedby refid="class_rotate_motor_cmd_1ad1a8d99fff4d37ff888597633f40ad3b">execute</reimplementedby>
+        <reimplementedby refid="class_rotate_motor_clk_cmd_1a56a9f5b4304d8ead3ef66175f0134dc6">execute</reimplementedby>
+        <reimplementedby refid="class_rotate_motor_cclk_cmd_1a9cd0bf2d88fd1cf6dc55eb09d13df733">execute</reimplementedby>
+        <reimplementedby refid="classget_sensor_cmd_1aae194bcae6d0de695a7ceb6b3d245084">execute</reimplementedby>
+        <reimplementedby refid="classget_sensor_value_cmd_1a56dd54d09b57a0901d731a9cc5c54676">execute</reimplementedby>
+        <reimplementedby refid="class_calibrate_cmd_1a9c979e62ff060e9218efe359812de2ea">execute</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="24" column="18"/>
+        <referencedby refid="class_firm_invoker_1a8e7480af731d63b3de35b63ccd4c4017" compoundref="_cmd_pattern_classes_8h" startline="433" endline="438">FirmInvoker::calibrate</referencedby>
+        <referencedby refid="class_invoker_1ab9c02720cd689b846f1ce35f81558d65" compoundref="_cmd_pattern_classes_8h" startline="413" endline="418">Invoker::finish</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
+        <referencedby refid="class_motor_invoker_1ade50a014a21d612e50372b78eea3dd1f" compoundref="_cmd_pattern_classes_8h" startline="572" endline="576">MotorInvoker::getDelay</referencedby>
+        <referencedby refid="class_motor_invoker_1a785a3daa5b43d306eb8461cf23fb428d" compoundref="_cmd_pattern_classes_8h" startline="577" endline="581">MotorInvoker::getDirection</referencedby>
+        <referencedby refid="class_motor_invoker_1a48b4456aa0306afd3761594e533632c4" compoundref="_cmd_pattern_classes_8h" startline="567" endline="571">MotorInvoker::getSpeed</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ac82a0068988fe425288370e121b04f00" compoundref="_cmd_pattern_callbacks_8cpp" startline="242" endline="291">move_cmd</referencedby>
+        <referencedby refid="class_motor_invoker_1a1f732269172a2bb248deb930bddfe86b" compoundref="_cmd_pattern_classes_8h" startline="534" endline="544">MotorInvoker::moveDown</referencedby>
+        <referencedby refid="class_motor_invoker_1a5a337c1b070c332cb8636895ba75d321" compoundref="_cmd_pattern_classes_8h" startline="523" endline="533">MotorInvoker::moveUp</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1ae3feb7f7fca30ce0a0c8dcc76eb01ff9" compoundref="_cmd_pattern_callbacks_8cpp" startline="331" endline="335">reset_cmd</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" compoundref="_cmd_pattern_callbacks_8cpp" startline="293" endline="312">rotate_cmd</referencedby>
+        <referencedby refid="class_motor_invoker_1a08cae71a6828cbe76bc2a7acfc13a9a2" compoundref="_cmd_pattern_classes_8h" startline="556" endline="566">MotorInvoker::rotateCclk</referencedby>
+        <referencedby refid="class_motor_invoker_1a86c42b047d8450b0f810efd0f10e0162" compoundref="_cmd_pattern_classes_8h" startline="545" endline="555">MotorInvoker::rotateClk</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1adcae3b60a9fcfef183dd0b91967e2ad6" compoundref="_cmd_pattern_callbacks_8cpp" startline="173" endline="240">set_cmd</referencedby>
+        <referencedby refid="class_motor_invoker_1a84fd04a42677c3e72fbdf0638ee7e96d" compoundref="_cmd_pattern_classes_8h" startline="587" endline="591">MotorInvoker::setDelay</referencedby>
+        <referencedby refid="class_motor_invoker_1ad014d8e45f90e64b43b642a6e656f644" compoundref="_cmd_pattern_classes_8h" startline="592" endline="596">MotorInvoker::setDirection</referencedby>
+        <referencedby refid="class_motor_invoker_1a1d54d51f475e95e30de0f551f8d8cddd" compoundref="_cmd_pattern_classes_8h" startline="582" endline="586">MotorInvoker::setSpeed</referencedby>
+        <referencedby refid="_cmd_pattern_callbacks_8h_1a95dfb636156bd75ec75576b2f153c6c6" compoundref="_cmd_pattern_callbacks_8cpp" startline="341" endline="345">sleep_cmd</referencedby>
+        <referencedby refid="class_invoker_1ace85c70f471ce7fca542203f0c2fdff3" compoundref="_cmd_pattern_classes_8h" startline="404" endline="409">Invoker::start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void ICommand::undo</definition>
+        <argsstring>()=0</argsstring>
+        <name>undo</name>
+        <qualifiedname>ICommand::undo</qualifiedname>
+        <reimplementedby refid="classget_u_u_i_d_1a69c01b37186855ef1c6843447af7d5fb">undo</reimplementedby>
+        <reimplementedby refid="classset_u_u_i_d_1ab191fc5edb68601bbefc8d90fafb6ea5">undo</reimplementedby>
+        <reimplementedby refid="class_reset_device_1a2b7e4b073016b3be5214f0d96a8ab47e">undo</reimplementedby>
+        <reimplementedby refid="class_sleep_device_1af10137c53565bf2f2ea6ddc3ce68519f">undo</reimplementedby>
+        <reimplementedby refid="class_enable_motor_cmd_1a201febf8a6073d830b912550f33feb4d">undo</reimplementedby>
+        <reimplementedby refid="classget_motor_cmd_1a86da8086b2128f2d84be683cd8e9c781">undo</reimplementedby>
+        <reimplementedby refid="classget_motor_speed_cmd_1ad8c0f4617704991b15ca2f9d0dcfc9eb">undo</reimplementedby>
+        <reimplementedby refid="classget_motor_direction_cmd_1a44211f83994687c08c62335a4e16f3ca">undo</reimplementedby>
+        <reimplementedby refid="classget_motor_delay_cmd_1af2a4d2b9c86a959ad72d9503cd853554">undo</reimplementedby>
+        <reimplementedby refid="classset_motor_cmd_1ac5b2adee44c84ea723910d9ea4d6f6e5">undo</reimplementedby>
+        <reimplementedby refid="classset_motor_speed_cmd_1a6686959fbc4d63c561776dab937205c5">undo</reimplementedby>
+        <reimplementedby refid="classset_motor_direction_cmd_1a3b1204715fd821801515d8d4cd40faba">undo</reimplementedby>
+        <reimplementedby refid="classset_motor_delay_cmd_1a7971ab68b7b37c58b128901f74076f6d">undo</reimplementedby>
+        <reimplementedby refid="class_move_motor_cmd_1a94becc0779e3f1b3e36eba0044cc7cf0">undo</reimplementedby>
+        <reimplementedby refid="class_move_motor_up_cmd_1a592fda0f55d367d5be29244036034b6b">undo</reimplementedby>
+        <reimplementedby refid="class_move_motor_down_cmd_1ac2931312dd7e4a46455b6c11a551b700">undo</reimplementedby>
+        <reimplementedby refid="class_rotate_motor_cmd_1a4d570e6a3699f2e31f4724a35b266529">undo</reimplementedby>
+        <reimplementedby refid="class_rotate_motor_clk_cmd_1a58d79afd386f2f2329bc4e9bb72d3ed5">undo</reimplementedby>
+        <reimplementedby refid="class_rotate_motor_cclk_cmd_1a3f8d23a9165ff286158bec7c962edff5">undo</reimplementedby>
+        <reimplementedby refid="classget_sensor_cmd_1a4a2b5f269e575483f5decd130f9f8a99">undo</reimplementedby>
+        <reimplementedby refid="classget_sensor_value_cmd_1a686b0c587e070f35000b5e86c88e2431">undo</reimplementedby>
+        <reimplementedby refid="class_calibrate_cmd_1a8c8127c109b0b9056f1d1cf4f5947753">undo</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="25" column="18"/>
+        <referencedby refid="class_motor_invoker_1a1f732269172a2bb248deb930bddfe86b" compoundref="_cmd_pattern_classes_8h" startline="534" endline="544">MotorInvoker::moveDown</referencedby>
+        <referencedby refid="class_motor_invoker_1a5a337c1b070c332cb8636895ba75d321" compoundref="_cmd_pattern_classes_8h" startline="523" endline="533">MotorInvoker::moveUp</referencedby>
+        <referencedby refid="class_motor_invoker_1a08cae71a6828cbe76bc2a7acfc13a9a2" compoundref="_cmd_pattern_classes_8h" startline="556" endline="566">MotorInvoker::rotateCclk</referencedby>
+        <referencedby refid="class_motor_invoker_1a86c42b047d8450b0f810efd0f10e0162" compoundref="_cmd_pattern_classes_8h" startline="545" endline="555">MotorInvoker::rotateClk</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>CalibrateCmd</label>
+        <link refid="class_calibrate_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>EnableMotorCmd</label>
+        <link refid="class_enable_motor_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ICommand</label>
+        <link refid="class_i_command"/>
+      </node>
+      <node id="4">
+        <label>MoveMotorCmd</label>
+        <link refid="class_move_motor_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MoveMotorDownCmd</label>
+        <link refid="class_move_motor_down_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>MoveMotorUpCmd</label>
+        <link refid="class_move_motor_up_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ResetDevice</label>
+        <link refid="class_reset_device"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>RotateMotorCclkCmd</label>
+        <link refid="class_rotate_motor_cclk_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>RotateMotorClkCmd</label>
+        <link refid="class_rotate_motor_clk_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>RotateMotorCmd</label>
+        <link refid="class_rotate_motor_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SleepDevice</label>
+        <link refid="class_sleep_device"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>getMotorCmd</label>
+        <link refid="classget_motor_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>getMotorDelayCmd</label>
+        <link refid="classget_motor_delay_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>getMotorDirectionCmd</label>
+        <link refid="classget_motor_direction_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>getMotorSpeedCmd</label>
+        <link refid="classget_motor_speed_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>getSensorCmd</label>
+        <link refid="classget_sensor_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>getSensorValueCmd</label>
+        <link refid="classget_sensor_value_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>getUUID</label>
+        <link refid="classget_u_u_i_d"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>setMotorCmd</label>
+        <link refid="classset_motor_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>setMotorDelayCmd</label>
+        <link refid="classset_motor_delay_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>setMotorDirectionCmd</label>
+        <link refid="classset_motor_direction_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>setMotorSpeedCmd</label>
+        <link refid="classset_motor_speed_cmd"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>setUUID</label>
+        <link refid="classset_u_u_i_d"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="20" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="20" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_i_command_1ace81beb0beea968f876f292446bf1120" prot="public" virt="pure-virtual"><scope>ICommand</scope><name>execute</name></member>
+      <member refid="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78" prot="public" virt="pure-virtual"><scope>ICommand</scope><name>undo</name></member>
+      <member refid="class_i_command_1a0e0226af93b945e84b58405e9d5343b1" prot="public" virt="virtual"><scope>ICommand</scope><name>~ICommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
