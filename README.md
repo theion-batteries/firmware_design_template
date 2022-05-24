@@ -13,7 +13,7 @@ Contact: sami@theion.de
 
 # API docs
 This docs is auto generated with doxygen.
-click [docs](https://theionsami.github.io/firm_Alignment/docs/html/index.html), then Under Classes and Files you find the full API.
+click [docs](https://theionsami.github.io/firmware_design_template/), then Under Classes and Files you find the full API.
 If you make a fork from this repo, dont forget to run doxygen from inside docs/ after any changes made to src/ inc/ or.md files and push!
 # Configuration File
 In the configuration [file](include/Configs.h)  you need to define all required parameters:
