@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp" line="22" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp" bodystart="22" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp" line="22" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp" bodystart="22" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -36,7 +36,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp" line="36" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp" bodystart="13" bodyend="18"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp" line="37" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/ComHandler.cpp" bodystart="13" bodyend="18"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -44,7 +45,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp" line="20" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp" bodystart="20" bodyend="38"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp" line="20" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp" bodystart="20" bodyend="39"/>
     <listofallmembers>
       <member refid="class_com_manager_1ad6e049efeb10c5cc4801673f437fccb4" prot="private" virt="non-virtual"><scope>ComManager</scope><name>ComHandler</name></member>
       <member refid="class_com_manager_1ae27b81aca4e2b98138ba79c58bd3bfe4" prot="public" virt="non-virtual"><scope>ComManager</scope><name>initCom</name></member>

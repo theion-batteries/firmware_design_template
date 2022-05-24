@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_a_p_i_8md" kind="file" language="Markdown">
+    <compoundname>API.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>API<sp/>Documentation</highlight></codeline>
+<codeline><highlight class="normal">Under<sp/>Files/Classes<sp/>tab<sp/>are<sp/>sources/classes<sp/>found.</highlight></codeline>
+    </programlisting>
+    <location file="API.md"/>
+  </compounddef>
+</doxygen>

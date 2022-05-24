@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="140" column="17" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" bodystart="140" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="140" column="17" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" bodystart="140" bodyend="-1"/>
         <referencedby refid="class_keyence__rs232__interface_1a67984df4c8e54eff602f0cb174069e3d" compoundref="_keyence___a_p_i_8cpp" startline="139" endline="200">getValueMultipleOutputHead</referencedby>
         <referencedby refid="class_keyence__rs232__interface_1ad2606a20f587944928d8cadef8505af3" compoundref="_keyence___a_p_i_8cpp" startline="202" endline="259">getValueOutputHeadAll</referencedby>
         <referencedby refid="class_keyence__rs232__interface_1a94a9b8b38fc656ff6edc2fd7043ce243" compoundref="_keyence___a_p_i_8cpp" startline="80" endline="137">getValueSingleOutputHead</referencedby>
@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="141" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" bodystart="141" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="141" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" bodystart="141" bodyend="-1"/>
         <referencedby refid="class_keyence__rs232__interface_1a3171bb643c8988df2f3195bb67a1392e" compoundref="_keyence___a_p_i_8cpp" startline="74" endline="77">initKeyenceCom</referencedby>
         <referencedby refid="class_keyence__rs232__interface_1a7c4e926bb32658c80ca277032f2b6ab3" compoundref="_keyence___a_p_i_8cpp" startline="56" endline="61">Keyence_rs232_interface</referencedby>
         <referencedby refid="class_keyence__rs232__interface_1a5e4e89b0e72492942b3dbfe59d1c4a8d" compoundref="_keyence___a_p_i_8cpp" startline="68" endline="71">setSerialBaudrate</referencedby>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="142" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp" bodystart="56" bodyend="61"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="142" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp" bodystart="56" bodyend="61"/>
         <references refid="class_keyence__rs232__interface_1a64dd14bd7eb46191aeda572d048b2b49" compoundref="_keyence___a_p_i_8h" startline="141">baudrate</references>
         <references refid="class_keyence__rs232__interface_1afd7e56526e455ebdfae7fbe0aecd6a75" compoundref="_keyence___a_p_i_8h" startline="140">serialHandler</references>
       </memberdef>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="143" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp" bodystart="63" bodyend="66"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="143" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp" bodystart="63" bodyend="66"/>
         <references refid="class_keyence__rs232__interface_1afd7e56526e455ebdfae7fbe0aecd6a75" compoundref="_keyence___a_p_i_8h" startline="140">serialHandler</references>
       </memberdef>
       <memberdef kind="function" id="class_keyence__rs232__interface_1a5e4e89b0e72492942b3dbfe59d1c4a8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="144" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp" bodystart="68" bodyend="71"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="144" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp" bodystart="68" bodyend="71"/>
         <references refid="class_keyence__rs232__interface_1a64dd14bd7eb46191aeda572d048b2b49" compoundref="_keyence___a_p_i_8h" startline="141">baudrate</references>
       </memberdef>
       <memberdef kind="function" id="class_keyence__rs232__interface_1a3171bb643c8988df2f3195bb67a1392e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="145" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp" bodystart="74" bodyend="77"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="145" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp" bodystart="74" bodyend="77"/>
         <references refid="class_keyence__rs232__interface_1a64dd14bd7eb46191aeda572d048b2b49" compoundref="_keyence___a_p_i_8h" startline="141">baudrate</references>
         <references refid="class_keyence__rs232__interface_1afd7e56526e455ebdfae7fbe0aecd6a75" compoundref="_keyence___a_p_i_8h" startline="140">serialHandler</references>
       </memberdef>
@@ -141,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="147" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp" bodystart="80" bodyend="137"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="147" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp" bodystart="80" bodyend="137"/>
         <references refid="class_keyence__base_1a2862ac325dae8e5793df2764637f8cd4" compoundref="_keyence___a_p_i_8h" startline="70">Keyence_base::commands</references>
         <references refid="_keyence___a_p_i_8h_1a876ce77f3c672c7162658151e648389e" compoundref="_keyence___a_p_i_8h" startline="22">CR</references>
         <references refid="class_keyence__base_1ac134c2f746ca3fd888e8f6528aa1c786" compoundref="_keyence___a_p_i_8cpp" startline="42" endline="51">Keyence_base::findCommand</references>
@@ -164,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="149" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp" bodystart="139" bodyend="200"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="149" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp" bodystart="139" bodyend="200"/>
         <references refid="class_keyence__base_1a2862ac325dae8e5793df2764637f8cd4" compoundref="_keyence___a_p_i_8h" startline="70">Keyence_base::commands</references>
         <references refid="class_keyence__base_1ac134c2f746ca3fd888e8f6528aa1c786" compoundref="_keyence___a_p_i_8cpp" startline="42" endline="51">Keyence_base::findCommand</references>
         <references refid="class_keyence__base_1af588a8387643ec05ca11f2a825b6c56d" compoundref="_keyence___a_p_i_8h" startline="87">Keyence_base::HeadsArray</references>
@@ -183,15 +183,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="151" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp" bodystart="202" bodyend="259"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="151" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp" bodystart="202" bodyend="259"/>
         <references refid="_keyence___a_p_i_8h_1a876ce77f3c672c7162658151e648389e" compoundref="_keyence___a_p_i_8h" startline="22">CR</references>
         <references refid="class_keyence__base_1afe8c07a4197b77ad65d4b53292ff6cf4" compoundref="_keyence___a_p_i_8h" startline="85">Keyence_base::HeadsCount</references>
         <references refid="class_keyence__base_1a3b9220df65b8fcc3acdb16dca31272a5" compoundref="_keyence___a_p_i_8h" startline="89">Keyence_base::LookUpValues</references>
         <references refid="class_keyence__rs232__interface_1afd7e56526e455ebdfae7fbe0aecd6a75" compoundref="_keyence___a_p_i_8h" startline="140">serialHandler</references>
-        <referencedby refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" compoundref="_alignment_8cpp" startline="1278" endline="1377">Alignment::AlignLoop</referencedby>
-        <referencedby refid="class_alignment_1aa10c40160fe39fa263b12f0e07d4f67c" compoundref="_alignment_8cpp" startline="558" endline="655">Alignment::calibratePrintHead</referencedby>
+        <referencedby refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" compoundref="_alignment_8cpp" startline="1282" endline="1381">Alignment::AlignLoop</referencedby>
+        <referencedby refid="class_alignment_1aa10c40160fe39fa263b12f0e07d4f67c" compoundref="_alignment_8cpp" startline="562" endline="659">Alignment::calibratePrintHead</referencedby>
         <referencedby refid="class_distance_sensor_1a1b5434dd7b12183ded0962f6e42a8f8d" compoundref="_distance_sensor_8cpp" startline="44" endline="69">DistanceSensor::getCurrentDistance</referencedby>
-        <referencedby refid="class_alignment_1ab5378ab4e1db1bd90dc0ed3854079a4c" compoundref="_alignment_8cpp" startline="945" endline="965">Alignment::movePhToRefX</referencedby>
+        <referencedby refid="class_alignment_1ab5378ab4e1db1bd90dc0ed3854079a4c" compoundref="_alignment_8cpp" startline="949" endline="969">Alignment::movePhToRefX</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_keyence__rs232__interface_1a2b0d0b535e0fb2c9f11ab1fe755f108f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -206,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="153" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp" bodystart="262" bodyend="278"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="153" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp" bodystart="262" bodyend="278"/>
         <references refid="class_keyence__base_1a2862ac325dae8e5793df2764637f8cd4" compoundref="_keyence___a_p_i_8h" startline="70">Keyence_base::commands</references>
         <references refid="_keyence___a_p_i_8h_1a876ce77f3c672c7162658151e648389e" compoundref="_keyence___a_p_i_8h" startline="22">CR</references>
         <references refid="class_keyence__base_1ac134c2f746ca3fd888e8f6528aa1c786" compoundref="_keyence___a_p_i_8cpp" startline="42" endline="51">Keyence_base::findCommand</references>
@@ -225,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="155" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp" bodystart="280" bodyend="301"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="155" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp" bodystart="280" bodyend="301"/>
         <references refid="class_keyence__base_1a2862ac325dae8e5793df2764637f8cd4" compoundref="_keyence___a_p_i_8h" startline="70">Keyence_base::commands</references>
         <references refid="_keyence___a_p_i_8h_1a876ce77f3c672c7162658151e648389e" compoundref="_keyence___a_p_i_8h" startline="22">CR</references>
         <references refid="class_keyence__base_1ac134c2f746ca3fd888e8f6528aa1c786" compoundref="_keyence___a_p_i_8cpp" startline="42" endline="51">Keyence_base::findCommand</references>
@@ -260,7 +260,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="137" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" bodystart="138" bodyend="157"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="137" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" bodystart="138" bodyend="157"/>
     <listofallmembers>
       <member refid="class_keyence__rs232__interface_1a64dd14bd7eb46191aeda572d048b2b49" prot="public" virt="non-virtual"><scope>Keyence_rs232_interface</scope><name>baudrate</name></member>
       <member refid="class_keyence__base_1a2862ac325dae8e5793df2764637f8cd4" prot="public" virt="non-virtual"><scope>Keyence_rs232_interface</scope><name>commands</name></member>

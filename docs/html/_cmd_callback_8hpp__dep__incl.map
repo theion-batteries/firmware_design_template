@@ -1,11 +1,11 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" name="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="483,5,720,61"/>
-<area shape="rect" id="node2" href="$_globals_8h.html" title="include declarations for commands classes" alt="" coords="387,109,586,165"/>
-<area shape="rect" id="node9" href="$_cmd_callback_8cpp.html" title=" " alt="" coords="610,109,825,165"/>
-<area shape="rect" id="node3" href="$_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="221,213,493,269"/>
-<area shape="rect" id="node8" href="$_globals_8cpp.html" title=" " alt="" coords="518,213,717,269"/>
-<area shape="rect" id="node4" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="107,317,338,373"/>
-<area shape="rect" id="node7" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,317,625,373"/>
-<area shape="rect" id="node5" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,421,213,477"/>
-<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="238,421,437,477"/>
+<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdCallback.hpp" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdCallback.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="504,5,673,76"/>
+<area shape="rect" id="node2" href="$_globals_8h.html" title="include declarations for commands classes" alt="" coords="387,124,556,195"/>
+<area shape="rect" id="node9" href="$_cmd_callback_8cpp.html" title=" " alt="" coords="580,131,832,187"/>
+<area shape="rect" id="node3" href="$_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="277,243,447,313"/>
+<area shape="rect" id="node8" href="$_globals_8cpp.html" title=" " alt="" coords="471,250,690,306"/>
+<area shape="rect" id="node4" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="168,361,337,432"/>
+<area shape="rect" id="node7" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,361,581,432"/>
+<area shape="rect" id="node5" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,480,252,536"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="launch main scheduler" alt="" coords="277,480,479,536"/>
 </map>

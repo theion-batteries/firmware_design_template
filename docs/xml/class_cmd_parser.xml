@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="266" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="266" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="266" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="266" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_cmd_parser_1a55fff4c2e716386f1464448b53ba941c" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="269" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="269" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="269" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="269" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_cmd_parser_1ac85fb595442587bfd6dccb2b098a41e7" prot="private" static="no" mutable="no">
         <type>char</type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="272" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="272" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="272" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="272" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_cmd_parser_1a8b384282fa1081e4398d8905c15c3a17" prot="private" static="no" mutable="no">
         <type>uint8_t *</type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="275" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="275" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="275" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="275" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_cmd_parser_1a817a159699c2ed1cefb1b39ebc5c358c" prot="private" static="no" mutable="no">
         <type>size_t</type>
@@ -83,7 +83,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="278" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="278" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="278" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="278" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_cmd_parser_1a84bf860714c519fb5ac519996195a645" prot="private" static="no" mutable="no">
         <type>uint16_t</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="281" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="281" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="281" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="281" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="40" column="5" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdParser.cpp" bodystart="9" bodyend="17"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="40" column="5" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdParser.cpp" bodystart="9" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="class_cmd_parser_1a5df6c3bc15c7d508ec449992f83b3bb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint16_t</type>
@@ -159,13 +159,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="51" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdParser.cpp" bodystart="19" bodyend="67"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="51" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdParser.cpp" bodystart="19" bodyend="67"/>
         <references refid="_cmd_parser_8hpp_1a3d8e1545a55d983629b4b23d00b88c1c" compoundref="_cmd_parser_8hpp" startline="21">CMDPARSER_CHAR_DQ</references>
         <references refid="_cmd_parser_8hpp_1a293a7e2fc54bbfec5b0e8da10ec9a7fc" compoundref="_cmd_parser_8hpp" startline="22">CMDPARSER_CHAR_EQ</references>
         <references refid="_cmd_parser_8hpp_1aa84115565fbd5d676715b34f14228b26" compoundref="_cmd_parser_8hpp" startline="23">CMDPARSER_ERROR</references>
-        <referencedby refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" compoundref="_cmd_callback_8cpp" startline="9" endline="24">CmdCallbackObject::loopCmdProcessing</referencedby>
+        <referencedby refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" compoundref="_cmd_callback_8cpp" startline="27" endline="42">CmdCallbackObject::loopCmdProcessing</referencedby>
         <referencedby refid="class_cmd_parser_1a1ae4ac725a5b549a7c3679a72d7d26e9" compoundref="_cmd_parser_8hpp" startline="53" endline="57">parseCmd</referencedby>
-        <referencedby refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" compoundref="_cmd_callback_8cpp" startline="66" endline="80">CmdCallbackObject::updateCmdProcessing</referencedby>
+        <referencedby refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" compoundref="_cmd_callback_8cpp" startline="105" endline="120">CmdCallbackObject::updateCmdProcessing</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_cmd_parser_1a1ae4ac725a5b549a7c3679a72d7d26e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>uint16_t</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="53" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="53" bodyend="57"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="53" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="53" bodyend="57"/>
         <references refid="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9">CmdBufferObject::getBuffer</references>
         <references refid="class_cmd_buffer_object_1a6925a16fab8b9b13fb4372e5f0a88b7e">CmdBufferObject::getBufferSize</references>
         <references refid="class_cmd_parser_1a5df6c3bc15c7d508ec449992f83b3bb0" compoundref="_cmd_parser_8cpp" startline="19" endline="67">parseCmd</references>
@@ -204,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="59" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="59" bodyend="63"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="59" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="59" bodyend="63"/>
         <references refid="class_cmd_parser_1a5df6c3bc15c7d508ec449992f83b3bb0" compoundref="_cmd_parser_8cpp" startline="19" endline="67">parseCmd</references>
       </memberdef>
       <memberdef kind="function" id="class_cmd_parser_1ab4d34a57e1917264f954f93f751f76ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -223,9 +223,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="70" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="70" bodyend="70"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="70" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="70" bodyend="70"/>
         <references refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" compoundref="_cmd_parser_8cpp" startline="69" endline="93">getCmdParam</references>
-        <referencedby refid="class_cmd_callback_object_1a57346a915823fd83800bfbd754fbe131" compoundref="_cmd_callback_8cpp" startline="26" endline="46">CmdCallbackObject::processCmd</referencedby>
+        <referencedby refid="class_cmd_callback_object_1a57346a915823fd83800bfbd754fbe131" compoundref="_cmd_callback_8cpp" startline="44" endline="64">CmdCallbackObject::processCmd</referencedby>
+        <referencedby refid="class_cmd_callback_object_1acdb63091c889fe6140a38619be3464f9" compoundref="_cmd_callback_8cpp" startline="65" endline="85">CmdCallbackObject::processCmdVoid</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char *</type>
@@ -256,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="78" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdParser.cpp" bodystart="69" bodyend="93"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="78" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdParser.cpp" bodystart="69" bodyend="93"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1a905f26acafc5d817d3d4f2dc88bceb2a" compoundref="_cmd_pattern_callbacks_8cpp" startline="318" endline="325">calibrate_cmd</referencedby>
         <referencedby refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">equalCmdParam</referencedby>
         <referencedby refid="class_cmd_parser_1ab4d34a57e1917264f954f93f751f76ea" compoundref="_cmd_parser_8hpp" startline="70" endline="70">getCommand</referencedby>
@@ -280,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="85" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="85" bodyend="85"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="85" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="85" bodyend="85"/>
       </memberdef>
       <memberdef kind="function" id="class_cmd_parser_1a83141b1acb2583532801b2cddce225a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>char *</type>
@@ -312,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="94" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="94" bodyend="97"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="94" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="94" bodyend="97"/>
         <references refid="class_cmd_parser_1a83141b1acb2583532801b2cddce225a5" compoundref="_cmd_parser_8hpp" startline="94" endline="97">getValueFromKey</references>
         <referencedby refid="class_cmd_parser_1aa8d0e9342798672f251b695c8629d347" compoundref="_cmd_parser_8hpp" startline="142" endline="158">equalValueFromKey</referencedby>
         <referencedby refid="class_cmd_parser_1a83141b1acb2583532801b2cddce225a5" compoundref="_cmd_parser_8hpp" startline="94" endline="97">getValueFromKey</referencedby>
@@ -358,7 +359,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="106" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="106" bodyend="122"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="106" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="106" bodyend="122"/>
         <references refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" compoundref="_cmd_parser_8cpp" startline="69" endline="93">getCmdParam</references>
         <referencedby refid="_cmd_pattern_callbacks_8h_1a905f26acafc5d817d3d4f2dc88bceb2a" compoundref="_cmd_pattern_callbacks_8cpp" startline="318" endline="325">calibrate_cmd</referencedby>
         <referencedby refid="class_cmd_parser_1a20afcca43b5a5231eb1d63ab0f564f91" compoundref="_cmd_parser_8hpp" startline="167" endline="176">cmdParamExists</referencedby>
@@ -398,7 +399,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="130" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="130" bodyend="133"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="130" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="130" bodyend="133"/>
         <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">equalCmdParam</references>
       </memberdef>
       <memberdef kind="function" id="class_cmd_parser_1aa8d0e9342798672f251b695c8629d347" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -442,7 +443,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="142" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="142" bodyend="158"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="142" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="142" bodyend="158"/>
         <references refid="class_cmd_parser_1a83141b1acb2583532801b2cddce225a5" compoundref="_cmd_parser_8hpp" startline="94" endline="97">getValueFromKey</references>
       </memberdef>
       <memberdef kind="function" id="class_cmd_parser_1a20afcca43b5a5231eb1d63ab0f564f91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -474,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="167" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="167" bodyend="176"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="167" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="167" bodyend="176"/>
         <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">equalCmdParam</references>
       </memberdef>
       <memberdef kind="function" id="class_cmd_parser_1a3d1088255605de22783562edc0672474" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -505,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="246" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="246" bodyend="246"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="246" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="246" bodyend="246"/>
       </memberdef>
       <memberdef kind="function" id="class_cmd_parser_1aee137cf60aa0c94f0a662ced8c4e0aae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -535,7 +536,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="254" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="254" bodyend="254"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="254" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="254" bodyend="254"/>
       </memberdef>
       <memberdef kind="function" id="class_cmd_parser_1a1ebf11340588db861d4b5383a67b1d04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -564,7 +565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="262" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="262" bodyend="262"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="262" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="262" bodyend="262"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -601,14 +602,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="289" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdParser.cpp" bodystart="95" bodyend="127"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="289" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdParser.cpp" bodystart="95" bodyend="127"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="34" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="35" bodyend="290"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="34" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="35" bodyend="290"/>
     <listofallmembers>
       <member refid="class_cmd_parser_1a20afcca43b5a5231eb1d63ab0f564f91" prot="public" virt="non-virtual"><scope>CmdParser</scope><name>cmdParamExists</name></member>
       <member refid="class_cmd_parser_1a2ea6dfe5c12c9effc1419764e46e076e" prot="public" virt="non-virtual"><scope>CmdParser</scope><name>CmdParser</name></member>

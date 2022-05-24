@@ -13,9 +13,7 @@ Contact: sami@theion.de
 
 # API docs
 This docs is auto generated with doxygen.
-please note that images rendering from markdown file is not yet supported by doxygen,
-therefore click [main](https://theionsami.github.io/firm_Alignment/) to open main page with rendered images.
-If not already on docs page, click [docs](https://theionsami.github.io/firm_Alignment/docs/html/index.html), then Under Classes and Files you find the full API.
+click [docs](https://theionsami.github.io/firm_Alignment/docs/html/index.html), then Under Classes and Files you find the full API.
 If you make a fork from this repo, dont forget to run doxygen from inside docs/ after any changes made to src/ inc/ or.md files and push!
 # Configuration File
 In the configuration [file](include/Configs.h)  you need to define all required parameters:

@@ -1,6 +1,6 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp" name="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,213,61"/>
-<area shape="rect" id="node2" href="$_driver_a4988_8hpp.html" title=" " alt="" coords="51,109,167,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="59,259,159,285"/>
-<area shape="rect" id="node4" href="$_configs_8h.html" title="Place the definition of Macros here like pins, enumerate and so on." alt="" coords="110,184,186,211"/>
+<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Nema_8.hpp" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Nema_8.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,175,76"/>
+<area shape="rect" id="node2" href="$_driver_a4988_8hpp.html" title=" " alt="" coords="32,124,148,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="40,273,140,300"/>
+<area shape="rect" id="node4" href="$_configs_8h.html" title="Place the definition of Macros here like pins, enumerate and so on." alt="" coords="91,199,167,225"/>
 </map>

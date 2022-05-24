@@ -22,7 +22,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp</label>
         <link refid="_driver_a4988_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -211,6 +211,6 @@
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/>Serial.println(speed);</highlight></codeline>
 <codeline lineno="177"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp"/>
   </compounddef>
 </doxygen>

@@ -1,5 +1,7 @@
 var _globals_8cpp =
 [
+    [ "BackgroundThreadCallback", "_globals_8cpp.html#a7bb396aa99b014129d46b51d1f135c5a", null ],
+    [ "ParserThreadCallback", "_globals_8cpp.html#ac6568f5dfdc418a26f1a80513cd18d7e", null ],
     [ "AlignId", "_globals_8cpp.html#a793a8906611d9619fa53fb7ef1effd9a", null ],
     [ "Calibrate", "_globals_8cpp.html#a0fd0ced2811b8e7b87f5b472d8f48cb8", null ],
     [ "cmdCallback", "_globals_8cpp.html#aa040d89e504cf8fdf7f7d28e87142e6b", null ],

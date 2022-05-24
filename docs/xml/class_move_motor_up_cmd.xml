@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="244" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="244" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="244" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_move_motor_up_cmd_1af370524b40cb886697ba79aa766c2b22" prot="private" static="no" mutable="no">
         <type><ref refid="class_alignment" kindref="compound">Alignment</ref> &amp;</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="245" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="245" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="245" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="245" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_move_motor_up_cmd_1ae70f2de735f26c0ce6fa0c15695c7461" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="246" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="246" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="246" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="246" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="248" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="248" bodyend="248"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="248" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="248" bodyend="248"/>
       </memberdef>
       <memberdef kind="function" id="class_move_motor_up_cmd_1abe4d84e2c2bd89bf875820aa96f7acb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="249" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="249" bodyend="253"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="249" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="249" bodyend="253"/>
         <references refid="class_alignment_1ab7e9da9ded962b937b7df23e116f3b0e" compoundref="_alignment_8cpp" startline="72" endline="77">Alignment::MoveDistanceMSafe</references>
         <references refid="_configs_8h_1a0337592b74197133c4203f6dce657a76" compoundref="_configs_8h" startline="103">up</references>
       </memberdef>
@@ -105,7 +105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="254" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="254" bodyend="257"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="254" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="254" bodyend="257"/>
         <references refid="_configs_8h_1a249d857dfa044493c7f29844b7b0baae" compoundref="_configs_8h" startline="104">down</references>
         <references refid="class_alignment_1ab7e9da9ded962b937b7df23e116f3b0e" compoundref="_alignment_8cpp" startline="72" endline="77">Alignment::MoveDistanceMSafe</references>
       </memberdef>
@@ -138,7 +138,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="242" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="242" bodyend="258"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="242" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="242" bodyend="258"/>
     <listofallmembers>
       <member refid="class_move_motor_up_cmd_1af370524b40cb886697ba79aa766c2b22" prot="private" virt="non-virtual"><scope>MoveMotorUpCmd</scope><name>Al</name></member>
       <member refid="class_move_motor_up_cmd_1abe4d84e2c2bd89bf875820aa96f7acb0" prot="public" virt="virtual"><scope>MoveMotorUpCmd</scope><name>execute</name></member>

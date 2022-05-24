@@ -7,7 +7,7 @@
     <includes refid="_sleep_8h" local="yes">Sleep.h</includes>
     <includes refid="_u_u_i_d_8hpp" local="yes">UUID.hpp</includes>
     <includes refid="_state_manager_8hpp" local="yes">StateManager.hpp</includes>
-    <includedby refid="_globals_8h" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</includedby>
+    <includedby refid="_globals_8h" local="yes">C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h</includedby>
     <incdepgraph>
       <node id="13">
         <label>Arduino.h</label>
@@ -30,7 +30,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h</label>
         <link refid="_cmd_pattern_classes_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -133,7 +133,7 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="3">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternCallbacks.h</label>
         <link refid="_cmd_pattern_callbacks_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
@@ -141,13 +141,13 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h</label>
         <link refid="_cmd_pattern_classes_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="4">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp</label>
         <link refid="_com_handler_8hpp"/>
         <childnode refid="5" relation="include">
         </childnode>
@@ -155,7 +155,7 @@
         </childnode>
       </node>
       <node id="2">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h</label>
         <link refid="_globals_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -163,19 +163,19 @@
         </childnode>
       </node>
       <node id="7">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp</label>
         <link refid="_cmd_pattern_callbacks_8cpp"/>
       </node>
       <node id="5">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/ComHandler.cpp</label>
         <link refid="_com_handler_8cpp"/>
       </node>
       <node id="8">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp</label>
         <link refid="_globals_8cpp"/>
       </node>
       <node id="6">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
@@ -462,7 +462,7 @@
 <codeline lineno="248" refid="class_move_motor_up_cmd_1addb4d2ca78ee434a014f1fb99e560bc0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_move_motor_up_cmd_1addb4d2ca78ee434a014f1fb99e560bc0" kindref="member">MoveMotorUpCmd</ref>(<ref refid="class_nema8" kindref="compound">Nema8</ref>&amp;<sp/>motor,<sp/><ref refid="class_alignment" kindref="compound">Alignment</ref>&amp;<sp/>AL,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val)<sp/>:M(motor),<sp/>Al(AL),<sp/>val(val){}</highlight></codeline>
 <codeline lineno="249" refid="class_move_motor_up_cmd_1abe4d84e2c2bd89bf875820aa96f7acb0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_move_motor_up_cmd_1abe4d84e2c2bd89bf875820aa96f7acb0" kindref="member">execute</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(<sp/></highlight><highlight class="stringliteral">&quot;execute<sp/>move<sp/>up&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
-<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>Al.<ref refid="class_alignment_1ab7e9da9ded962b937b7df23e116f3b0e" kindref="member">MoveDistanceMSafe</ref>(&amp;M,<sp/><ref refid="_configs_8h_1a0337592b74197133c4203f6dce657a76" kindref="member">up</ref>,<sp/>val);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>Al.<ref refid="class_alignment_1ab7e9da9ded962b937b7df23e116f3b0e" kindref="member">MoveDistanceMSafe</ref>(&amp;M,<sp/><ref refid="_configs_8h_1a0337592b74197133c4203f6dce657a76" kindref="member">up</ref>,<sp/>val);<sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>move<sp/>down<sp/>by<sp/>same<sp/>distance<sp/>is<sp/>the<sp/>undo<sp/>cmd</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="254" refid="class_move_motor_up_cmd_1a592fda0f55d367d5be29244036034b6b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_move_motor_up_cmd_1a592fda0f55d367d5be29244036034b6b" kindref="member">undo</ref>()<sp/>{</highlight></codeline>
@@ -803,6 +803,6 @@
 <codeline lineno="597"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="598"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h"/>
   </compounddef>
 </doxygen>

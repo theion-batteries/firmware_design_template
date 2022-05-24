@@ -1,8 +1,9 @@
-.TH "C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.TH "C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/main.cpp" 3 "Tue May 24 2022" "Version 0.2" "Firmware Design Template" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp
+C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/main.cpp \- launch main scheduler  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -18,9 +19,27 @@ C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp
 .ti -1c
 .RI "void \fBloop\fP ()"
 .br
+.ti -1c
+.RI "void \fByield\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBComManager\fP \fBComObj\fP"
+.br
+.ti -1c
+.RI "ThreadController \fBMainScheduler\fP = ThreadController()"
+.br
+.ti -1c
+.RI "Thread \fBParserThread\fP = Thread()"
+.br
 .in -1c
 .SH "Detailed Description"
 .PP 
+launch main scheduler 
+
 
 .PP
 \fBAuthor\fP
@@ -51,11 +70,29 @@ Definition in file \fBmain\&.cpp\fP\&.
 .SS "void loop ()"
 
 .PP
-Definition at line \fB24\fP of file \fBmain\&.cpp\fP\&.
+Definition at line \fB32\fP of file \fBmain\&.cpp\fP\&.
 .SS "void setup ()"
 
 .PP
+Definition at line \fB15\fP of file \fBmain\&.cpp\fP\&.
+.SS "void yield (void)"
+
+.PP
+Definition at line \fB36\fP of file \fBmain\&.cpp\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBComManager\fP ComObj"
+
+.PP
 Definition at line \fB11\fP of file \fBmain\&.cpp\fP\&.
+.SS "ThreadController MainScheduler = ThreadController()"
+
+.PP
+Definition at line \fB12\fP of file \fBmain\&.cpp\fP\&.
+.SS "Thread ParserThread = Thread()"
+
+.PP
+Definition at line \fB13\fP of file \fBmain\&.cpp\fP\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for Firmware Design Template from the source code\&.

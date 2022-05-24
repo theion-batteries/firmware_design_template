@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="17" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" bodystart="17" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="17" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_distance_sensor_1a8f00655b3965c91c1dd97758711844ba" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="18" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" bodystart="18" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="18" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_distance_sensor_1a7277aa0cf628731f0db9329874a3b525" prot="public" static="no" mutable="no">
         <type>double</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="19" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" bodystart="19" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="19" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" bodystart="19" bodyend="-1"/>
         <referencedby refid="class_distance_sensor_1a1b5434dd7b12183ded0962f6e42a8f8d" compoundref="_distance_sensor_8cpp" startline="44" endline="69">getCurrentDistance</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_distance_sensor_1ac97d894ab1bbd43fd3e22c1fb7aa6585" prot="public" static="no" mutable="no">
@@ -60,11 +60,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="26" column="29" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" bodystart="26" bodyend="-1"/>
-        <referencedby refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" compoundref="_alignment_8cpp" startline="1278" endline="1377">Alignment::AlignLoop</referencedby>
-        <referencedby refid="class_alignment_1aa10c40160fe39fa263b12f0e07d4f67c" compoundref="_alignment_8cpp" startline="558" endline="655">Alignment::calibratePrintHead</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="26" column="29" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" compoundref="_alignment_8cpp" startline="1282" endline="1381">Alignment::AlignLoop</referencedby>
+        <referencedby refid="class_alignment_1aa10c40160fe39fa263b12f0e07d4f67c" compoundref="_alignment_8cpp" startline="562" endline="659">Alignment::calibratePrintHead</referencedby>
         <referencedby refid="class_distance_sensor_1a1b5434dd7b12183ded0962f6e42a8f8d" compoundref="_distance_sensor_8cpp" startline="44" endline="69">getCurrentDistance</referencedby>
-        <referencedby refid="class_alignment_1ab5378ab4e1db1bd90dc0ed3854079a4c" compoundref="_alignment_8cpp" startline="945" endline="965">Alignment::movePhToRefX</referencedby>
+        <referencedby refid="class_alignment_1ab5378ab4e1db1bd90dc0ed3854079a4c" compoundref="_alignment_8cpp" startline="949" endline="969">Alignment::movePhToRefX</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_distance_sensor_1a534437583b197ba595bf54e31ff58b64" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="27" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" bodystart="27" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="27" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" bodystart="27" bodyend="-1"/>
         <referencedby refid="class_distance_sensor_1a1b5434dd7b12183ded0962f6e42a8f8d" compoundref="_distance_sensor_8cpp" startline="44" endline="69">getCurrentDistance</referencedby>
         <referencedby refid="class_distance_sensor_1a023ee399031eac2a1495d15e796a7fdc" compoundref="_distance_sensor_8cpp" startline="70" endline="82">printDistance</referencedby>
       </memberdef>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="28" column="25" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" bodystart="28" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="28" column="25" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="29" column="5"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="29" column="5"/>
       </memberdef>
       <memberdef kind="function" id="class_distance_sensor_1afd9021692a991103c20e928977bdec69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="30" column="10"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="30" column="10"/>
       </memberdef>
       <memberdef kind="function" id="class_distance_sensor_1a1b5434dd7b12183ded0962f6e42a8f8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -144,28 +144,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="33" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DistanceSensor.cpp" bodystart="44" bodyend="69"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="33" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DistanceSensor.cpp" bodystart="44" bodyend="69"/>
         <references refid="class_distance_sensor_1a7277aa0cf628731f0db9329874a3b525" compoundref="_distance_sensor_8hpp" startline="19">currentDistance</references>
         <references refid="class_keyence__rs232__interface_1ad2606a20f587944928d8cadef8505af3" compoundref="_keyence___a_p_i_8cpp" startline="202" endline="259">Keyence_rs232_interface::getValueOutputHeadAll</references>
         <references refid="class_distance_sensor_1a534437583b197ba595bf54e31ff58b64" compoundref="_distance_sensor_8hpp" startline="27">HeadNum</references>
         <references refid="class_distance_sensor_1ac97d894ab1bbd43fd3e22c1fb7aa6585" compoundref="_distance_sensor_8hpp" startline="26">IkeyenceRS232</references>
         <references refid="class_keyence__base_1a3b9220df65b8fcc3acdb16dca31272a5" compoundref="_keyence___a_p_i_8h" startline="89">Keyence_base::LookUpValues</references>
-        <referencedby refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" compoundref="_alignment_8cpp" startline="1278" endline="1377">Alignment::AlignLoop</referencedby>
-        <referencedby refid="class_alignment_1aa10c40160fe39fa263b12f0e07d4f67c" compoundref="_alignment_8cpp" startline="558" endline="655">Alignment::calibratePrintHead</referencedby>
+        <referencedby refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" compoundref="_alignment_8cpp" startline="1282" endline="1381">Alignment::AlignLoop</referencedby>
+        <referencedby refid="class_alignment_1aa10c40160fe39fa263b12f0e07d4f67c" compoundref="_alignment_8cpp" startline="562" endline="659">Alignment::calibratePrintHead</referencedby>
         <referencedby refid="classget_sensor_value_cmd_1a56dd54d09b57a0901d731a9cc5c54676" compoundref="_cmd_pattern_classes_8h" startline="352" endline="355">getSensorValueCmd::execute</referencedby>
-        <referencedby refid="class_alignment_1a4ce0756a95f2b8cbf5511c6ff5b3d095" compoundref="_alignment_8cpp" startline="1766" endline="1770">Alignment::getCurrentPosX</referencedby>
-        <referencedby refid="class_alignment_1ad5e4bba6bb06a18a2f6e9b07bf6dfc70" compoundref="_alignment_8cpp" startline="1771" endline="1775">Alignment::getCurrentPosY</referencedby>
-        <referencedby refid="class_alignment_1a7129f8f955b8f6b6ceeb4531a1dd2950" compoundref="_alignment_8cpp" startline="1776" endline="1780">Alignment::getCurrentPosZ</referencedby>
-        <referencedby refid="class_alignment_1a96e67d40338632e2a6c4ad46fcbab196" compoundref="_alignment_8cpp" startline="1725" endline="1730">Alignment::getMinX</referencedby>
-        <referencedby refid="class_alignment_1afd11bcb71a14ef4bce94da2f6d256a55" compoundref="_alignment_8cpp" startline="1732" endline="1737">Alignment::getMinY</referencedby>
-        <referencedby refid="class_alignment_1ae48f4e3dce19e74b11592103a3eda27c" compoundref="_alignment_8cpp" startline="1739" endline="1744">Alignment::getMinZ</referencedby>
-        <referencedby refid="class_alignment_1a1485eb9145464fdbd9739de9977a196e" compoundref="_alignment_8cpp" startline="1713" endline="1719">Alignment::getRemainingDistanceX</referencedby>
-        <referencedby refid="class_alignment_1a2a1c2efba6ebe26730bf78649ad982db" compoundref="_alignment_8cpp" startline="1706" endline="1712">Alignment::getRemainingDistanceY</referencedby>
-        <referencedby refid="class_alignment_1a8e672d92ef34e5e3fab4cae4d8b8f4cf" compoundref="_alignment_8cpp" startline="1698" endline="1704">Alignment::getRemainingDistanceZ</referencedby>
-        <referencedby refid="class_alignment_1a3e235378adac9e2ffd3fa6a6d9e67534" compoundref="_alignment_8cpp" startline="319" endline="322">Alignment::getValueSensorX</referencedby>
-        <referencedby refid="class_alignment_1a3e2eb068cd046b322da4d4a6d8b24059" compoundref="_alignment_8cpp" startline="323" endline="326">Alignment::getValueSensorY</referencedby>
-        <referencedby refid="class_alignment_1a9adb4c7efa88979fcca71e8c57b02528" compoundref="_alignment_8cpp" startline="327" endline="330">Alignment::getValueSensorZ</referencedby>
-        <referencedby refid="class_alignment_1ab5378ab4e1db1bd90dc0ed3854079a4c" compoundref="_alignment_8cpp" startline="945" endline="965">Alignment::movePhToRefX</referencedby>
+        <referencedby refid="class_alignment_1a4ce0756a95f2b8cbf5511c6ff5b3d095" compoundref="_alignment_8cpp" startline="1770" endline="1774">Alignment::getCurrentPosX</referencedby>
+        <referencedby refid="class_alignment_1ad5e4bba6bb06a18a2f6e9b07bf6dfc70" compoundref="_alignment_8cpp" startline="1775" endline="1779">Alignment::getCurrentPosY</referencedby>
+        <referencedby refid="class_alignment_1a7129f8f955b8f6b6ceeb4531a1dd2950" compoundref="_alignment_8cpp" startline="1780" endline="1784">Alignment::getCurrentPosZ</referencedby>
+        <referencedby refid="class_alignment_1a96e67d40338632e2a6c4ad46fcbab196" compoundref="_alignment_8cpp" startline="1729" endline="1734">Alignment::getMinX</referencedby>
+        <referencedby refid="class_alignment_1afd11bcb71a14ef4bce94da2f6d256a55" compoundref="_alignment_8cpp" startline="1736" endline="1741">Alignment::getMinY</referencedby>
+        <referencedby refid="class_alignment_1ae48f4e3dce19e74b11592103a3eda27c" compoundref="_alignment_8cpp" startline="1743" endline="1748">Alignment::getMinZ</referencedby>
+        <referencedby refid="class_alignment_1a1485eb9145464fdbd9739de9977a196e" compoundref="_alignment_8cpp" startline="1717" endline="1723">Alignment::getRemainingDistanceX</referencedby>
+        <referencedby refid="class_alignment_1a2a1c2efba6ebe26730bf78649ad982db" compoundref="_alignment_8cpp" startline="1710" endline="1716">Alignment::getRemainingDistanceY</referencedby>
+        <referencedby refid="class_alignment_1a8e672d92ef34e5e3fab4cae4d8b8f4cf" compoundref="_alignment_8cpp" startline="1702" endline="1708">Alignment::getRemainingDistanceZ</referencedby>
+        <referencedby refid="class_alignment_1a3e235378adac9e2ffd3fa6a6d9e67534" compoundref="_alignment_8cpp" startline="323" endline="326">Alignment::getValueSensorX</referencedby>
+        <referencedby refid="class_alignment_1a3e2eb068cd046b322da4d4a6d8b24059" compoundref="_alignment_8cpp" startline="327" endline="330">Alignment::getValueSensorY</referencedby>
+        <referencedby refid="class_alignment_1a9adb4c7efa88979fcca71e8c57b02528" compoundref="_alignment_8cpp" startline="331" endline="334">Alignment::getValueSensorZ</referencedby>
+        <referencedby refid="class_alignment_1ab5378ab4e1db1bd90dc0ed3854079a4c" compoundref="_alignment_8cpp" startline="949" endline="969">Alignment::movePhToRefX</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_distance_sensor_1a023ee399031eac2a1495d15e796a7fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="34" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DistanceSensor.cpp" bodystart="70" bodyend="82"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="34" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DistanceSensor.cpp" bodystart="70" bodyend="82"/>
         <references refid="class_distance_sensor_1a534437583b197ba595bf54e31ff58b64" compoundref="_distance_sensor_8hpp" startline="27">HeadNum</references>
       </memberdef>
       </sectiondef>
@@ -213,7 +213,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" line="14" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp" bodystart="15" bodyend="35"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" line="14" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp" bodystart="15" bodyend="35"/>
     <listofallmembers>
       <member refid="class_distance_sensor_1a7277aa0cf628731f0db9329874a3b525" prot="public" virt="non-virtual"><scope>DistanceSensor</scope><name>currentDistance</name></member>
       <member refid="class_distance_sensor_1a34b043ed931b955731c0951d1cb625d2" prot="public" virt="non-virtual"><scope>DistanceSensor</scope><name>DistanceSensor</name></member>

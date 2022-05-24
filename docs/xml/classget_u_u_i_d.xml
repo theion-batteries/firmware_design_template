@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="31" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="31" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="31" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classget_u_u_i_d_1a01c9da3f04e77a81aec37518f7949483" prot="private" static="no" mutable="no">
         <type>String</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="32" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="32" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="32" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="34" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="34" bodyend="34"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="34" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="34" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="classget_u_u_i_d_1a936e4f57c5e32cc1a00cbb6e87f5dd87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="35" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="35" bodyend="38"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="35" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="35" bodyend="38"/>
         <references refid="class_u_u_i_d___m_a_n_a_g_e_r_1af23ca44819380f784eeaf2dee80469cb" compoundref="_u_u_i_d_8hpp" startline="81" endline="84">UUID_MANAGER::get_UUID_EEPROM</references>
       </memberdef>
       <memberdef kind="function" id="classget_u_u_i_d_1a69c01b37186855ef1c6843447af7d5fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="39" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="39" bodyend="41"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="39" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="39" bodyend="41"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -113,7 +113,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="29" column="2" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="29" bodyend="42"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="29" column="2" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="29" bodyend="42"/>
     <listofallmembers>
       <member refid="classget_u_u_i_d_1a936e4f57c5e32cc1a00cbb6e87f5dd87" prot="public" virt="virtual"><scope>getUUID</scope><name>execute</name></member>
       <member refid="classget_u_u_i_d_1a666c98e46272390ca9285149c15eef70" prot="public" virt="non-virtual"><scope>getUUID</scope><name>getUUID</name></member>

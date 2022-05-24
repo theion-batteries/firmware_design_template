@@ -1,16 +1,16 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" name="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h">
-<area shape="rect" id="node1" title="keyence sensors APIs" alt="" coords="754,5,979,61"/>
-<area shape="rect" id="node2" href="$_distance_sensor_8hpp.html" title=" " alt="" coords="611,109,863,165"/>
-<area shape="rect" id="node14" href="$_keyence___a_p_i_8cpp.html" title=" " alt="" coords="888,109,1104,165"/>
-<area shape="rect" id="node3" href="$_alignment_8hpp.html" title=" " alt="" coords="504,213,723,269"/>
-<area shape="rect" id="node13" href="$_distance_sensor_8cpp.html" title=" " alt="" coords="747,213,976,269"/>
-<area shape="rect" id="node4" href="$_cmd_pattern_classes_8h.html" title="interface Command &amp;Invoker and Classes Definition here" alt="" coords="355,317,618,373"/>
-<area shape="rect" id="node12" href="$_alignment_8cpp.html" title=" " alt="" coords="642,317,841,373"/>
-<area shape="rect" id="node5" href="$_globals_8h.html" title="include declarations for commands classes" alt="" coords="387,421,586,477"/>
-<area shape="rect" id="node6" href="$_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="221,525,493,581"/>
-<area shape="rect" id="node11" href="$_globals_8cpp.html" title=" " alt="" coords="518,525,717,581"/>
-<area shape="rect" id="node7" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="107,629,338,685"/>
-<area shape="rect" id="node10" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,629,625,685"/>
-<area shape="rect" id="node8" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,733,213,789"/>
-<area shape="rect" id="node9" href="$main_8cpp.html" title=" " alt="" coords="238,733,437,789"/>
+<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h">
+<area shape="rect" id="node1" title="keyence sensors APIs" alt="" coords="707,5,876,76"/>
+<area shape="rect" id="node2" href="$_distance_sensor_8hpp.html" title=" " alt="" coords="603,124,772,195"/>
+<area shape="rect" id="node14" href="$_keyence___a_p_i_8cpp.html" title=" " alt="" coords="796,124,997,195"/>
+<area shape="rect" id="node3" href="$_alignment_8hpp.html" title=" " alt="" coords="499,243,668,313"/>
+<area shape="rect" id="node13" href="$_distance_sensor_8cpp.html" title=" " alt="" coords="692,243,893,313"/>
+<area shape="rect" id="node4" href="$_cmd_pattern_classes_8h.html" title="interface Command &amp;Invoker and Classes Definition here" alt="" coords="387,361,556,432"/>
+<area shape="rect" id="node12" href="$_alignment_8cpp.html" title=" " alt="" coords="580,369,813,425"/>
+<area shape="rect" id="node5" href="$_globals_8h.html" title="include declarations for commands classes" alt="" coords="387,480,556,551"/>
+<area shape="rect" id="node6" href="$_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="277,599,447,669"/>
+<area shape="rect" id="node11" href="$_globals_8cpp.html" title=" " alt="" coords="471,606,690,662"/>
+<area shape="rect" id="node7" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="168,717,337,788"/>
+<area shape="rect" id="node10" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,717,581,788"/>
+<area shape="rect" id="node8" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,836,252,892"/>
+<area shape="rect" id="node9" href="$main_8cpp.html" title="launch main scheduler" alt="" coords="277,836,479,892"/>
 </map>

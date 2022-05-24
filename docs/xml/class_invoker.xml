@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="393" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="393" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="393" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="393" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_invoker_1abe7600852e68545995e13b0007aabc94" prot="private" static="no" mutable="no">
         <type><ref refid="class_i_command" kindref="compound">ICommand</ref> *</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="394" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="394" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="394" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="394" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="397" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="397" bodyend="400"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="397" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="397" bodyend="400"/>
       </memberdef>
       <memberdef kind="function" id="class_invoker_1a9191daa329fafcecc996ff4a6cf8b02e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="401" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="401" bodyend="403"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="401" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="401" bodyend="403"/>
       </memberdef>
       <memberdef kind="function" id="class_invoker_1ace85c70f471ce7fca542203f0c2fdff3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="404" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="404" bodyend="409"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="404" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="404" bodyend="409"/>
         <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
       </memberdef>
       <memberdef kind="function" id="class_invoker_1a2af0ecdacf369418e76a89745c0259b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="410" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="410" bodyend="412"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="410" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="410" bodyend="412"/>
       </memberdef>
       <memberdef kind="function" id="class_invoker_1ab9c02720cd689b846f1ce35f81558d65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="413" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="413" bodyend="418"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="413" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="413" bodyend="418"/>
         <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
       </memberdef>
       </sectiondef>
@@ -119,7 +119,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="390" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="390" bodyend="419"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="390" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="390" bodyend="419"/>
     <listofallmembers>
       <member refid="class_invoker_1ab9c02720cd689b846f1ce35f81558d65" prot="public" virt="non-virtual"><scope>Invoker</scope><name>finish</name></member>
       <member refid="class_invoker_1abe7600852e68545995e13b0007aabc94" prot="private" virt="non-virtual"><scope>Invoker</scope><name>on_finish_cmd</name></member>

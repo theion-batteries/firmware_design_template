@@ -24,7 +24,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp</label>
         <link refid="_keyence___a_p_i_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -330,6 +330,6 @@
 <codeline lineno="301"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp"/>
   </compounddef>
 </doxygen>

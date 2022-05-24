@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Firmware Design Template: C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h File Reference</title>
+<title>Firmware Design Template: C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.1</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
    </div>
-   <div id="projectbrief">To privde easy and efficient software design</div>
+   <div id="projectbrief">To privde modular and efficient high level software design</div>
   </td>
  </tr>
  </tbody>
@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('_globals_8h.html',''); initResizable()
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Globals.h File Reference</div></div>
 </div><!--header-->
@@ -101,49 +102,51 @@ $(document).ready(function(){initNavTree('_globals_8h.html',''); initResizable()
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Globals.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="_globals_8h__incl.png" border="0" usemap="#a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_globals_8h" alt=""/></div>
-<map name="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_globals_8h" id="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_globals_8h">
-<area shape="rect" title="include declarations for commands classes" alt="" coords="298,5,497,61"/>
-<area shape="rect" href="_cmd_parser_8hpp.html" title=" " alt="" coords="5,184,117,211"/>
-<area shape="rect" href="_cmd_buffer_8hpp.html" title=" " alt="" coords="112,259,219,285"/>
-<area shape="rect" href="_cmd_pattern_classes_8h.html" title="interface Command &amp;Invoker and Classes Definition here" alt="" coords="616,109,765,136"/>
-<area shape="rect" href="_cmd_callback_8hpp.html" title=" " alt="" coords="194,109,318,136"/>
-<area shape="rect" title=" " alt="" coords="790,109,845,136"/>
-<area shape="rect" title=" " alt="" coords="869,109,939,136"/>
-<area shape="rect" title=" " alt="" coords="22,259,87,285"/>
-<area shape="rect" title=" " alt="" coords="461,483,561,509"/>
-<area shape="rect" title=" " alt="" coords="165,333,230,360"/>
-<area shape="rect" title=" " alt="" coords="254,333,319,360"/>
-<area shape="rect" href="_alignment_8hpp.html" title=" " alt="" coords="538,184,643,211"/>
-<area shape="rect" href="_reset_8h.html" title="class reset for hardware/software reset" alt="" coords="759,184,825,211"/>
-<area shape="rect" href="_sleep_8h.html" title=" " alt="" coords="880,184,947,211"/>
-<area shape="rect" href="_u_u_i_d_8hpp.html" title=" " alt="" coords="975,184,1052,211"/>
-<area shape="rect" href="_state_manager_8hpp.html" title="Manager for internal cpu actions and states." alt="" coords="1076,184,1204,211"/>
-<area shape="rect" href="_end_switch_8hpp.html" title="endswitch class" alt="" coords="737,259,847,285"/>
-<area shape="rect" href="_configs_8h.html" title="Place the definition of Macros here like pins, enumerate and so on." alt="" coords="511,408,587,435"/>
-<area shape="rect" href="_nema__8_8hpp.html" title=" " alt="" coords="405,259,499,285"/>
-<area shape="rect" href="light__barrier_8hpp.html" title="endswitch class" alt="" coords="305,408,420,435"/>
-<area shape="rect" href="_distance_sensor_8hpp.html" title=" " alt="" coords="575,259,713,285"/>
-<area shape="rect" href="_driver_a4988_8hpp.html" title=" " alt="" coords="395,333,511,360"/>
-<area shape="rect" href="_keyence___a_p_i_8h.html" title="keyence sensors APIs" alt="" coords="637,333,749,360"/>
-<area shape="rect" title=" " alt="" coords="670,408,717,435"/>
-<area shape="rect" title=" " alt="" coords="980,259,1057,285"/>
-<area shape="rect" title=" " alt="" coords="871,259,955,285"/>
-<area shape="rect" title=" " alt="" coords="1081,259,1172,285"/>
+<div class="center"><img src="_globals_8h__incl.png" border="0" usemap="#a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_globals_8h" alt=""/></div>
+<map name="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_globals_8h" id="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_globals_8h">
+<area shape="rect" title="include declarations for commands classes" alt="" coords="963,5,1133,76"/>
+<area shape="rect" href="_cmd_parser_8hpp.html" title=" " alt="" coords="849,199,961,225"/>
+<area shape="rect" href="_cmd_buffer_8hpp.html" title=" " alt="" coords="996,273,1103,300"/>
+<area shape="rect" href="_cmd_pattern_classes_8h.html" title="interface Command &amp;Invoker and Classes Definition here" alt="" coords="265,124,415,151"/>
+<area shape="rect" href="_cmd_callback_8hpp.html" title=" " alt="" coords="1037,124,1161,151"/>
+<area shape="rect" title=" " alt="" coords="1185,124,1239,151"/>
+<area shape="rect" title=" " alt="" coords="1264,124,1333,151"/>
+<area shape="rect" title=" " alt="" coords="906,273,971,300"/>
+<area shape="rect" title=" " alt="" coords="621,497,721,524"/>
+<area shape="rect" title=" " alt="" coords="1229,348,1294,375"/>
+<area shape="rect" title=" " alt="" coords="1058,348,1123,375"/>
+<area shape="rect" href="_alignment_8hpp.html" title=" " alt="" coords="535,199,641,225"/>
+<area shape="rect" href="_reset_8h.html" title="class reset for hardware/software reset" alt="" coords="355,199,421,225"/>
+<area shape="rect" href="_sleep_8h.html" title=" " alt="" coords="157,199,224,225"/>
+<area shape="rect" href="_u_u_i_d_8hpp.html" title=" " alt="" coords="253,199,331,225"/>
+<area shape="rect" href="_state_manager_8hpp.html" title="Manager for internal cpu actions and states." alt="" coords="5,199,133,225"/>
+<area shape="rect" href="_end_switch_8hpp.html" title="endswitch class" alt="" coords="364,273,473,300"/>
+<area shape="rect" href="_configs_8h.html" title="Place the definition of Macros here like pins, enumerate and so on." alt="" coords="595,423,671,449"/>
+<area shape="rect" href="_nema__8_8hpp.html" title=" " alt="" coords="498,273,593,300"/>
+<area shape="rect" href="light__barrier_8hpp.html" title="endswitch class" alt="" coords="819,423,933,449"/>
+<area shape="rect" href="_distance_sensor_8hpp.html" title=" " alt="" coords="668,273,807,300"/>
+<area shape="rect" href="_driver_a4988_8hpp.html" title=" " alt="" coords="477,348,593,375"/>
+<area shape="rect" href="_keyence___a_p_i_8h.html" title="keyence sensors APIs" alt="" coords="719,348,831,375"/>
+<area shape="rect" title=" " alt="" coords="747,423,794,449"/>
+<area shape="rect" title=" " alt="" coords="148,273,225,300"/>
+<area shape="rect" title=" " alt="" coords="39,273,123,300"/>
+<area shape="rect" title=" " alt="" coords="249,273,340,300"/>
+<area shape="rect" title=" " alt="" coords="1340,199,1412,225"/>
+<area shape="rect" title=" " alt="" coords="1087,199,1214,225"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="_globals_8h__dep__incl.png" border="0" usemap="#a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_globals_8hdep" alt=""/></div>
-<map name="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_globals_8hdep" id="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_globals_8hdep">
-<area shape="rect" title="include declarations for commands classes" alt="" coords="387,5,586,61"/>
-<area shape="rect" href="_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="221,109,493,165"/>
-<area shape="rect" href="_globals_8cpp.html" title=" " alt="" coords="518,109,717,165"/>
-<area shape="rect" href="_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="107,213,338,269"/>
-<area shape="rect" href="_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,213,625,269"/>
-<area shape="rect" href="_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,317,213,373"/>
-<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="238,317,437,373"/>
+<div class="center"><img src="_globals_8h__dep__incl.png" border="0" usemap="#a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_globals_8hdep" alt=""/></div>
+<map name="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_globals_8hdep" id="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_globals_8hdep">
+<area shape="rect" title="include declarations for commands classes" alt="" coords="387,5,556,76"/>
+<area shape="rect" href="_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="277,124,447,195"/>
+<area shape="rect" href="_globals_8cpp.html" title=" " alt="" coords="471,131,690,187"/>
+<area shape="rect" href="_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="168,243,337,313"/>
+<area shape="rect" href="_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,243,581,313"/>
+<area shape="rect" href="_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,361,252,417"/>
+<area shape="rect" href="main_8cpp.html" title="launch main scheduler" alt="" coords="277,361,479,417"/>
 </map>
 </div>
 </div>
@@ -153,6 +156,13 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_motor_get_cmd_handler.html">MotorGetCmdHandler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac6568f5dfdc418a26f1a80513cd18d7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_globals_8h.html#ac6568f5dfdc418a26f1a80513cd18d7e">ParserThreadCallback</a> ()</td></tr>
+<tr class="separator:ac6568f5dfdc418a26f1a80513cd18d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bb396aa99b014129d46b51d1f135c5a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_globals_8h.html#a7bb396aa99b014129d46b51d1f135c5a">BackgroundThreadCallback</a> ()</td></tr>
+<tr class="separator:a7bb396aa99b014129d46b51d1f135c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -242,7 +252,55 @@ Variables</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
 
 <p class="definition">Definition in file <a class="el" href="_globals_8h_source.html">Globals.h</a>.</p>
-</div><h2 class="groupheader">Variable Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a7bb396aa99b014129d46b51d1f135c5a" name="a7bb396aa99b014129d46b51d1f135c5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bb396aa99b014129d46b51d1f135c5a">&#9670;&nbsp;</a></span>BackgroundThreadCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BackgroundThreadCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_globals_8cpp_source.html#l00063">63</a> of file <a class="el" href="_globals_8cpp_source.html">Globals.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac6568f5dfdc418a26f1a80513cd18d7e" name="ac6568f5dfdc418a26f1a80513cd18d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6568f5dfdc418a26f1a80513cd18d7e">&#9670;&nbsp;</a></span>ParserThreadCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ParserThreadCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_globals_8cpp_source.html#l00059">59</a> of file <a class="el" href="_globals_8cpp_source.html">Globals.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_globals_8h_ac6568f5dfdc418a26f1a80513cd18d7e_icgraph.png" border="0" usemap="#a_globals_8h_ac6568f5dfdc418a26f1a80513cd18d7e_icgraph" alt=""/></div>
+<map name="a_globals_8h_ac6568f5dfdc418a26f1a80513cd18d7e_icgraph" id="a_globals_8h_ac6568f5dfdc418a26f1a80513cd18d7e_icgraph">
+<area shape="rect" title=" " alt="" coords="108,5,257,32"/>
+<area shape="rect" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
 <a id="a5171186bb4896bb433ed9c928af0d072" name="a5171186bb4896bb433ed9c928af0d072"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5171186bb4896bb433ed9c928af0d072">&#9670;&nbsp;</a></span>AlignId</h2>
 

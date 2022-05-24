@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Firmware Design Template: C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h Source File</title>
+<title>Firmware Design Template: C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.1</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
    </div>
-   <div id="projectbrief">To privde easy and efficient software design</div>
+   <div id="projectbrief">To privde modular and efficient high level software design</div>
   </td>
  </tr>
  </tbody>
@@ -327,7 +327,7 @@ $(document).ready(function(){initNavTree('_cmd_pattern_classes_8h_source.html','
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno"><a class="line" href="class_move_motor_up_cmd.html#addb4d2ca78ee434a014f1fb99e560bc0">  248</a></span>  <a class="code hl_function" href="class_move_motor_up_cmd.html#addb4d2ca78ee434a014f1fb99e560bc0">MoveMotorUpCmd</a>(<a class="code hl_class" href="class_nema8.html">Nema8</a>&amp; motor, <a class="code hl_class" href="class_alignment.html">Alignment</a>&amp; AL, <span class="keywordtype">float</span> val) :M(motor), Al(AL), val(val){}</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno"><a class="line" href="class_move_motor_up_cmd.html#abe4d84e2c2bd89bf875820aa96f7acb0">  249</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_move_motor_up_cmd.html#abe4d84e2c2bd89bf875820aa96f7acb0">execute</a>() {</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    Serial.println( <span class="stringliteral">&quot;execute move up&quot;</span>); </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    Al.<a class="code hl_function" href="class_alignment.html#ab7e9da9ded962b937b7df23e116f3b0e">MoveDistanceMSafe</a>(&amp;M, <a class="code hl_define" href="_configs_8h.html#a0337592b74197133c4203f6dce657a76">up</a>, val);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    Al.<a class="code hl_function" href="class_alignment.html#ab7e9da9ded962b937b7df23e116f3b0e">MoveDistanceMSafe</a>(&amp;M, <a class="code hl_define" href="_configs_8h.html#a0337592b74197133c4203f6dce657a76">up</a>, val);    </div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="comment">// move down by same distance is the undo cmd</span></div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    }</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="class_move_motor_up_cmd.html#a592fda0f55d367d5be29244036034b6b">  254</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_move_motor_up_cmd.html#a592fda0f55d367d5be29244036034b6b">undo</a>() {</div>
@@ -679,9 +679,9 @@ $(document).ready(function(){initNavTree('_cmd_pattern_classes_8h_source.html','
 <div class="ttc" id="a_state_manager_8hpp_html"><div class="ttname"><a href="_state_manager_8hpp.html">StateManager.hpp</a></div><div class="ttdoc">Manager for internal cpu actions and states.</div></div>
 <div class="ttc" id="a_u_u_i_d_8hpp_html"><div class="ttname"><a href="_u_u_i_d_8hpp.html">UUID.hpp</a></div></div>
 <div class="ttc" id="aclass_alignment_html"><div class="ttname"><a href="class_alignment.html">Alignment</a></div><div class="ttdef"><b>Definition:</b> <a href="_alignment_8hpp_source.html#l00019">Alignment.hpp:19</a></div></div>
-<div class="ttc" id="aclass_alignment_html_a42ca106fc6688ad6f4e17685f9c07589"><div class="ttname"><a href="class_alignment.html#a42ca106fc6688ad6f4e17685f9c07589">Alignment::RotateAnglePHloop</a></div><div class="ttdeci">retVal RotateAnglePHloop(Nema8 *Mref, int direction, float angle)</div><div class="ttdef"><b>Definition:</b> <a href="_alignment_8cpp_source.html#l00121">Alignment.cpp:121</a></div></div>
-<div class="ttc" id="aclass_alignment_html_a9f3eee5f60bc1591e1895d7c4cd7c410"><div class="ttname"><a href="class_alignment.html#a9f3eee5f60bc1591e1895d7c4cd7c410">Alignment::setTargetDistancePHToML</a></div><div class="ttdeci">retVal setTargetDistancePHToML(float distance)</div><div class="ttdoc">set new target distance to ML</div><div class="ttdef"><b>Definition:</b> <a href="_alignment_8cpp_source.html#l01821">Alignment.cpp:1821</a></div></div>
-<div class="ttc" id="aclass_alignment_html_aa10c40160fe39fa263b12f0e07d4f67c"><div class="ttname"><a href="class_alignment.html#aa10c40160fe39fa263b12f0e07d4f67c">Alignment::calibratePrintHead</a></div><div class="ttdeci">retVal calibratePrintHead()</div><div class="ttdef"><b>Definition:</b> <a href="_alignment_8cpp_source.html#l00558">Alignment.cpp:558</a></div></div>
+<div class="ttc" id="aclass_alignment_html_a42ca106fc6688ad6f4e17685f9c07589"><div class="ttname"><a href="class_alignment.html#a42ca106fc6688ad6f4e17685f9c07589">Alignment::RotateAnglePHloop</a></div><div class="ttdeci">retVal RotateAnglePHloop(Nema8 *Mref, int direction, float angle)</div><div class="ttdef"><b>Definition:</b> <a href="_alignment_8cpp_source.html#l00124">Alignment.cpp:124</a></div></div>
+<div class="ttc" id="aclass_alignment_html_a9f3eee5f60bc1591e1895d7c4cd7c410"><div class="ttname"><a href="class_alignment.html#a9f3eee5f60bc1591e1895d7c4cd7c410">Alignment::setTargetDistancePHToML</a></div><div class="ttdeci">retVal setTargetDistancePHToML(float distance)</div><div class="ttdoc">set new target distance to ML</div><div class="ttdef"><b>Definition:</b> <a href="_alignment_8cpp_source.html#l01825">Alignment.cpp:1825</a></div></div>
+<div class="ttc" id="aclass_alignment_html_aa10c40160fe39fa263b12f0e07d4f67c"><div class="ttname"><a href="class_alignment.html#aa10c40160fe39fa263b12f0e07d4f67c">Alignment::calibratePrintHead</a></div><div class="ttdeci">retVal calibratePrintHead()</div><div class="ttdef"><b>Definition:</b> <a href="_alignment_8cpp_source.html#l00562">Alignment.cpp:562</a></div></div>
 <div class="ttc" id="aclass_alignment_html_ab7e9da9ded962b937b7df23e116f3b0e"><div class="ttname"><a href="class_alignment.html#ab7e9da9ded962b937b7df23e116f3b0e">Alignment::MoveDistanceMSafe</a></div><div class="ttdeci">retVal MoveDistanceMSafe(Nema8 *Mref, int direction, float distance)</div><div class="ttdef"><b>Definition:</b> <a href="_alignment_8cpp_source.html#l00072">Alignment.cpp:72</a></div></div>
 <div class="ttc" id="aclass_calibrate_cmd_html"><div class="ttname"><a href="class_calibrate_cmd.html">CalibrateCmd</a></div><div class="ttdef"><b>Definition:</b> <a href="_cmd_pattern_classes_8h_source.html#l00373">CmdPatternClasses.h:373</a></div></div>
 <div class="ttc" id="aclass_calibrate_cmd_html_a8c8127c109b0b9056f1d1cf4f5947753"><div class="ttname"><a href="class_calibrate_cmd.html#a8c8127c109b0b9056f1d1cf4f5947753">CalibrateCmd::undo</a></div><div class="ttdeci">virtual void undo()</div><div class="ttdef"><b>Definition:</b> <a href="_cmd_pattern_classes_8h_source.html#l00385">CmdPatternClasses.h:385</a></div></div>

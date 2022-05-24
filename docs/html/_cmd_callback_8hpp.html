@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Firmware Design Template: C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp File Reference</title>
+<title>Firmware Design Template: C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdCallback.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.1</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
    </div>
-   <div id="projectbrief">To privde easy and efficient software design</div>
+   <div id="projectbrief">To privde modular and efficient high level software design</div>
   </td>
  </tr>
  </tbody>
@@ -85,42 +85,47 @@ $(document).ready(function(){initNavTree('_cmd_callback_8hpp.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">CmdCallback.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;Thread.h&quot;</code><br />
+<code>#include &quot;ThreadController.h&quot;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="_cmd_buffer_8hpp_source.html">CmdBuffer.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_cmd_parser_8hpp_source.html">CmdParser.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for CmdCallback.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="_cmd_callback_8hpp__incl.png" border="0" usemap="#a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_cmd_callback_8hpp" alt=""/></div>
-<map name="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_cmd_callback_8hpp" id="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_cmd_callback_8hpp">
-<area shape="rect" title=" " alt="" coords="51,5,289,61"/>
-<area shape="rect" title=" " alt="" coords="5,259,71,285"/>
-<area shape="rect" title=" " alt="" coords="248,259,313,285"/>
-<area shape="rect" href="_cmd_buffer_8hpp.html" title=" " alt="" coords="75,184,182,211"/>
-<area shape="rect" href="_cmd_parser_8hpp.html" title=" " alt="" coords="161,109,273,136"/>
-<area shape="rect" title=" " alt="" coords="95,259,195,285"/>
-<area shape="rect" title=" " alt="" coords="207,184,272,211"/>
+<div class="center"><img src="_cmd_callback_8hpp__incl.png" border="0" usemap="#a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_cmd_callback_8hpp" alt=""/></div>
+<map name="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_cmd_callback_8hpp" id="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_cmd_callback_8hpp">
+<area shape="rect" title=" " alt="" coords="207,5,377,76"/>
+<area shape="rect" title=" " alt="" coords="5,124,77,151"/>
+<area shape="rect" title=" " alt="" coords="102,124,229,151"/>
+<area shape="rect" title=" " alt="" coords="234,273,299,300"/>
+<area shape="rect" title=" " alt="" coords="477,273,542,300"/>
+<area shape="rect" href="_cmd_buffer_8hpp.html" title=" " alt="" coords="304,199,411,225"/>
+<area shape="rect" href="_cmd_parser_8hpp.html" title=" " alt="" coords="355,124,467,151"/>
+<area shape="rect" title=" " alt="" coords="323,273,423,300"/>
+<area shape="rect" title=" " alt="" coords="435,199,501,225"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="_cmd_callback_8hpp__dep__incl.png" border="0" usemap="#a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_cmd_callback_8hppdep" alt=""/></div>
-<map name="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_cmd_callback_8hppdep" id="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firm___alignment___print_head_2include_2_cmd_callback_8hppdep">
-<area shape="rect" title=" " alt="" coords="483,5,720,61"/>
-<area shape="rect" href="_globals_8h.html" title="include declarations for commands classes" alt="" coords="387,109,586,165"/>
-<area shape="rect" href="_cmd_callback_8cpp.html" title=" " alt="" coords="610,109,825,165"/>
-<area shape="rect" href="_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="221,213,493,269"/>
-<area shape="rect" href="_globals_8cpp.html" title=" " alt="" coords="518,213,717,269"/>
-<area shape="rect" href="_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="107,317,338,373"/>
-<area shape="rect" href="_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,317,625,373"/>
-<area shape="rect" href="_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,421,213,477"/>
-<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="238,421,437,477"/>
+<div class="center"><img src="_cmd_callback_8hpp__dep__incl.png" border="0" usemap="#a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_cmd_callback_8hppdep" alt=""/></div>
+<map name="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_cmd_callback_8hppdep" id="a_c_1_2_users_2_sami_dhiab_2_theion___repos_2firmware__design__template_2include_2_cmd_callback_8hppdep">
+<area shape="rect" title=" " alt="" coords="504,5,673,76"/>
+<area shape="rect" href="_globals_8h.html" title="include declarations for commands classes" alt="" coords="387,124,556,195"/>
+<area shape="rect" href="_cmd_callback_8cpp.html" title=" " alt="" coords="580,131,832,187"/>
+<area shape="rect" href="_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="277,243,447,313"/>
+<area shape="rect" href="_globals_8cpp.html" title=" " alt="" coords="471,250,690,306"/>
+<area shape="rect" href="_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="168,361,337,432"/>
+<area shape="rect" href="_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,361,581,432"/>
+<area shape="rect" href="_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,480,252,536"/>
+<area shape="rect" href="main_8cpp.html" title="launch main scheduler" alt="" coords="277,480,479,536"/>
 </map>
 </div>
 </div>
@@ -139,6 +144,11 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:af311870fc30f3981ec08da54c54dc9f1"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_cmd_callback_8hpp.html#af311870fc30f3981ec08da54c54dc9f1">CmdCallFunct</a>) (<a class="el" href="class_cmd_parser.html">CmdParser</a> *cmdParser)</td></tr>
 <tr class="separator:af311870fc30f3981ec08da54c54dc9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a129946f17c996d6dad89ea29fc803146"><td class="memItemLeft" align="right" valign="top">ThreadController&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_cmd_callback_8hpp.html#a129946f17c996d6dad89ea29fc803146">controll</a></td></tr>
+<tr class="separator:a129946f17c996d6dad89ea29fc803146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="af311870fc30f3981ec08da54c54dc9f1" name="af311870fc30f3981ec08da54c54dc9f1"></a>
@@ -153,7 +163,30 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_cmd_callback_8hpp_source.html#l00022">22</a> of file <a class="el" href="_cmd_callback_8hpp_source.html">CmdCallback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8hpp_source.html#l00024">24</a> of file <a class="el" href="_cmd_callback_8hpp_source.html">CmdCallback.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a129946f17c996d6dad89ea29fc803146" name="a129946f17c996d6dad89ea29fc803146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a129946f17c996d6dad89ea29fc803146">&#9670;&nbsp;</a></span>controll</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ThreadController controll</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

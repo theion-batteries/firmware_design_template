@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" line="16" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" bodystart="16" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" line="16" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" bodystart="16" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlight_barrier_1ae20e2d254eac0c184bfdd9b9821a2f21" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" line="17" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" bodystart="17" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" line="17" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classlight_barrier_1a8c66abe8395b93c58d4d0e6876667835" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -45,8 +45,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" line="18" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" bodystart="18" bodyend="-1"/>
-        <referencedby refid="class_alignment_1a624dd240b0142db6b9c4e10ca1475246" compoundref="_alignment_8cpp" startline="469" endline="540">Alignment::GoToReferenceUp</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" line="18" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_alignment_1a624dd240b0142db6b9c4e10ca1475246" compoundref="_alignment_8cpp" startline="473" endline="544">Alignment::GoToReferenceUp</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classlight_barrier_1aa575efa3d00382a47849d323fba08637" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" line="19" column="7" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" bodystart="19" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" line="19" column="7" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" bodystart="19" bodyend="-1"/>
         <referencedby refid="classlight_barrier_1a9f75c7d7640cf9aab7f67f1b16e27077" compoundref="light__barrier_8cpp" startline="28" endline="31">get_current_state</referencedby>
         <referencedby refid="classlight_barrier_1a89cd452d9687398612660afcf5ed186b" compoundref="light__barrier_8cpp" startline="17" endline="21">lightBarrier</referencedby>
       </memberdef>
@@ -76,10 +76,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" line="20" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" bodystart="20" bodyend="-1"/>
-        <referencedby refid="class_alignment_1a2440f9acebf113fad04bb77d2c0b9e6e" compoundref="_alignment_8cpp" startline="359" endline="363">Alignment::checkLimitUpX</referencedby>
-        <referencedby refid="class_alignment_1a29a09538dce5388b0873b131ea2f66a7" compoundref="_alignment_8cpp" startline="364" endline="368">Alignment::checkLimitUpY</referencedby>
-        <referencedby refid="class_alignment_1aee871f24d8dc408d22c9e9b139e02daa" compoundref="_alignment_8cpp" startline="369" endline="373">Alignment::checkLimitUpZ</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" line="20" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_alignment_1a2440f9acebf113fad04bb77d2c0b9e6e" compoundref="_alignment_8cpp" startline="363" endline="367">Alignment::checkLimitUpX</referencedby>
+        <referencedby refid="class_alignment_1a29a09538dce5388b0873b131ea2f66a7" compoundref="_alignment_8cpp" startline="368" endline="372">Alignment::checkLimitUpY</referencedby>
+        <referencedby refid="class_alignment_1aee871f24d8dc408d22c9e9b139e02daa" compoundref="_alignment_8cpp" startline="373" endline="377">Alignment::checkLimitUpZ</referencedby>
         <referencedby refid="classlight_barrier_1a89cd452d9687398612660afcf5ed186b" compoundref="light__barrier_8cpp" startline="17" endline="21">lightBarrier</referencedby>
       </memberdef>
       </sectiondef>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" line="21" column="3"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" line="21" column="3"/>
       </memberdef>
       <memberdef kind="function" id="classlight_barrier_1a89cd452d9687398612660afcf5ed186b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" line="22" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/light_barrier.cpp" bodystart="17" bodyend="21"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" line="22" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/light_barrier.cpp" bodystart="17" bodyend="21"/>
         <references refid="classlight_barrier_1aa575efa3d00382a47849d323fba08637" compoundref="light__barrier_8hpp" startline="19">Pin</references>
         <references refid="classlight_barrier_1a74c6017b8039066c582d5541df43dbd9" compoundref="light__barrier_8hpp" startline="20">TraversedState</references>
       </memberdef>
@@ -151,18 +151,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" line="23" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/light_barrier.cpp" bodystart="28" bodyend="31"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" line="23" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/light_barrier.cpp" bodystart="28" bodyend="31"/>
         <references refid="classlight_barrier_1aa575efa3d00382a47849d323fba08637" compoundref="light__barrier_8hpp" startline="19">Pin</references>
-        <referencedby refid="class_alignment_1ad66e261f955a7ff82655ad9dc40511d4" compoundref="_alignment_8cpp" startline="345" endline="348">Alignment::getReadingLightBarrierX</referencedby>
-        <referencedby refid="class_alignment_1aac7394937e1dc058fb929abca3465dd1" compoundref="_alignment_8cpp" startline="349" endline="352">Alignment::getReadingLightBarrierY</referencedby>
-        <referencedby refid="class_alignment_1ad8475ba7636ed61ab7b3a70f54d5a26f" compoundref="_alignment_8cpp" startline="353" endline="356">Alignment::getReadingLightBarrierZ</referencedby>
+        <referencedby refid="class_alignment_1ad66e261f955a7ff82655ad9dc40511d4" compoundref="_alignment_8cpp" startline="349" endline="352">Alignment::getReadingLightBarrierX</referencedby>
+        <referencedby refid="class_alignment_1aac7394937e1dc058fb929abca3465dd1" compoundref="_alignment_8cpp" startline="353" endline="356">Alignment::getReadingLightBarrierY</referencedby>
+        <referencedby refid="class_alignment_1ad8475ba7636ed61ab7b3a70f54d5a26f" compoundref="_alignment_8cpp" startline="357" endline="360">Alignment::getReadingLightBarrierZ</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" line="14" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/light_barrier.hpp" bodystart="14" bodyend="25"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" line="14" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/light_barrier.hpp" bodystart="14" bodyend="25"/>
     <listofallmembers>
       <member refid="classlight_barrier_1a65bb91b9f53929fa861b2b5fec7744bc" prot="public" virt="non-virtual"><scope>lightBarrier</scope><name>current_state</name></member>
       <member refid="classlight_barrier_1a9f75c7d7640cf9aab7f67f1b16e27077" prot="public" virt="non-virtual"><scope>lightBarrier</scope><name>get_current_state</name></member>

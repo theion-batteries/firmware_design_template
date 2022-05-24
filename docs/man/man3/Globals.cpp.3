@@ -1,14 +1,24 @@
-.TH "C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.TH "C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" 3 "Tue May 24 2022" "Version 0.2" "Firmware Design Template" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp
+C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp
 .SH SYNOPSIS
 .br
 .PP
 \fC#include 'Globals\&.h'\fP
 .br
 
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBParserThreadCallback\fP ()"
+.br
+.ti -1c
+.RI "void \fBBackgroundThreadCallback\fP ()"
+.br
+.in -1c
 .SS "Variables"
 
 .in +1c
@@ -125,6 +135,16 @@ C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp
 .RI "std::stack< \fBInvoker\fP > \fBInvokerStack\fP"
 .br
 .in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void BackgroundThreadCallback ()"
+
+.PP
+Definition at line \fB63\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "void ParserThreadCallback ()"
+
+.PP
+Definition at line \fB59\fP of file \fBGlobals\&.cpp\fP\&.
 .SH "Variable Documentation"
 .PP 
 .SS "\fBUUID_MANAGER\fP AlignId('align') ('align')"

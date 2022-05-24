@@ -1,6 +1,6 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" name="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,212,61"/>
-<area shape="rect" id="node2" href="$_driver_a4988_8hpp.html" title=" " alt="" coords="51,109,167,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="59,259,159,285"/>
-<area shape="rect" id="node4" href="$_configs_8h.html" title="Place the definition of Macros here like pins, enumerate and so on." alt="" coords="109,184,185,211"/>
+<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,249,61"/>
+<area shape="rect" id="node2" href="$_driver_a4988_8hpp.html" title=" " alt="" coords="69,109,185,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="77,259,177,285"/>
+<area shape="rect" id="node4" href="$_configs_8h.html" title="Place the definition of Macros here like pins, enumerate and so on." alt="" coords="128,184,204,211"/>
 </map>

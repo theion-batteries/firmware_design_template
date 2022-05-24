@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="312" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="312" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="312" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="312" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_rotate_motor_cclk_cmd_1a13d3094d80b5ee4c762ccef97c29a3ce" prot="private" static="no" mutable="no">
         <type><ref refid="class_alignment" kindref="compound">Alignment</ref> &amp;</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="313" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="313" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="313" column="12" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="313" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_rotate_motor_cclk_cmd_1ab1698905136345acee5b292b4b8471fa" prot="private" static="no" mutable="no">
         <type>float</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="314" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="314" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="314" column="8" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="314" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="316" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="316" bodyend="316"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="316" column="3" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="316" bodyend="316"/>
       </memberdef>
       <memberdef kind="function" id="class_rotate_motor_cclk_cmd_1a9cd0bf2d88fd1cf6dc55eb09d13df733" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -88,9 +88,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="317" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="317" bodyend="321"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="317" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="317" bodyend="321"/>
         <references refid="_configs_8h_1ac15bd348b546cfa8e7c9330b517bc217" compoundref="_configs_8h" startline="108">cclk</references>
-        <references refid="class_alignment_1a42ca106fc6688ad6f4e17685f9c07589" compoundref="_alignment_8cpp" startline="121" endline="133">Alignment::RotateAnglePHloop</references>
+        <references refid="class_alignment_1a42ca106fc6688ad6f4e17685f9c07589" compoundref="_alignment_8cpp" startline="124" endline="137">Alignment::RotateAnglePHloop</references>
       </memberdef>
       <memberdef kind="function" id="class_rotate_motor_cclk_cmd_1a3f8d23a9165ff286158bec7c962edff5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -105,9 +105,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="322" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="322" bodyend="325"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="322" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="322" bodyend="325"/>
         <references refid="_configs_8h_1ae4a6a5757fdb3dd50355cea42bab342c" compoundref="_configs_8h" startline="107">clk</references>
-        <references refid="class_alignment_1a42ca106fc6688ad6f4e17685f9c07589" compoundref="_alignment_8cpp" startline="121" endline="133">Alignment::RotateAnglePHloop</references>
+        <references refid="class_alignment_1a42ca106fc6688ad6f4e17685f9c07589" compoundref="_alignment_8cpp" startline="124" endline="137">Alignment::RotateAnglePHloop</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -138,7 +138,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="310" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="310" bodyend="326"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="310" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="310" bodyend="326"/>
     <listofallmembers>
       <member refid="class_rotate_motor_cclk_cmd_1a13d3094d80b5ee4c762ccef97c29a3ce" prot="private" virt="non-virtual"><scope>RotateMotorCclkCmd</scope><name>Al</name></member>
       <member refid="class_rotate_motor_cclk_cmd_1a9cd0bf2d88fd1cf6dc55eb09d13df733" prot="public" virt="virtual"><scope>RotateMotorCclkCmd</scope><name>execute</name></member>

@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="122" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="122" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="122" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="122" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_cmd_buffer_object_1a7b10ca3e68472435a7c1d83e11b7bfea" prot="private" static="no" mutable="no">
         <type>uint8_t</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="123" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="123" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="123" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="123" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_cmd_buffer_object_1aa6ecf34326031ece416dbaddc9009315" prot="private" static="no" mutable="no">
         <type>size_t</type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="124" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="124" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="124" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="124" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_cmd_buffer_object_1afcd801b37ca74d63ea6a11cfd1343b0c" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="125" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="125" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="125" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="125" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="29" column="5" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="29" bodyend="35"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="29" column="5" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="29" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_object_1aba18a34d82f1b11527cda2d504432923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -121,9 +121,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="46" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdBuffer.cpp" bodystart="9" bodyend="64"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="46" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdBuffer.cpp" bodystart="9" bodyend="64"/>
         <references refid="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" compoundref="_cmd_buffer_8cpp" startline="66" endline="114">readSerialChar</references>
-        <referencedby refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" compoundref="_cmd_callback_8cpp" startline="9" endline="24">CmdCallbackObject::loopCmdProcessing</referencedby>
+        <referencedby refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" compoundref="_cmd_callback_8cpp" startline="27" endline="42">CmdCallbackObject::loopCmdProcessing</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -154,12 +154,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="58" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdBuffer.cpp" bodystart="66" bodyend="114"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="58" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdBuffer.cpp" bodystart="66" bodyend="114"/>
         <references refid="_cmd_buffer_8hpp_1aa92744ebcb1216976a63d5a19dbcfb4a" compoundref="_cmd_buffer_8hpp" startline="13">CMDBUFFER_CHAR_PRINTABLE</references>
         <references refid="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9">getBuffer</references>
         <references refid="class_cmd_buffer_object_1a6925a16fab8b9b13fb4372e5f0a88b7e">getBufferSize</references>
         <referencedby refid="class_cmd_buffer_object_1aba18a34d82f1b11527cda2d504432923" compoundref="_cmd_buffer_8cpp" startline="9" endline="64">readFromSerial</referencedby>
-        <referencedby refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" compoundref="_cmd_callback_8cpp" startline="66" endline="80">CmdCallbackObject::updateCmdProcessing</referencedby>
+        <referencedby refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" compoundref="_cmd_callback_8cpp" startline="105" endline="120">CmdCallbackObject::updateCmdProcessing</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_object_1a08b5dde801557e604b9e0875988a15cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="70" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="70" bodyend="70"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="70" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="70" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_object_1a221a93905e9545cc63552b964503c334" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -227,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="82" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="82" bodyend="82"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="82" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="82" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_object_1ad7c2ae01008297a876b9d7ed56a37c1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -256,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="89" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="89" bodyend="89"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="89" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="89" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_object_1a5d786badb41aacddc60653b266f8d329" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>char *</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="96" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="96" bodyend="99"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="96" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="96" bodyend="99"/>
         <references refid="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9">getBuffer</references>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_object_1a9482f941c79ec204712a381b8fc55ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
@@ -291,9 +291,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="104" column="18"/>
-        <referencedby refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" compoundref="_cmd_callback_8cpp" startline="9" endline="24">CmdCallbackObject::loopCmdProcessing</referencedby>
-        <referencedby refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" compoundref="_cmd_callback_8cpp" startline="66" endline="80">CmdCallbackObject::updateCmdProcessing</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="104" column="18"/>
+        <referencedby refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" compoundref="_cmd_callback_8cpp" startline="27" endline="42">CmdCallbackObject::loopCmdProcessing</referencedby>
+        <referencedby refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" compoundref="_cmd_callback_8cpp" startline="105" endline="120">CmdCallbackObject::updateCmdProcessing</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_object_1a6513ed8d2466fd0560a692de7a79e0a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>uint8_t *</type>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="111" column="21"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="111" column="21"/>
         <referencedby refid="class_cmd_buffer_object_1a5d786badb41aacddc60653b266f8d329" compoundref="_cmd_buffer_8hpp" startline="96" endline="99">getStringFromBuffer</referencedby>
         <referencedby refid="class_cmd_parser_1a1ae4ac725a5b549a7c3679a72d7d26e9" compoundref="_cmd_parser_8hpp" startline="53" endline="57">CmdParser::parseCmd</referencedby>
         <referencedby refid="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" compoundref="_cmd_buffer_8cpp" startline="66" endline="114">readSerialChar</referencedby>
@@ -334,7 +334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="118" column="20"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="118" column="20"/>
         <referencedby refid="class_cmd_parser_1a1ae4ac725a5b549a7c3679a72d7d26e9" compoundref="_cmd_parser_8hpp" startline="53" endline="57">CmdParser::parseCmd</referencedby>
         <referencedby refid="class_cmd_buffer_object_1a8106cb49ce594259a50e49f43b727a9a" compoundref="_cmd_buffer_8cpp" startline="66" endline="114">readSerialChar</referencedby>
       </memberdef>
@@ -355,7 +355,7 @@
         <link refid="class_cmd_buffer_object"/>
       </node>
     </inheritancegraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="23" column="1"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="23" column="1"/>
     <listofallmembers>
       <member refid="class_cmd_buffer_object_1a9482f941c79ec204712a381b8fc55ac2" prot="public" virt="pure-virtual"><scope>CmdBufferObject</scope><name>clear</name></member>
       <member refid="class_cmd_buffer_object_1a0e62c008ea9f9f927e989d5324adb46b" prot="public" virt="non-virtual"><scope>CmdBufferObject</scope><name>CmdBufferObject</name></member>

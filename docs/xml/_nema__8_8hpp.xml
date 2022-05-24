@@ -3,7 +3,7 @@
   <compounddef id="_nema__8_8hpp" kind="file" language="C++">
     <compoundname>Nema_8.hpp</compoundname>
     <includes refid="_driver_a4988_8hpp" local="yes">DriverA4988.hpp</includes>
-    <includedby refid="_alignment_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Alignment.hpp</includedby>
+    <includedby refid="_alignment_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Alignment.hpp</includedby>
     <incdepgraph>
       <node id="3">
         <label>ArduinoSTL.h</label>
@@ -23,7 +23,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Nema_8.hpp</label>
         <link refid="_nema__8_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -31,7 +31,7 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Alignment.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Alignment.hpp</label>
         <link refid="_alignment_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -39,7 +39,7 @@
         </childnode>
       </node>
       <node id="5">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternCallbacks.h</label>
         <link refid="_cmd_pattern_callbacks_8h"/>
         <childnode refid="6" relation="include">
         </childnode>
@@ -47,13 +47,13 @@
         </childnode>
       </node>
       <node id="3">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h</label>
         <link refid="_cmd_pattern_classes_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="6">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp</label>
         <link refid="_com_handler_8hpp"/>
         <childnode refid="7" relation="include">
         </childnode>
@@ -61,7 +61,7 @@
         </childnode>
       </node>
       <node id="4">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h</label>
         <link refid="_globals_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
@@ -69,29 +69,29 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Nema_8.hpp</label>
         <link refid="_nema__8_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="11">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Alignment.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Alignment.cpp</label>
         <link refid="_alignment_8cpp"/>
       </node>
       <node id="9">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp</label>
         <link refid="_cmd_pattern_callbacks_8cpp"/>
       </node>
       <node id="7">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/ComHandler.cpp</label>
         <link refid="_com_handler_8cpp"/>
       </node>
       <node id="10">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp</label>
         <link refid="_globals_8cpp"/>
       </node>
       <node id="8">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
@@ -147,6 +147,6 @@
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/>}<sp/></highlight></codeline>
 <codeline lineno="49"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Nema_8.hpp"/>
   </compounddef>
 </doxygen>

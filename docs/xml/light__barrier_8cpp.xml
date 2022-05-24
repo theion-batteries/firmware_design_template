@@ -14,7 +14,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/light_barrier.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/light_barrier.cpp</label>
         <link refid="light__barrier_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -46,6 +46,6 @@
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>digitalRead(<ref refid="classlight_barrier_1aa575efa3d00382a47849d323fba08637" kindref="member">Pin</ref>);</highlight></codeline>
 <codeline lineno="31"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/light_barrier.cpp"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/light_barrier.cpp"/>
   </compounddef>
 </doxygen>

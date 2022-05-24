@@ -8,8 +8,8 @@
     <includes refid="_cmd_callback_8hpp" local="yes">CmdCallback.hpp</includes>
     <includes local="yes">stack</includes>
     <includes local="no">memory</includes>
-    <includedby refid="_cmd_pattern_callbacks_8h" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</includedby>
-    <includedby refid="_globals_8cpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</includedby>
+    <includedby refid="_cmd_pattern_callbacks_8h" local="yes">C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternCallbacks.h</includedby>
+    <includedby refid="_globals_8cpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp</includedby>
     <incdepgraph>
       <node id="19">
         <label>Arduino.h</label>
@@ -44,6 +44,10 @@
       <node id="25">
         <label>CmdCallback.hpp</label>
         <link refid="_cmd_callback_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
@@ -104,7 +108,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h</label>
         <link refid="_globals_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -114,9 +118,9 @@
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="16">
@@ -172,6 +176,12 @@
       <node id="23">
         <label>EEPROM.h</label>
       </node>
+      <node id="26">
+        <label>Thread.h</label>
+      </node>
+      <node id="27">
+        <label>ThreadController.h</label>
+      </node>
       <node id="21">
         <label>avr/sleep.h</label>
       </node>
@@ -181,10 +191,10 @@
       <node id="17">
         <label>map</label>
       </node>
-      <node id="27">
+      <node id="29">
         <label>memory</label>
       </node>
-      <node id="26">
+      <node id="28">
         <label>stack</label>
       </node>
       <node id="6">
@@ -196,7 +206,7 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternCallbacks.h</label>
         <link refid="_cmd_pattern_callbacks_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -204,7 +214,7 @@
         </childnode>
       </node>
       <node id="3">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp</label>
         <link refid="_com_handler_8hpp"/>
         <childnode refid="4" relation="include">
         </childnode>
@@ -212,7 +222,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h</label>
         <link refid="_globals_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -220,19 +230,19 @@
         </childnode>
       </node>
       <node id="6">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp</label>
         <link refid="_cmd_pattern_callbacks_8cpp"/>
       </node>
       <node id="4">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/ComHandler.cpp</label>
         <link refid="_com_handler_8cpp"/>
       </node>
       <node id="7">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp</label>
         <link refid="_globals_8cpp"/>
       </node>
       <node id="5">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
@@ -250,8 +260,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="23" column="20" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="13" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="23" declcolumn="20"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="23" column="20" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="13" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="23" declcolumn="20"/>
+        <referencedby refid="_globals_8h_1ac6568f5dfdc418a26f1a80513cd18d7e" compoundref="_globals_8cpp" startline="59" endline="62">ParserThreadCallback</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1aac8303014ae2b31fdb57b7b595d00d5f" prot="public" static="no" mutable="no">
         <type><ref refid="class_cmd_buffer" kindref="compound">CmdBuffer</ref>&lt; 64 &gt;</type>
@@ -264,7 +275,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="24" column="18" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="14" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="24" declcolumn="18"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="24" column="18" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="14" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="24" declcolumn="18"/>
+        <referencedby refid="_globals_8h_1ac6568f5dfdc418a26f1a80513cd18d7e" compoundref="_globals_8cpp" startline="59" endline="62">ParserThreadCallback</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" prot="public" static="no" mutable="no">
         <type><ref refid="class_cmd_parser" kindref="compound">CmdParser</ref></type>
@@ -277,11 +289,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="25" column="21" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="15" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="25" declcolumn="21"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="25" column="21" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="15" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="25" declcolumn="21"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1a905f26acafc5d817d3d4f2dc88bceb2a" compoundref="_cmd_pattern_callbacks_8cpp" startline="318" endline="325">calibrate_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ac82a0068988fe425288370e121b04f00" compoundref="_cmd_pattern_callbacks_8cpp" startline="242" endline="291">move_cmd</referencedby>
+        <referencedby refid="_globals_8h_1ac6568f5dfdc418a26f1a80513cd18d7e" compoundref="_globals_8cpp" startline="59" endline="62">ParserThreadCallback</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" compoundref="_cmd_pattern_callbacks_8cpp" startline="293" endline="312">rotate_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1adcae3b60a9fcfef183dd0b91967e2ad6" compoundref="_cmd_pattern_callbacks_8cpp" startline="173" endline="240">set_cmd</referencedby>
       </memberdef>
@@ -296,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="28" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="36" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="28" declcolumn="14"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="28" column="14" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="36" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="28" declcolumn="14"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ac82a0068988fe425288370e121b04f00" compoundref="_cmd_pattern_callbacks_8cpp" startline="242" endline="291">move_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" compoundref="_cmd_pattern_callbacks_8cpp" startline="293" endline="312">rotate_cmd</referencedby>
@@ -313,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="29" column="14" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="29" declcolumn="14"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="29" column="14" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="29" declcolumn="14"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ac82a0068988fe425288370e121b04f00" compoundref="_cmd_pattern_callbacks_8cpp" startline="242" endline="291">move_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1adcae3b60a9fcfef183dd0b91967e2ad6" compoundref="_cmd_pattern_callbacks_8cpp" startline="173" endline="240">set_cmd</referencedby>
@@ -329,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="30" column="14" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="30" declcolumn="14"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="30" column="14" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="30" declcolumn="14"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ac82a0068988fe425288370e121b04f00" compoundref="_cmd_pattern_callbacks_8cpp" startline="242" endline="291">move_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1adcae3b60a9fcfef183dd0b91967e2ad6" compoundref="_cmd_pattern_callbacks_8cpp" startline="173" endline="240">set_cmd</referencedby>
@@ -345,7 +358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="31" column="14" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="31" declcolumn="14"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="31" column="14" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="31" declcolumn="14"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1ae6b66fb7cbed53b3fe6f3110173b0b5f" prot="public" static="no" mutable="no">
         <type><ref refid="classend_switch" kindref="compound">endSwitch</ref></type>
@@ -358,7 +371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="33" column="18" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="33" declcolumn="18"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="33" column="18" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="33" declcolumn="18"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a9cabafb0746a964c14ec2d98a9123496" prot="public" static="no" mutable="no">
         <type><ref refid="classend_switch" kindref="compound">endSwitch</ref></type>
@@ -371,7 +384,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="34" column="18" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="34" declcolumn="18"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="34" column="18" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="34" declcolumn="18"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a0fe0931733f652dbeb5bca6303cc1e1e" prot="public" static="no" mutable="no">
         <type><ref refid="classend_switch" kindref="compound">endSwitch</ref></type>
@@ -384,7 +397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="35" column="18" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="35" declcolumn="18"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="35" column="18" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="35" declcolumn="18"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1ab354ebc9a00eae34787d64d038821501" prot="public" static="no" mutable="no">
         <type><ref refid="classend_switch" kindref="compound">endSwitch</ref></type>
@@ -397,7 +410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="36" column="18" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="36" declcolumn="18"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="36" column="18" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="36" declcolumn="18"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1abda64f008e3b9989dfd5e7b50018feb0" prot="public" static="no" mutable="no">
         <type><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref></type>
@@ -410,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="38" column="23" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="38" declcolumn="23"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="38" column="23" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="38" declcolumn="23"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a1ce8413c7811acb5f9c2dc713d178468" prot="public" static="no" mutable="no">
@@ -424,7 +437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="39" column="23" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="39" declcolumn="23"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="39" column="23" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="39" declcolumn="23"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1afe16fc984da9049c44458f1b302290bb" prot="public" static="no" mutable="no">
         <type><ref refid="class_distance_sensor" kindref="compound">DistanceSensor</ref></type>
@@ -437,7 +450,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="40" column="23" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="40" declcolumn="23"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="40" column="23" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="40" declcolumn="23"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1af666917f699eefa5b0e61d99fafc49db" prot="public" static="no" mutable="no">
         <type><ref refid="classlight_barrier" kindref="compound">lightBarrier</ref></type>
@@ -450,7 +463,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="42" column="21" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="42" declcolumn="21"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="42" column="21" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="42" declcolumn="21"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1af21acc49605a233af07a00c8ec94e587" prot="public" static="no" mutable="no">
         <type><ref refid="classlight_barrier" kindref="compound">lightBarrier</ref></type>
@@ -463,7 +476,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="43" column="21" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="43" declcolumn="21"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="43" column="21" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="43" declcolumn="21"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a5ff6b7894ffafb3a9c477fc0dc02c33c" prot="public" static="no" mutable="no">
         <type><ref refid="classlight_barrier" kindref="compound">lightBarrier</ref></type>
@@ -476,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="44" column="21" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="44" declcolumn="21"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="44" column="21" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="44" declcolumn="21"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091" prot="public" static="no" mutable="no">
         <type><ref refid="class_alignment" kindref="compound">Alignment</ref></type>
@@ -489,7 +502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="46" column="18" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="46" declcolumn="18"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="46" column="18" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="46" declcolumn="18"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1a905f26acafc5d817d3d4f2dc88bceb2a" compoundref="_cmd_pattern_callbacks_8cpp" startline="318" endline="325">calibrate_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ac82a0068988fe425288370e121b04f00" compoundref="_cmd_pattern_callbacks_8cpp" startline="242" endline="291">move_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" compoundref="_cmd_pattern_callbacks_8cpp" startline="293" endline="312">rotate_cmd</referencedby>
@@ -505,7 +518,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="47" column="21" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="47" declcolumn="21"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="47" column="21" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="47" declcolumn="21"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1adcae3b60a9fcfef183dd0b91967e2ad6" compoundref="_cmd_pattern_callbacks_8cpp" startline="173" endline="240">set_cmd</referencedby>
       </memberdef>
@@ -520,7 +533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="48" column="22" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="48" declcolumn="22"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="48" column="22" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="48" declcolumn="22"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ae3feb7f7fca30ce0a0c8dcc76eb01ff9" compoundref="_cmd_pattern_callbacks_8cpp" startline="331" endline="335">reset_cmd</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1af942883b344d04a36595840bcdb6ac75" prot="public" static="no" mutable="no">
@@ -534,7 +547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="49" column="22" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="49" declcolumn="22"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="49" column="22" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="49" declcolumn="22"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1a95dfb636156bd75ec75576b2f153c6c6" compoundref="_cmd_pattern_callbacks_8cpp" startline="341" endline="345">sleep_cmd</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a59e3d13db97e637ea4e40e8c7960e91b" prot="public" static="no" mutable="no">
@@ -548,7 +561,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="50" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="40" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="50" declcolumn="13"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="50" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="40" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="50" declcolumn="13"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1abe2a2ebccbcded085483a9da46be3fc3" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -561,7 +574,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="51" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="41" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="51" declcolumn="13"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="51" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="41" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="51" declcolumn="13"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a0739be677979fb20f78aae33aa824256" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -574,8 +587,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="52" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="42" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="52" declcolumn="13"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="52" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="42" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="52" declcolumn="13"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a2d1a4a31b3c4a7c397f048716fb5b29d" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -588,8 +601,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="53" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="43" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="53" declcolumn="13"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="53" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="43" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="53" declcolumn="13"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a7473a2f9a35754038470dde2b8afa988" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -602,8 +615,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="54" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="44" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="54" declcolumn="13"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="54" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="44" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="54" declcolumn="13"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a7082f0f5fdb86b353e44e84e1a4bb337" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -616,8 +629,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="55" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="45" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="55" declcolumn="13"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="55" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="45" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="55" declcolumn="13"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a6257ab6d377137fc36df2f662887fd97" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -630,8 +643,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="56" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="46" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="56" declcolumn="13"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="56" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="46" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="56" declcolumn="13"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1af012309b520eb65471272ee8f877317a" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -644,7 +657,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="57" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="47" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="57" declcolumn="13"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="57" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="47" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="57" declcolumn="13"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a2f70ddafa2efd35367abff6a616f8374" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -657,8 +670,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="58" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="48" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="58" declcolumn="13"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="58" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="48" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="58" declcolumn="13"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1ad6a6fe63b09f7d018ebc6b96d44cdbb8" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -671,8 +684,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="59" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="49" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="59" declcolumn="13"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="59" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="49" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="59" declcolumn="13"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a0fd0ced2811b8e7b87f5b472d8f48cb8" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -685,8 +698,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="60" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="50" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="60" declcolumn="13"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="60" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="50" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="60" declcolumn="13"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a6f4520176c3d804eaa8ad6812f3a7fab" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -699,8 +712,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="61" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="51" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="61" declcolumn="13"/>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="61" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="51" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="61" declcolumn="13"/>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1affb2a6c9bd814df29ef6eda222c594cc" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -713,7 +726,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="62" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="52" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="62" declcolumn="13"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="62" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="52" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="62" declcolumn="13"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a692f4e4a4c4768f815890ce0010c4847" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -726,7 +739,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="63" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="53" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="63" declcolumn="13"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="63" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="53" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="63" declcolumn="13"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" prot="public" static="no" mutable="no">
         <type>std::stack&lt; <ref refid="class_i_command" kindref="compound">ICommand</ref> * &gt;</type>
@@ -739,7 +752,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="65" column="19" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="55" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="65" declcolumn="19"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="65" column="19" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="55" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="65" declcolumn="19"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ac82a0068988fe425288370e121b04f00" compoundref="_cmd_pattern_callbacks_8cpp" startline="242" endline="291">move_cmd</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" compoundref="_cmd_pattern_callbacks_8cpp" startline="293" endline="312">rotate_cmd</referencedby>
@@ -757,7 +770,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="66" column="20" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="56" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="66" declcolumn="20"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="66" column="20" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="56" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="66" declcolumn="20"/>
       </memberdef>
       <memberdef kind="variable" id="_globals_8h_1afc093e48e1f3a3425c7db9d6bfb13f36" prot="public" static="no" mutable="no">
         <type>std::stack&lt; <ref refid="class_invoker" kindref="compound">Invoker</ref> &gt;</type>
@@ -770,7 +783,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" line="67" column="19" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp" bodystart="57" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" declline="67" declcolumn="19"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="67" column="19" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="57" bodyend="-1" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="67" declcolumn="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_globals_8h_1ac6568f5dfdc418a26f1a80513cd18d7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ParserThreadCallback</definition>
+        <argsstring>()</argsstring>
+        <name>ParserThreadCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="68" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="59" bodyend="62" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="68" declcolumn="6"/>
+        <references refid="_globals_8cpp_1aa040d89e504cf8fdf7f7d28e87142e6b" compoundref="_globals_8cpp" startline="13">cmdCallback</references>
+        <references refid="_globals_8cpp_1aac8303014ae2b31fdb57b7b595d00d5f" compoundref="_globals_8cpp" startline="14">myBuffer</references>
+        <references refid="_globals_8cpp_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_globals_8h_1a7bb396aa99b014129d46b51d1f135c5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BackgroundThreadCallback</definition>
+        <argsstring>()</argsstring>
+        <name>BackgroundThreadCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" line="70" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp" bodystart="63" bodyend="66" declfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" declline="70" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -845,9 +890,9 @@
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::stack&lt;ICommand*&gt;<sp/><ref refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" kindref="member">CmdStack</ref>;</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::vector&lt;ICommand*&gt;<sp/><ref refid="_globals_8h_1a14328e108fe32a87ed5cbb50639e2951" kindref="member">CmdDeleter</ref>;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::stack&lt;Invoker&gt;<sp/><ref refid="_globals_8h_1afc093e48e1f3a3425c7db9d6bfb13f36" kindref="member">InvokerStack</ref>;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_globals_8h_1ac6568f5dfdc418a26f1a80513cd18d7e" kindref="member">ParserThreadCallback</ref>();</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_globals_8h_1a7bb396aa99b014129d46b51d1f135c5a" kindref="member">BackgroundThreadCallback</ref>();</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"></highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
@@ -868,6 +913,6 @@
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h"/>
   </compounddef>
 </doxygen>

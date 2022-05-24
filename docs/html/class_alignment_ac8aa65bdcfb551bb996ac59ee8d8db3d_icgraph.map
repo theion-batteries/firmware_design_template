@@ -1,24 +1,24 @@
 <map id="Alignment::ConvertDistanceToStep" name="Alignment::ConvertDistanceToStep">
-<area shape="rect" id="node1" title="convert distance in mm or µm to step or microstep" alt="" coords="997,226,1180,267"/>
-<area shape="rect" id="node2" href="$class_alignment.html#a668b9598d17990bcb2132444d44d7cde" title=" " alt="" coords="763,107,949,133"/>
-<area shape="rect" id="node3" href="$class_alignment.html#a9a308ec9c53310e89e79b84c5274fa6c" title=" " alt="" coords="768,208,944,235"/>
-<area shape="rect" id="node15" href="$class_alignment.html#a04e9899bf752e59d8f69ba2df62dbf62" title=" " alt="" coords="767,259,945,285"/>
-<area shape="rect" id="node18" href="$class_alignment.html#a24e83e729b3b6b9d5c9fee02a42e26cb" title=" " alt="" coords="768,157,944,184"/>
-<area shape="rect" id="node21" href="$class_alignment.html#a02c85b7369d6366477d23c910e966991" title=" " alt="" coords="774,309,938,336"/>
-<area shape="rect" id="node22" href="$class_alignment.html#a83588502ba1f7a06b1b9376d65223685" title=" " alt="" coords="782,360,930,387"/>
-<area shape="rect" id="node4" href="$class_alignment.html#a624dd240b0142db6b9c4e10ca1475246" title=" " alt="" coords="516,157,709,184"/>
-<area shape="rect" id="node5" href="$class_alignment.html#a5b07a13524b1d7919aaa09837254ca01" title=" " alt="" coords="521,259,705,285"/>
-<area shape="rect" id="node7" href="$class_alignment.html#aea699b9dbfd70c662031b7c5e60acd7f" title=" " alt="" coords="513,107,713,133"/>
-<area shape="rect" id="node8" href="$class_alignment.html#a01a1103e23dd986877681907d20cc1f8" title=" " alt="" coords="511,208,714,235"/>
-<area shape="rect" id="node6" href="$class_alignment.html#a4cacf6c33dbaec2e424f752f678aeaa9" title=" " alt="" coords="252,259,463,285"/>
-<area shape="rect" id="node9" href="$class_alignment.html#ab7e9da9ded962b937b7df23e116f3b0e" title=" " alt="" coords="254,157,461,184"/>
-<area shape="rect" id="node14" href="$class_alignment.html#a579959f28393df8251df1bd2b8137984" title=" " alt="" coords="278,208,437,235"/>
-<area shape="rect" id="node10" href="$class_move_motor_up_cmd.html#abe4d84e2c2bd89bf875820aa96f7acb0" title=" " alt="" coords="13,81,196,108"/>
-<area shape="rect" id="node11" href="$class_move_motor_down_cmd.html#ac319973b67f7df5f252f2849aae38f40" title=" " alt="" coords="5,132,204,159"/>
-<area shape="rect" id="node12" href="$class_move_motor_up_cmd.html#a592fda0f55d367d5be29244036034b6b" title=" " alt="" coords="23,183,187,209"/>
-<area shape="rect" id="node13" href="$class_move_motor_down_cmd.html#ac2931312dd7e4a46455b6c11a551b700" title=" " alt="" coords="15,233,195,260"/>
-<area shape="rect" id="node16" href="$class_alignment.html#a4b02693ded07e1e0975e21fcae48b22b" title=" " alt="" coords="511,360,714,387"/>
-<area shape="rect" id="node17" href="$class_alignment.html#abbd45543d5f6dcdaf88633fcade036bf" title=" " alt="" coords="511,309,715,336"/>
-<area shape="rect" id="node19" href="$class_alignment.html#a934a3a3bb589ce0bf137f4d7230d5f9c" title=" " alt="" coords="513,56,713,83"/>
-<area shape="rect" id="node20" href="$class_alignment.html#ade2162aba2ca25114a6edefcbbb0ea94" title=" " alt="" coords="511,5,714,32"/>
+<area shape="rect" id="node1" title="convert distance in mm or µm to step or microstep" alt="" coords="997,251,1180,293"/>
+<area shape="rect" id="node2" href="$class_alignment.html#a668b9598d17990bcb2132444d44d7cde" title=" " alt="" coords="763,132,949,159"/>
+<area shape="rect" id="node3" href="$class_alignment.html#a9a308ec9c53310e89e79b84c5274fa6c" title=" " alt="" coords="768,183,944,209"/>
+<area shape="rect" id="node15" href="$class_alignment.html#a04e9899bf752e59d8f69ba2df62dbf62" title=" " alt="" coords="767,284,945,311"/>
+<area shape="rect" id="node18" href="$class_alignment.html#a24e83e729b3b6b9d5c9fee02a42e26cb" title=" " alt="" coords="768,233,944,260"/>
+<area shape="rect" id="node21" href="$class_alignment.html#a02c85b7369d6366477d23c910e966991" title=" " alt="" coords="774,335,938,361"/>
+<area shape="rect" id="node22" href="$class_alignment.html#a83588502ba1f7a06b1b9376d65223685" title=" " alt="" coords="782,385,930,412"/>
+<area shape="rect" id="node4" href="$class_alignment.html#a624dd240b0142db6b9c4e10ca1475246" title=" " alt="" coords="516,233,709,260"/>
+<area shape="rect" id="node5" href="$class_alignment.html#a5b07a13524b1d7919aaa09837254ca01" title=" " alt="" coords="521,284,705,311"/>
+<area shape="rect" id="node7" href="$class_alignment.html#aea699b9dbfd70c662031b7c5e60acd7f" title=" " alt="" coords="513,31,713,57"/>
+<area shape="rect" id="node13" href="$class_alignment.html#a01a1103e23dd986877681907d20cc1f8" title=" " alt="" coords="511,132,714,159"/>
+<area shape="rect" id="node6" href="$class_alignment.html#a4cacf6c33dbaec2e424f752f678aeaa9" title=" " alt="" coords="252,284,463,311"/>
+<area shape="rect" id="node8" href="$class_alignment.html#ab7e9da9ded962b937b7df23e116f3b0e" title=" " alt="" coords="254,81,461,108"/>
+<area shape="rect" id="node9" href="$class_move_motor_up_cmd.html#abe4d84e2c2bd89bf875820aa96f7acb0" title=" " alt="" coords="13,5,196,32"/>
+<area shape="rect" id="node10" href="$class_move_motor_down_cmd.html#ac319973b67f7df5f252f2849aae38f40" title=" " alt="" coords="5,56,204,83"/>
+<area shape="rect" id="node11" href="$class_move_motor_up_cmd.html#a592fda0f55d367d5be29244036034b6b" title=" " alt="" coords="23,107,187,133"/>
+<area shape="rect" id="node12" href="$class_move_motor_down_cmd.html#ac2931312dd7e4a46455b6c11a551b700" title=" " alt="" coords="15,157,195,184"/>
+<area shape="rect" id="node14" href="$class_alignment.html#a579959f28393df8251df1bd2b8137984" title=" " alt="" coords="278,183,437,209"/>
+<area shape="rect" id="node16" href="$class_alignment.html#a4b02693ded07e1e0975e21fcae48b22b" title=" " alt="" coords="511,335,714,361"/>
+<area shape="rect" id="node17" href="$class_alignment.html#abbd45543d5f6dcdaf88633fcade036bf" title=" " alt="" coords="511,385,715,412"/>
+<area shape="rect" id="node19" href="$class_alignment.html#a934a3a3bb589ce0bf137f4d7230d5f9c" title=" " alt="" coords="513,81,713,108"/>
+<area shape="rect" id="node20" href="$class_alignment.html#ade2162aba2ca25114a6edefcbbb0ea94" title=" " alt="" coords="511,183,714,209"/>
 </map>

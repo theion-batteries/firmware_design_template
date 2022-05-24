@@ -25,21 +25,7 @@
 var NAVTREE =
 [
   [ "Firmware Design Template", "index.html", [
-    [ "Contributon and Policy", "index.html#autotoc_md1", null ],
-    [ "API docs", "index.html#autotoc_md2", null ],
-    [ "Configuration File", "index.html#autotoc_md3", null ],
-    [ "Simulation & Virtualization", "index.html#autotoc_md4", null ],
-    [ "Command Design Pattern", "index.html#autotoc_md5", null ],
-    [ "Communication protocol: Definiton of messages and return values", "index.html#autotoc_md6", null ],
-    [ "Demonstrartion Video", "index.html#autotoc_md7", null ],
-    [ "UML Class Diagramm", "index.html#autotoc_md8", null ],
-    [ "UML state Diagram", "index.html#autotoc_md9", null ],
-    [ "UML Sequence Diagram", "index.html#autotoc_md10", null ],
-    [ "Test", "index.html#autotoc_md11", null ],
-    [ "V3 Features", "index.html#autotoc_md12", null ],
-    [ "Change Log", "index.html#autotoc_md13", null ],
-    [ "ROS Concept & Integration", "index.html#autotoc_md14", null ],
-    [ "TODO", "index.html#autotoc_md15", null ],
+    [ "API Documentation", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -68,9 +54,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_alignment_8cpp.html",
-"_u_u_i_d_8hpp_source.html",
-"class_keyence__base.html#a2862ac325dae8e5793df2764637f8cd4",
-"globals_defs.html"
+"_state_manager_8hpp_source.html",
+"class_firm_invoker.html#a1c385553197f1ceee192a7ee59986320",
+"functions_l.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -92,7 +92,7 @@
         <link refid="classlight_barrier"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="370" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="370" bodyend="370"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="370" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="370" bodyend="370"/>
     <listofallmembers>
       <member refid="class_alignment_1a3adb6cbe96e306b14b89c2e5156795b5" prot="public" virt="non-virtual"><scope>FirmwareUnit</scope><name>aligned</name></member>
       <member refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" prot="public" virt="non-virtual"><scope>FirmwareUnit</scope><name>AlignLoop</name></member>

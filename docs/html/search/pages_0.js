@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['firmware_20design_20template_0',['Firmware Design Template',['../index.html',1,'']]]
+  ['api_20documentation_0',['API Documentation',['../index.html',1,'']]]
 ];

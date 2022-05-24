@@ -1,9 +1,11 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" name="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="51,5,289,61"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,259,71,285"/>
-<area shape="rect" id="node3" title=" " alt="" coords="248,259,313,285"/>
-<area shape="rect" id="node4" href="$_cmd_buffer_8hpp.html" title=" " alt="" coords="75,184,182,211"/>
-<area shape="rect" id="node6" href="$_cmd_parser_8hpp.html" title=" " alt="" coords="161,109,273,136"/>
-<area shape="rect" id="node5" title=" " alt="" coords="95,259,195,285"/>
-<area shape="rect" id="node7" title=" " alt="" coords="207,184,272,211"/>
+<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdCallback.hpp" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdCallback.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="207,5,377,76"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,124,77,151"/>
+<area shape="rect" id="node3" title=" " alt="" coords="102,124,229,151"/>
+<area shape="rect" id="node4" title=" " alt="" coords="234,273,299,300"/>
+<area shape="rect" id="node5" title=" " alt="" coords="477,273,542,300"/>
+<area shape="rect" id="node6" href="$_cmd_buffer_8hpp.html" title=" " alt="" coords="304,199,411,225"/>
+<area shape="rect" id="node8" href="$_cmd_parser_8hpp.html" title=" " alt="" coords="355,124,467,151"/>
+<area shape="rect" id="node7" title=" " alt="" coords="323,273,423,300"/>
+<area shape="rect" id="node9" title=" " alt="" coords="435,199,501,225"/>
 </map>

@@ -1,5 +1,5 @@
 \hypertarget{_globals_8cpp_source}{}\doxysection{Globals.\+cpp}
-\label{_globals_8cpp_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/src/Globals.cpp@{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/src/Globals.cpp}}
+\label{_globals_8cpp_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firmware\_design\_template/src/Globals.cpp@{C:/Users/SamiDhiab/Theion\_Repos/firmware\_design\_template/src/Globals.cpp}}
 \mbox{\hyperlink{_globals_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00001}00001 }
@@ -51,5 +51,13 @@
 \DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00056}\mbox{\hyperlink{_globals_8h_a14328e108fe32a87ed5cbb50639e2951}{00056}} std::vector<ICommand*> \mbox{\hyperlink{_globals_8cpp_a14328e108fe32a87ed5cbb50639e2951}{CmdDeleter}};}
 \DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00057}\mbox{\hyperlink{_globals_8h_afc093e48e1f3a3425c7db9d6bfb13f36}{00057}} std::stack<Invoker> \mbox{\hyperlink{_globals_8cpp_afc093e48e1f3a3425c7db9d6bfb13f36}{InvokerStack}};}
 \DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00059}\mbox{\hyperlink{_globals_8h_ac6568f5dfdc418a26f1a80513cd18d7e}{00059}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_globals_8cpp_ac6568f5dfdc418a26f1a80513cd18d7e}{ParserThreadCallback}}()}
+\DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00060}00060 \{}
+\DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00061}00061 \mbox{\hyperlink{_globals_8cpp_aa040d89e504cf8fdf7f7d28e87142e6b}{cmdCallback}}.loopCmdProcessing(\&\mbox{\hyperlink{_globals_8cpp_a95e82af5b2e6420fd830e68a86600c76}{myParser}}, \&\mbox{\hyperlink{_globals_8cpp_aac8303014ae2b31fdb57b7b595d00d5f}{myBuffer}}, \&Serial);}
+\DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00062}00062 \}}
+\DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00063}\mbox{\hyperlink{_globals_8h_a7bb396aa99b014129d46b51d1f135c5a}{00063}} \textcolor{keywordtype}{void} \mbox{\hyperlink{_globals_8cpp_a7bb396aa99b014129d46b51d1f135c5a}{BackgroundThreadCallback}}()}
+\DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00064}00064 \{}
+\DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00065}00065 Serial.println(\textcolor{stringliteral}{"{}running in background.."{}});}
+\DoxyCodeLine{\Hypertarget{_globals_8cpp_source_l00066}00066 \}}
 
 \end{DoxyCode}

@@ -2,8 +2,8 @@
 <doxyfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="doxyfile.xsd" version="1.9.4" xml:lang="en-US">
   <option  id='DOXYFILE_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA["Firmware Design Template"]]></value></option>
-  <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[0.1]]></value></option>
-  <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["To privde easy and efficient software design"]]></value></option>
+  <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[0.2]]></value></option>
+  <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["To privde modular and efficient high level software design"]]></value></option>
   <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/documentation/img/theion.png]]></value></option>
   <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[.]]></value></option>
   <option  id='CREATE_SUBDIRS' default='yes' type='bool'><value>NO</value></option>
@@ -120,7 +120,7 @@
   <option  id='INPUT' default='no' type='stringlist'>
     <value><![CDATA[../include]]></value>
     <value><![CDATA[../src]]></value>
-    <value><![CDATA[../README.md]]></value>
+    <value><![CDATA[API.md]]></value>
   </option>
   <option  id='INPUT_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='FILE_PATTERNS' default='yes' type='stringlist'>
@@ -193,7 +193,7 @@
   <option  id='FILTER_SOURCE_FILES' default='yes' type='bool'><value>NO</value></option>
   <option  id='FILTER_SOURCE_PATTERNS' default='yes' type='stringlist'>
   </option>
-  <option  id='USE_MDFILE_AS_MAINPAGE' default='no' type='string'><value><![CDATA[../README.md]]></value></option>
+  <option  id='USE_MDFILE_AS_MAINPAGE' default='no' type='string'><value><![CDATA[API.md]]></value></option>
   <option  id='SOURCE_BROWSER' default='no' type='bool'><value>YES</value></option>
   <option  id='INLINE_SOURCES' default='yes' type='bool'><value>NO</value></option>
   <option  id='STRIP_CODE_COMMENTS' default='yes' type='bool'><value>YES</value></option>

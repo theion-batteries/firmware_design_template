@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp" line="21" column="4" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp" bodystart="21" bodyend="48"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Nema_8.hpp" line="21" column="4" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Nema_8.hpp" bodystart="21" bodyend="48"/>
         <references refid="classa4988_1a897f9e23b473274f3d27e9380d145be4" compoundref="_driver_a4988_8hpp" startline="71">a4988::dir_pin</references>
         <references refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" compoundref="_driver_a4988_8hpp" startline="59">a4988::direction</references>
         <references refid="classa4988_1a8e401b32d17b578cd1e4d06779ba5b61" compoundref="_driver_a4988_8hpp" startline="72">a4988::enable_pin</references>
@@ -91,7 +91,7 @@
         <link refid="classa4988"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp" line="19" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Nema_8.hpp" bodystart="19" bodyend="49"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Nema_8.hpp" line="19" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Nema_8.hpp" bodystart="19" bodyend="49"/>
     <listofallmembers>
       <member refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" prot="public" virt="non-virtual"><scope>Nema8</scope><name>a4988</name></member>
       <member refid="classa4988_1a897f9e23b473274f3d27e9380d145be4" prot="public" virt="non-virtual"><scope>Nema8</scope><name>dir_pin</name></member>

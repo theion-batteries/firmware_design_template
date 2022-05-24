@@ -19,6 +19,7 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
     [ "Reset.h", "_reset_8h.html", "_reset_8h" ],
     [ "Sleep.h", "_sleep_8h.html", "_sleep_8h" ],
     [ "StateManager.hpp", "_state_manager_8hpp.html", "_state_manager_8hpp" ],
+    [ "ThreadsManager.hpp", "_threads_manager_8hpp.html", null ],
     [ "Timeout.hpp", "_timeout_8hpp.html", "_timeout_8hpp" ],
     [ "UUID.hpp", "_u_u_i_d_8hpp.html", "_u_u_i_d_8hpp" ]
 ];

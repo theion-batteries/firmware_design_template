@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
-    <compoundname>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include</compoundname>
+    <compoundname>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include</compoundname>
     <innerfile refid="_alignment_8hpp">Alignment.hpp</innerfile>
     <innerfile refid="_cmd_buffer_8hpp">CmdBuffer.hpp</innerfile>
     <innerfile refid="_cmd_callback_8hpp">CmdCallback.hpp</innerfile>
@@ -21,12 +21,13 @@
     <innerfile refid="_reset_8h">Reset.h</innerfile>
     <innerfile refid="_sleep_8h">Sleep.h</innerfile>
     <innerfile refid="_state_manager_8hpp">StateManager.hpp</innerfile>
+    <innerfile refid="_threads_manager_8hpp">ThreadsManager.hpp</innerfile>
     <innerfile refid="_timeout_8hpp">Timeout.hpp</innerfile>
     <innerfile refid="_u_u_i_d_8hpp">UUID.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/"/>
   </compounddef>
 </doxygen>

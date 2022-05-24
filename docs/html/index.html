@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Firmware Design Template: Firmware Design Template</title>
+<title>Firmware Design Template: API Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.1</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
    </div>
-   <div id="projectbrief">To privde easy and efficient software design</div>
+   <div id="projectbrief">To privde modular and efficient high level software design</div>
   </td>
  </tr>
  </tbody>
@@ -83,102 +83,10 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Firmware Design Template </div></div>
+  <div class="headertitle"><div class="title">API Documentation </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_C__Users_SamiDhiab_Theion_Repos_firm_Alignment_PrintHead_README"></a>An object oriented firmware design Template in c++ used for embedded systems. Currently support arduinos (Uno, Mega, Due...). The Concept can be ported for Esp family and other mcu that supports c++ and the standard library implementation.</p>
-<h1><a class="anchor" id="autotoc_md1"></a>
-Contributon and Policy</h1>
-<ul>
-<li><b>First Rule</b>: Do not touch the main branch unless you are the author <br  />
-</li>
-<li><b>Second Rule</b>: if you wish to contribute, create a derived branch from dev with your feature and name: dev_feature_name</li>
-<li><b>Third Rule</b>: understand the graph below:</li>
-</ul>
-<p ><img src="docs/uml/contribution.png" alt="contribution" class="inline"/></p>
-<ul>
-<li><b>Author</b>: sami dhiab <br  />
- Contact: <a href="#" onclick="location.href='mai'+'lto:'+'sam'+'i@'+'the'+'io'+'n.d'+'e'; return false;">sami@<span class="obfuscator">.nosp@m.</span>thei<span class="obfuscator">.nosp@m.</span>on.de</a></li>
-</ul>
-<h1><a class="anchor" id="autotoc_md2"></a>
-API docs</h1>
-<p >This docs is auto generated with doxygen. please note that images rendering from markdown file is not yet supported by doxygen, therefore click <a href="https://theionsami.github.io/firm_Alignment/">main</a> to open main page with rendered images. If not already on docs page, click <a href="https://theionsami.github.io/firm_Alignment/docs/html/index.html">docs</a>, then Under Classes and Files you find the full API. If you make a fork from this repo, dont forget to run doxygen from inside docs/ after any changes made to src/ inc/ or.md files and push! </p>
-<h1><a class="anchor" id="autotoc_md3"></a>
-Configuration File</h1>
-<p >In the configuration <a href="include/Configs.h">file</a> you need to define all required parameters:</p>
-<ul>
-<li>PINS: pinout related to respective mcu</li>
-<li>MACROS: DEBUG, VIRTUAL ,RELEASE or TEST</li>
-<li>ENUMERATION: return values</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md4"></a>
-Simulation &amp; Virtualization</h1>
-<p >To develop the firmware and test it in complete isolation from the hardware, a virtualisation platform is used called <a href="https://wokwi.com/">wokwi</a>. This provide a way to simulate a logic, algorithm or even some of the supported hardware (leds, sonar sensors, buttons, motors ...). Here is an example with arduino mega and connection with hardware. <img src="docs/img/sim_legend.JPG" alt="Simulation Legend" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md5"></a>
-Command Design Pattern</h1>
-<p >The Device or the mcu (SLave or listener) will wait for commands to parse from the server or master side. unless there are some background functions that run independantly from coming commands, the main task is to parse the commands. To be able to parse commands in a proper way, these commands must be defined inside classes, the receivers of commands are objects (sensors, actuators) that receive commands, invokers are entity that make indirect request via command to a receiver (internal controller ). The client is the app running. If we siimplify with an light switch example here:</p><ul>
-<li>Receiver: Light</li>
-<li>Command: turnOn, TurnOff</li>
-<li><a class="el" href="class_invoker.html">Invoker</a>: light Switch <img src="docs/img/commandPattern.png" alt="cmd design pattern" class="inline"/> </li>
-</ul>
-<h1><a class="anchor" id="autotoc_md6"></a>
-Communication protocol: Definiton of messages and return values</h1>
-<p >In many cases the master sending commands via Stream has to know the return of these Commands (if succes or fail) to process with next commands. Example of Commands and their return Value: retVal represents an enumeration that has ok=0 or err=1 which corresponds respectvly to succes and failure of that command.</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">message   </th><th class="markdownTableHeadCenter">action   </th><th class="markdownTableHeadRight">return value   </th><th class="markdownTableHeadRight">return type    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">get uuid   </td><td class="markdownTableBodyCenter">get device uuid   </td><td class="markdownTableBodyRight">uuid   </td><td class="markdownTableBodyRight">String    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">get motor x direction   </td><td class="markdownTableBodyCenter">return motor x direction   </td><td class="markdownTableBodyRight">direction   </td><td class="markdownTableBodyRight">String    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">set motor y delay &lt;value&gt;   </td><td class="markdownTableBodyCenter">set motor y delay value to   </td><td class="markdownTableBodyRight">null   </td><td class="markdownTableBodyRight">retVal    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">move z up &lt;value&gt;   </td><td class="markdownTableBodyCenter">move up z to value   </td><td class="markdownTableBodyRight">null   </td><td class="markdownTableBodyRight">retVal    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">undo   </td><td class="markdownTableBodyCenter">execute last cmd   </td><td class="markdownTableBodyRight">depends on last cmd   </td><td class="markdownTableBodyRight">depends on last cmd    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">reset   </td><td class="markdownTableBodyCenter">reset device   </td><td class="markdownTableBodyRight">null   </td><td class="markdownTableBodyRight">void    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">sleep   </td><td class="markdownTableBodyCenter">sleep device   </td><td class="markdownTableBodyRight">null   </td><td class="markdownTableBodyRight">void   </td></tr>
-</table>
-<p >It is up to to specify if &lt;value&gt; can int, float, double or any type ..</p>
-<h1><a class="anchor" id="autotoc_md7"></a>
-Demonstrartion Video</h1>
-<p >A demo value is coming soon.. </p>
-<h1><a class="anchor" id="autotoc_md8"></a>
-UML Class Diagramm</h1>
-<p >Under <a href="docs/uml/">UML</a> folder are previous uml Diagrams. </p>
-<h1><a class="anchor" id="autotoc_md9"></a>
-UML state Diagram</h1>
-<p >Deprecated. see <a href="docs/uml/">UML</a> folder for previous uml Diagrams. </p>
-<h1><a class="anchor" id="autotoc_md10"></a>
-UML Sequence Diagram</h1>
-<p >see <a href="docs/uml/">UML</a> folder for previous uml Diagrams. </p>
-<h1><a class="anchor" id="autotoc_md11"></a>
-Test</h1>
-<p >please refer to test folder readme for tests and definitions.</p>
-<h1><a class="anchor" id="autotoc_md12"></a>
-V3 Features</h1>
-<ul>
-<li>implementing cmd design pattern</li>
-<li>implementing threading/scheduling tasks</li>
-<li>generating docsumentation fully with doxygen </li>
-</ul>
-<h1><a class="anchor" id="autotoc_md13"></a>
-Change Log</h1>
-<ul>
-<li>19.05.2022: see older branch (master branch for change log)</li>
-</ul>
-<h1><a class="anchor" id="autotoc_md14"></a>
-ROS Concept &amp; Integration</h1>
-<p >For upcoming version, ros will be fully supported. <img src="docs/img/ros_concept_idea.png" alt="here" class="inline"/></p>
-<h1><a class="anchor" id="autotoc_md15"></a>
-TODO</h1>
-<ul>
-<li>finish implementing scheduler</li>
-<li>finish docs for all files </li>
-</ul>
+<div class="textblock"><p ><a class="anchor" id="md_API"></a>Under Files/Classes tab are sources/classes found. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

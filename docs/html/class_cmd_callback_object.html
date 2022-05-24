@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.1</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
    </div>
-   <div id="projectbrief">To privde easy and efficient software design</div>
+   <div id="projectbrief">To privde modular and efficient high level software design</div>
   </td>
  </tr>
  </tbody>
@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('class_cmd_callback_object.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_cmd_callback_object-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">CmdCallbackObject Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -105,6 +106,17 @@ Inheritance diagram for CmdCallbackObject:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a05c8c5b53e0fc789ab2d384d4c6d34e1"><td class="memItemLeft" align="right" valign="top">Thread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cmd_callback_object.html#a05c8c5b53e0fc789ab2d384d4c6d34e1">getInternalThread</a> () const</td></tr>
+<tr class="separator:a05c8c5b53e0fc789ab2d384d4c6d34e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac726ccd395ff4cbfa8c421865f75a47a"><td class="memItemLeft" align="right" valign="top">ThreadController *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cmd_callback_object.html#ac726ccd395ff4cbfa8c421865f75a47a">getInternalScheduler</a> () const</td></tr>
+<tr class="separator:ac726ccd395ff4cbfa8c421865f75a47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d42ca130807adfb5b2d91d985bb7495"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cmd_callback_object.html#a4d42ca130807adfb5b2d91d985bb7495">createThreadForCmd</a> (<a class="el" href="class_cmd_parser.html">CmdParser</a> *cmdParser)</td></tr>
+<tr class="separator:a4d42ca130807adfb5b2d91d985bb7495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb63091c889fe6140a38619be3464f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cmd_callback_object.html#acdb63091c889fe6140a38619be3464f9">processCmdVoid</a> (<a class="el" href="class_cmd_parser.html">CmdParser</a> *cmdParser)</td></tr>
+<tr class="separator:acdb63091c889fe6140a38619be3464f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34de4688b050fc89d4b252a14f414698"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cmd_callback_object.html#a34de4688b050fc89d4b252a14f414698">threadCallback</a> (size_t idx, <a class="el" href="class_cmd_parser.html">CmdParser</a> *cmdParser)</td></tr>
+<tr class="memdesc:a34de4688b050fc89d4b252a14f414698"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal thread callback  <a href="class_cmd_callback_object.html#a34de4688b050fc89d4b252a14f414698">More...</a><br /></td></tr>
+<tr class="separator:a34de4688b050fc89d4b252a14f414698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8aa1ceb9d593be1c562acd8a77b0994"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cmd_callback_object.html#ac8aa1ceb9d593be1c562acd8a77b0994">loopCmdProcessing</a> (<a class="el" href="class_cmd_parser.html">CmdParser</a> *cmdParser, <a class="el" href="class_cmd_buffer_object.html">CmdBufferObject</a> *cmdBuffer, Stream *serial)</td></tr>
 <tr class="separator:ac8aa1ceb9d593be1c562acd8a77b0994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57346a915823fd83800bfbd754fbe131"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cmd_callback_object.html#a57346a915823fd83800bfbd754fbe131">processCmd</a> (<a class="el" href="class_cmd_parser.html">CmdParser</a> *cmdParser)</td></tr>
@@ -123,10 +135,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5410a5765b358895449a7e0918cd3a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d216fe712755cbcdcb1459c41f70dc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cmd_callback_object.html#a57d216fe712755cbcdcb1459c41f70dc">callStoreFunct</a> (size_t idx, <a class="el" href="class_cmd_parser.html">CmdParser</a> *cmdParser)=0</td></tr>
 <tr class="separator:a57d216fe712755cbcdcb1459c41f70dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:af1ca856f966455122ca467c06ca0a517"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cmd_callback_object.html#af1ca856f966455122ca467c06ca0a517">current_idx</a></td></tr>
+<tr class="separator:af1ca856f966455122ca467c06ca0a517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5d6ac7b89c934cc5e5a70885d5e24d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cmd_callback_object.html#a7e5d6ac7b89c934cc5e5a70885d5e24d">CmdreadyForExecution</a> = false</td></tr>
+<tr class="separator:a7e5d6ac7b89c934cc5e5a70885d5e24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_cmd_callback_8hpp_source.html#l00028">28</a> of file <a class="el" href="_cmd_callback_8hpp_source.html">CmdCallback.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8hpp_source.html#l00027">27</a> of file <a class="el" href="_cmd_callback_8hpp_source.html">CmdCallback.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a57d216fe712755cbcdcb1459c41f70dc" name="a57d216fe712755cbcdcb1459c41f70dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57d216fe712755cbcdcb1459c41f70dc">&#9670;&nbsp;</a></span>callStoreFunct()</h2>
@@ -176,9 +195,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_cmd_callback_object_a57d216fe712755cbcdcb1459c41f70dc_icgraph.png" border="0" usemap="#aclass_cmd_callback_object_a57d216fe712755cbcdcb1459c41f70dc_icgraph" alt=""/></div>
 <map name="aclass_cmd_callback_object_a57d216fe712755cbcdcb1459c41f70dc_icgraph" id="aclass_cmd_callback_object_a57d216fe712755cbcdcb1459c41f70dc_icgraph">
-<area shape="rect" title=" " alt="" coords="400,71,545,112"/>
+<area shape="rect" title=" " alt="" coords="400,103,545,144"/>
 <area shape="rect" href="class_cmd_callback_object.html#a57346a915823fd83800bfbd754fbe131" title=" " alt="" coords="207,37,352,79"/>
-<area shape="rect" href="class_cmd_callback_object.html#a3a5e1c1dfcc4fc828bb24c97574a15ae" title=" " alt="" coords="207,103,352,144"/>
+<area shape="rect" href="class_cmd_callback_object.html#acdb63091c889fe6140a38619be3464f9" title=" " alt="" coords="207,103,352,144"/>
+<area shape="rect" href="class_cmd_callback_object.html#a3a5e1c1dfcc4fc828bb24c97574a15ae" title=" " alt="" coords="207,168,352,209"/>
 <area shape="rect" href="class_cmd_callback_object.html#ac8aa1ceb9d593be1c562acd8a77b0994" title=" " alt="" coords="9,5,155,47"/>
 <area shape="rect" href="class_cmd_callback_object.html#a6793737c5d0ecf1fb9e3a9dd48a38d41" title=" " alt="" coords="5,71,159,112"/>
 </map>
@@ -224,14 +244,35 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_cmd_callback_object_a09c721e9352b605208317f8163d373b1_icgraph.png" border="0" usemap="#aclass_cmd_callback_object_a09c721e9352b605208317f8163d373b1_icgraph" alt=""/></div>
 <map name="aclass_cmd_callback_object_a09c721e9352b605208317f8163d373b1_icgraph" id="aclass_cmd_callback_object_a09c721e9352b605208317f8163d373b1_icgraph">
-<area shape="rect" title=" " alt="" coords="400,71,545,112"/>
+<area shape="rect" title=" " alt="" coords="400,104,545,145"/>
 <area shape="rect" href="class_cmd_callback_object.html#ac7a318cd6dcb9c1047b78c741975c701" title=" " alt="" coords="207,5,352,47"/>
 <area shape="rect" href="class_cmd_callback_object.html#a57346a915823fd83800bfbd754fbe131" title=" " alt="" coords="207,71,352,112"/>
-<area shape="rect" href="class_cmd_callback_object.html#a3a5e1c1dfcc4fc828bb24c97574a15ae" title=" " alt="" coords="207,136,352,177"/>
+<area shape="rect" href="class_cmd_callback_object.html#acdb63091c889fe6140a38619be3464f9" title=" " alt="" coords="207,136,352,177"/>
+<area shape="rect" href="class_cmd_callback_object.html#a3a5e1c1dfcc4fc828bb24c97574a15ae" title=" " alt="" coords="207,201,352,243"/>
 <area shape="rect" href="class_cmd_callback_object.html#ac8aa1ceb9d593be1c562acd8a77b0994" title=" " alt="" coords="9,39,155,80"/>
 <area shape="rect" href="class_cmd_callback_object.html#a6793737c5d0ecf1fb9e3a9dd48a38d41" title=" " alt="" coords="5,104,159,145"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a4d42ca130807adfb5b2d91d985bb7495" name="a4d42ca130807adfb5b2d91d985bb7495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d42ca130807adfb5b2d91d985bb7495">&#9670;&nbsp;</a></span>createThreadForCmd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CmdCallbackObject::createThreadForCmd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cmd_parser.html">CmdParser</a> *&#160;</td>
+          <td class="paramname"><em>cmdParser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00015">15</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
 
 </div>
 </div>
@@ -282,14 +323,53 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_cmd_callback_object_a5410a5765b358895449a7e0918cd3a4e_icgraph.png" border="0" usemap="#aclass_cmd_callback_object_a5410a5765b358895449a7e0918cd3a4e_icgraph" alt=""/></div>
 <map name="aclass_cmd_callback_object_a5410a5765b358895449a7e0918cd3a4e_icgraph" id="aclass_cmd_callback_object_a5410a5765b358895449a7e0918cd3a4e_icgraph">
-<area shape="rect" title=" " alt="" coords="400,71,545,112"/>
+<area shape="rect" title=" " alt="" coords="400,104,545,145"/>
 <area shape="rect" href="class_cmd_callback_object.html#ac7a318cd6dcb9c1047b78c741975c701" title=" " alt="" coords="207,5,352,47"/>
 <area shape="rect" href="class_cmd_callback_object.html#a57346a915823fd83800bfbd754fbe131" title=" " alt="" coords="207,71,352,112"/>
-<area shape="rect" href="class_cmd_callback_object.html#a3a5e1c1dfcc4fc828bb24c97574a15ae" title=" " alt="" coords="207,136,352,177"/>
+<area shape="rect" href="class_cmd_callback_object.html#acdb63091c889fe6140a38619be3464f9" title=" " alt="" coords="207,136,352,177"/>
+<area shape="rect" href="class_cmd_callback_object.html#a3a5e1c1dfcc4fc828bb24c97574a15ae" title=" " alt="" coords="207,201,352,243"/>
 <area shape="rect" href="class_cmd_callback_object.html#ac8aa1ceb9d593be1c562acd8a77b0994" title=" " alt="" coords="9,39,155,80"/>
 <area shape="rect" href="class_cmd_callback_object.html#a6793737c5d0ecf1fb9e3a9dd48a38d41" title=" " alt="" coords="5,104,159,145"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="ac726ccd395ff4cbfa8c421865f75a47a" name="ac726ccd395ff4cbfa8c421865f75a47a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac726ccd395ff4cbfa8c421865f75a47a">&#9670;&nbsp;</a></span>getInternalScheduler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ThreadController * CmdCallbackObject::getInternalScheduler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00011">11</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a05c8c5b53e0fc789ab2d384d4c6d34e1" name="a05c8c5b53e0fc789ab2d384d4c6d34e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05c8c5b53e0fc789ab2d384d4c6d34e1">&#9670;&nbsp;</a></span>getInternalThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Thread * CmdCallbackObject::getInternalThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00008">8</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
 
 </div>
 </div>
@@ -354,7 +434,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if found the command in the buffer </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00082">82</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00122">122</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -409,7 +489,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00009">9</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00027">27</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -465,7 +545,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TRUE if found the command in the buffer </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00026">26</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00044">44</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -487,6 +567,39 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="207,39,352,80"/>
 <area shape="rect" href="class_cmd_callback_object.html#ac8aa1ceb9d593be1c562acd8a77b0994" title=" " alt="" coords="9,5,155,47"/>
 <area shape="rect" href="class_cmd_callback_object.html#a6793737c5d0ecf1fb9e3a9dd48a38d41" title=" " alt="" coords="5,71,159,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acdb63091c889fe6140a38619be3464f9" name="acdb63091c889fe6140a38619be3464f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb63091c889fe6140a38619be3464f9">&#9670;&nbsp;</a></span>processCmdVoid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CmdCallbackObject::processCmdVoid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_cmd_parser.html">CmdParser</a> *&#160;</td>
+          <td class="paramname"><em>cmdParser</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00065">65</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_cmd_callback_object_acdb63091c889fe6140a38619be3464f9_cgraph.png" border="0" usemap="#aclass_cmd_callback_object_acdb63091c889fe6140a38619be3464f9_cgraph" alt=""/></div>
+<map name="aclass_cmd_callback_object_acdb63091c889fe6140a38619be3464f9_cgraph" id="aclass_cmd_callback_object_acdb63091c889fe6140a38619be3464f9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,104,151,145"/>
+<area shape="rect" href="class_cmd_callback_object.html#a57d216fe712755cbcdcb1459c41f70dc" title=" " alt="" coords="212,5,357,47"/>
+<area shape="rect" href="class_cmd_callback_object.html#a09c721e9352b605208317f8163d373b1" title=" " alt="" coords="212,71,357,112"/>
+<area shape="rect" href="class_cmd_callback_object.html#a5410a5765b358895449a7e0918cd3a4e" title=" " alt="" coords="212,136,357,177"/>
+<area shape="rect" href="class_cmd_parser.html#ab4d34a57e1917264f954f93f751f76ea" title=" " alt="" coords="199,202,371,229"/>
+<area shape="rect" href="class_cmd_parser.html#a49170df1a0052fa1fdb28235a488e7c6" title=" " alt="" coords="419,202,597,229"/>
 </map>
 </div>
 
@@ -518,7 +631,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00047">47</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00086">86</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -530,6 +643,46 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="class_cmd_callback_object.html#a5410a5765b358895449a7e0918cd3a4e" title=" " alt="" coords="199,136,344,177"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a34de4688b050fc89d4b252a14f414698" name="a34de4688b050fc89d4b252a14f414698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34de4688b050fc89d4b252a14f414698">&#9670;&nbsp;</a></span>threadCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * CmdCallbackObject::threadCallback </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_cmd_parser.html">CmdParser</a> *&#160;</td>
+          <td class="paramname"><em>cmdParser</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>internal thread callback </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmdParser</td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="class_cmd_buffer.html">CmdBuffer</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void* </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00021">21</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
 
 </div>
 </div>
@@ -574,7 +727,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00066">66</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8cpp_source.html#l00105">105</a> of file <a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -597,9 +750,42 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7e5d6ac7b89c934cc5e5a70885d5e24d" name="a7e5d6ac7b89c934cc5e5a70885d5e24d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e5d6ac7b89c934cc5e5a70885d5e24d">&#9670;&nbsp;</a></span>CmdreadyForExecution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CmdCallbackObject::CmdreadyForExecution = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8hpp_source.html#l00036">36</a> of file <a class="el" href="_cmd_callback_8hpp_source.html">CmdCallback.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af1ca856f966455122ca467c06ca0a517" name="af1ca856f966455122ca467c06ca0a517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1ca856f966455122ca467c06ca0a517">&#9670;&nbsp;</a></span>current_idx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t CmdCallbackObject::current_idx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="_cmd_callback_8hpp_source.html#l00035">35</a> of file <a class="el" href="_cmd_callback_8hpp_source.html">CmdCallback.hpp</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/<a class="el" href="_cmd_callback_8hpp_source.html">CmdCallback.hpp</a></li>
-<li>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/<a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a></li>
+<li>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/<a class="el" href="_cmd_callback_8hpp_source.html">CmdCallback.hpp</a></li>
+<li>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/<a class="el" href="_cmd_callback_8cpp_source.html">CmdCallback.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

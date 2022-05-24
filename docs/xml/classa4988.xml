@@ -17,10 +17,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="59" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="59" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="59" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="59" bodyend="-1"/>
         <referencedby refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" compoundref="_driver_a4988_8cpp" startline="38" endline="67">a4988</referencedby>
         <referencedby refid="classa4988_1a01be380db105cfc684c55dc42b81f76d" compoundref="_driver_a4988_8cpp" startline="79" endline="81">getDirection</referencedby>
-        <referencedby refid="class_alignment_1ab5378ab4e1db1bd90dc0ed3854079a4c" compoundref="_alignment_8cpp" startline="945" endline="965">Alignment::movePhToRefX</referencedby>
+        <referencedby refid="class_alignment_1ab5378ab4e1db1bd90dc0ed3854079a4c" compoundref="_alignment_8cpp" startline="949" endline="969">Alignment::movePhToRefX</referencedby>
         <referencedby refid="class_nema8_1a8512c67335677a5adeb7d3c2b29bca3b" compoundref="_nema__8_8hpp" startline="21" endline="48">Nema8::Nema8</referencedby>
         <referencedby refid="classa4988_1ad11ebef929f054194109e909f2646880" compoundref="_driver_a4988_8cpp" startline="82" endline="89">reverseDirection</referencedby>
         <referencedby refid="classa4988_1a6a37cf937b1f7a1f229904cdb9191b89" compoundref="_driver_a4988_8cpp" startline="91" endline="103">setDirection</referencedby>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="60" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="60" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="60" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="60" bodyend="-1"/>
         <referencedby refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" compoundref="_driver_a4988_8cpp" startline="38" endline="67">a4988</referencedby>
         <referencedby refid="classa4988_1a0b7c5f9fb44b05f6642b517abc9b4a07" compoundref="_driver_a4988_8cpp" startline="162" endline="165">getSpeed</referencedby>
         <referencedby refid="class_nema8_1a8512c67335677a5adeb7d3c2b29bca3b" compoundref="_nema__8_8hpp" startline="21" endline="48">Nema8::Nema8</referencedby>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="61" column="19" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="61" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="61" column="19" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="61" bodyend="-1"/>
         <referencedby refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" compoundref="_driver_a4988_8cpp" startline="38" endline="67">a4988</referencedby>
         <referencedby refid="classa4988_1a4e8bd4e45fe5a4fa30fafc877713978c" compoundref="_driver_a4988_8cpp" startline="166" endline="169">getDelay</referencedby>
         <referencedby refid="classa4988_1a0b7c5f9fb44b05f6642b517abc9b4a07" compoundref="_driver_a4988_8cpp" startline="162" endline="165">getSpeed</referencedby>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="62" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="62" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="62" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="62" bodyend="-1"/>
         <referencedby refid="classa4988_1ad66dadbb79c22bc3f507fe6d624c9fec" compoundref="_driver_a4988_8cpp" startline="117" endline="124">step</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classa4988_1add7441f68064b3dd6e06d5bcb30cb159" prot="public" static="no" mutable="no">
@@ -90,7 +90,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="63" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="63" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="63" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classa4988_1a45956ebaed9f19834bc9094dd59f551a" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="64" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="64" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="64" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="64" bodyend="-1"/>
         <referencedby refid="classa4988_1a150215b9cd4e4841befd2dc9d4b4a3be" compoundref="_driver_a4988_8cpp" startline="128" endline="160">setStepMode</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classa4988_1a1f7e3717033bd9204414c1408b58eaa5" prot="public" static="no" mutable="no">
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="65" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="65" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="65" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="65" bodyend="-1"/>
         <referencedby refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" compoundref="_driver_a4988_8cpp" startline="38" endline="67">a4988</referencedby>
         <referencedby refid="class_nema8_1a8512c67335677a5adeb7d3c2b29bca3b" compoundref="_nema__8_8hpp" startline="21" endline="48">Nema8::Nema8</referencedby>
         <referencedby refid="classa4988_1a2074f2e3fe7cd79e402f53a14ba68c89" compoundref="_driver_a4988_8cpp" startline="106" endline="114">stepOnce</referencedby>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="68" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="68" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="68" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="68" bodyend="-1"/>
         <referencedby refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" compoundref="_driver_a4988_8cpp" startline="38" endline="67">a4988</referencedby>
         <referencedby refid="class_nema8_1a8512c67335677a5adeb7d3c2b29bca3b" compoundref="_nema__8_8hpp" startline="21" endline="48">Nema8::Nema8</referencedby>
         <referencedby refid="classa4988_1a150215b9cd4e4841befd2dc9d4b4a3be" compoundref="_driver_a4988_8cpp" startline="128" endline="160">setStepMode</referencedby>
@@ -153,7 +153,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="69" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="69" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="69" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="69" bodyend="-1"/>
         <referencedby refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" compoundref="_driver_a4988_8cpp" startline="38" endline="67">a4988</referencedby>
         <referencedby refid="class_nema8_1a8512c67335677a5adeb7d3c2b29bca3b" compoundref="_nema__8_8hpp" startline="21" endline="48">Nema8::Nema8</referencedby>
         <referencedby refid="classa4988_1a150215b9cd4e4841befd2dc9d4b4a3be" compoundref="_driver_a4988_8cpp" startline="128" endline="160">setStepMode</referencedby>
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="70" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="70" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="70" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="70" bodyend="-1"/>
         <referencedby refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" compoundref="_driver_a4988_8cpp" startline="38" endline="67">a4988</referencedby>
         <referencedby refid="class_nema8_1a8512c67335677a5adeb7d3c2b29bca3b" compoundref="_nema__8_8hpp" startline="21" endline="48">Nema8::Nema8</referencedby>
         <referencedby refid="classa4988_1a150215b9cd4e4841befd2dc9d4b4a3be" compoundref="_driver_a4988_8cpp" startline="128" endline="160">setStepMode</referencedby>
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="71" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="71" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="71" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="71" bodyend="-1"/>
         <referencedby refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" compoundref="_driver_a4988_8cpp" startline="38" endline="67">a4988</referencedby>
         <referencedby refid="class_nema8_1a8512c67335677a5adeb7d3c2b29bca3b" compoundref="_nema__8_8hpp" startline="21" endline="48">Nema8::Nema8</referencedby>
         <referencedby refid="classa4988_1a6a37cf937b1f7a1f229904cdb9191b89" compoundref="_driver_a4988_8cpp" startline="91" endline="103">setDirection</referencedby>
@@ -204,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="72" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="72" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="72" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="72" bodyend="-1"/>
         <referencedby refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" compoundref="_driver_a4988_8cpp" startline="38" endline="67">a4988</referencedby>
         <referencedby refid="classa4988_1ad61ff3ecdea7afe55a30edf31f1e0323" compoundref="_driver_a4988_8cpp" startline="69" endline="72">enable</referencedby>
         <referencedby refid="class_nema8_1a8512c67335677a5adeb7d3c2b29bca3b" compoundref="_nema__8_8hpp" startline="21" endline="48">Nema8::Nema8</referencedby>
@@ -222,27 +222,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="74" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="74" bodyend="-1"/>
-        <referencedby refid="class_alignment_1a23c457adf671d3113fe80733bc726e12" compoundref="_alignment_8cpp" startline="542" endline="548">Alignment::incrementTotalStepCounted</referencedby>
-        <referencedby refid="class_alignment_1a97f0c9cbacf45c6a73e4535db0c55d43" compoundref="_alignment_8cpp" startline="879" endline="907">Alignment::MoveAngleAllSafe</referencedby>
-        <referencedby refid="class_alignment_1a4a58c2a272b49f6cb794f3766d10f712" compoundref="_alignment_8cpp" startline="262" endline="277">Alignment::MoveAngleX</referencedby>
-        <referencedby refid="class_alignment_1ab8c075766ec6ff9b8f66ade49139879d" compoundref="_alignment_8cpp" startline="804" endline="828">Alignment::MoveAngleXSafe</referencedby>
-        <referencedby refid="class_alignment_1a128ba6db0f413f23c78b222ba98bda4c" compoundref="_alignment_8cpp" startline="278" endline="293">Alignment::MoveAngleY</referencedby>
-        <referencedby refid="class_alignment_1a050f3ae23879c74437bfe3a82bc3a432" compoundref="_alignment_8cpp" startline="829" endline="853">Alignment::MoveAngleYSafe</referencedby>
-        <referencedby refid="class_alignment_1a00909c4e7791e7a3c98c6022e7239ff1" compoundref="_alignment_8cpp" startline="294" endline="309">Alignment::MoveAngleZ</referencedby>
-        <referencedby refid="class_alignment_1ace1287639428d2c45606677eb6287bc2" compoundref="_alignment_8cpp" startline="854" endline="878">Alignment::MoveAngleZSafe</referencedby>
-        <referencedby refid="class_alignment_1a4cacf6c33dbaec2e424f752f678aeaa9" compoundref="_alignment_8cpp" startline="774" endline="802">Alignment::MoveDistanceAllSafe</referencedby>
-        <referencedby refid="class_alignment_1a9a308ec9c53310e89e79b84c5274fa6c" compoundref="_alignment_8cpp" startline="177" endline="201">Alignment::MoveDistanceX</referencedby>
-        <referencedby refid="class_alignment_1aea699b9dbfd70c662031b7c5e60acd7f" compoundref="_alignment_8cpp" startline="79" endline="92">Alignment::MoveDistanceXloop</referencedby>
-        <referencedby refid="class_alignment_1a01a1103e23dd986877681907d20cc1f8" compoundref="_alignment_8cpp" startline="701" endline="723">Alignment::MoveDistanceXSafe</referencedby>
-        <referencedby refid="class_alignment_1a04e9899bf752e59d8f69ba2df62dbf62" compoundref="_alignment_8cpp" startline="203" endline="227">Alignment::MoveDistanceY</referencedby>
-        <referencedby refid="class_alignment_1a4b02693ded07e1e0975e21fcae48b22b" compoundref="_alignment_8cpp" startline="93" endline="106">Alignment::MoveDistanceYloop</referencedby>
-        <referencedby refid="class_alignment_1abbd45543d5f6dcdaf88633fcade036bf" compoundref="_alignment_8cpp" startline="724" endline="748">Alignment::MoveDistanceYSafe</referencedby>
-        <referencedby refid="class_alignment_1a24e83e729b3b6b9d5c9fee02a42e26cb" compoundref="_alignment_8cpp" startline="228" endline="252">Alignment::MoveDistanceZ</referencedby>
-        <referencedby refid="class_alignment_1a934a3a3bb589ce0bf137f4d7230d5f9c" compoundref="_alignment_8cpp" startline="107" endline="120">Alignment::MoveDistanceZloop</referencedby>
-        <referencedby refid="class_alignment_1ade2162aba2ca25114a6edefcbbb0ea94" compoundref="_alignment_8cpp" startline="749" endline="773">Alignment::MoveDistanceZSafe</referencedby>
-        <referencedby refid="class_alignment_1a54e8fdfb336ca187d816f71afc482889" compoundref="_alignment_8cpp" startline="550" endline="557">Alignment::resetStepCounter</referencedby>
-        <referencedby refid="class_alignment_1a8a71770c29f90dbf22dd7818c5108f00" compoundref="_alignment_8cpp" startline="920" endline="942">Alignment::rotateAnglePH</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="74" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_alignment_1a23c457adf671d3113fe80733bc726e12" compoundref="_alignment_8cpp" startline="546" endline="552">Alignment::incrementTotalStepCounted</referencedby>
+        <referencedby refid="class_alignment_1a97f0c9cbacf45c6a73e4535db0c55d43" compoundref="_alignment_8cpp" startline="883" endline="911">Alignment::MoveAngleAllSafe</referencedby>
+        <referencedby refid="class_alignment_1a4a58c2a272b49f6cb794f3766d10f712" compoundref="_alignment_8cpp" startline="266" endline="281">Alignment::MoveAngleX</referencedby>
+        <referencedby refid="class_alignment_1ab8c075766ec6ff9b8f66ade49139879d" compoundref="_alignment_8cpp" startline="808" endline="832">Alignment::MoveAngleXSafe</referencedby>
+        <referencedby refid="class_alignment_1a128ba6db0f413f23c78b222ba98bda4c" compoundref="_alignment_8cpp" startline="282" endline="297">Alignment::MoveAngleY</referencedby>
+        <referencedby refid="class_alignment_1a050f3ae23879c74437bfe3a82bc3a432" compoundref="_alignment_8cpp" startline="833" endline="857">Alignment::MoveAngleYSafe</referencedby>
+        <referencedby refid="class_alignment_1a00909c4e7791e7a3c98c6022e7239ff1" compoundref="_alignment_8cpp" startline="298" endline="313">Alignment::MoveAngleZ</referencedby>
+        <referencedby refid="class_alignment_1ace1287639428d2c45606677eb6287bc2" compoundref="_alignment_8cpp" startline="858" endline="882">Alignment::MoveAngleZSafe</referencedby>
+        <referencedby refid="class_alignment_1a4cacf6c33dbaec2e424f752f678aeaa9" compoundref="_alignment_8cpp" startline="778" endline="806">Alignment::MoveDistanceAllSafe</referencedby>
+        <referencedby refid="class_alignment_1a9a308ec9c53310e89e79b84c5274fa6c" compoundref="_alignment_8cpp" startline="181" endline="205">Alignment::MoveDistanceX</referencedby>
+        <referencedby refid="class_alignment_1aea699b9dbfd70c662031b7c5e60acd7f" compoundref="_alignment_8cpp" startline="79" endline="93">Alignment::MoveDistanceXloop</referencedby>
+        <referencedby refid="class_alignment_1a01a1103e23dd986877681907d20cc1f8" compoundref="_alignment_8cpp" startline="705" endline="727">Alignment::MoveDistanceXSafe</referencedby>
+        <referencedby refid="class_alignment_1a04e9899bf752e59d8f69ba2df62dbf62" compoundref="_alignment_8cpp" startline="207" endline="231">Alignment::MoveDistanceY</referencedby>
+        <referencedby refid="class_alignment_1a4b02693ded07e1e0975e21fcae48b22b" compoundref="_alignment_8cpp" startline="94" endline="108">Alignment::MoveDistanceYloop</referencedby>
+        <referencedby refid="class_alignment_1abbd45543d5f6dcdaf88633fcade036bf" compoundref="_alignment_8cpp" startline="728" endline="752">Alignment::MoveDistanceYSafe</referencedby>
+        <referencedby refid="class_alignment_1a24e83e729b3b6b9d5c9fee02a42e26cb" compoundref="_alignment_8cpp" startline="232" endline="256">Alignment::MoveDistanceZ</referencedby>
+        <referencedby refid="class_alignment_1a934a3a3bb589ce0bf137f4d7230d5f9c" compoundref="_alignment_8cpp" startline="109" endline="123">Alignment::MoveDistanceZloop</referencedby>
+        <referencedby refid="class_alignment_1ade2162aba2ca25114a6edefcbbb0ea94" compoundref="_alignment_8cpp" startline="753" endline="777">Alignment::MoveDistanceZSafe</referencedby>
+        <referencedby refid="class_alignment_1a54e8fdfb336ca187d816f71afc482889" compoundref="_alignment_8cpp" startline="554" endline="561">Alignment::resetStepCounter</referencedby>
+        <referencedby refid="class_alignment_1a8a71770c29f90dbf22dd7818c5108f00" compoundref="_alignment_8cpp" startline="924" endline="946">Alignment::rotateAnglePH</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classa4988_1a3b6a16a6b8162c6a3ba164fedeef0fb7" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -257,15 +257,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="76" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="76" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="76" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="76" bodyend="-1"/>
         <referencedby refid="classa4988_1aa86021ee00cae65c6c963553f30e22b3" compoundref="_driver_a4988_8cpp" startline="170" endline="173">getStepCounter</referencedby>
-        <referencedby refid="class_alignment_1a624dd240b0142db6b9c4e10ca1475246" compoundref="_alignment_8cpp" startline="469" endline="540">Alignment::GoToReferenceUp</referencedby>
-        <referencedby refid="class_alignment_1a23c457adf671d3113fe80733bc726e12" compoundref="_alignment_8cpp" startline="542" endline="548">Alignment::incrementTotalStepCounted</referencedby>
-        <referencedby refid="class_alignment_1a9a308ec9c53310e89e79b84c5274fa6c" compoundref="_alignment_8cpp" startline="177" endline="201">Alignment::MoveDistanceX</referencedby>
-        <referencedby refid="class_alignment_1a04e9899bf752e59d8f69ba2df62dbf62" compoundref="_alignment_8cpp" startline="203" endline="227">Alignment::MoveDistanceY</referencedby>
-        <referencedby refid="class_alignment_1a24e83e729b3b6b9d5c9fee02a42e26cb" compoundref="_alignment_8cpp" startline="228" endline="252">Alignment::MoveDistanceZ</referencedby>
-        <referencedby refid="class_alignment_1aebf2eaacef3587f39e049941e7bc2a4d" compoundref="_alignment_8cpp" startline="1204" endline="1272">Alignment::MoveHomeAll</referencedby>
-        <referencedby refid="class_alignment_1a8a71770c29f90dbf22dd7818c5108f00" compoundref="_alignment_8cpp" startline="920" endline="942">Alignment::rotateAnglePH</referencedby>
+        <referencedby refid="class_alignment_1a624dd240b0142db6b9c4e10ca1475246" compoundref="_alignment_8cpp" startline="473" endline="544">Alignment::GoToReferenceUp</referencedby>
+        <referencedby refid="class_alignment_1a23c457adf671d3113fe80733bc726e12" compoundref="_alignment_8cpp" startline="546" endline="552">Alignment::incrementTotalStepCounted</referencedby>
+        <referencedby refid="class_alignment_1a9a308ec9c53310e89e79b84c5274fa6c" compoundref="_alignment_8cpp" startline="181" endline="205">Alignment::MoveDistanceX</referencedby>
+        <referencedby refid="class_alignment_1a04e9899bf752e59d8f69ba2df62dbf62" compoundref="_alignment_8cpp" startline="207" endline="231">Alignment::MoveDistanceY</referencedby>
+        <referencedby refid="class_alignment_1a24e83e729b3b6b9d5c9fee02a42e26cb" compoundref="_alignment_8cpp" startline="232" endline="256">Alignment::MoveDistanceZ</referencedby>
+        <referencedby refid="class_alignment_1aebf2eaacef3587f39e049941e7bc2a4d" compoundref="_alignment_8cpp" startline="1208" endline="1276">Alignment::MoveHomeAll</referencedby>
+        <referencedby refid="class_alignment_1a8a71770c29f90dbf22dd7818c5108f00" compoundref="_alignment_8cpp" startline="924" endline="946">Alignment::rotateAnglePH</referencedby>
         <referencedby refid="classa4988_1a2074f2e3fe7cd79e402f53a14ba68c89" compoundref="_driver_a4988_8cpp" startline="106" endline="114">stepOnce</referencedby>
       </memberdef>
       </sectiondef>
@@ -314,7 +314,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="39" column="5" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="38" bodyend="67"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="39" column="5" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="38" bodyend="67"/>
         <references refid="classa4988_1a897f9e23b473274f3d27e9380d145be4" compoundref="_driver_a4988_8hpp" startline="71">dir_pin</references>
         <references refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" compoundref="_driver_a4988_8hpp" startline="59">direction</references>
         <references refid="classa4988_1a8e401b32d17b578cd1e4d06779ba5b61" compoundref="_driver_a4988_8hpp" startline="72">enable_pin</references>
@@ -342,12 +342,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="41" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="69" bodyend="72"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="41" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="69" bodyend="72"/>
         <references refid="classa4988_1a8e401b32d17b578cd1e4d06779ba5b61" compoundref="_driver_a4988_8hpp" startline="72">enable_pin</references>
-        <referencedby refid="class_alignment_1a8d94944e72243b20184157206984ac6d" compoundref="_alignment_8cpp" startline="1192" endline="1198">Alignment::DisableAll</referencedby>
-        <referencedby refid="class_alignment_1adb8005a2b09b2a08bd618eba4b64ccc5" compoundref="_alignment_8cpp" startline="1185" endline="1191">Alignment::EnableAll</referencedby>
+        <referencedby refid="class_alignment_1a8d94944e72243b20184157206984ac6d" compoundref="_alignment_8cpp" startline="1196" endline="1202">Alignment::DisableAll</referencedby>
+        <referencedby refid="class_alignment_1adb8005a2b09b2a08bd618eba4b64ccc5" compoundref="_alignment_8cpp" startline="1189" endline="1195">Alignment::EnableAll</referencedby>
         <referencedby refid="class_enable_motor_cmd_1aed19db21a151de3b0c39524160323457" compoundref="_cmd_pattern_classes_8h" startline="89" endline="92">EnableMotorCmd::execute</referencedby>
-        <referencedby refid="class_alignment_1ae0fcf4e983882fae40ac8c4494dbf7b0" compoundref="_alignment_8cpp" startline="1178" endline="1184">Alignment::InitAlign</referencedby>
+        <referencedby refid="class_alignment_1ae0fcf4e983882fae40ac8c4494dbf7b0" compoundref="_alignment_8cpp" startline="1182" endline="1188">Alignment::InitAlign</referencedby>
         <referencedby refid="class_enable_motor_cmd_1a201febf8a6073d830b912550f33feb4d" compoundref="_cmd_pattern_classes_8h" startline="93" endline="96">EnableMotorCmd::undo</referencedby>
       </memberdef>
       <memberdef kind="function" id="classa4988_1ad66dadbb79c22bc3f507fe6d624c9fec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -366,12 +366,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="43" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="117" bodyend="124"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="43" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="117" bodyend="124"/>
         <references refid="classa4988_1a1eb89487e1d4fc4cb068d581a6278003" compoundref="_driver_a4988_8hpp" startline="62">num_steps</references>
         <references refid="classa4988_1a2074f2e3fe7cd79e402f53a14ba68c89" compoundref="_driver_a4988_8cpp" startline="106" endline="114">stepOnce</references>
-        <referencedby refid="class_alignment_1a668b9598d17990bcb2132444d44d7cde" compoundref="_alignment_8cpp" startline="1782" endline="1804">Alignment::CheckBoundaryX</referencedby>
-        <referencedby refid="class_alignment_1a02c85b7369d6366477d23c910e966991" compoundref="_alignment_8cpp" startline="1615" endline="1692">Alignment::MoveDownTo</referencedby>
-        <referencedby refid="class_alignment_1a83588502ba1f7a06b1b9376d65223685" compoundref="_alignment_8cpp" startline="1538" endline="1614">Alignment::MoveUpTo</referencedby>
+        <referencedby refid="class_alignment_1a668b9598d17990bcb2132444d44d7cde" compoundref="_alignment_8cpp" startline="1786" endline="1808">Alignment::CheckBoundaryX</referencedby>
+        <referencedby refid="class_alignment_1a02c85b7369d6366477d23c910e966991" compoundref="_alignment_8cpp" startline="1619" endline="1696">Alignment::MoveDownTo</referencedby>
+        <referencedby refid="class_alignment_1a83588502ba1f7a06b1b9376d65223685" compoundref="_alignment_8cpp" startline="1542" endline="1618">Alignment::MoveUpTo</referencedby>
       </memberdef>
       <memberdef kind="function" id="classa4988_1a2074f2e3fe7cd79e402f53a14ba68c89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -388,7 +388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="44" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="106" bodyend="114"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="44" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="106" bodyend="114"/>
         <references refid="_configs_8h_1ac15bd348b546cfa8e7c9330b517bc217" compoundref="_configs_8h" startline="108">cclk</references>
         <references refid="_configs_8h_1ae4a6a5757fdb3dd50355cea42bab342c" compoundref="_configs_8h" startline="107">clk</references>
         <references refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" compoundref="_driver_a4988_8hpp" startline="59">direction</references>
@@ -397,17 +397,17 @@
         <references refid="classa4988_1a1f7e3717033bd9204414c1408b58eaa5" compoundref="_driver_a4988_8hpp" startline="65">step_pin</references>
         <references refid="classa4988_1a3b6a16a6b8162c6a3ba164fedeef0fb7" compoundref="_driver_a4988_8hpp" startline="76">TotalStepCounted</references>
         <references refid="_configs_8h_1a0337592b74197133c4203f6dce657a76" compoundref="_configs_8h" startline="103">up</references>
-        <referencedby refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" compoundref="_alignment_8cpp" startline="1278" endline="1377">Alignment::AlignLoop</referencedby>
-        <referencedby refid="class_alignment_1a9ee2f855eaef73efc23e402fe350affe" compoundref="_alignment_8cpp" startline="1457" endline="1536">Alignment::MoveDown</referencedby>
-        <referencedby refid="class_alignment_1a02c85b7369d6366477d23c910e966991" compoundref="_alignment_8cpp" startline="1615" endline="1692">Alignment::MoveDownTo</referencedby>
-        <referencedby refid="class_alignment_1aebf2eaacef3587f39e049941e7bc2a4d" compoundref="_alignment_8cpp" startline="1204" endline="1272">Alignment::MoveHomeAll</referencedby>
-        <referencedby refid="class_alignment_1abd04781467254f18f9c29e78941355b3" compoundref="_alignment_8cpp" startline="1380" endline="1456">Alignment::MoveUp</referencedby>
-        <referencedby refid="class_alignment_1a83588502ba1f7a06b1b9376d65223685" compoundref="_alignment_8cpp" startline="1538" endline="1614">Alignment::MoveUpTo</referencedby>
+        <referencedby refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" compoundref="_alignment_8cpp" startline="1282" endline="1381">Alignment::AlignLoop</referencedby>
+        <referencedby refid="class_alignment_1a9ee2f855eaef73efc23e402fe350affe" compoundref="_alignment_8cpp" startline="1461" endline="1540">Alignment::MoveDown</referencedby>
+        <referencedby refid="class_alignment_1a02c85b7369d6366477d23c910e966991" compoundref="_alignment_8cpp" startline="1619" endline="1696">Alignment::MoveDownTo</referencedby>
+        <referencedby refid="class_alignment_1aebf2eaacef3587f39e049941e7bc2a4d" compoundref="_alignment_8cpp" startline="1208" endline="1276">Alignment::MoveHomeAll</referencedby>
+        <referencedby refid="class_alignment_1abd04781467254f18f9c29e78941355b3" compoundref="_alignment_8cpp" startline="1384" endline="1460">Alignment::MoveUp</referencedby>
+        <referencedby refid="class_alignment_1a83588502ba1f7a06b1b9376d65223685" compoundref="_alignment_8cpp" startline="1542" endline="1618">Alignment::MoveUpTo</referencedby>
         <referencedby refid="classa4988_1ad66dadbb79c22bc3f507fe6d624c9fec" compoundref="_driver_a4988_8cpp" startline="117" endline="124">step</referencedby>
-        <referencedby refid="class_alignment_1a7a971878b2e1c3234429fce2d8baa454" compoundref="_alignment_8cpp" startline="910" endline="915">Alignment::StepOncePH</referencedby>
-        <referencedby refid="class_alignment_1ac82e5ad8712ea3408ec29899202cae65" compoundref="_alignment_8cpp" startline="159" endline="164">Alignment::StepOnceX</referencedby>
-        <referencedby refid="class_alignment_1a8aa856f47fad52fd553f0d933edcb23b" compoundref="_alignment_8cpp" startline="165" endline="170">Alignment::StepOnceY</referencedby>
-        <referencedby refid="class_alignment_1a4011b1521cc136081115518c677a455d" compoundref="_alignment_8cpp" startline="171" endline="176">Alignment::StepOnceZ</referencedby>
+        <referencedby refid="class_alignment_1a7a971878b2e1c3234429fce2d8baa454" compoundref="_alignment_8cpp" startline="914" endline="919">Alignment::StepOncePH</referencedby>
+        <referencedby refid="class_alignment_1ac82e5ad8712ea3408ec29899202cae65" compoundref="_alignment_8cpp" startline="163" endline="168">Alignment::StepOnceX</referencedby>
+        <referencedby refid="class_alignment_1a8aa856f47fad52fd553f0d933edcb23b" compoundref="_alignment_8cpp" startline="169" endline="174">Alignment::StepOnceY</referencedby>
+        <referencedby refid="class_alignment_1a4011b1521cc136081115518c677a455d" compoundref="_alignment_8cpp" startline="175" endline="180">Alignment::StepOnceZ</referencedby>
       </memberdef>
       <memberdef kind="function" id="classa4988_1af3c159ccf4f2fa8d26d03683181b1fac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -425,7 +425,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="45" column="10"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="45" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classa4988_1ad11ebef929f054194109e909f2646880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -439,7 +439,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="46" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="82" bodyend="89"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="46" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="82" bodyend="89"/>
         <references refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" compoundref="_driver_a4988_8hpp" startline="59">direction</references>
         <references refid="_configs_8h_1a249d857dfa044493c7f29844b7b0baae" compoundref="_configs_8h" startline="104">down</references>
         <references refid="classa4988_1a6a37cf937b1f7a1f229904cdb9191b89" compoundref="_driver_a4988_8cpp" startline="91" endline="103">setDirection</references>
@@ -457,7 +457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="48" column="11" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="162" bodyend="165"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="48" column="11" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="162" bodyend="165"/>
         <references refid="classa4988_1ad6372b76bfc23c771d7e6555a106e292" compoundref="_driver_a4988_8hpp" startline="60">motor_steps</references>
         <references refid="classa4988_1a1965dbc601b23711ab178ae9067133c3" compoundref="_driver_a4988_8hpp" startline="61">step_delay</references>
         <referencedby refid="classget_motor_speed_cmd_1a417c6ed5782be14aee4e2d97560f8af0" compoundref="_cmd_pattern_classes_8h" startline="122" endline="125">getMotorSpeedCmd::execute</referencedby>
@@ -475,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="49" column="11" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="166" bodyend="169"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="49" column="11" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="166" bodyend="169"/>
         <references refid="classa4988_1a1965dbc601b23711ab178ae9067133c3" compoundref="_driver_a4988_8hpp" startline="61">step_delay</references>
         <referencedby refid="classget_motor_delay_cmd_1a8f303a80a131389a92056d56e063760a" compoundref="_cmd_pattern_classes_8h" startline="149" endline="151">getMotorDelayCmd::execute</referencedby>
         <referencedby refid="classset_motor_delay_cmd_1ab8397cfaed1d858b7517e658632099b6" compoundref="_cmd_pattern_classes_8h" startline="213" endline="216">setMotorDelayCmd::execute</referencedby>
@@ -492,7 +492,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="50" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="170" bodyend="173"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="50" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="170" bodyend="173"/>
         <references refid="classa4988_1a3b6a16a6b8162c6a3ba164fedeef0fb7" compoundref="_driver_a4988_8hpp" startline="76">TotalStepCounted</references>
       </memberdef>
       <memberdef kind="function" id="classa4988_1a01be380db105cfc684c55dc42b81f76d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -507,7 +507,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="51" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="79" bodyend="81"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="51" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="79" bodyend="81"/>
         <references refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" compoundref="_driver_a4988_8hpp" startline="59">direction</references>
         <referencedby refid="classget_motor_direction_cmd_1a3fd8f5b9573e1b5ed69c8e4db0eaa8af" compoundref="_cmd_pattern_classes_8h" startline="136" endline="138">getMotorDirectionCmd::execute</referencedby>
         <referencedby refid="classset_motor_direction_cmd_1ab7e1ec07b1cabf7293b57e6c8adee418" compoundref="_cmd_pattern_classes_8h" startline="198" endline="201">setMotorDirectionCmd::execute</referencedby>
@@ -528,10 +528,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="54" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="75" bodyend="78"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="54" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="75" bodyend="78"/>
         <references refid="classa4988_1a1965dbc601b23711ab178ae9067133c3" compoundref="_driver_a4988_8hpp" startline="61">step_delay</references>
         <referencedby refid="classset_motor_delay_cmd_1ab8397cfaed1d858b7517e658632099b6" compoundref="_cmd_pattern_classes_8h" startline="213" endline="216">setMotorDelayCmd::execute</referencedby>
-        <referencedby refid="class_alignment_1a5cc726da25a362e1312506703809c608" compoundref="_alignment_8cpp" startline="142" endline="147">Alignment::initFirmwareUnit</referencedby>
+        <referencedby refid="class_alignment_1a5cc726da25a362e1312506703809c608" compoundref="_alignment_8cpp" startline="146" endline="151">Alignment::initFirmwareUnit</referencedby>
         <referencedby refid="classset_motor_delay_cmd_1a7971ab68b7b37c58b128901f74076f6d" compoundref="_cmd_pattern_classes_8h" startline="217" endline="219">setMotorDelayCmd::undo</referencedby>
       </memberdef>
       <memberdef kind="function" id="classa4988_1ae59dc905051ebfdcfac1d48f172d523f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -550,7 +550,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="55" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="174" bodyend="177"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="55" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="174" bodyend="177"/>
         <referencedby refid="classset_motor_speed_cmd_1aed6577e323683bf21b1f0331cad4d5ca" compoundref="_cmd_pattern_classes_8h" startline="183" endline="186">setMotorSpeedCmd::execute</referencedby>
         <referencedby refid="classset_motor_speed_cmd_1a6686959fbc4d63c561776dab937205c5" compoundref="_cmd_pattern_classes_8h" startline="187" endline="189">setMotorSpeedCmd::undo</referencedby>
       </memberdef>
@@ -570,22 +570,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="56" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="91" bodyend="103"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="56" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="91" bodyend="103"/>
         <references refid="classa4988_1a897f9e23b473274f3d27e9380d145be4" compoundref="_driver_a4988_8hpp" startline="71">dir_pin</references>
         <references refid="classa4988_1a5acf890c4f8a6998d24b0693dd10cd9a" compoundref="_driver_a4988_8hpp" startline="59">direction</references>
         <references refid="_configs_8h_1a249d857dfa044493c7f29844b7b0baae" compoundref="_configs_8h" startline="104">down</references>
-        <referencedby refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" compoundref="_alignment_8cpp" startline="1278" endline="1377">Alignment::AlignLoop</referencedby>
+        <referencedby refid="class_alignment_1a0625570440d38f62bca91c8d5a3cb3eb" compoundref="_alignment_8cpp" startline="1282" endline="1381">Alignment::AlignLoop</referencedby>
         <referencedby refid="classset_motor_direction_cmd_1ab7e1ec07b1cabf7293b57e6c8adee418" compoundref="_cmd_pattern_classes_8h" startline="198" endline="201">setMotorDirectionCmd::execute</referencedby>
-        <referencedby refid="class_alignment_1a9ee2f855eaef73efc23e402fe350affe" compoundref="_alignment_8cpp" startline="1457" endline="1536">Alignment::MoveDown</referencedby>
-        <referencedby refid="class_alignment_1a02c85b7369d6366477d23c910e966991" compoundref="_alignment_8cpp" startline="1615" endline="1692">Alignment::MoveDownTo</referencedby>
-        <referencedby refid="class_alignment_1aebf2eaacef3587f39e049941e7bc2a4d" compoundref="_alignment_8cpp" startline="1204" endline="1272">Alignment::MoveHomeAll</referencedby>
-        <referencedby refid="class_alignment_1abd04781467254f18f9c29e78941355b3" compoundref="_alignment_8cpp" startline="1380" endline="1456">Alignment::MoveUp</referencedby>
-        <referencedby refid="class_alignment_1a83588502ba1f7a06b1b9376d65223685" compoundref="_alignment_8cpp" startline="1538" endline="1614">Alignment::MoveUpTo</referencedby>
+        <referencedby refid="class_alignment_1a9ee2f855eaef73efc23e402fe350affe" compoundref="_alignment_8cpp" startline="1461" endline="1540">Alignment::MoveDown</referencedby>
+        <referencedby refid="class_alignment_1a02c85b7369d6366477d23c910e966991" compoundref="_alignment_8cpp" startline="1619" endline="1696">Alignment::MoveDownTo</referencedby>
+        <referencedby refid="class_alignment_1aebf2eaacef3587f39e049941e7bc2a4d" compoundref="_alignment_8cpp" startline="1208" endline="1276">Alignment::MoveHomeAll</referencedby>
+        <referencedby refid="class_alignment_1abd04781467254f18f9c29e78941355b3" compoundref="_alignment_8cpp" startline="1384" endline="1460">Alignment::MoveUp</referencedby>
+        <referencedby refid="class_alignment_1a83588502ba1f7a06b1b9376d65223685" compoundref="_alignment_8cpp" startline="1542" endline="1618">Alignment::MoveUpTo</referencedby>
         <referencedby refid="classa4988_1ad11ebef929f054194109e909f2646880" compoundref="_driver_a4988_8cpp" startline="82" endline="89">reverseDirection</referencedby>
-        <referencedby refid="class_alignment_1a7a971878b2e1c3234429fce2d8baa454" compoundref="_alignment_8cpp" startline="910" endline="915">Alignment::StepOncePH</referencedby>
-        <referencedby refid="class_alignment_1ac82e5ad8712ea3408ec29899202cae65" compoundref="_alignment_8cpp" startline="159" endline="164">Alignment::StepOnceX</referencedby>
-        <referencedby refid="class_alignment_1a8aa856f47fad52fd553f0d933edcb23b" compoundref="_alignment_8cpp" startline="165" endline="170">Alignment::StepOnceY</referencedby>
-        <referencedby refid="class_alignment_1a4011b1521cc136081115518c677a455d" compoundref="_alignment_8cpp" startline="171" endline="176">Alignment::StepOnceZ</referencedby>
+        <referencedby refid="class_alignment_1a7a971878b2e1c3234429fce2d8baa454" compoundref="_alignment_8cpp" startline="914" endline="919">Alignment::StepOncePH</referencedby>
+        <referencedby refid="class_alignment_1ac82e5ad8712ea3408ec29899202cae65" compoundref="_alignment_8cpp" startline="163" endline="168">Alignment::StepOnceX</referencedby>
+        <referencedby refid="class_alignment_1a8aa856f47fad52fd553f0d933edcb23b" compoundref="_alignment_8cpp" startline="169" endline="174">Alignment::StepOnceY</referencedby>
+        <referencedby refid="class_alignment_1a4011b1521cc136081115518c677a455d" compoundref="_alignment_8cpp" startline="175" endline="180">Alignment::StepOnceZ</referencedby>
         <referencedby refid="classset_motor_direction_cmd_1a3b1204715fd821801515d8d4cd40faba" compoundref="_cmd_pattern_classes_8h" startline="202" endline="204">setMotorDirectionCmd::undo</referencedby>
       </memberdef>
       <memberdef kind="function" id="classa4988_1a150215b9cd4e4841befd2dc9d4b4a3be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -604,7 +604,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="57" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DriverA4988.cpp" bodystart="128" bodyend="160"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="57" column="10" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DriverA4988.cpp" bodystart="128" bodyend="160"/>
         <references refid="classa4988_1a2be691a68489baf9924cc7c69b16f7c0" compoundref="_driver_a4988_8hpp" startline="68">ms1_pin</references>
         <references refid="classa4988_1af6dd6e9adf74830b1ce8b37717cd3ff1" compoundref="_driver_a4988_8hpp" startline="69">ms2_pin</references>
         <references refid="classa4988_1ad791d1b4e66527168deb1aa96a6cc11f" compoundref="_driver_a4988_8hpp" startline="70">ms3_pin</references>
@@ -627,7 +627,7 @@
         <link refid="classa4988"/>
       </node>
     </inheritancegraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" line="36" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DriverA4988.hpp" bodystart="36" bodyend="77"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" line="36" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" bodystart="36" bodyend="77"/>
     <listofallmembers>
       <member refid="classa4988_1a5abced6499ec6a9c4023db3aacf80c1a" prot="public" virt="non-virtual"><scope>a4988</scope><name>a4988</name></member>
       <member refid="classa4988_1a897f9e23b473274f3d27e9380d145be4" prot="public" virt="non-virtual"><scope>a4988</scope><name>dir_pin</name></member>

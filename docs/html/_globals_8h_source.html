@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Firmware Design Template: C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h Source File</title>
+<title>Firmware Design Template: C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.1</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
    </div>
-   <div id="projectbrief">To privde easy and efficient software design</div>
+   <div id="projectbrief">To privde modular and efficient high level software design</div>
   </td>
  </tr>
  </tbody>
@@ -143,9 +143,9 @@ $(document).ready(function(){initNavTree('_globals_8h_source.html',''); initResi
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">extern</span> std::stack&lt;ICommand*&gt; <a class="code hl_variable" href="_globals_8h.html#a7b69cdbd45d008e8f6a1ad47890d6942">CmdStack</a>;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">extern</span> std::vector&lt;ICommand*&gt; <a class="code hl_variable" href="_globals_8h.html#a14328e108fe32a87ed5cbb50639e2951">CmdDeleter</a>;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">extern</span> std::stack&lt;Invoker&gt; <a class="code hl_variable" href="_globals_8h.html#afc093e48e1f3a3425c7db9d6bfb13f36">InvokerStack</a>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keywordtype">void</span> <a class="code hl_function" href="_globals_8h.html#ac6568f5dfdc418a26f1a80513cd18d7e">ParserThreadCallback</a>();</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keywordtype">void</span> <a class="code hl_function" href="_globals_8h.html#a7bb396aa99b014129d46b51d1f135c5a">BackgroundThreadCallback</a>();</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
@@ -186,6 +186,7 @@ $(document).ready(function(){initNavTree('_globals_8h_source.html',''); initResi
 <div class="ttc" id="a_globals_8h_html_a7082f0f5fdb86b353e44e84e1a4bb337"><div class="ttname"><a href="_globals_8h.html#a7082f0f5fdb86b353e44e84e1a4bb337">Move</a></div><div class="ttdeci">char Move[]</div><div class="ttdef"><b>Definition:</b> <a href="_globals_8cpp_source.html#l00045">Globals.cpp:45</a></div></div>
 <div class="ttc" id="a_globals_8h_html_a7473a2f9a35754038470dde2b8afa988"><div class="ttname"><a href="_globals_8h.html#a7473a2f9a35754038470dde2b8afa988">Undo</a></div><div class="ttdeci">char Undo[]</div><div class="ttdef"><b>Definition:</b> <a href="_globals_8cpp_source.html#l00044">Globals.cpp:44</a></div></div>
 <div class="ttc" id="a_globals_8h_html_a7b69cdbd45d008e8f6a1ad47890d6942"><div class="ttname"><a href="_globals_8h.html#a7b69cdbd45d008e8f6a1ad47890d6942">CmdStack</a></div><div class="ttdeci">std::stack&lt; ICommand * &gt; CmdStack</div><div class="ttdef"><b>Definition:</b> <a href="_globals_8cpp_source.html#l00055">Globals.cpp:55</a></div></div>
+<div class="ttc" id="a_globals_8h_html_a7bb396aa99b014129d46b51d1f135c5a"><div class="ttname"><a href="_globals_8h.html#a7bb396aa99b014129d46b51d1f135c5a">BackgroundThreadCallback</a></div><div class="ttdeci">void BackgroundThreadCallback()</div><div class="ttdef"><b>Definition:</b> <a href="_globals_8cpp_source.html#l00063">Globals.cpp:63</a></div></div>
 <div class="ttc" id="a_globals_8h_html_a8427584db9e552d5a9e044d9eb823a2b"><div class="ttname"><a href="_globals_8h.html#a8427584db9e552d5a9e044d9eb823a2b">M_Z</a></div><div class="ttdeci">Nema8 M_Z</div></div>
 <div class="ttc" id="a_globals_8h_html_a86a5e7c9ac2b0aa38a9617ba9cdbe5c6"><div class="ttname"><a href="_globals_8h.html#a86a5e7c9ac2b0aa38a9617ba9cdbe5c6">resetObj</a></div><div class="ttdeci">ResetHardware resetObj</div></div>
 <div class="ttc" id="a_globals_8h_html_a95e82af5b2e6420fd830e68a86600c76"><div class="ttname"><a href="_globals_8h.html#a95e82af5b2e6420fd830e68a86600c76">myParser</a></div><div class="ttdeci">CmdParser myParser</div><div class="ttdef"><b>Definition:</b> <a href="_globals_8cpp_source.html#l00015">Globals.cpp:15</a></div></div>
@@ -196,6 +197,7 @@ $(document).ready(function(){initNavTree('_globals_8h_source.html',''); initResi
 <div class="ttc" id="a_globals_8h_html_ab354ebc9a00eae34787d64d038821501"><div class="ttname"><a href="_globals_8h.html#ab354ebc9a00eae34787d64d038821501">ES_Stop</a></div><div class="ttdeci">endSwitch ES_Stop</div></div>
 <div class="ttc" id="a_globals_8h_html_abda64f008e3b9989dfd5e7b50018feb0"><div class="ttname"><a href="_globals_8h.html#abda64f008e3b9989dfd5e7b50018feb0">DS_x</a></div><div class="ttdeci">DistanceSensor DS_x</div></div>
 <div class="ttc" id="a_globals_8h_html_abe2a2ebccbcded085483a9da46be3fc3"><div class="ttname"><a href="_globals_8h.html#abe2a2ebccbcded085483a9da46be3fc3">Quit</a></div><div class="ttdeci">char Quit[]</div><div class="ttdef"><b>Definition:</b> <a href="_globals_8cpp_source.html#l00041">Globals.cpp:41</a></div></div>
+<div class="ttc" id="a_globals_8h_html_ac6568f5dfdc418a26f1a80513cd18d7e"><div class="ttname"><a href="_globals_8h.html#ac6568f5dfdc418a26f1a80513cd18d7e">ParserThreadCallback</a></div><div class="ttdeci">void ParserThreadCallback()</div><div class="ttdef"><b>Definition:</b> <a href="_globals_8cpp_source.html#l00059">Globals.cpp:59</a></div></div>
 <div class="ttc" id="a_globals_8h_html_ad6a6fe63b09f7d018ebc6b96d44cdbb8"><div class="ttname"><a href="_globals_8h.html#ad6a6fe63b09f7d018ebc6b96d44cdbb8">Help</a></div><div class="ttdeci">char Help[]</div><div class="ttdef"><b>Definition:</b> <a href="_globals_8cpp_source.html#l00049">Globals.cpp:49</a></div></div>
 <div class="ttc" id="a_globals_8h_html_addb922f9b475e34f177fe64dbae4642f"><div class="ttname"><a href="_globals_8h.html#addb922f9b475e34f177fe64dbae4642f">M_Y</a></div><div class="ttdeci">Nema8 M_Y</div></div>
 <div class="ttc" id="a_globals_8h_html_ae6b66fb7cbed53b3fe6f3110173b0b5f"><div class="ttname"><a href="_globals_8h.html#ae6b66fb7cbed53b3fe6f3110173b0b5f">ES_x</a></div><div class="ttdeci">endSwitch ES_x</div></div>
@@ -209,7 +211,7 @@ $(document).ready(function(){initNavTree('_globals_8h_source.html',''); initResi
 <div class="ttc" id="a_globals_8h_html_affb2a6c9bd814df29ef6eda222c594cc"><div class="ttname"><a href="_globals_8h.html#affb2a6c9bd814df29ef6eda222c594cc">Test1</a></div><div class="ttdeci">char Test1[]</div><div class="ttdef"><b>Definition:</b> <a href="_globals_8cpp_source.html#l00052">Globals.cpp:52</a></div></div>
 <div class="ttc" id="aclass_alignment_html"><div class="ttname"><a href="class_alignment.html">Alignment</a></div><div class="ttdef"><b>Definition:</b> <a href="_alignment_8hpp_source.html#l00019">Alignment.hpp:19</a></div></div>
 <div class="ttc" id="aclass_cmd_buffer_html"><div class="ttname"><a href="class_cmd_buffer.html">CmdBuffer</a></div><div class="ttdef"><b>Definition:</b> <a href="_cmd_buffer_8hpp_source.html#l00133">CmdBuffer.hpp:134</a></div></div>
-<div class="ttc" id="aclass_cmd_callback_html"><div class="ttname"><a href="class_cmd_callback.html">CmdCallback</a></div><div class="ttdef"><b>Definition:</b> <a href="_cmd_callback_8hpp_source.html#l00212">CmdCallback.hpp:213</a></div></div>
+<div class="ttc" id="aclass_cmd_callback_html"><div class="ttname"><a href="class_cmd_callback.html">CmdCallback</a></div><div class="ttdef"><b>Definition:</b> <a href="_cmd_callback_8hpp_source.html#l00231">CmdCallback.hpp:232</a></div></div>
 <div class="ttc" id="aclass_cmd_parser_html"><div class="ttname"><a href="class_cmd_parser.html">CmdParser</a></div><div class="ttdef"><b>Definition:</b> <a href="_cmd_parser_8hpp_source.html#l00034">CmdParser.hpp:35</a></div></div>
 <div class="ttc" id="aclass_distance_sensor_html"><div class="ttname"><a href="class_distance_sensor.html">DistanceSensor</a></div><div class="ttdef"><b>Definition:</b> <a href="_distance_sensor_8hpp_source.html#l00014">DistanceSensor.hpp:15</a></div></div>
 <div class="ttc" id="aclass_motor_get_cmd_handler_html"><div class="ttname"><a href="class_motor_get_cmd_handler.html">MotorGetCmdHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="_globals_8h_source.html#l00083">Globals.h:84</a></div></div>

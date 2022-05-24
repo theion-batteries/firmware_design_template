@@ -1,11 +1,16 @@
 <map id="Alignment::isStopButtonPressed" name="Alignment::isStopButtonPressed">
-<area shape="rect" id="node1" title=" " alt="" coords="479,81,689,108"/>
-<area shape="rect" id="node2" href="$class_alignment.html#aea699b9dbfd70c662031b7c5e60acd7f" title=" " alt="" coords="229,5,429,32"/>
-<area shape="rect" id="node3" href="$class_alignment.html#a4b02693ded07e1e0975e21fcae48b22b" title=" " alt="" coords="228,56,431,83"/>
-<area shape="rect" id="node4" href="$class_alignment.html#a934a3a3bb589ce0bf137f4d7230d5f9c" title=" " alt="" coords="229,107,429,133"/>
-<area shape="rect" id="node5" href="$class_alignment.html#a42ca106fc6688ad6f4e17685f9c07589" title=" " alt="" coords="229,157,430,184"/>
-<area shape="rect" id="node6" href="$class_rotate_motor_clk_cmd.html#a56a9f5b4304d8ead3ef66175f0134dc6" title=" " alt="" coords="19,55,166,97"/>
-<area shape="rect" id="node7" href="$class_rotate_motor_cclk_cmd.html#a9cd0bf2d88fd1cf6dc55eb09d13df733" title=" " alt="" coords="19,121,166,162"/>
-<area shape="rect" id="node8" href="$class_rotate_motor_clk_cmd.html#a58d79afd386f2f2329bc4e9bb72d3ed5" title=" " alt="" coords="5,187,180,213"/>
-<area shape="rect" id="node9" href="$class_rotate_motor_cclk_cmd.html#a3f8d23a9165ff286158bec7c962edff5" title=" " alt="" coords="19,238,166,279"/>
+<area shape="rect" id="node1" title=" " alt="" coords="757,119,968,145"/>
+<area shape="rect" id="node2" href="$class_alignment.html#aea699b9dbfd70c662031b7c5e60acd7f" title=" " alt="" coords="508,43,708,69"/>
+<area shape="rect" id="node8" href="$class_alignment.html#a4b02693ded07e1e0975e21fcae48b22b" title=" " alt="" coords="507,93,709,120"/>
+<area shape="rect" id="node9" href="$class_alignment.html#a934a3a3bb589ce0bf137f4d7230d5f9c" title=" " alt="" coords="508,144,708,171"/>
+<area shape="rect" id="node10" href="$class_alignment.html#a42ca106fc6688ad6f4e17685f9c07589" title=" " alt="" coords="507,205,709,232"/>
+<area shape="rect" id="node3" href="$class_alignment.html#ab7e9da9ded962b937b7df23e116f3b0e" title=" " alt="" coords="252,81,459,108"/>
+<area shape="rect" id="node4" href="$class_move_motor_up_cmd.html#abe4d84e2c2bd89bf875820aa96f7acb0" title=" " alt="" coords="13,5,196,32"/>
+<area shape="rect" id="node5" href="$class_move_motor_down_cmd.html#ac319973b67f7df5f252f2849aae38f40" title=" " alt="" coords="5,56,204,83"/>
+<area shape="rect" id="node6" href="$class_move_motor_up_cmd.html#a592fda0f55d367d5be29244036034b6b" title=" " alt="" coords="23,107,187,133"/>
+<area shape="rect" id="node7" href="$class_move_motor_down_cmd.html#ac2931312dd7e4a46455b6c11a551b700" title=" " alt="" coords="15,157,195,184"/>
+<area shape="rect" id="node11" href="$class_rotate_motor_clk_cmd.html#a56a9f5b4304d8ead3ef66175f0134dc6" title=" " alt="" coords="282,133,429,174"/>
+<area shape="rect" id="node12" href="$class_rotate_motor_cclk_cmd.html#a9cd0bf2d88fd1cf6dc55eb09d13df733" title=" " alt="" coords="282,198,429,239"/>
+<area shape="rect" id="node13" href="$class_rotate_motor_clk_cmd.html#a58d79afd386f2f2329bc4e9bb72d3ed5" title=" " alt="" coords="268,264,443,291"/>
+<area shape="rect" id="node14" href="$class_rotate_motor_cclk_cmd.html#a3f8d23a9165ff286158bec7c962edff5" title=" " alt="" coords="282,315,429,357"/>
 </map>

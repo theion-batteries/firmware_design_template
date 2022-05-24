@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="23" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="23" bodyend="23"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="23" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="23" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="class_i_command_1ace81beb0beea968f876f292446bf1120" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="24" column="18"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="24" column="18"/>
         <referencedby refid="class_firm_invoker_1a8e7480af731d63b3de35b63ccd4c4017" compoundref="_cmd_pattern_classes_8h" startline="433" endline="438">FirmInvoker::calibrate</referencedby>
         <referencedby refid="class_invoker_1ab9c02720cd689b846f1ce35f81558d65" compoundref="_cmd_pattern_classes_8h" startline="413" endline="418">Invoker::finish</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1aa0a1bd035c01b447c32e0a9e128c7611" compoundref="_cmd_pattern_callbacks_8cpp" startline="98" endline="170">get_cmd</referencedby>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="25" column="18"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="25" column="18"/>
         <referencedby refid="class_motor_invoker_1a1f732269172a2bb248deb930bddfe86b" compoundref="_cmd_pattern_classes_8h" startline="534" endline="544">MotorInvoker::moveDown</referencedby>
         <referencedby refid="class_motor_invoker_1a5a337c1b070c332cb8636895ba75d321" compoundref="_cmd_pattern_classes_8h" startline="523" endline="533">MotorInvoker::moveUp</referencedby>
         <referencedby refid="class_motor_invoker_1a08cae71a6828cbe76bc2a7acfc13a9a2" compoundref="_cmd_pattern_classes_8h" startline="556" endline="566">MotorInvoker::rotateCclk</referencedby>
@@ -278,7 +278,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" line="20" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h" bodystart="20" bodyend="26"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" line="20" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h" bodystart="20" bodyend="26"/>
     <listofallmembers>
       <member refid="class_i_command_1ace81beb0beea968f876f292446bf1120" prot="public" virt="pure-virtual"><scope>ICommand</scope><name>execute</name></member>
       <member refid="class_i_command_1a86e1942e4564840b6c5e09c3a7cdba78" prot="public" virt="pure-virtual"><scope>ICommand</scope><name>undo</name></member>

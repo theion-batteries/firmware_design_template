@@ -1,11 +1,15 @@
-.TH "C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.TH "C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdCallback.hpp" 3 "Tue May 24 2022" "Version 0.2" "Firmware Design Template" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp
+C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdCallback.hpp
 .SH SYNOPSIS
 .br
 .PP
+\fC#include 'Thread\&.h'\fP
+.br
+\fC#include 'ThreadController\&.h'\fP
+.br
 \fC#include <stdint\&.h>\fP
 .br
 \fC#include <string\&.h>\fP
@@ -35,12 +39,23 @@ C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp
 .RI "typedef void(* \fBCmdCallFunct\fP) (\fBCmdParser\fP *cmdParser)"
 .br
 .in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "ThreadController \fBcontroll\fP"
+.br
+.in -1c
 .SH "Typedef Documentation"
 .PP 
 .SS "typedef void(* CmdCallFunct) (\fBCmdParser\fP *cmdParser)"
 
 .PP
-Definition at line \fB22\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB24\fP of file \fBCmdCallback\&.hpp\fP\&.
+.SH "Variable Documentation"
+.PP 
+.SS "ThreadController controll\fC [extern]\fP"
+
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for Firmware Design Template from the source code\&.

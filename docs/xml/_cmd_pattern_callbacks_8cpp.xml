@@ -37,6 +37,10 @@
       <node id="27">
         <label>CmdCallback.hpp</label>
         <link refid="_cmd_callback_8hpp"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -113,9 +117,9 @@
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
       </node>
       <node id="18">
@@ -169,13 +173,19 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp</label>
         <link refid="_cmd_pattern_callbacks_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="25">
         <label>EEPROM.h</label>
+      </node>
+      <node id="28">
+        <label>Thread.h</label>
+      </node>
+      <node id="29">
+        <label>ThreadController.h</label>
       </node>
       <node id="23">
         <label>avr/sleep.h</label>
@@ -186,10 +196,10 @@
       <node id="19">
         <label>map</label>
       </node>
-      <node id="29">
+      <node id="31">
         <label>memory</label>
       </node>
-      <node id="28">
+      <node id="30">
         <label>stack</label>
       </node>
       <node id="8">
@@ -220,9 +230,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="16" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="16" bodyend="23"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="16" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="16" bodyend="23"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a0fa0bac0fc88513dfcaf50196a39a343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -244,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="24" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="24" bodyend="35"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="24" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="24" bodyend="35"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1aa909d685f344dc2e637fb84957bc58ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -267,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="36" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="36" bodyend="46"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="36" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="36" bodyend="46"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a725ae5b5ae06426a9f27138daa783636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -290,7 +300,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="47" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="47" bodyend="56"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="47" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="47" bodyend="56"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
         <referencedby refid="_cmd_pattern_callbacks_8h_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" compoundref="_cmd_pattern_callbacks_8cpp" startline="293" endline="312">rotate_cmd</referencedby>
       </memberdef>
@@ -314,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="57" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="57" bodyend="62"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="57" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="57" bodyend="62"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a9a90720f58d890625079877d0d339317" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -337,7 +347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="63" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="63" bodyend="68"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="63" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="63" bodyend="68"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a4b7748cf9cf0108de662b41851d97878" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -360,7 +370,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="69" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="69" bodyend="74"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="69" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="69" bodyend="74"/>
         <referencedby refid="_cmd_pattern_callbacks_8h_1ad2b16cf5e3d9d45db6380d3731c3211f" compoundref="_cmd_pattern_callbacks_8cpp" startline="76" endline="97">get_help</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1ad2b16cf5e3d9d45db6380d3731c3211f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -387,7 +397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="76" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="76" bodyend="97"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="76" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="76" bodyend="97"/>
         <references refid="_cmd_pattern_callbacks_8cpp_1a8f0b63bf650a5ceefc36d7e3bcb02f63" compoundref="_cmd_pattern_callbacks_8cpp" startline="16" endline="23">display_help</references>
         <references refid="_cmd_pattern_callbacks_8cpp_1a0fa0bac0fc88513dfcaf50196a39a343" compoundref="_cmd_pattern_callbacks_8cpp" startline="24" endline="35">display_help_get</references>
         <references refid="_cmd_pattern_callbacks_8cpp_1a725ae5b5ae06426a9f27138daa783636" compoundref="_cmd_pattern_callbacks_8cpp" startline="47" endline="56">display_help_move</references>
@@ -397,7 +407,7 @@
         <references refid="_cmd_pattern_callbacks_8cpp_1a427d067ebe73ddf2cb51ba4fd05d3375" compoundref="_cmd_pattern_callbacks_8cpp" startline="57" endline="62">display_help_undo</references>
         <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">CmdParser::equalCmdParam</references>
         <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1aa0a1bd035c01b447c32e0a9e128c7611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -425,7 +435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="98" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="98" bodyend="170"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="98" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="98" bodyend="170"/>
         <references refid="_globals_8h_1a5171186bb4896bb433ed9c928af0d072">AlignId</references>
         <references refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" compoundref="_globals_8cpp" startline="55">CmdStack</references>
         <references refid="_globals_8h_1abda64f008e3b9989dfd5e7b50018feb0">DS_x</references>
@@ -435,7 +445,7 @@
         <references refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f">M_Y</references>
         <references refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b">M_Z</references>
         <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1adcae3b60a9fcfef183dd0b91967e2ad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -463,7 +473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="173" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="173" bodyend="240"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="173" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="173" bodyend="240"/>
         <references refid="_globals_8h_1a5171186bb4896bb433ed9c928af0d072">AlignId</references>
         <references refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" compoundref="_globals_8cpp" startline="55">CmdStack</references>
         <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">CmdParser::equalCmdParam</references>
@@ -473,7 +483,7 @@
         <references refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f">M_Y</references>
         <references refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b">M_Z</references>
         <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1ac82a0068988fe425288370e121b04f00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -501,7 +511,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="242" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="242" bodyend="291"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="242" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="242" bodyend="291"/>
         <references refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091">AlignObj</references>
         <references refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" compoundref="_globals_8cpp" startline="55">CmdStack</references>
         <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">CmdParser::equalCmdParam</references>
@@ -511,7 +521,7 @@
         <references refid="_globals_8h_1addb922f9b475e34f177fe64dbae4642f">M_Y</references>
         <references refid="_globals_8h_1a8427584db9e552d5a9e044d9eb823a2b">M_Z</references>
         <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -539,7 +549,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="293" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="293" bodyend="312"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="293" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="293" bodyend="312"/>
         <references refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091">AlignObj</references>
         <references refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" compoundref="_globals_8cpp" startline="55">CmdStack</references>
         <references refid="_cmd_pattern_callbacks_8cpp_1a725ae5b5ae06426a9f27138daa783636" compoundref="_cmd_pattern_callbacks_8cpp" startline="47" endline="56">display_help_move</references>
@@ -548,7 +558,7 @@
         <references refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" compoundref="_cmd_parser_8cpp" startline="69" endline="93">CmdParser::getCmdParam</references>
         <references refid="_globals_8h_1aaac32a90f7fcd2672bf3384dd41f5430" compoundref="_globals_8cpp" startline="36">M_X</references>
         <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a905f26acafc5d817d3d4f2dc88bceb2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -576,13 +586,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="318" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="318" bodyend="325"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="318" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="318" bodyend="325"/>
         <references refid="_globals_8h_1a55c1560ef026f8e9b07d7a623b8cf091">AlignObj</references>
         <references refid="class_cmd_parser_1a41408f0cf3162798275b5c3afddf1924" compoundref="_cmd_parser_8hpp" startline="106" endline="122">CmdParser::equalCmdParam</references>
         <references refid="class_cmd_parser_1a49170df1a0052fa1fdb28235a488e7c6" compoundref="_cmd_parser_8cpp" startline="69" endline="93">CmdParser::getCmdParam</references>
         <references refid="_globals_8h_1a95e82af5b2e6420fd830e68a86600c76" compoundref="_globals_8cpp" startline="15">myParser</references>
         <references refid="class_firm_invoker_1a32ee0681b841f54012256169e127ef5b" compoundref="_cmd_pattern_classes_8h" startline="430" endline="432">FirmInvoker::SetOnCalibrate</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1ae3feb7f7fca30ce0a0c8dcc76eb01ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -610,10 +620,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="331" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="331" bodyend="335"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="331" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="331" bodyend="335"/>
         <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
         <references refid="_globals_8h_1a86a5e7c9ac2b0aa38a9617ba9cdbe5c6">resetObj</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1a95dfb636156bd75ec75576b2f153c6c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -641,10 +651,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="341" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="341" bodyend="345"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="341" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="341" bodyend="345"/>
         <references refid="class_i_command_1ace81beb0beea968f876f292446bf1120">ICommand::execute</references>
         <references refid="_globals_8h_1af942883b344d04a36595840bcdb6ac75">sleepObj</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       <memberdef kind="function" id="_cmd_pattern_callbacks_8cpp_1ad3e176b252ce56823333747b267ae544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -673,9 +683,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" line="351" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp" bodystart="351" bodyend="363"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" line="351" column="6" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp" bodystart="351" bodyend="363"/>
         <references refid="_globals_8h_1a7b69cdbd45d008e8f6a1ad47890d6942" compoundref="_globals_8cpp" startline="55">CmdStack</references>
-        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="11" endline="23">setup</referencedby>
+        <referencedby refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="main_8cpp" startline="15" endline="31">setup</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1018,6 +1028,6 @@
 <codeline lineno="362"><highlight class="normal"></highlight></codeline>
 <codeline lineno="363"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp"/>
   </compounddef>
 </doxygen>

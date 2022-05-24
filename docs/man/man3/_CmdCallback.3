@@ -1,4 +1,4 @@
-.TH "_CmdCallback< STORESIZE, T >" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.TH "_CmdCallback< STORESIZE, T >" 3 "Tue May 24 2022" "Version 0.2" "Firmware Design Template" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -42,6 +42,7 @@ Inherits \fBCmdCallbackObject\fP\&.
 .RI "size_t \fBm_nextElement\fP"
 .br
 .in -1c
+.SS "Additional Inherited Members"
 .SH "Detailed Description"
 .PP 
 
@@ -49,13 +50,13 @@ Inherits \fBCmdCallbackObject\fP\&.
 .br
 class _CmdCallback< STORESIZE, T >"
 .PP
-Definition at line \fB107\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB126\fP of file \fBCmdCallback\&.hpp\fP\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "template<size_t STORESIZE, typename T > \fB_CmdCallback\fP< STORESIZE, T >\fB::_CmdCallback\fP ()\fC [inline]\fP"
 Cleanup member data 
 .PP
-Definition at line \fB113\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB132\fP of file \fBCmdCallback\&.hpp\fP\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "template<size_t STORESIZE, typename T > bool \fB_CmdCallback\fP< STORESIZE, T >::addCmd (T cmdStr, \fBCmdCallFunct\fP cbFunct)\fC [inline]\fP"
@@ -75,39 +76,39 @@ TRUE if you have space in buffer of object
 .PP
 
 .PP
-Definition at line \fB126\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB145\fP of file \fBCmdCallback\&.hpp\fP\&.
 .SS "template<size_t STORESIZE, typename T > virtual bool \fB_CmdCallback\fP< STORESIZE, T >::callStoreFunct (size_t idx, \fBCmdParser\fP * cmdParser)\fC [inline]\fP, \fC [virtual]\fP"
 @implement \fBCmdCallbackObject\fP 
 .PP
 Implements \fBCmdCallbackObject\fP\&.
 .PP
-Definition at line \fB161\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB180\fP of file \fBCmdCallback\&.hpp\fP\&.
 .SS "template<size_t STORESIZE, typename T > virtual bool \fB_CmdCallback\fP< STORESIZE, T >::checkStorePos (size_t idx)\fC [inline]\fP, \fC [virtual]\fP"
 @implement \fBCmdCallbackObject\fP 
 .PP
 Implements \fBCmdCallbackObject\fP\&.
 .PP
-Definition at line \fB149\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB168\fP of file \fBCmdCallback\&.hpp\fP\&.
 .SS "template<size_t STORESIZE, typename T > virtual size_t \fB_CmdCallback\fP< STORESIZE, T >::getStoreSize ()\fC [inline]\fP, \fC [virtual]\fP"
 @implement \fBCmdCallbackObject\fP 
 .PP
 Implements \fBCmdCallbackObject\fP\&.
 .PP
-Definition at line \fB144\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB163\fP of file \fBCmdCallback\&.hpp\fP\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "template<size_t STORESIZE, typename T > T \fB_CmdCallback\fP< STORESIZE, T >::m_cmdList[STORESIZE]\fC [protected]\fP"
 Array with list of commands 
 .PP
-Definition at line \fB174\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB193\fP of file \fBCmdCallback\&.hpp\fP\&.
 .SS "template<size_t STORESIZE, typename T > \fBCmdCallFunct\fP \fB_CmdCallback\fP< STORESIZE, T >::m_functList[STORESIZE]\fC [protected]\fP"
 List of function 
 .br
  
 .PP
-Definition at line \fB177\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB196\fP of file \fBCmdCallback\&.hpp\fP\&.
 .SS "template<size_t STORESIZE, typename T > size_t \fB_CmdCallback\fP< STORESIZE, T >::m_nextElement\fC [protected]\fP"
-Pointer tof next element in array 
+Pointer to next element in array 
 .PP
 \fBSee also\fP
 .RS 4
@@ -116,7 +117,7 @@ Pointer tof next element in array
 .PP
 
 .PP
-Definition at line \fB180\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB199\fP of file \fBCmdCallback\&.hpp\fP\&.
 
 .SH "Author"
 .PP 

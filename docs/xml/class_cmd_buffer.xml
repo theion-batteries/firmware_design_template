@@ -25,7 +25,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="158" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="158" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="158" column="13" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="158" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="139" column="5" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="139" bodyend="139"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="139" column="5" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="139" bodyend="139"/>
         <references refid="class_cmd_buffer_1a57932bf7ec725e389a51d61f0d8c715c" compoundref="_cmd_buffer_8hpp" startline="144" endline="144">CmdBuffer&lt; BUFFERSIZE &gt;::clear</references>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_1a57932bf7ec725e389a51d61f0d8c715c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="144" column="18" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="144" bodyend="144"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="144" column="18" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="144" bodyend="144"/>
         <referencedby refid="class_cmd_buffer_1acbeae6c39044ecab74a6d902cfe35891" compoundref="_cmd_buffer_8hpp" startline="139" endline="139">CmdBuffer&lt; BUFFERSIZE &gt;::CmdBuffer</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_1a70a4eb39e350110c1454b0eb1d8b46b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="149" column="21" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="149" bodyend="149"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="149" column="21" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="149" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="class_cmd_buffer_1a402e04e513fe976ce73d5f3f1290421b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>size_t</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="154" column="20" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="154" bodyend="154"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="154" column="20" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="154" bodyend="154"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -129,7 +129,7 @@
         <link refid="class_cmd_buffer_object"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" line="133" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdBuffer.hpp" bodystart="134" bodyend="159"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" line="133" column="1" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdBuffer.hpp" bodystart="134" bodyend="159"/>
     <listofallmembers>
       <member refid="class_cmd_buffer_1a57932bf7ec725e389a51d61f0d8c715c" prot="public" virt="virtual"><scope>CmdBuffer</scope><name>clear</name></member>
       <member refid="class_cmd_buffer_1acbeae6c39044ecab74a6d902cfe35891" prot="public" virt="non-virtual"><scope>CmdBuffer</scope><name>CmdBuffer</name></member>

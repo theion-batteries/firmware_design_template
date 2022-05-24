@@ -1,23 +1,25 @@
 <map id="setup" name="setup">
-<area shape="rect" id="node1" title=" " alt="" coords="5,284,60,311"/>
-<area shape="rect" id="node2" href="$_cmd_pattern_callbacks_8cpp.html#a905f26acafc5d817d3d4f2dc88bceb2a" title="calibrate cmd using invoker" alt="" coords="108,56,211,83"/>
-<area shape="rect" id="node6" href="$_cmd_pattern_callbacks_8cpp.html#a8f0b63bf650a5ceefc36d7e3bcb02f63" title="display help" alt="" coords="307,664,401,691"/>
-<area shape="rect" id="node7" href="$_cmd_pattern_callbacks_8cpp.html#aa0a1bd035c01b447c32e0a9e128c7611" title="callback cmd" alt="" coords="123,208,195,235"/>
-<area shape="rect" id="node9" href="$_cmd_pattern_callbacks_8cpp.html#ad2b16cf5e3d9d45db6380d3731c3211f" title="display help" alt="" coords="124,436,195,463"/>
-<area shape="rect" id="node16" href="$_cmd_pattern_callbacks_8cpp.html#ac82a0068988fe425288370e121b04f00" title="callback cmd" alt="" coords="117,107,201,133"/>
-<area shape="rect" id="node17" href="$_cmd_pattern_callbacks_8cpp.html#ae3feb7f7fca30ce0a0c8dcc76eb01ff9" title="reset device" alt="" coords="118,309,201,336"/>
-<area shape="rect" id="node18" href="$_cmd_pattern_callbacks_8cpp.html#a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" title="callback cmd" alt="" coords="116,360,203,387"/>
-<area shape="rect" id="node19" href="$_cmd_pattern_callbacks_8cpp.html#adcae3b60a9fcfef183dd0b91967e2ad6" title="callback cmd" alt="" coords="123,157,195,184"/>
-<area shape="rect" id="node20" href="$_cmd_pattern_callbacks_8cpp.html#a95dfb636156bd75ec75576b2f153c6c6" title="reset device" alt="" coords="117,259,202,285"/>
-<area shape="rect" id="node21" href="$_cmd_pattern_callbacks_8cpp.html#ad3e176b252ce56823333747b267ae544" title="undo last command by calling undo();, then remove it from stack" alt="" coords="118,537,201,564"/>
-<area shape="rect" id="node3" href="$class_cmd_parser.html#a41408f0cf3162798275b5c3afddf1924" title=" " alt="" coords="259,208,449,235"/>
-<area shape="rect" id="node4" href="$class_cmd_parser.html#a49170df1a0052fa1fdb28235a488e7c6" title=" " alt="" coords="497,157,676,184"/>
-<area shape="rect" id="node5" href="$class_firm_invoker.html#a32ee0681b841f54012256169e127ef5b" title=" " alt="" coords="262,5,446,32"/>
-<area shape="rect" id="node8" href="$class_i_command.html#ace81beb0beea968f876f292446bf1120" title=" " alt="" coords="285,259,423,285"/>
-<area shape="rect" id="node10" href="$_cmd_pattern_callbacks_8cpp.html#a0fa0bac0fc88513dfcaf50196a39a343" title="display help" alt="" coords="295,512,413,539"/>
-<area shape="rect" id="node11" href="$_cmd_pattern_callbacks_8cpp.html#a725ae5b5ae06426a9f27138daa783636" title="display help" alt="" coords="289,360,419,387"/>
-<area shape="rect" id="node12" href="$_cmd_pattern_callbacks_8cpp.html#a9a90720f58d890625079877d0d339317" title="display help" alt="" coords="289,563,419,589"/>
-<area shape="rect" id="node13" href="$_cmd_pattern_callbacks_8cpp.html#aa909d685f344dc2e637fb84957bc58ec" title="display help" alt="" coords="295,613,413,640"/>
-<area shape="rect" id="node14" href="$_cmd_pattern_callbacks_8cpp.html#a4b7748cf9cf0108de662b41851d97878" title="display help" alt="" coords="288,411,420,437"/>
-<area shape="rect" id="node15" href="$_cmd_pattern_callbacks_8cpp.html#a427d067ebe73ddf2cb51ba4fd05d3375" title="display help" alt="" coords="289,461,419,488"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,335,60,361"/>
+<area shape="rect" id="node2" href="$_cmd_pattern_callbacks_8cpp.html#a905f26acafc5d817d3d4f2dc88bceb2a" title="calibrate cmd using invoker" alt="" coords="132,56,235,83"/>
+<area shape="rect" id="node6" href="$_cmd_pattern_callbacks_8cpp.html#a8f0b63bf650a5ceefc36d7e3bcb02f63" title="display help" alt="" coords="355,664,449,691"/>
+<area shape="rect" id="node7" href="$_cmd_pattern_callbacks_8cpp.html#aa0a1bd035c01b447c32e0a9e128c7611" title="callback cmd" alt="" coords="147,208,219,235"/>
+<area shape="rect" id="node9" href="$_cmd_pattern_callbacks_8cpp.html#ad2b16cf5e3d9d45db6380d3731c3211f" title="display help" alt="" coords="148,411,219,437"/>
+<area shape="rect" id="node16" href="$class_com_manager.html#ae27b81aca4e2b98138ba79c58bd3bfe4" title=" " alt="" coords="108,512,259,539"/>
+<area shape="rect" id="node17" href="$_cmd_pattern_callbacks_8cpp.html#ac82a0068988fe425288370e121b04f00" title="callback cmd" alt="" coords="141,107,225,133"/>
+<area shape="rect" id="node18" href="$_globals_8cpp.html#ac6568f5dfdc418a26f1a80513cd18d7e" title=" " alt="" coords="109,563,258,589"/>
+<area shape="rect" id="node19" href="$_cmd_pattern_callbacks_8cpp.html#ae3feb7f7fca30ce0a0c8dcc76eb01ff9" title="reset device" alt="" coords="142,309,225,336"/>
+<area shape="rect" id="node20" href="$_cmd_pattern_callbacks_8cpp.html#a3d3ec91c1ee0b0c2a2e47d99fcbd6b61" title="callback cmd" alt="" coords="140,360,227,387"/>
+<area shape="rect" id="node21" href="$_cmd_pattern_callbacks_8cpp.html#adcae3b60a9fcfef183dd0b91967e2ad6" title="callback cmd" alt="" coords="147,157,219,184"/>
+<area shape="rect" id="node22" href="$_cmd_pattern_callbacks_8cpp.html#a95dfb636156bd75ec75576b2f153c6c6" title="reset device" alt="" coords="141,259,226,285"/>
+<area shape="rect" id="node23" href="$_cmd_pattern_callbacks_8cpp.html#ad3e176b252ce56823333747b267ae544" title="undo last command by calling undo();, then remove it from stack" alt="" coords="142,613,225,640"/>
+<area shape="rect" id="node3" href="$class_cmd_parser.html#a41408f0cf3162798275b5c3afddf1924" title=" " alt="" coords="307,208,497,235"/>
+<area shape="rect" id="node4" href="$class_cmd_parser.html#a49170df1a0052fa1fdb28235a488e7c6" title=" " alt="" coords="545,157,724,184"/>
+<area shape="rect" id="node5" href="$class_firm_invoker.html#a32ee0681b841f54012256169e127ef5b" title=" " alt="" coords="310,5,494,32"/>
+<area shape="rect" id="node8" href="$class_i_command.html#ace81beb0beea968f876f292446bf1120" title=" " alt="" coords="333,259,471,285"/>
+<area shape="rect" id="node10" href="$_cmd_pattern_callbacks_8cpp.html#a0fa0bac0fc88513dfcaf50196a39a343" title="display help" alt="" coords="343,512,461,539"/>
+<area shape="rect" id="node11" href="$_cmd_pattern_callbacks_8cpp.html#a725ae5b5ae06426a9f27138daa783636" title="display help" alt="" coords="337,360,467,387"/>
+<area shape="rect" id="node12" href="$_cmd_pattern_callbacks_8cpp.html#a9a90720f58d890625079877d0d339317" title="display help" alt="" coords="337,563,467,589"/>
+<area shape="rect" id="node13" href="$_cmd_pattern_callbacks_8cpp.html#aa909d685f344dc2e637fb84957bc58ec" title="display help" alt="" coords="343,613,461,640"/>
+<area shape="rect" id="node14" href="$_cmd_pattern_callbacks_8cpp.html#a4b7748cf9cf0108de662b41851d97878" title="display help" alt="" coords="336,411,468,437"/>
+<area shape="rect" id="node15" href="$_cmd_pattern_callbacks_8cpp.html#a427d067ebe73ddf2cb51ba4fd05d3375" title="display help" alt="" coords="337,461,467,488"/>
 </map>

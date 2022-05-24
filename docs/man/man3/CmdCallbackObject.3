@@ -1,4 +1,4 @@
-.TH "CmdCallbackObject" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.TH "CmdCallbackObject" 3 "Tue May 24 2022" "Version 0.2" "Firmware Design Template" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -13,6 +13,22 @@ Inherited by \fB_CmdCallback< STORESIZE, CmdParserString >\fP, and \fB_CmdCallba
 .SS "Public Member Functions"
 
 .in +1c
+.ti -1c
+.RI "Thread * \fBgetInternalThread\fP () const"
+.br
+.ti -1c
+.RI "ThreadController * \fBgetInternalScheduler\fP () const"
+.br
+.ti -1c
+.RI "void \fBcreateThreadForCmd\fP (\fBCmdParser\fP *cmdParser)"
+.br
+.ti -1c
+.RI "void \fBprocessCmdVoid\fP (\fBCmdParser\fP *cmdParser)"
+.br
+.ti -1c
+.RI "void * \fBthreadCallback\fP (size_t idx, \fBCmdParser\fP *cmdParser)"
+.br
+.RI "internal thread callback "
 .ti -1c
 .RI "void \fBloopCmdProcessing\fP (\fBCmdParser\fP *cmdParser, \fBCmdBufferObject\fP *cmdBuffer, Stream *serial)"
 .br
@@ -41,9 +57,19 @@ Inherited by \fB_CmdCallback< STORESIZE, CmdParserString >\fP, and \fB_CmdCallba
 .RI "virtual bool \fBcallStoreFunct\fP (size_t idx, \fBCmdParser\fP *cmdParser)=0"
 .br
 .in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "size_t \fBcurrent_idx\fP"
+.br
+.ti -1c
+.RI "bool \fBCmdreadyForExecution\fP = false"
+.br
+.in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line \fB28\fP of file \fBCmdCallback\&.hpp\fP\&.
+Definition at line \fB27\fP of file \fBCmdCallback\&.hpp\fP\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "virtual bool CmdCallbackObject::callStoreFunct (size_t idx, \fBCmdParser\fP * cmdParser)\fC [pure virtual]\fP"
@@ -83,6 +109,10 @@ TRUE if valid or FALSE
 
 .PP
 Implemented in \fB_CmdCallback< STORESIZE, T >\fP, and \fB_CmdCallback< STORESIZE, CmdParserString >\fP\&.
+.SS "void CmdCallbackObject::createThreadForCmd (\fBCmdParser\fP * cmdParser)"
+
+.PP
+Definition at line \fB15\fP of file \fBCmdCallback\&.cpp\fP\&.
 .SS "virtual bool CmdCallbackObject::equalStoreCmd (size_t idx, char * cmdStr)\fC [pure virtual]\fP"
 Check if the cmd string equal to cmd in store\&. Please check idx with 
 .PP
@@ -104,6 +134,14 @@ TRUE is equal
 .RE
 .PP
 
+.SS "ThreadController * CmdCallbackObject::getInternalScheduler () const"
+
+.PP
+Definition at line \fB11\fP of file \fBCmdCallback\&.cpp\fP\&.
+.SS "Thread * CmdCallbackObject::getInternalThread () const"
+
+.PP
+Definition at line \fB8\fP of file \fBCmdCallback\&.cpp\fP\&.
 .SS "virtual size_t CmdCallbackObject::getStoreSize ()\fC [pure virtual]\fP"
 Give the size of callback store\&.
 .PP
@@ -130,7 +168,7 @@ TRUE if found the command in the buffer
 .PP
 
 .PP
-Definition at line \fB82\fP of file \fBCmdCallback\&.cpp\fP\&.
+Definition at line \fB122\fP of file \fBCmdCallback\&.cpp\fP\&.
 .SS "void CmdCallbackObject::loopCmdProcessing (\fBCmdParser\fP * cmdParser, \fBCmdBufferObject\fP * cmdBuffer, Stream * serial)"
 Endless loop for process incoming data from serial\&.
 .PP
@@ -145,7 +183,7 @@ Endless loop for process incoming data from serial\&.
 .PP
 
 .PP
-Definition at line \fB9\fP of file \fBCmdCallback\&.cpp\fP\&.
+Definition at line \fB27\fP of file \fBCmdCallback\&.cpp\fP\&.
 .SS "bool CmdCallbackObject::processCmd (\fBCmdParser\fP * cmdParser)\fC [virtual]\fP"
 Search command in the buffer and execute the callback function\&.
 .PP
@@ -161,11 +199,35 @@ TRUE if found the command in the buffer
 .PP
 
 .PP
-Definition at line \fB26\fP of file \fBCmdCallback\&.cpp\fP\&.
+Definition at line \fB44\fP of file \fBCmdCallback\&.cpp\fP\&.
+.SS "void CmdCallbackObject::processCmdVoid (\fBCmdParser\fP * cmdParser)"
+
+.PP
+Definition at line \fB65\fP of file \fBCmdCallback\&.cpp\fP\&.
 .SS "bool CmdCallbackObject::runCmd (char * cmdStr, \fBCmdParser\fP * cmdParser)"
 
 .PP
-Definition at line \fB47\fP of file \fBCmdCallback\&.cpp\fP\&.
+Definition at line \fB86\fP of file \fBCmdCallback\&.cpp\fP\&.
+.SS "void * CmdCallbackObject::threadCallback (size_t idx, \fBCmdParser\fP * cmdParser)"
+
+.PP
+internal thread callback 
+.PP
+\fBParameters\fP
+.RS 4
+\fIcmdParser\fP 
+.br
+\fI\fBCmdBuffer\fP\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void* 
+.RE
+.PP
+
+.PP
+Definition at line \fB21\fP of file \fBCmdCallback\&.cpp\fP\&.
 .SS "void CmdCallbackObject::updateCmdProcessing (\fBCmdParser\fP * cmdParser, \fBCmdBufferObject\fP * cmdBuffer, Stream * serial)"
 Check for single new char on serial and if it was the endChar
 .PP
@@ -180,7 +242,17 @@ Check for single new char on serial and if it was the endChar
 .PP
 
 .PP
-Definition at line \fB66\fP of file \fBCmdCallback\&.cpp\fP\&.
+Definition at line \fB105\fP of file \fBCmdCallback\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool CmdCallbackObject::CmdreadyForExecution = false"
+
+.PP
+Definition at line \fB36\fP of file \fBCmdCallback\&.hpp\fP\&.
+.SS "size_t CmdCallbackObject::current_idx"
+
+.PP
+Definition at line \fB35\fP of file \fBCmdCallback\&.hpp\fP\&.
 
 .SH "Author"
 .PP 

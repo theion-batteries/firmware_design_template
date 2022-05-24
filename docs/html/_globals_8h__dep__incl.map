@@ -1,9 +1,9 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" name="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h">
-<area shape="rect" id="node1" title="include declarations for commands classes" alt="" coords="387,5,586,61"/>
-<area shape="rect" id="node2" href="$_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="221,109,493,165"/>
-<area shape="rect" id="node7" href="$_globals_8cpp.html" title=" " alt="" coords="518,109,717,165"/>
-<area shape="rect" id="node3" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="107,213,338,269"/>
-<area shape="rect" id="node6" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,213,625,269"/>
-<area shape="rect" id="node4" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,317,213,373"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="238,317,437,373"/>
+<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h">
+<area shape="rect" id="node1" title="include declarations for commands classes" alt="" coords="387,5,556,76"/>
+<area shape="rect" id="node2" href="$_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="277,124,447,195"/>
+<area shape="rect" id="node7" href="$_globals_8cpp.html" title=" " alt="" coords="471,131,690,187"/>
+<area shape="rect" id="node3" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="168,243,337,313"/>
+<area shape="rect" id="node6" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,243,581,313"/>
+<area shape="rect" id="node4" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,361,252,417"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="launch main scheduler" alt="" coords="277,361,479,417"/>
 </map>

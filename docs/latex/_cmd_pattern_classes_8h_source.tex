@@ -1,5 +1,5 @@
 \hypertarget{_cmd_pattern_classes_8h_source}{}\doxysection{Cmd\+Pattern\+Classes.\+h}
-\label{_cmd_pattern_classes_8h_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/CmdPatternClasses.h@{C:/Users/SamiDhiab/Theion\_Repos/firm\_Alignment\_PrintHead/include/CmdPatternClasses.h}}
+\label{_cmd_pattern_classes_8h_source}\index{C:/Users/SamiDhiab/Theion\_Repos/firmware\_design\_template/include/CmdPatternClasses.h@{C:/Users/SamiDhiab/Theion\_Repos/firmware\_design\_template/include/CmdPatternClasses.h}}
 \mbox{\hyperlink{_cmd_pattern_classes_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00001}00001 }
@@ -243,7 +243,7 @@
 \DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00248}\mbox{\hyperlink{class_move_motor_up_cmd_addb4d2ca78ee434a014f1fb99e560bc0}{00248}}   \mbox{\hyperlink{class_move_motor_up_cmd_addb4d2ca78ee434a014f1fb99e560bc0}{MoveMotorUpCmd}}(\mbox{\hyperlink{class_nema8}{Nema8}}\& motor, \mbox{\hyperlink{class_alignment}{Alignment}}\& AL, \textcolor{keywordtype}{float} val) :M(motor), Al(AL), val(val)\{\}}
 \DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00249}\mbox{\hyperlink{class_move_motor_up_cmd_abe4d84e2c2bd89bf875820aa96f7acb0}{00249}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_move_motor_up_cmd_abe4d84e2c2bd89bf875820aa96f7acb0}{execute}}() \{}
 \DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00250}00250     Serial.println( \textcolor{stringliteral}{"{}execute move up"{}}); }
-\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00251}00251     Al.\mbox{\hyperlink{class_alignment_ab7e9da9ded962b937b7df23e116f3b0e}{MoveDistanceMSafe}}(\&M, \mbox{\hyperlink{_configs_8h_a0337592b74197133c4203f6dce657a76}{up}}, val);}
+\DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00251}00251     Al.\mbox{\hyperlink{class_alignment_ab7e9da9ded962b937b7df23e116f3b0e}{MoveDistanceMSafe}}(\&M, \mbox{\hyperlink{_configs_8h_a0337592b74197133c4203f6dce657a76}{up}}, val);    }
 \DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00252}00252     \textcolor{comment}{// move down by same distance is the undo cmd}}
 \DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00253}00253     \}}
 \DoxyCodeLine{\Hypertarget{_cmd_pattern_classes_8h_source_l00254}\mbox{\hyperlink{class_move_motor_up_cmd_a592fda0f55d367d5be29244036034b6b}{00254}}   \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_move_motor_up_cmd_a592fda0f55d367d5be29244036034b6b}{undo}}() \{}

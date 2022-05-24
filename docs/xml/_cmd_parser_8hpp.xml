@@ -4,9 +4,9 @@
     <compoundname>CmdParser.hpp</compoundname>
     <includes local="no">ctype.h</includes>
     <includes refid="_cmd_buffer_8hpp" local="yes">CmdBuffer.hpp</includes>
-    <includedby refid="_cmd_callback_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp</includedby>
-    <includedby refid="_globals_8h" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</includedby>
-    <includedby refid="_cmd_parser_8cpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdParser.cpp</includedby>
+    <includedby refid="_cmd_callback_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdCallback.hpp</includedby>
+    <includedby refid="_globals_8h" local="yes">C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h</includedby>
+    <includedby refid="_cmd_parser_8cpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdParser.cpp</includedby>
     <incdepgraph>
       <node id="4">
         <label>ArduinoSTL.h</label>
@@ -22,7 +22,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp</label>
         <link refid="_cmd_parser_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -41,7 +41,7 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdCallback.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdCallback.hpp</label>
         <link refid="_cmd_callback_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -49,7 +49,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp</label>
         <link refid="_cmd_parser_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -59,7 +59,7 @@
         </childnode>
       </node>
       <node id="4">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternCallbacks.h</label>
         <link refid="_cmd_pattern_callbacks_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
@@ -67,7 +67,7 @@
         </childnode>
       </node>
       <node id="5">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp</label>
         <link refid="_com_handler_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
@@ -75,7 +75,7 @@
         </childnode>
       </node>
       <node id="3">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h</label>
         <link refid="_globals_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
@@ -83,27 +83,27 @@
         </childnode>
       </node>
       <node id="10">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdCallback.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdCallback.cpp</label>
         <link refid="_cmd_callback_8cpp"/>
       </node>
       <node id="11">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdParser.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdParser.cpp</label>
         <link refid="_cmd_parser_8cpp"/>
       </node>
       <node id="8">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp</label>
         <link refid="_cmd_pattern_callbacks_8cpp"/>
       </node>
       <node id="6">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/ComHandler.cpp</label>
         <link refid="_com_handler_8cpp"/>
       </node>
       <node id="9">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp</label>
         <link refid="_globals_8cpp"/>
       </node>
       <node id="7">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="28" column="20" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="28" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="28" column="20" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="20" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="20" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="20" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="_cmd_parser_8hpp_1a3d8e1545a55d983629b4b23d00b88c1c" prot="public" static="no" mutable="no">
         <type>const uint8_t</type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="21" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="21" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="21" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="21" bodyend="-1"/>
         <referencedby refid="class_cmd_parser_1a5df6c3bc15c7d508ec449992f83b3bb0" compoundref="_cmd_parser_8cpp" startline="19" endline="67">CmdParser::parseCmd</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_cmd_parser_8hpp_1a293a7e2fc54bbfec5b0e8da10ec9a7fc" prot="public" static="no" mutable="no">
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="22" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="22" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="22" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="22" bodyend="-1"/>
         <referencedby refid="class_cmd_parser_1a5df6c3bc15c7d508ec449992f83b3bb0" compoundref="_cmd_parser_8cpp" startline="19" endline="67">CmdParser::parseCmd</referencedby>
       </memberdef>
       <memberdef kind="variable" id="_cmd_parser_8hpp_1aa84115565fbd5d676715b34f14228b26" prot="public" static="no" mutable="no">
@@ -180,10 +180,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" line="23" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp" bodystart="23" bodyend="-1"/>
-        <referencedby refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" compoundref="_cmd_callback_8cpp" startline="9" endline="24">CmdCallbackObject::loopCmdProcessing</referencedby>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" line="23" column="16" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_cmd_callback_object_1ac8aa1ceb9d593be1c562acd8a77b0994" compoundref="_cmd_callback_8cpp" startline="27" endline="42">CmdCallbackObject::loopCmdProcessing</referencedby>
         <referencedby refid="class_cmd_parser_1a5df6c3bc15c7d508ec449992f83b3bb0" compoundref="_cmd_parser_8cpp" startline="19" endline="67">CmdParser::parseCmd</referencedby>
-        <referencedby refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" compoundref="_cmd_callback_8cpp" startline="66" endline="80">CmdCallbackObject::updateCmdProcessing</referencedby>
+        <referencedby refid="class_cmd_callback_object_1a6793737c5d0ecf1fb9e3a9dd48a38d41" compoundref="_cmd_callback_8cpp" startline="105" endline="120">CmdCallbackObject::updateCmdProcessing</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -376,6 +376,6 @@
 <codeline lineno="291"><highlight class="normal"></highlight></codeline>
 <codeline lineno="292"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdParser.hpp"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdParser.hpp"/>
   </compounddef>
 </doxygen>

@@ -1,4 +1,4 @@
-.TH "Alignment" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.TH "Alignment" 3 "Tue May 24 2022" "Version 0.2" "Firmware Design Template" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -470,7 +470,7 @@ retVal
 .PP
 TODO_:Better for loop for each Motor
 .PP
-Definition at line \fB1278\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1282\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::calibratePrintHead ()"
 calibrate Print Head based on target distance @algorithm: get distance to ML on every Axis (X,Y,Z), move axis in respect to target distance to printhead ( deduced from another fucntion) until target distance is same on all axis 
 .PP
@@ -481,47 +481,47 @@ retVal
 .PP
 
 .PP
-Definition at line \fB558\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB562\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::CheckBoundaryX (float targetDistance, int direction)"
 
 .PP
-Definition at line \fB1782\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1786\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::checkLimitDownX ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB380\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB384\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::checkLimitDownXYZ ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB395\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB399\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::checkLimitDownY ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB385\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB389\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::checkLimitDownZ ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB390\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB394\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::checkLimitUpX ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB359\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB363\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::checkLimitUpXYZ ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB374\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB378\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::checkLimitUpY ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB364\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB368\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::checkLimitUpZ ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB369\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB373\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "int Alignment::convertAngleToStep (float angle)"
 
 .PP
-Definition at line \fB410\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB414\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "int Alignment::ConvertDistanceToStep (float distance)"
 
 .PP
@@ -539,75 +539,75 @@ int
 .PP
 
 .PP
-Definition at line \fB1813\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1817\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "int Alignment::convertDistanceToStepMicros (float distance)"
 
 .PP
-Definition at line \fB406\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB410\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::DisableAll (bool enable = \fC\fBoff\fP\fP)"
 
 .PP
-Definition at line \fB1192\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1196\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::EnableAll (bool enable = \fC\fBon\fP\fP)"
 
 .PP
-Definition at line \fB1185\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1189\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getCurrentPosX ()"
 
 .PP
-Definition at line \fB1766\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1770\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getCurrentPosY ()"
 
 .PP
-Definition at line \fB1771\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1775\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getCurrentPosZ ()"
 
 .PP
-Definition at line \fB1776\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1780\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getDistancePlatformToMlX ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB453\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB457\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getDistancePlatformToMlXYZ ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB465\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB469\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getDistancePlatformToMlY ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB457\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB461\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getDistancePlatformToMlZ ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB461\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB465\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getDistancePrintHeadToMl ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB415\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB419\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getDistancePrintHeadToMlX ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB425\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB429\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getDistancePrintHeadToMlY ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB434\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB438\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getDistancePrintHeadToMlZ ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB443\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB447\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getMaxX ()"
 
 .PP
-Definition at line \fB1746\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1750\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getMaxY ()"
 
 .PP
-Definition at line \fB1752\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1756\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getMaxZ ()"
 
 .PP
-Definition at line \fB1758\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1762\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getMinX ()"
 
 .PP
@@ -620,47 +620,47 @@ float
 .PP
 
 .PP
-Definition at line \fB1725\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1729\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getMinY ()"
 
 .PP
-Definition at line \fB1732\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1736\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getMinZ ()"
 
 .PP
-Definition at line \fB1739\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1743\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::getReadingEndstopX ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB332\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB336\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::getReadingEndstopY ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB336\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB340\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::getReadingEndstopZ ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB340\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB344\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::getReadingLightBarrierX ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB345\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB349\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::getReadingLightBarrierY ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB349\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB353\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "bool Alignment::getReadingLightBarrierZ ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB353\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB357\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getRemainingDistanceX ()"
 
 .PP
-Definition at line \fB1713\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1717\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getRemainingDistanceY ()"
 
 .PP
-Definition at line \fB1706\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1710\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "float Alignment::getRemainingDistanceZ ()"
 
 .PP
@@ -673,31 +673,31 @@ float
 .PP
 
 .PP
-Definition at line \fB1698\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1702\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "double Alignment::getValueSensorX ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB319\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB323\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "double Alignment::getValueSensorY ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB323\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB327\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "double Alignment::getValueSensorZ ()\fC [inline]\fP"
 
 .PP
-Definition at line \fB327\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB331\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::GoToReferenceDown ()"
 
 .PP
-Definition at line \fB402\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB406\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::GoToReferenceUp ()"
 go to ref up
 .PP
-Definition at line \fB469\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB473\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "void Alignment::incrementTotalStepCounted ()"
 
 .PP
-Definition at line \fB542\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB546\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::InitAlign (bool enable = \fC\fBon\fP\fP)"
 
 .PP
@@ -710,57 +710,57 @@ retVal
 .PP
 
 .PP
-Definition at line \fB1178\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1182\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "void Alignment::initFirmwareUnit ()"
 
 .PP
-Definition at line \fB142\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB146\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::initSensors ()"
 
 .SS "bool Alignment::isStopButtonPressed ()"
 
 .PP
-Definition at line \fB136\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB140\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveAngleAll (int direction, float angle)"
 
 .PP
-Definition at line \fB310\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB314\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveAngleAllSafe (int direction, float Angle)"
 
 .PP
-Definition at line \fB879\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB883\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveAngleX (int direction, float angle)"
 
 .PP
-Definition at line \fB262\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB266\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveAngleXSafe (int direction, float Angle)"
 
 .PP
-Definition at line \fB804\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB808\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveAngleY (int direction, float angle)"
 
 .PP
-Definition at line \fB278\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB282\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveAngleYSafe (int direction, float Angle)"
 
 .PP
-Definition at line \fB829\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB833\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveAngleZ (int direction, float angle)"
 
 .PP
-Definition at line \fB294\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB298\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveAngleZSafe (int direction, float Angle)"
 
 .PP
-Definition at line \fB854\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB858\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceAll (int direction, float distance)"
 
 .PP
-Definition at line \fB253\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB257\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceAllSafe (int direction, float distance)"
 
 .PP
-Definition at line \fB774\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB778\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceMSafe (\fBNema8\fP * Mref, int direction, float distance)"
 
 .PP
@@ -768,7 +768,7 @@ Definition at line \fB72\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceX (int direction, float distance)\fC [inline]\fP"
 
 .PP
-Definition at line \fB177\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB181\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceXloop (int direction, float distance)"
 
 .PP
@@ -776,39 +776,39 @@ Definition at line \fB79\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceXSafe (int direction, float distance)"
 
 .PP
-Definition at line \fB701\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB705\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceY (int direction, float distance)"
 
 .PP
-Definition at line \fB203\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB207\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceYloop (int direction, float distance)"
 
 .PP
-Definition at line \fB93\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB94\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceYSafe (int direction, float distance)"
 
 .PP
-Definition at line \fB724\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB728\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceZ (int direction, float distance)"
 
 .PP
-Definition at line \fB228\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB232\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceZloop (int direction, float distance)"
 
 .PP
-Definition at line \fB107\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB109\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDistanceZSafe (int direction, float distance)"
 
 .PP
-Definition at line \fB749\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB753\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDown (bool x = \fCtrue\fP, bool y = \fCtrue\fP, bool z = \fCtrue\fP, bool checkLimit = \fCfalse\fP)"
 
 .PP
-Definition at line \fB1457\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1461\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveDownTo (bool x = \fCtrue\fP, bool y = \fCtrue\fP, bool z = \fCtrue\fP, bool checkLimit = \fCfalse\fP, float distance = \fC0\fP)"
 
 .PP
-Definition at line \fB1615\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1619\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveHomeAll ()"
 
 .PP
@@ -821,39 +821,39 @@ retVal
 .PP
 : move all motor down to ref
 .PP
-Definition at line \fB1204\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1208\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::movePhToRefX ()"
 
 .PP
-Definition at line \fB945\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB949\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveUp (bool x = \fCtrue\fP, bool y = \fCtrue\fP, bool z = \fCtrue\fP, bool checkLimit = \fCfalse\fP)"
 
 .PP
-Definition at line \fB1380\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1384\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::MoveUpTo (bool x = \fCtrue\fP, bool y = \fCtrue\fP, bool z = \fCtrue\fP, bool checkLimit = \fCfalse\fP, float distance = \fC0\fP)"
 
 .PP
-Definition at line \fB1538\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1542\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::oscillateSys (float desired_angle, int num_revolutions, bool default_sens = \fC\fBclk\fP\fP, bool reverse_sense = \fCtrue\fP)"
 
 .PP
-Definition at line \fB967\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB971\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "void Alignment::resetStepCounter ()"
 
 .PP
-Definition at line \fB550\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB554\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::rotateAnglePH (int direction, float Angle)"
 
 .PP
-Definition at line \fB920\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB924\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::RotateAnglePHloop (\fBNema8\fP * Mref, int direction, float angle)"
 
 .PP
-Definition at line \fB121\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB124\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::rotateFullRevPH (int direction)"
 
 .PP
-Definition at line \fB916\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB920\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::setTargetDistancePHToML (float distance)"
 
 .PP
@@ -871,51 +871,51 @@ retVal
 .PP
 
 .PP
-Definition at line \fB1821\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1825\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::setTargetDistanceSensorToML (float distance)"
 
 .PP
-Definition at line \fB1829\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB1833\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::StepDownXMax ()"
 
 .PP
-Definition at line \fB658\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB662\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::StepDownYMax ()"
 
 .PP
-Definition at line \fB665\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB669\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::StepDownZMax ()"
 
 .PP
-Definition at line \fB672\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB676\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::StepOncePH (int direction)"
 
 .PP
-Definition at line \fB910\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB914\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::StepOnceX (int direction)\fC [inline]\fP"
 
 .PP
-Definition at line \fB159\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB163\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::StepOnceY (int direction)\fC [inline]\fP"
 
 .PP
-Definition at line \fB165\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB169\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::StepOnceZ (int direction)\fC [inline]\fP"
 
 .PP
-Definition at line \fB171\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB175\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::StepUpXMax ()"
 
 .PP
-Definition at line \fB679\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB683\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::StepUpYMax ()"
 
 .PP
-Definition at line \fB686\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB690\fP of file \fBAlignment\&.cpp\fP\&.
 .SS "\fBretVal\fP Alignment::StepUpZMax ()"
 
 .PP
-Definition at line \fB693\fP of file \fBAlignment\&.cpp\fP\&.
+Definition at line \fB697\fP of file \fBAlignment\&.cpp\fP\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "bool Alignment::aligned = false"

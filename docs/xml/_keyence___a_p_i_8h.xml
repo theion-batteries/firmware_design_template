@@ -5,8 +5,8 @@
     <includes local="no">ArduinoSTL.h</includes>
     <includes local="no">map</includes>
     <includes refid="_configs_8h" local="yes">Configs.h</includes>
-    <includedby refid="_distance_sensor_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp</includedby>
-    <includedby refid="_keyence___a_p_i_8cpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp</includedby>
+    <includedby refid="_distance_sensor_8hpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp</includedby>
+    <includedby refid="_keyence___a_p_i_8cpp" local="yes">C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp</includedby>
     <incdepgraph>
       <node id="2">
         <label>ArduinoSTL.h</label>
@@ -18,7 +18,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h</label>
         <link refid="_keyence___a_p_i_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -33,7 +33,7 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="3">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Alignment.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Alignment.hpp</label>
         <link refid="_alignment_8hpp"/>
         <childnode refid="4" relation="include">
         </childnode>
@@ -41,7 +41,7 @@
         </childnode>
       </node>
       <node id="6">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternCallbacks.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternCallbacks.h</label>
         <link refid="_cmd_pattern_callbacks_8h"/>
         <childnode refid="7" relation="include">
         </childnode>
@@ -49,13 +49,13 @@
         </childnode>
       </node>
       <node id="4">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/CmdPatternClasses.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/CmdPatternClasses.h</label>
         <link refid="_cmd_pattern_classes_8h"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="7">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/ComHandler.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp</label>
         <link refid="_com_handler_8hpp"/>
         <childnode refid="8" relation="include">
         </childnode>
@@ -63,7 +63,7 @@
         </childnode>
       </node>
       <node id="2">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/DistanceSensor.hpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DistanceSensor.hpp</label>
         <link refid="_distance_sensor_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
@@ -71,7 +71,7 @@
         </childnode>
       </node>
       <node id="5">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h</label>
         <link refid="_globals_8h"/>
         <childnode refid="6" relation="include">
         </childnode>
@@ -79,7 +79,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h</label>
         <link refid="_keyence___a_p_i_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -87,31 +87,31 @@
         </childnode>
       </node>
       <node id="12">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Alignment.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Alignment.cpp</label>
         <link refid="_alignment_8cpp"/>
       </node>
       <node id="10">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/CmdPatternCallbacks.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/CmdPatternCallbacks.cpp</label>
         <link refid="_cmd_pattern_callbacks_8cpp"/>
       </node>
       <node id="8">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/ComHandler.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/ComHandler.cpp</label>
         <link refid="_com_handler_8cpp"/>
       </node>
       <node id="13">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/DistanceSensor.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/DistanceSensor.cpp</label>
         <link refid="_distance_sensor_8cpp"/>
       </node>
       <node id="11">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Globals.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Globals.cpp</label>
         <link refid="_globals_8cpp"/>
       </node>
       <node id="14">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/Keyence_API.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/Keyence_API.cpp</label>
         <link refid="_keyence___a_p_i_8cpp"/>
       </node>
       <node id="9">
-        <label>C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/src/main.cpp</label>
+        <label>C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/src/main.cpp</label>
         <link refid="main_8cpp"/>
       </node>
     </invincdepgraph>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="22" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" bodystart="22" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="22" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="_keyence___a_p_i_8h_1a350c9d6cb81908d59427ee96844d1a9c" prot="public" static="no">
         <name>LF</name>
@@ -139,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" line="23" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h" bodystart="23" bodyend="-1"/>
+        <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" line="23" column="9" bodyfile="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -324,6 +324,6 @@
 <codeline lineno="174"><highlight class="normal"></highlight></codeline>
 <codeline lineno="175"><highlight class="normal">};</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Keyence_API.h"/>
+    <location file="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h"/>
   </compounddef>
 </doxygen>

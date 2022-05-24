@@ -1,6 +1,8 @@
 var _globals_8h =
 [
     [ "MotorGetCmdHandler", "class_motor_get_cmd_handler.html", null ],
+    [ "BackgroundThreadCallback", "_globals_8h.html#a7bb396aa99b014129d46b51d1f135c5a", null ],
+    [ "ParserThreadCallback", "_globals_8h.html#ac6568f5dfdc418a26f1a80513cd18d7e", null ],
     [ "AlignId", "_globals_8h.html#a5171186bb4896bb433ed9c928af0d072", null ],
     [ "AlignObj", "_globals_8h.html#a55c1560ef026f8e9b07d7a623b8cf091", null ],
     [ "Calibrate", "_globals_8h.html#a0fd0ced2811b8e7b87f5b472d8f48cb8", null ],

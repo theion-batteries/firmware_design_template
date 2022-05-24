@@ -12,5 +12,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "Globals.cpp", "_globals_8cpp.html", "_globals_8cpp" ],
     [ "Keyence_API.cpp", "_keyence___a_p_i_8cpp.html", null ],
     [ "light_barrier.cpp", "light__barrier_8cpp.html", null ],
-    [ "main.cpp", "main_8cpp.html", "main_8cpp" ]
+    [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
+    [ "ThreadsManager.cpp", "_threads_manager_8cpp.html", null ]
 ];

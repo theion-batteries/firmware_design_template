@@ -1,11 +1,11 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp" name="C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/StateManager.hpp">
-<area shape="rect" id="node1" title="Manager for internal cpu actions and states." alt="" coords="366,5,607,61"/>
-<area shape="rect" id="node2" href="$_cmd_pattern_classes_8h.html" title="interface Command &amp;Invoker and Classes Definition here" alt="" coords="355,109,618,165"/>
-<area shape="rect" id="node3" href="$_globals_8h.html" title="include declarations for commands classes" alt="" coords="387,213,586,269"/>
-<area shape="rect" id="node4" href="$_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="221,317,493,373"/>
-<area shape="rect" id="node9" href="$_globals_8cpp.html" title=" " alt="" coords="518,317,717,373"/>
-<area shape="rect" id="node5" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="107,421,338,477"/>
-<area shape="rect" id="node8" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,421,625,477"/>
-<area shape="rect" id="node6" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,525,213,581"/>
-<area shape="rect" id="node7" href="$main_8cpp.html" title=" " alt="" coords="238,525,437,581"/>
+<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/StateManager.hpp" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/StateManager.hpp">
+<area shape="rect" id="node1" title="Manager for internal cpu actions and states." alt="" coords="387,5,556,76"/>
+<area shape="rect" id="node2" href="$_cmd_pattern_classes_8h.html" title="interface Command &amp;Invoker and Classes Definition here" alt="" coords="387,124,556,195"/>
+<area shape="rect" id="node3" href="$_globals_8h.html" title="include declarations for commands classes" alt="" coords="387,243,556,313"/>
+<area shape="rect" id="node4" href="$_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="277,361,447,432"/>
+<area shape="rect" id="node9" href="$_globals_8cpp.html" title=" " alt="" coords="471,369,690,425"/>
+<area shape="rect" id="node5" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="168,480,337,551"/>
+<area shape="rect" id="node8" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,480,581,551"/>
+<area shape="rect" id="node6" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,599,252,655"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="launch main scheduler" alt="" coords="277,599,479,655"/>
 </map>

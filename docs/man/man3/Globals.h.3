@@ -1,8 +1,8 @@
-.TH "C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h" 3 "Thu May 19 2022" "Version 0.1" "Firmware Design Template" \" -*- nroff -*-
+.TH "C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h" 3 "Tue May 24 2022" "Version 0.2" "Firmware Design Template" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h \- include declarations for commands classes  
+C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Globals.h \- include declarations for commands classes  
 
 .SH SYNOPSIS
 .br
@@ -25,6 +25,16 @@ C:/Users/SamiDhiab/Theion_Repos/firm_Alignment_PrintHead/include/Globals.h \- in
 .in +1c
 .ti -1c
 .RI "class \fBMotorGetCmdHandler\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBParserThreadCallback\fP ()"
+.br
+.ti -1c
+.RI "void \fBBackgroundThreadCallback\fP ()"
 .br
 .in -1c
 .SS "Variables"
@@ -175,6 +185,16 @@ Copyright (c) 2022
 
 .PP
 Definition in file \fBGlobals\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "void BackgroundThreadCallback ()"
+
+.PP
+Definition at line \fB63\fP of file \fBGlobals\&.cpp\fP\&.
+.SS "void ParserThreadCallback ()"
+
+.PP
+Definition at line \fB59\fP of file \fBGlobals\&.cpp\fP\&.
 .SH "Variable Documentation"
 .PP 
 .SS "\fBUUID_MANAGER\fP AlignId\fC [extern]\fP"
