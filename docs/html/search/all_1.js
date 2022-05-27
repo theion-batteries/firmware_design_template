@@ -15,6 +15,5 @@ var searchData=
   ['allupdistancearrived_12',['allUpDistanceArrived',['../class_alignment.html#a07ddf895fd58066aa53924a118e3f9f6',1,'Alignment']]],
   ['allupmax_13',['allUpMax',['../class_alignment.html#a020e2e3168adea3c1748f8519d858466',1,'Alignment']]],
   ['angle_5fper_5fstep_14',['Angle_per_step',['../_configs_8h.html#a6eb25972098f2e79011638673cfc3b47',1,'Configs.h']]],
-  ['api_20documentation_15',['API Documentation',['../index.html',1,'']]],
-  ['api_2emd_16',['API.md',['../_a_p_i_8md.html',1,'']]]
+  ['api_2emd_15',['API.md',['../_a_p_i_8md.html',1,'']]]
 ];

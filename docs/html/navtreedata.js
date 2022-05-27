@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Firmware Design Template", "index.html", [
-    [ "API Documentation", "index.html", null ],
+    [ "API doc", "index.html#autotoc_md1", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

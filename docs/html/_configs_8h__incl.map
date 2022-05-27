@@ -1,4 +1,4 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Configs.h" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Configs.h">
-<area shape="rect" id="node1" title="Place the definition of Macros here like pins, enumerate and so on." alt="" coords="5,5,175,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="40,124,140,151"/>
+<map id="Configs.h" name="Configs.h">
+<area shape="rect" id="node1" title="Place the definition of Macros here like pins, enumerate and so on." alt="" coords="17,5,93,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,105,107"/>
 </map>

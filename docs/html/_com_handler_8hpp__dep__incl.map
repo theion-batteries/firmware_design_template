@@ -1,5 +1,5 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/ComHandler.hpp">
-<area shape="rect" id="node1" title="This Class handles serial communication layer." alt="" coords="168,5,337,76"/>
-<area shape="rect" id="node2" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,124,252,180"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title="launch main scheduler" alt="" coords="277,124,479,180"/>
+<map id="ComHandler.hpp" name="ComHandler.hpp">
+<area shape="rect" id="node1" title="This Class handles serial communication layer." alt="" coords="65,5,184,32"/>
+<area shape="rect" id="node2" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="launch main scheduler" alt="" coords="149,80,223,107"/>
 </map>

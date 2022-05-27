@@ -24,7 +24,7 @@ var NAVTREEINDEX3 =
 "globals_vars.html":[2,1,2],
 "hierarchy.html":[1,2],
 "index.html":[],
-"index.html":[0],
+"index.html#autotoc_md1":[0],
 "light__barrier_8cpp.html":[2,0,1,11],
 "light__barrier_8cpp_source.html":[2,0,1,11],
 "light__barrier_8hpp.html":[2,0,0,13],

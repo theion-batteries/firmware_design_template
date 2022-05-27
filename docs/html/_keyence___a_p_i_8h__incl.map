@@ -1,6 +1,6 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Keyence_API.h">
-<area shape="rect" id="node1" title="keyence sensors APIs" alt="" coords="5,5,175,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="52,199,152,225"/>
-<area shape="rect" id="node3" title=" " alt="" coords="67,124,113,151"/>
-<area shape="rect" id="node4" href="$_configs_8h.html" title="Place the definition of Macros here like pins, enumerate and so on." alt="" coords="137,124,213,151"/>
+<map id="Keyence_API.h" name="Keyence_API.h">
+<area shape="rect" id="node1" title="keyence sensors APIs" alt="" coords="5,5,117,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="23,155,123,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="38,80,85,107"/>
+<area shape="rect" id="node4" href="$_configs_8h.html" title="Place the definition of Macros here like pins, enumerate and so on." alt="" coords="109,80,185,107"/>
 </map>

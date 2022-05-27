@@ -1,6 +1,6 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Reset.h" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/Reset.h">
-<area shape="rect" id="node1" title="class reset for hardware/software reset" alt="" coords="18,5,187,76"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,124,83,151"/>
-<area shape="rect" id="node3" href="$_end_switch_8hpp.html" title="endswitch class" alt="" coords="107,124,216,151"/>
-<area shape="rect" id="node4" title=" " alt="" coords="111,199,211,225"/>
+<map id="Reset.h" name="Reset.h">
+<area shape="rect" id="node1" title="class reset for hardware/software reset" alt="" coords="69,5,136,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,83,107"/>
+<area shape="rect" id="node3" href="$_end_switch_8hpp.html" title="endswitch class" alt="" coords="107,80,216,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="111,155,211,181"/>
 </map>

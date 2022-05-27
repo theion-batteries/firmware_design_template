@@ -1,15 +1,15 @@
-<map id="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp" name="C:/Users/SamiDhiab/Theion_Repos/firmware_design_template/include/DriverA4988.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="613,5,783,76"/>
-<area shape="rect" id="node2" href="$_nema__8_8hpp.html" title=" " alt="" coords="499,124,668,195"/>
-<area shape="rect" id="node13" href="$_driver_a4988_8cpp.html" title=" " alt="" coords="692,131,936,187"/>
-<area shape="rect" id="node3" href="$_alignment_8hpp.html" title=" " alt="" coords="499,243,668,313"/>
-<area shape="rect" id="node4" href="$_cmd_pattern_classes_8h.html" title="interface Command &amp;Invoker and Classes Definition here" alt="" coords="387,361,556,432"/>
-<area shape="rect" id="node12" href="$_alignment_8cpp.html" title=" " alt="" coords="580,369,813,425"/>
-<area shape="rect" id="node5" href="$_globals_8h.html" title="include declarations for commands classes" alt="" coords="387,480,556,551"/>
-<area shape="rect" id="node6" href="$_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="277,599,447,669"/>
-<area shape="rect" id="node11" href="$_globals_8cpp.html" title=" " alt="" coords="471,606,690,662"/>
-<area shape="rect" id="node7" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="168,717,337,788"/>
-<area shape="rect" id="node10" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="362,717,581,788"/>
-<area shape="rect" id="node8" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="5,836,252,892"/>
-<area shape="rect" id="node9" href="$main_8cpp.html" title="launch main scheduler" alt="" coords="277,836,479,892"/>
+<map id="DriverA4988.hpp" name="DriverA4988.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="69,5,185,32"/>
+<area shape="rect" id="node2" href="$_driver_a4988_8cpp.html" title=" " alt="" coords="5,80,121,107"/>
+<area shape="rect" id="node3" href="$_nema__8_8hpp.html" title=" " alt="" coords="145,80,240,107"/>
+<area shape="rect" id="node4" href="$_alignment_8hpp.html" title=" " alt="" coords="140,155,245,181"/>
+<area shape="rect" id="node5" href="$_alignment_8cpp.html" title=" " alt="" coords="64,229,169,256"/>
+<area shape="rect" id="node6" href="$_cmd_pattern_classes_8h.html" title="interface Command &amp;Invoker and Classes Definition here" alt="" coords="194,229,343,256"/>
+<area shape="rect" id="node7" href="$_globals_8h.html" title="include declarations for commands classes" alt="" coords="230,304,307,331"/>
+<area shape="rect" id="node8" href="$_cmd_pattern_callbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="115,379,273,405"/>
+<area shape="rect" id="node13" href="$_globals_8cpp.html" title=" " alt="" coords="298,379,389,405"/>
+<area shape="rect" id="node9" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="22,453,195,480"/>
+<area shape="rect" id="node10" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="220,453,339,480"/>
+<area shape="rect" id="node11" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="159,528,277,555"/>
+<area shape="rect" id="node12" href="$main_8cpp.html" title="launch main scheduler" alt="" coords="302,528,377,555"/>
 </map>
