@@ -6,5 +6,5 @@ click [docs](https://theionsami.github.io/firmware_design_template/), then Under
 If you make a fork from this repo, dont forget to run doxygen from inside docs/ after any changes made to src/ inc/ or.md files and push!
 even better run the [script](../push.bat) and it will takes care:
 ~~~powershell
-push #execute script push.bat
+.\push #execute script push.bat
 ~~~
