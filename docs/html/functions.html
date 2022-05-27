@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="theion.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.3</span>
    </div>
-   <div id="projectbrief">To privde modular and efficient high level software design</div>
+   <div id="projectbrief">API Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -53,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,16 +66,29 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index__5F" name="index__5F"></a>- _ -</h3><ul>
-<li>_checkIfUUIDisWritten()&#160;:&#160;<a class="el" href="class_u_u_i_d___m_a_n_a_g_e_r.html#a00e362282bf1d2abf326d79caaa451ad">UUID_MANAGER</a></li>
-<li>_CmdCallback()&#160;:&#160;<a class="el" href="class___cmd_callback.html#a2413e8c1511d1c1d20a890173d6eaae5">_CmdCallback&lt; STORESIZE, T &gt;</a></li>
+<li>_checkIfUUIDisWritten()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a00e362282bf1d2abf326d79caaa451ad">UUID_MANAGER</a></li>
+<li>_CmdCallback()&#160;:&#160;<a class="el" href="class__CmdCallback.html#a2413e8c1511d1c1d20a890173d6eaae5">_CmdCallback&lt; STORESIZE, T &gt;</a></li>
+<li>_get_align_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a3409d8204f2b1292db7777fc9fd9a067">UUID_MANAGER</a></li>
+<li>_get_cnt_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#ab62ec56a593ffc80eefa6d7fb8c68875">UUID_MANAGER</a></li>
+<li>_get_default_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a7fd20d89a8b5a926acddfb665f605f02">UUID_MANAGER</a></li>
+<li>_get_delta_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#acf469fc4f74ec916409ab72e4a22e390">UUID_MANAGER</a></li>
+<li>_get_print_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#ac396ef96c85f67180050703d03273834">UUID_MANAGER</a></li>
+<li>_get_sf6_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#ac87af0a58e00cef4fa33a25a058c9155">UUID_MANAGER</a></li>
+<li>_get_temp_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a4833f5e835d98388da66990b0581bb05">UUID_MANAGER</a></li>
+<li>_readStringFromEEPROM()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#add485b1b55c278a5a1eab5a016d0b052">UUID_MANAGER</a></li>
+<li>_set_align_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a06a444b2f6a343d32cca999183ee7a6f">UUID_MANAGER</a></li>
+<li>_set_cnt_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a20e8ed31dd1aa21edc4bc5a242bfdb61">UUID_MANAGER</a></li>
+<li>_set_default_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#aa6685bceb7b848670d4125c9778b36ae">UUID_MANAGER</a></li>
+<li>_set_delta_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a91e1e0550cc976a2d2d5473dd9c0334a">UUID_MANAGER</a></li>
+<li>_set_print_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#aac4e38f8cb13909f0f34be29be2756bf">UUID_MANAGER</a></li>
+<li>_set_sf6_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a65cbb776ac4295ab0d52b69dae91e4ad">UUID_MANAGER</a></li>
+<li>_set_temp_id()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a95ae5c2612e278873bfb8eed4766e0b3">UUID_MANAGER</a></li>
+<li>_writeStringToEEPROM()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#afb79fd4c3deac04fc14199ee51831f72">UUID_MANAGER</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
 </body>
 </html>

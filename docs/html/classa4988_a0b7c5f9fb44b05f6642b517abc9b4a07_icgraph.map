@@ -1,5 +1,5 @@
 <map id="a4988::getSpeed" name="a4988::getSpeed">
 <area shape="rect" id="node1" title=" " alt="" coords="244,31,364,57"/>
-<area shape="rect" id="node2" href="$classget_motor_speed_cmd.html#a417c6ed5782be14aee4e2d97560f8af0" title=" " alt="" coords="5,5,196,32"/>
-<area shape="rect" id="node3" href="$classset_motor_speed_cmd.html#aed6577e323683bf21b1f0331cad4d5ca" title=" " alt="" coords="5,56,196,83"/>
+<area shape="rect" id="node2" href="$classgetMotorSpeedCmd.html#a417c6ed5782be14aee4e2d97560f8af0" title=" " alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node3" href="$classsetMotorSpeedCmd.html#aed6577e323683bf21b1f0331cad4d5ca" title=" " alt="" coords="5,56,196,83"/>
 </map>

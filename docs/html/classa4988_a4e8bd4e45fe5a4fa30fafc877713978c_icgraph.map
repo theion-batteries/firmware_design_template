@@ -1,5 +1,5 @@
 <map id="a4988::getDelay" name="a4988::getDelay">
 <area shape="rect" id="node1" title=" " alt="" coords="240,31,356,57"/>
-<area shape="rect" id="node2" href="$classget_motor_delay_cmd.html#a8f303a80a131389a92056d56e063760a" title=" " alt="" coords="5,5,192,32"/>
-<area shape="rect" id="node3" href="$classset_motor_delay_cmd.html#ab8397cfaed1d858b7517e658632099b6" title=" " alt="" coords="5,56,192,83"/>
+<area shape="rect" id="node2" href="$classgetMotorDelayCmd.html#a8f303a80a131389a92056d56e063760a" title=" " alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node3" href="$classsetMotorDelayCmd.html#ab8397cfaed1d858b7517e658632099b6" title=" " alt="" coords="5,56,192,83"/>
 </map>

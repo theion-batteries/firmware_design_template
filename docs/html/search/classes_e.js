@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tasktimer_0',['TaskTimer',['../class_task_timer.html',1,'']]]
+  ['tasktimer_0',['TaskTimer',['../classTaskTimer.html',1,'']]]
 ];

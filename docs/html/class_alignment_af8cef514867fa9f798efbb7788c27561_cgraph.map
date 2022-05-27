@@ -1,8 +1,0 @@
-<map id="Alignment::GoToReferenceDown" name="Alignment::GoToReferenceDown">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,215,98"/>
-<area shape="rect" id="node2" href="$class_alignment.html#aebf2eaacef3587f39e049941e7bc2a4d" title="Move all motors home @algorithm: check if every motor endswitch is not pressed, then move Nema8 up." alt="" coords="263,71,429,98"/>
-<area shape="rect" id="node3" href="$classend_switch.html#ae1f7e6d7200feb02820c02708bca01c0" title="get current state" alt="" coords="477,5,632,47"/>
-<area shape="rect" id="node5" href="$classa4988.html#a6a37cf937b1f7a1f229904cdb9191b89" title=" " alt="" coords="487,71,622,98"/>
-<area shape="rect" id="node6" href="$classa4988.html#a2074f2e3fe7cd79e402f53a14ba68c89" title=" " alt="" coords="494,122,615,149"/>
-<area shape="rect" id="node4" href="$classend_switch.html#ac38e43effb237b61a1f4b09092b5ac53" title="debounce a button" alt="" coords="680,13,827,39"/>
-</map>

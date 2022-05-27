@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="theion.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.3</span>
    </div>
-   <div id="projectbrief">To privde modular and efficient high level software design</div>
+   <div id="projectbrief">API Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -53,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_c.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,50 +66,49 @@ $(document).ready(function(){initNavTree('functions_c.html',''); initResizable()
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>calibrate()&#160;:&#160;<a class="el" href="class_firm_invoker.html#a8e7480af731d63b3de35b63ccd4c4017">FirmInvoker</a></li>
-<li>CalibrateCmd()&#160;:&#160;<a class="el" href="class_calibrate_cmd.html#ab5a4b8e96311f8fa109eed350cac04df">CalibrateCmd</a></li>
-<li>calibratePrintHead()&#160;:&#160;<a class="el" href="class_alignment.html#aa10c40160fe39fa263b12f0e07d4f67c">Alignment</a></li>
-<li>callStoreFunct()&#160;:&#160;<a class="el" href="class___cmd_callback.html#a304e5954891af47175a6d90043dda8f8">_CmdCallback&lt; STORESIZE, T &gt;</a>, <a class="el" href="class_cmd_callback_object.html#a57d216fe712755cbcdcb1459c41f70dc">CmdCallbackObject</a></li>
-<li>CheckBoundaryX()&#160;:&#160;<a class="el" href="class_alignment.html#a668b9598d17990bcb2132444d44d7cde">Alignment</a></li>
-<li>checkLimitDownX()&#160;:&#160;<a class="el" href="class_alignment.html#a5aab206d9d1e56c22b43e42f95014062">Alignment</a></li>
-<li>checkLimitDownXYZ()&#160;:&#160;<a class="el" href="class_alignment.html#a8a526f1604f016f821fb17c914fb6c9c">Alignment</a></li>
-<li>checkLimitDownY()&#160;:&#160;<a class="el" href="class_alignment.html#a9ed6e9c6e5387111a33d892e9406a4f7">Alignment</a></li>
-<li>checkLimitDownZ()&#160;:&#160;<a class="el" href="class_alignment.html#af0794341994b69753b31b5665ab56c34">Alignment</a></li>
-<li>checkLimitUpX()&#160;:&#160;<a class="el" href="class_alignment.html#a2440f9acebf113fad04bb77d2c0b9e6e">Alignment</a></li>
-<li>checkLimitUpXYZ()&#160;:&#160;<a class="el" href="class_alignment.html#ab41a2d0326f4644e98d055badbe19d5d">Alignment</a></li>
-<li>checkLimitUpY()&#160;:&#160;<a class="el" href="class_alignment.html#a29a09538dce5388b0873b131ea2f66a7">Alignment</a></li>
-<li>checkLimitUpZ()&#160;:&#160;<a class="el" href="class_alignment.html#aee871f24d8dc408d22c9e9b139e02daa">Alignment</a></li>
-<li>checkStorePos()&#160;:&#160;<a class="el" href="class___cmd_callback.html#a6afbbcbf9da656b0972ad108616ffe45">_CmdCallback&lt; STORESIZE, T &gt;</a>, <a class="el" href="class_cmd_callback_object.html#a09c721e9352b605208317f8163d373b1">CmdCallbackObject</a></li>
-<li>clear()&#160;:&#160;<a class="el" href="class_cmd_buffer.html#a57932bf7ec725e389a51d61f0d8c715c">CmdBuffer&lt; BUFFERSIZE &gt;</a>, <a class="el" href="class_cmd_buffer_object.html#a9482f941c79ec204712a381b8fc55ac2">CmdBufferObject</a></li>
-<li>CmdBuffer()&#160;:&#160;<a class="el" href="class_cmd_buffer.html#acbeae6c39044ecab74a6d902cfe35891">CmdBuffer&lt; BUFFERSIZE &gt;</a></li>
-<li>CmdBufferObject()&#160;:&#160;<a class="el" href="class_cmd_buffer_object.html#a0e62c008ea9f9f927e989d5324adb46b">CmdBufferObject</a></li>
-<li>cmdParamExists()&#160;:&#160;<a class="el" href="class_cmd_parser.html#a20afcca43b5a5231eb1d63ab0f564f91">CmdParser</a></li>
-<li>CmdParser()&#160;:&#160;<a class="el" href="class_cmd_parser.html#a2ea6dfe5c12c9effc1419764e46e076e">CmdParser</a></li>
-<li>CmdreadyForExecution&#160;:&#160;<a class="el" href="class_cmd_callback_object.html#a7e5d6ac7b89c934cc5e5a70885d5e24d">CmdCallbackObject</a></li>
-<li>command&#160;:&#160;<a class="el" href="class_command_state_manager.html#a1ebba75c5dd81e4376ed22f3fd807edf">CommandStateManager</a></li>
-<li>Commands&#160;:&#160;<a class="el" href="class_command_state_manager.html#a2d0f773aa9ecbcf359ca6ed759c1a66f">CommandStateManager</a></li>
-<li>commands&#160;:&#160;<a class="el" href="class_keyence__base.html#a2862ac325dae8e5793df2764637f8cd4">Keyence_base</a></li>
-<li>CommandsListLength&#160;:&#160;<a class="el" href="class_command_state_manager.html#aff78fae9bba420bfdf995b115a01d219">CommandStateManager</a></li>
-<li>commandWithArgs()&#160;:&#160;<a class="el" href="class_command_state_manager.html#aa6050fe61d2180635639e828455d9e53">CommandStateManager</a></li>
-<li>convertAngleToStep()&#160;:&#160;<a class="el" href="class_alignment.html#a8d96b0353f5ca2de6a01c562347e7f6a">Alignment</a></li>
-<li>ConvertDistanceToStep()&#160;:&#160;<a class="el" href="class_alignment.html#ac8aa65bdcfb551bb996ac59ee8d8db3d">Alignment</a></li>
-<li>convertDistanceToStepMicros()&#160;:&#160;<a class="el" href="class_alignment.html#a757427c09a259dbce691c7b91bd46a5e">Alignment</a></li>
-<li>CPUaction&#160;:&#160;<a class="el" href="class_command_state_manager.html#ae4ada5a26023e81608f544189d1ead41">CommandStateManager</a></li>
-<li>CPUActionsLength&#160;:&#160;<a class="el" href="class_command_state_manager.html#a6bd424c0b40ff853c1fa879878453054">CommandStateManager</a></li>
-<li>CPUstate&#160;:&#160;<a class="el" href="class_command_state_manager.html#a579209d5786030fcc4a666c1555cdf8c">CommandStateManager</a></li>
-<li>CPUStatesListLength&#160;:&#160;<a class="el" href="class_command_state_manager.html#a716b8303474fa9c452f096d42d2d583b">CommandStateManager</a></li>
-<li>createThreadForCmd()&#160;:&#160;<a class="el" href="class_cmd_callback_object.html#a4d42ca130807adfb5b2d91d985bb7495">CmdCallbackObject</a></li>
-<li>current_idx&#160;:&#160;<a class="el" href="class_cmd_callback_object.html#af1ca856f966455122ca467c06ca0a517">CmdCallbackObject</a></li>
-<li>current_state&#160;:&#160;<a class="el" href="classend_switch.html#af068acae07251502871783ad8b31c88c">endSwitch</a>, <a class="el" href="classlight_barrier.html#a65bb91b9f53929fa861b2b5fec7744bc">lightBarrier</a></li>
-<li>currentDistance&#160;:&#160;<a class="el" href="class_distance_sensor.html#a7277aa0cf628731f0db9329874a3b525">DistanceSensor</a></li>
+<li>calibrate()&#160;:&#160;<a class="el" href="classFirmInvoker.html#a8e7480af731d63b3de35b63ccd4c4017">FirmInvoker</a></li>
+<li>CalibrateCmd()&#160;:&#160;<a class="el" href="classCalibrateCmd.html#ab5a4b8e96311f8fa109eed350cac04df">CalibrateCmd</a></li>
+<li>calibratePrintHead()&#160;:&#160;<a class="el" href="classAlignment.html#aa10c40160fe39fa263b12f0e07d4f67c">Alignment</a></li>
+<li>callStoreFunct()&#160;:&#160;<a class="el" href="class__CmdCallback.html#a304e5954891af47175a6d90043dda8f8">_CmdCallback&lt; STORESIZE, T &gt;</a>, <a class="el" href="classCmdCallbackObject.html#a57d216fe712755cbcdcb1459c41f70dc">CmdCallbackObject</a></li>
+<li>CheckBoundaryX()&#160;:&#160;<a class="el" href="classAlignment.html#a668b9598d17990bcb2132444d44d7cde">Alignment</a></li>
+<li>checkLimitDownX()&#160;:&#160;<a class="el" href="classAlignment.html#a5aab206d9d1e56c22b43e42f95014062">Alignment</a></li>
+<li>checkLimitDownXYZ()&#160;:&#160;<a class="el" href="classAlignment.html#a8a526f1604f016f821fb17c914fb6c9c">Alignment</a></li>
+<li>checkLimitDownY()&#160;:&#160;<a class="el" href="classAlignment.html#a9ed6e9c6e5387111a33d892e9406a4f7">Alignment</a></li>
+<li>checkLimitDownZ()&#160;:&#160;<a class="el" href="classAlignment.html#af0794341994b69753b31b5665ab56c34">Alignment</a></li>
+<li>checkLimitUpX()&#160;:&#160;<a class="el" href="classAlignment.html#a2440f9acebf113fad04bb77d2c0b9e6e">Alignment</a></li>
+<li>checkLimitUpXYZ()&#160;:&#160;<a class="el" href="classAlignment.html#ab41a2d0326f4644e98d055badbe19d5d">Alignment</a></li>
+<li>checkLimitUpY()&#160;:&#160;<a class="el" href="classAlignment.html#a29a09538dce5388b0873b131ea2f66a7">Alignment</a></li>
+<li>checkLimitUpZ()&#160;:&#160;<a class="el" href="classAlignment.html#aee871f24d8dc408d22c9e9b139e02daa">Alignment</a></li>
+<li>checkStorePos()&#160;:&#160;<a class="el" href="class__CmdCallback.html#a6afbbcbf9da656b0972ad108616ffe45">_CmdCallback&lt; STORESIZE, T &gt;</a>, <a class="el" href="classCmdCallbackObject.html#a09c721e9352b605208317f8163d373b1">CmdCallbackObject</a></li>
+<li>clear()&#160;:&#160;<a class="el" href="classCmdBuffer.html#a57932bf7ec725e389a51d61f0d8c715c">CmdBuffer&lt; BUFFERSIZE &gt;</a>, <a class="el" href="classCmdBufferObject.html#a9482f941c79ec204712a381b8fc55ac2">CmdBufferObject</a></li>
+<li>CmdBuffer()&#160;:&#160;<a class="el" href="classCmdBuffer.html#acbeae6c39044ecab74a6d902cfe35891">CmdBuffer&lt; BUFFERSIZE &gt;</a></li>
+<li>CmdBufferObject()&#160;:&#160;<a class="el" href="classCmdBufferObject.html#a0e62c008ea9f9f927e989d5324adb46b">CmdBufferObject</a></li>
+<li>cmdParamExists()&#160;:&#160;<a class="el" href="classCmdParser.html#a20afcca43b5a5231eb1d63ab0f564f91">CmdParser</a></li>
+<li>CmdParser()&#160;:&#160;<a class="el" href="classCmdParser.html#a2ea6dfe5c12c9effc1419764e46e076e">CmdParser</a></li>
+<li>CmdreadyForExecution&#160;:&#160;<a class="el" href="classCmdCallbackObject.html#a7e5d6ac7b89c934cc5e5a70885d5e24d">CmdCallbackObject</a></li>
+<li>cnt_id&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a92299bb2c45c4eac950e97bc62fbff81">UUID_MANAGER</a></li>
+<li>ComHandler&#160;:&#160;<a class="el" href="classComManager.html#ad6e049efeb10c5cc4801673f437fccb4">ComManager</a></li>
+<li>command&#160;:&#160;<a class="el" href="classCommandStateManager.html#a1ebba75c5dd81e4376ed22f3fd807edf">CommandStateManager</a></li>
+<li>Commands&#160;:&#160;<a class="el" href="classCommandStateManager.html#a2d0f773aa9ecbcf359ca6ed759c1a66f">CommandStateManager</a></li>
+<li>commands&#160;:&#160;<a class="el" href="classKeyence__base.html#a2862ac325dae8e5793df2764637f8cd4">Keyence_base</a></li>
+<li>CommandsListLength&#160;:&#160;<a class="el" href="classCommandStateManager.html#aff78fae9bba420bfdf995b115a01d219">CommandStateManager</a></li>
+<li>commandWithArgs()&#160;:&#160;<a class="el" href="classCommandStateManager.html#aa6050fe61d2180635639e828455d9e53">CommandStateManager</a></li>
+<li>convertAngleToStep()&#160;:&#160;<a class="el" href="classAlignment.html#a8d96b0353f5ca2de6a01c562347e7f6a">Alignment</a></li>
+<li>ConvertDistanceToStep()&#160;:&#160;<a class="el" href="classAlignment.html#ac8aa65bdcfb551bb996ac59ee8d8db3d">Alignment</a></li>
+<li>convertDistanceToStepMicros()&#160;:&#160;<a class="el" href="classAlignment.html#a757427c09a259dbce691c7b91bd46a5e">Alignment</a></li>
+<li>CPUaction&#160;:&#160;<a class="el" href="classCommandStateManager.html#ae4ada5a26023e81608f544189d1ead41">CommandStateManager</a></li>
+<li>CPUActionsLength&#160;:&#160;<a class="el" href="classCommandStateManager.html#a6bd424c0b40ff853c1fa879878453054">CommandStateManager</a></li>
+<li>CPUstate&#160;:&#160;<a class="el" href="classCommandStateManager.html#a579209d5786030fcc4a666c1555cdf8c">CommandStateManager</a></li>
+<li>CPUStatesListLength&#160;:&#160;<a class="el" href="classCommandStateManager.html#a716b8303474fa9c452f096d42d2d583b">CommandStateManager</a></li>
+<li>createThreadForCmd()&#160;:&#160;<a class="el" href="classCmdCallbackObject.html#a4d42ca130807adfb5b2d91d985bb7495">CmdCallbackObject</a></li>
+<li>current_idx&#160;:&#160;<a class="el" href="classCmdCallbackObject.html#af1ca856f966455122ca467c06ca0a517">CmdCallbackObject</a></li>
+<li>current_state&#160;:&#160;<a class="el" href="classendSwitch.html#af068acae07251502871783ad8b31c88c">endSwitch</a>, <a class="el" href="classlightBarrier.html#a65bb91b9f53929fa861b2b5fec7744bc">lightBarrier</a></li>
+<li>currentDistance&#160;:&#160;<a class="el" href="classDistanceSensor.html#a7277aa0cf628731f0db9329874a3b525">DistanceSensor</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
 </body>
 </html>

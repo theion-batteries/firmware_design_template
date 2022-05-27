@@ -1,0 +1,4 @@
+<map id="endSwitch::get_current_state" name="endSwitch::get_current_state">
+<area shape="rect" id="node1" title="get current state" alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node2" href="$classendSwitch.html#ac38e43effb237b61a1f4b09092b5ac53" title="debounce a button" alt="" coords="208,13,355,39"/>
+</map>

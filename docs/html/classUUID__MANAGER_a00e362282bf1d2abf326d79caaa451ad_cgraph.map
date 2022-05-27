@@ -1,0 +1,5 @@
+<map id="UUID_MANAGER::_checkIfUUIDisWritten" name="UUID_MANAGER::_checkIfUUIDisWritten">
+<area shape="rect" id="node1" title="write id at boot, don&#39;t overwrite if exists" alt="" coords="5,39,227,80"/>
+<area shape="rect" id="node2" href="$classUUID__MANAGER.html#add485b1b55c278a5a1eab5a016d0b052" title="read string from eeprom" alt="" coords="276,5,475,47"/>
+<area shape="rect" id="node3" href="$classUUID__MANAGER.html#afb79fd4c3deac04fc14199ee51831f72" title="write string to eeprom" alt="" coords="275,71,476,112"/>
+</map>

@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="theion.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.3</span>
    </div>
-   <div id="projectbrief">To privde modular and efficient high level software design</div>
+   <div id="projectbrief">API Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -52,23 +47,6 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('dir_d44c64559bbebec7f509842c48db8b23.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -83,6 +61,11 @@ $(document).ready(function(){initNavTree('dir_d44c64559bbebec7f509842c48db8b23.h
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">include Directory Reference</div></div>
 </div><!--header-->
@@ -90,71 +73,67 @@ $(document).ready(function(){initNavTree('dir_d44c64559bbebec7f509842c48db8b23.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="files" name="files"></a>
 Files</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_alignment_8hpp.html">Alignment.hpp</a> <a href="_alignment_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Alignment_8hpp.html">Alignment.hpp</a> <a href="Alignment_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_cmd_buffer_8hpp.html">CmdBuffer.hpp</a> <a href="_cmd_buffer_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CmdBuffer_8hpp.html">CmdBuffer.hpp</a> <a href="CmdBuffer_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_cmd_callback_8hpp.html">CmdCallback.hpp</a> <a href="_cmd_callback_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CmdCallback_8hpp.html">CmdCallback.hpp</a> <a href="CmdCallback_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_cmd_parser_8hpp.html">CmdParser.hpp</a> <a href="_cmd_parser_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CmdParser_8hpp.html">CmdParser.hpp</a> <a href="CmdParser_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_cmd_pattern_callbacks_8h.html">CmdPatternCallbacks.h</a> <a href="_cmd_pattern_callbacks_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:_cmd_pattern_callbacks_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">binding command inokation with parser callbacks <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CmdPatternCallbacks_8h.html">CmdPatternCallbacks.h</a> <a href="CmdPatternCallbacks_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:CmdPatternCallbacks_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">binding command inokation with parser callbacks <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_cmd_pattern_classes_8h.html">CmdPatternClasses.h</a> <a href="_cmd_pattern_classes_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:_cmd_pattern_classes_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface Command &amp;<a class="el" href="class_invoker.html">Invoker</a> and Classes Definition here <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CmdPatternClasses_8h.html">CmdPatternClasses.h</a> <a href="CmdPatternClasses_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:CmdPatternClasses_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface Command &amp;<a class="el" href="classInvoker.html">Invoker</a> and Classes Definition here <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_com_handler_8hpp.html">ComHandler.hpp</a> <a href="_com_handler_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:_com_handler_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Class handles serial communication layer. <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ComHandler_8hpp.html">ComHandler.hpp</a> <a href="ComHandler_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:ComHandler_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Class handles serial communication layer. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_configs_8h.html">Configs.h</a> <a href="_configs_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:_configs_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place the definition of Macros here like pins, enumerate and so on. <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Configs_8h.html">Configs.h</a> <a href="Configs_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:Configs_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place the definition of Macros here like pins, enumerate and so on. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_distance_sensor_8hpp.html">DistanceSensor.hpp</a> <a href="_distance_sensor_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DistanceSensor_8hpp.html">DistanceSensor.hpp</a> <a href="DistanceSensor_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_driver_a4988_8hpp.html">DriverA4988.hpp</a> <a href="_driver_a4988_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="DriverA4988_8hpp.html">DriverA4988.hpp</a> <a href="DriverA4988_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_end_switch_8hpp.html">EndSwitch.hpp</a> <a href="_end_switch_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:_end_switch_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">endswitch class <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="EndSwitch_8hpp.html">EndSwitch.hpp</a> <a href="EndSwitch_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:EndSwitch_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">endswitch class <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_globals_8h.html">Globals.h</a> <a href="_globals_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:_globals_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">include declarations for commands classes <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Globals_8h.html">Globals.h</a> <a href="Globals_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:Globals_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">include declarations for commands classes <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_keyence___a_p_i_8h.html">Keyence_API.h</a> <a href="_keyence___a_p_i_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:_keyence___a_p_i_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">keyence sensors APIs <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Keyence__API_8h.html">Keyence_API.h</a> <a href="Keyence__API_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:Keyence__API_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">keyence sensors APIs <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="light__barrier_8hpp.html">light_barrier.hpp</a> <a href="light__barrier_8hpp_source.html">[code]</a></td></tr>
 <tr class="memdesc:light__barrier_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">endswitch class <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_nema17_8hpp.html">Nema17.hpp</a> <a href="_nema17_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Nema17_8hpp.html">Nema17.hpp</a> <a href="Nema17_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_nema__8_8hpp.html">Nema_8.hpp</a> <a href="_nema__8_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Nema__8_8hpp.html">Nema_8.hpp</a> <a href="Nema__8_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_reset_8h.html">Reset.h</a> <a href="_reset_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:_reset_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">class reset for hardware/software reset <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Reset_8h.html">Reset.h</a> <a href="Reset_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:Reset_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">class reset for hardware/software reset <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sleep_8h.html">Sleep.h</a> <a href="_sleep_8h_source.html">[code]</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Sleep_8h.html">Sleep.h</a> <a href="Sleep_8h_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_state_manager_8hpp.html">StateManager.hpp</a> <a href="_state_manager_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:_state_manager_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager for internal cpu actions and states. <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StateManager_8hpp.html">StateManager.hpp</a> <a href="StateManager_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:StateManager_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manager for internal cpu actions and states. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_threads_manager_8hpp.html">ThreadsManager.hpp</a> <a href="_threads_manager_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:_threads_manager_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">manage threads depending on feasibility, priority and other criteria <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ThreadsManager_8hpp.html">ThreadsManager.hpp</a> <a href="ThreadsManager_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:ThreadsManager_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">manage threads depending on feasibility, priority and other criteria <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_timeout_8hpp.html">Timeout.hpp</a> <a href="_timeout_8hpp_source.html">[code]</a></td></tr>
-<tr class="memdesc:_timeout_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">timeout lib <br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Timeout_8hpp.html">Timeout.hpp</a> <a href="Timeout_8hpp_source.html">[code]</a></td></tr>
+<tr class="memdesc:Timeout_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">timeout lib <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_u_u_i_d_8hpp.html">UUID.hpp</a> <a href="_u_u_i_d_8hpp_source.html">[code]</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UUID_8hpp.html">UUID.hpp</a> <a href="UUID_8hpp_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
 </body>
 </html>

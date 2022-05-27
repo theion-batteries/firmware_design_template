@@ -1,4 +1,0 @@
-<map id="UUID_MANAGER::UUID_MANAGER" name="UUID_MANAGER::UUID_MANAGER">
-<area shape="rect" id="node1" title="Construct a new uuid manager object example: pass &quot;align&quot; to constructor to automaticly to align id." alt="" coords="5,5,168,47"/>
-<area shape="rect" id="node2" href="$class_u_u_i_d___m_a_n_a_g_e_r.html#a00e362282bf1d2abf326d79caaa451ad" title="write id at boot, don&#39;t overwrite if exists" alt="" coords="216,5,437,47"/>
-</map>

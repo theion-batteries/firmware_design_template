@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="theion.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.3</span>
    </div>
-   <div id="projectbrief">To privde modular and efficient high level software design</div>
+   <div id="projectbrief">API Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -53,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_o.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,15 +66,31 @@ $(document).ready(function(){initNavTree('functions_o.html',''); initResizable()
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_o" name="index_o"></a>- o -</h3><ul>
-<li>oscillateSys()&#160;:&#160;<a class="el" href="class_alignment.html#a579959f28393df8251df1bd2b8137984">Alignment</a></li>
+<li>ObjUUID&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#aa16b81708674725d84d287e8e8620493">UUID_MANAGER</a></li>
+<li>old&#160;:&#160;<a class="el" href="classMoveMotorCmd.html#a8d573f786fee151d401bdbd0080bc2d3">MoveMotorCmd</a>, <a class="el" href="classRotateMotorCmd.html#a46fa374187081af46b832769855fb33e">RotateMotorCmd</a>, <a class="el" href="classsetMotorCmd.html#a291e007ea898b30998ba99694b4c4387">setMotorCmd</a>, <a class="el" href="classsetMotorDelayCmd.html#a1ac25e92e330074f73384539611e33b2">setMotorDelayCmd</a>, <a class="el" href="classsetMotorDirectionCmd.html#ab273d2d310e8dcf572c2509fe070b0af">setMotorDirectionCmd</a>, <a class="el" href="classsetMotorSpeedCmd.html#af2d9658822b6ac6bc8f6f9bec097cb9d">setMotorSpeedCmd</a></li>
+<li>old_UUID_&#160;:&#160;<a class="el" href="classsetUUID.html#a78c5d267f5b57308b3e33937f381a8a2">setUUID</a></li>
+<li>oldVal&#160;:&#160;<a class="el" href="classCalibrateCmd.html#a56508be09b60ed6b6d85d53f77083d15">CalibrateCmd</a>, <a class="el" href="classgetMotorCmd.html#a909e8cd2b1bc5cb005bfa4b75d2fa0e9">getMotorCmd</a>, <a class="el" href="classgetMotorDelayCmd.html#adbdd335cde60a297436103547a63d047">getMotorDelayCmd</a>, <a class="el" href="classgetMotorDirectionCmd.html#a6c35313725c73f7b5c9d1782514be916">getMotorDirectionCmd</a>, <a class="el" href="classgetMotorSpeedCmd.html#a8ab57f2724e0e4cc6f8b82ce49f645a2">getMotorSpeedCmd</a>, <a class="el" href="classgetSensorCmd.html#a32bdef2ff0058ca5c0467a46b4d51230">getSensorCmd</a>, <a class="el" href="classgetSensorValueCmd.html#a050c1b8cdba8867c664850fed792082e">getSensorValueCmd</a></li>
+<li>on_calibrate&#160;:&#160;<a class="el" href="classFirmInvoker.html#aeed383199f6c69ee0e36274f911aecb5">FirmInvoker</a></li>
+<li>on_finish_&#160;:&#160;<a class="el" href="classMotorInvoker.html#a2085b69cb10b9387a0997d8e6b3911e6">MotorInvoker</a></li>
+<li>on_finish_cmd&#160;:&#160;<a class="el" href="classInvoker.html#abe7600852e68545995e13b0007aabc94">Invoker</a></li>
+<li>on_get_delay&#160;:&#160;<a class="el" href="classMotorInvoker.html#a144079b0c13d51a8ae77ab2d4e74d38e">MotorInvoker</a></li>
+<li>on_get_direction&#160;:&#160;<a class="el" href="classMotorInvoker.html#ab4da3cc2cfbab3e4ea67d58a707d84b3">MotorInvoker</a></li>
+<li>on_get_speed&#160;:&#160;<a class="el" href="classMotorInvoker.html#a6cabda6797576b36b2f5b36e164cf02a">MotorInvoker</a></li>
+<li>on_move_down&#160;:&#160;<a class="el" href="classMotorInvoker.html#ab02603f5fc31655bdb1482af67587830">MotorInvoker</a></li>
+<li>on_move_up&#160;:&#160;<a class="el" href="classMotorInvoker.html#abbf79af9859b42a33e5dfac2671714fb">MotorInvoker</a></li>
+<li>on_rotate_Cclk&#160;:&#160;<a class="el" href="classMotorInvoker.html#a740b09a94aab908b37fc0de6cd52d8ef">MotorInvoker</a></li>
+<li>on_rotate_clk&#160;:&#160;<a class="el" href="classMotorInvoker.html#ac2575676d0aa5ba55e3ef051c399532f">MotorInvoker</a></li>
+<li>on_set_delay&#160;:&#160;<a class="el" href="classMotorInvoker.html#ac74d57501e67a015591cc14faf245bc1">MotorInvoker</a></li>
+<li>on_set_direction&#160;:&#160;<a class="el" href="classMotorInvoker.html#a5ce54fb8ff455fdcf74181dfa6a37345">MotorInvoker</a></li>
+<li>on_set_speed&#160;:&#160;<a class="el" href="classMotorInvoker.html#a36d5ef32432a2defdc0b6afaaf387c3f">MotorInvoker</a></li>
+<li>on_start_&#160;:&#160;<a class="el" href="classMotorInvoker.html#a5aa02bb1f3d19dcc1052ce22ba4a81f2">MotorInvoker</a></li>
+<li>on_start_cmd&#160;:&#160;<a class="el" href="classInvoker.html#a1fcafa90164900d8ec1bf659e643a9a7">Invoker</a></li>
+<li>oscillateSys()&#160;:&#160;<a class="el" href="classAlignment.html#a579959f28393df8251df1bd2b8137984">Alignment</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
 </body>
 </html>

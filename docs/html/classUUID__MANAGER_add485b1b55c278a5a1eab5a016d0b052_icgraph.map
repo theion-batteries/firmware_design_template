@@ -1,0 +1,8 @@
+<map id="UUID_MANAGER::_readStringFromEEPROM" name="UUID_MANAGER::_readStringFromEEPROM">
+<area shape="rect" id="node1" title="read string from eeprom" alt="" coords="485,39,684,80"/>
+<area shape="rect" id="node2" href="$classUUID__MANAGER.html#a00e362282bf1d2abf326d79caaa451ad" title="write id at boot, don&#39;t overwrite if exists" alt="" coords="216,5,437,47"/>
+<area shape="rect" id="node4" href="$classUUID__MANAGER.html#af23ca44819380f784eeaf2dee80469cb" title="wrapper function to get internal stored id" alt="" coords="233,71,421,112"/>
+<area shape="rect" id="node3" href="$classUUID__MANAGER.html#acb4079edb67f5dc2a322ac20a66a6e92" title="Construct a new uuid manager object example: pass &quot;align&quot; to constructor to automaticly to align id." alt="" coords="5,5,168,47"/>
+<area shape="rect" id="node5" href="$classgetUUID.html#a936e4f57c5e32cc1a00cbb6e87f5dd87" title=" " alt="" coords="25,74,149,101"/>
+<area shape="rect" id="node6" href="$classsetUUID.html#a91a69117ee9a224e831fd77315ce2b21" title=" " alt="" coords="25,125,149,151"/>
+</map>

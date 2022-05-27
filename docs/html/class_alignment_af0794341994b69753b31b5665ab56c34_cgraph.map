@@ -1,6 +1,0 @@
-<map id="Alignment::checkLimitDownZ" name="Alignment::checkLimitDownZ">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,196,39"/>
-<area shape="rect" id="node2" href="$class_alignment.html#a54ac0ddea519c9c51c185a03174f643d" title=" " alt="" coords="244,13,452,39"/>
-<area shape="rect" id="node3" href="$classend_switch.html#ae1f7e6d7200feb02820c02708bca01c0" title="get current state" alt="" coords="500,5,655,47"/>
-<area shape="rect" id="node4" href="$classend_switch.html#ac38e43effb237b61a1f4b09092b5ac53" title="debounce a button" alt="" coords="703,13,849,39"/>
-</map>

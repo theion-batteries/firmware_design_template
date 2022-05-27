@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="theion.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.3</span>
    </div>
-   <div id="projectbrief">To privde modular and efficient high level software design</div>
+   <div id="projectbrief">API Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -53,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_e.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -89,26 +68,23 @@ $(document).ready(function(){initNavTree('functions_e.html',''); initResizable()
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
 <li>enable()&#160;:&#160;<a class="el" href="classa4988.html#ad61ff3ecdea7afe55a30edf31f1e0323">a4988</a></li>
 <li>enable_pin&#160;:&#160;<a class="el" href="classa4988.html#a8e401b32d17b578cd1e4d06779ba5b61">a4988</a></li>
-<li>EnableAll()&#160;:&#160;<a class="el" href="class_alignment.html#adb8005a2b09b2a08bd618eba4b64ccc5">Alignment</a></li>
-<li>EnableMotorCmd()&#160;:&#160;<a class="el" href="class_enable_motor_cmd.html#ab34ba73041a4dd993cd8fc0639d20f27">EnableMotorCmd</a></li>
-<li>endSwitch()&#160;:&#160;<a class="el" href="classend_switch.html#a7790627e38691079eda7e8c41b13ef96">endSwitch</a></li>
-<li>endSwitch_stop&#160;:&#160;<a class="el" href="class_alignment.html#a064d13de8c775c7b63fa9a854bde3f1a">Alignment</a></li>
-<li>endSwitch_x&#160;:&#160;<a class="el" href="class_alignment.html#a91f199d88034ab646d037e362921998f">Alignment</a></li>
-<li>endSwitch_y&#160;:&#160;<a class="el" href="class_alignment.html#a12a51fc0b7ca663f5c595564dddffdfa">Alignment</a></li>
-<li>endSwitch_z&#160;:&#160;<a class="el" href="class_alignment.html#ad765e3454ed5e893007595790ef850ca">Alignment</a></li>
-<li>equalCmdParam()&#160;:&#160;<a class="el" href="class_cmd_parser.html#a41408f0cf3162798275b5c3afddf1924">CmdParser</a></li>
-<li>equalCommand()&#160;:&#160;<a class="el" href="class_cmd_parser.html#ae111b4908ad9a8092488fffaf897ad6f">CmdParser</a></li>
-<li>equalStoreCmd()&#160;:&#160;<a class="el" href="class_cmd_callback_object.html#a5410a5765b358895449a7e0918cd3a4e">CmdCallbackObject</a></li>
-<li>equalValueFromKey()&#160;:&#160;<a class="el" href="class_cmd_parser.html#aa8d0e9342798672f251b695c8629d347">CmdParser</a></li>
-<li>execute()&#160;:&#160;<a class="el" href="class_calibrate_cmd.html#a9c979e62ff060e9218efe359812de2ea">CalibrateCmd</a>, <a class="el" href="class_enable_motor_cmd.html#aed19db21a151de3b0c39524160323457">EnableMotorCmd</a>, <a class="el" href="classget_motor_cmd.html#a7a78cdf82598364bd0db596ec5c4c4c7">getMotorCmd</a>, <a class="el" href="classget_motor_delay_cmd.html#a8f303a80a131389a92056d56e063760a">getMotorDelayCmd</a>, <a class="el" href="classget_motor_direction_cmd.html#a3fd8f5b9573e1b5ed69c8e4db0eaa8af">getMotorDirectionCmd</a>, <a class="el" href="classget_motor_speed_cmd.html#a417c6ed5782be14aee4e2d97560f8af0">getMotorSpeedCmd</a>, <a class="el" href="classget_sensor_cmd.html#aae194bcae6d0de695a7ceb6b3d245084">getSensorCmd</a>, <a class="el" href="classget_sensor_value_cmd.html#a56dd54d09b57a0901d731a9cc5c54676">getSensorValueCmd</a>, <a class="el" href="classget_u_u_i_d.html#a936e4f57c5e32cc1a00cbb6e87f5dd87">getUUID</a>, <a class="el" href="class_i_command.html#ace81beb0beea968f876f292446bf1120">ICommand</a>, <a class="el" href="class_move_motor_cmd.html#a2862a99dc68be06d7dbd6a05e0ac5239">MoveMotorCmd</a>, <a class="el" href="class_move_motor_down_cmd.html#ac319973b67f7df5f252f2849aae38f40">MoveMotorDownCmd</a>, <a class="el" href="class_move_motor_up_cmd.html#abe4d84e2c2bd89bf875820aa96f7acb0">MoveMotorUpCmd</a>, <a class="el" href="class_reset_device.html#a4fea167917ec9599f0f23bed5ef1b1a1">ResetDevice</a>, <a class="el" href="class_rotate_motor_cclk_cmd.html#a9cd0bf2d88fd1cf6dc55eb09d13df733">RotateMotorCclkCmd</a>, <a class="el" href="class_rotate_motor_clk_cmd.html#a56a9f5b4304d8ead3ef66175f0134dc6">RotateMotorClkCmd</a>, <a class="el" href="class_rotate_motor_cmd.html#ad1a8d99fff4d37ff888597633f40ad3b">RotateMotorCmd</a>, <a class="el" href="classset_motor_cmd.html#ac22462c9566d74d1893c8c7a353fd205">setMotorCmd</a>, <a class="el" href="classset_motor_delay_cmd.html#ab8397cfaed1d858b7517e658632099b6">setMotorDelayCmd</a>, <a class="el" href="classset_motor_direction_cmd.html#ab7e1ec07b1cabf7293b57e6c8adee418">setMotorDirectionCmd</a>, <a class="el" href="classset_motor_speed_cmd.html#aed6577e323683bf21b1f0331cad4d5ca">setMotorSpeedCmd</a>, <a class="el" href="classset_u_u_i_d.html#a91a69117ee9a224e831fd77315ce2b21">setUUID</a>, <a class="el" href="class_sleep_device.html#a2af8e3cf7616dca7986a3f3673084404">SleepDevice</a></li>
+<li>EnableAll()&#160;:&#160;<a class="el" href="classAlignment.html#adb8005a2b09b2a08bd618eba4b64ccc5">Alignment</a></li>
+<li>EnableMotorCmd()&#160;:&#160;<a class="el" href="classEnableMotorCmd.html#ab34ba73041a4dd993cd8fc0639d20f27">EnableMotorCmd</a></li>
+<li>endSwitch()&#160;:&#160;<a class="el" href="classendSwitch.html#a7790627e38691079eda7e8c41b13ef96">endSwitch</a></li>
+<li>endSwitch_stop&#160;:&#160;<a class="el" href="classAlignment.html#a064d13de8c775c7b63fa9a854bde3f1a">Alignment</a></li>
+<li>endSwitch_x&#160;:&#160;<a class="el" href="classAlignment.html#a91f199d88034ab646d037e362921998f">Alignment</a></li>
+<li>endSwitch_y&#160;:&#160;<a class="el" href="classAlignment.html#a12a51fc0b7ca663f5c595564dddffdfa">Alignment</a></li>
+<li>endSwitch_z&#160;:&#160;<a class="el" href="classAlignment.html#ad765e3454ed5e893007595790ef850ca">Alignment</a></li>
+<li>equalCmdParam()&#160;:&#160;<a class="el" href="classCmdParser.html#a41408f0cf3162798275b5c3afddf1924">CmdParser</a></li>
+<li>equalCommand()&#160;:&#160;<a class="el" href="classCmdParser.html#ae111b4908ad9a8092488fffaf897ad6f">CmdParser</a></li>
+<li>equalStoreCmd()&#160;:&#160;<a class="el" href="classCmdCallback.html#a311239af663deaa3c90a5907c4d4fc19">CmdCallback&lt; STORESIZE &gt;</a>, <a class="el" href="classCmdCallbackObject.html#a5410a5765b358895449a7e0918cd3a4e">CmdCallbackObject</a></li>
+<li>equalValueFromKey()&#160;:&#160;<a class="el" href="classCmdParser.html#aa8d0e9342798672f251b695c8629d347">CmdParser</a></li>
+<li>execute()&#160;:&#160;<a class="el" href="classCalibrateCmd.html#a9c979e62ff060e9218efe359812de2ea">CalibrateCmd</a>, <a class="el" href="classEnableMotorCmd.html#aed19db21a151de3b0c39524160323457">EnableMotorCmd</a>, <a class="el" href="classgetMotorCmd.html#a7a78cdf82598364bd0db596ec5c4c4c7">getMotorCmd</a>, <a class="el" href="classgetMotorDelayCmd.html#a8f303a80a131389a92056d56e063760a">getMotorDelayCmd</a>, <a class="el" href="classgetMotorDirectionCmd.html#a3fd8f5b9573e1b5ed69c8e4db0eaa8af">getMotorDirectionCmd</a>, <a class="el" href="classgetMotorSpeedCmd.html#a417c6ed5782be14aee4e2d97560f8af0">getMotorSpeedCmd</a>, <a class="el" href="classgetSensorCmd.html#aae194bcae6d0de695a7ceb6b3d245084">getSensorCmd</a>, <a class="el" href="classgetSensorValueCmd.html#a56dd54d09b57a0901d731a9cc5c54676">getSensorValueCmd</a>, <a class="el" href="classgetUUID.html#a936e4f57c5e32cc1a00cbb6e87f5dd87">getUUID</a>, <a class="el" href="classICommand.html#ace81beb0beea968f876f292446bf1120">ICommand</a>, <a class="el" href="classMoveMotorCmd.html#a2862a99dc68be06d7dbd6a05e0ac5239">MoveMotorCmd</a>, <a class="el" href="classMoveMotorDownCmd.html#ac319973b67f7df5f252f2849aae38f40">MoveMotorDownCmd</a>, <a class="el" href="classMoveMotorUpCmd.html#abe4d84e2c2bd89bf875820aa96f7acb0">MoveMotorUpCmd</a>, <a class="el" href="classResetDevice.html#a4fea167917ec9599f0f23bed5ef1b1a1">ResetDevice</a>, <a class="el" href="classRotateMotorCclkCmd.html#a9cd0bf2d88fd1cf6dc55eb09d13df733">RotateMotorCclkCmd</a>, <a class="el" href="classRotateMotorClkCmd.html#a56a9f5b4304d8ead3ef66175f0134dc6">RotateMotorClkCmd</a>, <a class="el" href="classRotateMotorCmd.html#ad1a8d99fff4d37ff888597633f40ad3b">RotateMotorCmd</a>, <a class="el" href="classsetMotorCmd.html#ac22462c9566d74d1893c8c7a353fd205">setMotorCmd</a>, <a class="el" href="classsetMotorDelayCmd.html#ab8397cfaed1d858b7517e658632099b6">setMotorDelayCmd</a>, <a class="el" href="classsetMotorDirectionCmd.html#ab7e1ec07b1cabf7293b57e6c8adee418">setMotorDirectionCmd</a>, <a class="el" href="classsetMotorSpeedCmd.html#aed6577e323683bf21b1f0331cad4d5ca">setMotorSpeedCmd</a>, <a class="el" href="classsetUUID.html#a91a69117ee9a224e831fd77315ce2b21">setUUID</a>, <a class="el" href="classSleepDevice.html#a2af8e3cf7616dca7986a3f3673084404">SleepDevice</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
 </body>
 </html>

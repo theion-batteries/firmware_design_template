@@ -1,16 +1,15 @@
 var searchData=
 [
-  ['yaligned_0',['YAligned',['../class_alignment.html#a6eb54776bebde131b223cb04442ca95c',1,'Alignment']]],
-  ['ydir_5fpin_1',['YDir_pin',['../_configs_8h.html#a2a9126f198bc14e47fbb65de79975044',1,'Configs.h']]],
-  ['ydowndistancearrived_2',['yDownDistanceArrived',['../class_alignment.html#a69d1bca030eb1ec158ad27512f504eaa',1,'Alignment']]],
-  ['ydownmax_3',['yDownMax',['../class_alignment.html#adbc990948f9388f2812fe23056fcffdc',1,'Alignment']]],
-  ['yenable_5fpin_4',['YEnable_pin',['../_configs_8h.html#a064b80ec11d23b70dd972fa875f1d35e',1,'Configs.h']]],
-  ['yield_5',['yield',['../main_8cpp.html#a7cb51f5c2b5cad3766f19eb69c92793b',1,'main.cpp']]],
-  ['yms1_5fpin_6',['YMs1_pin',['../_configs_8h.html#a0851a0a6cae91ef6c638c72478a339ce',1,'Configs.h']]],
-  ['yms2_5fpin_7',['YMs2_pin',['../_configs_8h.html#af66dff6efe20de77864bd29be300d769',1,'Configs.h']]],
-  ['yms3_5fpin_8',['YMs3_pin',['../_configs_8h.html#a7420486125e023653ca601891db9a094',1,'Configs.h']]],
-  ['ysensorhead_9',['YSensorHead',['../_configs_8h.html#a3c24b1a2ecd89cb57e7a9bb0578b9b28',1,'Configs.h']]],
-  ['ystep_5fpin_10',['YStep_pin',['../_configs_8h.html#a31451fba5dcf1434bc5fa4a44d30f97c',1,'Configs.h']]],
-  ['yupdistancearrived_11',['yUpDistanceArrived',['../class_alignment.html#a65b4fe89adf15ded764b816987073109',1,'Alignment']]],
-  ['yupmax_12',['yUpMax',['../class_alignment.html#a6f2d3872a6b87b249f47d4bd4507e8bc',1,'Alignment']]]
+  ['xaligned_0',['XAligned',['../classAlignment.html#a823a490beace9894af4600c3f7747446',1,'Alignment']]],
+  ['xdir_5fpin_1',['XDir_pin',['../Configs_8h.html#a38a45e7b57d3a08225c7863e6942c4fe',1,'Configs.h']]],
+  ['xdowndistancearrived_2',['xDownDistanceArrived',['../classAlignment.html#ac4f9226904b8cadabf0e9a4216f2fc89',1,'Alignment']]],
+  ['xdownmax_3',['xDownMax',['../classAlignment.html#a17f1f93ac35dac591ed757b11410d585',1,'Alignment']]],
+  ['xenable_5fpin_4',['XEnable_pin',['../Configs_8h.html#ab7bda72a2fd4c0b32433adc397983a8e',1,'Configs.h']]],
+  ['xms1_5fpin_5',['XMs1_pin',['../Configs_8h.html#a16d19f9973597e509ca03083a903bdca',1,'Configs.h']]],
+  ['xms2_5fpin_6',['XMs2_pin',['../Configs_8h.html#ad45f7208b60a2058e55c313155db6627',1,'Configs.h']]],
+  ['xms3_5fpin_7',['XMs3_pin',['../Configs_8h.html#a643f067cf73dfcad5aea267a5df29604',1,'Configs.h']]],
+  ['xsensorhead_8',['XSensorHead',['../Configs_8h.html#a0efb601477b8d550c2277c465335247c',1,'Configs.h']]],
+  ['xstep_5fpin_9',['XStep_pin',['../Configs_8h.html#af7e1aa9def8f8c214a5696b89a49678b',1,'Configs.h']]],
+  ['xupdistancearrived_10',['xUpDistanceArrived',['../classAlignment.html#abc4879d71a306310d6204f05bd87b6a0',1,'Alignment']]],
+  ['xupmax_11',['xUpMax',['../classAlignment.html#a4950411fd5a2a8d6b576f72c545c63fd',1,'Alignment']]]
 ];

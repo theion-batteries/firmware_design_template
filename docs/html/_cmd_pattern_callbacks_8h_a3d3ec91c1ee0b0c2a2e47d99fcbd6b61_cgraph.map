@@ -1,7 +1,0 @@
-<map id="rotate_cmd" name="rotate_cmd">
-<area shape="rect" id="node1" title="callback cmd" alt="" coords="5,81,92,108"/>
-<area shape="rect" id="node2" href="$_cmd_pattern_callbacks_8cpp.html#a725ae5b5ae06426a9f27138daa783636" title="display help" alt="" coords="170,5,301,32"/>
-<area shape="rect" id="node3" href="$class_cmd_parser.html#a41408f0cf3162798275b5c3afddf1924" title=" " alt="" coords="140,56,331,83"/>
-<area shape="rect" id="node4" href="$class_cmd_parser.html#a49170df1a0052fa1fdb28235a488e7c6" title=" " alt="" coords="379,81,557,108"/>
-<area shape="rect" id="node5" href="$class_i_command.html#ace81beb0beea968f876f292446bf1120" title=" " alt="" coords="166,157,305,184"/>
-</map>

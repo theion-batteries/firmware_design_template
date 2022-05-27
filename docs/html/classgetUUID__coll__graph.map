@@ -1,0 +1,5 @@
+<map id="getUUID" name="getUUID">
+<area shape="rect" id="node1" title=" " alt="" coords="76,95,147,121"/>
+<area shape="rect" id="node2" href="$classICommand.html" title=" " alt="" coords="5,5,89,32"/>
+<area shape="rect" id="node3" href="$classUUID__MANAGER.html" title="Class for managing UUID, construct a new uuid manager object by passing the name to constructor to au..." alt="" coords="114,5,239,32"/>
+</map>

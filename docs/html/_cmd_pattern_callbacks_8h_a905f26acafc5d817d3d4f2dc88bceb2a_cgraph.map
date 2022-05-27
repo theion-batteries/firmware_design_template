@@ -1,6 +1,0 @@
-<map id="calibrate_cmd" name="calibrate_cmd">
-<area shape="rect" id="node1" title="calibrate cmd using invoker" alt="" coords="5,56,108,83"/>
-<area shape="rect" id="node2" href="$class_cmd_parser.html#a41408f0cf3162798275b5c3afddf1924" title=" " alt="" coords="156,5,347,32"/>
-<area shape="rect" id="node3" href="$class_cmd_parser.html#a49170df1a0052fa1fdb28235a488e7c6" title=" " alt="" coords="395,31,573,57"/>
-<area shape="rect" id="node4" href="$class_firm_invoker.html#a32ee0681b841f54012256169e127ef5b" title=" " alt="" coords="159,107,343,133"/>
-</map>

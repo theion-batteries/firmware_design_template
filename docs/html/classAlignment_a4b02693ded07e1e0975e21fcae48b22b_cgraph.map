@@ -1,0 +1,15 @@
+<map id="Alignment::MoveDistanceYloop" name="Alignment::MoveDistanceYloop">
+<area shape="rect" id="node1" title=" " alt="" coords="5,114,208,141"/>
+<area shape="rect" id="node2" href="$classAlignment.html#a29a09538dce5388b0873b131ea2f66a7" title=" " alt="" coords="273,21,449,47"/>
+<area shape="rect" id="node5" href="$classAlignment.html#adcc6aceb95f7f9c40463009ea686b25e" title=" " alt="" coords="256,82,467,109"/>
+<area shape="rect" id="node8" href="$classAlignment.html#a04e9899bf752e59d8f69ba2df62dbf62" title=" " alt="" coords="272,139,451,166"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#a7cb51f5c2b5cad3766f19eb69c92793b" title=" " alt="" coords="337,190,386,217"/>
+<area shape="rect" id="node3" href="$classAlignment.html#aac7394937e1dc058fb929abca3465dd1" title=" " alt="" coords="515,5,697,47"/>
+<area shape="rect" id="node4" href="$classlightBarrier.html#a9f75c7d7640cf9aab7f67f1b16e27077" title="get current state" alt="" coords="745,5,903,47"/>
+<area shape="rect" id="node6" href="$classendSwitch.html#ae1f7e6d7200feb02820c02708bca01c0" title="get current state" alt="" coords="529,71,683,112"/>
+<area shape="rect" id="node7" href="$classendSwitch.html#ac38e43effb237b61a1f4b09092b5ac53" title="debounce a button" alt="" coords="751,78,897,105"/>
+<area shape="rect" id="node9" href="$classAlignment.html#ac8aa65bdcfb551bb996ac59ee8d8db3d" title="convert distance in mm or µm to step or microstep" alt="" coords="515,136,697,177"/>
+<area shape="rect" id="node10" href="$classAlignment.html#a8aa856f47fad52fd553f0d933edcb23b" title=" " alt="" coords="529,202,683,229"/>
+<area shape="rect" id="node11" href="$classa4988.html#a6a37cf937b1f7a1f229904cdb9191b89" title=" " alt="" coords="757,177,891,203"/>
+<area shape="rect" id="node12" href="$classa4988.html#a2074f2e3fe7cd79e402f53a14ba68c89" title=" " alt="" coords="763,227,885,254"/>
+</map>

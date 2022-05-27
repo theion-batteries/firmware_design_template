@@ -1,7 +1,0 @@
-<map id="CmdPatternCallbacks.h" name="CmdPatternCallbacks.h">
-<area shape="rect" id="node1" title="binding command inokation with parser callbacks" alt="" coords="98,5,257,32"/>
-<area shape="rect" id="node2" href="$_cmd_pattern_callbacks_8cpp.html" title=" " alt="" coords="5,80,179,107"/>
-<area shape="rect" id="node3" href="$_com_handler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="203,80,322,107"/>
-<area shape="rect" id="node4" href="$_com_handler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="142,155,261,181"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title="launch main scheduler" alt="" coords="285,155,360,181"/>
-</map>

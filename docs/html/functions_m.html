@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="theion.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.3</span>
    </div>
-   <div id="projectbrief">To privde modular and efficient high level software design</div>
+   <div id="projectbrief">API Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -53,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_m.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,59 +66,67 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>m_cmdList&#160;:&#160;<a class="el" href="class___cmd_callback.html#ae4348652c3b261516da11dd7111319bf">_CmdCallback&lt; STORESIZE, T &gt;</a></li>
-<li>m_functList&#160;:&#160;<a class="el" href="class___cmd_callback.html#afb05318faf24ccfbb379ff142e4cdc0d">_CmdCallback&lt; STORESIZE, T &gt;</a></li>
-<li>m_nextElement&#160;:&#160;<a class="el" href="class___cmd_callback.html#a903e55f5cdb2331129e59745d4ffeeb6">_CmdCallback&lt; STORESIZE, T &gt;</a></li>
-<li>MaxDistanceToMl&#160;:&#160;<a class="el" href="class_alignment.html#afad0188cf4e9df73809ed1eec1c419a4">Alignment</a></li>
-<li>millisec&#160;:&#160;<a class="el" href="class_task_timer.html#aff20eb62bde5ca64afae5f867fd7adf6">TaskTimer</a></li>
-<li>MinDistanceToML&#160;:&#160;<a class="el" href="class_alignment.html#a51100f220f7e987aa37d1a4f43332111">Alignment</a></li>
-<li>Motor_PrintHead&#160;:&#160;<a class="el" href="class_alignment.html#a1670266fe11fc62edfdac779742f94e8">Alignment</a></li>
+<li>M&#160;:&#160;<a class="el" href="classEnableMotorCmd.html#a41e17c56ef1a28266e60a7fe1c27ffee">EnableMotorCmd</a>, <a class="el" href="classgetMotorCmd.html#ab42141603d2d97809e4603bbf30876e1">getMotorCmd</a>, <a class="el" href="classgetMotorDelayCmd.html#ac1d7d10b499cb6a407c5fb028e4e7de4">getMotorDelayCmd</a>, <a class="el" href="classgetMotorDirectionCmd.html#afce16072b26a07c7fca93993c9302feb">getMotorDirectionCmd</a>, <a class="el" href="classgetMotorSpeedCmd.html#a85cd2a0f5754e6f34bed1229aa3d2a96">getMotorSpeedCmd</a>, <a class="el" href="classMoveMotorCmd.html#adf973aaa7105ac7fe66999875c5ddc06">MoveMotorCmd</a>, <a class="el" href="classMoveMotorDownCmd.html#acf57ba65f7c8baa71ad54ba130c00458">MoveMotorDownCmd</a>, <a class="el" href="classMoveMotorUpCmd.html#a507adb6c35317160c5e773513aec16c4">MoveMotorUpCmd</a>, <a class="el" href="classRotateMotorCclkCmd.html#a8eaef95372902b8c19ef1265b533d630">RotateMotorCclkCmd</a>, <a class="el" href="classRotateMotorClkCmd.html#a06f4795f43b9c99e46f5d29071744c46">RotateMotorClkCmd</a>, <a class="el" href="classRotateMotorCmd.html#a9e0bce6d16c82fffba1f3e40a1d4ba43">RotateMotorCmd</a>, <a class="el" href="classsetMotorCmd.html#a0c9caa2443bc4b2eaaf47c3906219f61">setMotorCmd</a>, <a class="el" href="classsetMotorDelayCmd.html#ae5288d00be235b3032b7453ba4ee2624">setMotorDelayCmd</a>, <a class="el" href="classsetMotorDirectionCmd.html#a1420586de3840b7e17f556f5bb4a4c08">setMotorDirectionCmd</a>, <a class="el" href="classsetMotorSpeedCmd.html#a99d9620b6056f42a44ea4f3d59d56888">setMotorSpeedCmd</a></li>
+<li>m_bsChar&#160;:&#160;<a class="el" href="classCmdBufferObject.html#a7b10ca3e68472435a7c1d83e11b7bfea">CmdBufferObject</a></li>
+<li>m_buffer&#160;:&#160;<a class="el" href="classCmdBuffer.html#ac7ac9acc5322e95b7110ea31bf300a74">CmdBuffer&lt; BUFFERSIZE &gt;</a>, <a class="el" href="classCmdParser.html#a8b384282fa1081e4398d8905c15c3a17">CmdParser</a></li>
+<li>m_bufferSize&#160;:&#160;<a class="el" href="classCmdParser.html#a817a159699c2ed1cefb1b39ebc5c358c">CmdParser</a></li>
+<li>m_cmdList&#160;:&#160;<a class="el" href="class__CmdCallback.html#ae4348652c3b261516da11dd7111319bf">_CmdCallback&lt; STORESIZE, T &gt;</a></li>
+<li>m_dataOffset&#160;:&#160;<a class="el" href="classCmdBufferObject.html#aa6ecf34326031ece416dbaddc9009315">CmdBufferObject</a></li>
+<li>m_echo&#160;:&#160;<a class="el" href="classCmdBufferObject.html#afcd801b37ca74d63ea6a11cfd1343b0c">CmdBufferObject</a></li>
+<li>m_endChar&#160;:&#160;<a class="el" href="classCmdBufferObject.html#ad400b6aa6a5f45f8b69f7aca786f8dac">CmdBufferObject</a></li>
+<li>m_functList&#160;:&#160;<a class="el" href="class__CmdCallback.html#afb05318faf24ccfbb379ff142e4cdc0d">_CmdCallback&lt; STORESIZE, T &gt;</a>, <a class="el" href="classCmdCallbackObject.html#a5ffae67737817e05ad1d027be7c8ed16">CmdCallbackObject</a></li>
+<li>m_ignoreQuote&#160;:&#160;<a class="el" href="classCmdParser.html#a63e3a33727f7147612adb8d20fface72">CmdParser</a></li>
+<li>m_nextElement&#160;:&#160;<a class="el" href="class__CmdCallback.html#a903e55f5cdb2331129e59745d4ffeeb6">_CmdCallback&lt; STORESIZE, T &gt;</a></li>
+<li>m_paramCount&#160;:&#160;<a class="el" href="classCmdParser.html#a84bf860714c519fb5ac519996195a645">CmdParser</a></li>
+<li>m_seperator&#160;:&#160;<a class="el" href="classCmdParser.html#ac85fb595442587bfd6dccb2b098a41e7">CmdParser</a></li>
+<li>m_useKeyValue&#160;:&#160;<a class="el" href="classCmdParser.html#a55fff4c2e716386f1464448b53ba941c">CmdParser</a></li>
+<li>MaxDistanceToMl&#160;:&#160;<a class="el" href="classAlignment.html#afad0188cf4e9df73809ed1eec1c419a4">Alignment</a></li>
+<li>millisec&#160;:&#160;<a class="el" href="classTaskTimer.html#aff20eb62bde5ca64afae5f867fd7adf6">TaskTimer</a></li>
+<li>MinDistanceToML&#160;:&#160;<a class="el" href="classAlignment.html#a51100f220f7e987aa37d1a4f43332111">Alignment</a></li>
+<li>Motor_PrintHead&#160;:&#160;<a class="el" href="classAlignment.html#a1670266fe11fc62edfdac779742f94e8">Alignment</a></li>
 <li>motor_steps&#160;:&#160;<a class="el" href="classa4988.html#ad6372b76bfc23c771d7e6555a106e292">a4988</a></li>
-<li>Motor_x&#160;:&#160;<a class="el" href="class_alignment.html#ad85229a057de3aabd68187e69f6ffbd1">Alignment</a></li>
-<li>Motor_y&#160;:&#160;<a class="el" href="class_alignment.html#a9f283802f29f7ab8055b5a4ee5c48d41">Alignment</a></li>
-<li>Motor_z&#160;:&#160;<a class="el" href="class_alignment.html#ae363694f1cc3dbf5b350d20aa6d9c915">Alignment</a></li>
-<li>MoveAngleAll()&#160;:&#160;<a class="el" href="class_alignment.html#ae074cb8d75f0d9de31b552842acc96ed">Alignment</a></li>
-<li>MoveAngleAllSafe()&#160;:&#160;<a class="el" href="class_alignment.html#a97f0c9cbacf45c6a73e4535db0c55d43">Alignment</a></li>
-<li>MoveAngleX()&#160;:&#160;<a class="el" href="class_alignment.html#a4a58c2a272b49f6cb794f3766d10f712">Alignment</a></li>
-<li>MoveAngleXSafe()&#160;:&#160;<a class="el" href="class_alignment.html#ab8c075766ec6ff9b8f66ade49139879d">Alignment</a></li>
-<li>MoveAngleY()&#160;:&#160;<a class="el" href="class_alignment.html#a128ba6db0f413f23c78b222ba98bda4c">Alignment</a></li>
-<li>MoveAngleYSafe()&#160;:&#160;<a class="el" href="class_alignment.html#a050f3ae23879c74437bfe3a82bc3a432">Alignment</a></li>
-<li>MoveAngleZ()&#160;:&#160;<a class="el" href="class_alignment.html#a00909c4e7791e7a3c98c6022e7239ff1">Alignment</a></li>
-<li>MoveAngleZSafe()&#160;:&#160;<a class="el" href="class_alignment.html#ace1287639428d2c45606677eb6287bc2">Alignment</a></li>
-<li>MoveDistanceAll()&#160;:&#160;<a class="el" href="class_alignment.html#a5b07a13524b1d7919aaa09837254ca01">Alignment</a></li>
-<li>MoveDistanceAllSafe()&#160;:&#160;<a class="el" href="class_alignment.html#a4cacf6c33dbaec2e424f752f678aeaa9">Alignment</a></li>
-<li>MoveDistanceMSafe()&#160;:&#160;<a class="el" href="class_alignment.html#ab7e9da9ded962b937b7df23e116f3b0e">Alignment</a></li>
-<li>MoveDistanceX()&#160;:&#160;<a class="el" href="class_alignment.html#a9a308ec9c53310e89e79b84c5274fa6c">Alignment</a></li>
-<li>MoveDistanceXloop()&#160;:&#160;<a class="el" href="class_alignment.html#aea699b9dbfd70c662031b7c5e60acd7f">Alignment</a></li>
-<li>MoveDistanceXSafe()&#160;:&#160;<a class="el" href="class_alignment.html#a01a1103e23dd986877681907d20cc1f8">Alignment</a></li>
-<li>MoveDistanceY()&#160;:&#160;<a class="el" href="class_alignment.html#a04e9899bf752e59d8f69ba2df62dbf62">Alignment</a></li>
-<li>MoveDistanceYloop()&#160;:&#160;<a class="el" href="class_alignment.html#a4b02693ded07e1e0975e21fcae48b22b">Alignment</a></li>
-<li>MoveDistanceYSafe()&#160;:&#160;<a class="el" href="class_alignment.html#abbd45543d5f6dcdaf88633fcade036bf">Alignment</a></li>
-<li>MoveDistanceZ()&#160;:&#160;<a class="el" href="class_alignment.html#a24e83e729b3b6b9d5c9fee02a42e26cb">Alignment</a></li>
-<li>MoveDistanceZloop()&#160;:&#160;<a class="el" href="class_alignment.html#a934a3a3bb589ce0bf137f4d7230d5f9c">Alignment</a></li>
-<li>MoveDistanceZSafe()&#160;:&#160;<a class="el" href="class_alignment.html#ade2162aba2ca25114a6edefcbbb0ea94">Alignment</a></li>
-<li>MoveDown()&#160;:&#160;<a class="el" href="class_alignment.html#a9ee2f855eaef73efc23e402fe350affe">Alignment</a></li>
-<li>moveDown()&#160;:&#160;<a class="el" href="class_motor_invoker.html#a1f732269172a2bb248deb930bddfe86b">MotorInvoker</a></li>
-<li>MoveDownTo()&#160;:&#160;<a class="el" href="class_alignment.html#a02c85b7369d6366477d23c910e966991">Alignment</a></li>
-<li>MoveHomeAll()&#160;:&#160;<a class="el" href="class_alignment.html#aebf2eaacef3587f39e049941e7bc2a4d">Alignment</a></li>
-<li>MoveMotorCmd()&#160;:&#160;<a class="el" href="class_move_motor_cmd.html#ac5df7df07c177de08c224ccf226818f5">MoveMotorCmd</a></li>
-<li>MoveMotorDownCmd()&#160;:&#160;<a class="el" href="class_move_motor_down_cmd.html#ad312945f6bd48431d6b75e2a948f6068">MoveMotorDownCmd</a></li>
-<li>MoveMotorUpCmd()&#160;:&#160;<a class="el" href="class_move_motor_up_cmd.html#addb4d2ca78ee434a014f1fb99e560bc0">MoveMotorUpCmd</a></li>
-<li>movePhToRefX()&#160;:&#160;<a class="el" href="class_alignment.html#ab5378ab4e1db1bd90dc0ed3854079a4c">Alignment</a></li>
-<li>MoveUp()&#160;:&#160;<a class="el" href="class_alignment.html#abd04781467254f18f9c29e78941355b3">Alignment</a></li>
-<li>moveUp()&#160;:&#160;<a class="el" href="class_motor_invoker.html#a5a337c1b070c332cb8636895ba75d321">MotorInvoker</a></li>
-<li>MoveUpTo()&#160;:&#160;<a class="el" href="class_alignment.html#a83588502ba1f7a06b1b9376d65223685">Alignment</a></li>
+<li>Motor_x&#160;:&#160;<a class="el" href="classAlignment.html#ad85229a057de3aabd68187e69f6ffbd1">Alignment</a></li>
+<li>Motor_y&#160;:&#160;<a class="el" href="classAlignment.html#a9f283802f29f7ab8055b5a4ee5c48d41">Alignment</a></li>
+<li>Motor_z&#160;:&#160;<a class="el" href="classAlignment.html#ae363694f1cc3dbf5b350d20aa6d9c915">Alignment</a></li>
+<li>MoveAngleAll()&#160;:&#160;<a class="el" href="classAlignment.html#ae074cb8d75f0d9de31b552842acc96ed">Alignment</a></li>
+<li>MoveAngleAllSafe()&#160;:&#160;<a class="el" href="classAlignment.html#a97f0c9cbacf45c6a73e4535db0c55d43">Alignment</a></li>
+<li>MoveAngleX()&#160;:&#160;<a class="el" href="classAlignment.html#a4a58c2a272b49f6cb794f3766d10f712">Alignment</a></li>
+<li>MoveAngleXSafe()&#160;:&#160;<a class="el" href="classAlignment.html#ab8c075766ec6ff9b8f66ade49139879d">Alignment</a></li>
+<li>MoveAngleY()&#160;:&#160;<a class="el" href="classAlignment.html#a128ba6db0f413f23c78b222ba98bda4c">Alignment</a></li>
+<li>MoveAngleYSafe()&#160;:&#160;<a class="el" href="classAlignment.html#a050f3ae23879c74437bfe3a82bc3a432">Alignment</a></li>
+<li>MoveAngleZ()&#160;:&#160;<a class="el" href="classAlignment.html#a00909c4e7791e7a3c98c6022e7239ff1">Alignment</a></li>
+<li>MoveAngleZSafe()&#160;:&#160;<a class="el" href="classAlignment.html#ace1287639428d2c45606677eb6287bc2">Alignment</a></li>
+<li>MoveDistanceAll()&#160;:&#160;<a class="el" href="classAlignment.html#a5b07a13524b1d7919aaa09837254ca01">Alignment</a></li>
+<li>MoveDistanceAllSafe()&#160;:&#160;<a class="el" href="classAlignment.html#a4cacf6c33dbaec2e424f752f678aeaa9">Alignment</a></li>
+<li>MoveDistanceMSafe()&#160;:&#160;<a class="el" href="classAlignment.html#ab7e9da9ded962b937b7df23e116f3b0e">Alignment</a></li>
+<li>MoveDistanceX()&#160;:&#160;<a class="el" href="classAlignment.html#a9a308ec9c53310e89e79b84c5274fa6c">Alignment</a></li>
+<li>MoveDistanceXloop()&#160;:&#160;<a class="el" href="classAlignment.html#aea699b9dbfd70c662031b7c5e60acd7f">Alignment</a></li>
+<li>MoveDistanceXSafe()&#160;:&#160;<a class="el" href="classAlignment.html#a01a1103e23dd986877681907d20cc1f8">Alignment</a></li>
+<li>MoveDistanceY()&#160;:&#160;<a class="el" href="classAlignment.html#a04e9899bf752e59d8f69ba2df62dbf62">Alignment</a></li>
+<li>MoveDistanceYloop()&#160;:&#160;<a class="el" href="classAlignment.html#a4b02693ded07e1e0975e21fcae48b22b">Alignment</a></li>
+<li>MoveDistanceYSafe()&#160;:&#160;<a class="el" href="classAlignment.html#abbd45543d5f6dcdaf88633fcade036bf">Alignment</a></li>
+<li>MoveDistanceZ()&#160;:&#160;<a class="el" href="classAlignment.html#a24e83e729b3b6b9d5c9fee02a42e26cb">Alignment</a></li>
+<li>MoveDistanceZloop()&#160;:&#160;<a class="el" href="classAlignment.html#a934a3a3bb589ce0bf137f4d7230d5f9c">Alignment</a></li>
+<li>MoveDistanceZSafe()&#160;:&#160;<a class="el" href="classAlignment.html#ade2162aba2ca25114a6edefcbbb0ea94">Alignment</a></li>
+<li>MoveDown()&#160;:&#160;<a class="el" href="classAlignment.html#a9ee2f855eaef73efc23e402fe350affe">Alignment</a></li>
+<li>moveDown()&#160;:&#160;<a class="el" href="classMotorInvoker.html#a1f732269172a2bb248deb930bddfe86b">MotorInvoker</a></li>
+<li>MoveDownTo()&#160;:&#160;<a class="el" href="classAlignment.html#a02c85b7369d6366477d23c910e966991">Alignment</a></li>
+<li>MoveHomeAll()&#160;:&#160;<a class="el" href="classAlignment.html#aebf2eaacef3587f39e049941e7bc2a4d">Alignment</a></li>
+<li>MoveMotorCmd()&#160;:&#160;<a class="el" href="classMoveMotorCmd.html#ac5df7df07c177de08c224ccf226818f5">MoveMotorCmd</a></li>
+<li>MoveMotorDownCmd()&#160;:&#160;<a class="el" href="classMoveMotorDownCmd.html#ad312945f6bd48431d6b75e2a948f6068">MoveMotorDownCmd</a></li>
+<li>MoveMotorUpCmd()&#160;:&#160;<a class="el" href="classMoveMotorUpCmd.html#addb4d2ca78ee434a014f1fb99e560bc0">MoveMotorUpCmd</a></li>
+<li>movePhToRefX()&#160;:&#160;<a class="el" href="classAlignment.html#ab5378ab4e1db1bd90dc0ed3854079a4c">Alignment</a></li>
+<li>MoveUp()&#160;:&#160;<a class="el" href="classAlignment.html#abd04781467254f18f9c29e78941355b3">Alignment</a></li>
+<li>moveUp()&#160;:&#160;<a class="el" href="classMotorInvoker.html#a5a337c1b070c332cb8636895ba75d321">MotorInvoker</a></li>
+<li>MoveUpTo()&#160;:&#160;<a class="el" href="classAlignment.html#a83588502ba1f7a06b1b9376d65223685">Alignment</a></li>
 <li>ms1_pin&#160;:&#160;<a class="el" href="classa4988.html#a2be691a68489baf9924cc7c69b16f7c0">a4988</a></li>
 <li>ms2_pin&#160;:&#160;<a class="el" href="classa4988.html#af6dd6e9adf74830b1ce8b37717cd3ff1">a4988</a></li>
 <li>ms3_pin&#160;:&#160;<a class="el" href="classa4988.html#ad791d1b4e66527168deb1aa96a6cc11f">a4988</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
 </body>
 </html>

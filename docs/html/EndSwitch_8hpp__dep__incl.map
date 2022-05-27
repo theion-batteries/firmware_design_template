@@ -1,0 +1,15 @@
+<map id="EndSwitch.hpp" name="EndSwitch.hpp">
+<area shape="rect" id="node1" title="endswitch class" alt="" coords="135,5,245,32"/>
+<area shape="rect" id="node2" href="$Alignment_8hpp.html" title=" " alt="" coords="5,80,111,107"/>
+<area shape="rect" id="node12" href="$EndSwitch_8cpp.html" title=" " alt="" coords="135,80,245,107"/>
+<area shape="rect" id="node13" href="$Reset_8h.html" title="class reset for hardware/software reset" alt="" coords="269,80,335,107"/>
+<area shape="rect" id="node3" href="$Alignment_8cpp.html" title=" " alt="" coords="5,155,111,181"/>
+<area shape="rect" id="node4" href="$CmdPatternClasses_8h.html" title="interface Command &amp;Invoker and Classes Definition here" alt="" coords="181,155,330,181"/>
+<area shape="rect" id="node5" href="$Globals_8h.html" title="include declarations for commands classes" alt="" coords="217,229,294,256"/>
+<area shape="rect" id="node6" href="$CmdPatternCallbacks_8h.html" title="binding command inokation with parser callbacks" alt="" coords="101,304,260,331"/>
+<area shape="rect" id="node11" href="$Globals_8cpp.html" title=" " alt="" coords="285,304,375,331"/>
+<area shape="rect" id="node7" href="$CmdPatternCallbacks_8cpp.html" title=" " alt="" coords="9,379,182,405"/>
+<area shape="rect" id="node8" href="$ComHandler_8hpp.html" title="This Class handles serial communication layer." alt="" coords="207,379,325,405"/>
+<area shape="rect" id="node9" href="$ComHandler_8cpp.html" title="This Class handles serial communication layer." alt="" coords="147,453,265,480"/>
+<area shape="rect" id="node10" href="$main_8cpp.html" title="launch main scheduler" alt="" coords="290,453,365,480"/>
+</map>

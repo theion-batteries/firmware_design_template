@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="theion.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.3</span>
    </div>
-   <div id="projectbrief">To privde modular and efficient high level software design</div>
+   <div id="projectbrief">API Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -53,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('globals.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,239 +66,236 @@ $(document).ready(function(){initNavTree('globals.html',''); initResizable(); })
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
-<li>AlignId&#160;:&#160;<a class="el" href="_globals_8h.html#a5171186bb4896bb433ed9c928af0d072">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a793a8906611d9619fa53fb7ef1effd9a">Globals.cpp</a></li>
-<li>AlignObj&#160;:&#160;<a class="el" href="_globals_8h.html#a55c1560ef026f8e9b07d7a623b8cf091">Globals.h</a></li>
-<li>AllowedPath&#160;:&#160;<a class="el" href="_configs_8h.html#ad26bd3059b83a3b0cfa6df25ac328bc8">Configs.h</a></li>
-<li>Angle_per_step&#160;:&#160;<a class="el" href="_configs_8h.html#a6eb25972098f2e79011638673cfc3b47">Configs.h</a></li>
+<li>AlignId&#160;:&#160;<a class="el" href="Globals_8cpp.html#a793a8906611d9619fa53fb7ef1effd9a">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a5171186bb4896bb433ed9c928af0d072">Globals.h</a></li>
+<li>AlignObj&#160;:&#160;<a class="el" href="Globals_8h.html#a55c1560ef026f8e9b07d7a623b8cf091">Globals.h</a></li>
+<li>AllowedPath&#160;:&#160;<a class="el" href="Configs_8h.html#ad26bd3059b83a3b0cfa6df25ac328bc8">Configs.h</a></li>
+<li>Angle_per_step&#160;:&#160;<a class="el" href="Configs_8h.html#a6eb25972098f2e79011638673cfc3b47">Configs.h</a></li>
 </ul>
 
 
 <h3><a id="index_b" name="index_b"></a>- b -</h3><ul>
-<li>BackgroundThreadCallback()&#160;:&#160;<a class="el" href="_globals_8h.html#a7bb396aa99b014129d46b51d1f135c5a">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a7bb396aa99b014129d46b51d1f135c5a">Globals.cpp</a></li>
-<li>BAUDRATE&#160;:&#160;<a class="el" href="_configs_8h.html#a734bbab06e1a9fd2e5522db0221ff6e3">Configs.h</a></li>
+<li>BackgroundThreadCallback()&#160;:&#160;<a class="el" href="Globals_8cpp.html#a7bb396aa99b014129d46b51d1f135c5a">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a7bb396aa99b014129d46b51d1f135c5a">Globals.h</a></li>
+<li>BAUDRATE&#160;:&#160;<a class="el" href="Configs_8h.html#a734bbab06e1a9fd2e5522db0221ff6e3">Configs.h</a></li>
 </ul>
 
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>Calibrate&#160;:&#160;<a class="el" href="_globals_8h.html#a0fd0ced2811b8e7b87f5b472d8f48cb8">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a0fd0ced2811b8e7b87f5b472d8f48cb8">Globals.cpp</a></li>
-<li>calibrate_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a905f26acafc5d817d3d4f2dc88bceb2a">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a905f26acafc5d817d3d4f2dc88bceb2a">CmdPatternCallbacks.cpp</a></li>
-<li>cclk&#160;:&#160;<a class="el" href="_configs_8h.html#ac15bd348b546cfa8e7c9330b517bc217">Configs.h</a></li>
-<li>clk&#160;:&#160;<a class="el" href="_configs_8h.html#ae4a6a5757fdb3dd50355cea42bab342c">Configs.h</a></li>
-<li>CMDBUFFER_CHAR_BS&#160;:&#160;<a class="el" href="_cmd_buffer_8hpp.html#a14ff876854bf06c1003064f5b9e072f0">CmdBuffer.hpp</a></li>
-<li>CMDBUFFER_CHAR_CR&#160;:&#160;<a class="el" href="_cmd_buffer_8hpp.html#a92066383444cf86ec4e23d86a8960ec7">CmdBuffer.hpp</a></li>
-<li>CMDBUFFER_CHAR_DEL&#160;:&#160;<a class="el" href="_cmd_buffer_8hpp.html#acc8aee73870eab730e5723c0e91182cd">CmdBuffer.hpp</a></li>
-<li>CMDBUFFER_CHAR_LF&#160;:&#160;<a class="el" href="_cmd_buffer_8hpp.html#a35db9b96b77ff5fcc5cfc5bb6c16a5a7">CmdBuffer.hpp</a></li>
-<li>CMDBUFFER_CHAR_PRINTABLE&#160;:&#160;<a class="el" href="_cmd_buffer_8hpp.html#aa92744ebcb1216976a63d5a19dbcfb4a">CmdBuffer.hpp</a></li>
-<li>cmdCallback&#160;:&#160;<a class="el" href="_globals_8h.html#aa040d89e504cf8fdf7f7d28e87142e6b">Globals.h</a>, <a class="el" href="_globals_8cpp.html#aa040d89e504cf8fdf7f7d28e87142e6b">Globals.cpp</a></li>
-<li>CmdCallFunct&#160;:&#160;<a class="el" href="_cmd_callback_8hpp.html#af311870fc30f3981ec08da54c54dc9f1">CmdCallback.hpp</a></li>
-<li>CmdDeleter&#160;:&#160;<a class="el" href="_globals_8h.html#a14328e108fe32a87ed5cbb50639e2951">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a14328e108fe32a87ed5cbb50639e2951">Globals.cpp</a></li>
-<li>CMDPARSER_CHAR_DQ&#160;:&#160;<a class="el" href="_cmd_parser_8hpp.html#a3d8e1545a55d983629b4b23d00b88c1c">CmdParser.hpp</a></li>
-<li>CMDPARSER_CHAR_EQ&#160;:&#160;<a class="el" href="_cmd_parser_8hpp.html#a293a7e2fc54bbfec5b0e8da10ec9a7fc">CmdParser.hpp</a></li>
-<li>CMDPARSER_CHAR_SP&#160;:&#160;<a class="el" href="_cmd_parser_8hpp.html#a94a8be72182a06b2748afa109c831ab5">CmdParser.hpp</a></li>
-<li>CMDPARSER_ERROR&#160;:&#160;<a class="el" href="_cmd_parser_8hpp.html#aa84115565fbd5d676715b34f14228b26">CmdParser.hpp</a></li>
-<li>CmdParserString&#160;:&#160;<a class="el" href="_cmd_parser_8hpp.html#a8b6cbada9e913ae4dbc8e00aacdba391">CmdParser.hpp</a></li>
-<li>CmdStack&#160;:&#160;<a class="el" href="_globals_8h.html#a7b69cdbd45d008e8f6a1ad47890d6942">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a7b69cdbd45d008e8f6a1ad47890d6942">Globals.cpp</a></li>
+<li>Calibrate&#160;:&#160;<a class="el" href="Globals_8cpp.html#a0fd0ced2811b8e7b87f5b472d8f48cb8">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a0fd0ced2811b8e7b87f5b472d8f48cb8">Globals.h</a></li>
+<li>calibrate_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a905f26acafc5d817d3d4f2dc88bceb2a">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a905f26acafc5d817d3d4f2dc88bceb2a">CmdPatternCallbacks.h</a></li>
+<li>cclk&#160;:&#160;<a class="el" href="Configs_8h.html#ac15bd348b546cfa8e7c9330b517bc217">Configs.h</a></li>
+<li>clk&#160;:&#160;<a class="el" href="Configs_8h.html#ae4a6a5757fdb3dd50355cea42bab342c">Configs.h</a></li>
+<li>CMDBUFFER_CHAR_BS&#160;:&#160;<a class="el" href="CmdBuffer_8hpp.html#a14ff876854bf06c1003064f5b9e072f0">CmdBuffer.hpp</a></li>
+<li>CMDBUFFER_CHAR_CR&#160;:&#160;<a class="el" href="CmdBuffer_8hpp.html#a92066383444cf86ec4e23d86a8960ec7">CmdBuffer.hpp</a></li>
+<li>CMDBUFFER_CHAR_DEL&#160;:&#160;<a class="el" href="CmdBuffer_8hpp.html#acc8aee73870eab730e5723c0e91182cd">CmdBuffer.hpp</a></li>
+<li>CMDBUFFER_CHAR_LF&#160;:&#160;<a class="el" href="CmdBuffer_8hpp.html#a35db9b96b77ff5fcc5cfc5bb6c16a5a7">CmdBuffer.hpp</a></li>
+<li>CMDBUFFER_CHAR_PRINTABLE&#160;:&#160;<a class="el" href="CmdBuffer_8hpp.html#aa92744ebcb1216976a63d5a19dbcfb4a">CmdBuffer.hpp</a></li>
+<li>cmdCallback&#160;:&#160;<a class="el" href="Globals_8cpp.html#aa040d89e504cf8fdf7f7d28e87142e6b">Globals.cpp</a>, <a class="el" href="Globals_8h.html#aa040d89e504cf8fdf7f7d28e87142e6b">Globals.h</a></li>
+<li>CmdCallFunct&#160;:&#160;<a class="el" href="CmdCallback_8hpp.html#af311870fc30f3981ec08da54c54dc9f1">CmdCallback.hpp</a></li>
+<li>CmdDeleter&#160;:&#160;<a class="el" href="Globals_8cpp.html#a14328e108fe32a87ed5cbb50639e2951">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a14328e108fe32a87ed5cbb50639e2951">Globals.h</a></li>
+<li>CMDPARSER_CHAR_DQ&#160;:&#160;<a class="el" href="CmdParser_8hpp.html#a3d8e1545a55d983629b4b23d00b88c1c">CmdParser.hpp</a></li>
+<li>CMDPARSER_CHAR_EQ&#160;:&#160;<a class="el" href="CmdParser_8hpp.html#a293a7e2fc54bbfec5b0e8da10ec9a7fc">CmdParser.hpp</a></li>
+<li>CMDPARSER_CHAR_SP&#160;:&#160;<a class="el" href="CmdParser_8hpp.html#a94a8be72182a06b2748afa109c831ab5">CmdParser.hpp</a></li>
+<li>CMDPARSER_ERROR&#160;:&#160;<a class="el" href="CmdParser_8hpp.html#aa84115565fbd5d676715b34f14228b26">CmdParser.hpp</a></li>
+<li>CmdParserString&#160;:&#160;<a class="el" href="CmdParser_8hpp.html#a8b6cbada9e913ae4dbc8e00aacdba391">CmdParser.hpp</a></li>
+<li>CmdStack&#160;:&#160;<a class="el" href="Globals_8cpp.html#a7b69cdbd45d008e8f6a1ad47890d6942">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a7b69cdbd45d008e8f6a1ad47890d6942">Globals.h</a></li>
 <li>ComObj&#160;:&#160;<a class="el" href="main_8cpp.html#a7fa49bfb6ead81e2a015d9b1863e5391">main.cpp</a></li>
-<li>controll&#160;:&#160;<a class="el" href="_cmd_callback_8hpp.html#a129946f17c996d6dad89ea29fc803146">CmdCallback.hpp</a></li>
-<li>CR&#160;:&#160;<a class="el" href="_keyence___a_p_i_8h.html#a876ce77f3c672c7162658151e648389e">Keyence_API.h</a></li>
+<li>controll&#160;:&#160;<a class="el" href="CmdCallback_8hpp.html#a129946f17c996d6dad89ea29fc803146">CmdCallback.hpp</a></li>
+<li>CR&#160;:&#160;<a class="el" href="Keyence__API_8h.html#a876ce77f3c672c7162658151e648389e">Keyence_API.h</a></li>
 </ul>
 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
-<li>DEBUG&#160;:&#160;<a class="el" href="_configs_8h.html#ad72dbcf6d0153db1b8d8a58001feed83">Configs.h</a></li>
-<li>display_help()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a8f0b63bf650a5ceefc36d7e3bcb02f63">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a8f0b63bf650a5ceefc36d7e3bcb02f63">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_get()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a0fa0bac0fc88513dfcaf50196a39a343">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a0fa0bac0fc88513dfcaf50196a39a343">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_move()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a725ae5b5ae06426a9f27138daa783636">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a725ae5b5ae06426a9f27138daa783636">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_reset()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a9a90720f58d890625079877d0d339317">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a9a90720f58d890625079877d0d339317">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_set()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#aa909d685f344dc2e637fb84957bc58ec">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#aa909d685f344dc2e637fb84957bc58ec">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_sleep()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a4b7748cf9cf0108de662b41851d97878">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a4b7748cf9cf0108de662b41851d97878">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_undo()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a427d067ebe73ddf2cb51ba4fd05d3375">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a427d067ebe73ddf2cb51ba4fd05d3375">CmdPatternCallbacks.cpp</a></li>
-<li>DISTANCE_PRINTHEAD_PLATFORM&#160;:&#160;<a class="el" href="_configs_8h.html#a12e9637e7fc0470224e0887d573c66e8">Configs.h</a></li>
-<li>down&#160;:&#160;<a class="el" href="_configs_8h.html#a249d857dfa044493c7f29844b7b0baae">Configs.h</a></li>
-<li>DS_x&#160;:&#160;<a class="el" href="_globals_8h.html#abda64f008e3b9989dfd5e7b50018feb0">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a35a0d81cbba22edfb570da4c3e605c53">Globals.cpp</a></li>
-<li>DS_y&#160;:&#160;<a class="el" href="_globals_8h.html#a1ce8413c7811acb5f9c2dc713d178468">Globals.h</a>, <a class="el" href="_globals_8cpp.html#af1e07c1937409f64f0812acebe87a9bd">Globals.cpp</a></li>
-<li>DS_z&#160;:&#160;<a class="el" href="_globals_8h.html#afe16fc984da9049c44458f1b302290bb">Globals.h</a>, <a class="el" href="_globals_8cpp.html#adee09d8b046950a472d74e36d88d68cb">Globals.cpp</a></li>
+<li>DEBUG&#160;:&#160;<a class="el" href="Configs_8h.html#ad72dbcf6d0153db1b8d8a58001feed83">Configs.h</a></li>
+<li>display_help()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a8f0b63bf650a5ceefc36d7e3bcb02f63">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a8f0b63bf650a5ceefc36d7e3bcb02f63">CmdPatternCallbacks.h</a></li>
+<li>display_help_get()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a0fa0bac0fc88513dfcaf50196a39a343">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a0fa0bac0fc88513dfcaf50196a39a343">CmdPatternCallbacks.h</a></li>
+<li>display_help_move()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a725ae5b5ae06426a9f27138daa783636">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a725ae5b5ae06426a9f27138daa783636">CmdPatternCallbacks.h</a></li>
+<li>display_help_reset()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a9a90720f58d890625079877d0d339317">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a9a90720f58d890625079877d0d339317">CmdPatternCallbacks.h</a></li>
+<li>display_help_set()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#aa909d685f344dc2e637fb84957bc58ec">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#aa909d685f344dc2e637fb84957bc58ec">CmdPatternCallbacks.h</a></li>
+<li>display_help_sleep()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a4b7748cf9cf0108de662b41851d97878">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a4b7748cf9cf0108de662b41851d97878">CmdPatternCallbacks.h</a></li>
+<li>display_help_undo()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a427d067ebe73ddf2cb51ba4fd05d3375">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a427d067ebe73ddf2cb51ba4fd05d3375">CmdPatternCallbacks.h</a></li>
+<li>DISTANCE_PRINTHEAD_PLATFORM&#160;:&#160;<a class="el" href="Configs_8h.html#a12e9637e7fc0470224e0887d573c66e8">Configs.h</a></li>
+<li>down&#160;:&#160;<a class="el" href="Configs_8h.html#a249d857dfa044493c7f29844b7b0baae">Configs.h</a></li>
+<li>DS_x&#160;:&#160;<a class="el" href="Globals_8cpp.html#a35a0d81cbba22edfb570da4c3e605c53">Globals.cpp</a>, <a class="el" href="Globals_8h.html#abda64f008e3b9989dfd5e7b50018feb0">Globals.h</a></li>
+<li>DS_y&#160;:&#160;<a class="el" href="Globals_8cpp.html#af1e07c1937409f64f0812acebe87a9bd">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a1ce8413c7811acb5f9c2dc713d178468">Globals.h</a></li>
+<li>DS_z&#160;:&#160;<a class="el" href="Globals_8cpp.html#adee09d8b046950a472d74e36d88d68cb">Globals.cpp</a>, <a class="el" href="Globals_8h.html#afe16fc984da9049c44458f1b302290bb">Globals.h</a></li>
 </ul>
 
 
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
-<li>E_Emergency&#160;:&#160;<a class="el" href="_configs_8h.html#a3e950a2dd308ffc36e9f2e60d42584cc">Configs.h</a></li>
-<li>E_X&#160;:&#160;<a class="el" href="_configs_8h.html#a01b71ffd37c0d18ecf0cb23fc7bdc472">Configs.h</a></li>
-<li>E_Y&#160;:&#160;<a class="el" href="_configs_8h.html#aa48f091c7b81c29accbf4b3b90a7470f">Configs.h</a></li>
-<li>E_Z&#160;:&#160;<a class="el" href="_configs_8h.html#a3f49133f9da38f2f955f94a95ebdf701">Configs.h</a></li>
-<li>EndeffectorThickness&#160;:&#160;<a class="el" href="_configs_8h.html#a91738b0db53cce48e643a66273a65ccd">Configs.h</a></li>
-<li>err&#160;:&#160;<a class="el" href="_configs_8h.html#a93061f874d9c692900fb2616502f4b00ac16f69770bf5601fbace0a55304daa99">Configs.h</a></li>
-<li>ES_Stop&#160;:&#160;<a class="el" href="_globals_8h.html#ab354ebc9a00eae34787d64d038821501">Globals.h</a>, <a class="el" href="_globals_8cpp.html#ae6ee3a3124bc6770597ac4f98a6a57ee">Globals.cpp</a></li>
-<li>ES_x&#160;:&#160;<a class="el" href="_globals_8h.html#ae6b66fb7cbed53b3fe6f3110173b0b5f">Globals.h</a>, <a class="el" href="_globals_8cpp.html#aa7270da352c9167f5904c79d6122d20c">Globals.cpp</a></li>
-<li>ES_y&#160;:&#160;<a class="el" href="_globals_8h.html#a9cabafb0746a964c14ec2d98a9123496">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a8875dc3ddd5a088effb00fdcfce3ff88">Globals.cpp</a></li>
-<li>ES_z&#160;:&#160;<a class="el" href="_globals_8h.html#a0fe0931733f652dbeb5bca6303cc1e1e">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a98cb283eabec707db7701d270ccb7267">Globals.cpp</a></li>
+<li>E_Emergency&#160;:&#160;<a class="el" href="Configs_8h.html#a3e950a2dd308ffc36e9f2e60d42584cc">Configs.h</a></li>
+<li>E_X&#160;:&#160;<a class="el" href="Configs_8h.html#a01b71ffd37c0d18ecf0cb23fc7bdc472">Configs.h</a></li>
+<li>E_Y&#160;:&#160;<a class="el" href="Configs_8h.html#aa48f091c7b81c29accbf4b3b90a7470f">Configs.h</a></li>
+<li>E_Z&#160;:&#160;<a class="el" href="Configs_8h.html#a3f49133f9da38f2f955f94a95ebdf701">Configs.h</a></li>
+<li>EndeffectorThickness&#160;:&#160;<a class="el" href="Configs_8h.html#a91738b0db53cce48e643a66273a65ccd">Configs.h</a></li>
+<li>err&#160;:&#160;<a class="el" href="Configs_8h.html#a93061f874d9c692900fb2616502f4b00ac16f69770bf5601fbace0a55304daa99">Configs.h</a></li>
+<li>ES_Stop&#160;:&#160;<a class="el" href="Globals_8cpp.html#ae6ee3a3124bc6770597ac4f98a6a57ee">Globals.cpp</a>, <a class="el" href="Globals_8h.html#ab354ebc9a00eae34787d64d038821501">Globals.h</a></li>
+<li>ES_x&#160;:&#160;<a class="el" href="Globals_8cpp.html#aa7270da352c9167f5904c79d6122d20c">Globals.cpp</a>, <a class="el" href="Globals_8h.html#ae6b66fb7cbed53b3fe6f3110173b0b5f">Globals.h</a></li>
+<li>ES_y&#160;:&#160;<a class="el" href="Globals_8cpp.html#a8875dc3ddd5a088effb00fdcfce3ff88">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a9cabafb0746a964c14ec2d98a9123496">Globals.h</a></li>
+<li>ES_z&#160;:&#160;<a class="el" href="Globals_8cpp.html#a98cb283eabec707db7701d270ccb7267">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a0fe0931733f652dbeb5bca6303cc1e1e">Globals.h</a></li>
 </ul>
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>Get&#160;:&#160;<a class="el" href="_globals_8h.html#a2d1a4a31b3c4a7c397f048716fb5b29d">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a2d1a4a31b3c4a7c397f048716fb5b29d">Globals.cpp</a></li>
-<li>get_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#aa0a1bd035c01b447c32e0a9e128c7611">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#aa0a1bd035c01b447c32e0a9e128c7611">CmdPatternCallbacks.cpp</a></li>
-<li>get_help()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#ad2b16cf5e3d9d45db6380d3731c3211f">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#ad2b16cf5e3d9d45db6380d3731c3211f">CmdPatternCallbacks.cpp</a></li>
+<li>Get&#160;:&#160;<a class="el" href="Globals_8cpp.html#a2d1a4a31b3c4a7c397f048716fb5b29d">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a2d1a4a31b3c4a7c397f048716fb5b29d">Globals.h</a></li>
+<li>get_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#aa0a1bd035c01b447c32e0a9e128c7611">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#aa0a1bd035c01b447c32e0a9e128c7611">CmdPatternCallbacks.h</a></li>
+<li>get_help()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#ad2b16cf5e3d9d45db6380d3731c3211f">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#ad2b16cf5e3d9d45db6380d3731c3211f">CmdPatternCallbacks.h</a></li>
 </ul>
 
 
 <h3><a id="index_h" name="index_h"></a>- h -</h3><ul>
-<li>Help&#160;:&#160;<a class="el" href="_globals_8h.html#ad6a6fe63b09f7d018ebc6b96d44cdbb8">Globals.h</a>, <a class="el" href="_globals_8cpp.html#ad6a6fe63b09f7d018ebc6b96d44cdbb8">Globals.cpp</a></li>
+<li>Help&#160;:&#160;<a class="el" href="Globals_8cpp.html#ad6a6fe63b09f7d018ebc6b96d44cdbb8">Globals.cpp</a>, <a class="el" href="Globals_8h.html#ad6a6fe63b09f7d018ebc6b96d44cdbb8">Globals.h</a></li>
 </ul>
 
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>InclinationPH&#160;:&#160;<a class="el" href="_configs_8h.html#a6adb2566dd6d9b3aa4bd652e55071395">Configs.h</a></li>
-<li>InterruptSleepPin&#160;:&#160;<a class="el" href="_configs_8h.html#a8f12fe76e37331bd20099a59b429d28f">Configs.h</a></li>
-<li>InvokerStack&#160;:&#160;<a class="el" href="_globals_8h.html#afc093e48e1f3a3425c7db9d6bfb13f36">Globals.h</a>, <a class="el" href="_globals_8cpp.html#afc093e48e1f3a3425c7db9d6bfb13f36">Globals.cpp</a></li>
+<li>InclinationPH&#160;:&#160;<a class="el" href="Configs_8h.html#a6adb2566dd6d9b3aa4bd652e55071395">Configs.h</a></li>
+<li>InterruptSleepPin&#160;:&#160;<a class="el" href="Configs_8h.html#a8f12fe76e37331bd20099a59b429d28f">Configs.h</a></li>
+<li>InvokerStack&#160;:&#160;<a class="el" href="Globals_8cpp.html#afc093e48e1f3a3425c7db9d6bfb13f36">Globals.cpp</a>, <a class="el" href="Globals_8h.html#afc093e48e1f3a3425c7db9d6bfb13f36">Globals.h</a></li>
 </ul>
 
 
 <h3><a id="index_k" name="index_k"></a>- k -</h3><ul>
-<li>keyence&#160;:&#160;<a class="el" href="_configs_8h.html#a5697774bcc26eb4a774d9c951d561e48">Configs.h</a></li>
-<li>KEYENCE_SERIAL_BAUDRATE&#160;:&#160;<a class="el" href="_configs_8h.html#ac5512a940a57198b0d9b9f2e366c7ee8">Configs.h</a></li>
-<li>KEYENCE_SERIAL_HANDLER&#160;:&#160;<a class="el" href="_configs_8h.html#a005a72831297d00f495e084eb64a5bed">Configs.h</a></li>
+<li>keyence&#160;:&#160;<a class="el" href="Configs_8h.html#a5697774bcc26eb4a774d9c951d561e48">Configs.h</a></li>
+<li>KEYENCE_SERIAL_BAUDRATE&#160;:&#160;<a class="el" href="Configs_8h.html#ac5512a940a57198b0d9b9f2e366c7ee8">Configs.h</a></li>
+<li>KEYENCE_SERIAL_HANDLER&#160;:&#160;<a class="el" href="Configs_8h.html#a005a72831297d00f495e084eb64a5bed">Configs.h</a></li>
 </ul>
 
 
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
-<li>LB_x&#160;:&#160;<a class="el" href="_globals_8h.html#af666917f699eefa5b0e61d99fafc49db">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a1b6f8b9d43382b50a2aac3668a2b99b5">Globals.cpp</a></li>
-<li>LB_X&#160;:&#160;<a class="el" href="_configs_8h.html#a53b1c7044eb862919d8d625dd062e25d">Configs.h</a></li>
-<li>LB_Y&#160;:&#160;<a class="el" href="_configs_8h.html#ab55c1995d16cc9016e47a49624fabeae">Configs.h</a></li>
-<li>LB_y&#160;:&#160;<a class="el" href="_globals_8h.html#af21acc49605a233af07a00c8ec94e587">Globals.h</a>, <a class="el" href="_globals_8cpp.html#aa22e0be90ceec1f4994931c4ad1c2b72">Globals.cpp</a></li>
-<li>LB_z&#160;:&#160;<a class="el" href="_globals_8h.html#a5ff6b7894ffafb3a9c477fc0dc02c33c">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a1c729c2b81704f0e7a9cb7c3cc8a11f9">Globals.cpp</a></li>
-<li>LB_Z&#160;:&#160;<a class="el" href="_configs_8h.html#a49af3e8f5e138787c67b9ff6a763cdab">Configs.h</a></li>
-<li>LeadScrewLEngth&#160;:&#160;<a class="el" href="_configs_8h.html#ad4f9d9e94e32385ec6ac4aedc3cbb742">Configs.h</a></li>
-<li>LF&#160;:&#160;<a class="el" href="_keyence___a_p_i_8h.html#a350c9d6cb81908d59427ee96844d1a9c">Keyence_API.h</a></li>
-<li>Linear_travel_per_step&#160;:&#160;<a class="el" href="_configs_8h.html#acba27573a33a062e331dd2a9d96f5e83">Configs.h</a></li>
+<li>LB_X&#160;:&#160;<a class="el" href="Configs_8h.html#a53b1c7044eb862919d8d625dd062e25d">Configs.h</a></li>
+<li>LB_x&#160;:&#160;<a class="el" href="Globals_8cpp.html#a1b6f8b9d43382b50a2aac3668a2b99b5">Globals.cpp</a>, <a class="el" href="Globals_8h.html#af666917f699eefa5b0e61d99fafc49db">Globals.h</a></li>
+<li>LB_Y&#160;:&#160;<a class="el" href="Configs_8h.html#ab55c1995d16cc9016e47a49624fabeae">Configs.h</a></li>
+<li>LB_y&#160;:&#160;<a class="el" href="Globals_8cpp.html#aa22e0be90ceec1f4994931c4ad1c2b72">Globals.cpp</a>, <a class="el" href="Globals_8h.html#af21acc49605a233af07a00c8ec94e587">Globals.h</a></li>
+<li>LB_z&#160;:&#160;<a class="el" href="Globals_8cpp.html#a1c729c2b81704f0e7a9cb7c3cc8a11f9">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a5ff6b7894ffafb3a9c477fc0dc02c33c">Globals.h</a></li>
+<li>LB_Z&#160;:&#160;<a class="el" href="Configs_8h.html#a49af3e8f5e138787c67b9ff6a763cdab">Configs.h</a></li>
+<li>LeadScrewLEngth&#160;:&#160;<a class="el" href="Configs_8h.html#ad4f9d9e94e32385ec6ac4aedc3cbb742">Configs.h</a></li>
+<li>LF&#160;:&#160;<a class="el" href="Keyence__API_8h.html#a350c9d6cb81908d59427ee96844d1a9c">Keyence_API.h</a></li>
+<li>Linear_travel_per_step&#160;:&#160;<a class="el" href="Configs_8h.html#acba27573a33a062e331dd2a9d96f5e83">Configs.h</a></li>
 <li>loop()&#160;:&#160;<a class="el" href="main_8cpp.html#afe461d27b9c48d5921c00d521181f12f">main.cpp</a></li>
 </ul>
 
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>M_PH&#160;:&#160;<a class="el" href="_globals_8h.html#afd1429542ba9e5db6adf3aa54023087c">Globals.h</a>, <a class="el" href="_globals_8cpp.html#ae10efcb7e64b6d403c6b8ffa8281afea">Globals.cpp</a></li>
-<li>M_X&#160;:&#160;<a class="el" href="_globals_8h.html#aaac32a90f7fcd2672bf3384dd41f5430">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a2a14f03d4f1e9564f8f2b6c82ec44919">Globals.cpp</a></li>
-<li>M_Y&#160;:&#160;<a class="el" href="_globals_8h.html#addb922f9b475e34f177fe64dbae4642f">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a9bded9c2128b444acd327931d28faed0">Globals.cpp</a></li>
-<li>M_Z&#160;:&#160;<a class="el" href="_globals_8h.html#a8427584db9e552d5a9e044d9eb823a2b">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a24274455d568dacd4e0c48f52ef577c4">Globals.cpp</a></li>
+<li>M_PH&#160;:&#160;<a class="el" href="Globals_8cpp.html#ae10efcb7e64b6d403c6b8ffa8281afea">Globals.cpp</a>, <a class="el" href="Globals_8h.html#afd1429542ba9e5db6adf3aa54023087c">Globals.h</a></li>
+<li>M_X&#160;:&#160;<a class="el" href="Globals_8cpp.html#aff60e6cc3e5c45b543e8cdf5f30c56bc">Globals.cpp</a>, <a class="el" href="Globals_8h.html#ae548215ce431a61ca8ca1824c3188518">Globals.h</a></li>
+<li>M_Y&#160;:&#160;<a class="el" href="Globals_8cpp.html#a9bded9c2128b444acd327931d28faed0">Globals.cpp</a>, <a class="el" href="Globals_8h.html#addb922f9b475e34f177fe64dbae4642f">Globals.h</a></li>
+<li>M_Z&#160;:&#160;<a class="el" href="Globals_8cpp.html#a24274455d568dacd4e0c48f52ef577c4">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a8427584db9e552d5a9e044d9eb823a2b">Globals.h</a></li>
 <li>MainScheduler&#160;:&#160;<a class="el" href="main_8cpp.html#a09f0be2638801dd7ceaeaaf13d583ce2">main.cpp</a></li>
-<li>MicroResolution&#160;:&#160;<a class="el" href="_configs_8h.html#af61ad80a87bf5d6a8bf698ad0d6b5d93">Configs.h</a></li>
-<li>MotorLength&#160;:&#160;<a class="el" href="_configs_8h.html#a9ad1383635556487437e57e484e1eed4">Configs.h</a></li>
-<li>MotorSensorHolderThickness&#160;:&#160;<a class="el" href="_configs_8h.html#a49cb17effaef8574de543a27392406ff">Configs.h</a></li>
-<li>Move&#160;:&#160;<a class="el" href="_globals_8h.html#a7082f0f5fdb86b353e44e84e1a4bb337">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a7082f0f5fdb86b353e44e84e1a4bb337">Globals.cpp</a></li>
-<li>move_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#ac82a0068988fe425288370e121b04f00">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#ac82a0068988fe425288370e121b04f00">CmdPatternCallbacks.cpp</a></li>
-<li>myBuffer&#160;:&#160;<a class="el" href="_globals_8h.html#aac8303014ae2b31fdb57b7b595d00d5f">Globals.h</a>, <a class="el" href="_globals_8cpp.html#aac8303014ae2b31fdb57b7b595d00d5f">Globals.cpp</a></li>
-<li>myParser&#160;:&#160;<a class="el" href="_globals_8h.html#a95e82af5b2e6420fd830e68a86600c76">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a95e82af5b2e6420fd830e68a86600c76">Globals.cpp</a></li>
+<li>MicroResolution&#160;:&#160;<a class="el" href="Configs_8h.html#af61ad80a87bf5d6a8bf698ad0d6b5d93">Configs.h</a></li>
+<li>MotorLength&#160;:&#160;<a class="el" href="Configs_8h.html#a9ad1383635556487437e57e484e1eed4">Configs.h</a></li>
+<li>MotorSensorHolderThickness&#160;:&#160;<a class="el" href="Configs_8h.html#a49cb17effaef8574de543a27392406ff">Configs.h</a></li>
+<li>Move&#160;:&#160;<a class="el" href="Globals_8cpp.html#a7082f0f5fdb86b353e44e84e1a4bb337">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a7082f0f5fdb86b353e44e84e1a4bb337">Globals.h</a></li>
+<li>move_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#ac82a0068988fe425288370e121b04f00">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#ac82a0068988fe425288370e121b04f00">CmdPatternCallbacks.h</a></li>
+<li>myBuffer&#160;:&#160;<a class="el" href="Globals_8cpp.html#aac8303014ae2b31fdb57b7b595d00d5f">Globals.cpp</a>, <a class="el" href="Globals_8h.html#aac8303014ae2b31fdb57b7b595d00d5f">Globals.h</a></li>
+<li>myParser&#160;:&#160;<a class="el" href="Globals_8cpp.html#a95e82af5b2e6420fd830e68a86600c76">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a95e82af5b2e6420fd830e68a86600c76">Globals.h</a></li>
 </ul>
 
 
 <h3><a id="index_o" name="index_o"></a>- o -</h3><ul>
-<li>off&#160;:&#160;<a class="el" href="_configs_8h.html#aa8df4166084b06f1e80d3510e5dcf7e1">Configs.h</a></li>
-<li>ok&#160;:&#160;<a class="el" href="_configs_8h.html#a93061f874d9c692900fb2616502f4b00ad8b76af209cd7ba83b4ebf33ba1637b2">Configs.h</a></li>
-<li>on&#160;:&#160;<a class="el" href="_configs_8h.html#a42cc7dae7a40abcb545fc41730fa1476">Configs.h</a></li>
+<li>off&#160;:&#160;<a class="el" href="Configs_8h.html#aa8df4166084b06f1e80d3510e5dcf7e1">Configs.h</a></li>
+<li>ok&#160;:&#160;<a class="el" href="Configs_8h.html#a93061f874d9c692900fb2616502f4b00ad8b76af209cd7ba83b4ebf33ba1637b2">Configs.h</a></li>
+<li>on&#160;:&#160;<a class="el" href="Configs_8h.html#a42cc7dae7a40abcb545fc41730fa1476">Configs.h</a></li>
 </ul>
 
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
 <li>ParserThread&#160;:&#160;<a class="el" href="main_8cpp.html#a069289db0b01a83f53e449035d500847">main.cpp</a></li>
-<li>ParserThreadCallback()&#160;:&#160;<a class="el" href="_globals_8h.html#ac6568f5dfdc418a26f1a80513cd18d7e">Globals.h</a>, <a class="el" href="_globals_8cpp.html#ac6568f5dfdc418a26f1a80513cd18d7e">Globals.cpp</a></li>
-<li>PHDir_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a5b26bc3369dd5c5f50249670c59f2e44">Configs.h</a></li>
-<li>PHEnable_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a7f9ad1e541207f7075a6eb7d38cdc78c">Configs.h</a></li>
-<li>PHMs1_pin&#160;:&#160;<a class="el" href="_configs_8h.html#afcd34f66fc54030b4f1cb9ecbe812995">Configs.h</a></li>
-<li>PHMs2_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a5d05bc153f028c05a7ae4d8ab0ebf463">Configs.h</a></li>
-<li>PHMs3_pin&#160;:&#160;<a class="el" href="_configs_8h.html#aaef1483942ef515e6cc21e26687e3727">Configs.h</a></li>
-<li>PHStep_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a8036fedfb80d91989544626f54cdb059">Configs.h</a></li>
-<li>PIN_OUTPUT_RESET&#160;:&#160;<a class="el" href="_configs_8h.html#a92648765ae263ba695679f247cb69847">Configs.h</a></li>
+<li>ParserThreadCallback()&#160;:&#160;<a class="el" href="Globals_8cpp.html#ac6568f5dfdc418a26f1a80513cd18d7e">Globals.cpp</a>, <a class="el" href="Globals_8h.html#ac6568f5dfdc418a26f1a80513cd18d7e">Globals.h</a></li>
+<li>PHDir_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a5b26bc3369dd5c5f50249670c59f2e44">Configs.h</a></li>
+<li>PHEnable_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a7f9ad1e541207f7075a6eb7d38cdc78c">Configs.h</a></li>
+<li>PHMs1_pin&#160;:&#160;<a class="el" href="Configs_8h.html#afcd34f66fc54030b4f1cb9ecbe812995">Configs.h</a></li>
+<li>PHMs2_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a5d05bc153f028c05a7ae4d8ab0ebf463">Configs.h</a></li>
+<li>PHMs3_pin&#160;:&#160;<a class="el" href="Configs_8h.html#aaef1483942ef515e6cc21e26687e3727">Configs.h</a></li>
+<li>PHStep_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a8036fedfb80d91989544626f54cdb059">Configs.h</a></li>
+<li>PIN_OUTPUT_RESET&#160;:&#160;<a class="el" href="Configs_8h.html#a92648765ae263ba695679f247cb69847">Configs.h</a></li>
 </ul>
 
 
 <h3><a id="index_q" name="index_q"></a>- q -</h3><ul>
-<li>Quit&#160;:&#160;<a class="el" href="_globals_8h.html#abe2a2ebccbcded085483a9da46be3fc3">Globals.h</a>, <a class="el" href="_globals_8cpp.html#abe2a2ebccbcded085483a9da46be3fc3">Globals.cpp</a></li>
+<li>Quit&#160;:&#160;<a class="el" href="Globals_8cpp.html#abe2a2ebccbcded085483a9da46be3fc3">Globals.cpp</a>, <a class="el" href="Globals_8h.html#abe2a2ebccbcded085483a9da46be3fc3">Globals.h</a></li>
 </ul>
 
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>Reset&#160;:&#160;<a class="el" href="_globals_8h.html#a6257ab6d377137fc36df2f662887fd97">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a6257ab6d377137fc36df2f662887fd97">Globals.cpp</a></li>
-<li>reset_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#ae3feb7f7fca30ce0a0c8dcc76eb01ff9">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#ae3feb7f7fca30ce0a0c8dcc76eb01ff9">CmdPatternCallbacks.cpp</a></li>
-<li>resetObj&#160;:&#160;<a class="el" href="_globals_8h.html#a86a5e7c9ac2b0aa38a9617ba9cdbe5c6">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a0e927747fba268bfb9b67cf26b331750">Globals.cpp</a></li>
-<li>retVal&#160;:&#160;<a class="el" href="_configs_8h.html#a93061f874d9c692900fb2616502f4b00">Configs.h</a></li>
-<li>RodLength&#160;:&#160;<a class="el" href="_configs_8h.html#a140cf22ef1c062dde45dbffa9a0fefbf">Configs.h</a></li>
-<li>RodLength_EndeffectorThickness&#160;:&#160;<a class="el" href="_configs_8h.html#a35154810bebaf3c424300febabbb7bcf">Configs.h</a></li>
-<li>Rotate&#160;:&#160;<a class="el" href="_globals_8h.html#a6f4520176c3d804eaa8ad6812f3a7fab">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a6f4520176c3d804eaa8ad6812f3a7fab">Globals.cpp</a></li>
-<li>rotate_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a3d3ec91c1ee0b0c2a2e47d99fcbd6b61">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a3d3ec91c1ee0b0c2a2e47d99fcbd6b61">CmdPatternCallbacks.cpp</a></li>
+<li>Reset&#160;:&#160;<a class="el" href="Globals_8cpp.html#a6257ab6d377137fc36df2f662887fd97">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a6257ab6d377137fc36df2f662887fd97">Globals.h</a></li>
+<li>reset_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#ae3feb7f7fca30ce0a0c8dcc76eb01ff9">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#ae3feb7f7fca30ce0a0c8dcc76eb01ff9">CmdPatternCallbacks.h</a></li>
+<li>resetObj&#160;:&#160;<a class="el" href="Globals_8cpp.html#a0e927747fba268bfb9b67cf26b331750">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a86a5e7c9ac2b0aa38a9617ba9cdbe5c6">Globals.h</a></li>
+<li>retVal&#160;:&#160;<a class="el" href="Configs_8h.html#a93061f874d9c692900fb2616502f4b00">Configs.h</a></li>
+<li>RodLength&#160;:&#160;<a class="el" href="Configs_8h.html#a140cf22ef1c062dde45dbffa9a0fefbf">Configs.h</a></li>
+<li>RodLength_EndeffectorThickness&#160;:&#160;<a class="el" href="Configs_8h.html#a35154810bebaf3c424300febabbb7bcf">Configs.h</a></li>
+<li>Rotate&#160;:&#160;<a class="el" href="Globals_8cpp.html#a6f4520176c3d804eaa8ad6812f3a7fab">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a6f4520176c3d804eaa8ad6812f3a7fab">Globals.h</a></li>
+<li>rotate_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a3d3ec91c1ee0b0c2a2e47d99fcbd6b61">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a3d3ec91c1ee0b0c2a2e47d99fcbd6b61">CmdPatternCallbacks.h</a></li>
 </ul>
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>SensorThickness&#160;:&#160;<a class="el" href="_configs_8h.html#a00bda082c545ccfafdb2afd9d920d9d1">Configs.h</a></li>
-<li>SensorThreashold&#160;:&#160;<a class="el" href="_configs_8h.html#a066c71e9cc633358392c38ad2ddb5596">Configs.h</a></li>
-<li>Set&#160;:&#160;<a class="el" href="_globals_8h.html#a0739be677979fb20f78aae33aa824256">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a0739be677979fb20f78aae33aa824256">Globals.cpp</a></li>
-<li>set_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#adcae3b60a9fcfef183dd0b91967e2ad6">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#adcae3b60a9fcfef183dd0b91967e2ad6">CmdPatternCallbacks.cpp</a></li>
+<li>SensorThickness&#160;:&#160;<a class="el" href="Configs_8h.html#a00bda082c545ccfafdb2afd9d920d9d1">Configs.h</a></li>
+<li>SensorThreashold&#160;:&#160;<a class="el" href="Configs_8h.html#a066c71e9cc633358392c38ad2ddb5596">Configs.h</a></li>
+<li>Set&#160;:&#160;<a class="el" href="Globals_8cpp.html#a0739be677979fb20f78aae33aa824256">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a0739be677979fb20f78aae33aa824256">Globals.h</a></li>
+<li>set_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#adcae3b60a9fcfef183dd0b91967e2ad6">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#adcae3b60a9fcfef183dd0b91967e2ad6">CmdPatternCallbacks.h</a></li>
 <li>setup()&#160;:&#160;<a class="el" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">main.cpp</a></li>
-<li>Sleep&#160;:&#160;<a class="el" href="_globals_8h.html#a2f70ddafa2efd35367abff6a616f8374">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a2f70ddafa2efd35367abff6a616f8374">Globals.cpp</a></li>
-<li>sleep_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a95dfb636156bd75ec75576b2f153c6c6">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a95dfb636156bd75ec75576b2f153c6c6">CmdPatternCallbacks.cpp</a></li>
-<li>sleepObj&#160;:&#160;<a class="el" href="_globals_8h.html#af942883b344d04a36595840bcdb6ac75">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a2e9d4b6f4b754190a7b832329d69b280">Globals.cpp</a></li>
-<li>Start&#160;:&#160;<a class="el" href="_globals_8h.html#a59e3d13db97e637ea4e40e8c7960e91b">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a59e3d13db97e637ea4e40e8c7960e91b">Globals.cpp</a></li>
-<li>STEP_DELAY&#160;:&#160;<a class="el" href="_configs_8h.html#adc7e59eed8e42ab586f1f71dab7d882d">Configs.h</a></li>
-<li>STEP_DELAY_PRINTHEAD_MOTOR&#160;:&#160;<a class="el" href="_configs_8h.html#a790b08a66883965c770333ecce9177cd">Configs.h</a></li>
-<li>Stop&#160;:&#160;<a class="el" href="_globals_8h.html#af012309b520eb65471272ee8f877317a">Globals.h</a>, <a class="el" href="_globals_8cpp.html#af012309b520eb65471272ee8f877317a">Globals.cpp</a></li>
+<li>Sleep&#160;:&#160;<a class="el" href="Globals_8cpp.html#a2f70ddafa2efd35367abff6a616f8374">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a2f70ddafa2efd35367abff6a616f8374">Globals.h</a></li>
+<li>sleep_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a95dfb636156bd75ec75576b2f153c6c6">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a95dfb636156bd75ec75576b2f153c6c6">CmdPatternCallbacks.h</a></li>
+<li>sleepObj&#160;:&#160;<a class="el" href="Globals_8cpp.html#a2e9d4b6f4b754190a7b832329d69b280">Globals.cpp</a>, <a class="el" href="Globals_8h.html#af942883b344d04a36595840bcdb6ac75">Globals.h</a></li>
+<li>Start&#160;:&#160;<a class="el" href="Globals_8cpp.html#a59e3d13db97e637ea4e40e8c7960e91b">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a59e3d13db97e637ea4e40e8c7960e91b">Globals.h</a></li>
+<li>STEP_DELAY&#160;:&#160;<a class="el" href="Configs_8h.html#adc7e59eed8e42ab586f1f71dab7d882d">Configs.h</a></li>
+<li>STEP_DELAY_PRINTHEAD_MOTOR&#160;:&#160;<a class="el" href="Configs_8h.html#a790b08a66883965c770333ecce9177cd">Configs.h</a></li>
+<li>Stop&#160;:&#160;<a class="el" href="Globals_8cpp.html#af012309b520eb65471272ee8f877317a">Globals.cpp</a>, <a class="el" href="Globals_8h.html#af012309b520eb65471272ee8f877317a">Globals.h</a></li>
 </ul>
 
 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
-<li>Test1&#160;:&#160;<a class="el" href="_globals_8h.html#affb2a6c9bd814df29ef6eda222c594cc">Globals.h</a>, <a class="el" href="_globals_8cpp.html#affb2a6c9bd814df29ef6eda222c594cc">Globals.cpp</a></li>
-<li>Test2&#160;:&#160;<a class="el" href="_globals_8h.html#a692f4e4a4c4768f815890ce0010c4847">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a692f4e4a4c4768f815890ce0010c4847">Globals.cpp</a></li>
-<li>TIMEOUT&#160;:&#160;<a class="el" href="_configs_8h.html#a45ba202b05caf39795aeca91b0ae547e">Configs.h</a></li>
+<li>Test1&#160;:&#160;<a class="el" href="Globals_8cpp.html#affb2a6c9bd814df29ef6eda222c594cc">Globals.cpp</a>, <a class="el" href="Globals_8h.html#affb2a6c9bd814df29ef6eda222c594cc">Globals.h</a></li>
+<li>Test2&#160;:&#160;<a class="el" href="Globals_8cpp.html#a692f4e4a4c4768f815890ce0010c4847">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a692f4e4a4c4768f815890ce0010c4847">Globals.h</a></li>
+<li>TIMEOUT&#160;:&#160;<a class="el" href="Configs_8h.html#a45ba202b05caf39795aeca91b0ae547e">Configs.h</a></li>
 </ul>
 
 
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
-<li>Undo&#160;:&#160;<a class="el" href="_globals_8h.html#a7473a2f9a35754038470dde2b8afa988">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a7473a2f9a35754038470dde2b8afa988">Globals.cpp</a></li>
-<li>undo_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#ad3e176b252ce56823333747b267ae544">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#ad3e176b252ce56823333747b267ae544">CmdPatternCallbacks.cpp</a></li>
-<li>up&#160;:&#160;<a class="el" href="_configs_8h.html#a0337592b74197133c4203f6dce657a76">Configs.h</a></li>
-<li>USBPORT&#160;:&#160;<a class="el" href="_configs_8h.html#af5d07b9fef99f26c202341946f04b764">Configs.h</a></li>
-<li>using_serial_stream&#160;:&#160;<a class="el" href="_u_u_i_d_8hpp.html#a6b7a4c8904c6ad58c22c650a72229024">UUID.hpp</a></li>
+<li>Undo&#160;:&#160;<a class="el" href="Globals_8cpp.html#a7473a2f9a35754038470dde2b8afa988">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a7473a2f9a35754038470dde2b8afa988">Globals.h</a></li>
+<li>undo_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#ad3e176b252ce56823333747b267ae544">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#ad3e176b252ce56823333747b267ae544">CmdPatternCallbacks.h</a></li>
+<li>up&#160;:&#160;<a class="el" href="Configs_8h.html#a0337592b74197133c4203f6dce657a76">Configs.h</a></li>
+<li>USBPORT&#160;:&#160;<a class="el" href="Configs_8h.html#af5d07b9fef99f26c202341946f04b764">Configs.h</a></li>
+<li>using_serial_stream&#160;:&#160;<a class="el" href="UUID_8hpp.html#a6b7a4c8904c6ad58c22c650a72229024">UUID.hpp</a></li>
 </ul>
 
 
 <h3><a id="index_x" name="index_x"></a>- x -</h3><ul>
-<li>XDir_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a38a45e7b57d3a08225c7863e6942c4fe">Configs.h</a></li>
-<li>XEnable_pin&#160;:&#160;<a class="el" href="_configs_8h.html#ab7bda72a2fd4c0b32433adc397983a8e">Configs.h</a></li>
-<li>XMs1_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a16d19f9973597e509ca03083a903bdca">Configs.h</a></li>
-<li>XMs2_pin&#160;:&#160;<a class="el" href="_configs_8h.html#ad45f7208b60a2058e55c313155db6627">Configs.h</a></li>
-<li>XMs3_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a643f067cf73dfcad5aea267a5df29604">Configs.h</a></li>
-<li>XSensorHead&#160;:&#160;<a class="el" href="_configs_8h.html#a0efb601477b8d550c2277c465335247c">Configs.h</a></li>
-<li>XStep_pin&#160;:&#160;<a class="el" href="_configs_8h.html#af7e1aa9def8f8c214a5696b89a49678b">Configs.h</a></li>
+<li>XDir_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a38a45e7b57d3a08225c7863e6942c4fe">Configs.h</a></li>
+<li>XEnable_pin&#160;:&#160;<a class="el" href="Configs_8h.html#ab7bda72a2fd4c0b32433adc397983a8e">Configs.h</a></li>
+<li>XMs1_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a16d19f9973597e509ca03083a903bdca">Configs.h</a></li>
+<li>XMs2_pin&#160;:&#160;<a class="el" href="Configs_8h.html#ad45f7208b60a2058e55c313155db6627">Configs.h</a></li>
+<li>XMs3_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a643f067cf73dfcad5aea267a5df29604">Configs.h</a></li>
+<li>XSensorHead&#160;:&#160;<a class="el" href="Configs_8h.html#a0efb601477b8d550c2277c465335247c">Configs.h</a></li>
+<li>XStep_pin&#160;:&#160;<a class="el" href="Configs_8h.html#af7e1aa9def8f8c214a5696b89a49678b">Configs.h</a></li>
 </ul>
 
 
 <h3><a id="index_y" name="index_y"></a>- y -</h3><ul>
-<li>YDir_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a2a9126f198bc14e47fbb65de79975044">Configs.h</a></li>
-<li>YEnable_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a064b80ec11d23b70dd972fa875f1d35e">Configs.h</a></li>
+<li>YDir_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a2a9126f198bc14e47fbb65de79975044">Configs.h</a></li>
+<li>YEnable_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a064b80ec11d23b70dd972fa875f1d35e">Configs.h</a></li>
 <li>yield()&#160;:&#160;<a class="el" href="main_8cpp.html#a7cb51f5c2b5cad3766f19eb69c92793b">main.cpp</a></li>
-<li>YMs1_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a0851a0a6cae91ef6c638c72478a339ce">Configs.h</a></li>
-<li>YMs2_pin&#160;:&#160;<a class="el" href="_configs_8h.html#af66dff6efe20de77864bd29be300d769">Configs.h</a></li>
-<li>YMs3_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a7420486125e023653ca601891db9a094">Configs.h</a></li>
-<li>YSensorHead&#160;:&#160;<a class="el" href="_configs_8h.html#a3c24b1a2ecd89cb57e7a9bb0578b9b28">Configs.h</a></li>
-<li>YStep_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a31451fba5dcf1434bc5fa4a44d30f97c">Configs.h</a></li>
+<li>YMs1_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a0851a0a6cae91ef6c638c72478a339ce">Configs.h</a></li>
+<li>YMs2_pin&#160;:&#160;<a class="el" href="Configs_8h.html#af66dff6efe20de77864bd29be300d769">Configs.h</a></li>
+<li>YMs3_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a7420486125e023653ca601891db9a094">Configs.h</a></li>
+<li>YSensorHead&#160;:&#160;<a class="el" href="Configs_8h.html#a3c24b1a2ecd89cb57e7a9bb0578b9b28">Configs.h</a></li>
+<li>YStep_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a31451fba5dcf1434bc5fa4a44d30f97c">Configs.h</a></li>
 </ul>
 
 
 <h3><a id="index_z" name="index_z"></a>- z -</h3><ul>
-<li>ZDir_pin&#160;:&#160;<a class="el" href="_configs_8h.html#ab2b6a8fe000de081d443d14a30d1a59b">Configs.h</a></li>
-<li>ZEnable_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a3377917886312e17ef544cce539e95c1">Configs.h</a></li>
-<li>ZMs1_pin&#160;:&#160;<a class="el" href="_configs_8h.html#ad165ab43b65609873bf5816edf36cb7d">Configs.h</a></li>
-<li>ZMs2_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a251895b4f005b4a7d6bb959049d1bad6">Configs.h</a></li>
-<li>ZMs3_pin&#160;:&#160;<a class="el" href="_configs_8h.html#a3883585b22d80509f9cfa5acc33162fe">Configs.h</a></li>
-<li>ZSensorHead&#160;:&#160;<a class="el" href="_configs_8h.html#a7fd2c0ec1db12b8a9dad7ed6adc911b7">Configs.h</a></li>
-<li>ZStep_pin&#160;:&#160;<a class="el" href="_configs_8h.html#aeca72fc4f3d9177b339f5edaecb52533">Configs.h</a></li>
+<li>ZDir_pin&#160;:&#160;<a class="el" href="Configs_8h.html#ab2b6a8fe000de081d443d14a30d1a59b">Configs.h</a></li>
+<li>ZEnable_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a3377917886312e17ef544cce539e95c1">Configs.h</a></li>
+<li>ZMs1_pin&#160;:&#160;<a class="el" href="Configs_8h.html#ad165ab43b65609873bf5816edf36cb7d">Configs.h</a></li>
+<li>ZMs2_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a251895b4f005b4a7d6bb959049d1bad6">Configs.h</a></li>
+<li>ZMs3_pin&#160;:&#160;<a class="el" href="Configs_8h.html#a3883585b22d80509f9cfa5acc33162fe">Configs.h</a></li>
+<li>ZSensorHead&#160;:&#160;<a class="el" href="Configs_8h.html#a7fd2c0ec1db12b8a9dad7ed6adc911b7">Configs.h</a></li>
+<li>ZStep_pin&#160;:&#160;<a class="el" href="Configs_8h.html#aeca72fc4f3d9177b339f5edaecb52533">Configs.h</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
 </body>
 </html>

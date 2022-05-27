@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="theion.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.3</span>
    </div>
-   <div id="projectbrief">To privde modular and efficient high level software design</div>
+   <div id="projectbrief">API Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -53,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('globals_func.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,29 +66,29 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 &#160;
 
 <h3><a id="index_b" name="index_b"></a>- b -</h3><ul>
-<li>BackgroundThreadCallback()&#160;:&#160;<a class="el" href="_globals_8h.html#a7bb396aa99b014129d46b51d1f135c5a">Globals.h</a>, <a class="el" href="_globals_8cpp.html#a7bb396aa99b014129d46b51d1f135c5a">Globals.cpp</a></li>
+<li>BackgroundThreadCallback()&#160;:&#160;<a class="el" href="Globals_8cpp.html#a7bb396aa99b014129d46b51d1f135c5a">Globals.cpp</a>, <a class="el" href="Globals_8h.html#a7bb396aa99b014129d46b51d1f135c5a">Globals.h</a></li>
 </ul>
 
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>calibrate_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a905f26acafc5d817d3d4f2dc88bceb2a">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a905f26acafc5d817d3d4f2dc88bceb2a">CmdPatternCallbacks.cpp</a></li>
+<li>calibrate_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a905f26acafc5d817d3d4f2dc88bceb2a">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a905f26acafc5d817d3d4f2dc88bceb2a">CmdPatternCallbacks.h</a></li>
 </ul>
 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
-<li>display_help()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a8f0b63bf650a5ceefc36d7e3bcb02f63">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a8f0b63bf650a5ceefc36d7e3bcb02f63">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_get()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a0fa0bac0fc88513dfcaf50196a39a343">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a0fa0bac0fc88513dfcaf50196a39a343">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_move()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a725ae5b5ae06426a9f27138daa783636">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a725ae5b5ae06426a9f27138daa783636">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_reset()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a9a90720f58d890625079877d0d339317">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a9a90720f58d890625079877d0d339317">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_set()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#aa909d685f344dc2e637fb84957bc58ec">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#aa909d685f344dc2e637fb84957bc58ec">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_sleep()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a4b7748cf9cf0108de662b41851d97878">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a4b7748cf9cf0108de662b41851d97878">CmdPatternCallbacks.cpp</a></li>
-<li>display_help_undo()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a427d067ebe73ddf2cb51ba4fd05d3375">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a427d067ebe73ddf2cb51ba4fd05d3375">CmdPatternCallbacks.cpp</a></li>
+<li>display_help()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a8f0b63bf650a5ceefc36d7e3bcb02f63">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a8f0b63bf650a5ceefc36d7e3bcb02f63">CmdPatternCallbacks.h</a></li>
+<li>display_help_get()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a0fa0bac0fc88513dfcaf50196a39a343">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a0fa0bac0fc88513dfcaf50196a39a343">CmdPatternCallbacks.h</a></li>
+<li>display_help_move()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a725ae5b5ae06426a9f27138daa783636">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a725ae5b5ae06426a9f27138daa783636">CmdPatternCallbacks.h</a></li>
+<li>display_help_reset()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a9a90720f58d890625079877d0d339317">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a9a90720f58d890625079877d0d339317">CmdPatternCallbacks.h</a></li>
+<li>display_help_set()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#aa909d685f344dc2e637fb84957bc58ec">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#aa909d685f344dc2e637fb84957bc58ec">CmdPatternCallbacks.h</a></li>
+<li>display_help_sleep()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a4b7748cf9cf0108de662b41851d97878">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a4b7748cf9cf0108de662b41851d97878">CmdPatternCallbacks.h</a></li>
+<li>display_help_undo()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a427d067ebe73ddf2cb51ba4fd05d3375">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a427d067ebe73ddf2cb51ba4fd05d3375">CmdPatternCallbacks.h</a></li>
 </ul>
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>get_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#aa0a1bd035c01b447c32e0a9e128c7611">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#aa0a1bd035c01b447c32e0a9e128c7611">CmdPatternCallbacks.cpp</a></li>
-<li>get_help()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#ad2b16cf5e3d9d45db6380d3731c3211f">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#ad2b16cf5e3d9d45db6380d3731c3211f">CmdPatternCallbacks.cpp</a></li>
+<li>get_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#aa0a1bd035c01b447c32e0a9e128c7611">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#aa0a1bd035c01b447c32e0a9e128c7611">CmdPatternCallbacks.h</a></li>
+<li>get_help()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#ad2b16cf5e3d9d45db6380d3731c3211f">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#ad2b16cf5e3d9d45db6380d3731c3211f">CmdPatternCallbacks.h</a></li>
 </ul>
 
 
@@ -119,30 +98,30 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>move_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#ac82a0068988fe425288370e121b04f00">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#ac82a0068988fe425288370e121b04f00">CmdPatternCallbacks.cpp</a></li>
+<li>move_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#ac82a0068988fe425288370e121b04f00">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#ac82a0068988fe425288370e121b04f00">CmdPatternCallbacks.h</a></li>
 </ul>
 
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>ParserThreadCallback()&#160;:&#160;<a class="el" href="_globals_8h.html#ac6568f5dfdc418a26f1a80513cd18d7e">Globals.h</a>, <a class="el" href="_globals_8cpp.html#ac6568f5dfdc418a26f1a80513cd18d7e">Globals.cpp</a></li>
+<li>ParserThreadCallback()&#160;:&#160;<a class="el" href="Globals_8cpp.html#ac6568f5dfdc418a26f1a80513cd18d7e">Globals.cpp</a>, <a class="el" href="Globals_8h.html#ac6568f5dfdc418a26f1a80513cd18d7e">Globals.h</a></li>
 </ul>
 
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>reset_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#ae3feb7f7fca30ce0a0c8dcc76eb01ff9">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#ae3feb7f7fca30ce0a0c8dcc76eb01ff9">CmdPatternCallbacks.cpp</a></li>
-<li>rotate_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a3d3ec91c1ee0b0c2a2e47d99fcbd6b61">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a3d3ec91c1ee0b0c2a2e47d99fcbd6b61">CmdPatternCallbacks.cpp</a></li>
+<li>reset_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#ae3feb7f7fca30ce0a0c8dcc76eb01ff9">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#ae3feb7f7fca30ce0a0c8dcc76eb01ff9">CmdPatternCallbacks.h</a></li>
+<li>rotate_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a3d3ec91c1ee0b0c2a2e47d99fcbd6b61">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a3d3ec91c1ee0b0c2a2e47d99fcbd6b61">CmdPatternCallbacks.h</a></li>
 </ul>
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>set_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#adcae3b60a9fcfef183dd0b91967e2ad6">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#adcae3b60a9fcfef183dd0b91967e2ad6">CmdPatternCallbacks.cpp</a></li>
+<li>set_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#adcae3b60a9fcfef183dd0b91967e2ad6">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#adcae3b60a9fcfef183dd0b91967e2ad6">CmdPatternCallbacks.h</a></li>
 <li>setup()&#160;:&#160;<a class="el" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d">main.cpp</a></li>
-<li>sleep_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#a95dfb636156bd75ec75576b2f153c6c6">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#a95dfb636156bd75ec75576b2f153c6c6">CmdPatternCallbacks.cpp</a></li>
+<li>sleep_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#a95dfb636156bd75ec75576b2f153c6c6">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#a95dfb636156bd75ec75576b2f153c6c6">CmdPatternCallbacks.h</a></li>
 </ul>
 
 
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
-<li>undo_cmd()&#160;:&#160;<a class="el" href="_cmd_pattern_callbacks_8h.html#ad3e176b252ce56823333747b267ae544">CmdPatternCallbacks.h</a>, <a class="el" href="_cmd_pattern_callbacks_8cpp.html#ad3e176b252ce56823333747b267ae544">CmdPatternCallbacks.cpp</a></li>
+<li>undo_cmd()&#160;:&#160;<a class="el" href="CmdPatternCallbacks_8cpp.html#ad3e176b252ce56823333747b267ae544">CmdPatternCallbacks.cpp</a>, <a class="el" href="CmdPatternCallbacks_8h.html#ad3e176b252ce56823333747b267ae544">CmdPatternCallbacks.h</a></li>
 </ul>
 
 
@@ -150,12 +129,9 @@ $(document).ready(function(){initNavTree('globals_func.html',''); initResizable(
 <li>yield()&#160;:&#160;<a class="el" href="main_8cpp.html#a7cb51f5c2b5cad3766f19eb69c92793b">main.cpp</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
 </body>
 </html>

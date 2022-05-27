@@ -1,7 +1,0 @@
-<map id="Alignment::getDistancePrintHeadToMlX" name="Alignment::getDistancePrintHeadToMlX">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,189,47"/>
-<area shape="rect" id="node2" href="$class_alignment.html#af6449fe438cdaeff341627ae30975a16" title=" " alt="" coords="237,5,443,47"/>
-<area shape="rect" id="node3" href="$class_alignment.html#a3e235378adac9e2ffd3fa6a6d9e67534" title=" " alt="" coords="491,13,677,39"/>
-<area shape="rect" id="node4" href="$class_distance_sensor.html#a1b5434dd7b12183ded0962f6e42a8f8d" title=" " alt="" coords="725,5,908,47"/>
-<area shape="rect" id="node5" href="$class_keyence__rs232__interface.html#ad2606a20f587944928d8cadef8505af3" title=" " alt="" coords="956,5,1124,47"/>
-</map>

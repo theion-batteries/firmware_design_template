@@ -1,0 +1,5 @@
+<map id="Alignment::getReadingEndstopZ" name="Alignment::getReadingEndstopZ">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,213,39"/>
+<area shape="rect" id="node2" href="$classendSwitch.html#ae1f7e6d7200feb02820c02708bca01c0" title="get current state" alt="" coords="261,5,416,47"/>
+<area shape="rect" id="node3" href="$classendSwitch.html#ac38e43effb237b61a1f4b09092b5ac53" title="debounce a button" alt="" coords="464,13,611,39"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="UUID_MANAGER::set_UUID_EEPROM" name="UUID_MANAGER::set_UUID_EEPROM">
+<area shape="rect" id="node1" title="wrapper function to set new internal id" alt="" coords="5,5,193,47"/>
+<area shape="rect" id="node2" href="$classUUID__MANAGER.html#afb79fd4c3deac04fc14199ee51831f72" title="write string to eeprom" alt="" coords="241,5,443,47"/>
+</map>

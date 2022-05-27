@@ -9,10 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -24,11 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
-  <td id="projectlogo"><img alt="Logo" src="theion.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.2</span>
+   <div id="projectname">Firmware Design Template<span id="projectnumber">&#160;0.3</span>
    </div>
-   <div id="projectbrief">To privde modular and efficient high level software design</div>
+   <div id="projectbrief">API Documentation</div>
   </td>
  </tr>
  </tbody>
@@ -53,22 +48,6 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('functions_func_s.html',''); initResizable(); });
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -87,72 +66,69 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 &#160;
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>set_UUID_EEPROM()&#160;:&#160;<a class="el" href="class_u_u_i_d___m_a_n_a_g_e_r.html#a0c5cd5ccc23f6c7eb99950a651f91713">UUID_MANAGER</a></li>
-<li>setBackChar()&#160;:&#160;<a class="el" href="class_cmd_buffer_object.html#a221a93905e9545cc63552b964503c334">CmdBufferObject</a></li>
-<li>setCommand()&#160;:&#160;<a class="el" href="class_command_state_manager.html#a339a392c33acac8438ab79734189a948">CommandStateManager</a></li>
-<li>setCommunicationMode()&#160;:&#160;<a class="el" href="class_keyence__base.html#aac01671d8d411cd6c9974cbb9830afe1">Keyence_base</a>, <a class="el" href="class_keyence__rs232__interface.html#a366c821905c00f922a1a7ff86891d68b">Keyence_rs232_interface</a></li>
-<li>setCPUready()&#160;:&#160;<a class="el" href="class_command_state_manager.html#a51b2da7cd984728d0eb59bb600b097fb">CommandStateManager</a></li>
-<li>setDelay()&#160;:&#160;<a class="el" href="classa4988.html#af905ad2bb5a9e5465e83f081067a139c">a4988</a>, <a class="el" href="class_motor_invoker.html#a84fd04a42677c3e72fbdf0638ee7e96d">MotorInvoker</a></li>
-<li>setDirection()&#160;:&#160;<a class="el" href="classa4988.html#a6a37cf937b1f7a1f229904cdb9191b89">a4988</a>, <a class="el" href="class_motor_invoker.html#ad014d8e45f90e64b43b642a6e656f644">MotorInvoker</a></li>
-<li>setEcho()&#160;:&#160;<a class="el" href="class_cmd_buffer_object.html#ad7c2ae01008297a876b9d7ed56a37c1e">CmdBufferObject</a></li>
-<li>setEndChar()&#160;:&#160;<a class="el" href="class_cmd_buffer_object.html#a08b5dde801557e604b9e0875988a15cc">CmdBufferObject</a></li>
-<li>setGeneralMode()&#160;:&#160;<a class="el" href="class_keyence__base.html#a7c87aeaf6d28c3444d6358de03028544">Keyence_base</a>, <a class="el" href="class_keyence__rs232__interface.html#a2b0d0b535e0fb2c9f11ab1fe755f108f">Keyence_rs232_interface</a></li>
-<li>setKeyenceCom()&#160;:&#160;<a class="el" href="class_distance_sensor.html#afd9021692a991103c20e928977bdec69">DistanceSensor</a></li>
-<li>setMotorCmd()&#160;:&#160;<a class="el" href="classset_motor_cmd.html#a80d8210fa6c14fb95fc43303758bbd98">setMotorCmd</a></li>
-<li>setMotorDelayCmd()&#160;:&#160;<a class="el" href="classset_motor_delay_cmd.html#a5fab5f543a4344cc3b2d383829f2f5b2">setMotorDelayCmd</a></li>
-<li>setMotorDirectionCmd()&#160;:&#160;<a class="el" href="classset_motor_direction_cmd.html#aa950ff7b2528848d878e77eade404425">setMotorDirectionCmd</a></li>
-<li>setMotorSpeedCmd()&#160;:&#160;<a class="el" href="classset_motor_speed_cmd.html#a8a82572cb37d2bec324b93550f848213">setMotorSpeedCmd</a></li>
-<li>SetOnCalibrate()&#160;:&#160;<a class="el" href="class_firm_invoker.html#a32ee0681b841f54012256169e127ef5b">FirmInvoker</a></li>
-<li>SetOnfinish()&#160;:&#160;<a class="el" href="class_invoker.html#a2af0ecdacf369418e76a89745c0259b7">Invoker</a></li>
-<li>SetOnFinish()&#160;:&#160;<a class="el" href="class_motor_invoker.html#aa0a05a6ed39a6374c63bd68583ce5f8c">MotorInvoker</a></li>
-<li>SetOnGetDelay()&#160;:&#160;<a class="el" href="class_motor_invoker.html#a9480a94b7511c955dc44d4e7d356879a">MotorInvoker</a></li>
-<li>SetOnGetDirection()&#160;:&#160;<a class="el" href="class_motor_invoker.html#a075d03cdc34ce41371efecd3f111a233">MotorInvoker</a></li>
-<li>SetOnGetSpeed()&#160;:&#160;<a class="el" href="class_motor_invoker.html#ae6c9a7e8bddde55534f1eaec34c81fca">MotorInvoker</a></li>
-<li>SetOnMoveDown()&#160;:&#160;<a class="el" href="class_motor_invoker.html#a480c0a22af65cb789cf7f76cb395756e">MotorInvoker</a></li>
-<li>SetOnMoveUp()&#160;:&#160;<a class="el" href="class_motor_invoker.html#a2b622976bfc117252d8156d2f84ada96">MotorInvoker</a></li>
-<li>SetOnRotateCclk()&#160;:&#160;<a class="el" href="class_motor_invoker.html#a5d4611b73c2a70e13b867aef7c6b0257">MotorInvoker</a></li>
-<li>SetOnRotateClk()&#160;:&#160;<a class="el" href="class_motor_invoker.html#ac2470936caa221e3bf83bce3e7a4eef8">MotorInvoker</a></li>
-<li>SetOnSetDelay()&#160;:&#160;<a class="el" href="class_motor_invoker.html#a9914bcb507992503615a9c9b46227b43">MotorInvoker</a></li>
-<li>SetOnSetDirection()&#160;:&#160;<a class="el" href="class_motor_invoker.html#ab4cce12ec9477b92d00403043c16c8f8">MotorInvoker</a></li>
-<li>SetOnSetSpeed()&#160;:&#160;<a class="el" href="class_motor_invoker.html#aaf9b70130e623597c8c71a4629437766">MotorInvoker</a></li>
-<li>SetOnStart()&#160;:&#160;<a class="el" href="class_invoker.html#a9191daa329fafcecc996ff4a6cf8b02e">Invoker</a>, <a class="el" href="class_motor_invoker.html#af1f9455657c59d914dbbdd580d059f79">MotorInvoker</a></li>
-<li>setOptIgnoreQuote()&#160;:&#160;<a class="el" href="class_cmd_parser.html#a3d1088255605de22783562edc0672474">CmdParser</a></li>
-<li>setOptKeyValue()&#160;:&#160;<a class="el" href="class_cmd_parser.html#aee137cf60aa0c94f0a662ced8c4e0aae">CmdParser</a></li>
-<li>setOptSeperator()&#160;:&#160;<a class="el" href="class_cmd_parser.html#a1ebf11340588db861d4b5383a67b1d04">CmdParser</a></li>
-<li>setSerialBaudrate()&#160;:&#160;<a class="el" href="class_keyence__rs232__interface.html#a5e4e89b0e72492942b3dbfe59d1c4a8d">Keyence_rs232_interface</a></li>
-<li>setSerialHandler()&#160;:&#160;<a class="el" href="class_keyence__rs232__interface.html#ad32645333a71b52bad892dfd45b8d930">Keyence_rs232_interface</a></li>
-<li>setSpeed()&#160;:&#160;<a class="el" href="classa4988.html#ae59dc905051ebfdcfac1d48f172d523f">a4988</a>, <a class="el" href="class_motor_invoker.html#a1d54d51f475e95e30de0f551f8d8cddd">MotorInvoker</a></li>
-<li>setState()&#160;:&#160;<a class="el" href="class_command_state_manager.html#a9f161d32cdc12e446924853dc003c1e3">CommandStateManager</a></li>
+<li>set_UUID_EEPROM()&#160;:&#160;<a class="el" href="classUUID__MANAGER.html#a0c5cd5ccc23f6c7eb99950a651f91713">UUID_MANAGER</a></li>
+<li>setBackChar()&#160;:&#160;<a class="el" href="classCmdBufferObject.html#a221a93905e9545cc63552b964503c334">CmdBufferObject</a></li>
+<li>setCommand()&#160;:&#160;<a class="el" href="classCommandStateManager.html#a339a392c33acac8438ab79734189a948">CommandStateManager</a></li>
+<li>setCommunicationMode()&#160;:&#160;<a class="el" href="classKeyence__base.html#aac01671d8d411cd6c9974cbb9830afe1">Keyence_base</a>, <a class="el" href="classKeyence__rs232__interface.html#a366c821905c00f922a1a7ff86891d68b">Keyence_rs232_interface</a></li>
+<li>setCPUready()&#160;:&#160;<a class="el" href="classCommandStateManager.html#a51b2da7cd984728d0eb59bb600b097fb">CommandStateManager</a></li>
+<li>setDelay()&#160;:&#160;<a class="el" href="classa4988.html#af905ad2bb5a9e5465e83f081067a139c">a4988</a>, <a class="el" href="classMotorInvoker.html#a84fd04a42677c3e72fbdf0638ee7e96d">MotorInvoker</a></li>
+<li>setDirection()&#160;:&#160;<a class="el" href="classa4988.html#a6a37cf937b1f7a1f229904cdb9191b89">a4988</a>, <a class="el" href="classMotorInvoker.html#ad014d8e45f90e64b43b642a6e656f644">MotorInvoker</a></li>
+<li>setEcho()&#160;:&#160;<a class="el" href="classCmdBufferObject.html#ad7c2ae01008297a876b9d7ed56a37c1e">CmdBufferObject</a></li>
+<li>setEndChar()&#160;:&#160;<a class="el" href="classCmdBufferObject.html#a08b5dde801557e604b9e0875988a15cc">CmdBufferObject</a></li>
+<li>setGeneralMode()&#160;:&#160;<a class="el" href="classKeyence__base.html#a7c87aeaf6d28c3444d6358de03028544">Keyence_base</a>, <a class="el" href="classKeyence__rs232__interface.html#a2b0d0b535e0fb2c9f11ab1fe755f108f">Keyence_rs232_interface</a></li>
+<li>setKeyenceCom()&#160;:&#160;<a class="el" href="classDistanceSensor.html#afd9021692a991103c20e928977bdec69">DistanceSensor</a></li>
+<li>setMotorCmd()&#160;:&#160;<a class="el" href="classsetMotorCmd.html#a80d8210fa6c14fb95fc43303758bbd98">setMotorCmd</a></li>
+<li>setMotorDelayCmd()&#160;:&#160;<a class="el" href="classsetMotorDelayCmd.html#a5fab5f543a4344cc3b2d383829f2f5b2">setMotorDelayCmd</a></li>
+<li>setMotorDirectionCmd()&#160;:&#160;<a class="el" href="classsetMotorDirectionCmd.html#aa950ff7b2528848d878e77eade404425">setMotorDirectionCmd</a></li>
+<li>setMotorSpeedCmd()&#160;:&#160;<a class="el" href="classsetMotorSpeedCmd.html#a8a82572cb37d2bec324b93550f848213">setMotorSpeedCmd</a></li>
+<li>SetOnCalibrate()&#160;:&#160;<a class="el" href="classFirmInvoker.html#a32ee0681b841f54012256169e127ef5b">FirmInvoker</a></li>
+<li>SetOnfinish()&#160;:&#160;<a class="el" href="classInvoker.html#a2af0ecdacf369418e76a89745c0259b7">Invoker</a></li>
+<li>SetOnFinish()&#160;:&#160;<a class="el" href="classMotorInvoker.html#aa0a05a6ed39a6374c63bd68583ce5f8c">MotorInvoker</a></li>
+<li>SetOnGetDelay()&#160;:&#160;<a class="el" href="classMotorInvoker.html#a9480a94b7511c955dc44d4e7d356879a">MotorInvoker</a></li>
+<li>SetOnGetDirection()&#160;:&#160;<a class="el" href="classMotorInvoker.html#a075d03cdc34ce41371efecd3f111a233">MotorInvoker</a></li>
+<li>SetOnGetSpeed()&#160;:&#160;<a class="el" href="classMotorInvoker.html#ae6c9a7e8bddde55534f1eaec34c81fca">MotorInvoker</a></li>
+<li>SetOnMoveDown()&#160;:&#160;<a class="el" href="classMotorInvoker.html#a480c0a22af65cb789cf7f76cb395756e">MotorInvoker</a></li>
+<li>SetOnMoveUp()&#160;:&#160;<a class="el" href="classMotorInvoker.html#a2b622976bfc117252d8156d2f84ada96">MotorInvoker</a></li>
+<li>SetOnRotateCclk()&#160;:&#160;<a class="el" href="classMotorInvoker.html#a5d4611b73c2a70e13b867aef7c6b0257">MotorInvoker</a></li>
+<li>SetOnRotateClk()&#160;:&#160;<a class="el" href="classMotorInvoker.html#ac2470936caa221e3bf83bce3e7a4eef8">MotorInvoker</a></li>
+<li>SetOnSetDelay()&#160;:&#160;<a class="el" href="classMotorInvoker.html#a9914bcb507992503615a9c9b46227b43">MotorInvoker</a></li>
+<li>SetOnSetDirection()&#160;:&#160;<a class="el" href="classMotorInvoker.html#ab4cce12ec9477b92d00403043c16c8f8">MotorInvoker</a></li>
+<li>SetOnSetSpeed()&#160;:&#160;<a class="el" href="classMotorInvoker.html#aaf9b70130e623597c8c71a4629437766">MotorInvoker</a></li>
+<li>SetOnStart()&#160;:&#160;<a class="el" href="classInvoker.html#a9191daa329fafcecc996ff4a6cf8b02e">Invoker</a>, <a class="el" href="classMotorInvoker.html#af1f9455657c59d914dbbdd580d059f79">MotorInvoker</a></li>
+<li>setOptIgnoreQuote()&#160;:&#160;<a class="el" href="classCmdParser.html#a3d1088255605de22783562edc0672474">CmdParser</a></li>
+<li>setOptKeyValue()&#160;:&#160;<a class="el" href="classCmdParser.html#aee137cf60aa0c94f0a662ced8c4e0aae">CmdParser</a></li>
+<li>setOptSeperator()&#160;:&#160;<a class="el" href="classCmdParser.html#a1ebf11340588db861d4b5383a67b1d04">CmdParser</a></li>
+<li>setSerialBaudrate()&#160;:&#160;<a class="el" href="classKeyence__rs232__interface.html#a5e4e89b0e72492942b3dbfe59d1c4a8d">Keyence_rs232_interface</a></li>
+<li>setSerialHandler()&#160;:&#160;<a class="el" href="classKeyence__rs232__interface.html#ad32645333a71b52bad892dfd45b8d930">Keyence_rs232_interface</a></li>
+<li>setSpeed()&#160;:&#160;<a class="el" href="classa4988.html#ae59dc905051ebfdcfac1d48f172d523f">a4988</a>, <a class="el" href="classMotorInvoker.html#a1d54d51f475e95e30de0f551f8d8cddd">MotorInvoker</a></li>
+<li>setState()&#160;:&#160;<a class="el" href="classCommandStateManager.html#a9f161d32cdc12e446924853dc003c1e3">CommandStateManager</a></li>
 <li>setStepMode()&#160;:&#160;<a class="el" href="classa4988.html#a150215b9cd4e4841befd2dc9d4b4a3be">a4988</a></li>
-<li>setTargetDistancePHToML()&#160;:&#160;<a class="el" href="class_alignment.html#a9f3eee5f60bc1591e1895d7c4cd7c410">Alignment</a></li>
-<li>setTargetDistanceSensorToML()&#160;:&#160;<a class="el" href="class_alignment.html#ac8054a4a002284fae13081f16d3cee65">Alignment</a></li>
-<li>setUUID()&#160;:&#160;<a class="el" href="classset_u_u_i_d.html#a3a16702ba69b14872f12015595ed25de">setUUID</a></li>
-<li>Sleep()&#160;:&#160;<a class="el" href="class_sleep_hardware.html#abc1f56b9c599fefc8e738b9bcae930df">SleepHardware</a></li>
-<li>SleepDevice()&#160;:&#160;<a class="el" href="class_sleep_device.html#a0268753edbceeed9a3613ebb7f104377">SleepDevice</a></li>
-<li>SleepHardware()&#160;:&#160;<a class="el" href="class_sleep_hardware.html#adf757e861fcb9019a98e391e255c1377">SleepHardware</a></li>
-<li>soft_reset()&#160;:&#160;<a class="el" href="class_reset_hardware.html#a2f521d08146215d48b3945b5e1fb4332">ResetHardware</a></li>
-<li>start()&#160;:&#160;<a class="el" href="class_invoker.html#ace85c70f471ce7fca542203f0c2fdff3">Invoker</a></li>
+<li>setTargetDistancePHToML()&#160;:&#160;<a class="el" href="classAlignment.html#a9f3eee5f60bc1591e1895d7c4cd7c410">Alignment</a></li>
+<li>setTargetDistanceSensorToML()&#160;:&#160;<a class="el" href="classAlignment.html#ac8054a4a002284fae13081f16d3cee65">Alignment</a></li>
+<li>setUUID()&#160;:&#160;<a class="el" href="classsetUUID.html#a3a16702ba69b14872f12015595ed25de">setUUID</a></li>
+<li>Sleep()&#160;:&#160;<a class="el" href="classSleepHardware.html#abc1f56b9c599fefc8e738b9bcae930df">SleepHardware</a></li>
+<li>SleepDevice()&#160;:&#160;<a class="el" href="classSleepDevice.html#a0268753edbceeed9a3613ebb7f104377">SleepDevice</a></li>
+<li>SleepHardware()&#160;:&#160;<a class="el" href="classSleepHardware.html#adf757e861fcb9019a98e391e255c1377">SleepHardware</a></li>
+<li>soft_reset()&#160;:&#160;<a class="el" href="classResetHardware.html#a2f521d08146215d48b3945b5e1fb4332">ResetHardware</a></li>
+<li>start()&#160;:&#160;<a class="el" href="classInvoker.html#ace85c70f471ce7fca542203f0c2fdff3">Invoker</a></li>
 <li>step()&#160;:&#160;<a class="el" href="classa4988.html#ad66dadbb79c22bc3f507fe6d624c9fec">a4988</a></li>
-<li>StepDownXMax()&#160;:&#160;<a class="el" href="class_alignment.html#af567addd1ef086c37b11a36f4199a47f">Alignment</a></li>
-<li>StepDownYMax()&#160;:&#160;<a class="el" href="class_alignment.html#ad40c3c9200a0909056d53f7403ed882e">Alignment</a></li>
-<li>StepDownZMax()&#160;:&#160;<a class="el" href="class_alignment.html#aaa86c7ff58188ac84255e2450bd27b7b">Alignment</a></li>
+<li>StepDownXMax()&#160;:&#160;<a class="el" href="classAlignment.html#af567addd1ef086c37b11a36f4199a47f">Alignment</a></li>
+<li>StepDownYMax()&#160;:&#160;<a class="el" href="classAlignment.html#ad40c3c9200a0909056d53f7403ed882e">Alignment</a></li>
+<li>StepDownZMax()&#160;:&#160;<a class="el" href="classAlignment.html#aaa86c7ff58188ac84255e2450bd27b7b">Alignment</a></li>
 <li>stepMotor()&#160;:&#160;<a class="el" href="classa4988.html#af3c159ccf4f2fa8d26d03683181b1fac">a4988</a></li>
 <li>stepOnce()&#160;:&#160;<a class="el" href="classa4988.html#a2074f2e3fe7cd79e402f53a14ba68c89">a4988</a></li>
-<li>StepOncePH()&#160;:&#160;<a class="el" href="class_alignment.html#a7a971878b2e1c3234429fce2d8baa454">Alignment</a></li>
-<li>StepOnceX()&#160;:&#160;<a class="el" href="class_alignment.html#ac82e5ad8712ea3408ec29899202cae65">Alignment</a></li>
-<li>StepOnceY()&#160;:&#160;<a class="el" href="class_alignment.html#a8aa856f47fad52fd553f0d933edcb23b">Alignment</a></li>
-<li>StepOnceZ()&#160;:&#160;<a class="el" href="class_alignment.html#a4011b1521cc136081115518c677a455d">Alignment</a></li>
-<li>StepUpXMax()&#160;:&#160;<a class="el" href="class_alignment.html#af9dd2a0d59543d4418ed13e90cd54277">Alignment</a></li>
-<li>StepUpYMax()&#160;:&#160;<a class="el" href="class_alignment.html#a1e97f98b33329f49c6c1976d38964101">Alignment</a></li>
-<li>StepUpZMax()&#160;:&#160;<a class="el" href="class_alignment.html#a9e8ccedc0f07184904e6878dfb991e65">Alignment</a></li>
+<li>StepOncePH()&#160;:&#160;<a class="el" href="classAlignment.html#a7a971878b2e1c3234429fce2d8baa454">Alignment</a></li>
+<li>StepOnceX()&#160;:&#160;<a class="el" href="classAlignment.html#ac82e5ad8712ea3408ec29899202cae65">Alignment</a></li>
+<li>StepOnceY()&#160;:&#160;<a class="el" href="classAlignment.html#a8aa856f47fad52fd553f0d933edcb23b">Alignment</a></li>
+<li>StepOnceZ()&#160;:&#160;<a class="el" href="classAlignment.html#a4011b1521cc136081115518c677a455d">Alignment</a></li>
+<li>StepUpXMax()&#160;:&#160;<a class="el" href="classAlignment.html#af9dd2a0d59543d4418ed13e90cd54277">Alignment</a></li>
+<li>StepUpYMax()&#160;:&#160;<a class="el" href="classAlignment.html#a1e97f98b33329f49c6c1976d38964101">Alignment</a></li>
+<li>StepUpZMax()&#160;:&#160;<a class="el" href="classAlignment.html#a9e8ccedc0f07184904e6878dfb991e65">Alignment</a></li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+</small></address>
 </body>
 </html>

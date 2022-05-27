@@ -1,5 +1,5 @@
 <map id="a4988::getDirection" name="a4988::getDirection">
 <area shape="rect" id="node1" title=" " alt="" coords="204,46,339,73"/>
-<area shape="rect" id="node2" href="$classget_motor_direction_cmd.html#a3fd8f5b9573e1b5ed69c8e4db0eaa8af" title=" " alt="" coords="5,5,156,47"/>
-<area shape="rect" id="node3" href="$classset_motor_direction_cmd.html#ab7e1ec07b1cabf7293b57e6c8adee418" title=" " alt="" coords="5,71,156,112"/>
+<area shape="rect" id="node2" href="$classgetMotorDirectionCmd.html#a3fd8f5b9573e1b5ed69c8e4db0eaa8af" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" id="node3" href="$classsetMotorDirectionCmd.html#ab7e1ec07b1cabf7293b57e6c8adee418" title=" " alt="" coords="5,71,156,112"/>
 </map>

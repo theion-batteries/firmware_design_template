@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lightbarrier_0',['lightBarrier',['../classlight_barrier.html',1,'']]]
+  ['lightbarrier_0',['lightBarrier',['../classlightBarrier.html',1,'']]]
 ];

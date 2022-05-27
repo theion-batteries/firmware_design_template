@@ -1,0 +1,5 @@
+<map id="UUID_MANAGER::get_UUID_EEPROM" name="UUID_MANAGER::get_UUID_EEPROM">
+<area shape="rect" id="node1" title="wrapper function to get internal stored id" alt="" coords="177,23,365,65"/>
+<area shape="rect" id="node2" href="$classgetUUID.html#a936e4f57c5e32cc1a00cbb6e87f5dd87" title=" " alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node3" href="$classsetUUID.html#a91a69117ee9a224e831fd77315ce2b21" title=" " alt="" coords="5,56,129,83"/>
+</map>
