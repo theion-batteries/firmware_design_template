@@ -15,7 +15,7 @@ Contact: sami@theion.de
 The API doc is auto generated with doxygen.
 click [docs](https://theionsami.github.io/firmware_design_template/), then Under Classes and Files you find the full API.
 If you make a fork from this repo, dont forget to run doxygen from inside docs/ after any changes made to src/ inc/ or.md files and push!
-even better run the [script](../push.bat) and it will takes care:
+even better run the [script](push.bat) and it will takes care:
 ~~~powershell
 .\push #execute script push.bat
 ~~~
