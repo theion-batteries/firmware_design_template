@@ -25,7 +25,7 @@ endSwitch::endSwitch(int Pin, bool PressedState){
  * @return true 
  * @return false 
  */
-bool endSwitch::get_current_state(bool debounceButton=false){
+bool endSwitch::get_current_state(bool debounceButton/*=false*/){
     if (debounceButton==true){
       current_state=debounce();
        return current_state;

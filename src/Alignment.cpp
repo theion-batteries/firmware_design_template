@@ -968,7 +968,7 @@ retVal Alignment::movePhToRefX()
 
 }
 /************* oscillate system ***********************/
-    retVal Alignment::oscillateSys(float desired_angle, int num_revolutions, bool default_sens=clk, bool reverse_sense=true)
+    retVal Alignment::oscillateSys(float desired_angle, int num_revolutions, bool default_sens/*=clk*/, bool reverse_sense/*=true*/)
     {
       int steps_per_revolutions=200;
       bool sens_rotation=default_sens;
@@ -1179,21 +1179,21 @@ retVal Alignment::movePhToRefX()
 
    @return retVal
 */
-retVal Alignment::InitAlign(bool enable = on) {
+retVal Alignment::InitAlign(bool enable /*= on*/) {
   Motor_x->enable(enable); // set enable
   Motor_y->enable(enable); // set enable
   Motor_z->enable(enable); // set enable
   Motor_PrintHead->enable(enable); // set enable
   return ok;
 }
-retVal Alignment::EnableAll(bool enable = on) {
+retVal Alignment::EnableAll(bool enable /*= on*/) {
   Motor_x->enable(enable); // set enable
   Motor_y->enable(enable); // set enable
   Motor_z->enable(enable); // set enable
   Motor_PrintHead->enable(enable); // set enable
   return ok;
 }
-retVal Alignment::DisableAll(bool enable = off) {
+retVal Alignment::DisableAll(bool enable /*= of*/) {
   Motor_x->enable(enable); // set enable
   Motor_y->enable(enable); // set enable
   Motor_z->enable(enable); // set enable

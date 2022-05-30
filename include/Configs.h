@@ -55,9 +55,9 @@
 #define PHMs1_pin A10
 #define PHMs2_pin A10
 #define PHMs3_pin A10
-#define PHDir_pin A9
+#define PHDir_pin 8 //A9 
 #define PHEnable_pin 8
-#define PHStep_pin A8
+#define PHStep_pin 8 //A8
 /************* endstops***********/
 // Endswitch
 #define E_X 12
