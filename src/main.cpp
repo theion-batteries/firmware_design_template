@@ -1,17 +1,35 @@
 /**
  * @file main.cpp
  * @author sami dhiab (sami@theion.de)
- * @brief launch main scheduler 
+ * @brief launch main coroutine 
  * @version 0.1
  * @date 2022-02-11
  * @copyright Copyright (c) 2022
  * 
  */
 #include "ComHandler.hpp"
+#include <AceRoutine.h>
+using namespace ace_routine;
 ComManager ComObj;
-ThreadController MainScheduler = ThreadController();
-Thread ParserThread = Thread();
-
+COROUTINE(parse) {
+  COROUTINE_LOOP() {
+    COROUTINE_YIELD();
+    cmdCallback.loopCmdProcessing(&myParser, &myBuffer, &Serial);
+  }
+}
+// 
+COROUTINE(switchA) {
+    COROUTINE_BEGIN();
+    COROUTINE_YIELD();
+    switchCmdA();
+    COROUTINE_END();
+}
+COROUTINE(switchA) {
+    COROUTINE_BEGIN();
+    COROUTINE_YIELD();
+    switchCmdB();
+    COROUTINE_END();
+}
 void setup() {
   ComObj.initCom(BAUDRATE);
   cmdCallback.addCmd(Get, &get_cmd);
@@ -23,17 +41,24 @@ void setup() {
   cmdCallback.addCmd(Help, &get_help);
   cmdCallback.addCmd(Calibrate, &calibrate_cmd);
   cmdCallback.addCmd(Rotate, &rotate_cmd);
+  CoroutineScheduler::setup();
   display_help();
-	// Configure parser thread
-	ParserThread.onRun(ParserThreadCallback);
-	// Adds thread to the MainScheduler
-	MainScheduler.add(&ParserThread);
+
 }
 void loop() { 
-MainScheduler.run();
+  CoroutineScheduler::loop();
 }
 
-void yield(void) {
-  Serial.println("yield called, switch context");
-  ParserThread.run();
+void switchCmdA()
+{
+  for (int i = 0; i<100; i++)
+  {
+  Serial.println("switching contextA");
+  }
 }
+void switchCmdB()
+{
+  for (int i = 0; i<100; i++)
+  {
+  Serial.println("switching contextB");
+  }}
