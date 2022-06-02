@@ -11,11 +11,20 @@
 #include <AceRoutine.h>
 using namespace ace_routine;
 ComManager ComObj;
+
+void switchCmdA();
+void switchCmdB();
 COROUTINE(parse) {
-  COROUTINE_LOOP() {
+    COROUTINE_BEGIN();
     COROUTINE_YIELD();
     cmdCallback.loopCmdProcessing(&myParser, &myBuffer, &Serial);
-  }
+    COROUTINE_END();
+}
+COROUTINE(execute) {
+    COROUTINE_BEGIN();
+    COROUTINE_YIELD();
+    cmdCallback.processCmd(&myParser);
+    COROUTINE_END();
 }
 // 
 COROUTINE(switchA) {
@@ -24,7 +33,7 @@ COROUTINE(switchA) {
     switchCmdA();
     COROUTINE_END();
 }
-COROUTINE(switchA) {
+COROUTINE(switchB) {
     COROUTINE_BEGIN();
     COROUTINE_YIELD();
     switchCmdB();
@@ -61,4 +70,5 @@ void switchCmdB()
   for (int i = 0; i<100; i++)
   {
   Serial.println("switching contextB");
-  }}
+  }
+}

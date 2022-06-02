@@ -7,7 +7,7 @@
 #define _CMDCALLBACK_H_
 #include "Thread.h"
 #include "ThreadController.h"
-
+#include "AceRoutine.h"
 extern ThreadController controll;
 
 #if defined(__AVR__)
@@ -26,18 +26,12 @@ typedef void (*CmdCallFunct)(CmdParser *cmdParser);
 
 class CmdCallbackObject
 {
-    private:
-    Thread* InternThread;
-    ThreadController* InternalScheduler = new ThreadController();    
-    CmdCallFunct* m_functList;
-
   public:
-      size_t current_idx;
-  bool CmdreadyForExecution= false;
-  Thread* getInternalThread() const;
-  ThreadController* getInternalScheduler() const;
-  void createThreadForCmd(CmdParser* cmdParser);
-  void processCmdVoid(CmdParser *cmdParser);
+    size_t current_idx;
+    bool IsParsed=false;
+    CmdBufferObject *cmdBuffer;
+
+  
   /**
    * @brief internal thread callback
    * 
@@ -64,7 +58,14 @@ class CmdCallbackObject
      * @return                  TRUE if found the command in the buffer
      */
     virtual bool processCmd(CmdParser *cmdParser);
-    bool runCmd(char* cmdStr, CmdParser *cmdParser);
+    /**
+     * Search command in the buffer and execute the callback function.
+     *
+     * @param cmdStr            Cmd string to search
+     * @return                  void
+     */    
+    void processCmdVoid(CmdParser *cmdParser);
+
     /**
      * Check for single new char on serial and if it was the endChar
      *
@@ -183,6 +184,7 @@ class _CmdCallback : public CmdCallbackObject
         if (idx < STORESIZE && m_functList[idx] != NULL) {
             current_idx=idx;
             m_functList[idx](cmdParser);
+            cmdBuffer->clear();
         }
 
         return false;
