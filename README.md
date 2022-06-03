@@ -68,13 +68,15 @@ Deprecated.  see [UML](docs/uml/) folder for previous uml Diagrams.
 see [UML](docs/uml/) folder for previous uml Diagrams.
 # Test
 please refer to test folder [readme](test/README.md) for tests and definitions.
+Unit tests are found under same folder. follow this [link](https://docs.platformio.org/en/stable//advanced/unit-testing/index.html) for more infos.
 
 # V3 Features
 - implementing cmd design pattern
 - implementing threading/scheduling tasks
 - generating docsumentation fully with doxygen
-# Change Log
-- 19.05.2022: see older branch (master branch for change log)
+# Change Log 
+- 03.06.2022: tested 2 libraries for tasks scheduling
+- before 19.05.2022: see older branch (master branch for change log)
 
 # ROS Concept & Integration
 For upcoming version, ros will be fully supported.
@@ -84,3 +86,42 @@ For upcoming version, ros will be fully supported.
 # TODO
 - finish implementing scheduler
 - finish docs for all files
+
+# Concept and Limitations
+Normally, commands are processed one after another (queue).
+To parallize commands, either commands callbacks must be non blocking or if blocking ( loops) then yield() must be injected inside loop. using yield() can pause current command and resume where it left.
+- example: injecting yield() inside 2 loops:
+~~~cpp
+void switchA()
+ { 
+  static int idx=0;
+  for (idx=0; idx<100; idx++)
+  {    
+  Serial.print("counter A: ");
+  Serial.println(idx);
+  Serial.println("switching contextA");
+  }    
+ }
+ void switchB() 
+ {
+  static int index=0;
+  for (index=0; index<100; index++)
+  {
+  Serial.print("counter B: ");
+  Serial.println(index);
+  Serial.println("switching contextB");
+  }    
+ }
+  
+output:
+counter A: 0
+switching contextA
+counter B: 0
+switching contextB
+~~~
+
+- Using scheduler/threading on one core mcu like arduino:
+like previous example, three scheduling libraries(task scheduling, arduino threads, AceRoutine) were tested to achieve this behavior. every library implementation has it own branch.
+All of these libraries provide a high level concept to organise tasks, to avoid using delay() or millis() for time handling and can switch context(yield) between tasks.
+The missing feature is the ability to add the context switching on top of the ready written code ( without modifying the existing code).
+

@@ -29,17 +29,7 @@ class CmdCallbackObject
   public:
     size_t current_idx;
     bool IsParsed=false;
-    CmdBufferObject *cmdBuffer;
-
-  
-  /**
-   * @brief internal thread callback
-   * 
-   * @param cmdParser 
-   * @param CmdBuffer 
-   * @return void* 
-   */
-      void* threadCallback(size_t idx, CmdParser *cmdParser);
+    CmdBufferObject *ThisCmdBuffer;
 
     /**
      * Endless loop for process incoming data from serial.
@@ -50,7 +40,15 @@ class CmdCallbackObject
      */
     void loopCmdProcessing(CmdParser *cmdParser, CmdBufferObject *cmdBuffer,
                            Stream *serial);
-
+    /**
+     * parse incoming data from serial.
+     *
+     * @param cmdParser         Parser object with options set
+     * @param cmdBuffer         Buffer object for data handling
+     * @param serial            Arduino serial interface from comming data
+     */
+    void loopCmdParsing(CmdParser *cmdParser, CmdBufferObject *cmdBuffer,
+                           Stream *serial);    
     /**
      * Search command in the buffer and execute the callback function.
      *
@@ -64,7 +62,7 @@ class CmdCallbackObject
      * @param cmdStr            Cmd string to search
      * @return                  void
      */    
-    void processCmdVoid(CmdParser *cmdParser);
+    bool processReadyCmd(CmdParser *cmdParser);
 
     /**
      * Check for single new char on serial and if it was the endChar
@@ -184,7 +182,8 @@ class _CmdCallback : public CmdCallbackObject
         if (idx < STORESIZE && m_functList[idx] != NULL) {
             current_idx=idx;
             m_functList[idx](cmdParser);
-            cmdBuffer->clear();
+            ThisCmdBuffer->clear();
+            IsParsed=false;
         }
 
         return false;

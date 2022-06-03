@@ -6,11 +6,30 @@
 
 #include "CmdCallback.hpp"
 
-void CmdCallbackObject::loopCmdProcessing(CmdParser *      cmdParser,
+void CmdCallbackObject::loopCmdParsing(CmdParser *      cmdParser,
                                           CmdBufferObject *cmdBuffer,
                                           Stream *         serial)
 {
+    ThisCmdBuffer=cmdBuffer;
         // read data
+        if (ThisCmdBuffer->readFromSerial(serial)) {
+
+            // parse command line
+            if (cmdParser->parseCmd(ThisCmdBuffer) != CMDPARSER_ERROR) {
+                // search command in store and call function
+                // ignore return value "false" if command was not found
+                // change original concept
+                IsParsed=true;
+                //this->processCmd(cmdParser);
+                //ThisCmdBuffer->clear();
+            }
+        }
+}
+void CmdCallbackObject::loopCmdProcessing(CmdParser *cmdParser,CmdBufferObject *cmdBuffer,
+                           Stream *serial)
+{
+    ThisCmdBuffer=cmdBuffer;
+            // read data
         if (cmdBuffer->readFromSerial(serial)) {
 
             // parse command line
@@ -19,12 +38,11 @@ void CmdCallbackObject::loopCmdProcessing(CmdParser *      cmdParser,
                 // ignore return value "false" if command was not found
                 // change original concept
                 IsParsed=true;
-                //this->processCmd(cmdParser);
-                //cmdBuffer->clear();
+                this->processCmd(cmdParser);
+                cmdBuffer->clear();
             }
         }
 }
-
 bool CmdCallbackObject::processCmd(CmdParser *cmdParser)
 {
     char *cmdStr = cmdParser->getCommand();
@@ -46,13 +64,13 @@ bool CmdCallbackObject::processCmd(CmdParser *cmdParser)
     
     return false;
 }
-void CmdCallbackObject::processCmdVoid(CmdParser *cmdParser)
+bool CmdCallbackObject::processReadyCmd(CmdParser *cmdParser)
 {
     char *cmdStr = cmdParser->getCommand();
 
     // check is commando okay
     if (cmdStr == NULL) {
-        return;
+        return false;
     }
 
     // search cmd in store
@@ -61,11 +79,11 @@ void CmdCallbackObject::processCmdVoid(CmdParser *cmdParser)
         // compare command with string
         if (this->equalStoreCmd(i, cmdStr)) {
             // call function
-         this->callStoreFunct(i, cmdParser);
+            return this->callStoreFunct(i, cmdParser);
         }
     }
-
-    return;
+    
+    return false;
 }
 void CmdCallbackObject::updateCmdProcessing(CmdParser *      cmdParser,
                                             CmdBufferObject *cmdBuffer,

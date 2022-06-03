@@ -77,7 +77,7 @@ retVal Alignment::MoveDistanceMSafe(Nema8* Mref, int direction, float distance)
 }    
 /************ new loops Move Calls for API v3 *************/
 retVal Alignment::MoveDistanceXloop(int direction, float distance) // move motor X a given distance 
-{
+{     
       retVal X;
       do {
         yield();
