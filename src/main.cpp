@@ -12,73 +12,37 @@
 using namespace ace_routine;
 ComManager ComObj;
 
-void switchCmdA();
-void switchCmdB();
-
-COROUTINE(parse) {
+COROUTINE(parser) {
     COROUTINE_LOOP()
     {
     COROUTINE_YIELD();
     cmdCallback.loopCmdProcessing(&myParser, &myBuffer, &Serial);
     }
 }
+
 // Count from 0 to 20 with 500 ms delay between iteration
 COROUTINE(countTo10) {
   COROUTINE_BEGIN();
-
   Serial.println(F("countTo10: Hello!"));
-
   static int i = 0;
   for (i = 0; i < 100; i++) {
       COROUTINE_YIELD();
     Serial.print("countTo10: ");
     Serial.println(i);
   }
-
   COROUTINE_END();
 }
 
 // Count from 0 to 10 with 1000 ms delay between iteration
 COROUTINE(countTo20) {
   COROUTINE_BEGIN();
-
   Serial.println(F("countTo20: Hello!"));
-  
-
   static int i = 0;
   for (i = 0; i < 100; i++) {
     COROUTINE_YIELD();
     Serial.print(F("countTo20: "));
     Serial.println(i);
   }
-
-  COROUTINE_END();
-}
-COROUTINE(switchA)
- {
-    COROUTINE_BEGIN();
-  static int idx=0;
-  for (idx=0; idx<100; idx++)
-  {
-        COROUTINE_YIELD();
-
-  Serial.print("counter A: ");
-  Serial.println(idx);
-  Serial.println("switching contextA");
-  }    
-  COROUTINE_END();
-}
-COROUTINE(switchB) {
-    COROUTINE_BEGIN();
-  static int index=0;
-  for (index=0; index<100; index++)
-  {
-        COROUTINE_YIELD();
-
-  Serial.print("counter B: ");
-  Serial.println(index);
-  Serial.println("switching contextB");
-  }    
   COROUTINE_END();
 }
 
@@ -100,25 +64,8 @@ void loop() {
   CoroutineScheduler::loop();
 }
 
-void switchCmdA()
-{
-  static int idx=0;
-  for (idx=0; idx<100; idx++)
-  {
-  Serial.println("switching contextA");
-  }
-}
-void switchCmdB()
-{
-  static int index=0;
-  for (index=0; index<100; index++)
-  {
-  Serial.println("switching contextB");
-  }
-}
-
 void yield()
 {
-  cmdCallback.updateCmdProcessing(&myParser, &myBuffer, &Serial);
-  //parse.runCoroutine();
+  parser.runCoroutine();
 }
+
