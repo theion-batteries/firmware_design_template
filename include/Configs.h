@@ -31,16 +31,16 @@
 #define STEP_DELAY 200
 #define STEP_DELAY_PRINTHEAD_MOTOR 20000
 // M1->Motor X
-#define XEnable_pin A8 // 8 same enable for 3 motors
-#define XMs1_pin A9 // microsteps are coupled together in hardware
-#define XMs2_pin A10
-#define XMs3_pin A11
-#define XStep_pin A12
-#define XDir_pin A13
+#define XEnable_pin 8 // 8 sme enble for 3 motors
+#define XMs1_pin 9 // microsteps re coupled together in hrdwre
+#define XMs2_pin 10
+#define XMs3_pin 11
+#define XStep_pin 12
+#define XDir_pin 13
 
 // M2->Motor Y
-#define YEnable_pin A14 // same pin for 3
-#define YMs1_pin A15
+#define YEnable_pin 14 // same pin for 3
+#define YMs1_pin 15
 #define YMs2_pin 53
 #define YMs3_pin 51
 #define YStep_pin 49
@@ -91,7 +91,7 @@
 #endif
 #ifdef keyence
 // serial handler
-#define KEYENCE_SERIAL_HANDLER Serial1
+#define KEYENCE_SERIAL_HANDLER Serial
 // serial baudrate
 #define KEYENCE_SERIAL_BAUDRATE 115200
 // map each sensor head to axis

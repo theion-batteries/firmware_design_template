@@ -145,7 +145,7 @@ bool Alignment::isStopButtonPressed()
 
 void Alignment::initFirmwareUnit()
 {
-    Motor_PrintHead->setDelay(STEP_DELAY_PRINTHEAD_MOTOR);
+  Motor_PrintHead->setDelay(STEP_DELAY_PRINTHEAD_MOTOR);
   DisableAll(off);
   initSensors();
 }
