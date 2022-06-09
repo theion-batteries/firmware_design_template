@@ -29,7 +29,7 @@
 //#define DEBUG_DOWN_DISTANCE
 /*********** define Motors***************/
 #define STEP_DELAY 200
-#define STEP_DELAY_PRINTHEAD_MOTOR 20000
+#define STEP_DELAY_PRINTHEAD_MOTOR 200000
 // M1->Motor X
 #define XEnable_pin A8 // 8 same enable for 3 motors
 #define XMs1_pin A9 // microsteps are coupled together in hardware

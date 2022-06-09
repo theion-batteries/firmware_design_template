@@ -20,32 +20,6 @@ COROUTINE(parser) {
     }
 }
 
-// Count from 0 to 20 with 500 ms delay between iteration
-COROUTINE(countTo10) {
-  COROUTINE_BEGIN();
-  Serial.println(F("countTo10: Hello!"));
-  static int i = 0;
-  for (i = 0; i < 100; i++) {
-      COROUTINE_YIELD();
-    Serial.print("countTo10: ");
-    Serial.println(i);
-  }
-  COROUTINE_END();
-}
-
-// Count from 0 to 10 with 1000 ms delay between iteration
-COROUTINE(countTo20) {
-  COROUTINE_BEGIN();
-  Serial.println(F("countTo20: Hello!"));
-  static int i = 0;
-  for (i = 0; i < 100; i++) {
-    COROUTINE_YIELD();
-    Serial.print(F("countTo20: "));
-    Serial.println(i);
-  }
-  COROUTINE_END();
-}
-
 void setup() {
   ComObj.initCom(BAUDRATE);
   cmdCallback.addCmd(Get, &get_cmd);
@@ -58,6 +32,7 @@ void setup() {
   cmdCallback.addCmd(Calibrate, &calibrate_cmd);
   cmdCallback.addCmd(Rotate, &rotate_cmd);
   display_help();
+  AlignObj.initFirmwareUnit();
   CoroutineScheduler::setup();
 }
 void loop() { 

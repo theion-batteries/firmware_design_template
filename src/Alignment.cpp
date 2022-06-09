@@ -123,17 +123,17 @@ retVal Alignment::MoveDistanceZloop(int direction, float distance) // move motor
 } 
 retVal Alignment::RotateAnglePHloop(Nema8* Mref, int direction, float angle) // rotate motor ph a given angle 
 {
-      if (Mref==Motor_PrintHead)
-      {
         retVal ph;
         do {
-          yield();
-        if(!isStopButtonPressed()) 
-        {Serial.println("breaking rotation loop"); break;}
-        ph= rotateAnglePH(direction, angle);
+              yield();
+            if(!isStopButtonPressed()) 
+            {
+              Serial.println("breaking rotation loop"); 
+              break;
+            }
+            ph= rotateAnglePH(direction, angle);
         }
         while (ph!=ok);
-      }
 } 
 // if endstop is pressed, break current event loop
 // Note: this is not forseen as hardware complete reset
@@ -146,18 +146,9 @@ bool Alignment::isStopButtonPressed()
 void Alignment::initFirmwareUnit()
 {
     Motor_PrintHead->setDelay(STEP_DELAY_PRINTHEAD_MOTOR);
-  DisableAll();
+  DisableAll(off);
   initSensors();
 }
-
-
-
-
-
-
-
-
-
 
 // Basic Methods: API V2
 inline retVal Alignment::StepOnceX(int direction) // move motor X one step

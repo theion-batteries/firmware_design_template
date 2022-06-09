@@ -241,6 +241,7 @@ void set_cmd(CmdParser* myParser) {
 // format: move x up 1
 void move_cmd(CmdParser* myParser) {
     // we create a new command pointer to hold reference to motor 
+    AlignObj.DisableAll(on);
     int moveVal = String(myParser->getCmdParam(3)).toInt();
     if (myParser->equalCmdParam(1, "x")) {
         if (myParser->equalCmdParam(2, "up")) {
@@ -287,11 +288,15 @@ void move_cmd(CmdParser* myParser) {
     // Command Unknwon
     else {
         Serial.println("command unkown");
+        AlignObj.DisableAll(off);
     }
+    AlignObj.DisableAll(off);
 }
 // format: move x up 1
 void rotate_cmd(CmdParser* myParser) {
     // we create a new command pointer to hold reference to motor 
+        AlignObj.DisableAll(on);
+
     int moveVal = String(myParser->getCmdParam(3)).toInt();
     if (myParser->equalCmdParam(1, "ph")) {
         if (myParser->equalCmdParam(2, "clk")) {
@@ -308,7 +313,11 @@ void rotate_cmd(CmdParser* myParser) {
     else {
         Serial.println("command unkown, use following syntax");
         display_help_move();
+            AlignObj.DisableAll(off);
+
     }
+        AlignObj.DisableAll(off);
+
 }
 /**
  * @brief calibrate cmd using invoker
