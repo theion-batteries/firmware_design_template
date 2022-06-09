@@ -29,9 +29,9 @@ DistanceSensor DS_x(XSensorHead);
 DistanceSensor DS_y(YSensorHead);
 DistanceSensor DS_z(ZSensorHead);
 // Setup Light barrier Objects
-lightBarrier LB_x(LB_X, LOW);
-lightBarrier LB_y(LB_Y, LOW);
-lightBarrier LB_z(LB_Z, LOW);
+lightBarrier LB_x(LB_X, HIGH);
+lightBarrier LB_y(LB_Y, HIGH);
+lightBarrier LB_z(LB_Z, HIGH);
 // Setup Alignment Object
 Alignment AlignObj(&M_X, &M_Y, &M_Z, &M_PH, &DS_x, &DS_y, &DS_z, &ES_x, &ES_y, &ES_z,&ES_Stop, &LB_x, &LB_y, &LB_z);
 UUID_MANAGER AlignId("align");

@@ -28,49 +28,50 @@
 //#define DEBUG_DOWN
 //#define DEBUG_DOWN_DISTANCE
 /*********** define Motors***************/
-#define STEP_DELAY 20
-#define STEP_DELAY_PRINTHEAD_MOTOR 2000
-// Motor X
-#define XMs1_pin A10 // microsteps are coupled together in hardware
+#define STEP_DELAY 200
+#define STEP_DELAY_PRINTHEAD_MOTOR 20000
+// M1->Motor X
+#define XEnable_pin A8 // 8 same enable for 3 motors
+#define XMs1_pin A9 // microsteps are coupled together in hardware
 #define XMs2_pin A10
-#define XMs3_pin A10
-#define XDir_pin 5
-#define XEnable_pin 8 // same enable for 3 motors
-#define XStep_pin 2
-// Motor Y
-#define YMs1_pin A10
-#define YMs2_pin A10
-#define YMs3_pin A10
-#define YDir_pin 6
-#define YEnable_pin 8 // same pin for 3
-#define YStep_pin 3
-// Motor Z
-#define ZMs1_pin A10
-#define ZMs2_pin A10
-#define ZMs3_pin A10
-#define ZDir_pin 7
-#define ZEnable_pin 8
-#define ZStep_pin 4
-// PrintHEad motor
-#define PHMs1_pin A10
-#define PHMs2_pin A10
-#define PHMs3_pin A10
-#define PHDir_pin 8 //A9 
-#define PHEnable_pin 8
-#define PHStep_pin 8 //A8
+#define XMs3_pin A11
+#define XStep_pin A12
+#define XDir_pin A13
+
+// M2->Motor Y
+#define YEnable_pin A14 // same pin for 3
+#define YMs1_pin A15
+#define YMs2_pin 53
+#define YMs3_pin 51
+#define YStep_pin 49
+#define YDir_pin 47
+// M3->Motor Z
+#define ZEnable_pin 45
+#define ZMs1_pin 43
+#define ZMs2_pin 41
+#define ZMs3_pin 39
+#define ZStep_pin 37
+#define ZDir_pin 35
+// M4->PrintHEad motor
+#define PHEnable_pin 33
+#define PHMs1_pin 31
+#define PHMs2_pin 29
+#define PHMs3_pin 27
+#define PHStep_pin 25
+#define PHDir_pin 23 //12
 /************* endstops***********/
 // Endswitch
-#define E_X 12
+#define E_X A5//12
 // Endswitch
-#define E_Y 13
+#define E_Y A6//13
 // Endswitch
-#define E_Z A3
+#define E_Z A7
 // define light barriers
-#define LB_X 9
-#define LB_Y 10
-#define LB_Z 11
+#define LB_X A2//9
+#define LB_Y A3//10
+#define LB_Z A4//11
 // safety
-#define E_Emergency A12
+#define E_Emergency 2
 /*********** Distance sensors *********/
 //define which distance sensor is used: uncomment the wrong one
 //#define hc_sr04
