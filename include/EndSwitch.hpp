@@ -9,7 +9,7 @@
  * 
  */
 #pragma once
-#include <ArduinoSTL.h>
+#include <Arduino.h>
 
 
 class endSwitch{

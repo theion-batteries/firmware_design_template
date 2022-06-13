@@ -10,7 +10,7 @@
 */
 /**********MACROS****************/
 #pragma once
-#include <ArduinoSTL.h>
+#include <Arduino.h>
 //#define VIRTUAL
 //#define DEBUG_ALIGN
 //#define MICRO // define this to switch to micrometers
@@ -31,8 +31,8 @@
 #define STEP_DELAY 200
 #define STEP_DELAY_PRINTHEAD_MOTOR 20000
 // M1->Motor X
-#define XEnable_pin A8 // 8 same enable for 3 motors
-#define XMs1_pin A9 // microsteps are coupled together in hardware
+#define XEnable_pin A18 // 8 same enable for 3 motors
+#define XMs1_pin A19 // microsteps are coupled together in hardware
 #define XMs2_pin A10
 #define XMs3_pin A11
 #define XStep_pin A12
@@ -67,7 +67,7 @@
 // Endswitch
 #define E_Z A7
 // define light barriers
-#define LB_X A2//9
+#define LB_X A12//9
 #define LB_Y A3//10
 #define LB_Z A4//11
 // safety

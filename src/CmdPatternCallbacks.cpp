@@ -343,15 +343,17 @@ void reset_cmd(CmdParser* myParser) {
     delete reset;
 }
 /**
- * @brief reset device
+ * @brief sleep device
  *
  * @param myParser
  */
+
 void sleep_cmd(CmdParser* myParser) {
     ICommand* sleep = new SleepDevice(sleepObj);
     sleep->execute();
     delete sleep;
 }
+
 /**
  * @brief undo last command by calling undo(), then remove it from stack
  *

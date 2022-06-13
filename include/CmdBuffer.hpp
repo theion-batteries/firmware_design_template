@@ -5,7 +5,7 @@
  */
 #ifndef _CMDBUFFER_H_
 #define _CMDBUFFER_H_
-#include "ArduinoSTL.h"
+#include "Arduino.h"
 
 #include <stdint.h>
 #include <string.h>

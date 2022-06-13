@@ -9,8 +9,9 @@
 
 */
 #pragma once
-#include <ArduinoSTL.h>
+#include <Arduino.h>
 #include <map>
+#include <vector>
 #include "Configs.h"
 /*** layout pins ***/
 /*
@@ -78,7 +79,6 @@ std::map<String, String> commands{
 {"mesure_value_multipleN",RawCommands[7]},
 {"mesure_value_All",RawCommands[8]},
 };
-
 // storing number of heads for n number of heads
 static std::vector<int> NumUsedHeads;
 // this counter get incremented by instance: every instance is new head

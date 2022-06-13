@@ -30,7 +30,7 @@
   with some motors. 
 */
 #pragma once
-#include <ArduinoSTL.h>
+#include <Arduino.h>
 #include "Configs.h" // debug or release there
 
 class a4988 {

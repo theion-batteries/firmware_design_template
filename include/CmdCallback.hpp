@@ -14,6 +14,8 @@ extern ThreadController controll;
 #include <avr/pgmspace.h>
 #elif defined(ESP8266)
 #include <pgmspace.h>
+#elif defined(ESP32)
+#include <pgmspace.h>
 #endif
 
 #include <stdint.h>

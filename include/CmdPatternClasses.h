@@ -70,6 +70,7 @@ class ICommand {
   virtual void undo() {}
 };
 // sleep hardware
+
  class SleepDevice : public ICommand {
  private:
   SleepHardware& sleep;
