@@ -9,6 +9,8 @@
  */
 #include "ComHandler.hpp"
 #include <AceRoutine.h>
+#include "BluetoothSerial.h"           
+
 using namespace ace_routine;
 ComManager ComObj;
 

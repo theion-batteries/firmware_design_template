@@ -11,9 +11,11 @@
 /**********MACROS****************/
 #pragma once
 #include <Arduino.h>
+
 //#define VIRTUAL
 //#define DEBUG_ALIGN
 //#define MICRO // define this to switch to micrometers
+
 #define DEBUG
 #define USBPORT Serial
 #define BAUDRATE 115200

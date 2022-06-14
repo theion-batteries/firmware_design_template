@@ -39,6 +39,7 @@ void CmdCallbackObject::loopCmdProcessing(CmdParser *cmdParser,CmdBufferObject *
                 // change original concept
                 IsParsed=true;
                 this->processCmd(cmdParser);
+                //yield();
                 cmdBuffer->clear();
             }
         }
